@@ -1,0 +1,10 @@
+{
+  "CDG": {
+    "code": "CDG",
+    "city": "Paris",
+    "slug": "paris-cdg",
+    "country": "fr",
+    "region": "Western Europe Hub",
+    "continent": "europe"
+  }
+}

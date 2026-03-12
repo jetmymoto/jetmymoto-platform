@@ -1,0 +1,49 @@
+export const DESTINATION_REGIONS = {
+  europe: [
+    "alps",
+    "dolomites",
+    "pyrenees",
+    "scottish-highlands",
+    "norwegian-fjords"
+  ],
+  usa: [
+    "wasatch-ridge-assault",
+    "mirror-lake-sweep",
+    "flaming-gorge-recon",
+    "chesapeake-bay-reach",
+    "piedmont-forest-strike",
+    "catoctin-mountain-recon",
+    "shenandoah-ridge-strike",
+    "potomac-highlands-recon",
+    "gettysburg-battle-recon",
+    "potomac-river-mission",
+    "solomons-island-reach",
+    "northern-neck-frontier",
+    "palomar-mountain-strike",
+    "borrego-desert-strike",
+    "southern-overland-recon",
+    "gulf-coast-ridge",
+    "ozello-trail-tactical",
+    "withlacoochee-forest-run",
+    "natchez-trace-mission",
+    "snake-421-reach",
+    "cumberland-plateau-strike",
+    "oahu-island-perimeter",
+    "tantalus-technical-peak",
+    "jurassic-h3-strike",
+    "hill-country-tactical",
+    "three-twisted-sisters",
+    "highland-lakes-strike",
+    "lake-michigan-shore",
+    "rock-river-valley-recon",
+    "galena-driftless-strike"
+  ],
+  canada: [
+      "sea-to-sky-mission",
+      "sunshine-coast-hop",
+      "manning-park-alpine",
+      "laurentian-strike",
+      "eastern-townships-strike",
+      "mont-megantic-recon"
+  ]
+};

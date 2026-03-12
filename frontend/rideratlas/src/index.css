@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&family=Anton&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- RIDER ATLAS GLOBAL THEME --- */
+:root {
+  --safety-amber: #f59e0b;
+  --deep-black: #050505;
+}
+
+body {
+  background-color: var(--deep-black);
+  color: white;
+
+}
+
+/* --- CINEMATIC TEXT EFFECTS --- */
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  color: transparent;
+}
+
+/* --- TACTICAL HUD OVERLAYS --- */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+  z-index: 2;
+  background-size: 100% 4px;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+/* --- COCKPIT SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep-black); 
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--safety-amber);
+}
+
+/* Custom Selection Glow */
+::selection {
+  background: rgba(245, 158, 11, 0.3);
+  color: white;
+}
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  color: transparent;
+}
+/* Tactical Reticle & Stroke Utilities */
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  color: transparent;
+}
+
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+  z-index: 2;
+  background-size: 100% 4px;
+  pointer-events: none;
+  opacity: 0.2;
+}

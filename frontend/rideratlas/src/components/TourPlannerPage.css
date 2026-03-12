@@ -1,0 +1,186 @@
+.tour-planner-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a192f;
+  overflow: hidden;
+}
+
+.tour-planner-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tp-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.6) 0%, #0a192f 80%);
+  z-index: 0;
+}
+
+.tp-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(251, 191, 36, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(251, 191, 36, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 80%);
+  z-index: 1;
+}
+
+.tp-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+.tp-eyebrow {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 9999px;
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.tp-headline {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.tp-headline span {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tp-subheadline {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Standards */
+.tp-section {
+  padding: 6rem 1.5rem;
+  background-color: #0a192f;
+  position: relative;
+}
+
+.tp-section-alt {
+  background-color: #0f223c;
+}
+
+.tp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.tp-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tp-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(251, 191, 36, 0.3);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tp-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.tp-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Comparison Table */
+.tp-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tp-vs-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(15, 23, 42, 0.3);
+}
+
+/* Mission Grid */
+.tp-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tp-mission-card {
+  position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  overflow: hidden;
+  group: hover;
+  cursor: pointer;
+}
+
+.tp-mission-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.tp-mission-card:hover .tp-mission-bg {
+  transform: scale(1.05);
+}
+
+.tp-mission-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 25, 47, 0.95), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}

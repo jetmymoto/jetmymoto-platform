@@ -1,0 +1,292 @@
+.arsenal-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .arsenal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .arsenal-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.arsenal-card-container {
+  position: relative;
+}
+
+.arsenal-card {
+  position: relative;
+  background-color: hsl(240 10% 12% / 0.8);
+  border: 1px solid hsl(240 5% 26% / 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.arsenal-card-container:hover .arsenal-card {
+  transform: scale(1.05);
+  border-color: hsl(44 100% 50% / 0.3);
+  box-shadow: 0 10px 30px -10px hsl(44 100% 50% / 0.1);
+}
+
+.arsenal-card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at var(--glow-x, 50%) var(--glow-y, 50%), hsl(44 100% 50% / 0.15), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.arsenal-card-container:hover .arsenal-card-glow {
+  opacity: 1;
+}
+
+.arsenal-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.arsenal-icon-wrapper {
+  margin-bottom: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, hsl(44 100% 50% / 0.1), hsl(38 92% 50% / 0.1));
+  border: 1px solid hsl(44 100% 50% / 0.2);
+  transition: all 0.3s ease;
+}
+
+.arsenal-card-container:hover .arsenal-icon-wrapper {
+  background: linear-gradient(to bottom right, hsl(44 100% 50% / 0.2), hsl(38 92% 50% / 0.2));
+  border-color: hsl(44 100% 50% / 0.4);
+}
+
+.arsenal-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fbbf24; /* amber-400 */
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.arsenal-card-container:hover .arsenal-icon {
+  transform: rotate(-15deg) scale(1.1);
+}
+
+.arsenal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.arsenal-description {
+  color: #a1a1aa; /* zinc-400 */
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.arsenal-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid hsl(240 5% 26% / 0.5);
+  padding-top: 1rem;
+}
+
+.arsenal-spec-button {
+  background-color: transparent;
+  color: #71717a; /* zinc-500 */
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.arsenal-spec-button:hover {
+  background-color: hsl(44 100% 50% / 0.1);
+  color: #fbbf24; /* amber-400 */
+  transform: rotate(45deg);
+}
+
+.arsenal-spec-tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.75rem);
+  right: 0;
+  width: 220px;
+  background-color: hsl(240 10% 10%);
+  border: 1px solid hsl(240 5% 26% / 0.8);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.5);
+  color: #d4d4d8; /* zinc-300 */
+}
+
+.spec-tooltip-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid hsl(240 5% 26% / 0.8);
+  color: #fff;
+}
+
+.spec-tooltip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.spec-tooltip-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-content {
+  position: relative;
+  background: linear-gradient(145deg, hsl(240, 10%, 12%), hsl(240, 10%, 10%));
+  border: 1px solid hsl(240, 5%, 26%);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px hsl(44 100% 50% / 0.1);
+  z-index: 50;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: hsl(240, 5%, 26%, 0.5);
+  color: hsl(240, 5%, 70%);
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close-button:hover {
+  background-color: hsl(44, 100%, 50%, 0.2);
+  color: #fbbf24;
+  transform: rotate(90deg);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(240, 5%, 26%);
+}
+
+.modal-icon-wrapper {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, hsl(44 100% 50% / 0.1), hsl(38 92% 50% / 0.1));
+  border: 1px solid hsl(44 100% 50% / 0.2);
+}
+
+.modal-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fbbf24;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.modal-body p {
+  color: #a1a1aa; /* zinc-400 */
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.modal-body h4 {
+  color: #fbbf24;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-body ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-body li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.modal-body li svg {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fbbf24;
+  margin-top: 0.2rem;
+}
