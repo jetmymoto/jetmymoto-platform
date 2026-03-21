@@ -77,6 +77,12 @@ export default function App() {
             element={site?.id === "jmm" ? <HomePage_JetMyMoto /> : <HomePage />}
           />
 
+          {/* EXPLICIT DEV ROUTE FOR JETMYMOTO */}
+          <Route
+            path="/jetmymoto"
+            element={<HomePage_JetMyMoto />}
+          />
+
           {/* PRIMARY NETWORK ARCHITECTURE */}
 
           <Route path="/airports" element={<GlobalTower />} />

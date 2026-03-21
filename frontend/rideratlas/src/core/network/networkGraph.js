@@ -1,5 +1,6 @@
 import { buildNetworkGraph } from "./buildNetworkGraph";
 import { runGraphHealthCheck } from "./graphHealthCheck";
+import { buildRentalGraph } from "./buildRentalGraph";
 
 function validateGraph(graph) {
   if (!graph.routesByAirport) {
@@ -21,7 +22,13 @@ function validateGraph(graph) {
   return graph;
 }
 
-export const GRAPH = validateGraph(buildNetworkGraph());
+const coreGraph = validateGraph(buildNetworkGraph());
+const rentalGraph = buildRentalGraph();
+
+export const GRAPH = {
+  ...coreGraph,
+  ...rentalGraph
+};
 
 // Run the diagnostic health check
 runGraphHealthCheck(GRAPH);

@@ -53,16 +53,26 @@ const Header = () => {
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-black tracking-tighter text-white leading-none">
-              RIDER<span className="text-amber-500">ATLAS</span>
+              {location.pathname === '/jetmymoto' ? (
+                <>JETMY<span className="text-amber-500">MOTO</span></>
+              ) : (
+                <>RIDER<span className="text-amber-500">ATLAS</span></>
+              )}
             </span>
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-500 group-hover:text-white transition-colors mt-1">
-              Mission Control
+              Global Platform
             </span>
           </div>
         </Link>
 
         {/* PRIMARY NAV */}
         <nav className="hidden lg:flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/5 backdrop-blur-md shadow-2xl">
+          <NavLink
+            to="/jetmymoto"
+            icon={<Disc size={14} />}
+            label="JetMyMoto"
+            active={location.pathname === '/jetmymoto'}
+          />
           <NavLink
             to="/airports"
             icon={<Plane size={14} />}
@@ -126,6 +136,7 @@ const Header = () => {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="absolute top-20 left-0 w-full bg-[#050505] border-b border-white/10 p-6 flex flex-col gap-2 lg:hidden animate-in slide-in-from-top-5 shadow-2xl">
+          <MobileLink to="/jetmymoto" label="JetMyMoto" onClick={() => setMenuOpen(false)} />
           <MobileLink to="/airports" label="Airports" onClick={() => setMenuOpen(false)} />
           <MobileLink to="/hangar" label="Hangar" onClick={() => setMenuOpen(false)} />
 

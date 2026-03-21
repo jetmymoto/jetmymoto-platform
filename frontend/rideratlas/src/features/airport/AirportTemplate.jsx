@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useEffect, useState } from "react";
 import { MapPin } from "lucide-react";
 import { GRAPH } from "@/core/network/networkGraph";
 
@@ -15,6 +15,8 @@ import {
 import AirportControlPanel from "./sections/AirportControlPanel";
 import RoutesGrid from "@/components/network/RoutesGrid";
 import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
+// 🚀 Dual-Engine Implementation
+import RentalGrid from "@/features/rentals/components/RentalGrid";
 
 const HERO_VIDEO =
   "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_Cont.%20EuropePageH1video.mp4?alt=media&token=d27e77c5-f34f-4486-a78d-a88f46296c02";
@@ -24,6 +26,8 @@ export default function AirportTemplate({
   intent,
   setIntent
 }) {
+  const [rideMode, setRideMode] = useState("bring"); // default active panel
+
   if (!airport) {
     return <div className="p-20 text-white">Loading airport...</div>;
   }
@@ -93,7 +97,6 @@ export default function AirportTemplate({
     }
   }, [a.code]);
 
-  // allow future override via a.rankings; fallback to defaults
   const defaultRankingData = useMemo(
     () => ({
       moto: [
@@ -126,36 +129,7 @@ export default function AirportTemplate({
           features: ["Recent models", "Airport pickup", "High deposit"],
         },
       ],
-      car: [
-        {
-          rank: "1",
-          winner: true,
-          title: "Sixt Premium (T1 & T2)",
-          price: "From €115",
-          priceDetail: "/ day (avg)",
-          bestFor: "Premium comfort & speed",
-          sub: "Most consistent premium fleet at Terminal 1 & 2 (BMW/Audi). Fast track available.",
-          access: "Terminal desk: 3 min",
-          type: "affiliate",
-          href: "https://www.sixt.com/car-rental/france/nice/nice-cote-dazur-airport/",
-          cta: "Check Sixt deals",
-          features: ["Terminal desk", "Premium fleet", "Fast check-in"],
-        },
-        {
-          rank: "2",
-          winner: false,
-          title: "Europcar / Hertz",
-          price: "€85",
-          priceDetail: "/ day (avg)",
-          bestFor: "Reliable mid-range",
-          sub: "Large inventory. Expect queues in peak season. Standard fleet specs.",
-          access: "Terminal desk: 15 min queue risk",
-          type: "internal",
-          href: "#",
-          cta: "Request Partner Quote",
-          features: ["Large fleet", "Terminal desk", "Peak queues"],
-        },
-      ],
+      car: [],
     }),
     []
   );
@@ -164,9 +138,8 @@ export default function AirportTemplate({
   const items = rankingData?.[intent] ?? [];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white selection:bg-amber-500/30">
 
-      {/* HERO + ARRIVAL OPS */}
       <ArrivalOS
         airport={a}
         intent={intent}
@@ -178,52 +151,88 @@ export default function AirportTemplate({
         rankingData={rankingData}
       />
 
-      {/* CONTROL PANEL — SHOULD BE RIGHT AFTER HERO */}
-      <AirportControlPanel
-        airport={a}
-        data={a.controlPanel}
-      />
+      {/* RIDE MODE SELECTOR - 50/50 Dual Engine Bridge */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="flex flex-col md:flex-row border border-white/10 rounded-sm overflow-hidden bg-black/50 backdrop-blur-md shadow-2xl">
+          <button 
+            onClick={() => setRideMode("bring")}
+            className={`flex-1 py-10 px-6 flex flex-col items-center justify-center transition-all duration-300 ${
+              rideMode === "bring" 
+                ? "bg-amber-500 text-black border-b-4 border-black" 
+                : "bg-transparent text-zinc-500 hover:bg-white/5"
+            }`}
+          >
+            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Bring Your Bike</span>
+            <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "bring" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
+              Global Airlift & Staging
+            </span>
+          </button>
+          
+          <div className="w-px bg-white/10 hidden md:block" />
+          <div className="h-px w-full bg-white/10 md:hidden block" />
 
-      {/* EXPERIENCE SECTIONS */}
-      <RankingCards items={items} />
+          <button 
+            onClick={() => setRideMode("rent")}
+            className={`flex-1 py-10 px-6 flex flex-col items-center justify-center transition-all duration-300 ${
+              rideMode === "rent" 
+                ? "bg-amber-500 text-black border-b-4 border-black" 
+                : "bg-transparent text-zinc-500 hover:bg-white/5"
+            }`}
+          >
+            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Rent A Bike</span>
+            <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "rent" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
+              Premium Fleet Partners
+            </span>
+          </button>
+        </div>
+      </div>
 
-      <PainPointsSection airport={a.code} />
-
-      <PivotSection airport={a.code} />
-
-      <RecoverySection data={a.recovery} />
-
-      <UtilitySection data={a.utilities} />
-
-      <CityExtensionSection data={a.cityExtension} />
-
-      {/* ROUTES */}
-      <RoutesGrid routes={airportRoutes} />
-
-      {/* BOOKING */}
-      <MotoAirliftBookingForm />
+      {/* Conditionally Render Engine Components */}
+      { rideMode === "bring" ? (
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <AirportControlPanel airport={a} data={a.controlPanel} />
+          <RankingCards items={items} />
+          <PainPointsSection airport={a.code} />
+          <PivotSection airport={a.code} />
+          <RecoverySection data={a.recovery} />
+          <UtilitySection data={a.utilities} />
+          <CityExtensionSection data={a.cityExtension} />
+          <RoutesGrid routes={airportRoutes} />
+          <MotoAirliftBookingForm />
+        </motion.div>
+      ) : (
+        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <div className="max-w-7xl mx-auto px-6 pb-24">
+            <div className="mb-12 border-l-2 border-amber-500 pl-6">
+              <h2 className="text-4xl font-serif italic text-white uppercase font-black mb-4">
+                Premium Fleet at {a.code}
+              </h2>
+              <p className="text-xs font-mono text-zinc-400 uppercase tracking-widest leading-relaxed max-w-2xl">
+                Ride immediately on arrival. Verified inventory from premium partners, pre-configured for {a.region || a.city} terrain conditions. Lock in your machine below.
+              </p>
+            </div>
+            
+            <RentalGrid airportCode={a.code} />
+          </div>
+        </motion.div>
+      )}
 
       {/* FOOTER */}
-      <footer className="py-20 bg-black border-t border-white/5 text-center">
+      <footer className="py-20 bg-black border-t border-white/5 text-center mt-20">
         <div className="max-w-7xl mx-auto px-6">
-
           <div className="text-amber-500 font-mono text-[10px] font-black tracking-[0.4em] uppercase mb-8 italic flex items-center justify-center gap-2 underline">
             <MapPin size={12}/> Regional Nodes: GVA | NCE | MRS | BCN | MUC
           </div>
-
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-600 text-[10px] font-mono italic uppercase tracking-widest">
-            <div>© 2025 JetMyMoto Ops. Precision Handover Infrastructure.</div>
-
+            <div>© 2026 JetMyMoto Ops. Precision Infrastructure.</div>
             <div className="flex gap-8">
               <a href="#" className="hover:text-white transition-colors">Privacy</a>
               <a href="#" className="hover:text-white transition-colors">Tactical_Terms</a>
               <a href="#" className="hover:text-white transition-colors">Contact_Command</a>
             </div>
           </div>
-
         </div>
       </footer>
-
     </div>
   );
 }
