@@ -16,10 +16,15 @@ fs.createReadStream('data/routes/northAmericaRoutes.csv')
     }
   })
   .on('end', () => {
-    const combinedDestinations = [...existingDestinations, ...newRoutes];
+    const combinedDestinations = [...Object.values(existingDestinations), ...newRoutes];
 
-    const output = `module.exports.RIDE_DESTINATIONS = ${JSON.stringify(
-      combinedDestinations,
+    const destObj = {};
+    combinedDestinations.forEach(d => {
+      destObj[d.slug] = d;
+    });
+
+    const output = `export const RIDE_DESTINATIONS = ${JSON.stringify(
+      destObj,
       null,
       2
     )};\n`;

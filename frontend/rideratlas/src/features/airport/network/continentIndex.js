@@ -1,4 +1,4 @@
-import { AIRPORT_INDEX } from "./airportIndex"
+import { AIRPORT_INDEX } from "./airportIndex.js"
 
 const continents = {
   europe: [],

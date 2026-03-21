@@ -10,6 +10,14 @@ const toKebabCase = (str) =>
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-");
 
+const safeString = (val) => (val == null ? "" : String(val));
+
+const safeCompare = (a, b) => {
+  const strA = safeString(a).toLowerCase();
+  const strB = safeString(b).toLowerCase();
+  return strA.localeCompare(strB);
+};
+
 /**
  * @param {Array<object>} routes
  * @returns {Array<object>}
@@ -20,7 +28,7 @@ export function clusterRoutesByAirport(routes) {
   }
 
   const routesByAirport = routes.reduce((acc, route) => {
-    const airportCode = route.airport.code;
+    const airportCode = route.airport?.code || "UNKNOWN";
     if (!acc[airportCode]) {
       const airportData = Object.values(AIRPORT_INDEX).find(a => a.code === airportCode) || {};
       acc[airportCode] = {
@@ -40,17 +48,17 @@ export function clusterRoutesByAirport(routes) {
     ({ airport, routes }) => {
       // Sort routes inside each cluster by destination name
       const sortedRoutes = [...routes].sort((a, b) =>
-        a.destination.name.localeCompare(b.destination.name)
+        safeCompare(a.destination?.name, b.destination?.name)
       );
 
       const countryCount = new Set((sortedRoutes || []).flatMap(r => r.destination?.countries || [])).size;
       const regionCount = new Set((sortedRoutes || []).map(r => r.destination?.slug)).size;
 
       return {
-        id: `${airport.code.toLowerCase()}-network`,
+        id: `${airport.code?.toLowerCase() || "unknown"}-network`,
         airport,
-        title: `${airport.code} Adventure Network`,
-        slug: `${toKebabCase(airport.city)}-adventure-network`,
+        title: `${airport.code || "UNKNOWN"} Adventure Network`,
+        slug: `${toKebabCase(airport.city || "unknown")}-adventure-network`,
         routes: sortedRoutes,
         routeCount: sortedRoutes.length,
         countryCount,
@@ -64,7 +72,7 @@ export function clusterRoutesByAirport(routes) {
     if (a.routeCount !== b.routeCount) {
       return b.routeCount - a.routeCount;
     }
-    return a.airport.city.localeCompare(b.airport.city);
+    return safeCompare(a.airport?.city, b.airport?.city);
   });
 
   return clusters;

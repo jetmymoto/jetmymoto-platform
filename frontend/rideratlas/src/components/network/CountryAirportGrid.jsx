@@ -23,7 +23,7 @@ const CountryAirportGrid = ({ airports = [] }) => {
         return (
           <Link
             key={airport.code}
-            to={`/airport/${airport.slug}-motorcycle-shipping`}
+            to={`/airport/${airport.code?.toLowerCase()}`}
             className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-6 transition-all"
           >
 

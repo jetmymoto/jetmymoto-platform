@@ -1,12 +1,12 @@
 export const DESTINATION_REGIONS = {
-  europe: [
+  "europe": [
     "alps",
     "dolomites",
     "pyrenees",
     "scottish-highlands",
     "norwegian-fjords"
   ],
-  usa: [
+  "north-america": [
     "wasatch-ridge-assault",
     "mirror-lake-sweep",
     "flaming-gorge-recon",
@@ -36,14 +36,15 @@ export const DESTINATION_REGIONS = {
     "highland-lakes-strike",
     "lake-michigan-shore",
     "rock-river-valley-recon",
-    "galena-driftless-strike"
-  ],
-  canada: [
-      "sea-to-sky-mission",
-      "sunshine-coast-hop",
-      "manning-park-alpine",
-      "laurentian-strike",
-      "eastern-townships-strike",
-      "mont-megantic-recon"
+    "galena-driftless-strike",
+    "sea-to-sky-mission",
+    "sunshine-coast-hop",
+    "manning-park-alpine",
+    "laurentian-strike",
+    "eastern-townships-strike",
+    "mont-megantic-recon",
+    "natchez-trace",
+    "snake-421",
+    "cumberland-plateau"
   ]
 };

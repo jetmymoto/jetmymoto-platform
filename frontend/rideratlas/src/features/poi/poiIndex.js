@@ -1,3 +1,2 @@
-import POI_INDEX from "./poiIndex.json"
-
-export { POI_INDEX }
+import POI_DATA from "./poiIndex.json";
+export const POI_INDEX = POI_DATA;

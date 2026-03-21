@@ -1,36 +1,38 @@
 export const getRoutesByAirport = (graph, airportCode) => {
-  return graph.routes.filter(
-    r => r.airport.code === airportCode
-  );
+  const routeSlugs = graph.routesByAirport[airportCode] || [];
+  return routeSlugs.map(slug => graph.routes[slug]).filter(Boolean);
 };
 
 export const getRoutesByRegion = (graph, regionSlug) => {
-  return graph.routes.filter(
-    r => r.destination.slug === regionSlug
-  );
+  const routeSlugs = graph.routesByDestination[regionSlug] || [];
+  return routeSlugs.map(slug => graph.routes[slug]).filter(Boolean);
 };
 
 export const getAirportsByRegion = (graph, regionSlug) => {
-  const airportCodes = graph.edges
-    .filter(e => e.to === regionSlug && e.type === "route")
-    .map(e => e.from);
-
-  return graph.airports.filter(a =>
-    airportCodes.includes(a.code)
+  const routeSlugs = graph.routesByDestination[regionSlug] || [];
+  const airportCodes = new Set(
+    routeSlugs
+      .map(slug => graph.routes[slug])
+      .filter(Boolean)
+      .map(route => route.airport?.code || route.airport)
   );
+
+  return Array.from(airportCodes)
+    .map(code => graph.airports[code])
+    .filter(Boolean);
 };
 
 export const getNeighborAirports = (graph, airportCode) => {
-  const airport = graph.airports.find(a => a.code === airportCode);
+  const airport = graph.airports[airportCode];
   if (!airport) return [];
 
-  return graph.airports.filter(
+  return Object.values(graph.airports).filter(
     a => a.country === airport.country && a.code !== airportCode
   );
 };
 
 export const getAirportsByCountry = (graph, countryCode) => {
-  return graph.airports.filter(
+  return Object.values(graph.airports).filter(
     airport => airport.country === countryCode
   );
 };
@@ -38,25 +40,33 @@ export const getAirportsByCountry = (graph, countryCode) => {
 export const getRegionsByCountry = (graph, countryCode) => {
   const airports = getAirportsByCountry(graph, countryCode);
 
-  const airportCodes = new Set(airports.map(a => a.code));
+  const regionSlugs = new Set();
+  airports.forEach(airport => {
+    const routeSlugs = graph.routesByAirport[airport.code] || [];
+    routeSlugs.forEach(slug => {
+      const route = graph.routes[slug];
+      if (route && route.destination) {
+        regionSlugs.add(route.destination.slug || route.destination);
+      }
+    });
+  });
 
-  const routes = graph.routes.filter(r =>
-    airportCodes.has(r.airport.code)
-  );
-
-  const regionSlugs = new Set(
-    routes.map(r => r.destination.slug)
-  );
-
-  return [...regionSlugs];
+  return Array.from(regionSlugs);
 };
 
 export const getRoutesByCountry = (graph, countryCode) => {
   const airports = getAirportsByCountry(graph, countryCode);
 
-  const airportCodes = new Set(airports.map(a => a.code));
+  const allRoutes = [];
+  airports.forEach(airport => {
+    const routeSlugs = graph.routesByAirport[airport.code] || [];
+    routeSlugs.forEach(slug => {
+      const route = graph.routes[slug];
+      if (route) {
+        allRoutes.push(route);
+      }
+    });
+  });
 
-  return graph.routes.filter(r =>
-    airportCodes.has(r.airport.code)
-  );
+  return allRoutes;
 };

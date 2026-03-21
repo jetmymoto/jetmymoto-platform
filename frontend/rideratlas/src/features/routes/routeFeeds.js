@@ -4,7 +4,7 @@ import { clusterRoutesByAirport } from "./clusterRoutes.js";
 
 // --- Data Enrichment ---
 
-const destinationMap = new Map(RIDE_DESTINATIONS.map(d => [d.name, d]));
+const destinationMap = new Map(Object.values(RIDE_DESTINATIONS).map(d => [d.name, d]));
 
 function getEnrichedRoutes() {
   return GENERATED_RIDE_ROUTES.map(route => {

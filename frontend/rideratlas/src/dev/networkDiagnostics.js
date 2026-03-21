@@ -17,15 +17,40 @@ export function runNetworkDiagnostics() {
     clusterCounts[a.region] = (clusterCounts[a.region] || 0) + 1
   })
 
+  const routesByAirport = {}
+  GENERATED_RIDE_ROUTES.forEach(route => {
+    const origin = route.origin || route.airport?.code
+    if (origin) {
+      routesByAirport[origin] = (routesByAirport[origin] || 0) + 1
+    }
+  })
+
+  const topHubs = Object.entries(routesByAirport)
+    .map(([airport, count]) => ({ airport, count }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10)
+
+  let totalRoutes = 0;
+  let maxRoutes = 0;
+  const activeAirports = Object.values(routesByAirport).length;
+  Object.values(routesByAirport).forEach(count => {
+    totalRoutes += count;
+    if (count > maxRoutes) maxRoutes = count;
+  });
+
   const diagnostics = {
     AIRPORTS: airports.length,
     CONTINENTS: continentCounts,
     CLUSTERS: clusterCounts,
+    CLUSTER_COUNT: Object.keys(clusterCounts).length,
     ROUTES: GENERATED_RIDE_ROUTES.length,
-    DESTINATIONS: RIDE_DESTINATIONS.length,
+    DESTINATIONS: Object.keys(RIDE_DESTINATIONS).length,
+    TOP_HUBS: topHubs,
+    AVERAGE_ROUTES_PER_AIRPORT: activeAirports > 0 ? (totalRoutes / activeAirports).toFixed(2) : 0,
+    MAX_ROUTES_PER_AIRPORT: maxRoutes,
     SEO_PAGES_ESTIMATE:
       GENERATED_RIDE_ROUTES.length +
-      RIDE_DESTINATIONS.length +
+      Object.keys(RIDE_DESTINATIONS).length +
       airports.length
   }
 
@@ -36,6 +61,7 @@ export function runNetworkDiagnostics() {
   console.log("🛰 CLUSTERS:", diagnostics.CLUSTERS)
   console.log("🛣 ROUTES:", diagnostics.ROUTES)
   console.log("🏔 DESTINATIONS:", diagnostics.DESTINATIONS)
+  console.log("🏆 TOP HUBS:", diagnostics.TOP_HUBS.map(h => `${h.airport} — ${h.count} routes`).join(', '))
   console.log("📈 SEO PAGES:", diagnostics.SEO_PAGES_ESTIMATE)
 
   console.groupEnd()
@@ -43,4 +69,8 @@ export function runNetworkDiagnostics() {
   return diagnostics
 }
 
-window.riderAtlasDiagnostics = runNetworkDiagnostics
+if (typeof window !== 'undefined') {
+  window.riderAtlasDiagnostics = runNetworkDiagnostics
+} else {
+  runNetworkDiagnostics()
+}

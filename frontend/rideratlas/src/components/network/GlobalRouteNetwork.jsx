@@ -47,15 +47,30 @@ const GlobalRouteNetwork = () => {
         });
     });
 
-    // Create route edges
-    Object.values(GRAPH.routes).forEach(route => {
-      elements.push({
-        data: {
-          id: route.slug,
-          source: route.airport.code,
-          target: route.destination.slug,
-        },
-        classes: 'route',
+    // Create route edges using routesByAirport
+    let edgeCount = 0;
+    const MAX_EDGES = 100;
+    const MAX_AIRPORTS_TO_SCAN = 20;
+
+    Object.values(GRAPH.airports).slice(0, MAX_AIRPORTS_TO_SCAN).forEach(airport => {
+      const airportRoutes = GRAPH.routesByAirport[airport.code] || [];
+      
+      // Limit to max edges safely
+      airportRoutes.forEach(routeSlug => {
+        if (edgeCount >= MAX_EDGES) return;
+
+        const route = GRAPH.routes[routeSlug];
+        if (route) {
+          elements.push({
+            data: {
+              id: route.slug,
+              source: route.airport.code,
+              target: route.destination.slug,
+            },
+            classes: 'route',
+          });
+          edgeCount++;
+        }
       });
     });
 
@@ -155,7 +170,6 @@ const GlobalRouteNetwork = () => {
 
         node.style({ 'background-color': color });
     });
-
 
     return () => {
       cy.destroy();

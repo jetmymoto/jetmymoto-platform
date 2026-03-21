@@ -120,8 +120,16 @@ for (const airport of airportIndex) {
 
 const continentIndex = {};
 
+const safeString = (val) => (val == null ? "" : String(val));
+
+const safeCompare = (a, b) => {
+  const strA = safeString(a).toLowerCase();
+  const strB = safeString(b).toLowerCase();
+  return strA.localeCompare(strB);
+};
+
 Object.values(continentMap)
-  .sort((a, b) => a.name.localeCompare(b.name))
+  .sort((a, b) => safeCompare(a.name, b.name))
   .forEach((continent) => {
 
     continent.airports.sort();

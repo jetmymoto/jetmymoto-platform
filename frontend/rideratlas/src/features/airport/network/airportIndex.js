@@ -342,5 +342,301 @@ export const AIRPORT_INDEX = {
     "country": "ch",
     "region": "Swiss Alps Hub",
     "continent": "europe"
+  },
+  "ATL": {
+    "code": "ATL",
+    "city": "Atlanta",
+    "slug": "atlanta-atl",
+    "country": "us",
+    "region": "Appalachia",
+    "continent": "north-america"
+  },
+  "DFW": {
+    "code": "DFW",
+    "city": "Dallas",
+    "slug": "dallas-dfw",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "DEN": {
+    "code": "DEN",
+    "city": "Denver",
+    "slug": "denver-den",
+    "country": "us",
+    "region": "Rockies",
+    "continent": "north-america"
+  },
+  "ORD": {
+    "code": "ORD",
+    "city": "Chicago",
+    "slug": "chicago-ord",
+    "country": "us",
+    "region": "Great Lakes",
+    "continent": "north-america"
+  },
+  "LAX": {
+    "code": "LAX",
+    "city": "Los Angeles",
+    "slug": "los-angeles-lax",
+    "country": "us",
+    "region": "Pacific Coast",
+    "continent": "north-america"
+  },
+  "JFK": {
+    "code": "JFK",
+    "city": "New York City",
+    "slug": "new-york-city-jfk",
+    "country": "us",
+    "region": "Northeast Gateway",
+    "continent": "north-america"
+  },
+  "CLT": {
+    "code": "CLT",
+    "city": "Charlotte",
+    "slug": "charlotte-clt",
+    "country": "us",
+    "region": "Appalachia",
+    "continent": "north-america"
+  },
+  "BNA": {
+    "code": "BNA",
+    "city": "Nashville",
+    "slug": "nashville-bna",
+    "country": "us",
+    "region": "Appalachia",
+    "continent": "north-america"
+  },
+  "SLC": {
+    "code": "SLC",
+    "city": "Salt Lake City",
+    "slug": "salt-lake-city-slc",
+    "country": "us",
+    "region": "Rockies",
+    "continent": "north-america"
+  },
+  "YYC": {
+    "code": "YYC",
+    "city": "Calgary",
+    "slug": "calgary-yyc",
+    "country": "ca",
+    "region": "Rockies",
+    "continent": "north-america"
+  },
+  "SFO": {
+    "code": "SFO",
+    "city": "San Francisco",
+    "slug": "san-francisco-sfo",
+    "country": "us",
+    "region": "Pacific Coast",
+    "continent": "north-america"
+  },
+  "SEA": {
+    "code": "SEA",
+    "city": "Seattle",
+    "slug": "seattle-sea",
+    "country": "us",
+    "region": "Pacific Coast",
+    "continent": "north-america"
+  },
+  "YVR": {
+    "code": "YVR",
+    "city": "Vancouver",
+    "slug": "vancouver-yvr",
+    "country": "ca",
+    "region": "Pacific Coast",
+    "continent": "north-america"
+  },
+  "YYZ": {
+    "code": "YYZ",
+    "city": "Toronto",
+    "slug": "toronto-yyz",
+    "country": "ca",
+    "region": "Great Lakes",
+    "continent": "north-america"
+  },
+  "SAN": {
+    "code": "SAN",
+    "city": "San Diego",
+    "slug": "san-diego-san",
+    "country": "us",
+    "region": "Baja",
+    "continent": "north-america"
+  },
+  "MEX": {
+    "code": "MEX",
+    "city": "Mexico City",
+    "slug": "mexico-city-mex",
+    "country": "mx",
+    "region": "Baja",
+    "continent": "north-america"
+  },
+  "DAL": {
+    "code": "DAL",
+    "city": "Dallas",
+    "slug": "dallas-dal",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "GDL": {
+    "code": "GDL",
+    "city": "Guadalajara",
+    "slug": "guadalajara-gdl",
+    "country": "mx",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "PDX": {
+    "code": "PDX",
+    "city": "Portland",
+    "slug": "portland-pdx",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "STL": {
+    "code": "STL",
+    "city": "St. Louis",
+    "slug": "st.-louis-stl",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "RDU": {
+    "code": "RDU",
+    "city": "Raleigh",
+    "slug": "raleigh-rdu",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "HOU": {
+    "code": "HOU",
+    "city": "Houston",
+    "slug": "houston-hou",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "SMF": {
+    "code": "SMF",
+    "city": "Sacramento",
+    "slug": "sacramento-smf",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "MSY": {
+    "code": "MSY",
+    "city": "New Orleans",
+    "slug": "new-orleans-msy",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "SNA": {
+    "code": "SNA",
+    "city": "Santa Ana",
+    "slug": "santa-ana-sna",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "SJC": {
+    "code": "SJC",
+    "city": "San Jose",
+    "slug": "san-jose-sjc",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "SAT": {
+    "code": "SAT",
+    "city": "San Antonio",
+    "slug": "san-antonio-sat",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "MCI": {
+    "code": "MCI",
+    "city": "Kansas City",
+    "slug": "kansas-city-mci",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "CLE": {
+    "code": "CLE",
+    "city": "Cleveland",
+    "slug": "cleveland-cle",
+    "country": "us",
+    "region": "North America Hub",
+    "continent": "north-america"
+  },
+  "YUL": {
+    "code": "YUL",
+    "city": "Montreal",
+    "slug": "montreal-yul",
+    "country": "ca",
+    "region": "Quebec",
+    "continent": "north-america"
+  },
+  "BWI": {
+    "code": "BWI",
+    "city": "Baltimore",
+    "slug": "baltimore-bwi",
+    "country": "us",
+    "region": "Mid-Atlantic",
+    "continent": "north-america"
+  },
+  "DCA": {
+    "code": "DCA",
+    "city": "Washington DC",
+    "slug": "washington-dca",
+    "country": "us",
+    "region": "Mid-Atlantic",
+    "continent": "north-america"
+  },
+  "IAD": {
+    "code": "IAD",
+    "city": "Washington DC",
+    "slug": "washington-iad",
+    "country": "us",
+    "region": "Mid-Atlantic",
+    "continent": "north-america"
+  },
+  "MDW": {
+    "code": "MDW",
+    "city": "Chicago",
+    "slug": "chicago-mdw",
+    "country": "us",
+    "region": "Great Lakes",
+    "continent": "north-america"
+  },
+  "TPA": {
+    "code": "TPA",
+    "city": "Tampa",
+    "slug": "tampa-tpa",
+    "country": "us",
+    "region": "Florida",
+    "continent": "north-america"
+  },
+  "AUS": {
+    "code": "AUS",
+    "city": "Austin",
+    "slug": "austin-aus",
+    "country": "us",
+    "region": "Texas",
+    "continent": "north-america"
+  },
+  "HNL": {
+    "code": "HNL",
+    "city": "Honolulu",
+    "slug": "honolulu-hnl",
+    "country": "us",
+    "region": "Hawaii",
+    "continent": "north-america"
   }
 }

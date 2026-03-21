@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
+    "@react-google-maps/api": "^2.20.8",
     "clsx": "^2.1.1",
+    "csv-parser": "^3.2.0",
     "cytoscape": "^3.33.1",
     "firebase": "^12.10.0",
     "framer-motion": "^12.35.2",

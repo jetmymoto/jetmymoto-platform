@@ -1,7 +1,15 @@
-import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
-import { RIDE_DESTINATIONS } from "@/features/routes/data/rideDestinations";
-import { GENERATED_RIDE_ROUTES } from "@/features/routes/data/generatedRideRoutes";
-import { POI_INDEX } from "@/features/poi/poiIndex";
+import { AIRPORT_INDEX } from "../../features/airport/network/airportIndex";
+import { staticAirports } from "@/features/airport/data/staticAirports";
+import { staticAirportsEnriched } from "@/features/airport/data/staticAirportsEnriched";
+import { RIDE_DESTINATIONS } from "../../features/routes/data/rideDestinations";
+import { GENERATED_RIDE_ROUTES } from "../../features/routes/data/generatedRideRoutes";
+import { POI_INDEX } from "../../features/poi/poiIndex";
+
+function toArray(value) {
+  if (Array.isArray(value)) return value;
+  if (value && typeof value === "object") return Object.values(value);
+  return [];
+}
 
 const toKebabCase = (str) =>
   str
@@ -9,41 +17,83 @@ const toKebabCase = (str) =>
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-");
 
+const safeString = (val) => (val == null ? "" : String(val));
+
+const safeCompare = (a, b) => {
+  const strA = safeString(a).toLowerCase();
+  const strB = safeString(b).toLowerCase();
+  return strA.localeCompare(strB);
+};
+
+function createDefaultArrivalOS(city) {
+  return {
+    arrivals: [{ label: `${city} Arrivals`, note: "Follow airport signage" }],
+    departures: [{ label: `${city} Departures`, note: "Upper terminal level" }],
+    baggageClaim: [{ label: "Baggage Claim", note: "Main terminal" }],
+    rideshare: [{ label: "Uber / Lyft Pickup", note: "Rideshare zone" }],
+    transport: [{ label: "Ground Transport", note: `${city} transit links` }]
+  };
+}
+
 export function buildNetworkGraph() {
   const airports = {};
-  const clusters = {};
-  const destinations = {};
-  const routes = {};
   const airportsBySlug = {};
-  const pois = {};
-
+  const clusters = {};
+  const routes = {};
   const routesByAirport = {};
   const routesByDestination = {};
-  const destinationsByType = {};
+  const destinations = {};
+  const destinationsByRegion = {};
+  const pois = {};
+  const poisByDestination = {};
 
   for (const airportCode in AIRPORT_INDEX) {
-    const airport = AIRPORT_INDEX[airportCode];
-    airports[airport.code] = airport;
-    airportsBySlug[airport.slug] = airport;
+    const base = AIRPORT_INDEX[airportCode];
+    const ops = staticAirports[airportCode] || {};
+    const enriched = staticAirportsEnriched[airportCode] || {};
+
+    const merged = {
+      ...base,
+      ...ops,
+      ...enriched
+    };
+
+    if (!merged.arrivalOS) {
+      merged.arrivalOS = createDefaultArrivalOS(merged.city || merged.name || airportCode);
+    }
+
+    // Provide defaults for operational sections
+    merged.recovery ??= {
+      premium: { name: "", location: "", href: "#", features: [] },
+      budget: { name: "", location: "", href: "#", features: [] }
+    };
+    merged.utilities ??= [];
+    merged.cityExtension ??= { enabled: false, headline: "", subline: "", items: [] };
+
+    airports[merged.code] = merged;
+    if (merged.slug) {
+      airportsBySlug[merged.slug] = merged;
+    }
   }
 
   const destinationMap = new Map();
-  for (const destination of RIDE_DESTINATIONS) {
+  const destinationsArray = toArray(RIDE_DESTINATIONS);
+  for (const destination of destinationsArray) {
     if (destination.slug) {
       destinations[destination.slug] = destination;
       destinationMap.set(destination.name, destination);
-      const types = destination.type || ["other"];
-      for (const t of types) {
-        if (!destinationsByType[t]) {
-          destinationsByType[t] = [];
-        }
-        destinationsByType[t].push(destination.slug);
+      
+      const region = destination.region || "Other";
+      if (!destinationsByRegion[region]) {
+        destinationsByRegion[region] = [];
       }
+      destinationsByRegion[region].push(destination.slug);
     }
   }
 
   const ALL_ROUTES = GENERATED_RIDE_ROUTES.map(route => {
-    const destinationData = destinationMap.get(route.destination.name);
+    // If the route's destination is in destinationMap, enrich it
+    const destinationData = destinationMap.get(route.destination?.name || route.destination);
     if (destinationData) {
       return {
         ...route,
@@ -58,84 +108,81 @@ export function buildNetworkGraph() {
 
   for (const route of ALL_ROUTES) {
     if (route.slug) {
-      routes[route.slug] = route;
-      if (!routesByAirport[route.airport.code]) {
-        routesByAirport[route.airport.code] = [];
+      // Hydrate airport and destination objects
+      const airportCode = route.airportCode || route.airport?.code || route.airport;
+      const destinationSlug = route.destinationSlug || route.destination?.slug || route.destination;
+
+      const airport = AIRPORT_INDEX[airportCode];
+      const destination = RIDE_DESTINATIONS[destinationSlug];
+
+      const hydratedRoute = {
+        ...route,
+        airport,
+        destination
+      };
+
+      routes[route.slug] = hydratedRoute;
+
+      if (airportCode) {
+        if (!routesByAirport[airportCode]) {
+          routesByAirport[airportCode] = [];
+        }
+        routesByAirport[airportCode].push(route.slug);
       }
-      routesByAirport[route.airport.code].push(route.slug);
-      if (!routesByDestination[route.destination.slug]) {
-        routesByDestination[route.destination.slug] = [];
+
+      if (destinationSlug) {
+        if (!routesByDestination[destinationSlug]) {
+          routesByDestination[destinationSlug] = [];
+        }
+        routesByDestination[destinationSlug].push(route.slug);
       }
-      routesByDestination[route.destination.slug].push(route.slug);
     }
   }
 
-  const routesGroupedByAirport = ALL_ROUTES.reduce((acc, route) => {
-    const airportCode = route.airport.code;
-    if (!acc[airportCode]) {
-      const airportData = airports[airportCode] || {};
-      acc[airportCode] = {
-        airport: {
-          ...route.airport,
-          code: airportCode,
-          slug: airportData.slug
-        },
-        routes: [],
-      };
-    }
-    acc[airportCode].routes.push(route);
-    return acc;
-  }, {});
+  Object.entries(routesByAirport).forEach(([airportCode, routeSlugs]) => {
+    const airport = airports[airportCode];
 
-  const generatedClusters = Object.values(routesGroupedByAirport).map(
-    ({ airport, routes: airportRoutes }) => {
-      const sortedRoutes = [...airportRoutes].sort((a, b) =>
-        a.destination.name.localeCompare(b.destination.name)
-      );
-      const countryCount = new Set((sortedRoutes || []).flatMap(r => {
-          const dest = destinations[r.destination.slug];
-          return dest ? dest.countries : [];
-      })).size;
-      const regionCount = new Set((sortedRoutes || []).map(r => r.destination?.slug)).size;
-      return {
-        id: `${airport.code.toLowerCase()}-network`,
-        airport,
-        title: `${airport.code} Adventure Network`,
-        slug: `${toKebabCase(airport.city)}-adventure-network`,
-        routes: sortedRoutes,
-        routeCount: sortedRoutes.length,
-        countryCount,
-        regionCount,
-      };
-    }
-  );
+    if (!airport) return;
 
-  generatedClusters.sort((a, b) => {
-    if (a.routeCount !== b.routeCount) {
-      return b.routeCount - a.routeCount;
-    }
-    return a.airport.city.localeCompare(b.airport.city);
+    clusters[airportCode.toLowerCase()] = {
+      id: `${airportCode.toLowerCase()}-network`,
+      title: `${airport.city} Hub`,
+      region: airport.city,
+      airports: [airportCode],
+      routes: routeSlugs.map(slug => routes[slug]).filter(Boolean).sort((a,b) => (a.distance || 0) - (b.distance || 0)),
+      media: {
+        video: "/videos/default-cluster.mp4"
+      }
+    };
   });
 
-  for (const cluster of generatedClusters) {
-    clusters[cluster.id] = cluster;
-  }
-
-  for (const poi of POI_INDEX) {
+  const poisArray = toArray(POI_INDEX);
+  for (const poi of poisArray) {
     if (poi.slug) {
       pois[poi.slug] = poi;
+      
+      const destSlug = poi.destination || poi.region || poi.destination_slug || "other";
+      if (!destinations[destSlug] && destSlug !== "other") {
+        console.warn(`POI ${poi.slug} references missing destination ${destSlug}`);
+      }
+      
+      if (!poisByDestination[destSlug]) {
+        poisByDestination[destSlug] = [];
+      }
+      poisByDestination[destSlug].push(poi.slug);
     }
   }
 
   return {
     airports,
-    clusters,
-    destinations,
-    routes,
     airportsBySlug,
-    pois,
+    clusters,
+    routes,
     routesByAirport,
     routesByDestination,
-    destinationsByType,
+    destinations,
+    destinationsByRegion,
+    pois,
+    poisByDestination,
   };
 }

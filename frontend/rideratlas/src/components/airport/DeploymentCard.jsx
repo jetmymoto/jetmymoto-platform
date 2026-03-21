@@ -68,7 +68,7 @@ export default function DeploymentCard({ mission }) {
   const { airport_slug, airport_code, airport_name, region_desc, country_code, coords, rental, weather } = mission
 
   return (
-    <Link to={`/airport/${airport_slug}-motorcycle-shipping`} className="group">
+    <Link to={`/airport/${airport_code?.toLowerCase()}`} className="group">
 
       <motion.div
         initial={{ opacity:0, y:20 }}

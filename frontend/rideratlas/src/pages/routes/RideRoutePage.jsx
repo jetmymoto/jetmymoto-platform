@@ -55,7 +55,7 @@ export default function RideRoutePage() {
       </p>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Link to={`/airport/${airport.slug}-motorcycle-shipping`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
+        <Link to={`/airport/${airport.code?.toLowerCase()}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
           Back to {airport.city} Airport
         </Link>
         <Link to={`/destination/${destination.slug}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
@@ -64,7 +64,7 @@ export default function RideRoutePage() {
         <Link to={`/destination/${destination.slug}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
           Nearby POIs in {destination.name}
         </Link>
-        <Link to={`/moto-airlift/${airport.code}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
+        <Link to="/moto-airlift#booking" className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
           Ship Motorcycle Here
         </Link>
       </div>

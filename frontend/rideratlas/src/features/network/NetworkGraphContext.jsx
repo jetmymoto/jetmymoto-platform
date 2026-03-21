@@ -1,5 +1,5 @@
 import React, { createContext, useMemo } from "react";
-import { buildNetworkGraph } from "./buildNetworkGraph";
+import { buildNetworkGraph } from "@/core/network/buildNetworkGraph";
 
 export const NetworkGraphContext = createContext(null);
 

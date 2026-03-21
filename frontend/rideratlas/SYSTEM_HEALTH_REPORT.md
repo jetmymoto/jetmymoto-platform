@@ -11,6 +11,7 @@ This report summarizes the health of the RiderAtlas frontend, focusing on the ne
 - **ROUTE_COUNT**: 205
 
 **Details:**
+
 - **`AIRPORT_INDEX`**: The structure is valid, containing `code`, `slug`, `city`, `country`, `continent`, and `region`.
 - **`rideDestinations`**: The structure is mostly valid, with `slug` and `name`. However, `continent` and `type` fields are missing, which were specified in the audit requirements. The `region` field is available on some entries and could be used as `type`.
 - **`generatedRideRoutes`**: The structure is valid, containing `slug`, `airportCode` (nested), and `destinationSlug` (nested).
@@ -32,6 +33,7 @@ This report summarizes the health of the RiderAtlas frontend, focusing on the ne
 - **CLUSTER_SIZES**: All 41 clusters have a size of 5.
 
 **Details:**
+
 - **Finding**: The cluster generation logic in `buildNetworkGraph.js` does not group airports by `airport.region` as expected. Instead, it creates a "cluster" for each airport that has associated routes.
 - **Recommendation**: This is a significant deviation from the expected behavior. If the intention is to have region-based clusters, the logic in `buildNetworkGraph.js` needs to be updated. The current implementation creates a 1:1 mapping between an airport and a cluster.
 
@@ -41,10 +43,11 @@ This report summarizes the health of the RiderAtlas frontend, focusing on the ne
 
 - **BROKEN_ROUTES**: 0
 - **ORPHAN_DESTINATIONS**: 0
-- **INVALID_AIRPORT_SLUGS**: 0 (Note: My script checked for invalid airport *codes*)
+- **INVALID_AIRPORT_SLUGS**: 0 (Note: My script checked for invalid airport _codes_)
 - **EMPTY_CLUSTERS**: 0 (Based on the current logic, there can be no empty clusters)
 
 **Details:**
+
 - All routes in `generatedRideRoutes.js` reference valid airports and destinations. There are no orphan routes.
 - 2 out of 43 airports do not have any routes: LPA and TFS. This is consistent with the cluster count of 41.
 

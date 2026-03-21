@@ -1,12 +1,21 @@
 // src/App.jsx
-console.log("HOST:", window.location.hostname);
+
+if (import.meta.env.DEV) {
+  console.log("HOST:", window.location.hostname);
+}
+
 import React from "react";
-import BrandLayout from "./layouts/BrandLayout";
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
+
+import BrandLayout from "./layouts/BrandLayout";
 import { getSiteConfig } from "./utils/siteConfig";
+
+// CORE PAGES
 import GlobalTower from "./pages/GlobalTower";
-import ContinentPage from "./pages/airports/ContinentPage";
 import AirportsCountryPage from "./pages/AirportsCountryPage";
+import AirportPage from "./pages/AirportPage";
+
+// ROUTE / DESTINATION
 import RideRoutePage from "@/pages/routes/RideRoutePage";
 import RideDestinationPage from "@/pages/destination/RideDestinationPage";
 import PoiPage from "@/pages/poi/PoiPage";
@@ -15,9 +24,7 @@ import PoiPage from "@/pages/poi/PoiPage";
 import HomePage from "./pages/HomePage";
 import HomePage_JetMyMoto from "./pages/HomePage_JetMyMoto";
 
-// CORE FUNNEL
-
-import AirportPage from "./pages/AirportPage";
+// MISSION FLOW
 import MissionDetailsPage from "./pages/MissionDetailsPage";
 import MissionPlannerPage from "./pages/MissionPlannerPage";
 import PlanSummaryPage from "./pages/PlanSummaryPage";
@@ -25,85 +32,138 @@ import PlanSummaryPage from "./pages/PlanSummaryPage";
 // RETENTION
 import HangarPage from "./pages/HangarPage";
 
-import AdminOS from "./pages/admin/AdminOS";
+// POOL SYSTEM
+import PoolPage from "./pages/PoolPage";
 
 // ADMIN
+import AdminOS from "./pages/admin/AdminOS";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminPostersPage from "./pages/AdminPostersPage";
 import AdminBookingsPage from "./pages/admin/AdminBookingsPage";
 
-// BOOKING
-import MotoAirliftBooking from "./features/booking/MotoAirliftBooking";
+// BOOKING ENGINE (NOW PART OF AIRPORT SYSTEM)
+import MotoAirliftBooking from "./features/airport/MotoAirliftBooking";
 
 
 function DebugLocation() {
   const location = useLocation();
-  console.log("ROUTER LOCATION:", location);
+  if (import.meta.env.DEV) {
+    console.log("ROUTER LOCATION:", location);
+  }
   return null;
 }
 
 export default function App() {
+
   const site = getSiteConfig();
 
-  console.log("SITE ID:", site?.id);
-  console.log("SITE DETECTED:", site);
+  if (import.meta.env.DEV) {
+    console.log("SITE ID:", site?.id);
+    console.log("SITE DETECTED:", site);
+  }
 
   return (
-      <Router>
-        <DebugLocation />
+    <Router>
 
-        <BrandLayout>
-          <Routes>
+      <DebugLocation />
 
-            {/* ROOT — DOMAIN SWITCH */}
-            <Route
-              path="/"
-              element={site?.id === "jmm" ? <HomePage_JetMyMoto /> : <HomePage />}
-            />
+      <BrandLayout>
 
-            {/* 🚀 PRIMARY ARCHITECTURE 🚀 */}
+        <Routes>
 
-            <Route path="/airports" element={<GlobalTower />} />
-            <Route path="/airports/country/:country" element={<AirportsCountryPage />} />
-            <Route path="/airports/:continent" element={<ContinentPage />} />
-            <Route path="/airport/:slug-motorcycle-shipping" element={<AirportPage />} />
-            <Route path="/moto-airlift" element={<MotoAirliftBooking />} />
-            <Route path="/moto-airlift/:airportCode" element={<MotoAirliftBooking />} />
+          {/* ROOT — DOMAIN SWITCH */}
+          <Route
+            path="/"
+            element={site?.id === "jmm" ? <HomePage_JetMyMoto /> : <HomePage />}
+          />
 
-            <Route
-              path="/route/:routeSlug"
-              element={<RideRoutePage />}
-            />
+          {/* PRIMARY NETWORK ARCHITECTURE */}
 
-            <Route
-              path="/destination/:destinationSlug"
-              element={<RideDestinationPage />}
-            />
+          <Route path="/airports" element={<GlobalTower />} />
+          <Route path="/airports/:continent" element={<GlobalTower />} />
+          <Route path="/airports/country/:country" element={<AirportsCountryPage />} />
 
-            <Route path="/poi/:slug" element={<PoiPage />} />
+          {/* AIRPORT HUB */}
+          <Route path="/airport/:code" element={<AirportPage />} />
 
-            {/* --- SECONDARY --- */}
-            
-            {/* 🎬 MISSIONS */}
-            <Route path="/mission/:id" element={<MissionDetailsPage />} />
+          {/* BOOKING ENGINE (STANDALONE ACCESS) */}
+          <Route path="/moto-airlift" element={<MotoAirliftBooking />} />
+          <Route path="/moto-airlift/:any" element={<Navigate to="/moto-airlift" replace />} />
 
-            {/* 🛡️ DEPLOYMENT */}
-            <Route path="/deploy/:missionId" element={<MissionPlannerPage />} />
+          {/* ROUTES */}
+          <Route
+            path="/route/:routeSlug"
+            element={<RideRoutePage />}
+          />
 
-            {/* 💰 SUMMARY */}
-            <Route path="/plan/:planId" element={<PlanSummaryPage />} />
+          {/* DESTINATIONS */}
+          <Route
+            path="/destination/:destinationSlug"
+            element={<RideDestinationPage />}
+          />
 
-            {/* 🏛️ RETENTION */}
-            <Route path="/hangar" element={<HangarPage />} />
+          {/* POI */}
+          <Route
+            path="/poi/:slug"
+            element={<PoiPage />}
+          />
 
-            {/* 🧠 ADMIN */}
-            <Route path="/admin/os/*" element={<AdminOS />} />
-            <Route path="/admin" element={<Navigate to="/admin/os" />} />
-            <Route path="/admin/posters" element={<AdminPostersPage />} />
-            <Route path="/admin/bookings" element={<AdminBookingsPage />} />
+          {/* MISSIONS */}
+          <Route
+            path="/mission/:id"
+            element={<MissionDetailsPage />}
+          />
 
-          </Routes>
-        </BrandLayout>
-      </Router>
+          {/* DEPLOYMENT */}
+          <Route
+            path="/deploy/:missionId"
+            element={<MissionPlannerPage />}
+          />
+
+          {/* SUMMARY */}
+          <Route
+            path="/plan/:planId"
+            element={<PlanSummaryPage />}
+          />
+
+          {/* RETENTION */}
+          <Route
+            path="/hangar"
+            element={<HangarPage />}
+          />
+
+          {/* POOL SYSTEM */}
+          <Route
+            path="/pool/:poolId"
+            element={<PoolPage />}
+          />
+
+          {/* ADMIN */}
+          <Route
+            path="/admin/os/*"
+            element={<AdminOS />}
+          />
+
+          <Route
+            path="/admin"
+            element={<Navigate to="/admin/os" />}
+          />
+
+          <Route
+            path="/admin/posters"
+            element={<AdminPostersPage />}
+          />
+
+          <Route
+            path="/admin/bookings"
+            element={<AdminBookingsPage />}
+          />
+
+        </Routes>
+
+      </BrandLayout>
+
+    </Router>
   );
 }
+

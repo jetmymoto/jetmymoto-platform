@@ -10,7 +10,6 @@ import { continentIndex } from "@/features/airport/network/continentIndex";
 import DeploymentCard from "@/components/airport/DeploymentCard";
 import AdventureNetworkCard from "@/components/routes/AdventureNetworkCard";
 import RouteIntelCard from "@/components/routes/RouteIntelCard";
-import GlobalRouteNetwork from "@/components/network/GlobalRouteNetwork"
 
 import { GRAPH } from "@/core/network/networkGraph";
 
@@ -255,28 +254,32 @@ const GlobalTower = () => {
   }, [currentContinentId]);
 
   const continentAirports = useMemo(() => {
-    return continentData?.airports || [];
-  }, [continentData]);
+    return Object.values(GRAPH.airports).filter(
+      airport => airport.continent === currentContinentId
+    );
+  }, [currentContinentId]);
 
   const continentClusters = useMemo(() => {
-    const continentAirportCodes = new Set(continentAirports.map(a => a.code));
+    const airportCodes = new Set(continentAirports.map(a => a.code));
     return Object.values(GRAPH.clusters).filter(cluster =>
-      continentAirportCodes.has(cluster.airport.code)
+      cluster.airports?.some(code => airportCodes.has(code))
     );
   }, [continentAirports]);
 
+  const allContinentRoutes = useMemo(() => {
+    return (continentClusters || []).flatMap(cluster => cluster.routes || []);
+  }, [continentClusters]);
+
   const flattenedRoutes = useMemo(() => {
-    return (continentClusters || [])
-      .flatMap(cluster => cluster.routes)
-      .slice(0,12)
-  }, [continentClusters])
+    return allContinentRoutes.slice(0,12);
+  }, [allContinentRoutes]);
 
   const countries = useMemo(() => {
     return [...new Set(continentAirports.map((airport) => airport.country).filter(Boolean))];
   }, [continentAirports]);
 
   const regions = useMemo(() => {
-    const allDestinations = (continentClusters || []).flatMap(c => c.routes.map(r => r.destination));
+    const allDestinations = (continentClusters || []).flatMap(c => (c.routes || []).map(r => r.destination));
     const uniqueRegions = new Map();
     allDestinations.forEach(dest => {
       if (dest && !uniqueRegions.has(dest.slug)) {
@@ -369,39 +372,36 @@ const GlobalTower = () => {
           </div>
         </section>
 
-        {/* INFRASTRUCTURE STATUS */}
-        <div className="bg-black border-y border-white/5 py-3 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 flex justify-between items-center overflow-x-auto no-scrollbar gap-12 text-white">
-            <span className="text-[10px] font-mono font-black text-zinc-600 uppercase tracking-[0.3em] italic shrink-0">
-              Global Infrastructure Status
-            </span>
-
-            <div className="flex gap-10 shrink-0">
+        {/* CONTINENT STATISTICS BAR */}
+        <section className="bg-amber-500 text-black py-4 border-b border-black">
+          <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-sm font-black uppercase tracking-widest italic">
+            <div className="flex items-center gap-3">
+              <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
+              {currentConfig.title.replace('Motorcycle Shipping ', '')} Network
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12 opacity-80">
               <div className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
-                <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-widest">
-                  Active Nodes: {continentAirports.length}
-                </span>
+                <span className="text-xl">{continentAirports.length}</span>
+                <span className="text-[10px] mt-1">Airports</span>
               </div>
-
               <div className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
-                <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-widest">
-                  Countries: {countries.length}
-                </span>
+                <span className="text-xl">{countries.length}</span>
+                <span className="text-[10px] mt-1">Countries</span>
               </div>
-
               <div className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full bg-zinc-700" />
-                <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-widest">
-                  Route Intel: {continentClusters.length}
-                </span>
+                <span className="text-xl">{regions.length}</span>
+                <span className="text-[10px] mt-1">Riding Regions</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xl">{allContinentRoutes.length}</span>
+                <span className="text-[10px] mt-1">Routes</span>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* CONTINENT SELECTOR */}
+        {/* CONTINENT COMMAND */}
         <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
           <ControlStripRadar />
 
@@ -473,27 +473,62 @@ const GlobalTower = () => {
 
           <div className="space-y-24">
 
-            {/* GLOBAL NETWORK */}
-            <section className="pt-16 border-t border-white/5 space-y-10">
+            {/* NETWORK OVERVIEW */}
+            <section className="pt-16 border-t border-white/5 text-center">
+
+              <h2 className="text-xl font-black tracking-tight uppercase italic text-white">
+                Global Expedition Network
+              </h2>
+
+              <p className="text-zinc-400 italic max-w-xl mx-auto mt-4">
+                JetMyMoto connects certified logistics hubs with the world's greatest riding destinations.
+              </p>
+
+            </section>
+
+            {/* COUNTRY EXPLORER */}
+            <section className="pt-10 border-t border-white/5 space-y-10">
               <div className="flex items-center gap-4">
                 <div className="h-px flex-1 bg-white/5" />
                 <span className="font-mono text-[10px] font-black tracking-[0.5em] text-zinc-700 uppercase italic px-4">
-                  GLOBAL NETWORK
+                  COUNTRIES
                 </span>
                 <div className="h-px flex-1 bg-white/5" />
               </div>
-              <p className="text-center text-zinc-400 italic">Real-time expedition routing infrastructure.</p>
-              <div style={{ height: '80vh', width: '100%' }}>
-                <GlobalRouteNetwork />
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {(countries || []).map((countryCode) => (
+                  <Link
+                    key={countryCode}
+                    to={`/airports/country/${countryCode.toLowerCase()}`}
+                    className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-4 transition-all"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="flex items-center gap-2 font-mono text-[10px] text-zinc-300 uppercase tracking-widest italic group-hover:text-amber-500">
+                        <span className="text-base">{getFlagEmoji(countryCode)}</span>
+                        {COUNTRY_NAMES[countryCode] || countryCode}
+                      </span>
+
+                      <ArrowUpRight
+                        size={14}
+                        className="text-zinc-600 group-hover:text-amber-500"
+                      />
+                    </div>
+
+                    <div className="text-[9px] text-zinc-500 uppercase font-mono mt-2 tracking-widest">
+                      Airports
+                    </div>
+                  </Link>
+                ))}
               </div>
             </section>
 
-            {/* DEPLOYMENT GRID */}
+            {/* DEPLOYMENT HUBS */}
             <section className="space-y-8">
               <div className="flex items-center gap-4">
                 <Crosshair size={14} className="text-amber-500" />
                 <h2 className="text-2xl font-black tracking-tighter uppercase italic text-white">
-                  Deployment Hubs
+                  Deployment Hubs <span className="text-zinc-500 ml-2">(Where you land)</span>
                 </h2>
               </div>
 
@@ -527,88 +562,94 @@ const GlobalTower = () => {
               </div>
             </section>
 
-            {/* COUNTRY AIRPORT GRID WITH FLAGS */}
-            <section className="pt-10 border-t border-white/5 space-y-10">
-              <div className="flex items-center gap-4">
-                <div className="h-px flex-1 bg-white/5" />
-                <span className="font-mono text-[10px] font-black tracking-[0.5em] text-zinc-700 uppercase italic px-4">
-                  COUNTRY_AIRPORTS
-                </span>
-                <div className="h-px flex-1 bg-white/5" />
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {(countries || []).map((countryCode) => (
-                  <Link
-                    key={countryCode}
-                    to={`/airports/country/${countryCode.toLowerCase()}`}
-                    className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-4 transition-all"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="flex items-center gap-2 font-mono text-[10px] text-zinc-300 uppercase tracking-widest italic group-hover:text-amber-500">
-                        <span className="text-base">{getFlagEmoji(countryCode)}</span>
-                        {COUNTRY_NAMES[countryCode] || countryCode}
-                      </span>
-
-                      <ArrowUpRight
-                        size={14}
-                        className="text-zinc-600 group-hover:text-amber-500"
-                      />
-                    </div>
-
-                    <div className="text-[9px] text-zinc-500 uppercase font-mono mt-2 tracking-widest">
-                      Airports
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </section>
-
-            {/* RIDING_THEATERS (ADVENTURE NETWORKS) */}
-            <section className="relative pt-10 border-t border-white/5 space-y-10 overflow-hidden">
+            {/* RIDING THEATERS (NETWORK TOWER) */}
+            <section className="relative pt-10 border-t border-white/5 space-y-10 overflow-hidden min-h-[500px] flex flex-col justify-center">
               <RadarOverlay />
+              
+              {/* Subtle Background Video Overlay */}
+              <div className="absolute inset-0 z-0 pointer-events-none opacity-15 overflow-hidden">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source
+                    src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_RidingRegionsBG.mp4?alt=media&token=d5a3b98c-7f5b-4b2a-8c9e-6b7d2f4a5c1e" 
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
 
               <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-10">
+                <div className="flex items-center gap-4 mb-6">
                   <div className="h-px flex-1 bg-white/5" />
                   <span className="font-mono text-[10px] font-black tracking-[0.5em] text-zinc-700 uppercase italic px-4">
-                    ADVENTURE NETWORKS
+                    RIDING THEATERS
                   </span>
                   <div className="h-px flex-1 bg-white/5" />
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {(continentClusters || []).slice(0, 12).map((cluster) => (
-                    <AdventureNetworkCard
-                      key={cluster.id}
-                      cluster={cluster}
-                    />
-                  ))}
-                </div>
+                <p className="text-zinc-400 italic max-w-2xl mx-auto text-center mb-12">
+                  Once deployed, riders enter one of the world's legendary riding theaters.
+                  Each network represents a gateway to iconic motorcycle expeditions.
+                </p>
+
+                {continentClusters.length > 0 ? (
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {(continentClusters || []).slice(0, 12).map((cluster) => (
+                      <AdventureNetworkCard
+                        key={cluster.id}
+                        cluster={cluster}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-20 border border-white/5 bg-zinc-900/20 rounded-xl italic text-zinc-500">
+                    Scanning for active theaters in this sector...
+                  </div>
+                )}
               </div>
             </section>
 
-            {/* ROUTE INTELLIGENCE */}
+            {/* SECTION DIVIDER */}
+            <div className="max-w-7xl mx-auto px-6 py-10">
+              <div className="h-px bg-gradient-to-r from-transparent via-amber-500/30 to-transparent" />
+            </div>
+
+            {/* EXPEDITION MISSIONS */}
             <section className="pt-10 border-t border-white/5 space-y-10">
               <div className="flex items-center gap-4">
                 <div className="h-px flex-1 bg-white/5" />
                 <span className="font-mono text-[10px] font-black tracking-[0.5em] text-zinc-700 uppercase italic px-4">
-                  ROUTE INTELLIGENCE
+                  EXPEDITION MISSIONS
                 </span>
                 <div className="h-px flex-1 bg-white/5" />
               </div>
 
+              <p className="text-zinc-400 italic max-w-2xl mx-auto text-center mb-12">
+                From these logistics hubs, riders deploy directly into some of the most
+                iconic motorcycle routes on earth.
+              </p>
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {(flattenedRoutes || []).map(route => (
-                  <Link
-                    key={route.slug}
-                    to={`/route/${route.slug}`}
-                  >
-                    <RouteIntelCard
-                      route={route}
-                    />
-                  </Link>
-                ))}
+                {(flattenedRoutes || []).length > 0 ? (
+                  (flattenedRoutes || []).map(route => (
+                    <Link
+                      key={route.slug}
+                      to={`/route/${route.slug}`}
+                    >
+                      <RouteIntelCard
+                        route={route}
+                      />
+                    </Link>
+                  ))
+                ) : (
+                  <div className="col-span-full text-center py-10 text-zinc-600 font-mono text-[10px] uppercase tracking-widest">
+                    No active missions detected in this sector.
+                  </div>
+                )}
               </div>
             </section>
 

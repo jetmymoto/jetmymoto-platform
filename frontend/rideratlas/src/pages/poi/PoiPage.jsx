@@ -38,7 +38,7 @@ export default function PoiPage() {
       </h2>
 
       <Link
-        to={`/airport/${airport.slug}-motorcycle-shipping`}
+        to={`/airport/${(airport.code || "").toLowerCase()}`}
         className="text-blue-500"
       >
         {airport.city} ({airport.code})

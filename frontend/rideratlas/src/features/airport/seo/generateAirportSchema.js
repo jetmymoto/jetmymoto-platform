@@ -11,7 +11,7 @@ export function generateAirportSchema(airport) {
     identifier: (airport.code || ""),
     iataCode: (airport.code || ""),
 
-    url: `https://jetmymoto.com/airport/${airport.slug}-motorcycle-shipping`,
+    url: `https://jetmymoto.com/airport/${airport.code?.toLowerCase() || airport.slug}`,
 
     address: {
       "@type": "PostalAddress",
