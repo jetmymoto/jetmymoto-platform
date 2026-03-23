@@ -6,15 +6,21 @@ import {
   MoveUpRight,
   Tag,
   Bike,
-  Activity,
   Crosshair,
   Compass
 } from "lucide-react"
+import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 
 const DeploymentGraphic = ({ code, country, coords }) => {
 
   return (
     <div className="relative w-full h-full bg-[#080808] flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: `url(${CINEMATIC_BACKGROUNDS.bridgeLogistics})` }}
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.52)_0%,rgba(8,8,8,0.78)_46%,rgba(8,8,8,0.94)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(205,167,85,0.14),transparent_34%)]" />
 
       <div
         className="absolute inset-0 opacity-[0.05]"
@@ -27,7 +33,7 @@ const DeploymentGraphic = ({ code, country, coords }) => {
 
       <motion.div
         className="text-[130px] font-black tracking-[-0.05em] italic absolute"
-        style={{ color: "rgba(255,255,255,0.12)" }}
+        style={{ color: "rgba(255,255,255,0.14)" }}
       >
         {code}
       </motion.div>
@@ -74,7 +80,7 @@ export default function DeploymentCard({ mission }) {
         initial={{ opacity:0, y:20 }}
         whileInView={{ opacity:1, y:0 }}
         viewport={{ once:true }}
-        className="flex flex-col h-full bg-[#0a0a0a] border border-white/5 overflow-hidden hover:border-amber-500/30 transition-all"
+        className="flex flex-col h-full overflow-hidden border border-white/5 bg-[#0a0a0a] transition-all hover:border-amber-500/30"
       >
 
         {/* header */}

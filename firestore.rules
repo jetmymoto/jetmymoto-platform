@@ -1,0 +1,65 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Validation helpers
+    function isAllowedStatus(status) {
+      return status in ['OPEN', 'FUNDED', 'EXPIRED'];
+    }
+
+    function hasIntelligenceFields(data) {
+      return data.keys().hasAny([
+        'matchScore', 'matchBreakdown', 'recommendedPools', 
+        'intelligenceUpdatedAt', 'originCluster', 'destinationCluster'
+      ]);
+    }
+
+    function hasRequiredCreateFields(data) {
+      return data.keys().hasAll([
+        'airportCode', 'origin', 'destination', 
+        'departureTime', 'vehicleType', 'seatsAvailable'
+      ]);
+    }
+
+    function isValidNewCoordinate(coord) {
+      return coord is map && coord.keys().hasAll(['lat', 'lng']) && coord.lat is number && coord.lng is number;
+    }
+
+    function isValidLegacyCoordinate(coord) {
+      return coord == null || coord is string || isValidNewCoordinate(coord);
+    }
+
+    match /pools/{poolId} {
+      // Anyone can read pools (admin dashboards need access to non-OPEN pools too)
+      allow read: if true;
+
+      // Clients can create a pool if authenticated, it has the required fields, a valid status, 
+      // and doesn't try to inject intelligence fields. Require real coordinates.
+      allow create: if request.auth != null
+                    && hasRequiredCreateFields(request.resource.data)
+                    && (!request.resource.data.keys().hasAny(['status']) || isAllowedStatus(request.resource.data.status))
+                    && isValidNewCoordinate(request.resource.data.origin)
+                    && isValidNewCoordinate(request.resource.data.destination)
+                    && !hasIntelligenceFields(request.resource.data);
+
+      // Clients can update basic fields if authenticated but cannot modify intelligence fields.
+      // Must own the pool (by email match, if used) and cannot mutate sensitive operational fields.
+      allow update: if request.auth != null
+                    && (request.auth.token.email == resource.data.createdByEmail || !("createdByEmail" in resource.data))
+                    && (!request.resource.data.keys().hasAny(['status']) || isAllowedStatus(request.resource.data.status))
+                    && isValidLegacyCoordinate(request.resource.data.origin)
+                    && isValidLegacyCoordinate(request.resource.data.destination)
+                    // Ensure clients do not mutate critical routing/status data
+                    && request.resource.data.airportCode == resource.data.airportCode
+                    && request.resource.data.status == resource.data.status
+                    && request.resource.data.get('departureTime', null) == resource.data.get('departureTime', null)
+                    && (!request.resource.data.diff(resource.data).affectedKeys().hasAny([
+                         'matchScore', 'matchBreakdown', 'recommendedPools', 
+                         'intelligenceUpdatedAt', 'originCluster', 'destinationCluster',
+                         'airportCode', 'status', 'departureTime'
+                       ]));
+      
+      allow delete: if false; // Only admin can delete
+    }
+  }
+}

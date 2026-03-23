@@ -33,7 +33,7 @@ export default function RouteIntelCard({ route }) {
         {/* Title */}
         <div className="flex-grow">
           <p className="text-[9px] font-mono text-amber-500 uppercase tracking-widest mb-1">
-            From {route.airport?.iata}
+            From {route.airport?.code || route.origin || "TBD"}
           </p>
           <h4 className="text-lg font-bold uppercase italic text-white group-hover:text-amber-400 transition-colors">
             {route.destination?.name}

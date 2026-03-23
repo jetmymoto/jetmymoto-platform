@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "movie-chat-factory"
-  }
+  },
+  "targets": {
+    "movie-chat-factory": {
+      "hosting": {
+        "jetmymoto": [
+          "jetmymoto-marketing"
+        ],
+        "rideratlas": [
+          "rider-atlas-hub"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

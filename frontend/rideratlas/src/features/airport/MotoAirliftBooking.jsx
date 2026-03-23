@@ -19,6 +19,7 @@ import { GRAPH } from "@/core/network/networkGraph";
 import LocationInput from "@/components/ui/LocationInput";
 import BookingSuccess from "@/components/ui/BookingSuccess";
 import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
+import { SITE_MEDIA } from "@/config/siteMedia";
 
 /**
  * JetMyMoto — Booking Page (Full)
@@ -26,11 +27,8 @@ import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
  * - Corrected component name to match filename.
  */
 
-const HERO_VIDEO_URL =
-  "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2FCopy%20of%20H1%20booking%20background%200.3%20mun-28_02_2026%2C%2017_42.mp4?alt=media&token=fd0ed8a2-6399-44b2-99ed-8dcf88440967";
-
-const NETWORK_VIDEO_URL =
-  "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2FCinematic_Logistics_Warehouse_Video.mp4?alt=media&token=bb9855f8-1edd-4e95-b50e-a944d1d12934";
+const HERO_VIDEO_URL = SITE_MEDIA.MOTO_AIRLIFT_HERO;
+const NETWORK_VIDEO_URL = SITE_MEDIA.LOGISTICS_WAREHOUSE;
 
 const trackClick = (evt) => {
   if (import.meta.env.DEV) {
@@ -117,7 +115,7 @@ export default function MotoAirliftBooking() {
   return (
     <div className="bg-zinc-950 text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       {/* STICKY ACTION RAIL */}
-      <nav className="fixed bottom-0 left-0 w-full z-[100] md:top-0 md:bottom-auto h-20 bg-black/80 backdrop-blur-xl border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
+      <nav className="fixed bottom-0 left-0 w-full z-[90] md:top-20 md:bottom-auto h-20 bg-black/80 backdrop-blur-xl border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="hidden md:flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
@@ -354,7 +352,7 @@ export default function MotoAirliftBooking() {
 
       {/* 3. THE INSERTION PROCESS (SCROLL-PINNED) */}
       <section ref={scrollRef} className="relative h-[300vh] bg-zinc-950">
-        <div className="sticky top-0 relative h-screen w-full flex flex-col md:flex-row overflow-hidden">
+        <div className="sticky top-20 relative h-screen w-full flex flex-col md:flex-row overflow-hidden">
           <div className="md:w-1/2 relative h-full flex flex-col justify-center px-12 md:px-24">
             <motion.div style={{ opacity: step1Opacity }} className="absolute inset-x-0 px-12 md:px-24 space-y-6">
               <span className="font-mono text-amber-500 text-[11px] tracking-[0.4em] uppercase italic font-black">

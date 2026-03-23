@@ -72,6 +72,7 @@ exports.createTransportPool = onRequest({ memory: "256MiB", cors: true }, (req, 
         amountCollected: 0,
         requiredDepositPerPerson,
         status: "OPEN",
+        intelligenceStatus: "pending",
         expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
         shareUrl

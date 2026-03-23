@@ -37,7 +37,8 @@ export function getRouteIntelligence(from, to) {
   if (!match) {
     return {
       status: "unknown",
-      estimatedPrice: 1500,
+      soloPrice: 1500, // Normalized key
+      sharedPrice: 1500,
       suggestion: "New route — pricing will be optimized after submission"
     };
   }

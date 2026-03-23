@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar, Play, Radio, Shield } from 'lucide-react';
+import { SITE_MEDIA } from '@/config/siteMedia';
 
-const GLOBAL_FALLBACK_VIDEO = "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2FCinematic_Drone_Intro_Code_Upgrade.mp4?alt=media";
+const GLOBAL_FALLBACK_VIDEO = SITE_MEDIA.GLOBAL_FALLBACK_VIDEO;
 
 const MissionCard = ({ mission, onClick, hasLiveFeed = false }) => {
   const [isHovered, setIsHovered] = useState(false);

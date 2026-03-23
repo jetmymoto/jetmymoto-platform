@@ -2,11 +2,8 @@ import React, { useMemo, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import SeoHelmet from '../components/seo/SeoHelmet'; // Import SeoHelmet
-
+import { SITE_MEDIA } from "@/config/siteMedia";
 import { continentIndex } from "@/features/airport/network/continentIndex";
-
-
-
 import DeploymentCard from "@/components/airport/DeploymentCard";
 import AdventureNetworkCard from "@/components/routes/AdventureNetworkCard";
 import RouteIntelCard from "@/components/routes/RouteIntelCard";
@@ -106,7 +103,7 @@ const defaultContinentConfig = {
 const buildContinentData = () => {
   return (Object.entries(continentIndex || {})).map(([continentId, data]) => {
     const airports = (data?.airports || [])
-      .map((slug) => GRAPH.airportsBySlug[slug])
+      .map((slug) => GRAPH.airportsBySlug?.[slug])
       .filter(Boolean);
 
     return {
@@ -327,7 +324,7 @@ const GlobalTower = () => {
               className="w-full h-full object-cover opacity-30"
             >
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_GlobaltowerH1video.mp4?alt=media&token=e128cbed-c945-433b-bddc-a0f9e55eaea3"
+                src={SITE_MEDIA.GLOBAL_TOWER_H1}
                 type="video/mp4"
               />
             </video>
@@ -402,7 +399,7 @@ const GlobalTower = () => {
         </section>
 
         {/* CONTINENT COMMAND */}
-        <nav className="sticky top-0 z-50 bg-black/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
+        <nav className="sticky top-20 z-40 bg-black/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
           <ControlStripRadar />
 
           <div className="max-w-7xl mx-auto px-6 py-6">
@@ -576,7 +573,7 @@ const GlobalTower = () => {
                   className="w-full h-full object-cover"
                 >
                   <source
-                    src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_RidingRegionsBG.mp4?alt=media&token=d5a3b98c-7f5b-4b2a-8c9e-6b7d2f4a5c1e" 
+                    src={SITE_MEDIA.RIDING_REGIONS_BG} 
                     type="video/mp4"
                   />
                 </video>
@@ -663,13 +660,13 @@ const GlobalTower = () => {
                 Our logistics officers align your machine with the ideal riding theater.
               </p>
 
-              <button className="px-12 py-5 bg-zinc-900 border border-white/10 hover:border-amber-500 transition-all font-mono text-xs font-black uppercase tracking-widest italic group flex items-center gap-6 text-white">
+              <Link to="/moto-airlift" className="px-12 py-5 bg-zinc-900 border border-white/10 hover:border-amber-500 transition-all font-mono text-xs font-black uppercase tracking-widest italic group flex items-center gap-6 text-white">
                 Request Global Deployment Strategy
                 <ArrowRight
                   size={16}
                   className="group-hover:translate-x-2 transition-transform"
                 />
-              </button>
+              </Link>
             </section>
           </div>
         </main>

@@ -119,7 +119,7 @@ export default function MissionDetailsPage() {
           ============================ */}
       <MissionSchema mission={mission} />
       <MissionFAQ mission={mission} />
-      <MissionBreadcrumbs mission={mission} />
+      <MissionBreadcrumbs mission={mission} domain={site.domain} />
 
       {/* ============================
           UI

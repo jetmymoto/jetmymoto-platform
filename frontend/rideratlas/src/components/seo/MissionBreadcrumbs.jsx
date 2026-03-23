@@ -1,10 +1,8 @@
 import React from "react";
-import { getSiteConfig } from "@/utils/siteConfig";
 
-const MissionBreadcrumbs = ({ mission }) => {
+const MissionBreadcrumbs = ({ mission, domain }) => {
   if (!mission) return null;
 
-  const site = getSiteConfig();
   const region = mission.region_id || 'Global';
 
   const breadcrumbData = {
@@ -15,7 +13,7 @@ const MissionBreadcrumbs = ({ mission }) => {
         "@type": "ListItem",
         "position": 1,
         "name": "Missions",
-        "item": `https://${site.domain}/`
+        "item": `https://${domain || "jetmymoto.com"}/`
       },
       {
         "@type": "ListItem",

@@ -105,3 +105,205 @@ If the booking engine fails again, follow these exact steps used during this ses
   - Implemented `PoolPage.jsx` as a read-only shareable public dashboard displaying real-time capacities, origin/destination data, and pool expiry. Note: Stripe payments are NOT integrated yet for pools.
   - Fixed fallback geocoding natively in the frontend to resolve 500 errors when users bypass Google Maps Autocomplete. 
 - **API Strategy:** Explicitly bound the frontend to the production endpoint (`API_URL`) for testing stability.
+
+---
+
+## 6. PHASE 2B: DUAL-ENGINE RENTAL INTAKE SCHEMA FIX
+**Date:** Sunday, March 22, 2026
+**Status:** Backend contract updated, ready for deploy
+
+### What Broke
+After the Rental Showroom CTA was wired into the existing booking flow, the frontend began sending additional rental-context fields with the `createMotoQuote` payload:
+
+- `requestMode`
+- `selectedRentalId`
+- `selectedRentalAirport`
+- `selectedRentalOperator`
+- `selectedRentalMachine`
+
+The frontend behavior was correct, but the backend validator in `functions/src/createMotoQuote.js` was still operating on the older logistics-only contract. Because the function uses strict Zod parsing, these new fields were rejected immediately, which produced:
+
+- HTTP `400 Bad Request`
+- client error: `Invalid request data`
+
+### Root Cause
+This was not a transport, pricing, or email failure. The request was failing before quote generation because the schema and the frontend payload had drifted apart.
+
+The exact failure mode:
+1. Rental CTA prefilled the booking form with rental context.
+2. `MotoAirliftBookingForm.jsx` submitted the new rental fields at the root of the payload.
+3. `createMotoQuote` parsed the request against an outdated Zod schema.
+4. Zod rejected the unknown fields and returned a `400`.
+
+### The Fix Applied
+We updated the backend schema in `functions/src/createMotoQuote.js` instead of weakening validation or hiding the data in notes.
+
+New optional allowed fields:
+
+```javascript
+requestMode: z.enum(["logistics", "rental"]).nullable().optional(),
+selectedRentalId: z.string().max(120).nullable().optional(),
+selectedRentalAirport: z.string().max(12).nullable().optional(),
+selectedRentalOperator: z.string().max(160).nullable().optional(),
+selectedRentalMachine: z.string().max(160).nullable().optional(),
+```
+
+We also persisted these fields into the booking document and exposed rental context inside the internal ops email when `requestMode === "rental"`.
+
+### Why This Approach Was Chosen
+- Keeps backend validation strict
+- Preserves the existing logistics flow unchanged
+- Supports the new RiderAtlas rental intake flow without frontend hacks
+- Makes rental requests visible to operations in structured fields, not buried in freeform notes
+
+### Current Contract
+The booking engine now supports two valid intents:
+
+- `requestMode: "logistics"`
+- `requestMode: "rental"`
+
+If `requestMode` is omitted, the legacy logistics flow still works.
+
+### Files Updated
+- `frontend/rideratlas/src/features/booking/MotoAirliftBookingForm.jsx`
+  - Sends rental context for showroom-originated requests
+- `functions/src/createMotoQuote.js`
+  - Accepts and stores the rental fields in the validated backend schema
+
+### How To Debug This Failure Again
+If the booking form suddenly starts returning `400 Invalid request data` after a frontend intake change:
+
+1. Inspect the frontend console payload log and identify any newly added root fields.
+2. Open `functions/src/createMotoQuote.js` and compare the payload keys against the Zod schema.
+3. If the frontend introduced new structured fields, add them explicitly to the schema instead of disabling validation.
+4. Run a syntax check:
+   ```bash
+   node --check functions/src/createMotoQuote.js
+   ```
+5. Test locally against the emulator with both flows:
+   - a standard logistics quote
+   - a rental intake request containing the five rental fields above
+
+### Deployment Note
+Updating the source file alone does not fix production. The Cloud Function must be redeployed before the live endpoint stops returning `400` for rental-originated booking requests.
+
+---
+
+## 7. PHASE 2C: AGENTIC ADMIN / CRM VALIDATION LAYER
+**Date:** Sunday, March 22, 2026
+**Status:** Frontend admin stack upgraded and build-verified
+
+### What Changed
+The booking engine is no longer treated as a simple form-to-function flow. The admin side now includes graph-aware validation surfaces so brokers and AI agents can inspect and verify payloads before dispatch.
+
+New admin surfaces implemented:
+
+- `/admin`
+  - New `AdminLayout.jsx` shell and `AdminCommandCenter.jsx`
+  - Live graph telemetry for airports, routes, rentals, and operators
+  - Tactical quick-links launchpad for JetMyMoto and RiderAtlas ops routes
+- `/admin/rentals`
+  - New `AdminRentalManager.jsx`
+  - Split-pane injector for validating AI-generated fleet/operator JSON
+  - Relational audit against `GRAPH.operators` with orphan detection
+- `/admin/bookings`
+  - `BookingManager.jsx` upgraded into an Agentic Quote Injector
+  - Split-pane CRM showing live mock lead pipeline on the left
+  - QuoteDispatch JSON validation sandbox on the right
+  - Rental quote audit against `GRAPH.rentals[rentalId]`
+
+### Booking / CRM Validation Rules Now Enforced
+On `/admin/bookings`, the injected quote payload is checked for:
+
+- `bookingRef`
+- `estimatedPrice`
+- `currency`
+- `status`
+
+If the payload represents a rental dispatch:
+
+- `requestMode === "rental"` requires `rentalId`
+- `rentalId` must resolve to a real machine in `GRAPH.rentals`
+
+Failure mode now surfaced in the UI:
+
+```text
+ORPHAN DETECTED: The machine requested in this quote does not exist in the active graph.
+```
+
+Successful validation surfaces:
+
+```text
+QUOTE VERIFIED: Payload aligns with graph inventory. Ready for dispatch.
+```
+
+### Fleet Injector Validation Rules
+On `/admin/rentals`, pasted JSON arrays are validated for:
+
+- JSON syntax correctness
+- root array shape
+- object row shape
+- rental-to-operator relationships
+
+Critical orphan state surfaced in the UI:
+
+```text
+ORPHAN DETECTED: Operator '{id}' does not exist in the graph.
+```
+
+Successful validation surfaces:
+
+```text
+PAYLOAD VERIFIED: Relational integrity intact. Ready for codebase injection.
+```
+
+### Why This Matters
+This shifts the admin model from manual CRM/CMS behavior to an agentic validation workflow:
+
+- AI generates structured payloads
+- Admin pastes payloads into the sandbox
+- UI validates schema and graph relationships
+- only then does a coding agent commit the data into source files
+
+This reduces the chance of:
+
+- dispatching quotes for non-existent rental machines
+- injecting rental rows pointing to missing operators
+- shipping malformed JSON into the codebase
+
+### Build / Deployment Health Note
+While implementing the admin upgrades, Vite production builds were repeatedly terminating during chunk rendering. The root cause was excessive bundle pressure from always loading the massive POI index into the global graph.
+
+Fix applied:
+
+- removed the heavyweight POI dataset from the always-loaded network graph
+- moved POI detail loading behind the `/poi/:slug` route via dynamic import
+- kept the admin stack and public SPA buildable under the current environment limits
+
+Result:
+
+- `npm run build` completes successfully again from `frontend/rideratlas`
+- admin command center, rental injector, and booking injector compile cleanly
+
+### Files Added / Updated
+- `frontend/rideratlas/src/layouts/AdminLayout.jsx`
+- `frontend/rideratlas/src/pages/admin/AdminCommandCenter.jsx`
+- `frontend/rideratlas/src/pages/admin/AdminRentalManager.jsx`
+- `frontend/rideratlas/src/pages/admin/BookingManager.jsx`
+- `frontend/rideratlas/src/pages/admin/AdminBookingsPage.jsx`
+- `frontend/rideratlas/src/App.jsx`
+- `frontend/rideratlas/src/core/network/buildNetworkGraph.js`
+- `frontend/rideratlas/src/pages/poi/PoiPage.jsx`
+
+### Operational Debug Guidance
+If an admin injector starts rejecting a payload unexpectedly:
+
+1. Confirm the JSON is valid and not wrapped in markdown fences.
+2. Confirm the payload root shape:
+   - `/admin/rentals` expects a JSON array
+   - `/admin/bookings` expects a single JSON object
+3. For rental dispatches, verify `rentalId` exists in `GRAPH.rentals`.
+4. For fleet expansion payloads, verify every `rental.operator` resolves either:
+   - in the existing graph, or
+   - in the same pasted payload as an operator row
+5. If build failures reappear, inspect whether another oversized static dataset has been pulled into the global graph path.

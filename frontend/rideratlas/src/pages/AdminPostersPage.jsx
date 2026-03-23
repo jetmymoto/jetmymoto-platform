@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import SeoHelmet from '../components/seo/SeoHelmet'; // Import SeoHelmet
-
-const ENGINE_URL =
-  "https://poster-engine-778225783812.us-central1.run.app/generate-poster";
+import { createAdminPoster } from "@/services/adminPosterService";
 
 export default function AdminPostersPage() {
   const [imageUrl, setImageUrl] = useState("");
@@ -34,26 +32,16 @@ export default function AdminPostersPage() {
 
     try {
       // 1️⃣ Call poster engine
-      const res = await fetch(ENGINE_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          mission_id: renderId,
-          image_url: imageUrl,
-          title,
-          subtitle,
-          difficulty: "EXPERT",
-          poster_config: posterConfig,
-        }),
+      const data = await createAdminPoster({
+        mission_id: renderId,
+        image_url: imageUrl,
+        title,
+        subtitle,
+        difficulty: "EXPERT",
+        poster_config: posterConfig,
       });
 
-      if (!res.ok) {
-        throw new Error(`Poster engine error (${res.status})`);
-      }
-
-      const data = await res.json();
-
-      if (data.status !== "success") {
+      if (data.status === "error") {
         throw new Error(data.message || "Poster generation failed");
       }
 

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShieldCheck, TrendingUp, GitBranch, Award, Plus, Gauge, Activity, Map, ChevronDown, ArrowUpRight, Timer, Zap, Globe, LayoutDashboard, ChevronLeft, ChevronRight, Lock, Radio, Crosshair, Cpu, Signal } from 'lucide-react';
 
@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
+import { getCanonicalPaths } from '@/utils/navigationTargets';
 import {
   Select,
   SelectContent,
@@ -32,10 +33,10 @@ const HeroHUD = () => (
 );
 
 const HangarSubnav = () => (
-  <div className="sticky top-0 z-40 bg-[#0A192F]/80 backdrop-blur-md border-b border-white/5 py-4 overflow-x-auto">
+  <div className="sticky top-20 z-30 bg-[#0A192F]/80 backdrop-blur-md border-b border-white/5 py-4 overflow-x-auto">
     <div className="container mx-auto px-4 flex gap-8 min-w-max text-xs font-bold tracking-widest text-slate-400 uppercase">
       {['Overview', 'Fleet', 'Telemetry', 'Live Ops', 'Network', 'Black Box'].map(item => (
-        <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-gold-accent transition-colors cursor-pointer">{item}</a>
+        <Link key={item} to={`#${item.toLowerCase().replace(' ', '-')}`} className="hover:text-gold-accent transition-colors cursor-pointer">{item}</Link>
       ))}
     </div>
   </div>
@@ -319,9 +320,9 @@ const MyTelemetryContent = () => {
                           <p className="text-xs text-slate-500 italic">
                               Connect your Black Box device to unlock full telemetry replay.
                           </p>
-                          <a href="#" onClick={handleViewFull} className="text-sm text-gold-accent hover:text-gold-accent/80 font-medium flex items-center gap-1 transition-colors">
+                          <button type="button" onClick={handleViewFull} className="text-sm text-gold-accent hover:text-gold-accent/80 font-medium flex items-center gap-1 transition-colors">
                               Open full telemetry in The Atlas <ArrowUpRight className="w-3 h-3" />
-                          </a>
+                          </button>
                       </div>
                   </div>
               </TelemetryCard>
@@ -367,6 +368,8 @@ const MyTelemetryContent = () => {
 
 const HangarPage = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
+  const paths = getCanonicalPaths();
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -378,6 +381,7 @@ const HangarPage = () => {
       title: "Logistics Page",
       description: "Redirecting to global shipping...",
     });
+    navigate(paths.logistics);
   };
 
   return (
@@ -490,7 +494,7 @@ const HangarPage = () => {
                 <h3 className="text-2xl font-bold text-white mb-6">Ready to launch?</h3>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                   <Button size="lg" className="w-full sm:w-auto text-lg font-bold text-navy-deep bg-gold-accent rounded-full shadow-lg shadow-gold-accent/20 transition-transform hover:scale-105 hover:bg-gold-accent/90">
-                    <Link to="/atlas">Browse Missions</Link>
+                    <Link to={paths.destination}>Browse Missions</Link>
                   </Button>
                   <Button variant="outline" size="lg" className="w-full sm:w-auto text-lg font-bold text-gold-accent border-gold-accent hover:bg-gold-accent hover:text-navy-deep rounded-full transition-transform hover:scale-105" onClick={handleLogisticsClick}>
                     Start with Logistics

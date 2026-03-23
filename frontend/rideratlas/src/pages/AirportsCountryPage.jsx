@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import SeoHelmet from '../components/seo/SeoHelmet';
 import { useMemo } from "react";
+import { SITE_MEDIA } from "@/config/siteMedia";
 
 import CountryAirportGrid from "@/components/network/CountryAirportGrid";
 import DeploymentCard from "@/components/airport/DeploymentCard";
@@ -53,8 +54,8 @@ export default function AirportsCountryPage() {
 
   const countryRoutes = useMemo(() => {
     return airports.flatMap((airport) => {
-      const routeSlugs = GRAPH.routesByAirport[airport.slug] || GRAPH.routesByAirport[airport.code] || [];
-      return routeSlugs.map((slug) => GRAPH.routes[slug]).filter(Boolean);
+      const routeSlugs = GRAPH.routesByAirport?.[airport.slug] || GRAPH.routesByAirport?.[airport.code] || [];
+      return routeSlugs.map((slug) => GRAPH.routes?.[slug]).filter(Boolean);
     });
   }, [airports]);
 
@@ -98,13 +99,13 @@ export default function AirportsCountryPage() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        >
+          className="w-full h-full object-cover opacity-50"
+          >
           <source
-            src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_ContryPageH1video.mp4?alt=media&token=b806223e-d96f-4fae-b9d0-3ba67243e98e"
+            src={SITE_MEDIA.COUNTRY_PAGE_H1}
             type="video/mp4"
           />
-        </video>
+          </video>
 
         <div className="relative z-10 text-center px-6">
           <h1 className="text-5xl md:text-7xl font-black italic tracking-tighter mb-6 uppercase">

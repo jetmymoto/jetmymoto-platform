@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getFirestore, doc, onSnapshot } from "firebase/firestore";
 import PlannerMap from "../components/PlannerMap";
+import { updateWaypoints, compileRoute } from "@/services/plannerService";
  
 import { ArrowRight, Map as MapIcon, X, Layers, FileText, Download, Loader2, Box, Activity, CloudRain, Cpu, Truck, Radio } from "lucide-react";
 
@@ -66,17 +67,7 @@ export default function PlannerEnrichPage() {
   const saveToBackend = async (newStops) => {
     setIsSaving(true);
     try {
-      const PROJECT_ID = "movie-chat-factory"; 
-      const REGION = "us-central1";
-      await fetch(`https://${REGION}-${PROJECT_ID}.cloudfunctions.net/plannerGateway`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "UPDATE_WAYPOINTS",
-          planId,
-          waypoints: newStops
-        })
-      });
+      await updateWaypoints(planId, newStops);
     } catch (e) { console.error(e); } finally { setIsSaving(false); }
   };
 
@@ -102,13 +93,7 @@ export default function PlannerEnrichPage() {
   const handleCompile = async () => {
     setIsCompiling(true);
     try {
-      const PROJECT_ID = "movie-chat-factory"; 
-      const REGION = "us-central1";
-      await fetch(`https://${REGION}-${PROJECT_ID}.cloudfunctions.net/plannerGateway`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "COMPILE_ROUTE", planId })
-      });
+      await compileRoute(planId);
     } catch (e) {
       console.error(e);
       setIsCompiling(false);

@@ -97,6 +97,13 @@ const quotePayloadSchema = z.object({
   }).optional(),
   bikeDetails: z.array(z.any()).optional(),
 
+  // Dual-engine rental context
+  requestMode: z.enum(["logistics", "rental"]).nullable().optional(),
+  selectedRentalId: z.string().max(120).nullable().optional(),
+  selectedRentalAirport: z.string().max(12).nullable().optional(),
+  selectedRentalOperator: z.string().max(160).nullable().optional(),
+  selectedRentalMachine: z.string().max(160).nullable().optional(),
+
   // LEGACY: Kept optional for backwards compatibility
   bikeModel: z.string().max(100).optional(),
   quantity: z.number().int().min(1).max(10).optional(),
@@ -270,6 +277,11 @@ exports.createMotoQuote = onRequest({ memory: "1GiB", cors: true }, (req, res) =
       contact: rawData.contact,
       bikes: normalizedBikes,
       bikeDetails: normalizedDetails,
+      requestMode: rawData.requestMode || "logistics",
+      selectedRentalId: rawData.selectedRentalId || null,
+      selectedRentalAirport: rawData.selectedRentalAirport || null,
+      selectedRentalOperator: rawData.selectedRentalOperator || null,
+      selectedRentalMachine: rawData.selectedRentalMachine || null,
       totalUnits: parseFloat(totalUnits.toFixed(2)),
       distanceKm,
       estimatedPrice,
@@ -294,8 +306,18 @@ exports.createMotoQuote = onRequest({ memory: "1GiB", cors: true }, (req, res) =
     try {
       const emailHtml = `
         <p><strong>Booking Ref:</strong> ${escapeHtml(bookingRef)}</p>
+        <p><strong>Request Mode:</strong> ${escapeHtml(rawData.requestMode || "logistics")}</p>
         <p><strong>Route:</strong> ${escapeHtml(rawData.pickupCity)} (${escapeHtml(rawData.pickupCountry)}) -> ${escapeHtml(rawData.destinationCity)}</p>
         <p><strong>Distance:</strong> ${distanceKm} km</p>
+        ${
+          rawData.requestMode === "rental"
+            ? `
+        <p><strong>Rental Machine:</strong> ${escapeHtml(rawData.selectedRentalMachine || "Unknown")}</p>
+        <p><strong>Rental Airport:</strong> ${escapeHtml(rawData.selectedRentalAirport || "Unknown")}</p>
+        <p><strong>Rental Operator:</strong> ${escapeHtml(rawData.selectedRentalOperator || "Unknown")}</p>
+        `
+            : ""
+        }
         <p><strong>Fleet:</strong></p>
         <ul>
           ${normalizedBikes.large > 0 ? `<li>${normalizedBikes.large} Large</li>` : ""}

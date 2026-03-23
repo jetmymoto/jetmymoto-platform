@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { AuthProvider } from './AuthContext'
-import { NetworkGraphProvider } from "@/features/network/NetworkGraphContext";
+import { HelmetProvider } from 'react-helmet-async';
 import "./dev/networkDiagnostics.js";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-      <NetworkGraphProvider>
+    <HelmetProvider>
+      <AuthProvider>
         <App />
-      </NetworkGraphProvider>
-    </AuthProvider>
+      </AuthProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 )

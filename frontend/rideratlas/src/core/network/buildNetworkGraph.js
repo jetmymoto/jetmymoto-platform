@@ -3,7 +3,7 @@ import { staticAirports } from "@/features/airport/data/staticAirports";
 import { staticAirportsEnriched } from "@/features/airport/data/staticAirportsEnriched";
 import { RIDE_DESTINATIONS } from "../../features/routes/data/rideDestinations";
 import { GENERATED_RIDE_ROUTES } from "../../features/routes/data/generatedRideRoutes";
-import { POI_INDEX } from "../../features/poi/poiIndex";
+import RIDE_REGIONS from "../../features/rides/rideRegions.json";
 
 function toArray(value) {
   if (Array.isArray(value)) return value;
@@ -156,20 +156,26 @@ export function buildNetworkGraph() {
     };
   });
 
-  const poisArray = toArray(POI_INDEX);
-  for (const poi of poisArray) {
-    if (poi.slug) {
-      pois[poi.slug] = poi;
-      
-      const destSlug = poi.destination || poi.region || poi.destination_slug || "other";
-      if (!destinations[destSlug] && destSlug !== "other") {
-        console.warn(`POI ${poi.slug} references missing destination ${destSlug}`);
+  for (const [regionSlug, region] of Object.entries(RIDE_REGIONS || {})) {
+    const destinationSlug = region?.slug || regionSlug || "other";
+    const regionPois = toArray(region?.pois);
+
+    for (const poi of regionPois) {
+      if (!poi?.slug) continue;
+
+      const normalizedPoi = {
+        ...poi,
+        destination: destinationSlug,
+        region: destinationSlug,
+      };
+
+      pois[poi.slug] = normalizedPoi;
+
+      if (!poisByDestination[destinationSlug]) {
+        poisByDestination[destinationSlug] = [];
       }
-      
-      if (!poisByDestination[destSlug]) {
-        poisByDestination[destSlug] = [];
-      }
-      poisByDestination[destSlug].push(poi.slug);
+
+      poisByDestination[destinationSlug].push(poi.slug);
     }
   }
 

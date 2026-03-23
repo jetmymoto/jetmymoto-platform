@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect, useState } from "react";
-import { MapPin } from "lucide-react";
 import { GRAPH } from "@/core/network/networkGraph";
-
+import { motion, AnimatePresence } from "framer-motion";
+// import { usePools } from "@/hooks/usePools";
 // Components
 import ArrivalOS from "./sections/ArrivalOS";
 import {
@@ -17,16 +17,24 @@ import RoutesGrid from "@/components/network/RoutesGrid";
 import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
 // 🚀 Dual-Engine Implementation
 import RentalGrid from "@/features/rentals/components/RentalGrid";
+import LivePoolsPanel from "@/components/intelligence/LivePoolsPanel";
 
-const HERO_VIDEO =
-  "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_Cont.%20EuropePageH1video.mp4?alt=media&token=d27e77c5-f34f-4486-a78d-a88f46296c02";
+import { SITE_MEDIA } from "@/config/siteMedia";
+
+const HERO_VIDEO = SITE_MEDIA.EUROPE_PAGE_H1;
 
 export default function AirportTemplate({
   airport,
   intent,
-  setIntent
+  setIntent,
+  initialRideMode = "bring"
 }) {
-  const [rideMode, setRideMode] = useState("bring"); // default active panel
+  const [rideMode, setRideMode] = useState(initialRideMode);
+
+  // const { pools, loading: poolsLoading, error: poolsError } = usePools(airport?.code);
+  const pools = [];
+  const poolsLoading = false;
+  const poolsError = null;
 
   if (!airport) {
     return <div className="p-20 text-white">Loading airport...</div>;
@@ -97,6 +105,10 @@ export default function AirportTemplate({
     }
   }, [a.code]);
 
+  useEffect(() => {
+    setRideMode(initialRideMode);
+  }, [initialRideMode, a.code]);
+
   const defaultRankingData = useMemo(
     () => ({
       moto: [
@@ -138,7 +150,7 @@ export default function AirportTemplate({
   const items = rankingData?.[intent] ?? [];
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-amber-500/30">
+    <div className="min-h-screen bg-[#050505] text-white selection:bg-amber-500/30">
 
       <ArrivalOS
         airport={a}
@@ -188,21 +200,25 @@ export default function AirportTemplate({
       </div>
 
       {/* Conditionally Render Engine Components */}
-      { rideMode === "bring" ? (
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <AirportControlPanel airport={a} data={a.controlPanel} />
-          <RankingCards items={items} />
-          <PainPointsSection airport={a.code} />
-          <PivotSection airport={a.code} />
-          <RecoverySection data={a.recovery} />
-          <UtilitySection data={a.utilities} />
-          <CityExtensionSection data={a.cityExtension} />
-          <RoutesGrid routes={airportRoutes} />
-          <MotoAirliftBookingForm />
-        </motion.div>
-      ) : (
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <div className="max-w-7xl mx-auto px-6 pb-24">
+      <AnimatePresence mode="wait">
+        {rideMode === "bring" ? (
+          <motion.div key="bring" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
+            <div className="max-w-7xl mx-auto px-6">
+              <LivePoolsPanel pools={pools} loading={poolsLoading} error={poolsError} />
+            </div>
+            <AirportControlPanel airport={a} data={a.controlPanel} />
+            <RankingCards items={items} />
+            <PainPointsSection airport={a.code} />
+            <PivotSection airport={a.code} />
+            <RecoverySection data={a.recovery} />
+            <UtilitySection data={a.utilities} />
+            <CityExtensionSection data={a.cityExtension} />
+            <RoutesGrid routes={airportRoutes} />
+            <MotoAirliftBookingForm />
+          </motion.div>
+        ) : (
+          <motion.div key="rent" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
+            <div className="max-w-7xl mx-auto px-6 pb-24">
             <div className="mb-12 border-l-2 border-amber-500 pl-6">
               <h2 className="text-4xl font-serif italic text-white uppercase font-black mb-4">
                 Premium Fleet at {a.code}
@@ -215,24 +231,9 @@ export default function AirportTemplate({
             <RentalGrid airportCode={a.code} />
           </div>
         </motion.div>
-      )}
+        )}
+      </AnimatePresence>
 
-      {/* FOOTER */}
-      <footer className="py-20 bg-black border-t border-white/5 text-center mt-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-amber-500 font-mono text-[10px] font-black tracking-[0.4em] uppercase mb-8 italic flex items-center justify-center gap-2 underline">
-            <MapPin size={12}/> Regional Nodes: GVA | NCE | MRS | BCN | MUC
-          </div>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-600 text-[10px] font-mono italic uppercase tracking-widest">
-            <div>© 2026 JetMyMoto Ops. Precision Infrastructure.</div>
-            <div className="flex gap-8">
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white transition-colors">Tactical_Terms</a>
-              <a href="#" className="hover:text-white transition-colors">Contact_Command</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

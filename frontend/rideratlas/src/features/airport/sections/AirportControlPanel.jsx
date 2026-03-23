@@ -87,7 +87,7 @@ function AirportControlPanel({ data, airport }) {
                             className="flex items-center justify-between p-4 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/50 hover:bg-amber-500/5 transition-all group"
                         >
                             <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white transition-colors">
-                                {route.title}
+                                {route.title || `${route.airport?.city || airport?.city} to ${route.destination?.name || "Open Route"}`}
                             </span>
                             <ArrowRight size={14} className="text-zinc-600 group-hover:text-amber-500 transition-colors" />
                         </Link>

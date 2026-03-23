@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { SITE_MEDIA } from "@/config/siteMedia";
 import {
   Bike,
   Car,
@@ -38,7 +39,7 @@ function ActionRail({ airport, intent }) {
   return (
     <>
       <div
-        className="hidden md:flex fixed top-0 z-[100] w-full h-16 items-center px-8 transition-all duration-300 bg-black/40 backdrop-blur-xl border-b border-white/5"
+        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-black/40 backdrop-blur-xl border-b border-white/5"
       >
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -199,7 +200,7 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2F_Cont.%20EuropePageH1video.mp4?alt=media&token=d27e77c5-f34f-4486-a78d-a88f46296c02"
+          src={SITE_MEDIA.EUROPE_PAGE_H1}
         />
 
         <div className="absolute inset-0 bg-black/60" />

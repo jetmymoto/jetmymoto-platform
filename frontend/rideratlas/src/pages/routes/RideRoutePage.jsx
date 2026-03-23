@@ -1,130 +1,416 @@
-import SeoHelmet from '../../components/seo/SeoHelmet'; // Import SeoHelmet
-import { useParams, Link } from "react-router-dom";
-import { POI_INDEX } from "@/features/poi/poiIndex";
-import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
-import { GENERATED_RIDE_ROUTES } from "@/features/routes/data/generatedRideRoutes.js";
+import { Link, useParams } from "react-router-dom";
+import {
+  ArrowUpRight,
+  Clock3,
+  MapPin,
+  Plane,
+  Route as RouteIcon,
+  ShieldCheck
+} from "lucide-react";
+
+import SeoHelmet from "../../components/seo/SeoHelmet";
+import RentalCard from "@/features/rentals/components/RentalCard";
 import { GRAPH } from "@/core/network/networkGraph";
+import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 
-export default function RideRoutePage() {
+function getRouteDistance(route) {
+  return (
+    route?.distance_km ??
+    route?.distanceKm ??
+    route?.distance ??
+    route?.length_km ??
+    null
+  );
+}
 
-  const { routeSlug } = useParams()
-  const route = GENERATED_RIDE_ROUTES.find(r => r.slug === routeSlug);
+function getRouteDifficulty(route) {
+  return (
+    route?.difficulty ??
+    route?.roadProfile?.difficulty ??
+    route?.difficultyLevel ??
+    route?.profile ??
+    "Operational"
+  );
+}
 
-  if (!route) {
-    return <div className="p-20 text-white">Route not found</div>;
+function getRouteDuration(route) {
+  return (
+    route?.estimated_duration ??
+    route?.estimatedDuration ??
+    route?.duration ??
+    route?.duration_days ??
+    route?.rideTime ??
+    "Classified"
+  );
+}
+
+function getRouteHeroImage(route) {
+  return (
+    route?.imageUrl ||
+    route?.posterUrl ||
+    route?.destination?.imageUrl ||
+    route?.destination?.posterUrl ||
+    CINEMATIC_BACKGROUNDS.courtyardClassic
+  );
+}
+
+function getPoiRecords(route) {
+  const routePoiRefs =
+    route?.poiSlugs ||
+    route?.pois ||
+    route?.waypoints ||
+    route?.poi_refs ||
+    [];
+
+  if (Array.isArray(routePoiRefs) && routePoiRefs.length > 0) {
+    return routePoiRefs
+      .map((poiRef) => {
+        if (typeof poiRef === "string") {
+          return GRAPH?.pois?.[poiRef] || null;
+        }
+
+        const slug = poiRef?.slug || poiRef?.id;
+        return GRAPH?.pois?.[slug] || poiRef || null;
+      })
+      .filter(Boolean)
+      .slice(0, 6);
   }
 
-  const { airport, destination } = route;
+  const destinationSlug = route?.destination?.slug?.toLowerCase?.();
 
+  return (GRAPH?.poisByDestination?.[destinationSlug] || [])
+    .map((poiSlug) => GRAPH?.pois?.[poiSlug])
+    .filter(Boolean)
+    .slice(0, 6);
+}
+
+function BriefMetric({ label, value, icon: Icon }) {
+  return (
+    <div className="rounded-[24px] border border-white/10 bg-[#121212] p-5">
+      <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+        <Icon className="h-4 w-4 text-[#CDA755]" />
+        {label}
+      </div>
+      <div className="mt-3 text-2xl font-black tabular-nums text-white">
+        {value}
+      </div>
+    </div>
+  );
+}
+
+function SectionHeader({ eyebrow, title, body }) {
+  return (
+    <div className="max-w-3xl">
+      <div className="text-[10px] uppercase tracking-[0.34em] text-[#CDA755]">
+        {eyebrow}
+      </div>
+      <h2 className="mt-3 text-3xl font-black tracking-tight text-white lg:text-4xl">
+        {title}
+      </h2>
+      {body ? (
+        <p className="mt-4 text-sm leading-7 text-zinc-400 lg:text-base">{body}</p>
+      ) : null}
+    </div>
+  );
+}
+
+function FallbackCard({ title, body }) {
+  return (
+    <div className="rounded-[28px] border border-white/10 bg-[#121212] p-6">
+      <div className="text-[10px] uppercase tracking-[0.32em] text-zinc-500">
+        Standby
+      </div>
+      <h3 className="mt-3 text-xl font-semibold text-white">{title}</h3>
+      <p className="mt-3 text-sm leading-6 text-zinc-400">{body}</p>
+    </div>
+  );
+}
+
+export default function RideRoutePage() {
+  const { slug } = useParams();
+  const route = GRAPH?.routes?.[slug];
+
+  if (!route) {
+    return (
+      <div className="min-h-screen bg-[#050505] px-6 pb-20 pt-28 text-zinc-200">
+        <div className="mx-auto max-w-4xl rounded-[32px] border border-white/10 bg-[#121212] p-8 lg:p-10">
+          <div className="text-[10px] uppercase tracking-[0.34em] text-[#CDA755]">
+            Mission Briefing
+          </div>
+          <h1 className="mt-4 text-3xl font-black tracking-tight text-white">
+            Route Not Found
+          </h1>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-zinc-400">
+            The requested mission line is not currently indexed in the route graph. Return to the global hub map to re-enter the network from an active airport.
+          </p>
+          <div className="mt-8">
+            <Link
+              to="/airports"
+              className="inline-flex items-center gap-3 rounded-full border border-[#A76330]/40 bg-[#A76330]/15 px-5 py-3 text-sm font-semibold text-[#E2BB76] transition-colors hover:border-[#A76330]/60 hover:bg-[#A76330]/20"
+            >
+              Return To Hub Map
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const airportCode = route?.airport?.code?.toUpperCase?.() || "";
+  const airportCity = route?.airport?.city || "Origin Hub";
+  const destinationName = route?.destination?.name || "Destination";
+  const destinationSlug = route?.destination?.slug || "";
+  const routeName =
+    route?.name ||
+    route?.title ||
+    `${airportCity} to ${destinationName}`;
+  const routeDistance = getRouteDistance(route);
+  const routeDifficulty = getRouteDifficulty(route);
+  const routeDuration = getRouteDuration(route);
+  const heroImage = getRouteHeroImage(route);
+  const pois = getPoiRecords(route);
+
+  const rentals = (GRAPH?.rentalsByAirport?.[airportCode] || [])
+    .map((rentalId) => GRAPH?.rentals?.[rentalId])
+    .filter(Boolean);
+
+  const canonicalUrl = `https://jetmymoto.com/route/${route?.slug || slug}`;
   const routeSchema = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": `${destination.name} Motorcycle Route`,
-    "touristType": "Motorcycle",
-    "location": destination.countries.join(", ")
-  }
-
-  const pois = Object.values(POI_INDEX).filter(
-    p => p.region.toLowerCase() === destination.name.toLowerCase()
-  )
+    name: routeName,
+    touristType: "Motorcycle",
+    location: [airportCity, destinationName].filter(Boolean).join(" to ")
+  };
 
   return (
-    <div className="container mx-auto py-12">
+    <div className="min-h-screen bg-[#050505] text-zinc-200">
       <SeoHelmet
-        title={`Ship Motorcycle from ${airport.city} ${airport.code} to ${destination.name} | JetMyMoto`}
-        description={`Ship your motorcycle from ${airport.city} Airport to the ${destination.name} and ride its most legendary roads.`}
-        canonicalUrl={`https://jetmymoto.com/route/${route.slug}`}
+        title={`${routeName} | Motorcycle Mission Briefing | JetMyMoto`}
+        description={`Mission briefing for ${routeName}. Deploy from ${airportCity}${airportCode ? ` (${airportCode})` : ""} and choose between local rentals or full motorcycle logistics.`}
+        canonicalUrl={canonicalUrl}
       />
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(routeSchema)
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(routeSchema) }}
       />
 
-      <h1 className="text-3xl font-bold mb-6">
-        Motorcycle Route: {airport.city} ({airport.code}) → {destination.name}
-      </h1>
+      <section className="relative isolate overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt={routeName}
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.2)_0%,rgba(5,5,5,0.5)_36%,rgba(5,5,5,0.92)_76%,rgba(5,5,5,1)_100%)]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(205,167,85,0.16),transparent_28%)]" />
+        </div>
 
-      <p className="mb-4">
-        Ship your motorcycle to {airport.city} Airport and ride through the {destination.name}.
-      </p>
+        <div className="relative mx-auto flex min-h-[78vh] max-w-7xl items-end px-6 pb-10 pt-28 lg:pb-0">
+          <div className="w-full">
+            <div className="max-w-4xl">
+              <div className="text-[10px] uppercase tracking-[0.38em] text-[#CDA755]">
+                Tactical Mission Briefing
+              </div>
+              <h1 className="mt-5 text-5xl font-black tracking-tight text-white md:text-7xl lg:text-[5.5rem]">
+                {routeName}
+              </h1>
+              <p className="mt-5 text-sm uppercase tracking-[0.3em] text-zinc-300">
+                {airportCity}
+                {airportCode ? ` • ${airportCode}` : ""}
+                {destinationName ? ` • ${destinationName}` : ""}
+              </p>
+              {route?.description ? (
+                <p className="mt-6 max-w-2xl text-sm leading-7 text-zinc-300 lg:text-base">
+                  {route.description}
+                </p>
+              ) : null}
+            </div>
 
-      <p>
-        JetMyMoto provides secure motorcycle air freight to {airport.city} with customs support and logistics assistance.
-      </p>
-
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Link to={`/airport/${airport.code?.toLowerCase()}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
-          Back to {airport.city} Airport
-        </Link>
-        <Link to={`/destination/${destination.slug}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
-          Explore the {destination.name}
-        </Link>
-        <Link to={`/destination/${destination.slug}`} className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
-          Nearby POIs in {destination.name}
-        </Link>
-        <Link to="/moto-airlift#booking" className="text-blue-500 block p-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white text-center">
-          Ship Motorcycle Here
-        </Link>
-      </div>
-
-      <h2 className="mt-16 text-xl font-bold font-serif uppercase tracking-wider mb-2">
-        Recommended Bikes for the {destination.name}
-      </h2>
-      <p className="text-xs font-mono text-zinc-400 uppercase tracking-widest mb-6">
-        No bike? Rent locally at {airport.city} Airport.
-      </p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        {(GRAPH.rentalsByDestination?.[destination.slug?.toLowerCase()] || []).slice(0, 3).map(rentalId => {
-           const rental = GRAPH.rentals[rentalId];
-           if (!rental) return null;
-           return (
-             <div key={rentalId} className="border border-white/10 p-6 rounded-sm bg-zinc-900/50 hover:border-amber-500/40 transition-colors">
-               <div className="flex justify-between items-center mb-4">
-                 <div className="text-[10px] text-amber-500 font-mono uppercase tracking-[0.2em] font-black">{rental.category}</div>
-                 <div className="text-[9px] text-zinc-500 bg-black px-2 py-1 font-mono uppercase border border-white/5">{rental.airport} Terminal</div>
-               </div>
-               <h3 className="font-bold uppercase text-white text-lg font-serif">
-                 {rental.slug.split('-').slice(0,3).join(' ')}
-               </h3>
-               <div className="mt-4 pt-4 border-t border-white/5 flex justify-between items-end">
-                 <div>
-                   <div className="text-[9px] text-zinc-500 uppercase tracking-widest">Rate</div>
-                   <div className="text-white font-mono font-black uppercase text-sm">≈ €150/day</div>
-                 </div>
-                 <button className="text-[9px] text-amber-500 uppercase tracking-widest border border-amber-500 px-3 py-1 hover:bg-amber-500 hover:text-black transition-colors rounded-sm">
-                   View Specs
-                 </button>
-               </div>
-             </div>
-           )
-        })}
-        {(!GRAPH.rentalsByDestination?.[destination.slug?.toLowerCase()] || GRAPH.rentalsByDestination?.[destination.slug?.toLowerCase()].length === 0) && (
-          <div className="col-span-full border border-white/5 bg-zinc-900/30 p-8 text-center">
-            <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-2">No Verified Fleet Data</div>
-            <div className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest">Bring your own machine to this destination.</div>
+            <div className="mt-10 grid gap-4 md:grid-cols-3 lg:translate-y-1/2">
+              <BriefMetric
+                label="Distance"
+                value={routeDistance ? `${routeDistance} km` : "Classified"}
+                icon={RouteIcon}
+              />
+              <BriefMetric
+                label="Difficulty"
+                value={routeDifficulty}
+                icon={ShieldCheck}
+              />
+              <BriefMetric
+                label="Mission Duration"
+                value={routeDuration}
+                icon={Clock3}
+              />
+            </div>
           </div>
-        )}
-      </div>
+        </div>
+      </section>
 
-      <h2 className="mt-10 text-xl font-semibold font-serif uppercase tracking-wider">
-        Stops along this route
-      </h2>
+      <main className="mx-auto max-w-7xl space-y-20 px-6 pb-24 pt-20 lg:pt-40">
+        <section className="space-y-8">
+          <SectionHeader
+            eyebrow="Origin Hub & Waypoints"
+            title="Theater Entry And Route Intelligence"
+            body="Every mission line resolves back to an origin airport hub so the rider can choose between shipping in their own machine or pulling from the local rental fleet."
+          />
 
-      <ul>
-        {(pois || []).slice(0,5).map(p => (
-          <li key={p.slug}>
-            <Link to={`/poi/${p.slug}`} className="text-blue-500">
-              {p.name}
+          <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)]">
+            <div className="rounded-[28px] border border-white/10 bg-[#121212] p-6">
+              <div className="text-[10px] uppercase tracking-[0.32em] text-zinc-500">
+                Origin Hub
+              </div>
+              <div className="mt-5 rounded-[24px] border border-white/10 bg-[#050505] p-5">
+                <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                  <Plane className="h-4 w-4 text-[#CDA755]" />
+                  Airport Staging
+                </div>
+                <div className="mt-3 text-3xl font-black tabular-nums text-white">
+                  {airportCode || "TBD"}
+                </div>
+                <div className="mt-2 text-sm text-zinc-300">{airportCity}</div>
+                <div className="mt-5">
+                  <Link
+                    to={airportCode ? `/airport/${airportCode.toLowerCase()}` : "/airports"}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#E2BB76] transition-colors hover:text-white"
+                  >
+                    Open Hub Briefing
+                    <ArrowUpRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              {pois.length > 0 ? (
+                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {pois.map((poi) => (
+                    <Link
+                      key={poi?.slug || poi?.id || poi?.name}
+                      to={`/poi/${poi?.slug || poi?.id}`}
+                      className="group rounded-[28px] border border-white/10 bg-[#121212] p-5 transition-colors hover:border-[#A76330]/35 hover:bg-[#151515]"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <div className="text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                            Waypoint
+                          </div>
+                          <h3 className="mt-3 text-xl font-semibold text-white">
+                            {poi?.name || "Unnamed POI"}
+                          </h3>
+                        </div>
+                        <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#CDA755]" />
+                      </div>
+
+                      <div className="mt-4 text-sm leading-6 text-zinc-400">
+                        {[poi?.type, poi?.country, poi?.region]
+                          .filter(Boolean)
+                          .join(" • ") || "Route intelligence node"}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <FallbackCard
+                  title="No POI briefings linked"
+                  body="This route does not currently expose waypoint records in the graph. The mission can still be deployed from the origin hub and rental fleet below."
+                />
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section className="space-y-8">
+          <SectionHeader
+            eyebrow="Mission-Specific Fleet"
+            title="Best Machines For This Route"
+            body="Fleet selection is resolved from the route's origin airport so the rider sees what is actually staged at the starting line."
+          />
+
+          {rentals.length > 0 ? (
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {rentals.map((rental) => (
+                <RentalCard
+                  key={rental?.id || rental?.slug}
+                  rental={rental}
+                  airport={GRAPH?.airports?.[airportCode?.toLowerCase?.()] || null}
+                />
+              ))}
+            </div>
+          ) : (
+            <FallbackCard
+              title="No staged rental fleet indexed"
+              body="No rental machines are currently linked to this route's origin airport in `GRAPH.rentalsByAirport`. The logistics handoff remains fully available."
+            />
+          )}
+        </section>
+
+        <section className="rounded-[32px] border border-white/10 bg-[linear-gradient(145deg,rgba(18,18,18,0.96),rgba(10,10,10,0.9))] p-8 lg:p-10">
+          <SectionHeader
+            eyebrow="Dual-Engine Deployment Handoff"
+            title="Initiate Mission Deployment"
+            body="How do you want to execute this mission?"
+          />
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <Link
+              to={airportCode ? `/moto-airlift?airport=${airportCode}` : "/moto-airlift"}
+              className="group rounded-[28px] border border-[#A76330]/35 bg-[#A76330]/12 p-6 transition-colors hover:border-[#A76330]/55 hover:bg-[#A76330]/18"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.28em] text-[#CDA755]">
+                    Logistics Engine
+                  </div>
+                  <h3 className="mt-3 text-2xl font-semibold text-white">
+                    Ship Your Machine
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-300">
+                    Open Moto Airlift with the origin hub preloaded for {airportCode || "this route"}.
+                  </p>
+                </div>
+                <ArrowUpRight className="h-5 w-5 shrink-0 text-[#CDA755] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </div>
             </Link>
-          </li>
-        ))}
-      </ul>
 
+            <Link
+              to={airportCode ? `/airport/${airportCode.toLowerCase()}?mode=rent` : "/airports"}
+              className="group rounded-[28px] border border-white/10 bg-[#121212] p-6 transition-colors hover:border-[#A76330]/35 hover:bg-[#151515]"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.28em] text-[#CDA755]">
+                    Rental Engine
+                  </div>
+                  <h3 className="mt-3 text-2xl font-semibold text-white">
+                    Rent Locally
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-300">
+                    Open the local showroom at {airportCode || "the origin hub"} and stage a machine directly from the airport fleet.
+                  </p>
+                </div>
+                <ArrowUpRight className="h-5 w-5 shrink-0 text-[#CDA755] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </div>
+            </Link>
+          </div>
+
+          {destinationSlug ? (
+            <div className="mt-6">
+              <Link
+                to={`/destination/${destinationSlug}`}
+                className="inline-flex items-center gap-2 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
+              >
+                Continue into destination intelligence
+                <ArrowUpRight className="h-4 w-4 text-[#CDA755]" />
+              </Link>
+            </div>
+          ) : null}
+        </section>
+      </main>
     </div>
-  )
-
+  );
 }

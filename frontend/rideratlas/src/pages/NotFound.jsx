@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AlertTriangle, Home } from 'lucide-react';
 
 const NotFound = () => {
@@ -10,9 +11,9 @@ const NotFound = () => {
       <p className="text-slate-500 max-w-md mb-8">
         You have drifted off the navigational grid. This waypoint does not exist.
       </p>
-      <a href="/" className="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-full transition-all flex items-center gap-2">
+      <Link to="/" className="px-8 py-3 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-full transition-all flex items-center gap-2">
         <Home className="w-5 h-5" /> RETURN TO BASE
-      </a>
+      </Link>
     </div>
   );
 };

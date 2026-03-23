@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { db } from "../../lib/firebase/config"; // adjust if your export differs
+import { db } from "../../lib/firebase"; // adjust if your export differs
 import {
   collection,
   onSnapshot,

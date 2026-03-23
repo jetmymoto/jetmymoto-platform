@@ -2,27 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import JetHeroActionPanel from './JetHeroActionPanel';
+import { SITE_MEDIA } from '@/config/siteMedia';
 
 const JetHero = ({ variant }) => {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden bg-[#050505] selection:bg-amber-500/30">
       {/* Background Layer: Cinematic Luxury Video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <motion.video 
+        <motion.video
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 10, ease: "easeOut" }}
-          autoPlay 
-          muted 
-          loop 
+          autoPlay
+          muted
+          loop
           playsInline
           className="w-full h-full object-cover opacity-50 brightness-[0.7]"
-        >
-          <source 
-            src="https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2FCinematic_Drone_Intro_Code_Upgrade.mp4?alt=media" 
-            type="video/mp4" 
-          />
-        </motion.video>
+          src={SITE_MEDIA.GLOBAL_FALLBACK_VIDEO}
+        />
         
         {/* Luxury Vignette & Masking */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />

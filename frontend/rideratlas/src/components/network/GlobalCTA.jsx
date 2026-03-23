@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const GlobalCTA = () => {
 
   return (
@@ -11,12 +13,12 @@ const GlobalCTA = () => {
         Our logistics officers align your machine with the ideal riding theater.
       </p>
 
-      <a
-        href="/moto-airlift"
+      <Link
+        to="/moto-airlift"
         className="px-8 py-4 border border-white/10 hover:border-amber-500 transition"
       >
         Request Global Deployment Strategy
-      </a>
+      </Link>
 
     </section>
   );

@@ -1,11 +1,13 @@
-import { useParams } from "react-router-dom"
+import { useParams, useSearchParams } from "react-router-dom"
 import { GRAPH } from "@/core/network/networkGraph"
 import AirportTemplate from "@/features/airport/AirportTemplate"
 import { useState } from "react"
 
 export default function AirportPage() {
   const { code } = useParams()
+  const [searchParams] = useSearchParams()
   const airport = GRAPH.airports?.[code?.toUpperCase()]
+  const initialRideMode = searchParams.get("mode") === "rent" ? "rent" : "bring";
 
   const [intent, setIntent] = useState("moto")
 
@@ -23,6 +25,7 @@ export default function AirportPage() {
       airport={airport}
       intent={intent}
       setIntent={setIntent}
+      initialRideMode={initialRideMode}
     />
   )
 }

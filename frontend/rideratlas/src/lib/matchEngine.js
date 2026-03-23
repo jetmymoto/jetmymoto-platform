@@ -10,9 +10,13 @@ export async function getBestOptionLive(from, to) {
       body: JSON.stringify({ from, to })
     });
 
-    const data = await res.json();
+    if (!res.ok) {
+      console.warn(`Match engine HTTP error: ${res.status}`);
+      return null;
+    }
 
-    if (!data.success) return null;
+    const data = await res.json();
+    if (!data || !data.success) return null;
 
     if (data.type === "join") {
       return {

@@ -1,0 +1,30 @@
+operator_id	name	type	airports	country	website_url
+eagle-rider-mxp	EagleRider Milan Airport	global	MXP	IT	https://www.eaglerider.com/milan-airport
+motorcycle-rental-europe-mxp	Motorcycle Rental Europe	local	MXP	IT	https://www.motorcycle-rental-europe.com/
+superbike-rental-lhr	Superbike Rental	local	LHR	GB	https://www.superbikerental.co.uk/
+hibike4u-lhr	HiBike4u	local	LHR	GB	https://hibike4u.co.uk/
+gogreen-motorcycles-lhr	GoGreen Motorcycles	local	LHR	GB	https://gogreenmotorcycles.com/
+eagle-rider-lax	EagleRider Los Angeles	global	LAX	US	https://www.eaglerider.com/motorcycle-rental/lax-los-angeles-international-airport
+ride2rideagain-lax	Ride2RideAgain	local	LAX	US	https://www.ride2rideagain.com/
+motorentals-lax	Motorentals.net	local	LAX	US	https://www.motorentals.net/
+cycle-bc-yvr	Cycle BC Rentals	local	YVR	CA	https://cyclebc.ca/vancouver/motorcycles/rentals-and-tours/rentals/
+eagle-rider-yvr	EagleRider Vancouver	global	YVR	CA	https://www.eaglerider.com/motorcycle-rental/yvr-vancouver-international-airport
+eagle-rider-bna	EagleRider Nashville	global	BNA	US	https://www.eaglerider.com/motorcycle-rental/bna-nashville-international-airport
+riders-share-bna	Riders Share Nashville	local	BNA	US	https://www.riders-share.com/us/nashville-tn
+
+rental_id	airport_code	operator_id	brand	model_name	category	price_per_day	currency	compatible_destinations
+bmw-r1300gs-mxp-eagle-rider-mxp	MXP	eagle-rider-mxp	BMW	R 1300 GS	adventure	349.69	USD	dolomites|stelvio-pass|swiss-alps
+ducati-v4-mxp-motorcycle-rental-europe-mxp	MXP	motorcycle-rental-europe-mxp	Ducati	Multistrada V4	adventure	120	EUR	lake-como|dolomites|alps
+moto-morini-xcape-mxp-motorcycle-rental-europe-mxp	MXP	motorcycle-rental-europe-mxp	Moto Morini	X-CAPE	adventure	73	EUR	lake-maggiore|milan-city|alps
+bmw-r1300gs-adv-lhr-superbike-rental-lhr	LHR	superbike-rental-lhr	BMW	R 1300 GS Adventure	adventure	275	GBP	cotswolds|stonehenge|wales
+triumph-bonneville-t120-lhr-superbike-rental-lhr	LHR	superbike-rental-lhr	Triumph	Bonneville T120	classic	180	GBP	oxford|london-city|brighton
+honda-forza-125-lhr-hibike4u-lhr	LHR	hibike4u-lhr	Honda	Forza 125CC	scrambler	10.00*	GBP	london-city|windsor|slough
+hd-tri-glide-ultra-lax-eagle-rider-lax	LAX	eagle-rider-lax	Harley-Davidson	Tri Glide Ultra	touring	331	USD	pacific-coast-highway|malibu|joshua-tree
+honda-grom-lax-ride2rideagain-lax	LAX	ride2rideagain-lax	Honda	Grom 125cc	scrambler	50	USD	santa-monica|venice-beach|hollywood
+yamaha-mt07-lax-eagle-rider-lax	LAX	eagle-rider-lax	Yamaha	MT-07	sport-touring	121	USD	mulholland-drive|angeles-crest|malibu
+bmw-r1300gs-adv-yvr-cycle-bc-yvr	YVR	cycle-bc-yvr	BMW	R 1300 GS Adventure	adventure	270	CAD	sea-to-sky-highway|whistler|vancouver-island
+hd-streetglide-yvr-cycle-bc-yvr	YVR	cycle-bc-yvr	Harley-Davidson	Streetglide	touring	250	CAD	vancouver-island|canadian-rockies|squamish
+honda-transalp-yvr-cycle-bc-yvr	YVR	cycle-bc-yvr	Honda	Transalp 750	adventure	200	CAD	vancouver-island|whistler|pemberton
+hd-road-glide-bna-eagle-rider-bna	BNA	eagle-rider-bna	Harley-Davidson	Road Glide	touring	208	USD	natchez-trace|smoky-mountains|nashville-city
+yamaha-tenere-700-bna-eagle-rider-bna	BNA	eagle-rider-bna	Yamaha	Tenere 700	adventure	183	USD	tail-of-the-dragon|cherohala-skyway|nashville-ridge
+honda-cbr650r-bna-riders-share-bna	BNA	riders-share-bna	Honda	CBR650R	sport-touring	44	USD	nashville-city|ashland-city|cumberland-plateau

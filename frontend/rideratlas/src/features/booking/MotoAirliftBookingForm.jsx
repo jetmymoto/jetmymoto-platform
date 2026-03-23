@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { geocodeCity, createMotoQuote as createMotoQuoteApi } from "@/services/bookingService";
 import {
   Bike,
   CheckCircle2,
@@ -23,6 +24,17 @@ const trackClick = (evt) => {
 
 export default function MotoAirliftBookingForm() {
   const [searchParams] = useSearchParams();
+  const rentalIntent = searchParams.get("intent") === "rent";
+  const selectedRentalId = searchParams.get("rental");
+  const selectedRental = selectedRentalId ? GRAPH.rentals?.[selectedRentalId] : null;
+  const selectedAirportCode = searchParams.get("airport")?.toUpperCase();
+  const selectedAirport = selectedAirportCode ? GRAPH.airports?.[selectedAirportCode] : null;
+  const selectedMachineLabel =
+    searchParams.get("machine") ||
+    (selectedRental?.slug ? selectedRental.slug.replace(/-/g, " ").toUpperCase() : "");
+  const selectedOperatorLabel =
+    searchParams.get("operator") ||
+    (selectedRental?.operator ? GRAPH.operators?.[selectedRental.operator]?.name || selectedRental.operator : "");
 
   const [submitted, setSubmitted] = useState(false);
   const [bookingRef, setBookingRef] = useState("");
@@ -92,8 +104,39 @@ export default function MotoAirliftBookingForm() {
     setCurrentUrl(window.location.href);
   }, [searchParams]);
 
+  useEffect(() => {
+    if (!rentalIntent || !selectedRental) return;
+
+    setFormData((prev) => {
+      const totalSelected =
+        prev.bikes.small + prev.bikes.medium + prev.bikes.large;
+
+      const next = { ...prev };
+
+      if (!prev.destinationCity && selectedAirport) {
+        next.destinationCity = `${selectedAirport.city} (${selectedAirport.code})`;
+      }
+
+      if (totalSelected === 0) {
+        next.bikes = { small: 0, medium: 1, large: 0 };
+        next.bikeDetails = [{ class: "medium", model: selectedMachineLabel }];
+      } else if (
+        selectedMachineLabel &&
+        !prev.bikeDetails.some((detail) => detail.model === selectedMachineLabel)
+      ) {
+        next.bikeDetails = prev.bikeDetails.length > 0
+          ? prev.bikeDetails
+          : [{ class: "medium", model: selectedMachineLabel }];
+      }
+
+      return next;
+    });
+  }, [rentalIntent, selectedRental, selectedAirport, selectedMachineLabel]);
+
   const context = {
-    bookingTag: "Initiate hub logistics to secure your transport plan."
+    bookingTag: rentalIntent
+      ? "Rental intake uplink active. Machine context locked from showroom."
+      : "Initiate hub logistics to secure your transport plan."
   };
 
   const pickupCities = useMemo(() => {
@@ -129,7 +172,14 @@ export default function MotoAirliftBookingForm() {
     e.preventDefault();
     trackClick({ type: "quote_submit", mode: "bike", ...formData });
 
-    let payload = { ...formData };
+    let payload = {
+      ...formData,
+      requestMode: rentalIntent ? "rental" : "logistics",
+      selectedRentalId: selectedRental?.id || selectedRentalId || null,
+      selectedRentalAirport: selectedAirport?.code || selectedAirportCode || selectedRental?.airport || null,
+      selectedRentalOperator: selectedOperatorLabel || null,
+      selectedRentalMachine: selectedMachineLabel || null,
+    };
 
     async function ensureCoordinates(payload) {
       if (payload.pickupLat && payload.destinationLat) {
@@ -205,7 +255,7 @@ export default function MotoAirliftBookingForm() {
   }, [currentUrl]);
 
   return (
-    <section id="booking" className="py-32 bg-black border-t border-white/5 relative">
+    <section id="booking" className="py-32 bg-[#050505] border-t border-white/5 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-amber-500/60 to-transparent" />
 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-20">
@@ -214,8 +264,45 @@ export default function MotoAirliftBookingForm() {
               {context.bookingTag}
             </div>
             <h2 className="text-4xl md:text-6xl font-serif font-black italic uppercase text-white mb-6">
-              Secure Your Transport Plan
+              {rentalIntent ? "Request This Machine" : "Secure Your Transport Plan"}
             </h2>
+
+            {rentalIntent && selectedRental && (
+              <div className="w-full max-w-3xl mb-8 rounded-sm border border-amber-500/30 bg-amber-500/5 p-5 text-left">
+                <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                  <div>
+                    <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-amber-500 font-black mb-2">
+                      Selected Machine
+                    </div>
+                    <div className="text-2xl font-black uppercase tracking-tight text-white">
+                      {selectedMachineLabel}
+                    </div>
+                    <div className="mt-2 text-[11px] uppercase tracking-[0.22em] text-zinc-400">
+                      {selectedOperatorLabel || "Verified Partner"} • {selectedAirport?.city || selectedAirportCode}
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 md:min-w-[260px]">
+                    <div>
+                      <div className="text-[9px] font-mono uppercase tracking-widest text-zinc-500 font-black">
+                        Intent
+                      </div>
+                      <div className="mt-1 text-[11px] font-mono uppercase tracking-widest text-white font-black">
+                        Rental Intake
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-[9px] font-mono uppercase tracking-widest text-zinc-500 font-black">
+                        Hub
+                      </div>
+                      <div className="mt-1 text-[11px] font-mono uppercase tracking-widest text-white font-black">
+                        {selectedAirport?.code || selectedAirportCode || "---"}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="flex items-center gap-4">
               <button
@@ -263,7 +350,7 @@ export default function MotoAirliftBookingForm() {
                 >
                   <div className="space-y-2 col-span-1 md:col-span-2">
                     <label className="font-mono text-[10px] uppercase tracking-widest text-zinc-300 italic ml-1 font-bold">
-                      Pickup Location
+                      {rentalIntent ? "Home Base / Origin Region" : "Pickup Location"}
                     </label>
                     <LocationInput
                       value={formData.pickupCity}
@@ -282,17 +369,23 @@ export default function MotoAirliftBookingForm() {
                     <div className="flex items-center gap-2 pt-2 text-zinc-400">
                       <Info size={12} className="text-amber-500/70" />
                       <span className="font-mono text-[10px] uppercase tracking-widest italic">
-                        Start typing to search for a city or region. No precise address required at this stage.
+                        {rentalIntent
+                          ? "Tell ops where you are coming from. We already attached the requested rental hub below."
+                          : "Start typing to search for a city or region. No precise address required at this stage."}
                       </span>
                     </div>
                   </div>
 
                   <div className="space-y-2 col-span-1 md:col-span-2">
                     <label className="font-mono text-[10px] uppercase tracking-widest text-zinc-300 italic ml-1 font-bold">
-                      Destination
+                      {rentalIntent ? "Rental Hub" : "Destination"}
                     </label>
                     <LocationInput
-                      placeholder="Where should we deliver your bike?"
+                      placeholder={
+                        rentalIntent
+                          ? "Which airport hub should stage the rental?"
+                          : "Where should we deliver your bike?"
+                      }
                       value={formData.destinationCity}
                       onChange={(e) => setFormData(p => ({ ...p, destinationCity: e.target.value }))}
                       onSelect={(loc) => {
@@ -449,7 +542,9 @@ export default function MotoAirliftBookingForm() {
 
                   <div className="md:col-span-2 pt-4">
                     <p className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 italic text-center mb-4 font-bold">
-                      No payment required. Quote confirmation only.
+                      {rentalIntent
+                        ? "No payment required. This opens a machine availability request with the current intake flow."
+                        : "No payment required. Quote confirmation only."}
                     </p>
 
                     <button
@@ -458,7 +553,7 @@ export default function MotoAirliftBookingForm() {
                       className="w-full bg-amber-500 text-black py-6 font-mono font-black uppercase tracking-[0.3em] text-base hover:bg-amber-400 disabled:bg-zinc-800 disabled:text-zinc-500 disabled:cursor-not-allowed transition-all flex flex-col items-center justify-center gap-1 shadow-[0_10px_40px_rgba(245,158,11,0.2)] disabled:shadow-none"
                     >
                       <span className="flex items-center gap-3">
-                        Secure My Transport Plan <ArrowRight size={20} />
+                        {rentalIntent ? "Request This Machine" : "Secure My Transport Plan"} <ArrowRight size={20} />
                       </span>
 
                       {totalBikes > 1 && (

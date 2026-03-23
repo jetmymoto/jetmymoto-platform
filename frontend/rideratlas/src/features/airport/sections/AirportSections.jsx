@@ -17,7 +17,7 @@ export function RecoverySection({ data }) {
   if (!data || (!data.premium?.name && !data.budget?.name)) return null;
 
   return (
-    <section id="recovery" className="py-24 bg-black border-t border-white/5 relative">
+    <section id="recovery" className="py-24 bg-[#050505] border-t border-white/5 relative">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="mb-12">
           <div className="text-amber-500 font-mono text-[11px] font-black tracking-[0.5em] uppercase italic mb-4">
@@ -166,7 +166,7 @@ export function CityExtensionSection({ data }) {
   return (
     <section
       id="extension"
-      className="py-24 bg-black border-t border-white/5 relative overflow-hidden"
+      className="py-24 bg-[#050505] border-t border-white/5 relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="mb-16">
@@ -340,7 +340,7 @@ export function PivotSection({ airport }) {
   return (
     <section
       id="pivot"
-      className="py-24 bg-black border-t border-white/5 relative overflow-hidden text-center md:text-left"
+      className="py-24 bg-[#050505] border-t border-white/5 relative overflow-hidden text-center md:text-left"
     >
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="rounded-[3rem] border border-amber-500/20 bg-gradient-to-br from-zinc-900/80 via-black/90 to-black p-10 md:p-20 backdrop-blur-2xl">

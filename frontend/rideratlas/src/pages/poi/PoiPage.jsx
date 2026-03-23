@@ -1,26 +1,69 @@
-import { useParams, Link } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 
-import { POI_INDEX } from "@/features/poi/poiIndex"
 import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
-import { useContext } from "react";
-import { NetworkGraphContext } from "@/features/network/NetworkGraphContext";
+import { GRAPH } from "@/core/network/networkGraph";
 
 export default function PoiPage() {
+  const { slug } = useParams();
+  const [poi, setPoi] = useState(() => GRAPH.pois?.[slug] || null);
+  const [loading, setLoading] = useState(() => !GRAPH.pois?.[slug]);
 
-  const { slug } = useParams()
+  useEffect(() => {
+    let active = true;
 
-  const poi = POI_INDEX[slug]
+    const loadPoi = async () => {
+      if (!slug) {
+        if (!active) return;
+        setPoi(null);
+        setLoading(false);
+        return;
+      }
 
-  if (!poi) {
-    return <div>POI not found</div>
+      const graphPoi = GRAPH.pois?.[slug];
+      if (graphPoi) {
+        if (!active) return;
+        setPoi(graphPoi);
+        setLoading(false);
+        return;
+      }
+
+      setLoading(true);
+
+      try {
+        const module = await import("@/features/poi/poiFiltered.json");
+        if (!active) return;
+        setPoi(module.default?.[slug] || null);
+      } catch (error) {
+        if (!active) return;
+        console.error("Failed to load POI dataset", error);
+        setPoi(null);
+      } finally {
+        if (active) {
+          setLoading(false);
+        }
+      }
+    };
+
+    loadPoi();
+
+    return () => {
+      active = false;
+    };
+  }, [slug]);
+
+  if (loading) {
+    return <div className="container mx-auto py-12 text-white">Loading POI...</div>;
   }
 
-  const airport = AIRPORT_INDEX[poi.nearest_airport]
+  if (!poi) {
+    return <div className="container mx-auto py-12 text-white">POI not found</div>;
+  }
 
-  const { routes: allRoutes } = useContext(NetworkGraphContext);
-  const routes = allRoutes.filter(
-    r => r.destination.slug === "dolomites" || r.destination.slug === "alps"
-  )
+  const airport = AIRPORT_INDEX[poi.nearest_airport];
+  const routes = Object.values(GRAPH.routes || {}).filter(
+    (route) => route.destination?.slug === "dolomites" || route.destination?.slug === "alps",
+  );
 
   return (
     <div className="container mx-auto py-12">
@@ -37,12 +80,16 @@ export default function PoiPage() {
         Nearest Airport
       </h2>
 
-      <Link
-        to={`/airport/${(airport.code || "").toLowerCase()}`}
-        className="text-blue-500"
-      >
-        {airport.city} ({airport.code})
-      </Link>
+      {airport ? (
+        <Link
+          to={`/airport/${(airport.code || "").toLowerCase()}`}
+          className="text-blue-500"
+        >
+          {airport.city} ({airport.code})
+        </Link>
+      ) : (
+        <span className="text-zinc-400">Airport data unavailable</span>
+      )}
 
       <h2 className="mt-10 text-xl font-semibold">
         Ride Routes From Nearby Airports

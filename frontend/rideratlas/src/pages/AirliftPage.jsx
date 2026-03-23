@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Clock, MapPin, Truck, CheckCircle2, Package, Star, Plane, Play, Compass, Plus, ArrowRight, User, X, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,11 +9,13 @@ import AirliftClassSection from '@/components/AirliftClassSection';
 
 // 🟢 🟢 🟢 VIDEO CONTROL CENTER 🟢 🟢 🟢
 // PASTE YOUR NEW VIDEO LINKS HERE!
-const VIDEOS = {
-  HERO: "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2Fairlif%20hero%20video.mp4?alt=media&token=bcc5c1f3-fc5f-4556-a355-e0ba76d18f9b",
-  PREMIUM: "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2Fairlif%20hero%20video.mp4?alt=media&token=bcc5c1f3-fc5f-4556-a355-e0ba76d18f9b", // Change this later
-  ECONOMY: "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2Fairlif%20hero%20video.mp4?alt=media&token=bcc5c1f3-fc5f-4556-a355-e0ba76d18f9b", // Change this later
-  CONNECT: "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2Fairlif%20hero%20video.mp4?alt=media&token=bcc5c1f3-fc5f-4556-a355-e0ba76d18f9b", // Change this later
+import { SITE_MEDIA } from "@/config/siteMedia";
+
+const AIRLIFT_VIDEOS = {
+  HERO: SITE_MEDIA.AIRLIFT_HERO,
+  PREMIUM: SITE_MEDIA.AIRLIFT_HERO, // Change this later
+  ECONOMY: SITE_MEDIA.AIRLIFT_HERO, // Change this later
+  CONNECT: SITE_MEDIA.AIRLIFT_HERO, // Change this later
 };
 
 const WHATSAPP_NUMBER = "15550000000"; // Change this to your real number
@@ -135,7 +137,7 @@ import { getSiteConfig } from '@/utils/siteConfig';
         </section>
 
         {/* --- 🧭 HUD NAV --- */}
-        <div className="sticky top-0 z-50 flex justify-center w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl transition-all duration-500 hover:bg-[#050505]/90">
+        <div className="sticky top-20 z-40 flex justify-center w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl transition-all duration-500 hover:bg-[#050505]/90">
           <div className="flex items-center gap-8 py-4 overflow-x-auto px-4">
              <button onClick={() => scrollToSection('how-it-works')} className="text-xs font-bold tracking-widest text-slate-500 hover:text-white uppercase hover:tracking-[0.2em] transition-all">Process</button>
              <div className="w-px h-4 bg-white/20"></div>
