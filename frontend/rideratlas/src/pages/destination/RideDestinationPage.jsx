@@ -1,9 +1,14 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useReducer } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowUpRight, MapPin, Plane, Route, ShieldCheck } from "lucide-react";
 
 import RentalCard from "@/features/rentals/components/RentalCard";
-import { GRAPH } from "@/core/network/networkGraph";
+import {
+  GRAPH,
+  readGraphShard,
+  getGraphShardStatus,
+  loadGraphShard,
+} from "@/core/network/networkGraph";
 import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 
 function getRouteRecord(routeRef) {
@@ -23,18 +28,18 @@ function getRouteRecord(routeRef) {
   return null;
 }
 
-function getRentalRecord(rentalRef) {
+function getRentalRecord(rentalRef, rentalsMap) {
   if (!rentalRef) {
     return null;
   }
 
   if (typeof rentalRef === "string") {
-    return GRAPH?.rentals?.[rentalRef] || null;
+    return rentalsMap?.[rentalRef] || null;
   }
 
   if (typeof rentalRef === "object") {
     const slug = rentalRef.slug || rentalRef.id;
-    return GRAPH?.rentals?.[slug] || rentalRef;
+    return rentalsMap?.[slug] || rentalRef;
   }
 
   return null;
@@ -42,6 +47,7 @@ function getRentalRecord(rentalRef) {
 
 function getRouteAirportCode(route) {
   const airportCode =
+    route?.originAirportCode ||
     route?.airport?.code ||
     route?.airportCode ||
     route?.hub?.code ||
@@ -65,8 +71,8 @@ function getRouteName(route) {
 
 function getRouteDistance(route) {
   return (
-    route?.distance_km ||
     route?.distanceKm ||
+    route?.distance_km ||
     route?.distance ||
     route?.length_km ||
     null
@@ -115,6 +121,29 @@ export default function RideDestinationPage() {
   const { slug } = useParams();
 
   const destination = GRAPH?.destinations?.[slug] || null;
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+
+  // ── Non-blocking shard load → re-render when done ──
+  useEffect(() => {
+    const status = getGraphShardStatus("rentals");
+    if (status === "idle") {
+      loadGraphShard("rentals").then(forceUpdate);
+    } else if (status === "loading") {
+      const interval = setInterval(() => {
+        if (getGraphShardStatus("rentals") === "loaded") {
+          clearInterval(interval);
+          forceUpdate();
+        }
+      }, 50);
+      return () => clearInterval(interval);
+    }
+  }, []);
+
+  // ── Shard-first + GRAPH fallback ──
+  const rentalShard = readGraphShard("rentals");
+  const rentalsMap = rentalShard?.rentals ?? GRAPH.rentals;
+  const rentalsByDestination =
+    rentalShard?.rentalIndexes?.rentalsByDestination ?? GRAPH.rentalsByDestination;
 
   const routes = useMemo(() => {
     return (GRAPH?.routesByDestination?.[slug] || [])
@@ -123,10 +152,10 @@ export default function RideDestinationPage() {
   }, [slug]);
 
   const rentals = useMemo(() => {
-    return (GRAPH?.rentalsByDestination?.[slug] || [])
-      .map(getRentalRecord)
+    return (rentalsByDestination?.[slug] || [])
+      .map((ref) => getRentalRecord(ref, rentalsMap))
       .filter(Boolean);
-  }, [slug]);
+  }, [slug, rentalsMap, rentalsByDestination]);
 
   const primaryAirportCode = useMemo(() => {
     return routes.map(getRouteAirportCode).find(Boolean) || "";
@@ -147,7 +176,7 @@ export default function RideDestinationPage() {
           </p>
           <div className="mt-8">
             <Link
-              to="/airports"
+              to="/airport"
               className="inline-flex items-center gap-3 rounded-full border border-[#A76330]/40 bg-[#A76330]/15 px-5 py-3 text-sm font-semibold text-[#E2BB76] transition-colors hover:border-[#A76330]/60 hover:bg-[#A76330]/20"
             >
               Return To Hub Map
@@ -251,7 +280,7 @@ export default function RideDestinationPage() {
                 <RentalCard
                   key={rental.id || rental.slug}
                   rental={rental}
-                  airport={GRAPH?.airports?.[rental.airport?.toLowerCase?.()] || null}
+                  airport={GRAPH?.airports?.[rental.airportCode?.toLowerCase?.() || rental.airport?.toLowerCase?.()] || null}
                 />
               ))}
             </div>

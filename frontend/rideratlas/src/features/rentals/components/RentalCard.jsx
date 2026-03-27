@@ -1,130 +1,20 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Gauge, MapPin, Play, ShieldCheck } from "lucide-react";
-import { GRAPH } from "@/core/network/networkGraph";
-
-const CATEGORY_PRICE_MAP = {
-  adventure: 185,
-  touring: 210,
-  cruiser: 165,
-  classic: 145,
-  scrambler: 175,
-  "sport-touring": 225,
-};
-
-const CATEGORY_MEDIA = {
-  adventure:
-    "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80",
-  touring:
-    "https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=1600&q=80",
-  cruiser:
-    "https://images.unsplash.com/photo-1517846693594-1567da72af75?auto=format&fit=crop&w=1600&q=80",
-  classic:
-    "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
-  scrambler:
-    "https://images.unsplash.com/photo-1515777315835-281b94c9589f?auto=format&fit=crop&w=1600&q=80",
-  "sport-touring":
-    "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1600&q=80",
-  default:
-    "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80",
-};
-
-function titleizeToken(token) {
-  if (!token) return "";
-  if (/^\d/.test(token)) return token.toUpperCase();
-  return token.charAt(0).toUpperCase() + token.slice(1).toLowerCase();
-}
-
-function splitModelTokens(rental) {
-  const slugTokens = String(rental?.slug || "")
-    .split("-")
-    .filter(Boolean);
-  const airportToken = String(rental?.airport || "").toLowerCase();
-  const airportIndex = slugTokens.indexOf(airportToken);
-
-  if (airportIndex <= 0) {
-    return slugTokens;
-  }
-
-  return slugTokens.slice(0, airportIndex);
-}
-
-export function getRentalBrand(rental) {
-  if (typeof rental?.brand === "string" && rental.brand.trim()) {
-    return rental.brand.trim();
-  }
-
-  return titleizeToken(splitModelTokens(rental)[0] || "Unknown");
-}
-
-export function getRentalModelName(rental) {
-  if (typeof rental?.model === "string" && rental.model.trim()) {
-    return rental.model.trim();
-  }
-
-  if (typeof rental?.model_name === "string" && rental.model_name.trim()) {
-    return rental.model_name.trim();
-  }
-
-  const tokens = splitModelTokens(rental).slice(1);
-
-  if (tokens.length === 0) {
-    return "Mission Spec";
-  }
-
-  return tokens.map(titleizeToken).join(" ");
-}
-
-export function getRentalCategoryLabel(rental) {
-  return String(rental?.category || "mission-spec")
-    .split("-")
-    .map(titleizeToken)
-    .join(" ");
-}
-
-export function getRentalPrice(rental) {
-  if (typeof rental?.price_day === "number") {
-    return rental.price_day;
-  }
-
-  if (typeof rental?.price === "number") {
-    return rental.price;
-  }
-
-  if (typeof rental?.price_day === "string") {
-    const parsed = Number.parseFloat(rental.price_day.replace(/[^0-9.]/g, ""));
-    if (!Number.isNaN(parsed)) {
-      return parsed;
-    }
-  }
-
-  return CATEGORY_PRICE_MAP[String(rental?.category || "").toLowerCase()] || 150;
-}
-
-export function formatRentalPrice(rental) {
-  const amount = getRentalPrice(rental);
-  const currency = String(rental?.currency || "EUR").toUpperCase();
-
-  return new Intl.NumberFormat("en-IE", {
-    style: "currency",
-    currency,
-    maximumFractionDigits: amount % 1 === 0 ? 0 : 2
-  }).format(amount);
-}
-
-export function getRentalPosterUrl(rental) {
-  return (
-    rental?.posterUrl ||
-    rental?.imageUrl ||
-    CATEGORY_MEDIA[String(rental?.category || "").toLowerCase()] ||
-    CATEGORY_MEDIA.default
-  );
-}
+import { GRAPH, readGraphShard } from "@/core/network/networkGraph";
+import {
+  getRentalBrand,
+  getRentalModelName,
+  getRentalCategoryLabel,
+  getRentalPrice,
+  formatRentalPrice,
+  getRentalPosterUrl,
+} from "@/features/rentals/utils/rentalFormatters";
 
 function buildRentalRequestPath(rental, machineLabel, operatorName) {
   const params = new URLSearchParams({
     intent: "rent",
-    airport: String(rental?.airport || ""),
+    airport: String(rental?.airportCode || rental?.airport || ""),
     rental: String(rental?.id || ""),
     machine: machineLabel,
     operator: operatorName,
@@ -138,6 +28,12 @@ function buildRentalDetailPath(rental) {
   return `/rental/${rental?.slug || rental?.id || ""}`;
 }
 
+function titleizeToken(token) {
+  if (!token) return "";
+  if (/^\d/.test(token)) return token.toUpperCase();
+  return token.charAt(0).toUpperCase() + token.slice(1).toLowerCase();
+}
+
 function formatDestinationLabel(slug) {
   return String(slug || "")
     .split("-")
@@ -145,10 +41,12 @@ function formatDestinationLabel(slug) {
     .join(" ");
 }
 
-export default function RentalCard({ rental }) {
+export default function RentalCard({ rental, isSelected = false }) {
   const [videoFailed, setVideoFailed] = useState(false);
 
-  const operator = GRAPH.operators?.[rental.operator];
+  const operators =
+    readGraphShard("rentals")?.operators || GRAPH.operators;
+  const operator = operators?.[rental.operatorId || rental.operator];
   const brand = useMemo(() => getRentalBrand(rental), [rental]);
   const modelName = useMemo(() => getRentalModelName(rental), [rental]);
   const categoryLabel = useMemo(() => getRentalCategoryLabel(rental), [rental]);
@@ -159,12 +57,16 @@ export default function RentalCard({ rental }) {
   const machineLabel = `${brand} ${modelName}`.trim();
   const detailPath = useMemo(() => buildRentalDetailPath(rental), [rental]);
   const requestPath = useMemo(
-    () => buildRentalRequestPath(rental, machineLabel, operator?.name || rental.operator),
+    () => buildRentalRequestPath(rental, machineLabel, operator?.name || rental.operatorId || rental.operator),
     [rental, machineLabel, operator]
   );
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#121212] text-white shadow-[0_24px_80px_rgba(0,0,0,0.28)] transition-all duration-500 hover:-translate-y-1.5 hover:border-[#CDA755]/40 hover:shadow-[0_30px_90px_rgba(167,99,48,0.22)]">
+    <article
+      className={`group flex h-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#121212] text-white shadow-[0_24px_80px_rgba(0,0,0,0.28)] transition-all duration-500 hover:-translate-y-1.5 hover:border-[#CDA755]/40 hover:shadow-[0_30px_90px_rgba(167,99,48,0.22)] ${
+        isSelected ? "ring-2 ring-amber-400/80 shadow-[0_0_0_3px_rgba(255,196,79,0.4)]" : ""
+      }`}
+    >
       <div className="relative aspect-[4/4.7] overflow-hidden border-b border-white/10 bg-[#574C43]/20">
         {shouldRenderVideo ? (
           <video

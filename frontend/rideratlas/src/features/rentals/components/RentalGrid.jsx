@@ -1,21 +1,64 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useReducer, useState } from "react";
 import { Filter, SlidersHorizontal } from "lucide-react";
-import { GRAPH } from "@/core/network/networkGraph";
-import RentalCard, {
+import {
+  GRAPH,
+  readGraphShard,
+  getGraphShardStatus,
+  loadGraphShard,
+} from "@/core/network/networkGraph";
+import RentalCard from "@/features/rentals/components/RentalCard";
+import {
   getRentalBrand,
   getRentalCategoryLabel,
   getRentalPrice,
-} from "@/features/rentals/components/RentalCard";
+} from "@/features/rentals/utils/rentalFormatters";
 
 const FILTER_SELECT_CLASS =
   "h-12 min-w-[190px] rounded-full border border-white/10 bg-[#121212] px-4 text-xs font-semibold uppercase tracking-[0.18em] text-white outline-none transition-colors hover:border-[#CDA755]/45 focus:border-[#CDA755]";
 
-export default function RentalGrid({ airportCode }) {
+// Force React re-render after async shard load completes.
+function useForceUpdate() {
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  return forceUpdate;
+}
+
+export default function RentalGrid({ airportCode, highlightedRentalId = null }) {
   const normalizedAirportCode = String(airportCode || "").toUpperCase();
-  const rentalIds = GRAPH.rentalsByAirport?.[normalizedAirportCode] || [];
+  const forceUpdate = useForceUpdate();
+
+  // ── Shard-first + GRAPH fallback ──
+  const rentalsShard = readGraphShard("rentals");
+
+  const rentalsMap = rentalsShard?.rentals || GRAPH.rentals;
+  const rentalsByAirport =
+    rentalsShard?.rentalIndexes?.rentalsByAirport || GRAPH.rentalsByAirport;
+
+  // ── Idle-guard: trigger shard load → re-render when done ──
+  useEffect(() => {
+    if (getGraphShardStatus("rentals") === "idle") {
+      loadGraphShard("rentals")
+        .then(forceUpdate)
+        .catch((error) => {
+          if (import.meta.env.DEV) {
+            console.warn("Rentals shard load failed:", error);
+          }
+        });
+    } else if (getGraphShardStatus("rentals") === "loading") {
+      // Already loading (another component triggered it) — poll for completion
+      const interval = setInterval(() => {
+        if (getGraphShardStatus("rentals") === "loaded") {
+          clearInterval(interval);
+          forceUpdate();
+        }
+      }, 50);
+      return () => clearInterval(interval);
+    }
+  }, [forceUpdate]);
+
+  const rentalIds = rentalsByAirport?.[normalizedAirportCode] || [];
   const rawRentals = useMemo(
-    () => rentalIds.map((id) => GRAPH.rentals?.[id]).filter(Boolean),
-    [rentalIds]
+    () => rentalIds.map((id) => rentalsMap?.[id]).filter(Boolean),
+    [rentalsMap, rentalsByAirport, normalizedAirportCode]
   );
 
   const [filterType, setFilterType] = useState("ALL");
@@ -162,7 +205,13 @@ export default function RentalGrid({ airportCode }) {
       ) : (
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {filteredRentals.map((rental) => (
-            <RentalCard key={rental.id} rental={rental} />
+            <RentalCard
+              key={rental.id}
+              rental={rental}
+              isSelected={
+                rental?.id === highlightedRentalId || rental?.slug === highlightedRentalId
+              }
+            />
           ))}
         </div>
       )}
