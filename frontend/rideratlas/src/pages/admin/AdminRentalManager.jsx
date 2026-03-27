@@ -163,7 +163,7 @@ function synthesizePrompt(rental) {
   const brand = rental?.brand || "motorcycle";
   const model = rental?.model || "fleet machine";
   const destinationBackdrop = formatPromptDestinations(
-    rental?.compatible_destinations,
+    rental?.compatibleDestinations || rental?.compatible_destinations,
   );
 
   return CINEMATIC_POSITIVE_PROMPT_TEMPLATE
@@ -637,7 +637,7 @@ export default function AdminRentalManager() {
                     </span>
                   </div>
                   <div className="mt-3 text-xs uppercase tracking-[0.18em] text-zinc-500">
-                    {formatPromptDestinations(rental.compatible_destinations)}
+                    {formatPromptDestinations(rental.compatibleDestinations || rental.compatible_destinations)}
                   </div>
                 </div>
               ))}

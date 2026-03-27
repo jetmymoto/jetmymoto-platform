@@ -6,10 +6,13 @@ const DEFAULT_OPERATOR = {
 };
 
 function operator(data) {
+  const merged = { ...DEFAULT_OPERATOR, ...data };
   return {
-    ...DEFAULT_OPERATOR,
-    ...data,
-    websiteUrl: data.website_url
+    ...merged,
+    websiteUrl: data.website_url,
+    pricingModel: merged.pricing_model,
+    commissionType: merged.commission_type,
+    commissionValue: merged.commission_value,
   };
 }
 
@@ -159,6 +162,15 @@ export const OPERATORS = {
     type: "global",
     country: "SE",
     airports: ["ARN"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-berlin": operator({
+    id: "hertz-ride-berlin",
+    slug: "hertz-ride-berlin",
+    name: "Hertz Ride Berlin",
+    type: "global",
+    country: "DE",
+    airports: ["BER"],
     website_url: "https://www.hertzride.com/en/locations"
   }),
   "hertz-ride-lisbon": operator({
@@ -394,5 +406,311 @@ export const OPERATORS = {
     country: "ES",
     airports: ["LPA"],
     website_url: "https://www.motoandbike.com/"
+  }),
+  "eaglerider-muc": operator({
+    id: "eaglerider-muc",
+    slug: "eaglerider-muc",
+    name: "EagleRider Munich",
+    type: "global",
+    country: "DE",
+    airports: ["MUC"],
+    website_url: "https://www.eaglerider.com/munich"
+  }),
+  "allround-rent-muc": operator({
+    id: "allround-rent-muc",
+    slug: "allround-rent-muc",
+    name: "Allround Motorradvermietung München",
+    type: "local",
+    country: "DE",
+    airports: ["MUC"],
+    website_url: "https://www.motorradvermietung.de/muenchen/"
+  }),
+  "dwm-ducati-muc": operator({
+    id: "dwm-ducati-muc",
+    slug: "dwm-ducati-muc",
+    name: "DWM Motorradhandel (Ducati Munich)",
+    type: "local",
+    country: "DE",
+    airports: ["MUC"],
+    website_url: "https://ducati-muc.de"
+  }),
+  "rent-a-boxer-muc": operator({
+    id: "rent-a-boxer-muc",
+    slug: "rent-a-boxer-muc",
+    name: "Rent-a-Boxer Munich",
+    type: "local",
+    country: "DE",
+    airports: ["MUC"],
+    website_url: "https://rent-a-boxer.com"
+  }),
+  "eaglerider-bcn": operator({
+    id: "eaglerider-bcn",
+    slug: "eaglerider-bcn",
+    name: "EagleRider Barcelona",
+    type: "global",
+    country: "ES",
+    airports: ["BCN"],
+    website_url: "https://www.eaglerider.com/"
+  }),
+  "eaglerider-fco": operator({
+    id: "eaglerider-fco",
+    slug: "eaglerider-fco",
+    name: "EagleRider Rome",
+    type: "global",
+    country: "IT",
+    airports: ["FCO"],
+    website_url: "https://www.eaglerider.com/"
+  }),
+  "eaglerider-mxp": operator({
+    id: "eaglerider-mxp",
+    slug: "eaglerider-mxp",
+    name: "EagleRider Milan",
+    type: "global",
+    country: "IT",
+    airports: ["MXP"],
+    website_url: "https://www.eaglerider.com/"
+  }),
+  "hertz-ride-amsterdam": operator({
+    id: "hertz-ride-amsterdam",
+    slug: "hertz-ride-amsterdam",
+    name: "Hertz Ride Amsterdam",
+    type: "global",
+    country: "NL",
+    airports: ["AMS"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-brussels": operator({
+    id: "hertz-ride-brussels",
+    slug: "hertz-ride-brussels",
+    name: "Hertz Ride Brussels",
+    type: "global",
+    country: "BE",
+    airports: ["BRU"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-cdg": operator({
+    id: "hertz-ride-cdg",
+    slug: "hertz-ride-cdg",
+    name: "Hertz Ride Paris",
+    type: "global",
+    country: "FR",
+    airports: ["CDG"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-copenhagen": operator({
+    id: "hertz-ride-copenhagen",
+    slug: "hertz-ride-copenhagen",
+    name: "Hertz Ride Copenhagen",
+    type: "global",
+    country: "DK",
+    airports: ["CPH"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-dublin": operator({
+    id: "hertz-ride-dublin",
+    slug: "hertz-ride-dublin",
+    name: "Hertz Ride Dublin",
+    type: "global",
+    country: "IE",
+    airports: ["DUB"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-dusseldorf": operator({
+    id: "hertz-ride-dusseldorf",
+    slug: "hertz-ride-dusseldorf",
+    name: "Hertz Ride Düsseldorf",
+    type: "global",
+    country: "DE",
+    airports: ["DUS"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-edinburgh": operator({
+    id: "hertz-ride-edinburgh",
+    slug: "hertz-ride-edinburgh",
+    name: "Hertz Ride Edinburgh",
+    type: "global",
+    country: "GB",
+    airports: ["EDI"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-fco": operator({
+    id: "hertz-ride-fco",
+    slug: "hertz-ride-fco",
+    name: "Hertz Ride Rome",
+    type: "global",
+    country: "IT",
+    airports: ["FCO"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-florence": operator({
+    id: "hertz-ride-florence",
+    slug: "hertz-ride-florence",
+    name: "Hertz Ride Florence",
+    type: "global",
+    country: "IT",
+    airports: ["FLR"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-frankfurt": operator({
+    id: "hertz-ride-frankfurt",
+    slug: "hertz-ride-frankfurt",
+    name: "Hertz Ride Frankfurt",
+    type: "global",
+    country: "DE",
+    airports: ["FRA"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-geneva": operator({
+    id: "hertz-ride-geneva",
+    slug: "hertz-ride-geneva",
+    name: "Hertz Ride Geneva",
+    type: "global",
+    country: "CH",
+    airports: ["GVA"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-helsinki": operator({
+    id: "hertz-ride-helsinki",
+    slug: "hertz-ride-helsinki",
+    name: "Hertz Ride Helsinki",
+    type: "global",
+    country: "FI",
+    airports: ["HEL"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-lyon": operator({
+    id: "hertz-ride-lyon",
+    slug: "hertz-ride-lyon",
+    name: "Hertz Ride Lyon",
+    type: "global",
+    country: "FR",
+    airports: ["LYS"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-malaga": operator({
+    id: "hertz-ride-malaga",
+    slug: "hertz-ride-malaga",
+    name: "Hertz Ride Málaga",
+    type: "global",
+    country: "ES",
+    airports: ["AGP"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-manchester": operator({
+    id: "hertz-ride-manchester",
+    slug: "hertz-ride-manchester",
+    name: "Hertz Ride Manchester",
+    type: "global",
+    country: "GB",
+    airports: ["MAN"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-munich": operator({
+    id: "hertz-ride-munich",
+    slug: "hertz-ride-munich",
+    name: "Hertz Ride Munich",
+    type: "global",
+    country: "DE",
+    airports: ["MUC"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-nice": operator({
+    id: "hertz-ride-nice",
+    slug: "hertz-ride-nice",
+    name: "Hertz Ride Nice",
+    type: "global",
+    country: "FR",
+    airports: ["NCE"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-oslo": operator({
+    id: "hertz-ride-oslo",
+    slug: "hertz-ride-oslo",
+    name: "Hertz Ride Oslo",
+    type: "global",
+    country: "NO",
+    airports: ["OSL"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-palma": operator({
+    id: "hertz-ride-palma",
+    slug: "hertz-ride-palma",
+    name: "Hertz Ride Palma",
+    type: "global",
+    country: "ES",
+    airports: ["PMI"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-prague": operator({
+    id: "hertz-ride-prague",
+    slug: "hertz-ride-prague",
+    name: "Hertz Ride Prague",
+    type: "global",
+    country: "CZ",
+    airports: ["PRG"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-split": operator({
+    id: "hertz-ride-split",
+    slug: "hertz-ride-split",
+    name: "Hertz Ride Split",
+    type: "global",
+    country: "HR",
+    airports: ["SPU"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-venice": operator({
+    id: "hertz-ride-venice",
+    slug: "hertz-ride-venice",
+    name: "Hertz Ride Venice",
+    type: "global",
+    country: "IT",
+    airports: ["VCE"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-warsaw": operator({
+    id: "hertz-ride-warsaw",
+    slug: "hertz-ride-warsaw",
+    name: "Hertz Ride Warsaw",
+    type: "global",
+    country: "PL",
+    airports: ["WAW"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "hertz-ride-zurich": operator({
+    id: "hertz-ride-zurich",
+    slug: "hertz-ride-zurich",
+    name: "Hertz Ride Zurich",
+    type: "global",
+    country: "CH",
+    airports: ["ZRH"],
+    website_url: "https://www.hertzride.com/en/locations"
+  }),
+  "imtbike-bcn": operator({
+    id: "imtbike-bcn",
+    slug: "imtbike-bcn",
+    name: "IMTBIKE Barcelona",
+    type: "global",
+    country: "ES",
+    airports: ["BCN"],
+    website_url: "https://www.imtbike.com/"
+  }),
+  "imtbike-malaga": operator({
+    id: "imtbike-malaga",
+    slug: "imtbike-malaga",
+    name: "IMTBIKE Málaga",
+    type: "global",
+    country: "ES",
+    airports: ["AGP"],
+    website_url: "https://www.imtbike.com/"
+  }),
+  "motorent-ath": operator({
+    id: "motorent-ath",
+    slug: "motorent-ath",
+    name: "MotoRent Athens",
+    type: "local",
+    country: "GR",
+    airports: ["ATH"],
+    website_url: "https://www.motorent.gr/"
   })
 };

@@ -16,7 +16,7 @@ export function runGraphHealthCheck(graph) {
   const allRoutes = Object.values(graph.routes || {});
   allRoutes.forEach(route => {
     // Determine origin airport code (supporting varying data shapes)
-    const originAirportCode = route.airportCode || route.airport?.code || route.airport;
+    const originAirportCode = route.originAirportCode || route.airport?.code || route.airport;
     
     // Check if origin airport exists in graph
     if (!originAirportCode || !graph.airports[originAirportCode]) {

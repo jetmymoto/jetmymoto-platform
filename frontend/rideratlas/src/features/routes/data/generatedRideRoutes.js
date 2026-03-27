@@ -4558,5 +4558,81 @@ export const GENERATED_RIDE_ROUTES = [
         "north-america"
       ]
     }
+  },
+  {
+    "slug": "munich-muc-to-alps",
+    "origin": "MUC",
+    "destination": "alps",
+    "distance": 145,
+    "airport": {
+      "code": "MUC",
+      "slug": "munich-muc",
+      "city": "Munich",
+      "country": "de"
+    },
+    "destinationDetails": {
+      "slug": "alps",
+      "name": "European Alps",
+      "countries": [
+        "europe"
+      ]
+    }
+  },
+  {
+    "slug": "berlin-ber-to-alps",
+    "origin": "BER",
+    "destination": "alps",
+    "distance": 683,
+    "airport": {
+      "code": "BER",
+      "slug": "berlin-ber",
+      "city": "Berlin",
+      "country": "de"
+    },
+    "destinationDetails": {
+      "slug": "alps",
+      "name": "European Alps",
+      "countries": [
+        "europe"
+      ]
+    }
+  },
+  {
+    "slug": "stuttgart-str-to-alps",
+    "origin": "STR",
+    "destination": "alps",
+    "distance": 248,
+    "airport": {
+      "code": "STR",
+      "slug": "stuttgart-str",
+      "city": "Stuttgart",
+      "country": "de"
+    },
+    "destinationDetails": {
+      "slug": "alps",
+      "name": "European Alps",
+      "countries": [
+        "europe"
+      ]
+    }
+  },
+  {
+    "slug": "athens-ath-to-dolomites",
+    "origin": "ATH",
+    "destination": "dolomites",
+    "distance": 1780,
+    "airport": {
+      "code": "ATH",
+      "slug": "athens-ath",
+      "city": "Athens",
+      "country": "gr"
+    },
+    "destinationDetails": {
+      "slug": "dolomites",
+      "name": "Dolomites",
+      "countries": [
+        "europe"
+      ]
+    }
   }
 ];

@@ -381,7 +381,7 @@ export default function AdminDashboard() {
 
   if (pageLoading) {
     return (
-      <div className="h-screen bg-black flex items-center justify-center text-amber-500 font-mono italic animate-pulse">
+      <div className="h-screen bg-[#050505] flex items-center justify-center text-amber-500 font-mono italic animate-pulse">
         ESTABLISHING_SATELLITE_LINK...
       </div>
     );
@@ -533,7 +533,7 @@ export default function AdminDashboard() {
                   className="flex gap-4 items-center cursor-pointer min-w-0"
                   onClick={() => openLive(i)}
                 >
-                  <div className="w-12 h-10 bg-black border border-white/10 overflow-hidden flex-none">
+                  <div className="w-12 h-10 bg-[#050505] border border-white/10 overflow-hidden flex-none">
                     {thumb ? (
                       <img
                         src={thumb}
@@ -590,7 +590,7 @@ export default function AdminDashboard() {
         MISSIONS MODAL
       ---------------------------------- */}
       {selectedMission && tab === 'MISSIONS' && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/95 backdrop-blur-md">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#050505]/95 backdrop-blur-md">
           <div className="bg-[#0a0a0a] border border-white/10 w-full max-w-6xl p-10 relative overflow-y-auto max-h-[90vh]">
             <button
               onClick={resetMissionForm}
@@ -614,7 +614,7 @@ export default function AdminDashboard() {
                       Unique ID (slug)
                     </label>
                     <input
-                      className="w-full bg-black border border-white/10 p-4 font-mono text-white"
+                      className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-white"
                       value={missionId}
                       onChange={(e) => setMissionId(e.target.value)}
                       placeholder="e.g. grossglockner_alpine_run"
@@ -627,7 +627,7 @@ export default function AdminDashboard() {
                     Title
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-bold text-white uppercase"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-bold text-white uppercase"
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                   />
@@ -638,7 +638,7 @@ export default function AdminDashboard() {
                     Region (region_id)
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-mono text-white uppercase"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-white uppercase"
                     value={region}
                     onChange={(e) => setRegion(e.target.value)}
                     placeholder="e.g. alps"
@@ -650,7 +650,7 @@ export default function AdminDashboard() {
                     Intel (Cinematic Brief)
                   </label>
                   <textarea
-                    className="w-full h-56 bg-black border border-white/10 p-5 text-gray-300 text-sm leading-relaxed"
+                    className="w-full h-56 bg-[#050505] border border-white/10 p-5 text-gray-300 text-sm leading-relaxed"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                   />
@@ -663,7 +663,7 @@ export default function AdminDashboard() {
                     <Film size={14} /> Hero Loop (mp4)
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-mono text-xs text-amber-400"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-xs text-amber-400"
                     value={heroLoop}
                     onChange={(e) => setHeroLoop(e.target.value)}
                     placeholder="https://firebasestorage.googleapis.../intro.mp4"
@@ -675,7 +675,7 @@ export default function AdminDashboard() {
                     <Youtube size={14} /> Video Orbit (YouTube / optional)
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-mono text-xs text-red-400"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-xs text-red-400"
                     value={videoOrbit}
                     onChange={(e) => setVideoOrbit(e.target.value)}
                     placeholder="https://youtube.com/watch?v=..."
@@ -700,7 +700,7 @@ export default function AdminDashboard() {
         LIVE FEED MODAL
       ---------------------------------- */}
       {selectedLive && tab === 'LIVE' && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/95 backdrop-blur-md">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#050505]/95 backdrop-blur-md">
           <div className="bg-[#0a0a0a] border border-white/10 w-full max-w-6xl p-10 relative overflow-y-auto max-h-[90vh]">
             <button
               onClick={resetLiveForm}
@@ -724,7 +724,7 @@ export default function AdminDashboard() {
                     <Youtube size={14} /> YouTube URL or Video ID
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-mono text-sm text-white"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-sm text-white"
                     value={liveVideoInput}
                     onChange={(e) => setLiveVideoInput(e.target.value)}
                     placeholder="https://youtube.com/watch?v=...  OR  dQw4w9WgXcQ"
@@ -739,7 +739,7 @@ export default function AdminDashboard() {
                     <Database size={14} /> mission_id (FK to missions_v4)
                   </label>
                   <input
-                    className="w-full bg-black border border-white/10 p-4 font-mono text-sm text-white"
+                    className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-sm text-white"
                     value={liveMissionId}
                     onChange={(e) => setLiveMissionId(e.target.value)}
                     placeholder="e.g. grossglockner_alpine_run"
@@ -751,7 +751,7 @@ export default function AdminDashboard() {
                     <ClipboardList size={14} /> summary_1line
                   </label>
                   <textarea
-                    className="w-full h-28 bg-black border border-white/10 p-4 text-gray-200 text-sm leading-relaxed"
+                    className="w-full h-28 bg-[#050505] border border-white/10 p-4 text-gray-200 text-sm leading-relaxed"
                     value={liveSummary}
                     onChange={(e) => setLiveSummary(e.target.value)}
                     placeholder='e.g. "High RPM action on the iconic eastern ramp."'
@@ -763,7 +763,7 @@ export default function AdminDashboard() {
                     <ShieldCheck size={14} /> analysis_bullets (one per line)
                   </label>
                   <textarea
-                    className="w-full h-44 bg-black border border-white/10 p-4 text-gray-200 text-sm leading-relaxed"
+                    className="w-full h-44 bg-[#050505] border border-white/10 p-4 text-gray-200 text-sm leading-relaxed"
                     value={liveBulletsText}
                     onChange={(e) => setLiveBulletsText(e.target.value)}
                     placeholder={'Corner density high\nSurface grip varies with altitude\nTraffic low outside peak hours'}
@@ -776,7 +776,7 @@ export default function AdminDashboard() {
                       status
                     </label>
                     <select
-                      className="w-full bg-black border border-white/10 p-4 font-mono text-sm text-white"
+                      className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-sm text-white"
                       value={liveStatus}
                       onChange={(e) => setLiveStatus(e.target.value)}
                     >
@@ -792,7 +792,7 @@ export default function AdminDashboard() {
                     </label>
                     <input
                       type="number"
-                      className="w-full bg-black border border-white/10 p-4 font-mono text-sm text-white"
+                      className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-sm text-white"
                       value={livePriority}
                       onChange={(e) => setLivePriority(Number(e.target.value))}
                       min={1}
@@ -807,7 +807,7 @@ export default function AdminDashboard() {
                     <input
                       type="number"
                       step="0.01"
-                      className="w-full bg-black border border-white/10 p-4 font-mono text-sm text-white"
+                      className="w-full bg-[#050505] border border-white/10 p-4 font-mono text-sm text-white"
                       value={liveConfidence}
                       onChange={(e) => setLiveConfidence(Number(e.target.value))}
                       min={0}
@@ -849,7 +849,7 @@ export default function AdminDashboard() {
                   ) : null}
                 </div>
 
-                <div className="w-full aspect-video bg-black border border-white/10 overflow-hidden">
+                <div className="w-full aspect-video bg-[#050505] border border-white/10 overflow-hidden">
                   {liveVideoId ? (
                     <iframe
                       src={ytEmbed(liveVideoId)}
@@ -865,7 +865,7 @@ export default function AdminDashboard() {
                   )}
                 </div>
 
-                <div className="w-full h-44 bg-black border border-white/10 overflow-hidden">
+                <div className="w-full h-44 bg-[#050505] border border-white/10 overflow-hidden">
                   {liveVideoId ? (
                     <img
                       src={ytThumb(liveVideoId)}
@@ -879,7 +879,7 @@ export default function AdminDashboard() {
                   )}
                 </div>
 
-                <div className="border border-white/10 p-5 bg-black/30">
+                <div className="border border-white/10 p-5 bg-[#050505]/30">
                   <div className="text-[10px] font-mono uppercase tracking-widest text-gray-500 mb-2">
                     Card Preview (what users see)
                   </div>
@@ -906,7 +906,7 @@ export default function AdminDashboard() {
         DELETE CONFIRM: MISSIONS
       ---------------------------------- */}
       {missionDeleteConfirm && (
-        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/98 p-6 backdrop-blur-2xl">
+        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-[#050505]/98 p-6 backdrop-blur-2xl">
           <div className="bg-[#0a0a0a] border border-red-500 p-12 max-w-md w-full text-center">
             <AlertTriangle className="text-red-500 mx-auto mb-6 animate-pulse" size={54} />
             <h2 className="text-2xl font-black uppercase text-white mb-2">
@@ -937,7 +937,7 @@ export default function AdminDashboard() {
         DELETE CONFIRM: LIVE FEED
       ---------------------------------- */}
       {liveDeleteConfirm && (
-        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/98 p-6 backdrop-blur-2xl">
+        <div className="fixed inset-0 z-[110] flex items-center justify-center bg-[#050505]/98 p-6 backdrop-blur-2xl">
           <div className="bg-[#0a0a0a] border border-red-500 p-12 max-w-md w-full text-center">
             <AlertTriangle className="text-red-500 mx-auto mb-6 animate-pulse" size={54} />
             <h2 className="text-2xl font-black uppercase text-white mb-2">

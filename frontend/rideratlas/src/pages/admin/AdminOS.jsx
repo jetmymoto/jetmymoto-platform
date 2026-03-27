@@ -111,7 +111,7 @@ const AdminGuard = ({ children }) => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center text-zinc-600">
+      <div className="min-h-screen bg-[#050505] flex items-center justify-center text-zinc-600">
         Loading Admin OS...
       </div>
     );
@@ -356,7 +356,7 @@ const CommandDashboard = () => {
 
   return (
 
-<div className="min-h-screen bg-black text-zinc-100 flex">
+<div className="min-h-screen bg-[#050505] text-zinc-100 flex">
 
 {/* SIDEBAR */}
 

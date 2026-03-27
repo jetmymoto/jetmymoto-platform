@@ -19,6 +19,10 @@ const toKebabCase = (str) =>
 
 const safeString = (val) => (val == null ? "" : String(val));
 
+// ── Centralized casing normalization (Phase 2 safety) ──
+const normalizeCountry = (c) => (c || "").trim().toLowerCase();
+const normalizeContinent = (c) => (c || "").trim().toLowerCase();
+
 const safeCompare = (a, b) => {
   const strA = safeString(a).toLowerCase();
   const strB = safeString(b).toLowerCase();
@@ -107,35 +111,40 @@ export function buildNetworkGraph() {
   });
 
   for (const route of ALL_ROUTES) {
-    if (route.slug) {
-      // Hydrate airport and destination objects
-      const airportCode = route.airportCode || route.airport?.code || route.airport;
-      const destinationSlug = route.destinationSlug || route.destination?.slug || route.destination;
+    if (!route.slug) continue;
 
-      const airport = AIRPORT_INDEX[airportCode];
-      const destination = RIDE_DESTINATIONS[destinationSlug];
+    const rawAirportCode = route.airportCode || route.airport?.code || route.airport;
+    const airportCode = String(rawAirportCode || "").trim().toUpperCase();
+    const destinationSlug = String(
+      route.destinationSlug || route.destination?.slug || route.destination || ""
+    ).trim().toLowerCase();
 
-      const hydratedRoute = {
-        ...route,
-        airport,
-        destination
-      };
+    const airport = airportCode ? AIRPORT_INDEX[airportCode] : undefined;
+    const destination = destinationSlug ? RIDE_DESTINATIONS[destinationSlug] : undefined;
 
-      routes[route.slug] = hydratedRoute;
+    const hydratedRoute = {
+      ...route,
+      airport: airport || route.airport,
+      destination: destination || route.destination,
+      // New canonical fields
+      originAirportCode: airportCode,
+      distanceKm: route.distance,
+    };
 
-      if (airportCode) {
-        if (!routesByAirport[airportCode]) {
-          routesByAirport[airportCode] = [];
-        }
-        routesByAirport[airportCode].push(route.slug);
+    routes[route.slug] = hydratedRoute;
+
+    if (airportCode) {
+      if (!routesByAirport[airportCode]) {
+        routesByAirport[airportCode] = [];
       }
+      routesByAirport[airportCode].push(route.slug);
+    }
 
-      if (destinationSlug) {
-        if (!routesByDestination[destinationSlug]) {
-          routesByDestination[destinationSlug] = [];
-        }
-        routesByDestination[destinationSlug].push(route.slug);
+    if (destinationSlug) {
+      if (!routesByDestination[destinationSlug]) {
+        routesByDestination[destinationSlug] = [];
       }
+      routesByDestination[destinationSlug].push(route.slug);
     }
   }
 
@@ -179,6 +188,76 @@ export function buildNetworkGraph() {
     }
   }
 
+  // ── Phase 2: Precomputed indexes (eliminates all Object.values().filter() scans) ──
+  const airportsByContinent = {};
+  const airportsByCountry = {};
+  const routesByCountry = {};       // Set-based to prevent duplicates
+  const clusterByAirport = {};      // Array — airport can appear in multiple clusters
+  const neighborsByAirport = {};
+  const regionsByCountry = {};      // Set-based to prevent duplicates
+  const allAirportCodes = [];
+  const allRouteSlugs = [];
+  const allDestinationSlugs = [];
+
+  // Index airports by continent and country
+  for (const code in airports) {
+    const a = airports[code];
+    const continent = normalizeContinent(a.continent) || "other";
+    const country = normalizeCountry(a.country);
+
+    allAirportCodes.push(code);
+
+    if (!airportsByContinent[continent]) airportsByContinent[continent] = [];
+    airportsByContinent[continent].push(code);
+
+    if (country) {
+      if (!airportsByCountry[country]) airportsByCountry[country] = [];
+      airportsByCountry[country].push(code);
+    }
+  }
+
+  // Index routes by country + regions by country (Set-based for dedup)
+  const routesByCountrySets = {};
+  const regionsByCountrySets = {};
+
+  for (const [airportCode, slugs] of Object.entries(routesByAirport)) {
+    const airport = airports[airportCode];
+    const country = normalizeCountry(airport?.country);
+
+    if (country) {
+      if (!routesByCountrySets[country]) routesByCountrySets[country] = new Set();
+      slugs.forEach(s => routesByCountrySets[country].add(s));
+
+      if (!regionsByCountrySets[country]) regionsByCountrySets[country] = new Set();
+      slugs.forEach(slug => {
+        const destSlug = routes[slug]?.destination?.slug;
+        if (destSlug) regionsByCountrySets[country].add(destSlug);
+      });
+    }
+  }
+
+  // Convert Sets → Arrays
+  for (const k in routesByCountrySets) routesByCountry[k] = [...routesByCountrySets[k]];
+  for (const k in regionsByCountrySets) regionsByCountry[k] = [...regionsByCountrySets[k]];
+
+  // clusterByAirport — array to handle multi-cluster membership
+  for (const [clusterId, cluster] of Object.entries(clusters)) {
+    (cluster.airports || []).forEach(code => {
+      if (!clusterByAirport[code]) clusterByAirport[code] = [];
+      clusterByAirport[code].push(clusterId);
+    });
+  }
+
+  // neighborsByAirport — same country, different code
+  for (const code in airports) {
+    const country = normalizeCountry(airports[code].country);
+    neighborsByAirport[code] = (airportsByCountry[country] || []).filter(c => c !== code);
+  }
+
+  // Collect all keys for iteration-free access
+  for (const slug in routes) allRouteSlugs.push(slug);
+  for (const slug in destinations) allDestinationSlugs.push(slug);
+
   return {
     airports,
     airportsBySlug,
@@ -190,5 +269,15 @@ export function buildNetworkGraph() {
     destinationsByRegion,
     pois,
     poisByDestination,
+    // ── Phase 2: New precomputed indexes ──
+    airportsByContinent,
+    airportsByCountry,
+    routesByCountry,
+    clusterByAirport,
+    neighborsByAirport,
+    regionsByCountry,
+    allAirportCodes,
+    allRouteSlugs,
+    allDestinationSlugs,
   };
 }

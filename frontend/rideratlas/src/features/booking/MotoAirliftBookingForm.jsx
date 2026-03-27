@@ -34,7 +34,7 @@ export default function MotoAirliftBookingForm() {
     (selectedRental?.slug ? selectedRental.slug.replace(/-/g, " ").toUpperCase() : "");
   const selectedOperatorLabel =
     searchParams.get("operator") ||
-    (selectedRental?.operator ? GRAPH.operators?.[selectedRental.operator]?.name || selectedRental.operator : "");
+    (selectedRental?.operatorId || selectedRental?.operator ? GRAPH.operators?.[selectedRental.operatorId || selectedRental.operator]?.name || selectedRental.operatorId || selectedRental.operator : "");
 
   const [submitted, setSubmitted] = useState(false);
   const [bookingRef, setBookingRef] = useState("");
@@ -84,8 +84,10 @@ export default function MotoAirliftBookingForm() {
 
   const PICKUP_LOCATIONS = useMemo(() => {
     const locations = {};
-    const destinations = Object.values(GRAPH.destinations || {});
-    destinations.forEach(dest => {
+    const destSlugs = GRAPH.indexes.allDestinationSlugs || [];
+    destSlugs.forEach(slug => {
+      const dest = GRAPH.destinations?.[slug];
+      if (!dest) return;
       const group = dest.country || dest.continent || "Global";
       if (!locations[group]) locations[group] = [];
       if (!locations[group].includes(dest.name)) {

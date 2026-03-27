@@ -74,7 +74,7 @@ export default function AdminPostersPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white p-10 max-w-4xl mx-auto">
+    <div className="min-h-screen bg-[#050505] text-white p-10 max-w-4xl mx-auto">
       <SeoHelmet
         title="Admin Posters Console | JetMyMoto"
         description="Admin console for generating and managing mission posters."
@@ -88,21 +88,21 @@ export default function AdminPostersPage() {
       {/* FORM */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
-          className="bg-black p-3 border border-white/10"
+          className="bg-[#050505] p-3 border border-white/10"
           placeholder="Image URL"
           value={imageUrl}
           onChange={(e) => setImageUrl(e.target.value)}
         />
 
         <input
-          className="bg-black p-3 border border-white/10"
+          className="bg-[#050505] p-3 border border-white/10"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
 
         <input
-          className="bg-black p-3 border border-white/10 md:col-span-2"
+          className="bg-[#050505] p-3 border border-white/10 md:col-span-2"
           placeholder="Subtitle (optional)"
           value={subtitle}
           onChange={(e) => setSubtitle(e.target.value)}
@@ -113,7 +113,7 @@ export default function AdminPostersPage() {
           min="0"
           max="1"
           step="0.05"
-          className="bg-black p-3 border border-white/10"
+          className="bg-[#050505] p-3 border border-white/10"
           value={gradient}
           onChange={(e) => setGradient(e.target.value)}
         />

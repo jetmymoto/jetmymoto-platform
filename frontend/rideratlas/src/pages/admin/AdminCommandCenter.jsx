@@ -70,7 +70,7 @@ const QUICK_LINK_COLUMNS = [
     icon: Compass,
     links: [
       { label: "RiderAtlas Homepage", to: "/" },
-      { label: "Global Hub Map", to: "/airports" },
+      { label: "Global Hub Map", to: "/airport" },
       { label: "Rental Showroom (Milan/MXP)", to: "/airport/mxp?mode=rent&ctx=ra" },
       {
         label: "Rental Showroom (Los Angeles/LAX)",
