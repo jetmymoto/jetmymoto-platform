@@ -69,6 +69,16 @@ Frontend route and rental surfaces are expected to resolve entities through grap
 - `GRAPH.pois`
 - `GRAPH.poisByDestination`
 
+### Graph Shard Contract
+
+- `src/core/network/graphShards.contract.js` is the canonical shard contract for RiderAtlas.
+- The public shard runtime surface remains `loadGraphShard(name)`, `readGraphShard(name)`, and `getGraphShardStatus(name)`.
+- The contract file defines shard names and loading modes separately; the currently registered runtime shards are exposed through `GRAPH.shardMeta.available` and `GRAPH.shardMeta.contract.registered`.
+- Managed shard lifecycle states are `idle`, `loading`, `loaded`, and `error`.
+- `getGraphShardStatus(name)` returns `missing` for unregistered shard names.
+- `poiDetails` is the reference shard implementation while the broader migration is still additive.
+- Overlay shard payloads must preserve the invariant that overlay pages can render above the fold without requiring additional shard loads.
+
 #### AdminMediaManager v2.0 update
 
 - `src/pages/admin/AdminMediaManager.jsx` now ingests a combined graph data set (rentals, airports, routes, destinations) using singular `type` values (`Rental`, `Airport`, `Route`, `Destination`).

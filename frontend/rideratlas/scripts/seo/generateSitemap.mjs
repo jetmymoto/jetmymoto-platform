@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import { AIRPORT_INDEX } from "../../src/features/airport/network/airportIndex.js";
 import { GENERATED_RIDE_ROUTES } from "../../src/features/routes/data/generatedRideRoutes.js";
 import { RIDE_DESTINATIONS } from "../../src/features/routes/data/rideDestinations.js";
+import { GRAPH } from "../../src/core/network/networkGraph.js";
 import { continentIndex } from "../../src/features/airport/network/continentIndex.js"; // Import continentIndex
 
 const __filename = fileURLToPath(import.meta.url);
@@ -45,6 +46,13 @@ GENERATED_RIDE_ROUTES.forEach(route => {
 // 7. Ride destination pages (already covered)
 RIDE_DESTINATIONS.forEach(destination => {
   urls.push(`${BASE}/destination/${destination.slug}`);
+});
+
+// 8. Patriot pSEO overlay pages (graph-driven — respects scoring, validation, publish gates)
+(GRAPH.publishedOverlayUrls || []).forEach(entry => {
+  if (entry.path) {
+    urls.push(`${BASE}${entry.path}`);
+  }
 });
 
 const now = new Date().toISOString();
