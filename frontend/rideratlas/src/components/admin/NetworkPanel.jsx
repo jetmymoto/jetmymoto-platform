@@ -49,7 +49,7 @@ export default function NetworkPanel() {
                 onChange={e =>
                   handleInputChange(airport.code, "status", e.target.value)
                 }
-                className="bg-black border border-white/20 p-2 rounded-md font-mono text-xs"
+                className="bg-[#050505] border border-white/20 p-2 rounded-md font-mono text-xs"
               >
                 {STATUS_OPTIONS.map(status => (
                   <option key={status} value={status}>
@@ -189,7 +189,7 @@ const InputField = ({ label, value, onChange }) => (
       type="text"
       value={value}
       onChange={onChange}
-      className="w-full bg-black border border-white/20 p-2 rounded-md text-sm"
+      className="w-full bg-[#050505] border border-white/20 p-2 rounded-md text-sm"
     />
   </div>
 );
@@ -200,7 +200,7 @@ const CheckboxField = ({ label, checked, onChange }) => (
       type="checkbox"
       checked={checked}
       onChange={onChange}
-      className="form-checkbox h-5 w-5 bg-black border-white/20 rounded text-amber-500 focus:ring-amber-500"
+      className="form-checkbox h-5 w-5 bg-[#050505] border-white/20 rounded text-amber-500 focus:ring-amber-500"
     />
 
     <span className="text-sm font-medium">{label}</span>

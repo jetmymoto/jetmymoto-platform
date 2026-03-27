@@ -39,7 +39,7 @@ function ActionRail({ airport, intent }) {
   return (
     <>
       <div
-        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-black/40 backdrop-blur-xl border-b border-white/5"
+        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-[#050505]/40 backdrop-blur-xl border-b border-white/5"
       >
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -87,7 +87,7 @@ function ActionRail({ airport, intent }) {
         </div>
       </div>
 
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-black/90 backdrop-blur-xl border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-[#050505]/90 backdrop-blur-xl border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
         <a
           href="#ranking"
           className="flex-1 py-3 bg-zinc-900/50 border border-white/10 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-white text-center flex flex-col items-center justify-center gap-1"
@@ -203,7 +203,7 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
           src={SITE_MEDIA.EUROPE_PAGE_H1}
         />
 
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-[#050505]/60" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <motion.div
@@ -214,13 +214,13 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
           >
             {/* BREADCRUMBS */}
             <nav className="text-xs text-zinc-500 mb-6 font-mono uppercase tracking-widest">
-              <Link to="/airports" className="hover:text-white transition-colors">Airports</Link>
+              <Link to="/airport" className="hover:text-white transition-colors">Airports</Link>
               {" / "}
-              <Link to={`/airports/${a.continent}`} className="hover:text-white transition-colors">
+              <Link to={`/airport/continent/${a.continent}`} className="hover:text-white transition-colors">
                 {a.continent}
               </Link>
               {" / "}
-              <Link to={`/airports/country/${a.country?.toLowerCase()}`} className="hover:text-white transition-colors">
+              <Link to={`/airport/country/${a.country?.toLowerCase()}`} className="hover:text-white transition-colors">
                 {a.country}
               </Link>
               {" / "}

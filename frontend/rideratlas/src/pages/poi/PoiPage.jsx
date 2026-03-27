@@ -2,12 +2,68 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
-import { GRAPH } from "@/core/network/networkGraph";
+import { GRAPH, loadGraphShard, readGraphShard } from "@/core/network/networkGraph";
+
+function hasPoiDetailData(poi) {
+  return Boolean(poi?.description) && Boolean(poi?.nearest_airport);
+}
+
+function normalizeDestinationKey(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-");
+}
+
+function mergePoiRecord(graphPoi, detailPoi) {
+  if (graphPoi && detailPoi) {
+    return {
+      ...detailPoi,
+      ...graphPoi,
+      description: detailPoi.description ?? graphPoi.description,
+      nearest_airport: detailPoi.nearest_airport ?? graphPoi.nearest_airport,
+    };
+  }
+
+  if (detailPoi) {
+    const normalizedDestination = normalizeDestinationKey(
+      detailPoi.destination || detailPoi.region
+    );
+
+    return {
+      ...detailPoi,
+      destination: normalizedDestination || detailPoi.destination || null,
+      region: normalizedDestination || detailPoi.region || null,
+    };
+  }
+
+  return graphPoi || null;
+}
+
+function resolvePoiRecord(slug) {
+  if (!slug) {
+    return null;
+  }
+
+  const shardPoi = readGraphShard("poiDetails")?.[slug] || null;
+  const graphPoi = GRAPH.pois?.[slug] || null;
+
+  if (hasPoiDetailData(shardPoi)) {
+    return mergePoiRecord(graphPoi, shardPoi);
+  }
+
+  if (hasPoiDetailData(graphPoi)) {
+    return mergePoiRecord(graphPoi, shardPoi);
+  }
+
+  return graphPoi;
+}
 
 export default function PoiPage() {
   const { slug } = useParams();
-  const [poi, setPoi] = useState(() => GRAPH.pois?.[slug] || null);
-  const [loading, setLoading] = useState(() => !GRAPH.pois?.[slug]);
+  const [poi, setPoi] = useState(() => resolvePoiRecord(slug));
+  const [loading, setLoading] = useState(() => !hasPoiDetailData(resolvePoiRecord(slug)));
 
   useEffect(() => {
     let active = true;
@@ -21,9 +77,11 @@ export default function PoiPage() {
       }
 
       const graphPoi = GRAPH.pois?.[slug];
-      if (graphPoi) {
+      const shardPoi = readGraphShard("poiDetails")?.[slug] || null;
+
+      if (hasPoiDetailData(shardPoi) || hasPoiDetailData(graphPoi)) {
         if (!active) return;
-        setPoi(graphPoi);
+        setPoi(mergePoiRecord(graphPoi, shardPoi));
         setLoading(false);
         return;
       }
@@ -31,13 +89,14 @@ export default function PoiPage() {
       setLoading(true);
 
       try {
-        const module = await import("@/features/poi/poiFiltered.json");
+        await loadGraphShard("poiDetails");
         if (!active) return;
-        setPoi(module.default?.[slug] || null);
+        const poiShard = readGraphShard("poiDetails");
+        setPoi(mergePoiRecord(graphPoi, poiShard?.[slug] || null));
       } catch (error) {
         if (!active) return;
         console.error("Failed to load POI dataset", error);
-        setPoi(null);
+        setPoi(graphPoi || null);
       } finally {
         if (active) {
           setLoading(false);
@@ -61,9 +120,9 @@ export default function PoiPage() {
   }
 
   const airport = AIRPORT_INDEX[poi.nearest_airport];
-  const routes = Object.values(GRAPH.routes || {}).filter(
-    (route) => route.destination?.slug === "dolomites" || route.destination?.slug === "alps",
-  );
+  const destSlug = poi.destination || poi.region;
+  const routeSlugs = destSlug ? (GRAPH.indexes.routesByDestination?.[destSlug] || []) : [];
+  const routes = routeSlugs.map(slug => GRAPH.routes?.[slug]).filter(Boolean);
 
   return (
     <div className="container mx-auto py-12">

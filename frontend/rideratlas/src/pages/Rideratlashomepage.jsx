@@ -72,7 +72,7 @@ const RidingTheaters = () => {
   ];
 
   return (
-    <section className="py-24 bg-black border-b border-white/5 relative">
+    <section className="py-24 bg-[#050505] border-b border-white/5 relative">
       <div className="max-w-7xl mx-auto px-6">
          <div className="mb-16">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -117,7 +117,7 @@ const RidingTheaters = () => {
 
 // 4. Featured Routes (The Content Layer)
 const FeaturedRoutes = () => {
-  const routes = Object.keys(GRAPH.routes || {})
+  const routes = (GRAPH.indexes.allRouteSlugs || [])
     .slice(0, 3)
     .map((routeSlug) => GRAPH.routes?.[routeSlug])
     .filter(Boolean);
@@ -154,9 +154,9 @@ const FeaturedRoutes = () => {
                  {/* Placeholder for route map/image */}
                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/20 to-zinc-800/20" />
                  <div className="absolute bottom-4 left-4 flex gap-2">
-                   {(route.distance_km || route.distance) && (
-                     <span className="bg-black/60 backdrop-blur-sm text-white px-2 py-1 text-[10px] font-mono uppercase border border-white/10">
-                       {route.distance_km || route.distance} KM
+                   {route.distanceKm && (
+                     <span className="bg-[#050505]/60 backdrop-blur-sm text-white px-2 py-1 text-[10px] font-mono uppercase border border-white/10">
+                       {route.distanceKm} KM
                      </span>
                    )}
                    {route.difficulty && (
@@ -187,12 +187,15 @@ const FeaturedRoutes = () => {
 
 // 5. Contextual Bike Matching (The Commerce Tie-In)
 const ContextualBikes = () => {
-  const rentals = Object.values(GRAPH.rentals || {}).slice(0, 4);
+  const rentals = Object.keys(GRAPH.rentals || {})
+    .slice(0, 4)
+    .map(k => GRAPH.rentals[k])
+    .filter(Boolean);
   
   if (rentals.length === 0) return null;
 
   return (
-    <section className="py-24 bg-black border-b border-white/5 relative">
+    <section className="py-24 bg-[#050505] border-b border-white/5 relative">
       <div className="max-w-7xl mx-auto px-6">
          <div className="text-center mb-16">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

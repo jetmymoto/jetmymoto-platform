@@ -87,7 +87,7 @@ export default function BookingSuccess({ bookingRef, email, quoteData }) {
       />
 
       {/* 🌑 DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-[#050505]/70 backdrop-blur-sm pointer-events-none" />
 
       {/* 🔥 CONTENT */}
       <motion.div
@@ -136,7 +136,7 @@ export default function BookingSuccess({ bookingRef, email, quoteData }) {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.4 }}
-            className="mt-10 inline-block px-6 py-3 border border-amber-500/30 bg-black/60 font-mono text-sm tracking-widest"
+            className="mt-10 inline-block px-6 py-3 border border-amber-500/30 bg-[#050505]/60 font-mono text-sm tracking-widest"
           >
             REFERENCE: <span className="text-amber-400">{bookingRef}</span>
           </motion.div>
@@ -148,7 +148,7 @@ export default function BookingSuccess({ bookingRef, email, quoteData }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.6 }}
-            className="mt-8 mx-auto w-full max-w-sm bg-black/50 border border-white/10 p-6 flex flex-col gap-4 text-left"
+            className="mt-8 mx-auto w-full max-w-sm bg-[#050505]/50 border border-white/10 p-6 flex flex-col gap-4 text-left"
           >
             <div className="flex flex-col border-b border-white/10 pb-4">
               <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest">Mission Path</span>
@@ -235,7 +235,7 @@ export default function BookingSuccess({ bookingRef, email, quoteData }) {
             <button
               onClick={handleCreatePool}
               disabled={isCreatingPool || isRedirecting}
-              className="w-full flex items-center justify-center gap-3 px-8 py-4 border border-amber-500/50 text-amber-500 bg-black/50 font-mono text-xs font-black uppercase tracking-[0.2em] hover:bg-amber-500/10 disabled:opacity-50 disabled:cursor-not-allowed transition"
+              className="w-full flex items-center justify-center gap-3 px-8 py-4 border border-amber-500/50 text-amber-500 bg-[#050505]/50 font-mono text-xs font-black uppercase tracking-[0.2em] hover:bg-amber-500/10 disabled:opacity-50 disabled:cursor-not-allowed transition"
             >
               {isCreatingPool ? (
                 <>

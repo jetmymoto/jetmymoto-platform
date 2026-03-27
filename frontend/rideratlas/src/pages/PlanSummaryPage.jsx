@@ -6,7 +6,7 @@ export default function PlanSummaryPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-6">
+    <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center px-6">
       <div className="max-w-xl w-full border border-white/10 p-8 bg-zinc-950">
         <div className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2">
           Rider Atlas // Plan Summary

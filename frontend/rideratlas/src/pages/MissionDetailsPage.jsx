@@ -88,7 +88,7 @@ export default function MissionDetailsPage() {
 
   if (loading) {
     return (
-      <div className="h-screen bg-black flex flex-col items-center justify-center text-amber-500">
+      <div className="h-screen bg-[#050505] flex flex-col items-center justify-center text-amber-500">
         <Loader2 className="w-8 h-8 animate-spin mb-4" />
         <span className="font-mono tracking-widest text-xs animate-pulse">
           DECRYPTING MISSION FILE…
@@ -99,7 +99,7 @@ export default function MissionDetailsPage() {
 
   if (!mission) {
     return (
-      <div className="h-screen bg-black flex flex-col items-center justify-center gap-4 text-white">
+      <div className="h-screen bg-[#050505] flex flex-col items-center justify-center gap-4 text-white">
         <h1 className="text-4xl font-black text-white/20">404 // MISSING INTEL</h1>
         <button
           onClick={() => navigate('/')}

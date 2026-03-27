@@ -19,7 +19,7 @@ function debounce(func, wait) {
 // Reusable Placeholder Component
 const GridSlot = ({ title, status, icon: Icon, color = "text-zinc-700" }) => (
   <div className="relative border-r border-b border-white/10 bg-zinc-900/50 flex flex-col items-center justify-center p-6 min-h-[250px]">
-    <div className="border border-dashed border-zinc-800 w-full h-full rounded flex flex-col items-center justify-center gap-3 bg-black/20">
+    <div className="border border-dashed border-zinc-800 w-full h-full rounded flex flex-col items-center justify-center gap-3 bg-[#050505]/20">
       <Icon className={color} size={32} />
       <div className="text-center">
         <div className="text-xs font-bold text-zinc-600 uppercase tracking-widest">{title}</div>
@@ -103,7 +103,7 @@ export default function PlannerEnrichPage() {
   const selectedIds = stops.map(s => s.id);
 
   return (
-    <div className="flex flex-col h-screen bg-black text-white font-sans overflow-hidden">
+    <div className="flex flex-col h-screen bg-[#050505] text-white font-sans overflow-hidden">
 
 
       {/* MAIN SCROLLABLE CONTAINER */}
@@ -114,7 +114,7 @@ export default function PlannerEnrichPage() {
           
           {/* --- SLOT 1: TACTICAL MAP --- */}
           <div className="relative border-r border-b border-white/10 min-h-[400px]">
-              <div className="absolute top-4 left-4 z-10 bg-black/80 backdrop-blur text-white px-3 py-1 text-[9px] font-bold tracking-widest uppercase border border-white/10 flex items-center gap-2">
+              <div className="absolute top-4 left-4 z-10 bg-[#050505]/80 backdrop-blur text-white px-3 py-1 text-[9px] font-bold tracking-widest uppercase border border-white/10 flex items-center gap-2">
                 <MapIcon size={12} /> Tactical View // Sector Alpha
                 {isSaving && <span className="text-zinc-500 ml-2 animate-pulse">SAVING...</span>}
               </div>

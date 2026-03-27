@@ -53,7 +53,7 @@ const EditDrawer = ({ airport, isOpen, onClose, onSave }) => {
   ];
 
   return (
-    <div className="fixed inset-0 bg-black/60 z-40" onClick={onClose}>
+    <div className="fixed inset-0 bg-[#050505]/60 z-40" onClick={onClose}>
       <div
         className="fixed top-0 right-0 h-full w-full max-w-md bg-zinc-900 border-l border-white/10 shadow-lg z-50 flex flex-col"
         onClick={e => e.stopPropagation()}

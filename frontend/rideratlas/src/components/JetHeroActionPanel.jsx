@@ -32,7 +32,7 @@ export default function JetHeroActionPanel() {
   };
 
   return (
-    <div className="relative w-full max-w-2xl bg-black/60 backdrop-blur-xl border border-white/20 p-6 md:p-8 rounded-sm shadow-2xl mt-8">
+    <div className="relative w-full max-w-2xl bg-[#050505]/60 backdrop-blur-xl border border-white/20 p-6 md:p-8 rounded-sm shadow-2xl mt-8">
       
       {/* Configuration Header */}
       <div className="mb-6 flex items-center gap-4">
@@ -54,7 +54,7 @@ export default function JetHeroActionPanel() {
             value={from}
             onChange={(e) => setFrom(e.target.value)}
             placeholder="e.g. Munich"
-            className="w-full bg-black/50 border border-white/10 px-4 py-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/5 font-mono text-sm uppercase tracking-widest transition-all rounded-sm"
+            className="w-full bg-[#050505]/50 border border-white/10 px-4 py-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/5 font-mono text-sm uppercase tracking-widest transition-all rounded-sm"
           />
         </div>
 
@@ -67,7 +67,7 @@ export default function JetHeroActionPanel() {
             value={to}
             onChange={(e) => setTo(e.target.value)}
             placeholder="e.g. Alps"
-            className="w-full bg-black/50 border border-white/10 px-4 py-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/5 font-mono text-sm uppercase tracking-widest transition-all rounded-sm"
+            className="w-full bg-[#050505]/50 border border-white/10 px-4 py-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/5 font-mono text-sm uppercase tracking-widest transition-all rounded-sm"
           />
         </div>
 

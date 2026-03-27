@@ -93,18 +93,13 @@ export function useDestination(slug) {
             airportCodes.add(route.airport.code);
           }
 
-          // origin airport
-          if (route.origin?.code) {
-            airportCodes.add(route.origin.code);
-          }
-
-          // sometimes stored flat
-          if (route.originCode) {
-            airportCodes.add(route.originCode);
+          // origin airport (canonical field)
+          if (route.originAirportCode) {
+            airportCodes.add(route.originAirportCode);
           }
 
           // fallback: parse slug (VERY useful for your naming)
-          if (!route.origin?.code && route.slug) {
+          if (!route.originAirportCode && route.slug) {
             const parts = route.slug.split("-to-");
             if (parts[0]) {
               const code = parts[0].split("-").pop().toUpperCase();

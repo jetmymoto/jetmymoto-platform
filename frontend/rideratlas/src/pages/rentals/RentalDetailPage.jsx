@@ -18,7 +18,7 @@ import {
   getRentalCategoryLabel,
   getRentalModelName,
   getRentalPosterUrl
-} from "@/features/rentals/components/RentalCard";
+} from "@/features/rentals/utils/rentalFormatters";
 
 const DEFAULT_SUITABILITY = {
   adventure: {
@@ -108,11 +108,11 @@ function getDepositValue(rental) {
 }
 
 function getInsuranceLabel(rental) {
-  if (typeof rental?.insurance_included === "string" && rental.insurance_included.trim()) {
-    return rental.insurance_included;
+  if (typeof rental?.insuranceIncluded === "string" && rental.insuranceIncluded.trim()) {
+    return rental.insuranceIncluded;
   }
 
-  if (rental?.insurance_included === false) {
+  if (rental?.insuranceIncluded === false || rental?.insurance_included === false) {
     return "Insurance Optional";
   }
 
@@ -144,7 +144,7 @@ function buildSpecs(rental) {
 function buildRequestPath(rental, machineLabel, operatorName) {
   const params = new URLSearchParams({
     intent: "rent",
-    airport: String(rental?.airport || ""),
+    airport: String(rental?.airportCode || rental?.airport || ""),
     rental: String(rental?.id || ""),
     machine: machineLabel,
     operator: operatorName
@@ -175,7 +175,7 @@ function FallbackState({ slug }) {
 
             <div className="flex flex-wrap gap-3">
               <Link
-                to="/airports"
+                to="/airport"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-[#CDA755]/40 hover:text-[#CDA755]"
               >
                 Explore Hubs
@@ -200,15 +200,18 @@ export default function RentalDetailPage() {
   const { slug = "" } = useParams();
   const [videoFailed, setVideoFailed] = useState(false);
 
-  const rental = GRAPH.rentals?.[slug];
+  const rental =
+    GRAPH.rentals?.[slug] ||
+    Object.values(GRAPH.rentals || {}).find((candidate) => candidate?.slug === slug) ||
+    null;
 
   if (!rental) {
     return <FallbackState slug={slug} />;
   }
 
-  const operator = GRAPH.operators?.[rental.operator];
-  const airport = GRAPH.airports?.[rental.airport];
-  const destinations = (rental.compatible_destinations || []).map((destinationSlug) => ({
+  const operator = GRAPH.operators?.[rental.operatorId || rental.operator];
+  const airport = GRAPH.airports?.[rental.airportCode || rental.airport];
+  const destinations = (rental.compatibleDestinations || rental.compatible_destinations || []).map((destinationSlug) => ({
     slug: destinationSlug,
     destination:
       GRAPH.destinations?.[destinationSlug] || {
@@ -224,7 +227,7 @@ export default function RentalDetailPage() {
   const posterUrl = useMemo(() => getRentalPosterUrl(rental), [rental]);
   const specs = useMemo(() => buildSpecs(rental), [rental]);
   const machineLabel = `${brand} ${modelName}`.trim();
-  const operatorName = operator?.name || rental.operator || "Verified Operator";
+  const operatorName = operator?.name || rental.operatorId || rental.operator || "Verified Operator";
   const requestPath = useMemo(
     () => buildRequestPath(rental, machineLabel, operatorName),
     [rental, machineLabel, operatorName]
@@ -287,14 +290,14 @@ export default function RentalDetailPage() {
           <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-10">
             <div className="max-w-4xl">
               <div className="text-[11px] uppercase tracking-[0.32em] text-white/54">
-                {operatorName} • {airport?.city || rental.airport} Deployment
+                {operatorName} • {airport?.city || rental.airportCode || rental.airport} Deployment
               </div>
               <h1 className="mt-4 text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white sm:text-6xl lg:text-8xl">
                 {brand}
                 <span className="block text-[#F7F0DF]">{modelName}</span>
               </h1>
               <p className="mt-5 max-w-2xl text-sm leading-7 text-white/64 sm:text-base">
-                Precision-matched for premium arrivals through {airport?.name || rental.airport}.
+                Precision-matched for premium arrivals through {airport?.name || rental.airportCode || rental.airport}.
                 This machine is indexed directly from the rental graph and staged for fast handoff
                 into the existing Moto Airlift intake flow.
               </p>
@@ -420,7 +423,7 @@ export default function RentalDetailPage() {
                     Deployment Hub
                   </div>
                   <div className="mt-2 text-xl font-black uppercase tracking-[-0.03em] text-white">
-                    Staged At {rental.airport}
+                    Staged At {rental.airportCode || rental.airport}
                   </div>
                   <div className="mt-1 text-sm text-white/58">
                     {airport?.name || airport?.city || "Verified airport hub"}
@@ -506,7 +509,7 @@ export default function RentalDetailPage() {
               Ready For Booking Handoff
             </div>
             <div className="mt-2 truncate text-sm font-semibold uppercase tracking-[0.18em] text-white sm:text-base">
-              {machineLabel} • {rental.airport} Hub
+              {machineLabel} • {rental.airportCode || rental.airport} Hub
             </div>
           </div>
 

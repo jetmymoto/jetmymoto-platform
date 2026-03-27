@@ -19,7 +19,7 @@ const FooterJetMyMoto = () => {
   };
 
   return (
-    <footer className="bg-black border-t border-white/10 mt-24">
+    <footer className="bg-[#050505] border-t border-white/10 mt-24">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-slate-400 text-sm">
 
         {/* BRAND */}
@@ -75,13 +75,13 @@ const FooterJetMyMoto = () => {
             </li>
 
             <li>
-              <Link to={withCtx("/airports/europe")} className="hover:text-white transition">
+              <Link to={withCtx("/airport/continent/europe")} className="hover:text-white transition">
                 European Hubs
               </Link>
             </li>
 
             <li>
-              <Link to={withCtx("/airports/north-america")} className="hover:text-white transition">
+              <Link to={withCtx("/airport/continent/north-america")} className="hover:text-white transition">
                 North American Hubs
               </Link>
             </li>

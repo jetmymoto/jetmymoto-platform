@@ -818,6 +818,26 @@ export const staticAirportsEnriched = {
     }
   },
 
+  MUC: {
+    code: "MUC",
+    name: "Munich Airport",
+    officialUrl: "https://www.munich-airport.com/",
+    city: "Munich",
+    region: "Bavaria / Alpine Gateway",
+    headline: "Bavarian Staging Hub",
+    subline: "Primary southern Germany launch point for Alpine, Tyrolean, and Dolomite missions.",
+    motto: "Fast Bavarian access into the Alps, Tyrol, and the high-pass attack corridor.",
+    logistics: {
+      node_name: "JetMyMoto Munich Partner Node",
+      node_distance_min: 18,
+      differentiators: [
+        "Direct Bavaria-to-Alps dispatch corridor",
+        "Fast access to Austria and Northern Italy mission lines",
+        "High-capacity handoff zone for rental and airlift riders"
+      ]
+    }
+  },
+
   MXP: {
     code: "MXP",
     name: "Milan Malpensa Airport",

@@ -233,6 +233,9 @@ const GlobalTower = () => {
   }, [activeContinent]);
 
   const currentContinentId = continent || activeContinent;
+  const canonicalPath = continent
+    ? `/airport/continent/${currentContinentId}`
+    : "/airport";
   const currentConfig =
     CONTINENT_CONFIG[currentContinentId] || defaultContinentConfig;
 
@@ -251,16 +254,19 @@ const GlobalTower = () => {
   }, [currentContinentId]);
 
   const continentAirports = useMemo(() => {
-    return Object.values(GRAPH.airports).filter(
-      airport => airport.continent === currentContinentId
-    );
+    const codes = GRAPH.indexes.airportsByContinent?.[currentContinentId] || [];
+    return codes.map(code => GRAPH.airports[code]).filter(Boolean);
   }, [currentContinentId]);
 
   const continentClusters = useMemo(() => {
-    const airportCodes = new Set(continentAirports.map(a => a.code));
-    return Object.values(GRAPH.clusters).filter(cluster =>
-      cluster.airports?.some(code => airportCodes.has(code))
-    );
+    const seen = new Set();
+    return continentAirports.flatMap(a => {
+      const clusterIds = GRAPH.indexes.clusterByAirport?.[a.code] || [];
+      return clusterIds
+        .filter(id => !seen.has(id) && (seen.add(id), true))
+        .map(id => GRAPH.clusters[id])
+        .filter(Boolean);
+    });
   }, [continentAirports]);
 
   const allContinentRoutes = useMemo(() => {
@@ -310,7 +316,7 @@ const GlobalTower = () => {
         <SeoHelmet
           title={`${currentConfig.title} | JetMyMoto`}
           description={currentConfig.description || "Explore the JetMyMoto global network of certified motorcycle logistics hubs and deployment sectors."}
-          canonicalUrl={`https://jetmymoto.com/airports/${currentContinentId}`}
+          canonicalUrl={`https://jetmymoto.com${canonicalPath}`}
         />
 
         {/* HERO */}
@@ -328,7 +334,7 @@ const GlobalTower = () => {
                 type="video/mp4"
               />
             </video>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-[#050505]/40" />
           </div>
 
           <div className="relative z-10 text-center px-6">
@@ -373,7 +379,7 @@ const GlobalTower = () => {
         <section className="bg-amber-500 text-black py-4 border-b border-black">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-sm font-black uppercase tracking-widest italic">
             <div className="flex items-center gap-3">
-              <span className="w-2 h-2 bg-black rounded-full animate-pulse" />
+              <span className="w-2 h-2 bg-[#050505] rounded-full animate-pulse" />
               {currentConfig.title.replace('Motorcycle Shipping ', '')} Network
             </div>
             
@@ -399,7 +405,7 @@ const GlobalTower = () => {
         </section>
 
         {/* CONTINENT COMMAND */}
-        <nav className="sticky top-20 z-40 bg-black/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
+        <nav className="sticky top-20 z-40 bg-[#050505]/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
           <ControlStripRadar />
 
           <div className="max-w-7xl mx-auto px-6 py-6">
@@ -407,7 +413,7 @@ const GlobalTower = () => {
               {(NETWORK_DATA || []).map((item) => (
                 <Link
                   key={item.id}
-                  to={`/airports/${item.id}`}
+                  to={`/airport/continent/${item.id}`}
                   onClick={() => setActiveContinent(item.id)}
                   className={`relative group flex flex-col items-start min-w-[220px] transition-all p-4 rounded border text-left overflow-hidden ${
                     currentContinentId === item.id
@@ -497,7 +503,7 @@ const GlobalTower = () => {
                 {(countries || []).map((countryCode) => (
                   <Link
                     key={countryCode}
-                    to={`/airports/country/${countryCode.toLowerCase()}`}
+                    to={`/airport/country/${countryCode.toLowerCase()}`}
                     className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-4 transition-all"
                   >
                     <div className="flex items-center justify-between">

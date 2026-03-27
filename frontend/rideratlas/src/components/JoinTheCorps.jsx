@@ -37,7 +37,7 @@ const JoinTheCorps = () => {
         {/* Input Field */}
         <div className="max-w-md mx-auto relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-amber-700 rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-500"></div>
-          <form className="relative flex items-center bg-black rounded-lg p-2 border border-white/10" onSubmit={(e) => e.preventDefault()}>
+          <form className="relative flex items-center bg-[#050505] rounded-lg p-2 border border-white/10" onSubmit={(e) => e.preventDefault()}>
             <input 
               type="email" 
               placeholder="ENTER CALLSIGN (EMAIL)" 

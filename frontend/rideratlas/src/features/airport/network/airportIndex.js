@@ -207,6 +207,19 @@ export const AIRPORT_INDEX = {
     "region": "Central Spain Hub",
     "continent": "europe"
   },
+  "MUC": {
+    "code": "MUC",
+    "name": "Munich Airport",
+    "city": "Munich",
+    "slug": "munich-muc",
+    "country": "de",
+    "region": "Bavaria / Alpine Gateway",
+    "continent": "europe",
+    "headline": "Bavarian Staging Hub",
+    "subline": "Primary southern Germany launch point for Alpine, Tyrolean, and Dolomite missions.",
+    "staging": "JetMyMoto Munich staging corridor",
+    "motto": "Fast Bavarian access into the Alps, Tyrol, and the high-pass attack corridor."
+  },
   "MXP": {
     "code": "MXP",
     "city": "Milan",

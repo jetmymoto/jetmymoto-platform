@@ -18,7 +18,7 @@ const AdventureNetworkCard = ({ cluster }) => {
 
       const airport =
         route.airport ||
-        GRAPH.airports?.[route.airportCode] ||
+        GRAPH.airports?.[route.originAirportCode] ||
         GRAPH.airportsBySlug?.[route.airport];
 
       const destination =

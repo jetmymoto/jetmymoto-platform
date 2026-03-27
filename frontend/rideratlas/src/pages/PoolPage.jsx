@@ -53,7 +53,7 @@ export default function PoolPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center text-white">
+      <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white">
         <div className="animate-pulse font-mono text-sm tracking-widest text-amber-500">
           UPLINKING POOL DATA...
         </div>
@@ -63,7 +63,7 @@ export default function PoolPage() {
 
   if (error || !pool) {
     return (
-      <div className="min-h-screen bg-black flex items-center justify-center text-white">
+      <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white">
         <div className="font-mono text-sm tracking-widest text-red-500">
           {error || "SYSTEM ERROR"}
         </div>
@@ -72,7 +72,7 @@ export default function PoolPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white py-32 px-6">
+    <div className="min-h-screen bg-[#050505] text-white py-32 px-6">
       <div className="max-w-3xl mx-auto">
         
         <div className="text-center mb-16">
@@ -146,7 +146,7 @@ export default function PoolPage() {
                 <h3 className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Clock size={12} className="text-amber-500" /> Expiry
                 </h3>
-                <div className="text-sm font-mono tracking-widest text-white uppercase bg-black/40 inline-block px-3 py-2 border border-white/10">
+                <div className="text-sm font-mono tracking-widest text-white uppercase bg-[#050505]/40 inline-block px-3 py-2 border border-white/10">
                   {pool.expiresAt ? `Pool expires in ${Math.max(0, Math.round((new Date(pool.expiresAt.seconds * 1000) - Date.now()) / 3600000))} hours` : "Pool expires in 48 hours"}
                 </div>
                 <div className="text-[9px] text-zinc-500 font-mono uppercase tracking-widest mt-2 italic font-bold">
@@ -156,7 +156,7 @@ export default function PoolPage() {
             </div>
 
             {/* Right Column: Pool Status */}
-            <div className="bg-black/40 border border-white/5 p-6 space-y-6">
+            <div className="bg-[#050505]/40 border border-white/5 p-6 space-y-6">
               <div>
                 <h3 className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Users size={12} className="text-amber-500" /> Participants
@@ -205,7 +205,7 @@ export default function PoolPage() {
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 bg-zinc-900 border border-white/10 p-2 pr-4 rounded-sm w-full overflow-hidden">
-               <div className="bg-black px-4 py-3 font-mono text-xs text-amber-500 truncate select-all flex-1 text-left">
+               <div className="bg-[#050505] px-4 py-3 font-mono text-xs text-amber-500 truncate select-all flex-1 text-left">
                  {pool.shareUrl || `${window.location.origin}/pool/${poolId}`}
                </div>
                <button 

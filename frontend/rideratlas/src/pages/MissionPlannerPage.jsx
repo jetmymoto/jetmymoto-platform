@@ -56,11 +56,11 @@ export default function PlannerPage() {
   }
 
   if (loading || !mission) {
-    return <div className="h-screen bg-black text-white flex items-center justify-center">Loading…</div>;
+    return <div className="h-screen bg-[#050505] text-white flex items-center justify-center">Loading…</div>;
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[#050505] text-white">
 
 
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-8">
@@ -77,7 +77,7 @@ export default function PlannerPage() {
               type="date"
               value={startDate}
               onChange={e => setStartDate(e.target.value)}
-              className="bg-black border border-white/10 px-4 py-2 w-full"
+              className="bg-[#050505] border border-white/10 px-4 py-2 w-full"
             />
           </div>
 
@@ -86,7 +86,7 @@ export default function PlannerPage() {
             <select
               value={bikeMode}
               onChange={e => setBikeMode(e.target.value)}
-              className="bg-black border border-white/10 px-4 py-2 w-full"
+              className="bg-[#050505] border border-white/10 px-4 py-2 w-full"
             >
               <option value="own">Bring My Own</option>
               <option value="rental">Rental</option>
@@ -100,7 +100,7 @@ export default function PlannerPage() {
                 value={bikeChoice}
                 onChange={e => setBikeChoice(e.target.value)}
                 placeholder="BMW R1300GS"
-                className="bg-black border border-white/10 px-4 py-2 w-full"
+                className="bg-[#050505] border border-white/10 px-4 py-2 w-full"
               />
             </div>
           )}
@@ -111,7 +111,7 @@ export default function PlannerPage() {
               value={airport}
               onChange={e => setAirport(e.target.value)}
               placeholder="MUC"
-              className="bg-black border border-white/10 px-4 py-2 w-full"
+              className="bg-[#050505] border border-white/10 px-4 py-2 w-full"
             />
           </div>
 

@@ -36,7 +36,7 @@ const MissionDossier = ({ mission }) => {
       <LogisticsHub upsell={mission.upsell} />
 
       {/* 5. THE CTA FOOTER */}
-      <div className="py-24 text-center bg-black">
+      <div className="py-24 text-center bg-[#050505]">
         <button 
           onClick={() => setGateOpen(true)}
           className="bg-white text-black px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gray-200 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)]"

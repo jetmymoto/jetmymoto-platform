@@ -10,23 +10,27 @@ export default function HeaderJetMyMoto() {
   const site = getSiteConfig();
   const paths = getCanonicalPaths();
   const mode = new URLSearchParams(location.search).get("mode");
+  const brandCtx = new URLSearchParams(location.search).get("ctx");
   const isJetMyMoto =
     site.id === "jmm" ||
     location.pathname === "/jetmymoto" ||
-    new URLSearchParams(location.search).get("ctx") === "jet";
+    brandCtx === "jet";
   const withContext = (basePath, brandCtx) => {
     if (!basePath) return "/";
     const separator = basePath.includes("?") ? "&" : "?";
     return `${basePath}${separator}ctx=${brandCtx}`;
   };
+  const withCurrentContext = (basePath) => {
+    return brandCtx ? withContext(basePath, brandCtx) : basePath;
+  };
 
   const closeMenu = () => setOpen(false);
 
   const navLinks = [
-    { label: "Atlas", path: "/" },
-    { label: "Hubs", path: paths.airports },
-    { label: "Routes", path: paths.route },
-    { label: "Fleets", path: paths.rentals },
+    { label: "Atlas", path: withCurrentContext("/") },
+    { label: "Hubs", path: withCurrentContext(paths.airports) },
+    { label: "Routes", path: withCurrentContext(paths.route) },
+    { label: "Fleets", path: withCurrentContext(paths.rentals) },
   ];
 
   const isActive = (label) => {
@@ -35,7 +39,7 @@ export default function HeaderJetMyMoto() {
     }
 
     if (label === "Hubs") {
-      return location.pathname.startsWith("/airports") || (location.pathname.startsWith("/airport/") && mode !== "rent");
+      return location.pathname === "/airport" || (location.pathname.startsWith("/airport") && mode !== "rent");
     }
 
     if (label === "Routes") {
@@ -50,7 +54,7 @@ export default function HeaderJetMyMoto() {
   };
 
   return (
-    // Swapped bg-black for bg-[#121212] to prevent halation and eye strain [2, 3]
+    // Swapped bg-[#050505] for bg-[#121212] to prevent halation and eye strain [2, 3]
     <header className="fixed top-0 left-0 w-full z-[120] bg-[#121212]/90 backdrop-blur-lg border-b border-white/5">
       
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">

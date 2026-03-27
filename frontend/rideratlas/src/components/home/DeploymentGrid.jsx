@@ -2,6 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { GRAPH } from "@/core/network/networkGraph"
 import DeploymentCard from "@/components/airport/DeploymentCard"
+import { getCanonicalAirportPath } from "@/utils/navigationTargets"
 
 const hubCodes = ["MXP", "LHR", "LAX", "YVR"]
 
@@ -13,6 +14,7 @@ export default function DeploymentGrid() {
       const routeCount = GRAPH.routesByAirport?.[airport.code]?.length || 0
 
       return {
+        to: getCanonicalAirportPath(airport.code),
         mission: {
           airport_slug: airport.slug || airport.code,
           airport_code: airport.code,
@@ -44,7 +46,7 @@ export default function DeploymentGrid() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {hubs.map(({ mission }, index) => (
+          {hubs.map(({ mission, to }, index) => (
             <motion.div
               key={mission.airport_code || index}
               initial={{ opacity: 0, y: 12 }}
@@ -53,10 +55,10 @@ export default function DeploymentGrid() {
               transition={{ delay: index * 0.08 }}
               className="relative"
             >
-              <div className="absolute right-2 top-2 px-2 py-1 text-[10px] font-mono uppercase tracking-wide bg-black/70 text-amber-300 border border-amber-500/30 rounded-md tabular-nums">
+              <div className="absolute right-2 top-2 px-2 py-1 text-[10px] font-mono uppercase tracking-wide bg-[#050505]/70 text-amber-300 border border-amber-500/30 rounded-md tabular-nums">
                 {GRAPH.routesByAirport?.[mission.airport_code]?.length || 0} routes
               </div>
-              <DeploymentCard mission={mission} />
+              <DeploymentCard mission={mission} to={to} />
             </motion.div>
           ))}
 

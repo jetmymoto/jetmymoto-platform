@@ -13,7 +13,7 @@ export default function AdminGuard({ children }) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center">
         <div className="text-sm opacity-70">Loading…</div>
       </div>
     );
@@ -21,7 +21,7 @@ export default function AdminGuard({ children }) {
 
   if (!user) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center">
         <div className="text-sm opacity-70">Please sign in to access admin.</div>
       </div>
     );
@@ -30,7 +30,7 @@ export default function AdminGuard({ children }) {
   const email = (user.email || "").toLowerCase();
   if (!ADMIN_EMAILS.has(email)) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center">
         <div className="text-sm opacity-70">Access denied.</div>
       </div>
     );

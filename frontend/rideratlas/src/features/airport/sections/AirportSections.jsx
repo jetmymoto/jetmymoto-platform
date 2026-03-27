@@ -303,7 +303,7 @@ export function PainPointsSection({ airport }) {
       className="py-20 bg-[#070707] border-b border-white/5 relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        <div className="p-10 border border-white/10 bg-black/60 rounded-3xl backdrop-blur-xl shadow-2xl">
+        <div className="p-10 border border-white/10 bg-[#050505]/60 rounded-3xl backdrop-blur-xl shadow-2xl">
           <div className="flex items-center gap-4 mb-10">
             <h2 className="text-2xl font-black italic uppercase text-white">
               The Reality of Renting at {airport}

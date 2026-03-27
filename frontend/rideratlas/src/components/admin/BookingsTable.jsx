@@ -118,7 +118,7 @@ export default function BookingsTable({ filters }) {
                 </td>
                 <td className="px-5 py-3 text-right" onClick={(e) => e.stopPropagation()}>
                   <select
-                    className="bg-black/40 border border-white/10 rounded-lg px-2 py-1 text-xs"
+                    className="bg-[#050505]/40 border border-white/10 rounded-lg px-2 py-1 text-xs"
                     value={r.status || "NEW"}
                     onChange={(e) => setStatus(r, e.target.value)}
                   >

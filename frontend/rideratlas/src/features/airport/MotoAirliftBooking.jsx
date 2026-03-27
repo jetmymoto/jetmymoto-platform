@@ -115,7 +115,7 @@ export default function MotoAirliftBooking() {
   return (
     <div className="bg-zinc-950 text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       {/* STICKY ACTION RAIL */}
-      <nav className="fixed bottom-0 left-0 w-full z-[90] md:top-20 md:bottom-auto h-20 bg-black/80 backdrop-blur-xl border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
+      <nav className="fixed bottom-0 left-0 w-full z-[90] md:top-20 md:bottom-auto h-20 bg-[#050505]/80 backdrop-blur-xl border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="hidden md:flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
@@ -158,7 +158,7 @@ export default function MotoAirliftBooking() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 12 }}
-            className="fixed bottom-24 md:bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-black/90 border border-white/10 px-6 py-4 rounded-sm backdrop-blur-xl shadow-2xl"
+            className="fixed bottom-24 md:bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-[#050505]/90 border border-white/10 px-6 py-4 rounded-sm backdrop-blur-xl shadow-2xl"
           >
             <div className="font-mono text-[10px] uppercase tracking-widest italic text-amber-500 font-black">
               {shareStatus === "copied" && "System // Link copied to clipboard."}
@@ -233,7 +233,7 @@ export default function MotoAirliftBooking() {
       </section>
 
       {/* 2. THE ANTI-RENTAL AGITATION */}
-      <section className="py-32 bg-black">
+      <section className="py-32 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5">

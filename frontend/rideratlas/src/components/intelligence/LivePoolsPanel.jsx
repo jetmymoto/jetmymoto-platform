@@ -65,7 +65,7 @@ export default function LivePoolsPanel({ pools, loading, error }) {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: idx * 0.1 }}
-                className="bg-black/40 backdrop-blur-md border border-white/10 hover:border-amber-500/50 rounded-xl p-4 md:p-5 transition-colors group flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
+                className="bg-[#050505]/40 backdrop-blur-md border border-white/10 hover:border-amber-500/50 rounded-xl p-4 md:p-5 transition-colors group flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
               >
                 {/* Score & Meta */}
                 <div className="flex items-center gap-4 min-w-[120px]">

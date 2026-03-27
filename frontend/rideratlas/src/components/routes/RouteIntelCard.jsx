@@ -24,7 +24,7 @@ export default function RouteIntelCard({ route }) {
           className="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 to-transparent" />
-        <div className="absolute top-3 right-3 p-2 bg-black/40 border border-white/10 rounded-md text-amber-500 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+        <div className="absolute top-3 right-3 p-2 bg-[#050505]/40 border border-white/10 rounded-md text-amber-500 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
           <ArrowUpRight size={14} />
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function RouteIntelCard({ route }) {
         {/* Title */}
         <div className="flex-grow">
           <p className="text-[9px] font-mono text-amber-500 uppercase tracking-widest mb-1">
-            From {route.airport?.code || route.origin || "TBD"}
+            From {route.airport?.code || route.originAirportCode || "TBD"}
           </p>
           <h4 className="text-lg font-bold uppercase italic text-white group-hover:text-amber-400 transition-colors">
             {route.destination?.name}

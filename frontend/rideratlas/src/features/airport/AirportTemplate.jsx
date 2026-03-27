@@ -1,6 +1,8 @@
-import React, { useMemo, useEffect, useState } from "react";
+import React, { useMemo, useEffect, useState, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { GRAPH } from "@/core/network/networkGraph";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackEvent } from "@/core/analytics/trackEvent";
 // import { usePools } from "@/hooks/usePools";
 // Components
 import ArrivalOS from "./sections/ArrivalOS";
@@ -18,6 +20,7 @@ import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
 // 🚀 Dual-Engine Implementation
 import RentalGrid from "@/features/rentals/components/RentalGrid";
 import LivePoolsPanel from "@/components/intelligence/LivePoolsPanel";
+import DossierLeadCapture from "./components/DossierLeadCapture";
 
 import { SITE_MEDIA } from "@/config/siteMedia";
 
@@ -30,6 +33,14 @@ export default function AirportTemplate({
   initialRideMode = "bring"
 }) {
   const [rideMode, setRideMode] = useState(initialRideMode);
+  const location = useLocation();
+
+  const searchParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
+  const queryMode = searchParams.get("mode") || initialRideMode;
+  const queryRouteSlug = searchParams.get("route");
+  const queryRentalId = searchParams.get("rental");
+
+  const [selectedRentalId, setSelectedRentalId] = useState(queryRentalId || null);
 
   // const { pools, loading: poolsLoading, error: poolsError } = usePools(airport?.code);
   const pools = [];
@@ -88,9 +99,10 @@ export default function AirportTemplate({
       if (r.destination?.country) cSet.add(r.destination.country);
     });
 
-    const cluster = Object.values(GRAPH.clusters || {}).find(c =>
-      c.airports?.includes(a.code)
-    );
+    const cluster = (() => {
+      const clusterIds = GRAPH.indexes.clusterByAirport?.[a.code] || [];
+      return clusterIds.length > 0 ? GRAPH.clusters[clusterIds[0]] : null;
+    })();
 
     return {
       derivedRegions: Array.from(rSet),
@@ -106,8 +118,54 @@ export default function AirportTemplate({
   }, [a.code]);
 
   useEffect(() => {
-    setRideMode(initialRideMode);
-  }, [initialRideMode, a.code]);
+    setRideMode(queryMode === "rent" ? "rent" : "bring");
+  }, [queryMode, a.code]);
+
+  useEffect(() => {
+    setSelectedRentalId(queryRentalId || null);
+  }, [queryRentalId]);
+
+  const preselectedCtaRef = useRef(null);
+
+  useEffect(() => {
+    if (rideMode === "rent" && selectedRentalId) {
+      const target = document.getElementById("airport-rental-section");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      trackEvent("rental_preselect_view", {
+        airport_code: a.code,
+        route_slug: queryRouteSlug || "",
+        rental_id: selectedRentalId,
+        source: "airport_preselect",
+      });
+
+      const focusTimer = setTimeout(() => {
+        preselectedCtaRef.current?.focus();
+      }, 600);
+      return () => clearTimeout(focusTimer);
+    }
+  }, [rideMode, selectedRentalId, a.code, queryRouteSlug]);
+
+  const routePreview = useMemo(() => {
+    if (!queryRouteSlug) {
+      return null;
+    }
+
+    return GRAPH.routes?.[queryRouteSlug] || null;
+  }, [queryRouteSlug]);
+
+  const preselectedRental = useMemo(() => {
+    if (!selectedRentalId || !Array.isArray(GRAPH.rentalsByAirport?.[a.code])) {
+      return null;
+    }
+
+    const byAirportRental = GRAPH.rentalsByAirport?.[a.code]
+      .map((id) => GRAPH.rentals?.[id])
+      .filter(Boolean)
+      .find((rental) => rental?.id === selectedRentalId || rental?.slug === selectedRentalId);
+
+    return byAirportRental || GRAPH.rentals?.[selectedRentalId] || null;
+  }, [selectedRentalId, a.code]);
 
   const defaultRankingData = useMemo(
     () => ({
@@ -165,7 +223,7 @@ export default function AirportTemplate({
 
       {/* RIDE MODE SELECTOR - 50/50 Dual Engine Bridge */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row border border-white/10 rounded-sm overflow-hidden bg-black/50 backdrop-blur-md shadow-2xl">
+        <div className="flex flex-col md:flex-row border border-white/10 rounded-sm overflow-hidden bg-[#050505]/50 backdrop-blur-md shadow-2xl">
           <button 
             onClick={() => setRideMode("bring")}
             className={`flex-1 py-10 px-6 flex flex-col items-center justify-center transition-all duration-300 ${
@@ -218,7 +276,7 @@ export default function AirportTemplate({
           </motion.div>
         ) : (
           <motion.div key="rent" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
-            <div className="max-w-7xl mx-auto px-6 pb-24">
+            <div className="max-w-7xl mx-auto px-6 pb-24" id="airport-rental-section">
             <div className="mb-12 border-l-2 border-amber-500 pl-6">
               <h2 className="text-4xl font-serif italic text-white uppercase font-black mb-4">
                 Premium Fleet at {a.code}
@@ -227,8 +285,26 @@ export default function AirportTemplate({
                 Ride immediately on arrival. Verified inventory from premium partners, pre-configured for {a.region || a.city} terrain conditions. Lock in your machine below.
               </p>
             </div>
-            
-            <RentalGrid airportCode={a.code} />
+
+            {preselectedRental ? (
+              <div className="mb-8 rounded-[24px] border border-amber-400/40 bg-[#171717] p-5">
+                <div className="text-xs uppercase tracking-[0.24em] text-[#CDA755]">Mission Match: Optimized for this route</div>
+                <div className="mt-2 text-lg font-black text-white">{preselectedRental?.brand || preselectedRental?.name || "Recommended Rental"}</div>
+                <div className="mt-1 text-sm text-zinc-300">Selected from route {routePreview?.name || routePreview?.title || queryRouteSlug}</div>
+                <button
+                  ref={preselectedCtaRef}
+                  type="button"
+                  onClick={() => setSelectedRentalId(preselectedRental?.id)}
+                  className="mt-3 rounded-full border border-amber-500/50 bg-amber-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-amber-200 transition hover:bg-amber-500/20 focus:outline-none focus:ring-2 focus:ring-amber-400/80"
+                >
+                  Scroll to recommended bike
+                </button>
+              </div>
+            ) : null}
+
+            <DossierLeadCapture airportCode={a.code} />
+
+            <RentalGrid airportCode={a.code} highlightedRentalId={selectedRentalId} />
           </div>
         </motion.div>
         )}

@@ -24,7 +24,7 @@ function AirportControlPanel({ data, airport }) {
     };
   
     return (
-      <section id="control" className="py-20 bg-black/40 border-b border-white/5">
+      <section id="control" className="py-20 bg-[#050505]/40 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>

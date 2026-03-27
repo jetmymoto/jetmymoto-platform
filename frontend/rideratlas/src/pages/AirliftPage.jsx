@@ -31,12 +31,12 @@ const SimpleVideoModal = ({ videoUrl, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[9999] bg-[#050505]/95 flex items-center justify-center p-4">
       <button onClick={onClose} className="absolute top-8 right-8 text-white hover:text-gold-accent transition-colors z-50">
         <X className="w-10 h-10" />
       </button>
 
-      <div className="relative w-full max-w-6xl aspect-video bg-black border border-white/10 rounded-2xl overflow-hidden shadow-2xl group">
+      <div className="relative w-full max-w-6xl aspect-video bg-[#050505] border border-white/10 rounded-2xl overflow-hidden shadow-2xl group">
         {/* The Key helps React know to reload the video tag when the URL changes */}
         <video key={videoUrl} controls autoPlay className="w-full h-full object-cover">
           <source src={videoUrl} type="video/mp4" />
@@ -108,7 +108,7 @@ import { getSiteConfig } from '@/utils/siteConfig';
         {/* --- HERO SECTION --- */}
         <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
            <div className="absolute inset-0 z-0 overflow-hidden">
-              <div className="absolute inset-0 bg-black/60 z-10" /> 
+              <div className="absolute inset-0 bg-[#050505]/60 z-10" /> 
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10" />
               <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-80 scale-105 animate-slowZoom transform-gpu">
                 <source src={VIDEOS.HERO} type="video/mp4" />

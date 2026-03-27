@@ -47,17 +47,16 @@ export default function AirportsCountryPage() {
   const countryName = COUNTRY_NAMES[code] || code;
 
   const airports = useMemo(() => {
-    return Object.values(GRAPH.airports || {}).filter(
-      (a) => a.country?.toLowerCase() === country?.toLowerCase()
-    );
+    const normalizedCountry = country?.toLowerCase();
+    const codes = GRAPH.indexes.airportsByCountry?.[normalizedCountry] || [];
+    return codes.map(code => GRAPH.airports[code]).filter(Boolean);
   }, [country]);
 
   const countryRoutes = useMemo(() => {
-    return airports.flatMap((airport) => {
-      const routeSlugs = GRAPH.routesByAirport?.[airport.slug] || GRAPH.routesByAirport?.[airport.code] || [];
-      return routeSlugs.map((slug) => GRAPH.routes?.[slug]).filter(Boolean);
-    });
-  }, [airports]);
+    const normalizedCountry = country?.toLowerCase();
+    const slugs = GRAPH.indexes.routesByCountry?.[normalizedCountry] || [];
+    return slugs.map(slug => GRAPH.routes?.[slug]).filter(Boolean);
+  }, [country]);
 
   const regions = useMemo(() => {
     const unique = new Map();
@@ -74,7 +73,7 @@ export default function AirportsCountryPage() {
   // UX Fallback if dataset is incomplete
   const displayRoutes = routes.length > 0 
     ? routes 
-    : Object.values(GRAPH.routes || {}).slice(0, 5);
+    : (GRAPH.indexes.allRouteSlugs || []).slice(0, 5).map(s => GRAPH.routes[s]).filter(Boolean);
 
   const displayRegions = regions.length > 0 
     ? regions 
@@ -84,12 +83,12 @@ export default function AirportsCountryPage() {
       }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white py-20">
+    <div className="min-h-screen bg-[#050505] text-white py-20">
 
       <SeoHelmet
         title={`Motorcycle Shipping ${countryName} | JetMyMoto`}
         description={`Ship your motorcycle to ${countryName}. Secure air freight and vehicle logistics via major international airports.`}
-        canonicalUrl={`https://jetmymoto.com/airports/country/${country.toLowerCase()}`}
+        canonicalUrl={`https://jetmymoto.com/airport/country/${country.toLowerCase()}`}
       />
 
       {/* HERO */}

@@ -10,6 +10,7 @@ import {
   Compass
 } from "lucide-react"
 import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
+import { getCanonicalAirportPath } from "@/utils/navigationTargets";
 
 const DeploymentGraphic = ({ code, country, coords }) => {
 
@@ -69,12 +70,13 @@ const DeploymentGraphic = ({ code, country, coords }) => {
 }
 
 
-export default function DeploymentCard({ mission }) {
+export default function DeploymentCard({ mission, to }) {
 
   const { airport_slug, airport_code, airport_name, region_desc, country_code, coords, rental, weather } = mission
+  const target = to || getCanonicalAirportPath(airport_code)
 
   return (
-    <Link to={`/airport/${airport_code?.toLowerCase()}`} className="group">
+    <Link to={target} className="group">
 
       <motion.div
         initial={{ opacity:0, y:20 }}

@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   const isAirportsActive =
-    location.pathname === '/airports' ||
+    location.pathname === '/airport' ||
     location.pathname.startsWith('/airport');
 
   const isHangarActive = location.pathname.startsWith('/hangar');
@@ -74,7 +74,7 @@ const Header = () => {
             active={location.pathname === '/jetmymoto'}
           />
           <NavLink
-            to="/airports"
+            to="/airport"
             icon={<Plane size={14} />}
             label="Airports"
             active={isAirportsActive}
@@ -137,7 +137,7 @@ const Header = () => {
       {menuOpen && (
         <div className="absolute top-20 left-0 w-full bg-[#050505] border-b border-white/10 p-6 flex flex-col gap-2 lg:hidden animate-in slide-in-from-top-5 shadow-2xl">
           <MobileLink to="/jetmymoto" label="JetMyMoto" onClick={() => setMenuOpen(false)} />
-          <MobileLink to="/airports" label="Airports" onClick={() => setMenuOpen(false)} />
+          <MobileLink to="/airport" label="Airports" onClick={() => setMenuOpen(false)} />
           <MobileLink to="/hangar" label="Hangar" onClick={() => setMenuOpen(false)} />
 
           <div className="h-px w-full bg-white/10 my-4" />
@@ -200,4 +200,3 @@ const MobileLink = ({ to, label, onClick }) => (
 );
 
 export default Header;
-

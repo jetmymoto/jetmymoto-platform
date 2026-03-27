@@ -32,7 +32,7 @@ export default function LiveQuotePreview({ from, to }) {
         initial={{ opacity: 0, y: -10, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: -10, scale: 0.98 }}
-        className="absolute left-0 right-0 top-full mt-4 bg-black/95 backdrop-blur-xl border border-white/20 p-6 shadow-2xl z-50 rounded-sm text-left"
+        className="absolute left-0 right-0 top-full mt-4 bg-[#050505]/95 backdrop-blur-xl border border-white/20 p-6 shadow-2xl z-50 rounded-sm text-left"
       >
         <div className="flex items-center justify-between mb-4">
           <div className="text-[10px] text-amber-500 uppercase tracking-[0.3em] font-mono flex items-center gap-2 font-bold">
@@ -93,7 +93,7 @@ export default function LiveQuotePreview({ from, to }) {
 
         {/* SYSTEM RECOMMENDATION BLOCK (Powered by LIVE BACKEND MATCH ENGINE) */}
         {bestOption && (
-          <div className="mt-6 p-4 border border-white/10 bg-black/40 relative overflow-hidden">
+          <div className="mt-6 p-4 border border-white/10 bg-[#050505]/40 relative overflow-hidden">
             {bestOption.type === "join" && (
               <div className="absolute top-0 right-0 w-16 h-16 bg-[#25D366]/20 blur-xl rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none" />
             )}

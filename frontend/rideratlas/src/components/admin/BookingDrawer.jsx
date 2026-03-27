@@ -5,7 +5,7 @@ export default function BookingDrawer({ booking, onClose }) {
 
   return (
     <div className="fixed inset-0 z-50">
-      <div className="absolute inset-0 bg-black/70" onClick={onClose} />
+      <div className="absolute inset-0 bg-[#050505]/70" onClick={onClose} />
       <div className="absolute right-0 top-0 h-full w-full max-w-lg bg-[#0b0b0b] border-l border-white/10 p-6 overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
           <div>
