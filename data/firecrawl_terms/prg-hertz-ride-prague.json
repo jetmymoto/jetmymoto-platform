@@ -1,0 +1,13 @@
+{
+  "operator": "hertz-ride-prague",
+  "airport": "PRG",
+  "url": "https://www.hertzride.com/en/locations",
+  "harvested_at": "2026-03-29T19:25:12.224Z",
+  "terms": {
+    "security_deposit_amount": "",
+    "security_deposit_policy": "",
+    "cancellation_policy": "",
+    "terms_last_verified": "",
+    "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+  }
+}

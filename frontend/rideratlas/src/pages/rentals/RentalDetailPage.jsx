@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useEffect, useReducer, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import {
   ArrowRight,
   ChevronRight,
@@ -11,7 +11,12 @@ import {
   ShieldCheck,
   Sparkles
 } from "lucide-react";
-import { GRAPH } from "@/core/network/networkGraph";
+import {
+  getGraphShardStatus,
+  loadGraphShard,
+  readGraphSnapshot,
+  readGraphShard,
+} from "@/core/network/networkGraph";
 import {
   formatRentalPrice,
   getRentalBrand,
@@ -19,6 +24,7 @@ import {
   getRentalModelName,
   getRentalPosterUrl
 } from "@/features/rentals/utils/rentalFormatters";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 const DEFAULT_SUITABILITY = {
   adventure: {
@@ -153,36 +159,49 @@ function buildRequestPath(rental, machineLabel, operatorName) {
   return `/moto-airlift?${params.toString()}#booking`;
 }
 
-function FallbackState({ slug }) {
+function FallbackState({ slug, isLoading = false }) {
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
+
   return (
     <div className="min-h-screen bg-[#050606] text-white">
       <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-4xl items-center px-6 py-20">
         <div className="w-full overflow-hidden rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,18,18,0.96)_0%,rgba(5,6,6,0.96)_100%)] shadow-[0_30px_90px_rgba(0,0,0,0.28)]">
           <div className="border-b border-white/10 px-6 py-4 text-[11px] uppercase tracking-[0.28em] text-[#CDA755] sm:px-8">
-            Fleet Briefing Offline
+            {isLoading ? "Fleet Briefing Syncing" : "Fleet Briefing Offline"}
           </div>
 
           <div className="space-y-6 px-6 py-10 sm:px-8 sm:py-12">
             <h1 className="text-3xl font-black uppercase tracking-[-0.04em] text-white sm:text-5xl">
-              Rental Not Indexed
+              {isLoading ? "Loading Rental Briefing" : "Rental Not Indexed"}
             </h1>
             <p className="max-w-2xl text-sm leading-7 text-white/62 sm:text-base">
-              The graph engine does not currently expose a rental for slug{" "}
-              <span className="font-semibold text-white/88">{slug || "unknown"}</span>.
-              If this machine was recently added, the fallback will clear automatically once the
-              rental graph hydrates.
+              {isLoading ? (
+                <>
+                  Pulling the rental shard for{" "}
+                  <span className="font-semibold text-white/88">{slug || "unknown"}</span>.
+                  The machine briefing will render as soon as fleet data hydrates.
+                </>
+              ) : (
+                <>
+                  The graph engine does not currently expose a rental for slug{" "}
+                  <span className="font-semibold text-white/88">{slug || "unknown"}</span>.
+                  If this machine was recently added, the fallback will clear automatically once the
+                  rental graph hydrates.
+                </>
+              )}
             </p>
 
             <div className="flex flex-wrap gap-3">
               <Link
-                to="/airport"
+                to={withCtx("/airport")}
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-[#CDA755]/40 hover:text-[#CDA755]"
               >
                 Explore Hubs
                 <ChevronRight size={14} />
               </Link>
               <Link
-                to="/moto-airlift#booking"
+                to={withCtx("/moto-airlift#booking")}
                 className="inline-flex items-center gap-2 rounded-full border border-[#A76330]/60 bg-[#A76330]/12 px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#F3E5C7] transition-colors hover:border-[#CDA755] hover:bg-[#CDA755] hover:text-[#050606]"
               >
                 Open Booking Intake
@@ -198,40 +217,75 @@ function FallbackState({ slug }) {
 
 export default function RentalDetailPage() {
   const { slug = "" } = useParams();
+  const location = useLocation();
   const [videoFailed, setVideoFailed] = useState(false);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  const graph = readGraphSnapshot();
+  const withCtx = (path) => withBrandContext(path, location.search);
+
+  useEffect(() => {
+    const status = getGraphShardStatus("rentals");
+
+    if (status === "idle") {
+      loadGraphShard("rentals")
+        .then(forceUpdate)
+        .catch(() => {});
+    } else if (status === "loading") {
+      const interval = setInterval(() => {
+        if (getGraphShardStatus("rentals") === "loaded") {
+          clearInterval(interval);
+          forceUpdate();
+        }
+      }, 50);
+
+      return () => clearInterval(interval);
+    }
+  }, []);
+
+  const rentalShard = readGraphShard("rentals");
+  const rentalStatus = getGraphShardStatus("rentals");
+
+  if (!rentalShard) {
+    return <FallbackState slug={slug} isLoading={rentalStatus !== "loaded"} />;
+  }
+
+  const rentalsMap = rentalShard?.rentals ?? {};
+  const operators = rentalShard?.operators ?? {};
 
   const rental =
-    GRAPH.rentals?.[slug] ||
-    Object.values(GRAPH.rentals || {}).find((candidate) => candidate?.slug === slug) ||
+    rentalsMap?.[slug] ||
+    Object.values(rentalsMap).find((candidate) => candidate?.slug === slug) ||
     null;
 
   if (!rental) {
-    return <FallbackState slug={slug} />;
+    return (
+      <FallbackState
+        slug={slug}
+        isLoading={getGraphShardStatus("rentals") !== "loaded"}
+      />
+    );
   }
 
-  const operator = GRAPH.operators?.[rental.operatorId || rental.operator];
-  const airport = GRAPH.airports?.[rental.airportCode || rental.airport];
+  const operator = operators?.[rental.operatorId || rental.operator];
+  const airport = graph.entities.airports?.[rental.airportCode || rental.airport];
   const destinations = (rental.compatibleDestinations || rental.compatible_destinations || []).map((destinationSlug) => ({
     slug: destinationSlug,
     destination:
-      GRAPH.destinations?.[destinationSlug] || {
+      graph.entities.destinations?.[destinationSlug] || {
         slug: destinationSlug,
         name: formatDestinationLabel(destinationSlug)
       }
   }));
 
-  const brand = useMemo(() => getRentalBrand(rental), [rental]);
-  const modelName = useMemo(() => getRentalModelName(rental), [rental]);
-  const categoryLabel = useMemo(() => getRentalCategoryLabel(rental), [rental]);
-  const formattedPrice = useMemo(() => formatRentalPrice(rental), [rental]);
-  const posterUrl = useMemo(() => getRentalPosterUrl(rental), [rental]);
-  const specs = useMemo(() => buildSpecs(rental), [rental]);
+  const brand = getRentalBrand(rental);
+  const modelName = getRentalModelName(rental);
+  const categoryLabel = getRentalCategoryLabel(rental);
+  const formattedPrice = formatRentalPrice(rental);
+  const posterUrl = getRentalPosterUrl(rental);
+  const specs = buildSpecs(rental);
   const machineLabel = `${brand} ${modelName}`.trim();
   const operatorName = operator?.name || rental.operatorId || rental.operator || "Verified Operator";
-  const requestPath = useMemo(
-    () => buildRequestPath(rental, machineLabel, operatorName),
-    [rental, machineLabel, operatorName]
-  );
+  const requestPath = buildRequestPath(rental, machineLabel, operatorName);
   const videoUrl = rental?.videoUrl || rental?.video?.url || null;
   const shouldRenderVideo = Boolean(videoUrl) && !videoFailed;
   const insuranceLabel = getInsuranceLabel(rental);
@@ -375,7 +429,7 @@ export default function RentalDetailPage() {
               destinations.map(({ slug: destinationSlug, destination }) => (
                 <Link
                   key={destinationSlug}
-                  to={`/destination/${destinationSlug}`}
+                  to={withCtx(`/destination/${destinationSlug}`)}
                   className="group flex items-center justify-between gap-4 rounded-[24px] border border-white/10 bg-[#121212] px-5 py-4 transition-all duration-300 hover:border-[#CDA755]/40 hover:bg-[#121212]/90"
                 >
                   <div className="min-w-0">
@@ -514,7 +568,7 @@ export default function RentalDetailPage() {
           </div>
 
           <Link
-            to={requestPath}
+            to={withCtx(requestPath)}
             className="inline-flex items-center justify-center gap-3 rounded-full border border-[#A76330]/80 bg-[#A76330] px-6 py-4 text-sm font-black uppercase tracking-[0.24em] text-[#F7F0DF] shadow-[0_0_30px_rgba(167,99,48,0.32)] transition-all duration-300 hover:border-[#CDA755] hover:bg-[#CDA755] hover:text-[#050606]"
           >
             Request This Machine

@@ -31,6 +31,14 @@ export const AIRPORT_INDEX = {
     "region": "Aegean Staging",
     "continent": "europe"
   },
+  "BCN": {
+    "code": "BCN",
+    "city": "Barcelona",
+    "slug": "barcelona-bcn",
+    "country": "es",
+    "region": "Catalonia Hub",
+    "continent": "europe"
+  },
   "BER": {
     "code": "BER",
     "city": "Berlin",
@@ -117,6 +125,14 @@ export const AIRPORT_INDEX = {
     "slug": "faro-fao",
     "country": "pt",
     "region": "Algarve",
+    "continent": "europe"
+  },
+  "FCO": {
+    "code": "FCO",
+    "city": "Rome",
+    "slug": "rome-fco",
+    "country": "it",
+    "region": "Central Italy Hub",
     "continent": "europe"
   },
   "FRA": {

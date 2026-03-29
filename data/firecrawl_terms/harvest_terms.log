@@ -1,0 +1,126 @@
+[2026-03-29T18:56:43.781Z] START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-29T18:56:43.833Z] ERROR operator=hertz-ride-milan airport=MXP message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:43.833Z] START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-29T18:56:43.838Z] ERROR operator=eagle-rider-mxp airport=MXP message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:43.838Z] START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-29T18:56:43.840Z] ERROR operator=motorcycle-rental-europe-mxp airport=MXP message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:43.841Z] START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-29T18:56:43.842Z] ERROR operator=superbike-rental-lhr airport=LHR message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:43.842Z] START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-29T18:56:43.844Z] ERROR operator=hibike4u-lhr airport=LHR message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:43.844Z] START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-29T18:56:43.846Z] ERROR operator=hertz-ride-paris airport=CDG message=getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-29T18:56:50.022Z] START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-29T18:56:50.559Z] ERROR operator=hertz-ride-milan airport=MXP message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T18:56:50.559Z] START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-29T18:56:50.838Z] ERROR operator=eagle-rider-mxp airport=MXP message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T18:56:50.838Z] START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-29T18:56:51.047Z] ERROR operator=motorcycle-rental-europe-mxp airport=MXP message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T18:56:51.048Z] START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-29T18:56:51.294Z] ERROR operator=superbike-rental-lhr airport=LHR message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T18:56:51.294Z] START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-29T18:56:51.504Z] ERROR operator=hibike4u-lhr airport=LHR message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T18:56:51.504Z] START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-29T18:56:51.682Z] ERROR operator=hertz-ride-paris airport=CDG message=Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.
+[2026-03-29T19:15:36.611Z] START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-29T19:15:40.622Z] OK operator=hertz-ride-milan airport=MXP file=mxp-hertz-ride-milan.json
+[2026-03-29T19:15:40.623Z] START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-29T19:15:47.566Z] OK operator=eagle-rider-mxp airport=MXP file=mxp-eagle-rider-mxp.json
+[2026-03-29T19:15:47.567Z] START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-29T19:15:51.246Z] OK operator=motorcycle-rental-europe-mxp airport=MXP file=mxp-motorcycle-rental-europe-mxp.json
+[2026-03-29T19:15:51.247Z] START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-29T19:15:59.225Z] OK operator=superbike-rental-lhr airport=LHR file=lhr-superbike-rental-lhr.json
+[2026-03-29T19:15:59.226Z] START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-29T19:16:07.222Z] OK operator=hibike4u-lhr airport=LHR file=lhr-hibike4u-lhr.json
+[2026-03-29T19:16:07.222Z] START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-29T19:16:11.094Z] OK operator=hertz-ride-paris airport=CDG file=cdg-hertz-ride-paris.json
+[2026-03-29T19:16:20.258Z] MERGE operators=6 file=master_terms.json
+[2026-03-29T19:16:26.969Z] DIFF diff_count=6
+[2026-03-29T19:19:25.565Z] START operator=hertz-ride-malaga airport=AGP url=https://www.hertzride.com/en/locations
+[2026-03-29T19:19:48.948Z] OK operator=hertz-ride-malaga airport=AGP file=agp-hertz-ride-malaga.json
+[2026-03-29T19:19:48.948Z] START operator=imtbike-malaga airport=AGP url=https://www.imtbike.com/
+[2026-03-29T19:20:03.273Z] OK operator=imtbike-malaga airport=AGP file=agp-imtbike-malaga.json
+[2026-03-29T19:20:03.274Z] START operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations
+[2026-03-29T19:20:06.154Z] OK operator=hertz-ride-alicante airport=ALC file=alc-hertz-ride-alicante.json
+[2026-03-29T19:20:06.155Z] START operator=hertz-ride-amsterdam airport=AMS url=https://www.hertzride.com/en/locations
+[2026-03-29T19:20:17.104Z] OK operator=hertz-ride-amsterdam airport=AMS file=ams-hertz-ride-amsterdam.json
+[2026-03-29T19:20:17.104Z] START operator=motorent-ath airport=ATH url=https://www.motorent.gr/
+[2026-03-29T19:20:34.269Z] OK operator=motorent-ath airport=ATH file=ath-motorent-ath.json
+[2026-03-29T19:20:34.269Z] START operator=eaglerider-bcn airport=BCN url=https://www.eaglerider.com/
+[2026-03-29T19:20:48.966Z] OK operator=eaglerider-bcn airport=BCN file=bcn-eaglerider-bcn.json
+[2026-03-29T19:20:48.967Z] START operator=imtbike-bcn airport=BCN url=https://www.imtbike.com/
+[2026-03-29T19:20:51.973Z] OK operator=imtbike-bcn airport=BCN file=bcn-imtbike-bcn.json
+[2026-03-29T19:20:51.973Z] START operator=hertz-ride-berlin airport=BER url=https://www.hertzride.com/en/locations
+[2026-03-29T19:20:59.298Z] OK operator=hertz-ride-berlin airport=BER file=ber-hertz-ride-berlin.json
+[2026-03-29T19:20:59.298Z] START operator=hertz-ride-brussels airport=BRU url=https://www.hertzride.com/en/locations
+[2026-03-29T19:21:08.967Z] OK operator=hertz-ride-brussels airport=BRU file=bru-hertz-ride-brussels.json
+[2026-03-29T19:21:08.967Z] START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations
+[2026-03-29T19:21:16.139Z] OK operator=hertz-ride-paris airport=CDG file=cdg-hertz-ride-paris.json
+[2026-03-29T19:21:16.140Z] START operator=hertz-ride-copenhagen airport=CPH url=https://www.hertzride.com/en/locations
+[2026-03-29T19:21:26.902Z] OK operator=hertz-ride-copenhagen airport=CPH file=cph-hertz-ride-copenhagen.json
+[2026-03-29T19:21:26.903Z] START operator=hertz-ride-dublin airport=DUB url=https://www.hertzride.com/en/locations
+[2026-03-29T19:21:39.597Z] OK operator=hertz-ride-dublin airport=DUB file=dub-hertz-ride-dublin.json
+[2026-03-29T19:21:39.597Z] START operator=hertz-ride-dusseldorf airport=DUS url=https://www.hertzride.com/en/locations
+[2026-03-29T19:21:52.410Z] OK operator=hertz-ride-dusseldorf airport=DUS file=dus-hertz-ride-dusseldorf.json
+[2026-03-29T19:21:52.411Z] START operator=hertz-ride-edinburgh airport=EDI url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:01.004Z] OK operator=hertz-ride-edinburgh airport=EDI file=edi-hertz-ride-edinburgh.json
+[2026-03-29T19:22:01.005Z] START operator=eaglerider-fco airport=FCO url=https://www.eaglerider.com/
+[2026-03-29T19:22:04.751Z] OK operator=eaglerider-fco airport=FCO file=fco-eaglerider-fco.json
+[2026-03-29T19:22:04.751Z] START operator=hertz-ride-fco airport=FCO url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:15.686Z] OK operator=hertz-ride-fco airport=FCO file=fco-hertz-ride-fco.json
+[2026-03-29T19:22:15.687Z] START operator=hertz-ride-florence airport=FLR url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:22.502Z] OK operator=hertz-ride-florence airport=FLR file=flr-hertz-ride-florence.json
+[2026-03-29T19:22:22.502Z] START operator=hertz-ride-frankfurt airport=FRA url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:31.326Z] OK operator=hertz-ride-frankfurt airport=FRA file=fra-hertz-ride-frankfurt.json
+[2026-03-29T19:22:31.327Z] START operator=hertz-ride-geneva airport=GVA url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:37.088Z] OK operator=hertz-ride-geneva airport=GVA file=gva-hertz-ride-geneva.json
+[2026-03-29T19:22:37.088Z] START operator=hertz-ride-helsinki airport=HEL url=https://www.hertzride.com/en/locations
+[2026-03-29T19:22:48.784Z] OK operator=hertz-ride-helsinki airport=HEL file=hel-hertz-ride-helsinki.json
+[2026-03-29T19:22:48.784Z] START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-29T19:22:53.780Z] OK operator=hibike4u-lhr airport=LHR file=lhr-hibike4u-lhr.json
+[2026-03-29T19:22:53.780Z] START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-29T19:22:57.591Z] OK operator=superbike-rental-lhr airport=LHR file=lhr-superbike-rental-lhr.json
+[2026-03-29T19:22:57.592Z] START operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations
+[2026-03-29T19:23:08.723Z] OK operator=hertz-ride-lisbon airport=LIS file=lis-hertz-ride-lisbon.json
+[2026-03-29T19:23:08.723Z] START operator=hertz-ride-lyon airport=LYS url=https://www.hertzride.com/en/locations
+[2026-03-29T19:23:16.173Z] OK operator=hertz-ride-lyon airport=LYS file=lys-hertz-ride-lyon.json
+[2026-03-29T19:23:16.173Z] START operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/
+[2026-03-29T19:23:21.716Z] OK operator=imtbike-madrid airport=MAD file=mad-imtbike-madrid.json
+[2026-03-29T19:23:21.717Z] START operator=hertz-ride-manchester airport=MAN url=https://www.hertzride.com/en/locations
+[2026-03-29T19:23:25.317Z] OK operator=hertz-ride-manchester airport=MAN file=man-hertz-ride-manchester.json
+[2026-03-29T19:23:25.317Z] START operator=allround-rent-muc airport=MUC url=https://www.motorradvermietung.de/muenchen/
+[2026-03-29T19:23:50.154Z] OK operator=allround-rent-muc airport=MUC file=muc-allround-rent-muc.json
+[2026-03-29T19:23:50.155Z] START operator=hertz-ride-munich airport=MUC url=https://www.hertzride.com/en/locations
+[2026-03-29T19:23:55.310Z] OK operator=hertz-ride-munich airport=MUC file=muc-hertz-ride-munich.json
+[2026-03-29T19:23:55.310Z] START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-airport
+[2026-03-29T19:24:12.299Z] OK operator=eagle-rider-mxp airport=MXP file=mxp-eagle-rider-mxp.json
+[2026-03-29T19:24:12.300Z] START operator=eaglerider-mxp airport=MXP url=https://www.eaglerider.com/
+[2026-03-29T19:24:14.537Z] OK operator=eaglerider-mxp airport=MXP file=mxp-eaglerider-mxp.json
+[2026-03-29T19:24:14.538Z] START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations
+[2026-03-29T19:24:20.048Z] OK operator=hertz-ride-milan airport=MXP file=mxp-hertz-ride-milan.json
+[2026-03-29T19:24:20.053Z] START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-29T19:24:22.428Z] OK operator=motorcycle-rental-europe-mxp airport=MXP file=mxp-motorcycle-rental-europe-mxp.json
+[2026-03-29T19:24:22.432Z] START operator=hertz-ride-nice airport=NCE url=https://www.hertzride.com/en/locations
+[2026-03-29T19:24:33.226Z] OK operator=hertz-ride-nice airport=NCE file=nce-hertz-ride-nice.json
+[2026-03-29T19:24:33.227Z] START operator=hertz-ride-porto airport=OPO url=https://www.hertzride.com/en/locations
+[2026-03-29T19:24:42.710Z] OK operator=hertz-ride-porto airport=OPO file=opo-hertz-ride-porto.json
+[2026-03-29T19:24:42.711Z] START operator=hertz-ride-oslo airport=OSL url=https://www.hertzride.com/en/locations
+[2026-03-29T19:24:53.176Z] OK operator=hertz-ride-oslo airport=OSL file=osl-hertz-ride-oslo.json
+[2026-03-29T19:24:53.176Z] START operator=hertz-ride-palma airport=PMI url=https://www.hertzride.com/en/locations
+[2026-03-29T19:25:02.593Z] OK operator=hertz-ride-palma airport=PMI file=pmi-hertz-ride-palma.json
+[2026-03-29T19:25:02.593Z] START operator=hertz-ride-prague airport=PRG url=https://www.hertzride.com/en/locations
+[2026-03-29T19:25:12.224Z] OK operator=hertz-ride-prague airport=PRG file=prg-hertz-ride-prague.json
+[2026-03-29T19:25:12.224Z] START operator=hertz-ride-split airport=SPU url=https://www.hertzride.com/en/locations
+[2026-03-29T19:25:14.436Z] OK operator=hertz-ride-split airport=SPU file=spu-hertz-ride-split.json
+[2026-03-29T19:25:14.436Z] START operator=hertz-ride-venice airport=VCE url=https://www.hertzride.com/en/locations
+[2026-03-29T19:25:19.573Z] OK operator=hertz-ride-venice airport=VCE file=vce-hertz-ride-venice.json
+[2026-03-29T19:25:19.573Z] START operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/locations
+[2026-03-29T19:25:39.792Z] OK operator=hertz-ride-vienna airport=VIE file=vie-hertz-ride-vienna.json
+[2026-03-29T19:25:39.792Z] START operator=hertz-ride-warsaw airport=WAW url=https://www.hertzride.com/en/locations
+[2026-03-29T19:25:49.965Z] OK operator=hertz-ride-warsaw airport=WAW file=waw-hertz-ride-warsaw.json
+[2026-03-29T19:25:49.966Z] START operator=hertz-ride-zurich airport=ZRH url=https://www.hertzride.com/en/locations
+[2026-03-29T19:26:03.427Z] OK operator=hertz-ride-zurich airport=ZRH file=zrh-hertz-ride-zurich.json
+[2026-03-29T19:26:16.244Z] DIFF diff_count=6
+[2026-03-29T19:26:16.249Z] MERGE operators=42 file=master_terms.json
+[2026-03-29T19:26:26.186Z] MERGE operators=42 file=master_terms.json
+[2026-03-29T19:26:28.254Z] DIFF diff_count=42

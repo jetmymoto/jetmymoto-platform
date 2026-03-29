@@ -1,0 +1,681 @@
+{
+  "operator": "eaglerider-fco",
+  "airport": "FCO",
+  "url": "https://www.eaglerider.com/rome-italy",
+  "harvested_at": "2026-03-25T16:10:40.309Z",
+  "rental_count": 48,
+  "rentals": [
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Ultra Classic®",
+      "category": "classic",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "olbia"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road King® Special",
+      "category": "touring",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Road King® Special",
+      "category": "touring",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Ultra",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Ultra",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide®",
+      "category": "touring",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Sport Glide™",
+      "category": "sport-touring",
+      "price_day": 185,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Fat Bob®",
+      "category": "cruiser",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "sardinia"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Sport Glide™",
+      "category": "sport-touring",
+      "price_day": 185,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "classic",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "sardinia"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "classic",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "classic",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "F 900 R",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Ducati",
+      "model": "Scrambler",
+      "category": "scrambler",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Moto Guzzi",
+      "model": "V100 Mandello",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Ducati",
+      "model": "Monster",
+      "category": "sport-touring",
+      "price_day": 313.09,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "G 310 R",
+      "category": "cruiser",
+      "price_day": 214.53,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "K 1600 GT",
+      "category": "touring",
+      "price_day": 394.26,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 RT",
+      "category": "touring",
+      "price_day": 394.26,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 850 GS",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1250 GS",
+      "category": "adventure",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Moto Guzzi",
+      "model": "Stelvio",
+      "category": "touring",
+      "price_day": 313.09,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 382.67,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Moto Guzzi",
+      "model": "V85 Strada",
+      "category": "touring",
+      "price_day": 150.75,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 230,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 230,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 850 GS",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 230,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Kawasaki",
+      "model": "Versys 650 Tourer",
+      "category": "adventure",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 353.68,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 180,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Harley-Davidson",
+      "model": "Pan America™ 1250",
+      "category": "adventure",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "Ducati",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "F 850 GS",
+      "category": "adventure",
+      "price_day": 180,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "roma",
+        "treviglio"
+      ]
+    },
+    {
+      "airport": "FCO",
+      "operator": "eaglerider-fco",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan-airport",
+        "treviglio",
+        "roma"
+      ]
+    }
+  ]
+}

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SeoHelmet from '../components/seo/SeoHelmet'; 
-import { GRAPH } from "@/core/network/networkGraph";
+import {
+  getGraphShardStatus,
+  loadGraphShard,
+  readGraphSnapshot,
+  readGraphShard,
+} from "@/core/network/networkGraph";
 import TrustInfrastructure from '../components/home/TrustInfrastructure';
 import DeploymentGrid from '@/components/home/DeploymentGrid';
-import { getCanonicalPaths } from "@/utils/navigationTargets";
+import { getCanonicalPaths, withBrandContext } from "@/utils/navigationTargets";
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -117,9 +122,10 @@ const RidingTheaters = () => {
 
 // 4. Featured Routes (The Content Layer)
 const FeaturedRoutes = () => {
-  const routes = (GRAPH.indexes.allRouteSlugs || [])
+  const graph = readGraphSnapshot();
+  const routes = (graph.indexes.allRouteSlugs || [])
     .slice(0, 3)
-    .map((routeSlug) => GRAPH.routes?.[routeSlug])
+    .map((routeSlug) => graph.entities.routes?.[routeSlug])
     .filter(Boolean);
   
   if (routes.length === 0) return null;
@@ -173,7 +179,7 @@ const FeaturedRoutes = () => {
                  <p className="text-sm text-zinc-400 font-light line-clamp-3 mb-6 flex-1">
                    {route.description || "Explore this epic route through stunning landscapes and unforgettable terrain."}
                  </p>
-                 <Link to={`/route/${route.slug}`} className="inline-block text-xs font-mono text-white uppercase tracking-widest border border-white/20 py-3 text-center hover:bg-white hover:text-black transition-colors w-full">
+                 <Link to={withBrandContext(`/route/${route.slug}`)} className="inline-block text-xs font-mono text-white uppercase tracking-widest border border-white/20 py-3 text-center hover:bg-white hover:text-black transition-colors w-full">
                    View Details
                  </Link>
                </div>
@@ -187,9 +193,51 @@ const FeaturedRoutes = () => {
 
 // 5. Contextual Bike Matching (The Commerce Tie-In)
 const ContextualBikes = () => {
-  const rentals = Object.keys(GRAPH.rentals || {})
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+
+  useEffect(() => {
+    const status = getGraphShardStatus("rentals");
+    if (status === "idle") {
+      loadGraphShard("rentals")
+        .then(forceUpdate)
+        .catch(() => {});
+    } else if (status === "loading") {
+      const interval = setInterval(() => {
+        if (getGraphShardStatus("rentals") === "loaded") {
+          clearInterval(interval);
+          forceUpdate();
+        }
+      }, 50);
+
+      return () => clearInterval(interval);
+    }
+
+    return undefined;
+  }, []);
+
+  const rentalShard = readGraphShard("rentals");
+
+  if (!rentalShard) {
+    return (
+      <section className="relative border-b border-white/5 bg-[#050505] py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="rounded-sm border border-white/10 bg-zinc-900/30 p-8 text-center">
+            <div className="text-[10px] font-mono uppercase tracking-[0.24em] text-amber-500">
+              Fleet Sync
+            </div>
+            <div className="mt-4 text-2xl font-black uppercase text-white">
+              Loading Featured Bikes
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  const rentalsMap = rentalShard?.rentals ?? {};
+  const rentals = Object.keys(rentalsMap)
     .slice(0, 4)
-    .map(k => GRAPH.rentals[k])
+    .map((k) => rentalsMap[k])
     .filter(Boolean);
   
   if (rentals.length === 0) return null;

@@ -4,17 +4,20 @@ import { Link, useLocation } from "react-router-dom";
 import { getCanonicalPaths } from "@/utils/navigationTargets";
 import { getSiteConfig } from "@/utils/siteConfig";
 
-export default function HeaderJetMyMoto() {
+export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null }) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const site = getSiteConfig();
-  const paths = getCanonicalPaths();
+  const paths = getCanonicalPaths(location.search);
   const mode = new URLSearchParams(location.search).get("mode");
   const brandCtx = new URLSearchParams(location.search).get("ctx");
-  const isJetMyMoto =
+  const isJetContext =
     site.id === "jmm" ||
     location.pathname === "/jetmymoto" ||
+    location.pathname.startsWith("/moto-airlift") ||
+    location.pathname.startsWith("/pool/") ||
     brandCtx === "jet";
+  const isJetMyMoto = forcedIsJetMyMoto ?? isJetContext;
   const withContext = (basePath, brandCtx) => {
     if (!basePath) return "/";
     const separator = basePath.includes("?") ? "&" : "?";
@@ -25,6 +28,20 @@ export default function HeaderJetMyMoto() {
   };
 
   const closeMenu = () => setOpen(false);
+  const surfaceClass = isJetMyMoto
+    ? "bg-[#F8F8F8]/92 border-[#574C43]/10"
+    : "bg-[#121212]/90 border-white/5";
+  const brandTextClass = isJetMyMoto ? "text-[#574C43]" : "text-white";
+  const navIdleClass = isJetMyMoto ? "text-[#574C43]/70 hover:text-[#CDA755]" : "text-zinc-400 hover:text-white";
+  const mobileToggleClass = isJetMyMoto ? "text-[#574C43]/70 hover:text-[#CDA755]" : "text-zinc-300 hover:text-white";
+  const menuSurfaceClass = isJetMyMoto ? "bg-[#F8F8F8] border-[#574C43]/10" : "bg-[#121212] border-white/5";
+  const subtleBorderClass = isJetMyMoto ? "border-[#574C43]/10" : "border-white/5";
+  const rentalsCtaClass = isJetMyMoto
+    ? "border border-[#574C43]/15 text-[#574C43] px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest hover:border-[#CDA755] hover:text-[#CDA755] transition-all duration-300"
+    : "border border-white/20 text-white px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest hover:border-amber-500 hover:text-amber-500 transition-all duration-300";
+  const logisticsCtaClass = isJetMyMoto
+    ? "bg-[#CDA755] text-[#574C43] px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest shadow-lg hover:bg-[#A76330] hover:text-white transition-all duration-300"
+    : "bg-amber-600 text-white px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest shadow-lg hover:bg-amber-500 transition-all duration-300";
 
   const navLinks = [
     { label: "Atlas", path: withCurrentContext("/") },
@@ -54,24 +71,23 @@ export default function HeaderJetMyMoto() {
   };
 
   return (
-    // Swapped bg-[#050505] for bg-[#121212] to prevent halation and eye strain [2, 3]
-    <header className="fixed top-0 left-0 w-full z-[120] bg-[#121212]/90 backdrop-blur-lg border-b border-white/5">
+    <header className={`fixed top-0 left-0 w-full z-[120] backdrop-blur-lg transition-colors duration-700 border-b ${surfaceClass}`}>
       
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
 
         {/* Brand */}
         <Link to={isJetMyMoto ? "/jetmymoto" : "/"} className="flex items-center" onClick={closeMenu}>
-          <h1 className="text-white text-xl md:text-2xl font-semibold tracking-[0.2em]">
+          <span className={`${brandTextClass} text-xl md:text-2xl font-semibold tracking-[0.2em] transition-colors duration-700`}>
             {isJetMyMoto ? (
               <>
-                JET<span className="text-amber-500 ml-1">MYMOTO</span>
+                JET<span className="text-[#CDA755] ml-1">MYMOTO</span>
               </>
             ) : (
               <>
-                RIDER<span className="text-amber-500 ml-1">ATLAS</span>
+                RIDER<span className="text-[#CDA755] ml-1">ATLAS</span>
               </>
             )}
-          </h1>
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -82,8 +98,8 @@ export default function HeaderJetMyMoto() {
               to={item.path}
               className={`transition-colors duration-300 ${
                 isActive(item.label)
-                  ? "text-amber-500"
-                  : "text-zinc-400 hover:text-white"
+                  ? "text-[#CDA755]"
+                  : navIdleClass
               }`}
             >
               {item.label}
@@ -96,7 +112,7 @@ export default function HeaderJetMyMoto() {
           {/* Rentals CTA - Luxury Outline Style */}
           <Link
             to={withContext(paths.rentals, "ra")}
-            className="border border-white/20 text-white px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest hover:border-amber-500 hover:text-amber-500 transition-all duration-300"
+            className={rentalsCtaClass}
           >
             Find a Bike
           </Link>
@@ -104,7 +120,7 @@ export default function HeaderJetMyMoto() {
           {/* Logistics CTA - Solid Tactical Style */}
           <Link
             to={withContext(paths.logistics, "jet")}
-            className="bg-amber-600 text-white px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest shadow-lg hover:bg-amber-500 transition-all duration-300"
+            className={logisticsCtaClass}
           >
             Ship Machine
           </Link>
@@ -113,7 +129,7 @@ export default function HeaderJetMyMoto() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-zinc-300 hover:text-white transition-colors"
+          className={`md:hidden transition-colors ${mobileToggleClass}`}
           aria-label="Toggle Menu"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
@@ -123,7 +139,7 @@ export default function HeaderJetMyMoto() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#121212] border-t border-white/5 px-8 py-6 space-y-6 text-sm uppercase tracking-wider">
+        <div className={`md:hidden border-t px-8 py-6 space-y-6 text-sm uppercase tracking-wider transition-colors duration-700 ${menuSurfaceClass}`}>
 
           <div className="flex flex-col gap-4">
             {navLinks.map((item) => (
@@ -131,18 +147,18 @@ export default function HeaderJetMyMoto() {
                 key={item.path}
                 to={item.path}
                 onClick={closeMenu}
-                className="block text-zinc-400 hover:text-amber-500 transition-colors"
+                className={`block transition-colors ${isJetMyMoto ? "text-[#574C43]/75 hover:text-[#CDA755]" : "text-zinc-400 hover:text-amber-500"}`}
               >
                 {item.label}
               </Link>
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 pt-4 border-t border-white/5">
+          <div className={`flex flex-col gap-3 pt-4 border-t ${subtleBorderClass}`}>
             <Link
               to={withContext(paths.rentals, "ra")}
               onClick={closeMenu}
-              className="block border border-white/20 text-white px-6 py-3 rounded-sm font-semibold text-center tracking-widest hover:border-amber-500 hover:text-amber-500"
+              className={`block px-6 py-3 rounded-sm font-semibold text-center tracking-widest ${isJetMyMoto ? "border border-[#574C43]/15 text-[#574C43] hover:border-[#CDA755] hover:text-[#CDA755]" : "border border-white/20 text-white hover:border-amber-500 hover:text-amber-500"}`}
             >
               Find a Bike
             </Link>
@@ -150,7 +166,7 @@ export default function HeaderJetMyMoto() {
             <Link
               to={withContext(paths.logistics, "jet")}
               onClick={closeMenu}
-              className="block bg-amber-600 text-white px-6 py-3 rounded-sm font-semibold text-center tracking-widest"
+              className={`block px-6 py-3 rounded-sm font-semibold text-center tracking-widest ${isJetMyMoto ? "bg-[#CDA755] text-[#574C43] hover:bg-[#A76330] hover:text-white" : "bg-amber-600 text-white"}`}
             >
               Ship Machine
             </Link>

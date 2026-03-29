@@ -1,6 +1,6 @@
 import React, { useMemo, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import SeoHelmet from '../components/seo/SeoHelmet'; // Import SeoHelmet
 import { SITE_MEDIA } from "@/config/siteMedia";
 import { continentIndex } from "@/features/airport/network/continentIndex";
@@ -9,6 +9,7 @@ import AdventureNetworkCard from "@/components/routes/AdventureNetworkCard";
 import RouteIntelCard from "@/components/routes/RouteIntelCard";
 
 import { GRAPH } from "@/core/network/networkGraph";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 
 
@@ -217,7 +218,9 @@ const RadarSectorOverlay = () => {
 
 const GlobalTower = () => {
   const { continent } = useParams();
+  const location = useLocation();
   const [activeContinent, setActiveContinent] = useState(continent || "europe");
+  const withCtx = (path) => withBrandContext(path, location.search);
   const [isScanning, setIsScanning] = useState(false);
 
   useEffect(() => {
@@ -413,7 +416,7 @@ const GlobalTower = () => {
               {(NETWORK_DATA || []).map((item) => (
                 <Link
                   key={item.id}
-                  to={`/airport/continent/${item.id}`}
+                  to={withCtx(`/airport/continent/${item.id}`)}
                   onClick={() => setActiveContinent(item.id)}
                   className={`relative group flex flex-col items-start min-w-[220px] transition-all p-4 rounded border text-left overflow-hidden ${
                     currentContinentId === item.id
@@ -503,7 +506,7 @@ const GlobalTower = () => {
                 {(countries || []).map((countryCode) => (
                   <Link
                     key={countryCode}
-                    to={`/airport/country/${countryCode.toLowerCase()}`}
+                    to={withCtx(`/airport/country/${countryCode.toLowerCase()}`)}
                     className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-4 transition-all"
                   >
                     <div className="flex items-center justify-between">
@@ -641,7 +644,7 @@ const GlobalTower = () => {
                   (flattenedRoutes || []).map(route => (
                     <Link
                       key={route.slug}
-                      to={`/route/${route.slug}`}
+                      to={withCtx(`/route/${route.slug}`)}
                     >
                       <RouteIntelCard
                         route={route}
@@ -666,7 +669,7 @@ const GlobalTower = () => {
                 Our logistics officers align your machine with the ideal riding theater.
               </p>
 
-              <Link to="/moto-airlift" className="px-12 py-5 bg-zinc-900 border border-white/10 hover:border-amber-500 transition-all font-mono text-xs font-black uppercase tracking-widest italic group flex items-center gap-6 text-white">
+              <Link to={withCtx("/moto-airlift")} className="px-12 py-5 bg-zinc-900 border border-white/10 hover:border-amber-500 transition-all font-mono text-xs font-black uppercase tracking-widest italic group flex items-center gap-6 text-white">
                 Request Global Deployment Strategy
                 <ArrowRight
                   size={16}

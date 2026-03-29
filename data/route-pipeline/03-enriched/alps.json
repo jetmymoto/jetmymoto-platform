@@ -1,0 +1,388 @@
+{
+  "destination_slug": "alps",
+  "destination_name": "European Alps",
+  "enriched_at": "2026-03-29T00:11:10.369Z",
+  "provider": "mock-claude",
+  "model": "claude-sonnet-4-mock",
+  "cinematic_pitch": "The European Alps represent the absolute zenith of global motorcycle touring. Here, immaculate ribbons of alpine tarmac weave through dramatic monolithic peaks and plunging glacial valleys. This is not just a ride; it is a masterclass in elevation and precision engineering.",
+  "ride_character": "A relentless, intoxicating rhythm of tight hairpins and sweeping high-speed arcs set against a backdrop of sheer vertical granite.",
+  "best_season": "Late June through September — the high passes have shed their snowpack and the valley floors are in full, vibrant bloom.",
+  "premium_pois": [
+    {
+      "name": "Alibi",
+      "cinematic_description": "Step into the historic orbit of Alibi. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "B+",
+      "cinematic_description": "More than just a pump, B+ acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Col",
+      "cinematic_description": "Arrive at Col, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col Agnel",
+      "cinematic_description": "Arrive at Col Agnel, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col Agnel / Colle dell'Agnello",
+      "cinematic_description": "Arrive at Col Agnel / Colle dell'Agnello, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col Agnel / Colle dell'Agnello",
+      "cinematic_description": "Arrive at Col Agnel / Colle dell'Agnello, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de la Bonette",
+      "cinematic_description": "Arrive at Col de la Bonette, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de la Bonette",
+      "cinematic_description": "Arrive at Col de la Bonette, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de l'Iseran",
+      "cinematic_description": "Arrive at Col de l'Iseran, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de l'Iseran",
+      "cinematic_description": "Arrive at Col de l'Iseran, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de Turini",
+      "cinematic_description": "Arrive at Col de Turini, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col de Turini",
+      "cinematic_description": "Arrive at Col de Turini, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col d'Izoard",
+      "cinematic_description": "Arrive at Col d'Izoard, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col d'Izoard",
+      "cinematic_description": "Arrive at Col d'Izoard, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col du Galibier",
+      "cinematic_description": "Arrive at Col du Galibier, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Col du Galibier",
+      "cinematic_description": "Arrive at Col du Galibier, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Duga",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Duga offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "E",
+      "cinematic_description": "More than just a pump, E acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "E",
+      "cinematic_description": "More than just a pump, E acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Enò",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Enò offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "Furka Pass",
+      "cinematic_description": "Step into the historic orbit of Furka Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Furka Pass (Hotel BelvÃ©dÃ¨re)",
+      "cinematic_description": "Step into the historic orbit of Furka Pass (Hotel BelvÃ©dÃ¨re). This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Furkapass",
+      "cinematic_description": "Arrive at Furkapass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Furkapass",
+      "cinematic_description": "Arrive at Furkapass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Grimsel Pass",
+      "cinematic_description": "Step into the historic orbit of Grimsel Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Grimselpass",
+      "cinematic_description": "Arrive at Grimselpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Grimselpass",
+      "cinematic_description": "Arrive at Grimselpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Grossglockner High Alpine Road",
+      "cinematic_description": "Step into the historic orbit of Grossglockner High Alpine Road. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "inä",
+      "cinematic_description": "Transforming the standard coffee stop into a premium staging ground, inä serves as the ultimate espresso recovery zone. Surrounded by high-performance machines, riders converge here to decode the morning's telemetric feedback over flawless Italian roasts.",
+      "rider_tip": "Park directly in the line of sight from the terrace; the outdoor seating offers perfect visibility of your machine while you recharge."
+    },
+    {
+      "name": "JUL",
+      "cinematic_description": "Step into the historic orbit of JUL. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Julier Pass",
+      "cinematic_description": "Step into the historic orbit of Julier Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Julierpass",
+      "cinematic_description": "Arrive at Julierpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Julierpass",
+      "cinematic_description": "Arrive at Julierpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "K",
+      "cinematic_description": "More than just a pump, K acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "K",
+      "cinematic_description": "More than just a pump, K acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Kals am Grossglockner",
+      "cinematic_description": "Step into the historic orbit of Kals am Grossglockner. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Klaus",
+      "cinematic_description": "Step into the historic orbit of Klaus. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Klausen Pass",
+      "cinematic_description": "Step into the historic orbit of Klausen Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Klausenpass",
+      "cinematic_description": "Arrive at Klausenpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Klausenpass",
+      "cinematic_description": "Arrive at Klausenpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Kö",
+      "cinematic_description": "Step into the historic orbit of Kö. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "LA",
+      "cinematic_description": "Elevating the mid-ride culinary experience, LA offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "LAB",
+      "cinematic_description": "Step into the historic orbit of LAB. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "LV",
+      "cinematic_description": "More than just a pump, LV acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "LV",
+      "cinematic_description": "More than just a pump, LV acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Melò",
+      "cinematic_description": "Transforming the standard coffee stop into a premium staging ground, Melò serves as the ultimate espresso recovery zone. Surrounded by high-performance machines, riders converge here to decode the morning's telemetric feedback over flawless Italian roasts.",
+      "rider_tip": "Park directly in the line of sight from the terrace; the outdoor seating offers perfect visibility of your machine while you recharge."
+    },
+    {
+      "name": "Mont",
+      "cinematic_description": "Arrive at Mont, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Na",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Na offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "Nu!",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Nu! offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "Nufenen Pass",
+      "cinematic_description": "Step into the historic orbit of Nufenen Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Nufenenpass / Passo della Novena",
+      "cinematic_description": "Arrive at Nufenenpass / Passo della Novena, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Nufenenpass / Passo della Novena",
+      "cinematic_description": "Arrive at Nufenenpass / Passo della Novena, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "(Pas)",
+      "cinematic_description": "Arrive at (Pas), a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Passo dello Stelvio - Stilfser Joch",
+      "cinematic_description": "Arrive at Passo dello Stelvio - Stilfser Joch, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Passo dello Stelvio - Stilfser Joch",
+      "cinematic_description": "Arrive at Passo dello Stelvio - Stilfser Joch, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Più",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Più offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "RAN",
+      "cinematic_description": "More than just a pump, RAN acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "RAN",
+      "cinematic_description": "More than just a pump, RAN acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "RAN",
+      "cinematic_description": "More than just a pump, RAN acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Ran",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Ran offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "RAN",
+      "cinematic_description": "More than just a pump, RAN acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "San Bernardino",
+      "cinematic_description": "Arrive at San Bernardino, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "San Bernardino Pass",
+      "cinematic_description": "Step into the historic orbit of San Bernardino Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Sen",
+      "cinematic_description": "Elevating the mid-ride culinary experience, Sen offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "SEN",
+      "cinematic_description": "Elevating the mid-ride culinary experience, SEN offers a distinguished gastronomic intermission. Here, riders trade their helmets for regional delicacies in a refined atmosphere, perfectly resetting before the next leg of the journey.",
+      "rider_tip": "Reservations are often required during peak touring season; call ahead and request a table with clear sightlines to the motorcycle parking area."
+    },
+    {
+      "name": "ST",
+      "cinematic_description": "Transforming the standard coffee stop into a premium staging ground, ST serves as the ultimate espresso recovery zone. Surrounded by high-performance machines, riders converge here to decode the morning's telemetric feedback over flawless Italian roasts.",
+      "rider_tip": "Park directly in the line of sight from the terrace; the outdoor seating offers perfect visibility of your machine while you recharge."
+    },
+    {
+      "name": "Susten Pass",
+      "cinematic_description": "Step into the historic orbit of Susten Pass. This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Sustenpass",
+      "cinematic_description": "Arrive at Sustenpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Sustenpass",
+      "cinematic_description": "Arrive at Sustenpass, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "TE",
+      "cinematic_description": "More than just a pump, TE acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Te",
+      "cinematic_description": "More than just a pump, Te acts as a vital tactical refueling node nestled within the demanding alpine theater. This essential logistics point ensures your high-compression engine receives the premium octane required to conquer the looming ascents.",
+      "rider_tip": "Pumps here occasionally reject international cards at the terminal; keep small Euro notes tucked in your tank bag for seamless transactions."
+    },
+    {
+      "name": "Timmelsjoch (Austrian Side)",
+      "cinematic_description": "Step into the historic orbit of Timmelsjoch (Austrian Side). This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    },
+    {
+      "name": "Timmelsjoch - Passo Rombo",
+      "cinematic_description": "Arrive at Timmelsjoch - Passo Rombo, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Timmelsjoch - Passo Rombo",
+      "cinematic_description": "Arrive at Timmelsjoch - Passo Rombo, a masterclass in visual majesty where the flawless tarmac seemingly drops into the abyss. This high-altitude vantage point commands absolute reverence, rewarding precise cornering with sweeping panoramas of the glacial valley.",
+      "rider_tip": "The crosswinds at the summit can be aggressive. Lean your bike into the prevailing wind on the side stand and avoid parking on loose gravel shoulders."
+    },
+    {
+      "name": "Tremola (Gotthard Pass)",
+      "cinematic_description": "Step into the historic orbit of Tremola (Gotthard Pass). This cultural landmark demands a momentary pause from the throttle, offering a deeply atmospheric slice of local heritage amidst the relentless riding.",
+      "rider_tip": "Allocate at least 30 minutes for exploration; leave your heavy gear locked in the panniers if possible."
+    }
+  ],
+  "_prompt_used": "You must deeply analyze the POI's 'Type' or 'Category'. DO NOT use a generic luxury template. If the POI is a CAFE, describe it as a premium staging ground or espresso recovery zone. If it is FUEL, describe it as a tactical refueling node. If it is a SCENIC_POINT, focus on the visual majesty and tarmac quality. Adapt the vocabulary to the specific location. The 'Rider Tip' must be highly specific to the category. A fuel tip should be about octane levels or payment methods. A cafe tip should be about parking visibility or local specialties."
+}

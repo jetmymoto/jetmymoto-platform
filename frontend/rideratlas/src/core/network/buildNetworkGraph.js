@@ -3,6 +3,9 @@ import { staticAirports } from "@/features/airport/data/staticAirports";
 import { staticAirportsEnriched } from "@/features/airport/data/staticAirportsEnriched";
 import { RIDE_DESTINATIONS } from "../../features/routes/data/rideDestinations";
 import { GENERATED_RIDE_ROUTES } from "../../features/routes/data/generatedRideRoutes";
+import { ENRICHED_ROUTE_INTEL } from "../../features/routes/data/enrichedRouteIntel";
+import { ENRICHED_POIS } from "../../features/routes/data/enrichedPois";
+import { A2A_MISSIONS } from "../../features/routes/data/a2aMissions";
 import RIDE_REGIONS from "../../features/rides/rideRegions.json";
 
 function toArray(value) {
@@ -50,6 +53,7 @@ export function buildNetworkGraph() {
   const destinationsByRegion = {};
   const pois = {};
   const poisByDestination = {};
+  const poisByAirport = {};
 
   for (const airportCode in AIRPORT_INDEX) {
     const base = AIRPORT_INDEX[airportCode];
@@ -84,8 +88,12 @@ export function buildNetworkGraph() {
   const destinationsArray = toArray(RIDE_DESTINATIONS);
   for (const destination of destinationsArray) {
     if (destination.slug) {
-      destinations[destination.slug] = destination;
-      destinationMap.set(destination.name, destination);
+      // Merge enriched route intel (cinematic copy, telemetry summary) if available
+      const intel = ENRICHED_ROUTE_INTEL[destination.slug];
+      destinations[destination.slug] = intel
+        ? { ...destination, ...intel, slug: destination.slug }
+        : destination;
+      destinationMap.set(destination.name, destinations[destination.slug]);
       
       const region = destination.region || "Other";
       if (!destinationsByRegion[region]) {
@@ -120,7 +128,7 @@ export function buildNetworkGraph() {
     ).trim().toLowerCase();
 
     const airport = airportCode ? AIRPORT_INDEX[airportCode] : undefined;
-    const destination = destinationSlug ? RIDE_DESTINATIONS[destinationSlug] : undefined;
+    const destination = destinationSlug ? destinations[destinationSlug] : undefined;
 
     const hydratedRoute = {
       ...route,
@@ -185,6 +193,33 @@ export function buildNetworkGraph() {
       }
 
       poisByDestination[destinationSlug].push(poi.slug);
+    }
+  }
+
+  // ── Enriched POIs from route-pipeline (Stage 4 output) ──
+  for (const enrichedPoi of ENRICHED_POIS) {
+    if (!enrichedPoi?.slug) continue;
+
+    const destSlug = enrichedPoi.destination_slug || "other";
+    const normalizedPoi = {
+      ...enrichedPoi,
+      destination: destSlug,
+      region: destSlug,
+    };
+
+    // Only add if not already present from rideRegions
+    if (!pois[enrichedPoi.slug]) {
+      pois[enrichedPoi.slug] = normalizedPoi;
+      if (!poisByDestination[destSlug]) {
+        poisByDestination[destSlug] = [];
+      }
+      poisByDestination[destSlug].push(enrichedPoi.slug);
+      
+      const airportCode = enrichedPoi.nearest_airport?.toUpperCase() || "UNKNOWN";
+      if (!poisByAirport[airportCode]) {
+        poisByAirport[airportCode] = [];
+      }
+      poisByAirport[airportCode].push(enrichedPoi.slug);
     }
   }
 
@@ -258,6 +293,44 @@ export function buildNetworkGraph() {
   for (const slug in routes) allRouteSlugs.push(slug);
   for (const slug in destinations) allDestinationSlugs.push(slug);
 
+  // ── A2A Missions (Airport-to-Airport open-jaw corridors) ──
+  const missions = {};
+  const missionsByInsertion = {};
+  const missionsByExtraction = {};
+  const missionsByTheater = {};
+  const allMissionSlugs = [];
+
+  for (const mission of A2A_MISSIONS) {
+    if (!mission?.slug) continue;
+
+    const insertionCode = (mission.insertion_airport || "").toUpperCase();
+    const extractionCode = (mission.extraction_airport || "").toUpperCase();
+    const theaterSlug = (mission.theater || "").toLowerCase();
+
+    const hydrated = {
+      ...mission,
+      insertion: airports[insertionCode] || { code: insertionCode },
+      extraction: airports[extractionCode] || { code: extractionCode },
+      theaterData: destinations[theaterSlug] || null,
+    };
+
+    missions[mission.slug] = hydrated;
+    allMissionSlugs.push(mission.slug);
+
+    if (insertionCode) {
+      if (!missionsByInsertion[insertionCode]) missionsByInsertion[insertionCode] = [];
+      missionsByInsertion[insertionCode].push(mission.slug);
+    }
+    if (extractionCode) {
+      if (!missionsByExtraction[extractionCode]) missionsByExtraction[extractionCode] = [];
+      missionsByExtraction[extractionCode].push(mission.slug);
+    }
+    if (theaterSlug) {
+      if (!missionsByTheater[theaterSlug]) missionsByTheater[theaterSlug] = [];
+      missionsByTheater[theaterSlug].push(mission.slug);
+    }
+  }
+
   return {
     airports,
     airportsBySlug,
@@ -279,5 +352,12 @@ export function buildNetworkGraph() {
     allAirportCodes,
     allRouteSlugs,
     allDestinationSlugs,
+    poisByAirport,
+    // ── A2A Missions ──
+    missions,
+    missionsByInsertion,
+    missionsByExtraction,
+    missionsByTheater,
+    allMissionSlugs,
   };
 }

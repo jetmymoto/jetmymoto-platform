@@ -1,0 +1,31 @@
+{
+  "destination_slug": "hawaii-oahu",
+  "destination_name": "Oahu",
+  "enriched_at": "2026-03-28T23:29:07.577Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Oahu invites the discerning rider to trace its coastal highways where asphalt meets ocean horizon, weaving past volcanic peaks and alpine passes that punctuate the island’s lush silhouette. This ride is an intimate journey through Hawaii’s dramatic terrain, where every curve reveals a new vista of rugged mountains and tranquil sea.",
+  "ride_character": "A seamless coastal cruise with easy asphalt roads that balance serene ocean views and the occasional alpine pass challenge, perfect for riders seeking effortless flow and striking natural contrasts.",
+  "best_season": "April through October — optimal weather ensures dry roads and clear visibility to fully appreciate the island’s peaks and coastal panoramas.",
+  "premium_pois": [
+    {
+      "name": "Pōhākea Pass",
+      "cinematic_description": "At 651 meters, Pōhākea Pass offers a sublime transition between mountain and sea, where riders can savor panoramic views that frame Oahu’s lush interior against the sprawling Pacific.",
+      "rider_tip": "Approach with steady throttle control, as the pass’s gentle ascents and descents reward smooth lines over aggressive maneuvers."
+    },
+    {
+      "name": "Kaʻala",
+      "cinematic_description": "As the island’s highest peak at 1227 meters, Kaʻala stands as a monumental backdrop, its slopes a testament to Hawaii’s volcanic origins, visible from the coastal highways below.",
+      "rider_tip": "Plan your ride to catch morning light on Kaʻala’s rugged ridges for the most striking photographic opportunities."
+    },
+    {
+      "name": "Diamond Head",
+      "cinematic_description": "Iconic and instantly recognizable, Diamond Head’s volcanic cone rises to 232 meters, offering riders a symbolic gateway to Oahu’s dramatic volcanic landscape amid the island’s coastal vistas.",
+      "rider_tip": "Use Diamond Head as a navigational landmark to orient yourself along the coastal route, especially when exploring the southern shore."
+    }
+  ]
+}

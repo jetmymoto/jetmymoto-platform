@@ -1,0 +1,205 @@
+{
+  "operator": "hertz-ride-nice",
+  "airport": "NCE",
+  "url": "https://www.hertzride.com/en/locations/nice/",
+  "harvested_at": "2026-03-25T16:06:38.619Z",
+  "rental_count": 14,
+  "rentals": [
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "Moto Morini",
+      "model": "X-Cape",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    },
+    {
+      "airport": "NCE",
+      "operator": "hertz-ride-nice",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "côte-d'azur",
+        "verdon-gorge",
+        "alpes-maritimes"
+      ]
+    }
+  ]
+}

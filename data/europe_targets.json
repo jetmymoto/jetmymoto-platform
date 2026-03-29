@@ -1,0 +1,212 @@
+[
+  {
+    "operator_id": "hertz-ride-malaga",
+    "airport_code": "AGP",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "imtbike-malaga",
+    "airport_code": "AGP",
+    "url": "https://www.imtbike.com/"
+  },
+  {
+    "operator_id": "hertz-ride-alicante",
+    "airport_code": "ALC",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-amsterdam",
+    "airport_code": "AMS",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "motorent-ath",
+    "airport_code": "ATH",
+    "url": "https://www.motorent.gr/"
+  },
+  {
+    "operator_id": "eaglerider-bcn",
+    "airport_code": "BCN",
+    "url": "https://www.eaglerider.com/"
+  },
+  {
+    "operator_id": "imtbike-bcn",
+    "airport_code": "BCN",
+    "url": "https://www.imtbike.com/"
+  },
+  {
+    "operator_id": "hertz-ride-berlin",
+    "airport_code": "BER",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-brussels",
+    "airport_code": "BRU",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-paris",
+    "airport_code": "CDG",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-copenhagen",
+    "airport_code": "CPH",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-dublin",
+    "airport_code": "DUB",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-dusseldorf",
+    "airport_code": "DUS",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-edinburgh",
+    "airport_code": "EDI",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "eaglerider-fco",
+    "airport_code": "FCO",
+    "url": "https://www.eaglerider.com/"
+  },
+  {
+    "operator_id": "hertz-ride-fco",
+    "airport_code": "FCO",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-florence",
+    "airport_code": "FLR",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-frankfurt",
+    "airport_code": "FRA",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-geneva",
+    "airport_code": "GVA",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-helsinki",
+    "airport_code": "HEL",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hibike4u-lhr",
+    "airport_code": "LHR",
+    "url": "https://hibike4u.co.uk/"
+  },
+  {
+    "operator_id": "superbike-rental-lhr",
+    "airport_code": "LHR",
+    "url": "https://www.superbikerental.co.uk/"
+  },
+  {
+    "operator_id": "hertz-ride-lisbon",
+    "airport_code": "LIS",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-lyon",
+    "airport_code": "LYS",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "imtbike-madrid",
+    "airport_code": "MAD",
+    "url": "https://www.imtbike.com/"
+  },
+  {
+    "operator_id": "hertz-ride-manchester",
+    "airport_code": "MAN",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "allround-rent-muc",
+    "airport_code": "MUC",
+    "url": "https://www.motorradvermietung.de/muenchen/"
+  },
+  {
+    "operator_id": "hertz-ride-munich",
+    "airport_code": "MUC",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "eagle-rider-mxp",
+    "airport_code": "MXP",
+    "url": "https://www.eaglerider.com/milan-airport"
+  },
+  {
+    "operator_id": "eaglerider-mxp",
+    "airport_code": "MXP",
+    "url": "https://www.eaglerider.com/"
+  },
+  {
+    "operator_id": "hertz-ride-milan",
+    "airport_code": "MXP",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "motorcycle-rental-europe-mxp",
+    "airport_code": "MXP",
+    "url": "https://www.motorcycle-rental-europe.com/"
+  },
+  {
+    "operator_id": "hertz-ride-nice",
+    "airport_code": "NCE",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-porto",
+    "airport_code": "OPO",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-oslo",
+    "airport_code": "OSL",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-palma",
+    "airport_code": "PMI",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-prague",
+    "airport_code": "PRG",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-split",
+    "airport_code": "SPU",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-venice",
+    "airport_code": "VCE",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-vienna",
+    "airport_code": "VIE",
+    "url": "https://www.hertzride.com/locations"
+  },
+  {
+    "operator_id": "hertz-ride-warsaw",
+    "airport_code": "WAW",
+    "url": "https://www.hertzride.com/en/locations"
+  },
+  {
+    "operator_id": "hertz-ride-zurich",
+    "airport_code": "ZRH",
+    "url": "https://www.hertzride.com/en/locations"
+  }
+]

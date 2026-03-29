@@ -55,8 +55,15 @@ export default function DeploymentGrid() {
               transition={{ delay: index * 0.08 }}
               className="relative"
             >
-              <div className="absolute right-2 top-2 px-2 py-1 text-[10px] font-mono uppercase tracking-wide bg-[#050505]/70 text-amber-300 border border-amber-500/30 rounded-md tabular-nums">
-                {GRAPH.routesByAirport?.[mission.airport_code]?.length || 0} routes
+              <div className="absolute right-2 top-2 flex gap-1.5">
+                <span className="px-2 py-1 text-[10px] font-mono uppercase tracking-wide bg-[#050505]/70 text-amber-300 border border-amber-500/30 rounded-md tabular-nums">
+                  {GRAPH.routesByAirport?.[mission.airport_code]?.length || 0} routes
+                </span>
+                {(GRAPH.missionsByInsertion?.[mission.airport_code]?.length || 0) > 0 && (
+                  <span className="px-2 py-1 text-[10px] font-mono uppercase tracking-wide bg-[#050505]/70 text-[#CDA755] border border-[#CDA755]/30 rounded-md tabular-nums">
+                    {GRAPH.missionsByInsertion[mission.airport_code].length} A2A
+                  </span>
+                )}
               </div>
               <DeploymentCard mission={mission} to={to} />
             </motion.div>

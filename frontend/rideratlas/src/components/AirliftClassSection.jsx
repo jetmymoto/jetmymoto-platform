@@ -2,11 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useToast } from '@/components/ui/use-toast';
+import { getCanonicalPaths } from "@/utils/navigationTargets";
 
 const AirliftClassCard = ({ title, label, features, price, buttonText, buttonVariant, isPremium, delay }) => {
   const { toast } = useToast();
+  const location = useLocation();
+  const paths = getCanonicalPaths(location.search);
 
   const handleButtonClick = (e) => {
     // If it's a link to another page, let it navigate.
@@ -51,7 +54,7 @@ const AirliftClassCard = ({ title, label, features, price, buttonText, buttonVar
                 <p className={`mb-6 text-sm font-semibold ${isPremium ? 'text-gold-accent' : 'text-slate-400'}`}>
                     {price}
                 </p>
-                <Link to="/airlift" onClick={handleButtonClick} className="w-full">
+                <Link to={paths.logistics} onClick={handleButtonClick} className="w-full">
                     <Button
                         variant={buttonVariant}
                         className={`w-full h-12 text-base font-bold ${isPremium ? 'bg-gold-accent text-navy-deep hover:bg-amber-400 shadow-[0_0_20px_rgba(255,185,60,0.2)]' : 'text-slate-300 border-slate-600 hover:bg-slate-800 hover:text-white'}`}

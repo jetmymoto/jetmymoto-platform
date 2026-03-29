@@ -1,0 +1,31 @@
+{
+  "destination_slug": "tennessee-valley",
+  "destination_name": "Tennessee Valley",
+  "enriched_at": "2026-03-28T23:28:55.122Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Tennessee Valley offers a refined coastal highway experience where smooth asphalt threads through a landscape punctuated by serene lakes and commanding mountain peaks. From the historic echoes of Woodmont Christian Church to the quiet majesty of Short Mountain and its neighbors, this ride invites you to savor every measured mile in understated elegance.",
+  "ride_character": "A seamless coastal highway journey defined by easy, impeccably paved roads winding gently beneath a skyline of rugged yet accessible mountain summits.",
+  "best_season": "April through October — temperate weather enhances the coastal ambiance and the region’s natural contours reveal their richest hues.",
+  "premium_pois": [
+    {
+      "name": "Woodmont Christian Church",
+      "cinematic_description": "Nestled in Nashville, this historic church stands as a quiet testament to Tennessee’s layered heritage, offering a moment of reflective stillness amid your journey.",
+      "rider_tip": "Take a brief stop here to appreciate the architecture and stretch before continuing along the coastal route."
+    },
+    {
+      "name": "Ackers Lake",
+      "cinematic_description": "A tranquil waterscape set at 137 meters elevation, Ackers Lake mirrors the sky’s shifting light, providing a serene pause framed by Tennessee’s natural splendor.",
+      "rider_tip": "Use the nearby pullouts to safely pause and capture the lake’s peaceful expanse without disrupting traffic flow."
+    },
+    {
+      "name": "Buzzard Roost",
+      "cinematic_description": "Rising prominently in Hickman County, Buzzard Roost commands attention with its rugged profile, offering riders a dramatic visual anchor against the coastal terrain.",
+      "rider_tip": "Approach with measured speed to appreciate the sweeping views and consider a brief scenic detour where safe."
+    }
+  ]
+}

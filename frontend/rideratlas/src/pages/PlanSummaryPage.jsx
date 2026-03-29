@@ -1,9 +1,11 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { withBrandContext } from "@/utils/navigationTargets";
 
 export default function PlanSummaryPage() {
   const { planId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="min-h-screen bg-[#050505] text-white flex items-center justify-center px-6">
@@ -29,7 +31,7 @@ export default function PlanSummaryPage() {
 
         <div className="mt-8 flex gap-3">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate(withBrandContext("/", location.search))}
             className="px-5 py-3 text-xs uppercase tracking-widest border border-white/10 hover:border-white transition"
           >
             Back to Missions

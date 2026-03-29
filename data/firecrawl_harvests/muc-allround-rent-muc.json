@@ -1,0 +1,597 @@
+{
+  "operator": "allround-rent-muc",
+  "airport": "MUC",
+  "url": "https://www.motorradvermietung.de/muenchen/",
+  "harvested_at": "2026-03-25T15:57:44.799Z",
+  "rental_count": 42,
+  "rentals": [
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "K1600 GTL",
+      "category": "touring",
+      "price_day": 299,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1300RT",
+      "category": "touring",
+      "price_day": 299,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Honda",
+      "model": "Gold Wing DCT",
+      "category": "touring",
+      "price_day": 299,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1300GS Adventure",
+      "category": "adventure",
+      "price_day": 269,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 269,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Ducati",
+      "model": "Ducati Multistrada V4S",
+      "category": "adventure",
+      "price_day": 269,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1250 GS Adventure Low",
+      "category": "adventure",
+      "price_day": 249,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1300GS",
+      "category": "adventure",
+      "price_day": 249,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1250 GS Adventure",
+      "category": "adventure",
+      "price_day": 249,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "1390 Super Adventure",
+      "category": "adventure",
+      "price_day": 249,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "S1000XR",
+      "category": "sport-touring",
+      "price_day": 239,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1250RS",
+      "category": "sport-touring",
+      "price_day": 239,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Ducati",
+      "model": "Multistrada V2S",
+      "category": "adventure",
+      "price_day": 239,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Versys 1100",
+      "category": "touring",
+      "price_day": 239,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Ninja 1100SX",
+      "category": "sport-touring",
+      "price_day": 239,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "R1250R",
+      "category": "cruiser",
+      "price_day": 219,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F900GS Adventure",
+      "category": "adventure",
+      "price_day": 219,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F900GS",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F 900 XR",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F 900 XR Low",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F800 GT",
+      "category": "touring",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Husqvarna",
+      "model": "Norden 901 Expedition",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "990 Duke",
+      "category": "sport-touring",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "890 Adventure",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "890 SMT",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "BMW",
+      "model": "F800GS",
+      "category": "adventure",
+      "price_day": 149,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Honda",
+      "model": "Transalp 750",
+      "category": "adventure",
+      "price_day": 149,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Ninja 650",
+      "category": "cruiser",
+      "price_day": 149,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "790 Adventure",
+      "category": "adventure",
+      "price_day": 149,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Vulcan S",
+      "category": "cruiser",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Versys 650",
+      "category": "touring",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Z650S",
+      "category": "cruiser",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "KLE 500",
+      "category": "adventure",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Kawasaki",
+      "model": "Z650S Low (35KW)",
+      "category": "cruiser",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "390 Adventure R",
+      "category": "adventure",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "390 Adventure X",
+      "category": "adventure",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Suzuki",
+      "model": "DLV 650 V-Strom",
+      "category": "adventure",
+      "price_day": 129,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Benelli",
+      "model": "TRK502",
+      "category": "adventure",
+      "price_day": 109,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Honda",
+      "model": "CB650FA",
+      "category": "touring",
+      "price_day": 109,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "390 Duke",
+      "category": "sport-touring",
+      "price_day": 109,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "Husqvarna",
+      "model": "Svartpilen 125",
+      "category": "classic",
+      "price_day": 85,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "allround-rent-muc",
+      "brand": "KTM",
+      "model": "125 Duke",
+      "category": "classic",
+      "price_day": 85,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "black-forest",
+        "lake-constance"
+      ]
+    }
+  ]
+}

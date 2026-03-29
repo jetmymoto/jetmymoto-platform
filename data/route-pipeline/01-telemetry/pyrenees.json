@@ -1,0 +1,224 @@
+{
+  "destination_slug": "pyrenees",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:32:30.002Z",
+  "telemetry": {
+    "road_segments": 40857,
+    "passes_found": 2527,
+    "peaks_found": 6643,
+    "max_altitude_m": 3404,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 50,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Collado del Medio",
+      "lat": 42.6373713,
+      "lng": 0.6475124,
+      "elevation_m": 3267,
+      "osm_id": 6533447444
+    },
+    {
+      "name": "Collado de la Rimaya",
+      "lat": 42.6471583,
+      "lng": 0.6377244,
+      "elevation_m": 3231,
+      "osm_id": 3208913286
+    },
+    {
+      "name": "Brecha de Tempestades",
+      "lat": 42.6277052,
+      "lng": 0.6612148,
+      "elevation_m": 3218,
+      "osm_id": 5003473124
+    },
+    {
+      "name": "Collado Maldito",
+      "lat": 42.6418051,
+      "lng": 0.6396894,
+      "elevation_m": 3205,
+      "osm_id": 3208907022
+    },
+    {
+      "name": "Collado de Coronas",
+      "lat": 42.6340837,
+      "lng": 0.6530535,
+      "elevation_m": 3201,
+      "osm_id": 623866275
+    },
+    {
+      "name": "Paso d'es Ixalenques",
+      "lat": 42.620681,
+      "lng": 0.668512,
+      "elevation_m": 3158,
+      "osm_id": 6535636061
+    },
+    {
+      "name": "Brecha Carrive",
+      "lat": 42.6609926,
+      "lng": 0.4349454,
+      "elevation_m": 3133,
+      "osm_id": 6880683509
+    },
+    {
+      "name": "Collado de Cordier",
+      "lat": 42.6494909,
+      "lng": 0.6282934,
+      "elevation_m": 3127,
+      "osm_id": 3208816476
+    },
+    {
+      "name": "Puerto de Bachimala",
+      "lat": 42.6957743,
+      "lng": 0.3959838,
+      "elevation_m": 3122,
+      "osm_id": 6887996035
+    },
+    {
+      "name": "Paso Tucón Royo",
+      "lat": 42.6416661,
+      "lng": 0.424102,
+      "elevation_m": 3096,
+      "osm_id": 6880683523
+    },
+    {
+      "name": "Collado de Alba",
+      "lat": 42.6530256,
+      "lng": 0.6260701,
+      "elevation_m": 3087,
+      "osm_id": 3208807852
+    },
+    {
+      "name": "Brecha de los Gemelos",
+      "lat": 42.6635281,
+      "lng": 0.4370145,
+      "elevation_m": 3087,
+      "osm_id": 6880683508
+    },
+    {
+      "name": "Coll Superior de Literola",
+      "lat": 42.6947219,
+      "lng": 0.5209375,
+      "elevation_m": 3051,
+      "osm_id": 1478293793
+    },
+    {
+      "name": "Collado de la Paúl",
+      "lat": 42.6579936,
+      "lng": 0.4419963,
+      "elevation_m": 3034,
+      "osm_id": 3772867900
+    },
+    {
+      "name": "Collado Inferior de Alba",
+      "lat": 42.6548857,
+      "lng": 0.6223322,
+      "elevation_m": 3033,
+      "osm_id": 3208807794
+    },
+    {
+      "name": "Collado Diente Llardana",
+      "lat": 42.6479764,
+      "lng": 0.4357558,
+      "elevation_m": 3017,
+      "osm_id": 3811530745
+    },
+    {
+      "name": "Col des Crabioules",
+      "lat": 42.7005152,
+      "lng": 0.5339442,
+      "elevation_m": 3012,
+      "osm_id": 3775018319
+    },
+    {
+      "name": "Paso de la Gralla",
+      "lat": 42.6240948,
+      "lng": 0.4089645,
+      "elevation_m": 2997,
+      "osm_id": 6886018972
+    },
+    {
+      "name": "Col de Riufret",
+      "lat": 42.6708,
+      "lng": 1.40223,
+      "elevation_m": 2981,
+      "osm_id": 445583486
+    },
+    {
+      "name": "Portilló de Lliterola",
+      "lat": 42.7012167,
+      "lng": 0.5263789,
+      "elevation_m": 2981,
+      "osm_id": 2715481367
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Tuca d'Aneto / Maladeta de Corones",
+      "lat": 42.6310731,
+      "lng": 0.6566457,
+      "elevation_m": 3404
+    },
+    {
+      "name": "Tuca de Posets",
+      "lat": 42.6546289,
+      "lng": 0.4352271,
+      "elevation_m": 3368.6
+    },
+    {
+      "name": "Pico Maldito",
+      "lat": 42.639574,
+      "lng": 0.641336,
+      "elevation_m": 3354
+    },
+    {
+      "name": "Punta de Astorg",
+      "lat": 42.6394682,
+      "lng": 0.6426351,
+      "elevation_m": 3354
+    },
+    {
+      "name": "Aguja Daviu",
+      "lat": 42.6304122,
+      "lng": 0.655618,
+      "elevation_m": 3350
+    },
+    {
+      "name": "Tuca d'el Mich",
+      "lat": 42.6386072,
+      "lng": 0.6451899,
+      "elevation_m": 3349
+    },
+    {
+      "name": "Esquena de l'Aneto",
+      "lat": 42.6293104,
+      "lng": 0.6596985,
+      "elevation_m": 3345
+    },
+    {
+      "name": "Aguja Escudier",
+      "lat": 42.6302501,
+      "lng": 0.6547218,
+      "elevation_m": 3340
+    },
+    {
+      "name": "Aguja Schmidt-Endell",
+      "lat": 42.6398847,
+      "lng": 0.6409541,
+      "elevation_m": 3335
+    },
+    {
+      "name": "Punta Llardaneta o Pico Espadas",
+      "lat": 42.6498359,
+      "lng": 0.4265655,
+      "elevation_m": 3328
+    }
+  ]
+}

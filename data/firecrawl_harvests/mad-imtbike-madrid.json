@@ -1,0 +1,93 @@
+{
+  "operator": "imtbike-madrid",
+  "airport": "MAD",
+  "url": "https://www.imtbike.com/motorcycle-rentals-spain/madrid/",
+  "harvested_at": "2026-03-25T15:45:54.621Z",
+  "rental_count": 6,
+  "rentals": [
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 150,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    },
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "touring",
+      "price_day": 175,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    },
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "Honda",
+      "model": "Gold Wing",
+      "category": "cruiser",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    },
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "KTM",
+      "model": "1290 Super Adventure",
+      "category": "adventure",
+      "price_day": 160,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    },
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "Yamaha",
+      "model": "MT-09",
+      "category": "sport-touring",
+      "price_day": 125,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    },
+    {
+      "airport": "MAD",
+      "operator": "imtbike-madrid",
+      "brand": "BMW",
+      "model": "F 850 GS",
+      "category": "adventure",
+      "price_day": 140,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-de-guadarrama",
+        "castilla-y-leon",
+        "puerto-de-pico"
+      ]
+    }
+  ]
+}

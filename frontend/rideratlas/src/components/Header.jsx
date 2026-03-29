@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { auth, provider, signInWithPopup, signOut } from '../firebase';
+import { withBrandContext } from "@/utils/navigationTargets";
 import {
   Disc,
   Plane,
@@ -41,13 +42,14 @@ const Header = () => {
     location.pathname.startsWith('/airport');
 
   const isHangarActive = location.pathname.startsWith('/hangar');
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
         {/* IDENTITY */}
-        <Link to="/" className="group flex items-center gap-4">
+        <Link to={withCtx("/")} className="group flex items-center gap-4">
           <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 transition-all duration-500 group-hover:bg-amber-500 group-hover:text-black group-hover:ring-amber-500 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.4)]">
             <Disc className="h-5 w-5 animate-spin-slow" />
           </div>
@@ -68,19 +70,19 @@ const Header = () => {
         {/* PRIMARY NAV */}
         <nav className="hidden lg:flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/5 backdrop-blur-md shadow-2xl">
           <NavLink
-            to="/jetmymoto"
+            to={withCtx("/jetmymoto")}
             icon={<Disc size={14} />}
             label="JetMyMoto"
             active={location.pathname === '/jetmymoto'}
           />
           <NavLink
-            to="/airport"
+            to={withCtx("/airport")}
             icon={<Plane size={14} />}
             label="Airports"
             active={isAirportsActive}
           />
           <NavLink
-            to="/hangar"
+            to={withCtx("/hangar")}
             icon={<Warehouse size={14} />}
             label="Hangar"
             active={isHangarActive}
@@ -136,9 +138,9 @@ const Header = () => {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="absolute top-20 left-0 w-full bg-[#050505] border-b border-white/10 p-6 flex flex-col gap-2 lg:hidden animate-in slide-in-from-top-5 shadow-2xl">
-          <MobileLink to="/jetmymoto" label="JetMyMoto" onClick={() => setMenuOpen(false)} />
-          <MobileLink to="/airport" label="Airports" onClick={() => setMenuOpen(false)} />
-          <MobileLink to="/hangar" label="Hangar" onClick={() => setMenuOpen(false)} />
+          <MobileLink to={withCtx("/jetmymoto")} label="JetMyMoto" onClick={() => setMenuOpen(false)} />
+          <MobileLink to={withCtx("/airport")} label="Airports" onClick={() => setMenuOpen(false)} />
+          <MobileLink to={withCtx("/hangar")} label="Hangar" onClick={() => setMenuOpen(false)} />
 
           <div className="h-px w-full bg-white/10 my-4" />
 

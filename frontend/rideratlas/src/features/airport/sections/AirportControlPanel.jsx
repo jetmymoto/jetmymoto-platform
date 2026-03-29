@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { GRAPH } from "@/core/network/networkGraph";
 import { ArrowRight, MapPin, Navigation } from "lucide-react";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 function AirportControlPanel({ data, airport }) {
+    const location = useLocation();
+    const withCtx = (path) => withBrandContext(path, location.search);
     const routeSlugs = GRAPH.routesByAirport?.[airport?.code] || [];
     const routes = routeSlugs.map(r => GRAPH.routes[r]).filter(Boolean);
     const destinations = routes.map(r => r.destination).filter(Boolean);
@@ -29,17 +32,17 @@ function AirportControlPanel({ data, airport }) {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
               <div className="text-amber-500 font-mono text-[10px] font-black tracking-[0.4em] uppercase italic mb-3">
-                LIVE_AIRPORT_ACCESS_PANEL
+                HUB AMENITIES & SERVICES
               </div>
               <h2 className="text-2xl font-black italic uppercase text-white tracking-tight">
-                Airport Control Panel
+                Hub Overview & Amenities
               </h2>
             </div>
             <div className="text-[10px] font-mono text-zinc-600 italic uppercase tracking-widest max-w-[300px] md:text-right">
-              Operational utility hub. Verify details with {airport?.name} authority.
+              Concierge hub details. Verify live information with {airport?.name}.
               <br />
               <span className="text-amber-500/80 mt-1 block">
-                Serving {routes.length} routes across {uniqueDestinations.length} destinations.
+                Connected to {routes.length} routes across {uniqueDestinations.length} destinations.
               </span>
             </div>
           </div>
@@ -77,13 +80,13 @@ function AirportControlPanel({ data, airport }) {
             {/* Active Routes */}
             <div>
                 <h3 className="text-xs font-mono font-black uppercase tracking-[0.3em] text-zinc-500 mb-6 flex items-center gap-2">
-                    <Navigation size={14} className="text-amber-500" /> Active Expedition Routes
+                    <Navigation size={14} className="text-amber-500" /> Epic Routes from this Hub
                 </h3>
                 <div className="grid gap-2">
                     {routes.slice(0, 10).map(route => (
                         <Link 
                             key={route.slug} 
-                            to={`/route/${route.slug}`}
+                            to={withCtx(`/route/${route.slug}`)}
                             className="flex items-center justify-between p-4 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/50 hover:bg-amber-500/5 transition-all group"
                         >
                             <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white transition-colors">
@@ -94,7 +97,7 @@ function AirportControlPanel({ data, airport }) {
                     ))}
                     {routes.length > 10 && (
                         <div className="text-[10px] font-mono text-zinc-600 uppercase italic mt-2">
-                            + {routes.length - 10} more routes available in theater
+                            + {routes.length - 10} more routes available from this hub
                         </div>
                     )}
                 </div>
@@ -103,13 +106,13 @@ function AirportControlPanel({ data, airport }) {
             {/* Primary Destinations */}
             <div>
                 <h3 className="text-xs font-mono font-black uppercase tracking-[0.3em] text-zinc-500 mb-6 flex items-center gap-2">
-                    <MapPin size={14} className="text-amber-500" /> Tactical Riding Destinations
+                    <MapPin size={14} className="text-amber-500" /> Curated Local Journeys
                 </h3>
                 <div className="grid gap-2">
                     {uniqueDestinations.map(dest => (
                         <Link 
                             key={dest.slug} 
-                            to={`/destination/${dest.slug}`}
+                            to={withCtx(`/destination/${dest.slug}`)}
                             className="flex items-center justify-between p-4 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/50 hover:bg-amber-500/5 transition-all group"
                         >
                             <div className="flex flex-col">

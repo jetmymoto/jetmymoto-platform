@@ -1,0 +1,93 @@
+{
+  "operator": "imtbike-malaga",
+  "airport": "AGP",
+  "url": "https://www.imtbike.com/motorcycle-rentals-spain/malaga/",
+  "harvested_at": "2026-03-25T16:11:01.152Z",
+  "rental_count": 6,
+  "rentals": [
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "BMW",
+      "model": "R 1250 GS",
+      "category": "adventure",
+      "price_day": 120,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 130,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 100,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "KTM",
+      "model": "790 Adventure",
+      "category": "adventure",
+      "price_day": 110,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "sport-touring",
+      "price_day": 140,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "imtbike-malaga",
+      "brand": "Honda",
+      "model": "Africa Twin",
+      "category": "adventure",
+      "price_day": 115,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "ronda",
+        "malaga-coast"
+      ]
+    }
+  ]
+}

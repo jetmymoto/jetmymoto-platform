@@ -1,0 +1,219 @@
+{
+  "operator": "hertz-ride-cdg",
+  "airport": "CDG",
+  "url": "https://www.hertzride.com/en/locations/paris/",
+  "harvested_at": "2026-03-25T15:58:36.924Z",
+  "rental_count": 15,
+  "rentals": [
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "normandy",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "normandy",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "VESPA",
+      "model": "GTS 125 SuperSport",
+      "category": "classic",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "paris",
+        "normandy",
+        "brittany"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "provence",
+        "alps",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "alps",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "provence",
+        "alps",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "normandy",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "normandy",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "provence",
+        "pyrenees",
+        "alps"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "Moto Morini",
+      "model": "X-Cape",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "alps",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "loire-valley",
+        "normandy",
+        "brittany"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "alps",
+        "loire-valley",
+        "brittany"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "alps",
+        "brittany",
+        "loire-valley"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "alps",
+        "provence",
+        "brittany"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-cdg",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "normandy",
+        "brittany",
+        "loire-valley"
+      ]
+    }
+  ]
+}

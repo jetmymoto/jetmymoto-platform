@@ -1,0 +1,31 @@
+{
+  "destination_slug": "dolomites",
+  "destination_name": "Dolomites",
+  "enriched_at": "2026-03-28T23:28:09.082Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Conquer the Dolomites' towering peaks and razor-sharp alpine passes where every curve commands respect and every summit offers a breathtaking canvas of rugged grandeur. This is a realm where precision riding meets awe-inspiring vistas, inviting the elite rider to master roads carved through the highest mountains of Austria's Glockner and Venediger Groups.",
+  "ride_character": "An advanced mountain asphalt ascent, the Dolomites challenge riders with steep gradients, technical switchbacks, and a relentless elevation that demands focus and rewards with unparalleled panoramic views.",
+  "best_season": "June through September — the passes shed their snow and the alpine environment bursts into vivid clarity, offering optimal conditions for both riding and sightseeing.",
+  "premium_pois": [
+    {
+      "name": "Grossglockner",
+      "cinematic_description": "Rising to 3798 meters, Grossglockner dominates the horizon as Austria's highest peak, a monumental presence that defines the ride and beckons riders to witness its rugged majesty from every vantage point.",
+      "rider_tip": "Prepare for rapidly changing weather conditions at altitude and ensure your bike's brakes are in peak condition for steep descents."
+    },
+    {
+      "name": "Obere Glocknerscharte",
+      "cinematic_description": "This alpine pass at 3756 meters slices through the Glockner Group, delivering a high-altitude gateway framed by jagged ridges and ice-sculpted rock faces, a true test of skill and nerve.",
+      "rider_tip": "Approach with caution — the pass demands precise throttle control and attention to road surface changes on the narrow asphalt segments."
+    },
+    {
+      "name": "Großvenediger",
+      "cinematic_description": "At 3657 meters, Großvenediger is a towering sentinel in the Venediger Group, its austere glaciers and sheer faces offering an imposing backdrop as you navigate the challenging mountain asphalt roads.",
+      "rider_tip": "Plan fuel stops carefully and be mindful of thinner air affecting engine performance at this elevation."
+    }
+  ]
+}

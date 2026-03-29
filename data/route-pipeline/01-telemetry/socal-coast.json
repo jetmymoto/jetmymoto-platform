@@ -1,0 +1,203 @@
+{
+  "destination_slug": "socal-coast",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:34:15.219Z",
+  "telemetry": {
+    "road_segments": 68237,
+    "passes_found": 48,
+    "peaks_found": 586,
+    "max_altitude_m": 3150,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 85,
+      "gravel": 0,
+      "unpaved": 1
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Saddle Junction",
+      "lat": 33.774244,
+      "lng": -116.6730242,
+      "elevation_m": 2466,
+      "osm_id": 880052048
+    },
+    {
+      "name": "Fobes Saddle",
+      "lat": 33.690096,
+      "lng": -116.6096014,
+      "elevation_m": 1828,
+      "osm_id": 955814787
+    },
+    {
+      "name": "Santa Rosa Summit",
+      "lat": 33.5613287,
+      "lng": -116.5702682,
+      "elevation_m": 1523,
+      "osm_id": 10157138697
+    },
+    {
+      "name": "Laguna Summit",
+      "lat": 32.8109386,
+      "lng": -116.5104044,
+      "elevation_m": 1236,
+      "osm_id": 10157006491
+    },
+    {
+      "name": "Teofulio Summit",
+      "lat": 33.2047621,
+      "lng": -116.603629,
+      "elevation_m": 1122,
+      "osm_id": 358795151
+    },
+    {
+      "name": "Sunshine Summit",
+      "lat": 33.3515264,
+      "lng": -116.7384679,
+      "elevation_m": 1004,
+      "osm_id": 10157153506
+    },
+    {
+      "name": "Foot and Walker Pass",
+      "lat": 33.0369053,
+      "lng": -116.402732,
+      "elevation_m": 790,
+      "osm_id": 6135668066
+    },
+    {
+      "name": "Yaqui Pass",
+      "lat": 33.146575,
+      "lng": -116.352337,
+      "elevation_m": 531,
+      "osm_id": 49560247
+    },
+    {
+      "name": "Alcoholic Pass",
+      "lat": 33.3602587,
+      "lng": -116.375425,
+      "elevation_m": 479,
+      "osm_id": 2730488448
+    },
+    {
+      "name": "Dulzura Summit",
+      "lat": 32.6167237,
+      "lng": -116.737767,
+      "elevation_m": 457,
+      "osm_id": 10156857686
+    },
+    {
+      "name": "Sweeney Pass",
+      "lat": 32.8332021,
+      "lng": -116.1786077,
+      "elevation_m": 301,
+      "osm_id": 6248671562
+    },
+    {
+      "name": "Buttes Pass",
+      "lat": 33.1733233,
+      "lng": -116.2060901,
+      "elevation_m": 209,
+      "osm_id": 48934595
+    },
+    {
+      "name": "Champagne Pass",
+      "lat": 32.9090795,
+      "lng": -116.4971672,
+      "elevation_m": null,
+      "osm_id": 721811593
+    },
+    {
+      "name": "Hidden Lake Divide",
+      "lat": 33.7991781,
+      "lng": -116.6435683,
+      "elevation_m": null,
+      "osm_id": 880050766
+    },
+    {
+      "name": "Fortuna Saddle",
+      "lat": 32.8423572,
+      "lng": -117.057071,
+      "elevation_m": null,
+      "osm_id": 1092574366
+    },
+    {
+      "name": "Wellman Divide",
+      "lat": 33.7992365,
+      "lng": -116.6741475,
+      "elevation_m": null,
+      "osm_id": 6615493018
+    },
+    {
+      "name": "Sweeney Pass",
+      "lat": 32.8208029,
+      "lng": -116.1528474,
+      "elevation_m": null,
+      "osm_id": 11258053043
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Marion Mountain",
+      "lat": 33.7958525,
+      "lng": -116.6866838,
+      "elevation_m": 3150
+    },
+    {
+      "name": "Mount Saint Ellen",
+      "lat": 33.7973916,
+      "lng": -116.6909003,
+      "elevation_m": 3097
+    },
+    {
+      "name": "Tahquitz Peak",
+      "lat": 33.7554221,
+      "lng": -116.6770041,
+      "elevation_m": 2692
+    },
+    {
+      "name": "Red Tahquitz",
+      "lat": 33.7583539,
+      "lng": -116.6519617,
+      "elevation_m": 2686
+    },
+    {
+      "name": "Toro Peak",
+      "lat": 33.5234506,
+      "lng": -116.425589,
+      "elevation_m": 2651
+    },
+    {
+      "name": "Santa Rosa Mountain",
+      "lat": 33.5383073,
+      "lng": -116.4617466,
+      "elevation_m": 2455
+    },
+    {
+      "name": "Lily Rock",
+      "lat": 33.7602922,
+      "lng": -116.6832308,
+      "elevation_m": 2439
+    },
+    {
+      "name": "South Peak",
+      "lat": 33.7437483,
+      "lng": -116.6489718,
+      "elevation_m": 2402.1
+    },
+    {
+      "name": "Antsell Rock",
+      "lat": 33.7302002,
+      "lng": -116.6413686,
+      "elevation_m": 2339.4
+    },
+    {
+      "name": "Apache Peak",
+      "lat": 33.7186587,
+      "lng": -116.6269322,
+      "elevation_m": 2309
+    }
+  ]
+}

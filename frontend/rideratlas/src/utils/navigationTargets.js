@@ -1,8 +1,23 @@
-import { GRAPH } from "@/core/network/networkGraph";
+import { readGraphSnapshot } from "@/core/network/networkGraph";
 import { missions } from "@/data/missions";
 
 function normalizePathSegment(value) {
   return typeof value === "string" && value ? value.toLowerCase() : "";
+}
+
+function getContextValue(searchInput) {
+  if (typeof searchInput === "string") {
+    const normalizedSearch = searchInput.startsWith("?")
+      ? searchInput
+      : `?${searchInput}`;
+    return new URLSearchParams(normalizedSearch).get("ctx") || "";
+  }
+
+  if (typeof window !== "undefined") {
+    return new URLSearchParams(window.location.search).get("ctx") || "";
+  }
+
+  return "";
 }
 
 function firstKey(record) {
@@ -20,27 +35,33 @@ function firstIndexedValue(indexRecord) {
 }
 
 export function getFeaturedRouteSlug() {
-  return firstIndexedValue(GRAPH.routesByAirport) || firstKey(GRAPH.routes);
+  const graph = readGraphSnapshot();
+  return (
+    firstIndexedValue(graph.indexes.routesByAirport) ||
+    firstKey(graph.entities.routes)
+  );
 }
 
 export function getFeaturedDestinationSlug() {
-  const featuredRoute = GRAPH.routes?.[getFeaturedRouteSlug()];
-  return featuredRoute?.destination?.slug || firstKey(GRAPH.destinations);
+  const graph = readGraphSnapshot();
+  const featuredRoute = graph.entities.routes?.[getFeaturedRouteSlug()];
+  return featuredRoute?.destination?.slug || firstKey(graph.entities.destinations);
 }
 
 export function getFeaturedRentalAirportCode() {
+  const graph = readGraphSnapshot();
   return (
-    firstKey(GRAPH.rentalsByAirport) ||
-    GRAPH.routes?.[getFeaturedRouteSlug()]?.airport?.code ||
-    firstKey(GRAPH.airports)
+    graph.entities.routes?.[getFeaturedRouteSlug()]?.airport?.code ||
+    firstKey(graph.entities.airports)
   );
 }
 
 export function getFeaturedPoiSlug() {
+  const graph = readGraphSnapshot();
   const featuredDestination = getFeaturedDestinationSlug();
   return (
-    GRAPH.poisByDestination?.[featuredDestination]?.[0] ||
-    firstKey(GRAPH.pois)
+    graph.indexes.poisByDestination?.[featuredDestination]?.[0] ||
+    firstKey(graph.entities.pois)
   );
 }
 
@@ -63,7 +84,22 @@ export function getCanonicalAirportContinentPath(continent) {
   return continentSlug ? `/airport/continent/${continentSlug}` : "/airport";
 }
 
-export function getCanonicalPaths() {
+export function withBrandContext(path, searchInput) {
+  if (!path) {
+    return "/";
+  }
+
+  const ctx = getContextValue(searchInput);
+  if (!ctx || /(^|[?&])ctx=/.test(path)) {
+    return path;
+  }
+
+  const [pathWithoutHash, hash = ""] = path.split("#");
+  const separator = pathWithoutHash.includes("?") ? "&" : "?";
+  return `${pathWithoutHash}${separator}ctx=${ctx}${hash ? `#${hash}` : ""}`;
+}
+
+export function getCanonicalPaths(searchInput) {
   const routeSlug = getFeaturedRouteSlug();
   const destinationSlug = getFeaturedDestinationSlug();
   const rentalAirportCode = getFeaturedRentalAirportCode();
@@ -71,15 +107,21 @@ export function getCanonicalPaths() {
   const missionId = getFeaturedMissionId();
 
   return {
-    airports: "/airport",
-    hub: getCanonicalAirportPath(rentalAirportCode),
-    route: routeSlug ? `/route/${routeSlug}` : "/airport",
-    destination: destinationSlug ? `/destination/${destinationSlug}` : "/airport",
-    rentals: rentalAirportCode
-      ? `${getCanonicalAirportPath(rentalAirportCode)}?mode=rent`
-      : "/airport",
-    poi: poiSlug ? `/poi/${poiSlug}` : "/airport",
-    mission: missionId ? `/mission/${missionId}` : "/airport",
-    logistics: "/moto-airlift",
+    airports: withBrandContext("/airport", searchInput),
+    hub: withBrandContext(getCanonicalAirportPath(rentalAirportCode), searchInput),
+    route: withBrandContext(routeSlug ? `/route/${routeSlug}` : "/airport", searchInput),
+    destination: withBrandContext(
+      destinationSlug ? `/destination/${destinationSlug}` : "/airport",
+      searchInput
+    ),
+    rentals: withBrandContext(
+      rentalAirportCode
+        ? `${getCanonicalAirportPath(rentalAirportCode)}?mode=rent`
+        : "/airport",
+      searchInput
+    ),
+    poi: withBrandContext(poiSlug ? `/poi/${poiSlug}` : "/airport", searchInput),
+    mission: withBrandContext(missionId ? `/mission/${missionId}` : "/airport", searchInput),
+    logistics: withBrandContext("/moto-airlift", searchInput),
   };
 }

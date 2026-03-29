@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import SeoHelmet from '../components/seo/SeoHelmet';
 import { useMemo } from "react";
 import { SITE_MEDIA } from "@/config/siteMedia";
@@ -6,6 +6,7 @@ import { SITE_MEDIA } from "@/config/siteMedia";
 import CountryAirportGrid from "@/components/network/CountryAirportGrid";
 import DeploymentCard from "@/components/airport/DeploymentCard";
 import { GRAPH } from "@/core/network/networkGraph";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 const COUNTRY_NAMES = {
   FR: "France",
@@ -42,6 +43,8 @@ const US_STATE_NAMES = {
 export default function AirportsCountryPage() {
 
   const { country } = useParams();
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   const code = country.toUpperCase();
   const countryName = COUNTRY_NAMES[code] || code;
@@ -187,7 +190,7 @@ export default function AirportsCountryPage() {
               {displayRegions.length > 0 ? displayRegions.map(r => (
                 <Link 
                   key={r.slug} 
-                  to={`/destination/${r.slug}`} 
+                  to={withCtx(`/destination/${r.slug}`)} 
                   className="block group p-4 border border-white/5 bg-zinc-900/20 hover:border-amber-500/40 transition-all"
                 >
                   <div className="flex justify-between items-center">
@@ -211,7 +214,7 @@ export default function AirportsCountryPage() {
               {displayRoutes.length > 0 ? displayRoutes.map(r => (
                 <Link 
                   key={r.slug} 
-                  to={`/route/${r.slug}`} 
+                  to={withCtx(`/route/${r.slug}`)} 
                   className="block group p-4 border border-white/5 bg-zinc-900/20 hover:border-amber-500/40 transition-all"
                 >
                   <div className="flex flex-col">

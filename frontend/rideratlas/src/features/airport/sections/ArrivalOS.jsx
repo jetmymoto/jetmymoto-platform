@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SITE_MEDIA } from "@/config/siteMedia";
+import { withBrandContext } from "@/utils/navigationTargets";
 import {
   Bike,
   Car,
@@ -29,13 +30,18 @@ const LINKS = {
   shipGTQuote: () => "/moto-airlift#booking",
 };
 
+function scrollToSection(sectionId) {
+  const target = document.getElementById(sectionId);
+  target?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 
 
 
 
 
-function ActionRail({ airport, intent }) {
+
+function ActionRail({ airport, intent, withCtx }) {
   return (
     <>
       <div
@@ -50,62 +56,67 @@ function ActionRail({ airport, intent }) {
           </div>
           <div className="flex gap-6 items-center">
             {intent === "moto" ? (
-              <a
-                href={LINKS.shipBikeQuote()}
+              <Link
+                to={withCtx(LINKS.shipBikeQuote())}
                 className="text-[10px] font-mono font-black tracking-[0.2em] text-amber-500 hover:text-white uppercase italic transition-colors"
               >
                 Ship_My_Bike
-              </a>
+              </Link>
             ) : (
-              <a
-                href={LINKS.shipGTQuote()}
+              <Link
+                to={withCtx(LINKS.shipGTQuote())}
                 className="text-[10px] font-mono font-black tracking-[0.2em] text-amber-500 hover:text-white uppercase italic transition-colors"
               >
                 Ship_My_GT
-              </a>
+              </Link>
             )}
-            <a
-              href="#recovery"
+            <button
+              type="button"
+              onClick={() => scrollToSection("recovery")}
               className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
             >
               Recovery
-            </a>
-            <a
-              href="#utilities"
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection("utilities")}
               className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
             >
               Tactical
-            </a>
+            </button>
             <div className="h-4 w-px bg-white/10 mx-2"></div>
-            <a
-              href="#ranking"
+            <button
+              type="button"
+              onClick={() => scrollToSection("ranking")}
               className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
             >
               Rankings
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-[#050505]/90 backdrop-blur-xl border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
-        <a
-          href="#ranking"
+        <button
+          type="button"
+          onClick={() => scrollToSection("ranking")}
           className="flex-1 py-3 bg-zinc-900/50 border border-white/10 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-white text-center flex flex-col items-center justify-center gap-1"
         >
           <Car size={14} /> Rankings
-        </a>
-        <a
-          href={intent === "moto" ? LINKS.shipBikeQuote() : LINKS.shipGTQuote()}
+        </button>
+        <Link
+          to={withCtx(intent === "moto" ? LINKS.shipBikeQuote() : LINKS.shipGTQuote())}
           className="flex-1 py-3 bg-amber-500 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-black text-center flex flex-col items-center justify-center gap-1 shadow-[0_0_15px_rgba(245,158,11,0.3)]"
         >
           <Zap size={14} /> Request Quote
-        </a>
-        <a
-          href="#utilities"
+        </Link>
+        <button
+          type="button"
+          onClick={() => scrollToSection("utilities")}
           className="flex-1 py-3 bg-zinc-900/50 border border-white/10 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-white text-center flex flex-col items-center justify-center gap-1"
         >
           <Target size={14} /> Tactical
-        </a>
+        </button>
       </div>
     </>
   );
@@ -125,13 +136,14 @@ function SectionIndex() {
     <div className="max-w-7xl mx-auto px-6 hidden md:block border-b border-white/5">
       <div className="flex gap-8 py-4 overflow-x-auto no-scrollbar">
         {sections.map((s) => (
-          <a
+          <button
             key={s.id}
-            href={`#${s.id}`}
+            type="button"
+            onClick={() => scrollToSection(s.id)}
             className="text-[10px] font-mono font-black uppercase tracking-[0.2em] text-zinc-500 hover:text-amber-500 transition-colors whitespace-nowrap italic"
           >
             / {s.name}
-          </a>
+          </button>
         ))}
       </div>
     </div>
@@ -166,6 +178,8 @@ function IntentToggle({ intent, setIntent }) {
 }
 
 export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, derivedRegions, derivedCountries, derivedTheater, rankingData }) {
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
   if (import.meta.env.DEV) {
     console.log("ArrivalOS airport payload:", airport);
   }
@@ -191,7 +205,7 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
 
   return (
     <div className="relative">
-      <ActionRail airport={a.code} intent={intent} />
+      <ActionRail airport={a.code} intent={intent} withCtx={withCtx} />
 
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <video
@@ -214,13 +228,13 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
           >
             {/* BREADCRUMBS */}
             <nav className="text-xs text-zinc-500 mb-6 font-mono uppercase tracking-widest">
-              <Link to="/airport" className="hover:text-white transition-colors">Airports</Link>
+              <Link to={withCtx("/airport")} className="hover:text-white transition-colors">Airports</Link>
               {" / "}
-              <Link to={`/airport/continent/${a.continent}`} className="hover:text-white transition-colors">
+              <Link to={withCtx(`/airport/continent/${a.continent}`)} className="hover:text-white transition-colors">
                 {a.continent}
               </Link>
               {" / "}
-              <Link to={`/airport/country/${a.country?.toLowerCase()}`} className="hover:text-white transition-colors">
+              <Link to={withCtx(`/airport/country/${a.country?.toLowerCase()}`)} className="hover:text-white transition-colors">
                 {a.country}
               </Link>
               {" / "}
@@ -263,7 +277,7 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
 
             {/* HEADLINE */}
             <h1 className="text-6xl md:text-8xl font-serif font-black italic uppercase leading-[0.85] tracking-[-0.03em] text-white mb-6">
-              {a.name} Arrival OS.
+              Premium Motorcycle Rentals &amp; Transport in {a.city || a.name} ({a.code})
             </h1>
 
             <p className="text-xl text-zinc-200/90 italic max-w-xl leading-relaxed mb-10">

@@ -1,0 +1,721 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-29T19:26:26.186Z",
+  "operator_count": 42,
+  "operators": {
+    "hertz-ride-malaga": {
+      "operator": "hertz-ride-malaga",
+      "airports": [
+        "AGP"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:19:48.947Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-malaga-734"
+      }
+    },
+    "imtbike-malaga": {
+      "operator": "imtbike-malaga",
+      "airports": [
+        "AGP"
+      ],
+      "source_urls": [
+        "https://www.imtbike.com/"
+      ],
+      "harvested_at": "2026-03-29T19:20:03.273Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.imtbike.com/motorcycle-rentals/"
+      }
+    },
+    "hertz-ride-alicante": {
+      "operator": "hertz-ride-alicante",
+      "airports": [
+        "ALC"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:20:06.153Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-alicante-64"
+      }
+    },
+    "hertz-ride-amsterdam": {
+      "operator": "hertz-ride-amsterdam",
+      "airports": [
+        "AMS"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:20:17.103Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/"
+      }
+    },
+    "motorent-ath": {
+      "operator": "motorent-ath",
+      "airports": [
+        "ATH"
+      ],
+      "source_urls": [
+        "https://www.motorent.gr/"
+      ],
+      "harvested_at": "2026-03-29T19:20:34.268Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://motorent.gr/%ce%b3%ce%b5%ce%bd%ce%b9%ce%ba%ce%bf%ce%af-%cf%8c%cf%81%ce%bf%ce%b9-%ce%b5%ce%bd%ce%bf%ce%b9%ce%ba%ce%af%ce%b1%cf%83%ce%b7%cf%82-%ce%bc%ce%bf%cf%84%ce%bf%cf%83%cf%85%ce%ba%ce%bb%ce%ad%cf%84%ce%b1/"
+      }
+    },
+    "eaglerider-bcn": {
+      "operator": "eaglerider-bcn",
+      "airports": [
+        "BCN"
+      ],
+      "source_urls": [
+        "https://www.eaglerider.com/"
+      ],
+      "harvested_at": "2026-03-29T19:20:48.966Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.eaglerider.com/"
+      }
+    },
+    "imtbike-bcn": {
+      "operator": "imtbike-bcn",
+      "airports": [
+        "BCN"
+      ],
+      "source_urls": [
+        "https://www.imtbike.com/"
+      ],
+      "harvested_at": "2026-03-29T19:20:51.973Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.imtbike.com/motorcycle-rentals/"
+      }
+    },
+    "hertz-ride-berlin": {
+      "operator": "hertz-ride-berlin",
+      "airports": [
+        "BER"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:20:59.298Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-brussels": {
+      "operator": "hertz-ride-brussels",
+      "airports": [
+        "BRU"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:21:08.967Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-paris": {
+      "operator": "hertz-ride-paris",
+      "airports": [
+        "CDG"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:21:16.139Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-paris-68"
+      }
+    },
+    "hertz-ride-copenhagen": {
+      "operator": "hertz-ride-copenhagen",
+      "airports": [
+        "CPH"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:21:26.902Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations"
+      }
+    },
+    "hertz-ride-dublin": {
+      "operator": "hertz-ride-dublin",
+      "airports": [
+        "DUB"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:21:39.597Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-dublin-760"
+      }
+    },
+    "hertz-ride-dusseldorf": {
+      "operator": "hertz-ride-dusseldorf",
+      "airports": [
+        "DUS"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:21:52.410Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-dusseldorf-dus"
+      }
+    },
+    "hertz-ride-edinburgh": {
+      "operator": "hertz-ride-edinburgh",
+      "airports": [
+        "EDI"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:01.004Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "eaglerider-fco": {
+      "operator": "eaglerider-fco",
+      "airports": [
+        "FCO"
+      ],
+      "source_urls": [
+        "https://www.eaglerider.com/"
+      ],
+      "harvested_at": "2026-03-29T19:22:04.751Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.eaglerider.com/"
+      }
+    },
+    "hertz-ride-fco": {
+      "operator": "hertz-ride-fco",
+      "airports": [
+        "FCO"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:15.686Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-florence": {
+      "operator": "hertz-ride-florence",
+      "airports": [
+        "FLR"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:22.501Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-florence-1214"
+      }
+    },
+    "hertz-ride-frankfurt": {
+      "operator": "hertz-ride-frankfurt",
+      "airports": [
+        "FRA"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:31.325Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-geneva": {
+      "operator": "hertz-ride-geneva",
+      "airports": [
+        "GVA"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:37.088Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-geneva-68"
+      }
+    },
+    "hertz-ride-helsinki": {
+      "operator": "hertz-ride-helsinki",
+      "airports": [
+        "HEL"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:22:48.784Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hibike4u-lhr": {
+      "operator": "hibike4u-lhr",
+      "airports": [
+        "LHR"
+      ],
+      "source_urls": [
+        "https://hibike4u.co.uk/"
+      ],
+      "harvested_at": "2026-03-29T19:22:53.779Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://hibike4u.co.uk/#services"
+      }
+    },
+    "superbike-rental-lhr": {
+      "operator": "superbike-rental-lhr",
+      "airports": [
+        "LHR"
+      ],
+      "source_urls": [
+        "https://www.superbikerental.co.uk/"
+      ],
+      "harvested_at": "2026-03-29T19:22:57.591Z",
+      "terms": {
+        "security_deposit_amount": "£3,000",
+        "security_deposit_policy": "The insurance excess for motorcycle rentals is £3,000.",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.superbikerental.co.uk/"
+      }
+    },
+    "hertz-ride-lisbon": {
+      "operator": "hertz-ride-lisbon",
+      "airports": [
+        "LIS"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:23:08.723Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-lisbon-53"
+      }
+    },
+    "hertz-ride-lyon": {
+      "operator": "hertz-ride-lyon",
+      "airports": [
+        "LYS"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:23:16.172Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations"
+      }
+    },
+    "imtbike-madrid": {
+      "operator": "imtbike-madrid",
+      "airports": [
+        "MAD"
+      ],
+      "source_urls": [
+        "https://www.imtbike.com/"
+      ],
+      "harvested_at": "2026-03-29T19:23:21.716Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.imtbike.com/motorcycle-rentals/"
+      }
+    },
+    "hertz-ride-manchester": {
+      "operator": "hertz-ride-manchester",
+      "airports": [
+        "MAN"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:23:25.317Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations"
+      }
+    },
+    "allround-rent-muc": {
+      "operator": "allround-rent-muc",
+      "airports": [
+        "MUC"
+      ],
+      "source_urls": [
+        "https://www.motorradvermietung.de/muenchen/"
+      ],
+      "harvested_at": "2026-03-29T19:23:50.153Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.motorradvermietung.de/muenchen/en/motorraeder"
+      }
+    },
+    "hertz-ride-munich": {
+      "operator": "hertz-ride-munich",
+      "airports": [
+        "MUC"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:23:55.307Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-munich-287"
+      }
+    },
+    "eagle-rider-mxp": {
+      "operator": "eagle-rider-mxp",
+      "airports": [
+        "MXP"
+      ],
+      "source_urls": [
+        "https://www.eaglerider.com/milan-airport"
+      ],
+      "harvested_at": "2026-03-29T19:24:12.298Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.eaglerider.com/milan-airport"
+      }
+    },
+    "eaglerider-mxp": {
+      "operator": "eaglerider-mxp",
+      "airports": [
+        "MXP"
+      ],
+      "source_urls": [
+        "https://www.eaglerider.com/"
+      ],
+      "harvested_at": "2026-03-29T19:24:14.535Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.eaglerider.com/"
+      }
+    },
+    "hertz-ride-milan": {
+      "operator": "hertz-ride-milan",
+      "airports": [
+        "MXP"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:24:20.048Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-milan-285"
+      }
+    },
+    "motorcycle-rental-europe-mxp": {
+      "operator": "motorcycle-rental-europe-mxp",
+      "airports": [
+        "MXP"
+      ],
+      "source_urls": [
+        "https://www.motorcycle-rental-europe.com/"
+      ],
+      "harvested_at": "2026-03-29T19:24:22.424Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.motorcycle-rental-europe.com/"
+      }
+    },
+    "hertz-ride-nice": {
+      "operator": "hertz-ride-nice",
+      "airports": [
+        "NCE"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:24:33.226Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-nice-1234"
+      }
+    },
+    "hertz-ride-porto": {
+      "operator": "hertz-ride-porto",
+      "airports": [
+        "OPO"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:24:42.710Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-porto-55"
+      }
+    },
+    "hertz-ride-oslo": {
+      "operator": "hertz-ride-oslo",
+      "airports": [
+        "OSL"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:24:53.175Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-palma": {
+      "operator": "hertz-ride-palma",
+      "airports": [
+        "PMI"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:02.593Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-palma-1234"
+      }
+    },
+    "hertz-ride-prague": {
+      "operator": "hertz-ride-prague",
+      "airports": [
+        "PRG"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:12.224Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-split": {
+      "operator": "hertz-ride-split",
+      "airports": [
+        "SPU"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:14.436Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations"
+      }
+    },
+    "hertz-ride-venice": {
+      "operator": "hertz-ride-venice",
+      "airports": [
+        "VCE"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:19.573Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations/motorcycle-rental-venice"
+      }
+    },
+    "hertz-ride-vienna": {
+      "operator": "hertz-ride-vienna",
+      "airports": [
+        "VIE"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:39.785Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-warsaw": {
+      "operator": "hertz-ride-warsaw",
+      "airports": [
+        "WAW"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:25:49.965Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/hertz-ride-company"
+      }
+    },
+    "hertz-ride-zurich": {
+      "operator": "hertz-ride-zurich",
+      "airports": [
+        "ZRH"
+      ],
+      "source_urls": [
+        "https://www.hertzride.com/en/locations"
+      ],
+      "harvested_at": "2026-03-29T19:26:03.427Z",
+      "terms": {
+        "security_deposit_amount": "",
+        "security_deposit_policy": "",
+        "cancellation_policy": "",
+        "terms_last_verified": "",
+        "source_terms_url": "https://www.hertzride.com/en/locations"
+      }
+    }
+  }
+}

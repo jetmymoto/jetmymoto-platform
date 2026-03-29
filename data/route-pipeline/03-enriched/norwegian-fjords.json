@@ -1,0 +1,31 @@
+{
+  "destination_slug": "norwegian-fjords",
+  "destination_name": "Norwegian Fjords",
+  "enriched_at": "2026-03-28T23:30:05.560Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Trace the sinuous mountain asphalt of Norway’s fjord country, where each curve reveals towering glaciers and jagged peaks etched against the Nordic sky. This intermediate ride weaves through legendary passes like Nonskar and Systraskaret, delivering a symphony of alpine vistas and glacial grandeur that commands reverence and precision.",
+  "ride_character": "A dynamic mountain asphalt journey punctuated by technical passes and breathtaking elevation shifts, demanding focused control and rewarding with expansive glacier-framed panoramas.",
+  "best_season": "June through September — the passes shed their snow and the roads offer dry, crisp conditions ideal for navigating the mountain asphalt and relishing the glacier vistas.",
+  "premium_pois": [
+    {
+      "name": "Kvitekulen",
+      "cinematic_description": "At 1928 meters, Kvitekulen stands as a monumental landmark, its rugged silhouette dominating the horizon and providing a commanding backdrop to the fjord ride below.",
+      "rider_tip": "Prepare for rapid weather changes near Kvitekulen; layering gear is essential to maintain comfort on the shifting mountain terrain."
+    },
+    {
+      "name": "Hardangerjøkulen",
+      "cinematic_description": "Norway’s iconic glacier Hardangerjøkulen, perched at 1861 meters, offers an icy spectacle that contrasts sharply with the dark asphalt ribbon, inviting riders to pause and absorb the raw glacial power.",
+      "rider_tip": "Approach Hardangerjøkulen with caution as temperatures can drop suddenly; ensure your tires have good grip for the cooler mountain microclimate."
+    },
+    {
+      "name": "Snønipa",
+      "cinematic_description": "The 1827-meter peak of Snønipa towers in Gloppen, its formidable presence mirrored in the crystalline fjord waters below, creating an unforgettable visual crescendo along the route.",
+      "rider_tip": "Use the descent from Snønipa’s nearby passes to test your braking precision on the asphalt’s technical curves."
+    }
+  ]
+}

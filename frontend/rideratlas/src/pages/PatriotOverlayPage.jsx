@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import {
-  GRAPH,
   getGraphShardStatus,
   loadGraphShard,
   readGraphShard,
@@ -17,15 +16,8 @@ function useForceUpdate() {
 }
 
 function getOverlaySafe(id) {
-  // Shard-first: enriched overlays with renderData
   const shard = readGraphShard("overlays");
-  const fromShard =
-    shard?.patriotOverlays?.[id] || shard?.[id] || null;
-
-  if (fromShard) return fromShard;
-
-  // Fallback: raw overlays (no renderData) — always available synchronously
-  return GRAPH.patriotOverlays?.[id] || null;
+  return shard?.patriotOverlays?.[id] || shard?.[id] || null;
 }
 
 function getOverlaySource(id) {
@@ -35,28 +27,25 @@ function getOverlaySource(id) {
     return "shard";
   }
 
-  if (GRAPH.patriotOverlays?.[id]) {
-    return "graph-raw";
-  }
-
   return "missing";
 }
 
 function getOverlayIdForPath(airportCode, rentalSlug) {
+  const shard = readGraphShard("overlays");
   const path = buildOverlayPath({ airportCode, slug: rentalSlug });
-  return GRAPH.indexes?.overlayIdByPath?.[path] || null;
+  return shard?.overlayIndexes?.overlayIdByPath?.[path] || null;
 }
 
 export default function PatriotOverlayPage() {
   const { airportCode, rentalSlug } = useParams();
   const forceUpdate = useForceUpdate();
+  const overlayShardStatus = getGraphShardStatus("overlays");
   const overlayId = getOverlayIdForPath(airportCode, rentalSlug);
   const overlay = overlayId ? getOverlaySafe(overlayId) : null;
   const overlaySource = overlayId ? getOverlaySource(overlayId) : "missing";
 
   useEffect(() => {
-    // Trigger async shard load → re-render when enriched data arrives
-    if (getGraphShardStatus("overlays") !== "loaded") {
+    if (overlayShardStatus !== "loaded") {
       loadGraphShard("overlays")
         .then(forceUpdate)
         .catch((error) => {
@@ -66,14 +55,7 @@ export default function PatriotOverlayPage() {
         });
     }
 
-    if (getGraphShardStatus("rentals") === "idle") {
-      loadGraphShard("rentals").catch((error) => {
-        if (import.meta.env.DEV) {
-          console.warn("Rentals shard preload failed:", error);
-        }
-      });
-    }
-  }, [forceUpdate]);
+  }, [forceUpdate, overlayShardStatus]);
 
   useEffect(() => {
     if (!overlayId) {
@@ -86,8 +68,8 @@ export default function PatriotOverlayPage() {
   }, [overlayId, overlaySource]);
 
   if (!overlay) {
-    // Shard still loading — show SEO-safe skeleton with real content
-    if (overlayId && getGraphShardStatus("overlays") !== "loaded") {
+    // Direct visits may resolve the path before the async overlays shard arrives.
+    if (overlayShardStatus !== "loaded") {
       return <OverlayLoadingSkeleton airportCode={airportCode} />;
     }
 
@@ -138,7 +120,7 @@ function IntentOverlayRenderer({ overlay }) {
             </div>
 
             <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-6 leading-tight text-white">
-              {overlay.headline}
+              {overlay?.headline || `Premium Motorcycle Rentals & Transport in ${airportCity} (${code})`}
             </h1>
 
             <p className="text-lg md:text-2xl text-[#c6c6c9] max-w-3xl mx-auto mb-10 font-light">
@@ -167,9 +149,17 @@ function IntentOverlayRenderer({ overlay }) {
           <TrustInfrastructure layout="marquee" />
         </div>
 
-        {/* ── Intro ── */}
+        {/* ── Briefing ── */}
         <section className="py-20 px-8 bg-[#131313]">
           <div className="max-w-4xl mx-auto">
+            {overlay?.content?.cinematicPitch && (
+              <div className="mb-12 p-8 border border-[#eac26d]/20 bg-[#eac26d]/5 rounded-sm">
+                <h3 className="font-headline text-lg text-[#eac26d] font-bold uppercase tracking-widest mb-4">Suitability Review</h3>
+                <p className="text-xl md:text-2xl text-white leading-relaxed font-light italic">
+                  "{overlay.content.cinematicPitch}"
+                </p>
+              </div>
+            )}
             <p className="text-lg md:text-xl text-[#e5e2e1] leading-relaxed font-light">
               {overlay.content.intro}
             </p>
@@ -303,7 +293,7 @@ function RentalOverlayRenderer({ overlay }) {
             </div>
 
             <h1 className="font-headline text-4xl md:text-7xl font-bold tracking-tight mb-6 leading-tight text-white">
-              {overlay.headline}
+              {overlay?.headline || `Rent a ${bikeName} in ${airportCity} | Premium Motorcycle Hire`}
             </h1>
 
             <p className="text-lg md:text-2xl text-[#c6c6c9] max-w-3xl mx-auto mb-10 font-light">
@@ -369,6 +359,14 @@ function RentalOverlayRenderer({ overlay }) {
         {/* ── Intro + Why This Bike ── */}
         <section className="py-20 px-8 bg-[#131313]">
           <div className="max-w-4xl mx-auto">
+            {overlay?.content?.cinematicPitch && (
+              <div className="mb-12 p-8 border border-[#eac26d]/20 bg-[#eac26d]/5 rounded-sm">
+                <h3 className="font-headline text-lg text-[#eac26d] font-bold uppercase tracking-widest mb-4">Suitability Review</h3>
+                <p className="text-xl md:text-2xl text-white leading-relaxed font-light italic">
+                  "{overlay.content.cinematicPitch}"
+                </p>
+              </div>
+            )}
             <p className="text-lg md:text-xl text-[#e5e2e1] leading-relaxed font-light mb-16">
               {overlay.content.intro}
             </p>

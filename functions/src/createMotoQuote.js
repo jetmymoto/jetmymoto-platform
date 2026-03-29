@@ -1,17 +1,9 @@
 const { onRequest } = require("firebase-functions/v2/https");
 const { z } = require("zod");
-const nodemailer = require("nodemailer");
 const cors = require("cors")({ origin: true });
-
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.GMAIL_EMAIL,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+const { transporter, escapeHtml, sendEmailWithTimeout } = require("./lib/emailUtils");
+const { buildDossierHtml } = require("./lib/buildDossierHtml");
+const { generateDossierPdf } = require("./lib/generateDossierPdf");
 
 async function geocodeCity(city) {
   if (!city || typeof city !== 'string') {
@@ -60,20 +52,6 @@ async function geocodeCity(city) {
   }
 }
 
-function escapeHtml(str = "") {
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-function sendEmailWithTimeout(promise, ms = 3000) {
-  const timeout = new Promise((_, reject) =>
-    setTimeout(() => reject(new Error("Email timeout")), ms)
-  );
-  return Promise.race([promise, timeout]);
-}
-
 // 1. Updated Validation Schema
 const quotePayloadSchema = z.object({
   pickupCountry: z.string().optional().or(z.literal("")),
@@ -103,6 +81,10 @@ const quotePayloadSchema = z.object({
   selectedRentalAirport: z.string().max(12).nullable().optional(),
   selectedRentalOperator: z.string().max(160).nullable().optional(),
   selectedRentalMachine: z.string().max(160).nullable().optional(),
+
+  // Broker engine fields (rental micro-transaction)
+  brokerFee: z.number().min(0).max(1000).nullable().optional(),
+  checkoutAction: z.enum(["initiate_stripe_session"]).nullable().optional(),
 
   // LEGACY: Kept optional for backwards compatibility
   bikeModel: z.string().max(100).optional(),
@@ -282,19 +264,15 @@ exports.createMotoQuote = onRequest({ memory: "1GiB", cors: true }, (req, res) =
       selectedRentalAirport: rawData.selectedRentalAirport || null,
       selectedRentalOperator: rawData.selectedRentalOperator || null,
       selectedRentalMachine: rawData.selectedRentalMachine || null,
+      brokerFee: rawData.brokerFee || null,
+      checkoutAction: rawData.checkoutAction || null,
       totalUnits: parseFloat(totalUnits.toFixed(2)),
       distanceKm,
       estimatedPrice,
       createdAt: new Date().toISOString()
     };
 
-    // (Firestore writes, PDF generation, Email sending go here and remain untouched)
-    // - db.collection('bookings').doc(bookingRef).set(...)
-    // - db.collection('crm').doc(...).set(...)
-    // - generateSafePDF(...)
-    // - sendEmail(...)
-
-    // Respond to client
+    // Respond to client immediately — PDF + email are best-effort and non-blocking
     console.log("OK: Returning success response");
     res.status(200).json({
       success: true,
@@ -302,15 +280,31 @@ exports.createMotoQuote = onRequest({ memory: "1GiB", cors: true }, (req, res) =
       data: bookingDocument
     });
 
-    // Send internal email notification without blocking the response
+    // ── PDF generation (best-effort, never blocks response) ──
+    let pdfBuffer = null;
     try {
-      const emailHtml = `
+      const dossierHtml = buildDossierHtml(bookingDocument);
+      pdfBuffer = await generateDossierPdf(dossierHtml);
+    } catch (pdfErr) {
+      console.error("PDF generation failed:", (pdfErr && pdfErr.message) || "Unknown error");
+    }
+
+    // ── Email dispatch ──
+    try {
+      const isRental = rawData.requestMode === "rental";
+      const email =
+        typeof rawData.contact === "string"
+          ? rawData.contact
+          : rawData.contact.email;
+
+      // ── Internal ops notification ──
+      const opsHtml = `
         <p><strong>Booking Ref:</strong> ${escapeHtml(bookingRef)}</p>
         <p><strong>Request Mode:</strong> ${escapeHtml(rawData.requestMode || "logistics")}</p>
         <p><strong>Route:</strong> ${escapeHtml(rawData.pickupCity)} (${escapeHtml(rawData.pickupCountry)}) -> ${escapeHtml(rawData.destinationCity)}</p>
         <p><strong>Distance:</strong> ${distanceKm} km</p>
         ${
-          rawData.requestMode === "rental"
+          isRental
             ? `
         <p><strong>Rental Machine:</strong> ${escapeHtml(rawData.selectedRentalMachine || "Unknown")}</p>
         <p><strong>Rental Airport:</strong> ${escapeHtml(rawData.selectedRentalAirport || "Unknown")}</p>
@@ -335,38 +329,61 @@ exports.createMotoQuote = onRequest({ memory: "1GiB", cors: true }, (req, res) =
           from: process.env.GMAIL_EMAIL,
           to: "info@jetmymoto.com",
           subject: `[NEW BOOKING] ${bookingRef} - ${rawData.hub}`,
-          html: emailHtml,
+          html: opsHtml,
         }),
         3000
       ).catch(err => {
-        console.error("Email delivery failed:", (err && err.message) || "Unknown error");
+        console.error("Ops email delivery failed:", (err && err.message) || "Unknown error");
       });
 
-      const email =
-        typeof rawData.contact === "string"
-          ? rawData.contact
-          : rawData.contact.email;
+      // ── Customer confirmation email (conditional on requestMode) ──
+      const fallbackLink = `https://rideratlas.com/booking/${encodeURIComponent(bookingRef)}`;
+      const fallbackBlock = `
+        <p style="margin-top:24px;font-size:13px;color:#888;">If the attachment does not load, your dossier is available here:</p>
+        <p><a href="${fallbackLink}" style="color:#CDA755;">View your deployment dossier</a></p>
+      `;
 
-      // Customer confirmation email
+      const customerSubject = isRental
+        ? `JetMyMoto: Tactical Hardware Secured - ${escapeHtml(rawData.selectedRentalMachine || "Your Rental")}`
+        : `Your booking request ${bookingRef}`;
+
+      const customerHtml = isRental
+        ? `
+          <p>Commander,</p>
+          <p>Your rental deployment is confirmed. Attached is your official Reservation Dossier.</p>
+          <p>Present this document to <strong>${escapeHtml(rawData.selectedRentalOperator || "the operator")}</strong>
+             at <strong>${escapeHtml(rawData.selectedRentalAirport || "the staging hub")}</strong>.</p>
+          <p><strong>Booking Ref:</strong> ${escapeHtml(bookingRef)}</p>
+          <p>This document confirms your machine reservation.</p>
+          ${fallbackBlock}
+          <p>&mdash; JetMyMoto Tactical Division</p>
+        `
+        : `
+          <p>Hi,</p>
+          <p>Your motorcycle booking request has been received.</p>
+          <p><strong>Booking Ref:</strong> ${escapeHtml(bookingRef)}</p>
+          <p><strong>Route:</strong> ${escapeHtml(rawData.pickupCity)} &rarr; ${escapeHtml(rawData.destinationCity)} (${distanceKm} km)</p>
+          <p><strong>Estimated Price:</strong> EUR ${estimatedPrice}</p>
+          <p>We will contact you shortly with confirmation and next steps.</p>
+          ${fallbackBlock}
+          <p>&ndash; JetMyMoto Team</p>
+        `;
+
+      const pdfFilename = isRental
+        ? `JetMyMoto-Reservation-${bookingRef}.pdf`
+        : `JetMyMoto-Dossier-${bookingRef}.pdf`;
+
       void sendEmailWithTimeout(
         transporter.sendMail({
           from: process.env.GMAIL_EMAIL,
           to: email,
-          subject: `Your booking request ${bookingRef}`,
-          html: `
-            <p>Hi,</p>
-            <p>Your motorcycle booking request has been received.</p>
-
-            <p><strong>Booking Ref:</strong> ${escapeHtml(bookingRef)}</p>
-            <p><strong>Route:</strong> ${escapeHtml(rawData.pickupCity)} → ${escapeHtml(rawData.destinationCity)} (${distanceKm} km)</p>
-            <p><strong>Estimated Price:</strong> EUR ${estimatedPrice}</p>
-
-            <p>We will contact you shortly with confirmation and next steps.</p>
-
-            <p>– JetMyMoto Team</p>
-          `
+          subject: customerSubject,
+          html: customerHtml,
+          attachments: pdfBuffer
+            ? [{ filename: pdfFilename, content: pdfBuffer, contentType: "application/pdf" }]
+            : [],
         }),
-        3000
+        15000
       ).catch(err => {
         console.error("Customer email failed:", (err && err.message) || "Unknown error");
       });

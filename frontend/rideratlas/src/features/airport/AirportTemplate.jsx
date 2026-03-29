@@ -1,6 +1,11 @@
-import React, { useMemo, useEffect, useState, useRef } from "react";
+import React, { useMemo, useEffect, useReducer, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { GRAPH } from "@/core/network/networkGraph";
+import {
+  getGraphShardStatus,
+  loadGraphShard,
+  readGraphSnapshot,
+  readGraphShard,
+} from "@/core/network/networkGraph";
 import { motion, AnimatePresence } from "framer-motion";
 import { trackEvent } from "@/core/analytics/trackEvent";
 // import { usePools } from "@/hooks/usePools";
@@ -21,10 +26,61 @@ import MotoAirliftBookingForm from "@/features/booking/MotoAirliftBookingForm";
 import RentalGrid from "@/features/rentals/components/RentalGrid";
 import LivePoolsPanel from "@/components/intelligence/LivePoolsPanel";
 import DossierLeadCapture from "./components/DossierLeadCapture";
+import TacticalDossierTrap from "@/components/conversion/TacticalDossierTrap";
+import A2AMissionsSection from "./sections/A2AMissionsSection";
 
 import { SITE_MEDIA } from "@/config/siteMedia";
 
 const HERO_VIDEO = SITE_MEDIA.EUROPE_PAGE_H1;
+
+function RentalGridLoadingSkeleton({ airportCode }) {
+  return (
+    <section className="space-y-8" aria-label={`Loading rental fleet for ${airportCode}`}>
+      <div className="overflow-hidden rounded-[30px] border border-white/10 bg-[linear-gradient(135deg,rgba(18,18,18,0.96)_0%,rgba(5,6,6,0.96)_100%)] shadow-[0_24px_60px_rgba(0,0,0,0.26)] backdrop-blur-xl">
+        <div className="flex flex-col gap-6 px-5 py-5 lg:flex-row lg:items-center lg:justify-between lg:px-7">
+          <div className="min-w-0 animate-pulse">
+            <div className="h-4 w-40 rounded-full bg-white/10" />
+            <div className="mt-4 h-10 w-72 max-w-full rounded-full bg-white/10" />
+            <div className="mt-3 h-4 w-80 max-w-full rounded-full bg-white/10" />
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            {[0, 1, 2].map((item) => (
+              <div
+                key={item}
+                className="h-12 min-w-[190px] rounded-full border border-white/10 bg-white/5"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="flex items-center justify-between border-t border-white/10 px-5 py-3 text-[11px] uppercase tracking-[0.24em] text-white/35 lg:px-7">
+          <span>Fleet Sync Pending</span>
+          <span>Preparing Showroom</span>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        {Array.from({ length: 6 }).map((_, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,#121212_0%,#050606_100%)] shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
+          >
+            <div className="aspect-[4/3] animate-pulse bg-white/8" />
+            <div className="space-y-4 p-6">
+              <div className="h-3 w-24 rounded-full bg-white/10" />
+              <div className="h-7 w-3/4 rounded-full bg-white/10" />
+              <div className="h-4 w-full rounded-full bg-white/10" />
+              <div className="h-4 w-2/3 rounded-full bg-white/10" />
+              <div className="flex items-center justify-between pt-4">
+                <div className="h-6 w-20 rounded-full bg-white/10" />
+                <div className="h-10 w-28 rounded-full bg-white/10" />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
 
 export default function AirportTemplate({
   airport,
@@ -33,7 +89,9 @@ export default function AirportTemplate({
   initialRideMode = "bring"
 }) {
   const [rideMode, setRideMode] = useState(initialRideMode);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
   const location = useLocation();
+  const graph = readGraphSnapshot();
 
   const searchParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
   const queryMode = searchParams.get("mode") || initialRideMode;
@@ -85,10 +143,10 @@ export default function AirportTemplate({
   };
 
   const airportRoutes = useMemo(() => {
-    return GRAPH.routesByAirport?.[a.code]
-      ?.map(slug => GRAPH.routes[slug])
+    return graph.indexes.routesByAirport?.[a.code]
+      ?.map(slug => graph.entities.routes?.[slug])
       .filter(Boolean) ?? [];
-  }, [a.code]);
+  }, [a.code, graph]);
 
   const { derivedRegions, derivedCountries, derivedTheater } = useMemo(() => {
     const rSet = new Set();
@@ -100,8 +158,8 @@ export default function AirportTemplate({
     });
 
     const cluster = (() => {
-      const clusterIds = GRAPH.indexes.clusterByAirport?.[a.code] || [];
-      return clusterIds.length > 0 ? GRAPH.clusters[clusterIds[0]] : null;
+      const clusterIds = graph.indexes.clusterByAirport?.[a.code] || [];
+      return clusterIds.length > 0 ? graph.entities.clusters?.[clusterIds[0]] : null;
     })();
 
     return {
@@ -109,7 +167,7 @@ export default function AirportTemplate({
       derivedCountries: Array.from(cSet),
       derivedTheater: cluster?.region || a.continent || "Global"
     };
-  }, [airportRoutes, a.code, a.continent]);
+  }, [airportRoutes, a.code, a.continent, graph]);
 
   useEffect(() => {
     if (import.meta.env.DEV) {
@@ -124,6 +182,30 @@ export default function AirportTemplate({
   useEffect(() => {
     setSelectedRentalId(queryRentalId || null);
   }, [queryRentalId]);
+
+  useEffect(() => {
+    if (rideMode !== "rent" && !selectedRentalId) {
+      return undefined;
+    }
+
+    const status = getGraphShardStatus("rentals");
+    if (status === "idle") {
+      loadGraphShard("rentals")
+        .then(forceUpdate)
+        .catch(() => {});
+    } else if (status === "loading") {
+      const interval = setInterval(() => {
+        if (getGraphShardStatus("rentals") === "loaded") {
+          clearInterval(interval);
+          forceUpdate();
+        }
+      }, 50);
+
+      return () => clearInterval(interval);
+    }
+
+    return undefined;
+  }, [rideMode, selectedRentalId]);
 
   const preselectedCtaRef = useRef(null);
 
@@ -151,21 +233,25 @@ export default function AirportTemplate({
       return null;
     }
 
-    return GRAPH.routes?.[queryRouteSlug] || null;
-  }, [queryRouteSlug]);
+    return graph.entities.routes?.[queryRouteSlug] || null;
+  }, [graph, queryRouteSlug]);
+
+  const rentalShard = readGraphShard("rentals");
+  const rentalsMap = rentalShard?.rentals ?? {};
+  const rentalsByAirport = rentalShard?.rentalIndexes?.rentalsByAirport ?? {};
 
   const preselectedRental = useMemo(() => {
-    if (!selectedRentalId || !Array.isArray(GRAPH.rentalsByAirport?.[a.code])) {
+    if (!selectedRentalId || !Array.isArray(rentalsByAirport?.[a.code])) {
       return null;
     }
 
-    const byAirportRental = GRAPH.rentalsByAirport?.[a.code]
-      .map((id) => GRAPH.rentals?.[id])
+    const byAirportRental = rentalsByAirport?.[a.code]
+      .map((id) => rentalsMap?.[id])
       .filter(Boolean)
       .find((rental) => rental?.id === selectedRentalId || rental?.slug === selectedRentalId);
 
-    return byAirportRental || GRAPH.rentals?.[selectedRentalId] || null;
-  }, [selectedRentalId, a.code]);
+    return byAirportRental || rentalsMap?.[selectedRentalId] || null;
+  }, [selectedRentalId, a.code, rentalsByAirport, rentalsMap]);
 
   const defaultRankingData = useMemo(
     () => ({
@@ -232,9 +318,9 @@ export default function AirportTemplate({
                 : "bg-transparent text-zinc-500 hover:bg-white/5"
             }`}
           >
-            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Bring Your Bike</span>
+            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Ship Your Bike</span>
             <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "bring" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
-              Global Airlift & Staging
+              White-Glove Shipping & Handoff
             </span>
           </button>
           
@@ -249,9 +335,9 @@ export default function AirportTemplate({
                 : "bg-transparent text-zinc-500 hover:bg-white/5"
             }`}
           >
-            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Rent A Bike</span>
+            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Rent A Motorcycle</span>
             <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "rent" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
-              Premium Fleet Partners
+              Curated Local Partners
             </span>
           </button>
         </div>
@@ -272,11 +358,16 @@ export default function AirportTemplate({
             <UtilitySection data={a.utilities} />
             <CityExtensionSection data={a.cityExtension} />
             <RoutesGrid routes={airportRoutes} />
+            <A2AMissionsSection airportCode={a.code} />
             <MotoAirliftBookingForm />
           </motion.div>
         ) : (
           <motion.div key="rent" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
             <div className="max-w-7xl mx-auto px-6 pb-24" id="airport-rental-section">
+            {!rentalShard ? (
+              <RentalGridLoadingSkeleton airportCode={a.code} />
+            ) : (
+              <>
             <div className="mb-12 border-l-2 border-amber-500 pl-6">
               <h2 className="text-4xl font-serif italic text-white uppercase font-black mb-4">
                 Premium Fleet at {a.code}
@@ -288,7 +379,7 @@ export default function AirportTemplate({
 
             {preselectedRental ? (
               <div className="mb-8 rounded-[24px] border border-amber-400/40 bg-[#171717] p-5">
-                <div className="text-xs uppercase tracking-[0.24em] text-[#CDA755]">Mission Match: Optimized for this route</div>
+                <div className="text-xs uppercase tracking-[0.24em] text-[#CDA755]">Journey Match: Recommended for this route</div>
                 <div className="mt-2 text-lg font-black text-white">{preselectedRental?.brand || preselectedRental?.name || "Recommended Rental"}</div>
                 <div className="mt-1 text-sm text-zinc-300">Selected from route {routePreview?.name || routePreview?.title || queryRouteSlug}</div>
                 <button
@@ -305,6 +396,12 @@ export default function AirportTemplate({
             <DossierLeadCapture airportCode={a.code} />
 
             <RentalGrid airportCode={a.code} highlightedRentalId={selectedRentalId} />
+
+            <div className="mt-16">
+              <TacticalDossierTrap hubName={a.city || a.code} />
+            </div>
+              </>
+            )}
           </div>
         </motion.div>
         )}

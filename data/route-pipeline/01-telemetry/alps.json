@@ -1,0 +1,224 @@
+{
+  "destination_slug": "alps",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:31:29.502Z",
+  "telemetry": {
+    "road_segments": 60828,
+    "passes_found": 3059,
+    "peaks_found": 7037,
+    "max_altitude_m": 4048.6,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 75,
+      "gravel": 1,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Fuorcla Scerscen-Bernina",
+      "lat": 46.3801506,
+      "lng": 9.9049492,
+      "elevation_m": 3882,
+      "osm_id": 12040719282
+    },
+    {
+      "name": "Fuorcla dal Zupò",
+      "lat": 46.3667293,
+      "lng": 9.9291307,
+      "elevation_m": 3846,
+      "osm_id": 3626564507
+    },
+    {
+      "name": "Pass dal Zupò",
+      "lat": 46.371742,
+      "lng": 9.9301003,
+      "elevation_m": 3840,
+      "osm_id": 3626564509
+    },
+    {
+      "name": "Forcola d'Argento",
+      "lat": 46.3714409,
+      "lng": 9.9204928,
+      "elevation_m": 3706,
+      "osm_id": 1372732823
+    },
+    {
+      "name": "Fuorcla Bellavista",
+      "lat": 46.3776235,
+      "lng": 9.946005,
+      "elevation_m": 3688,
+      "osm_id": 499575016
+    },
+    {
+      "name": "Forcola di Cresta Guzza",
+      "lat": 46.3735447,
+      "lng": 9.9149221,
+      "elevation_m": 3596,
+      "osm_id": 1372732937
+    },
+    {
+      "name": "Oberes Bärenbartjoch",
+      "lat": 46.799208,
+      "lng": 10.7216958,
+      "elevation_m": 3531,
+      "osm_id": 514472513
+    },
+    {
+      "name": "Hochjoch - Giogo Alto",
+      "lat": 46.4967072,
+      "lng": 10.5473583,
+      "elevation_m": 3527,
+      "osm_id": 3730627571
+    },
+    {
+      "name": "Porta Roseg",
+      "lat": 46.3748906,
+      "lng": 9.891223,
+      "elevation_m": 3524,
+      "osm_id": 564379801
+    },
+    {
+      "name": "Passo del Sasso Rosso",
+      "lat": 46.3631235,
+      "lng": 9.9496456,
+      "elevation_m": 3511,
+      "osm_id": 564379533
+    },
+    {
+      "name": "Passo Rosole",
+      "lat": 46.4357203,
+      "lng": 10.6204967,
+      "elevation_m": 3502,
+      "osm_id": 565432843
+    },
+    {
+      "name": "Thurwieserjoch - Passo Thurwieser",
+      "lat": 46.4971772,
+      "lng": 10.526536,
+      "elevation_m": 3480,
+      "osm_id": 6654134679
+    },
+    {
+      "name": "Hintereisjoch",
+      "lat": 46.790845,
+      "lng": 10.7282943,
+      "elevation_m": 3470,
+      "osm_id": 2570883422
+    },
+    {
+      "name": "Fuorcla Orientale",
+      "lat": 46.3642725,
+      "lng": 9.8640378,
+      "elevation_m": 3460,
+      "osm_id": 2714672768
+    },
+    {
+      "name": "Fuorcla Pers - Palù",
+      "lat": 46.385174,
+      "lng": 9.9738832,
+      "elevation_m": 3453,
+      "osm_id": 3626564506
+    },
+    {
+      "name": "Fuorcla Occidentale",
+      "lat": 46.3636142,
+      "lng": 9.8588954,
+      "elevation_m": 3450,
+      "osm_id": 1372732324
+    },
+    {
+      "name": "Col de La Mare",
+      "lat": 46.4279304,
+      "lng": 10.6163421,
+      "elevation_m": 3442,
+      "osm_id": 529691672
+    },
+    {
+      "name": "Fuorcla Prievlusa",
+      "lat": 46.3939731,
+      "lng": 9.9068242,
+      "elevation_m": 3430,
+      "osm_id": 2844706823
+    },
+    {
+      "name": "Colle del Pasquale",
+      "lat": 46.4432222,
+      "lng": 10.6067471,
+      "elevation_m": 3424,
+      "osm_id": 426822717
+    },
+    {
+      "name": "Colle Cadini",
+      "lat": 46.3793084,
+      "lng": 10.604089,
+      "elevation_m": 3409,
+      "osm_id": 529691591
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Piz Bernina",
+      "lat": 46.3824278,
+      "lng": 9.9080521,
+      "elevation_m": 4048.6
+    },
+    {
+      "name": "La Spedla/ Punta Perrucchetti",
+      "lat": 46.3809172,
+      "lng": 9.9073907,
+      "elevation_m": 4021
+    },
+    {
+      "name": "Pizzo Zupò",
+      "lat": 46.3682508,
+      "lng": 9.9312758,
+      "elevation_m": 3996
+    },
+    {
+      "name": "Piz Alv / Pizzo Bianco",
+      "lat": 46.3845983,
+      "lng": 9.9065742,
+      "elevation_m": 3993
+    },
+    {
+      "name": "Monte Scerscen",
+      "lat": 46.3783872,
+      "lng": 9.9007556,
+      "elevation_m": 3971
+    },
+    {
+      "name": "Piz Argient",
+      "lat": 46.3660668,
+      "lng": 9.9249881,
+      "elevation_m": 3945
+    },
+    {
+      "name": "Pizzo Roseg",
+      "lat": 46.3736139,
+      "lng": 9.8832753,
+      "elevation_m": 3938
+    },
+    {
+      "name": "Monte Bellavista Occidentale",
+      "lat": 46.3737162,
+      "lng": 9.9323045,
+      "elevation_m": 3922
+    },
+    {
+      "name": "Schneekuppe",
+      "lat": 46.3754831,
+      "lng": 9.8798416,
+      "elevation_m": 3917
+    },
+    {
+      "name": "Ortler - Ortles",
+      "lat": 46.5090956,
+      "lng": 10.5449304,
+      "elevation_m": 3905
+    }
+  ]
+}

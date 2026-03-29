@@ -1,9 +1,13 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Users, Zap, AlertTriangle, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 export default function LivePoolsPanel({ pools, loading, error }) {
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
+
   if (error) {
     return (
       <div className="w-full bg-red-950/20 border border-red-500/20 rounded-xl p-6 mb-8 text-center flex flex-col items-center">
@@ -142,7 +146,7 @@ export default function LivePoolsPanel({ pools, loading, error }) {
                     })()}
                   </div>
                   <Link 
-                    to={`/pool/${pool.id}`}
+                    to={withCtx(`/pool/${pool.id}`)}
                     className="w-full md:w-auto px-6 py-2.5 bg-white/5 hover:bg-amber-500 hover:text-black text-white rounded-lg font-mono text-xs uppercase tracking-widest transition-all text-center"
                   >
                     View Intel

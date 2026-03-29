@@ -1,0 +1,31 @@
+{
+  "destination_slug": "midwest-lakes",
+  "destination_name": "Midwest Lakes",
+  "enriched_at": "2026-03-28T23:29:23.098Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Trace the serene contours of the Midwest Lakes region, where smooth asphalt highways glide alongside a constellation of tranquil lakes framed by gentle hills and coastal terrain. This ride offers a refined balance of effortless cruising and immersive nature, inviting riders to savor reflective waters and understated peaks like High Point and Lone Tree Bluff in a setting of quiet luxury.",
+  "ride_character": "An easy, coastal highway rhythm that pairs impeccably maintained asphalt with understated terrain, perfect for riders seeking a peaceful yet visually rich journey.",
+  "best_season": "May through September — when temperate weather enhances lakeside reflections and the lightly elevated terrain is at its most inviting for relaxed cruising.",
+  "premium_pois": [
+    {
+      "name": "Lake Zurich",
+      "cinematic_description": "Nestled in Illinois, Lake Zurich offers expansive, mirror-like waters that reflect the subtle hues of the sky, creating a striking contrast against the surrounding verdant landscape and rolling hills.",
+      "rider_tip": "Plan a midday stop here to enjoy calm water views and ample parking areas suitable for a quick, rejuvenating break."
+    },
+    {
+      "name": "Chicago Portage",
+      "cinematic_description": "This historic alpine pass in northern Illinois marks a unique crossroads between waterways, offering riders a glimpse into the region’s rich transportation heritage amid gently rolling terrain.",
+      "rider_tip": "Use this point for a brief exploration off the main route to appreciate the layered history without sacrificing ride momentum."
+    },
+    {
+      "name": "High Point",
+      "cinematic_description": "Rising subtly above the surrounding landscape, High Point rewards riders with understated panoramas of wooded hills and serene lake vistas, epitomizing the Midwest’s quiet grandeur.",
+      "rider_tip": "Approach via the coastal highway at dawn for the most serene light and minimal traffic."
+    }
+  ]
+}

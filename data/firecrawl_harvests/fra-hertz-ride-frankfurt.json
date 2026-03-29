@@ -1,0 +1,191 @@
+{
+  "operator": "hertz-ride-frankfurt",
+  "airport": "FRA",
+  "url": "https://www.hertzride.com/en/locations/frankfurt/",
+  "harvested_at": "2026-03-25T16:01:47.109Z",
+  "rental_count": 13,
+  "rentals": [
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "switzerland"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "belgium"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "netherlands"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "switzerland",
+        "austria"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "switzerland",
+        "italy"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "belgium",
+        "netherlands"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "switzerland"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "austria"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "switzerland",
+        "france"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "italy",
+        "france"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "italy"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "switzerland"
+      ]
+    },
+    {
+      "airport": "FRA",
+      "operator": "hertz-ride-frankfurt",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "germany",
+        "france",
+        "belgium"
+      ]
+    }
+  ]
+}

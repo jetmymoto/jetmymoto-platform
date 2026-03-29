@@ -4,13 +4,20 @@ import { fileURLToPath } from "url";
 import { AIRPORT_INDEX } from "../../src/features/airport/network/airportIndex.js";
 import { GENERATED_RIDE_ROUTES } from "../../src/features/routes/data/generatedRideRoutes.js";
 import { RIDE_DESTINATIONS } from "../../src/features/routes/data/rideDestinations.js";
-import { GRAPH } from "../../src/core/network/networkGraph.js";
 import { continentIndex } from "../../src/features/airport/network/continentIndex.js"; // Import continentIndex
+import { buildNetworkGraph } from "../../src/core/network/buildNetworkGraph.js";
+import { buildRentalGraph } from "../../src/core/network/buildRentalGraph.js";
+import { buildGraphOverlayShard } from "../../src/core/network/graphOverlayShard.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const BASE = "https://jetmymoto.com";
+const overlayGraph = {
+  ...buildNetworkGraph(),
+  ...buildRentalGraph(),
+};
+const { publishedOverlayUrls } = buildGraphOverlayShard(overlayGraph);
 
 const urls = [];
 
@@ -49,21 +56,29 @@ RIDE_DESTINATIONS.forEach(destination => {
 });
 
 // 8. Patriot pSEO overlay pages (graph-driven — respects scoring, validation, publish gates)
-(GRAPH.publishedOverlayUrls || []).forEach(entry => {
+(publishedOverlayUrls || []).forEach(entry => {
   if (entry.path) {
     urls.push(`${BASE}${entry.path}`);
   }
 });
 
+// 9. A2A Mission pages (premium one-way corridors — highest margin product)
+const a2aSlugs = overlayGraph.allMissionSlugs || [];
+a2aSlugs.forEach(slug => {
+  urls.push({ loc: `${BASE}/a2a/${slug}`, priority: "0.9", changefreq: "weekly" });
+});
+console.log(`   → ${a2aSlugs.length} A2A Mission URLs injected`);
+
 const now = new Date().toISOString();
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `
-<url>
-  <loc>${u}</loc>
-  <lastmod>${now}</lastmod>
-</url>`).join("")}
+${urls.map(u => {
+  const loc = typeof u === "string" ? u : u.loc;
+  const priority = typeof u === "object" && u.priority ? `\n  <priority>${u.priority}</priority>` : "";
+  const changefreq = typeof u === "object" && u.changefreq ? `\n  <changefreq>${u.changefreq}</changefreq>` : "";
+  return `\n<url>\n  <loc>${loc}</loc>\n  <lastmod>${now}</lastmod>${priority}${changefreq}\n</url>`;
+}).join("")}
 </urlset>`;
 
 const output = path.resolve(__dirname, "../../public/sitemap.xml");

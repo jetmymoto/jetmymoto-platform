@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "validate:overlays": "node scripts/validateOverlayPayload.mjs",
-    "ci:build": "npm run validate:overlays && npm run build"
+    "seo:enrich-patriots": "node scripts/seo/enrichPatriotSignals.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ci:build": "npm run test && npm run validate:overlays && npm run build"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
@@ -28,10 +31,15 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.27",
+    "jsdom": "^29.0.1",
     "postcss": "^8.5.8",
     "tailwindcss": "^3.4.4",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "vitest": "^4.1.2"
   }
 }

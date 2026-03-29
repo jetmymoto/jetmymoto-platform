@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -24,6 +24,7 @@ import {
 import MissionSchema from '../components/seo/MissionSchema';
 import MissionFAQ from '../components/seo/MissionFAQ';
 import MissionBreadcrumbs from '../components/seo/MissionBreadcrumbs';
+import { withBrandContext } from "@/utils/navigationTargets";
 
 // ==============================
 // CONFIG
@@ -66,6 +67,7 @@ const scrollToId = (id) => {
 export default function MissionDetailsPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [mission, setMission] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -102,7 +104,7 @@ export default function MissionDetailsPage() {
       <div className="h-screen bg-[#050505] flex flex-col items-center justify-center gap-4 text-white">
         <h1 className="text-4xl font-black text-white/20">404 // MISSING INTEL</h1>
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate(withBrandContext("/", location.search))}
           className="text-amber-500 border-b border-amber-500 pb-1 font-mono text-xs uppercase tracking-widest hover:text-white hover:border-white"
         >
           Return to Command
@@ -138,5 +140,4 @@ export default function MissionDetailsPage() {
     </div>
   );
 }
-
 

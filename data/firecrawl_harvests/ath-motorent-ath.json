@@ -1,0 +1,93 @@
+{
+  "operator": "motorent-ath",
+  "airport": "ATH",
+  "url": "https://www.motorent.gr/",
+  "harvested_at": "2026-03-25T16:00:56.693Z",
+  "rental_count": 6,
+  "rentals": [
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "BMW",
+      "model": "R 1250 GS",
+      "category": "adventure",
+      "price_day": 70,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mountainous-terrain",
+        "coastal-rides",
+        "cultural-sightseeing"
+      ]
+    },
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "touring",
+      "price_day": 95,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mountainous-terrain",
+        "coastal-rides",
+        "cultural-sightseeing"
+      ]
+    },
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "Honda",
+      "model": "CB500F",
+      "category": "sport-touring",
+      "price_day": 60,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "urban-rides",
+        "surrounding-islands",
+        "beachfront"
+      ]
+    },
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "Yamaha",
+      "model": "MT-07",
+      "category": "cruiser",
+      "price_day": 65,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "urban-rides",
+        "cultural-sightseeing",
+        "historic-places"
+      ]
+    },
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "Kawasaki",
+      "model": "Z400",
+      "category": "classic",
+      "price_day": 55,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "urban-rides",
+        "coastal-rides",
+        "cultural-sightseeing"
+      ]
+    },
+    {
+      "airport": "ATH",
+      "operator": "motorent-ath",
+      "brand": "Royal Enfield",
+      "model": "Himalayan",
+      "category": "scrambler",
+      "price_day": 70,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mountainous-terrain",
+        "off-road-palace",
+        "exploratory-rides"
+      ]
+    }
+  ]
+}

@@ -6,15 +6,26 @@
     "dev:backend": "cd backend/jetmymoto-crm-brain/functions && npx firebase emulators:start",
     "dev:platform": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "harvest": "node scripts/harvestSdk.js",
+    "harvest:terms": "node scripts/harvestTerms.js --batch",
+    "harvest:terms:merge": "node scripts/mergeTerms.js",
+    "harvest:terms:diff": "node scripts/syncTerms.js",
+    "harvest:terms:apply": "node scripts/syncTerms.js --apply",
+    "harvest:terms:pipeline": "npm run harvest:terms && npm run harvest:terms:merge && npm run harvest:terms:diff",
     "harvest:merge": "node scripts/mergeHarvests.js",
     "harvest:transform": "node scripts/transformHarvest.js",
     "harvest:pipeline": "npm run harvest && npm run harvest:merge && npm run harvest:transform",
-    "harvest:europe": "node scripts/batchHarvestEurope.js && npm run harvest:merge && npm run harvest:transform",
+    "harvest:europe": "node scripts/batchHarvestEurope.js && HARVEST_TARGETS_FILE=data/europe_targets.json node scripts/mergeHarvests.js && node scripts/transformHarvest.js",
     "harvest:intent": "node scripts/harvestIntents.js",
     "harvest:intent:merge": "node scripts/mergeIntents.js",
     "harvest:intent:transform": "node scripts/transformIntents.js",
     "harvest:intent:pipeline": "npm run harvest:intent && npm run harvest:intent:merge && npm run harvest:intent:transform",
-    "debug:rejections": "node scripts/dumpOverlayRejections.mjs"
+    "debug:rejections": "node scripts/dumpOverlayRejections.mjs",
+    "route-pipeline:telemetry": "node scripts/route-pipeline/01-ingestRoutes.mjs",
+    "route-pipeline:pois": "node scripts/route-pipeline/02-ingestPois.mjs",
+    "route-pipeline:enrich": "node scripts/route-pipeline/03-enrichRoutes.mjs",
+    "route-pipeline:transform": "node scripts/route-pipeline/04-transformRoutes.mjs",
+    "route-pipeline": "npm run route-pipeline:telemetry && npm run route-pipeline:pois && npm run route-pipeline:enrich && npm run route-pipeline:transform",
+    "sitemap": "node scripts/generateSitemap.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
@@ -22,6 +33,7 @@
   "dependencies": {
     "@mendable/firecrawl-js": "^4.17.0",
     "dotenv": "^17.3.1",
+    "puppeteer": "^24.40.0",
     "zod": "^4.3.6"
   }
 }

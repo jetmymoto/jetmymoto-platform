@@ -1,0 +1,196 @@
+{
+  "destination_slug": "norwegian-fjords",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:41:51.107Z",
+  "telemetry": {
+    "road_segments": 6446,
+    "passes_found": 23,
+    "peaks_found": 1335,
+    "max_altitude_m": 2083,
+    "difficulty": "Intermediate",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 64,
+      "gravel": 3,
+      "unpaved": 4
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Nonskar",
+      "lat": 61.1880723,
+      "lng": 6.4579737,
+      "elevation_m": 1076,
+      "osm_id": 11581992020
+    },
+    {
+      "name": "Vassetskaret",
+      "lat": 60.9534706,
+      "lng": 6.7723333,
+      "elevation_m": null,
+      "osm_id": 3086034774
+    },
+    {
+      "name": "Lægdaskaret",
+      "lat": 61.0116012,
+      "lng": 6.9793673,
+      "elevation_m": null,
+      "osm_id": 3097443273
+    },
+    {
+      "name": "Systraskaret",
+      "lat": 60.9007423,
+      "lng": 6.9009782,
+      "elevation_m": null,
+      "osm_id": 3231357337
+    },
+    {
+      "name": "Solaskaret",
+      "lat": 60.8053081,
+      "lng": 7.086146,
+      "elevation_m": null,
+      "osm_id": 3641548897
+    },
+    {
+      "name": "Buføreskaret",
+      "lat": 60.7280938,
+      "lng": 6.8699199,
+      "elevation_m": null,
+      "osm_id": 5272305307
+    },
+    {
+      "name": "Urdaskardet",
+      "lat": 60.98824,
+      "lng": 6.2586121,
+      "elevation_m": null,
+      "osm_id": 9132921990
+    },
+    {
+      "name": "Viveskar",
+      "lat": 60.3449023,
+      "lng": 7.0776487,
+      "elevation_m": null,
+      "osm_id": 9155551555
+    },
+    {
+      "name": "Klevaskaret",
+      "lat": 60.7481333,
+      "lng": 6.9089438,
+      "elevation_m": null,
+      "osm_id": 9408616585
+    },
+    {
+      "name": "Steindalsskardet",
+      "lat": 61.067953,
+      "lng": 6.8738346,
+      "elevation_m": null,
+      "osm_id": 9861156894
+    },
+    {
+      "name": "Smyttet",
+      "lat": 60.4497148,
+      "lng": 6.8531968,
+      "elevation_m": null,
+      "osm_id": 9976530768
+    },
+    {
+      "name": "Jordalsskardet",
+      "lat": 61.0167817,
+      "lng": 6.9393544,
+      "elevation_m": null,
+      "osm_id": 11154935721
+    },
+    {
+      "name": "Nonskar",
+      "lat": 61.1880332,
+      "lng": 6.4581231,
+      "elevation_m": null,
+      "osm_id": 11581992021
+    },
+    {
+      "name": "Smalaskaret",
+      "lat": 60.9294809,
+      "lng": 6.7210458,
+      "elevation_m": null,
+      "osm_id": 12228097540
+    },
+    {
+      "name": "Uraskaret",
+      "lat": 60.9260854,
+      "lng": 6.6581927,
+      "elevation_m": null,
+      "osm_id": 12922759263
+    },
+    {
+      "name": "Viksetskaret",
+      "lat": 60.9052279,
+      "lng": 6.5980474,
+      "elevation_m": null,
+      "osm_id": 13518905520
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Lodalskåpa",
+      "lat": 61.7905414,
+      "lng": 7.2047547,
+      "elevation_m": 2083
+    },
+    {
+      "name": "Brenibba",
+      "lat": 61.7645049,
+      "lng": 7.1943371,
+      "elevation_m": 2017
+    },
+    {
+      "name": "Kvitekulen",
+      "lat": 61.6587955,
+      "lng": 7.0152876,
+      "elevation_m": 1930
+    },
+    {
+      "name": "Kvitekoll",
+      "lat": 61.6442,
+      "lng": 6.93937,
+      "elevation_m": 1915
+    },
+    {
+      "name": "Raudskarvfjellet",
+      "lat": 61.784166,
+      "lng": 7.28228,
+      "elevation_m": 1897
+    },
+    {
+      "name": "Kjenndalskruna",
+      "lat": 61.73192,
+      "lng": 7.07549,
+      "elevation_m": 1830
+    },
+    {
+      "name": "Snønipa",
+      "lat": 61.6781093,
+      "lng": 6.6904592,
+      "elevation_m": 1827
+    },
+    {
+      "name": "Nonsnibba",
+      "lat": 61.75656,
+      "lng": 7.00242,
+      "elevation_m": 1803
+    },
+    {
+      "name": "Strandanibba",
+      "lat": 61.77283,
+      "lng": 6.87739,
+      "elevation_m": 1785
+    },
+    {
+      "name": "Grensevarden",
+      "lat": 61.5702523,
+      "lng": 6.8086282,
+      "elevation_m": 1748
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "destination_slug": "florida-gulf",
+  "destination_name": "Florida Gulf Coast",
+  "enriched_at": "2026-03-28T23:30:12.428Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Trace the gentle contours of Florida’s Gulf Coast where asphalt ribbons along a coastal highway framed by serene lakes and low, verdant hills. This easy, coastal ride offers a refined blend of tranquil water vistas and subtle elevation changes, inviting riders to explore a landscape punctuated by Florida’s highest peak and shimmering inland lakes.",
+  "ride_character": "A smooth, coastal highway ride with effortless curves and an easy grade, weaving past tranquil lakes and modest hills that offer a refreshing, contemplative rhythm.",
+  "best_season": "February through May — when mild temperatures and low humidity create perfect conditions for relaxed daytime cruising along the coast and lakes.",
+  "premium_pois": [
+    {
+      "name": "Sugarloaf Mountain",
+      "cinematic_description": "Rising to 312 meters, Sugarloaf Mountain is the highest point in peninsular Florida, providing an unexpected elevation amidst the coastal terrain and a rewarding vantage point for panoramic views.",
+      "rider_tip": "Plan a stop here to stretch legs and enjoy the unique perspective—gear down for the gentle ascent leading to the peak."
+    },
+    {
+      "name": "Lake Morton",
+      "cinematic_description": "Nestled within Lakeland, Lake Morton invites riders to pause and absorb its placid surface reflecting the sky, a serene contrast to the coastal breeze and asphalt beneath your wheels.",
+      "rider_tip": "Use local parking areas to safely pull over and savor the lakeside ambiance without disrupting the steady flow of traffic."
+    },
+    {
+      "name": "Lake Horney",
+      "cinematic_description": "Located in Polk County, Lake Horney offers a quiet, reflective retreat surrounded by gentle terrain, enhancing the sense of calm that defines this Gulf Coast journey.",
+      "rider_tip": "Take care navigating nearby turns as the road skirts close to the lake’s edge, ensuring a smooth and attentive ride."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "operator": "motorcycle-rental-europe-mxp",
+  "airport": "MXP",
+  "url": "https://www.motorcycle-rental-europe.com/",
+  "harvested_at": "2026-03-27T20:20:39.755Z",
+  "rental_count": 8,
+  "rentals": [
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 120,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "dolomites"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "touring",
+      "price_day": 140,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lake-como",
+        "tuscany",
+        "liguria"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Honda",
+      "model": "Gold Wing",
+      "category": "touring",
+      "price_day": 150,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "dolomites",
+        "amalficoast"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide",
+      "category": "cruiser",
+      "price_day": 130,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lake-como",
+        "tuscany",
+        "amalfi-coast"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "KTM",
+      "model": "1290 Super Adventure",
+      "category": "adventure",
+      "price_day": 110,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "dolomites",
+        "tuscany",
+        "lake-como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Yamaha",
+      "model": "FJR1300",
+      "category": "sport-touring",
+      "price_day": 100,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "liguria",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Triumph",
+      "model": "Bonneville T120",
+      "category": "classic",
+      "price_day": 90,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "cinque-terre"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "BMW",
+      "model": "R nineT",
+      "category": "scrambler",
+      "price_day": 95,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "liguria"
+      ]
+    }
+  ]
+}

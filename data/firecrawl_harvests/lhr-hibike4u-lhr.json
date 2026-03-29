@@ -1,0 +1,93 @@
+{
+  "operator": "hibike4u-lhr",
+  "airport": "LHR",
+  "url": "https://hibike4u.co.uk/",
+  "harvested_at": "2026-03-27T20:20:18.500Z",
+  "rental_count": 6,
+  "rentals": [
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "Forza 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "PCX 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "SH 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "Vision 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Yamaha",
+      "model": "NMax 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Yamaha",
+      "model": "NMax 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    }
+  ]
+}

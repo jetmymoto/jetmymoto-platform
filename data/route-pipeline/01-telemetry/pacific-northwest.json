@@ -1,0 +1,224 @@
+{
+  "destination_slug": "pacific-northwest",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:33:47.409Z",
+  "telemetry": {
+    "road_segments": 45963,
+    "passes_found": 71,
+    "peaks_found": 762,
+    "max_altitude_m": 2681,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 89,
+      "gravel": 0,
+      "unpaved": 1
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Dreadnought Col",
+      "lat": 49.7308233,
+      "lng": -122.8829468,
+      "elevation_m": 1676,
+      "osm_id": 13152048485
+    },
+    {
+      "name": "Hat Pass",
+      "lat": 49.489443,
+      "lng": -123.2041622,
+      "elevation_m": 1500,
+      "osm_id": 1684229920
+    },
+    {
+      "name": "Shannon Pass",
+      "lat": 49.6449028,
+      "lng": -123.0766023,
+      "elevation_m": 1465,
+      "osm_id": 12588535105
+    },
+    {
+      "name": "Wettin Pass",
+      "lat": 49.4986952,
+      "lng": -123.2094694,
+      "elevation_m": 1450,
+      "osm_id": 10863745887
+    },
+    {
+      "name": "Mamquam Pass",
+      "lat": 49.617495,
+      "lng": -122.8164292,
+      "elevation_m": 1360,
+      "osm_id": 9470811821
+    },
+    {
+      "name": "Pokosha-Clowhom Pass",
+      "lat": 49.8973169,
+      "lng": -123.4365663,
+      "elevation_m": 1184,
+      "osm_id": 4351709370
+    },
+    {
+      "name": "Crown Pass",
+      "lat": 49.4041438,
+      "lng": -123.0845348,
+      "elevation_m": 1085,
+      "osm_id": 480630611
+    },
+    {
+      "name": "Crown Pass",
+      "lat": 49.404654,
+      "lng": -123.085489,
+      "elevation_m": 1085,
+      "osm_id": 3397635626
+    },
+    {
+      "name": "Bull Pass",
+      "lat": 49.5599345,
+      "lng": -122.7068851,
+      "elevation_m": 1060,
+      "osm_id": 9470796009
+    },
+    {
+      "name": "Pipeline Pass",
+      "lat": 49.3875078,
+      "lng": -123.061532,
+      "elevation_m": 935,
+      "osm_id": 485536431
+    },
+    {
+      "name": "Pitt Pass",
+      "lat": 49.4833898,
+      "lng": -122.6130764,
+      "elevation_m": 732,
+      "osm_id": 9470796010
+    },
+    {
+      "name": "Gentian Pass",
+      "lat": 49.9504537,
+      "lng": -122.976302,
+      "elevation_m": 433,
+      "osm_id": 4631512390
+    },
+    {
+      "name": "Malahat Summit",
+      "lat": 48.5676405,
+      "lng": -123.5471241,
+      "elevation_m": 352,
+      "osm_id": 31478724
+    },
+    {
+      "name": "Malahat Summit",
+      "lat": 48.5676892,
+      "lng": -123.5471121,
+      "elevation_m": 352,
+      "osm_id": 1547886701
+    },
+    {
+      "name": "Norvan Pass",
+      "lat": 49.4236561,
+      "lng": -123.001438,
+      "elevation_m": null,
+      "osm_id": 481155689
+    },
+    {
+      "name": "Canadian Pass",
+      "lat": 49.3989675,
+      "lng": -122.92813,
+      "elevation_m": null,
+      "osm_id": 482795190
+    },
+    {
+      "name": "Dilly-Dally Pass",
+      "lat": 49.392706,
+      "lng": -122.828457,
+      "elevation_m": null,
+      "osm_id": 486651826
+    },
+    {
+      "name": "Dead Tree Pass",
+      "lat": 49.3643982,
+      "lng": -122.829968,
+      "elevation_m": null,
+      "osm_id": 486654474
+    },
+    {
+      "name": "Harvey Pass",
+      "lat": 49.4745476,
+      "lng": -123.186344,
+      "elevation_m": null,
+      "osm_id": 1684973600
+    },
+    {
+      "name": "Sphinx Pass",
+      "lat": 49.8990868,
+      "lng": -122.9605097,
+      "elevation_m": null,
+      "osm_id": 1733750978
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Mount Sir Richard",
+      "lat": 49.9641938,
+      "lng": -122.7017983,
+      "elevation_m": 2681
+    },
+    {
+      "name": "Castle Towers",
+      "lat": 49.9398402,
+      "lng": -122.9427243,
+      "elevation_m": 2676
+    },
+    {
+      "name": "Nivalis Mountain",
+      "lat": 49.9775569,
+      "lng": -122.6608258,
+      "elevation_m": 2659
+    },
+    {
+      "name": "Atwell Peak",
+      "lat": 49.8420703,
+      "lng": -123.007778,
+      "elevation_m": 2655
+    },
+    {
+      "name": "Dalton Dome",
+      "lat": 49.8499296,
+      "lng": -123.0094848,
+      "elevation_m": 2653
+    },
+    {
+      "name": "Mount Tantalus",
+      "lat": 49.8181773,
+      "lng": -123.3293708,
+      "elevation_m": 2603
+    },
+    {
+      "name": "Mount Carr",
+      "lat": 49.9240087,
+      "lng": -122.9307491,
+      "elevation_m": 2590
+    },
+    {
+      "name": "Mount Dione",
+      "lat": 49.8159794,
+      "lng": -123.3290775,
+      "elevation_m": 2589
+    },
+    {
+      "name": "Cheakamus Mountain",
+      "lat": 49.99917,
+      "lng": -122.80194,
+      "elevation_m": 2588
+    },
+    {
+      "name": "Mamquam Mountain",
+      "lat": 49.7751866,
+      "lng": -122.8506123,
+      "elevation_m": 2588
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "destination_slug": "scottish-highlands",
+  "destination_name": "Scottish Highlands",
+  "enriched_at": "2026-03-28T23:28:21.837Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Traverse the Scottish Highlands where every twist unveils a dramatic tableau of towering peaks and serene coastal highways. Glide effortlessly along impeccably paved roads, framed by legendary passes and the rugged majesty of Britain’s highest mountains, crafting a journey as stirring as the landscape itself.",
+  "ride_character": "Smooth asphalt contours through coastal terrain and iconic highland passes, offering an accessible yet profoundly scenic ride defined by majestic elevation changes and sweeping vistas.",
+  "best_season": "June through September — the roads are clear of snow, the mountain summits accessible, and the Highlands reveal their fullest colors under extended daylight.",
+  "premium_pois": [
+    {
+      "name": "Ben Nevis",
+      "cinematic_description": "Dominating the skyline as the highest mountain in Great Britain, Ben Nevis commands reverence with its imposing stature and rugged beauty, a perfect anchor point for any discerning rider’s Highland adventure.",
+      "rider_tip": "Plan a stop near Fort William to experience the full scale of Ben Nevis and prepare for variable weather conditions common at higher elevations."
+    },
+    {
+      "name": "Corrieyairack Pass",
+      "cinematic_description": "An emblem of Highland heritage, Corrieyairack Pass offers a historic route threading through dramatic ridges and sweeping glens, inviting riders to engage with Scotland’s storied terrain on a road that feels both timeless and thrilling.",
+      "rider_tip": "Take care approaching the pass’s sharp bends, as its elevation and exposure can produce sudden changes in grip and visibility."
+    },
+    {
+      "name": "Bealach an Fhioda",
+      "cinematic_description": "This storied mountain pass slices through the Highlands with striking elevation, delivering panoramic views of rugged peaks such as Cairn Gorm and Aonach Mòr, perfect for riders seeking both serenity and scale.",
+      "rider_tip": "Use the pass’s well-maintained asphalt surface to maintain momentum while savoring expansive views without sacrificing control."
+    }
+  ]
+}

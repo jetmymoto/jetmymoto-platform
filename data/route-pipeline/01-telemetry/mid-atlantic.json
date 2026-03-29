@@ -1,0 +1,147 @@
+{
+  "destination_slug": "mid-atlantic",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:44:35.047Z",
+  "telemetry": {
+    "road_segments": 105335,
+    "passes_found": 9,
+    "peaks_found": 246,
+    "max_altitude_m": 654,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 86,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Monterey Pass",
+      "lat": 39.7356561,
+      "lng": -77.474542,
+      "elevation_m": 396,
+      "osm_id": 10185844726
+    },
+    {
+      "name": "Keys Gap",
+      "lat": 39.2611134,
+      "lng": -77.7622835,
+      "elevation_m": 276,
+      "osm_id": 63590237
+    },
+    {
+      "name": "Hopewell Gap",
+      "lat": 38.866585,
+      "lng": -77.706055,
+      "elevation_m": 260,
+      "osm_id": 210769949
+    },
+    {
+      "name": "Cold Spring Gap",
+      "lat": 38.9432764,
+      "lng": -77.6548004,
+      "elevation_m": 214,
+      "osm_id": 8902032751
+    },
+    {
+      "name": "Clarke's Gap",
+      "lat": 39.1397054,
+      "lng": -77.6108873,
+      "elevation_m": 196,
+      "osm_id": 8901516101
+    },
+    {
+      "name": "Buchannon Gap",
+      "lat": 38.9497348,
+      "lng": -77.6481432,
+      "elevation_m": 179,
+      "osm_id": 8902032750
+    },
+    {
+      "name": "Hillsboro Gap",
+      "lat": 39.1998537,
+      "lng": -77.7273783,
+      "elevation_m": 155,
+      "osm_id": 8901988612
+    },
+    {
+      "name": "Thoroughfare Gap",
+      "lat": 38.8245795,
+      "lng": -77.7157765,
+      "elevation_m": 133,
+      "osm_id": 210849571
+    },
+    {
+      "name": "Potomac Water Gap",
+      "lat": 39.3210536,
+      "lng": -77.7194243,
+      "elevation_m": 78,
+      "osm_id": 10188479076
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Quirauk Mountain",
+      "lat": 39.6964843,
+      "lng": -77.5127675,
+      "elevation_m": 654
+    },
+    {
+      "name": "Catoctin Mountain",
+      "lat": 39.6485039,
+      "lng": -77.4662658,
+      "elevation_m": 572
+    },
+    {
+      "name": "Salamander Rock",
+      "lat": 39.5761788,
+      "lng": -77.4880136,
+      "elevation_m": 562
+    },
+    {
+      "name": "High Rock",
+      "lat": 39.6950954,
+      "lng": -77.5224899,
+      "elevation_m": 559
+    },
+    {
+      "name": "Black Rock",
+      "lat": 39.5732753,
+      "lng": -77.5971889,
+      "elevation_m": 549
+    },
+    {
+      "name": "Virginia Rock",
+      "lat": 39.772594,
+      "lng": -77.4641558,
+      "elevation_m": 545
+    },
+    {
+      "name": "Annapolis Rock",
+      "lat": 39.5583667,
+      "lng": -77.5987066,
+      "elevation_m": 538
+    },
+    {
+      "name": "Lambs Knoll",
+      "lat": 39.4483299,
+      "lng": -77.6268713,
+      "elevation_m": 536
+    },
+    {
+      "name": "Bob's Hill",
+      "lat": 39.6000877,
+      "lng": -77.461608,
+      "elevation_m": 535
+    },
+    {
+      "name": "Wildcat Rocks",
+      "lat": 39.7598163,
+      "lng": -77.4686006,
+      "elevation_m": 533
+    }
+  ]
+}

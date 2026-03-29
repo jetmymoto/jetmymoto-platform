@@ -1,0 +1,303 @@
+{
+  "operator": "eagle-rider-mxp",
+  "airport": "MXP",
+  "url": "https://www.eaglerider.com/milan-italy",
+  "harvested_at": "2026-03-27T20:21:54.990Z",
+  "rental_count": 21,
+  "rentals": [
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road King® Special",
+      "category": "touring",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Ultra",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide®",
+      "category": "touring",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Sport Glide™",
+      "category": "cruiser",
+      "price_day": 185,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "cruiser",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Scrambler",
+      "category": "scrambler",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "F 900 R",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "V100 Mandello",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Monster",
+      "category": "sport-touring",
+      "price_day": 311.43,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "G 310 R",
+      "category": "sport-touring",
+      "price_day": 213.39,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 RT",
+      "category": "touring",
+      "price_day": 392.17,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Kawasaki",
+      "model": "Versys 650 Tourer",
+      "category": "adventure",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V2",
+      "category": "adventure",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "adventure",
+      "price_day": 351.8,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Hypermotard 950",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    }
+  ]
+}

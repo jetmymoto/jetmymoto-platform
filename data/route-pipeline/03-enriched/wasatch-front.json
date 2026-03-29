@@ -1,0 +1,31 @@
+{
+  "destination_slug": "wasatch-front",
+  "destination_name": "Wasatch Front",
+  "enriched_at": "2026-03-28T23:28:30.046Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Carve through the Wasatch Front’s mountain asphalt arteries where advanced riders will find a symphony of challenging passes framed by towering peaks like Mount Timpanogos and The Pfeifferhorn. This is a journey that marries technical precision with breathtaking alpine vistas, inviting those who demand more than just a ride—a full sensory immersion in Utah’s rugged spine.",
+  "ride_character": "A demanding ballet of tight switchbacks and sweeping mountain passes that test rider skill against a backdrop of dramatic elevation shifts and pristine wilderness.",
+  "best_season": "June through September — the passes shed their snow and the alpine lakes shimmer under long summer days, perfect for riding and stopping at scenic vistas.",
+  "premium_pois": [
+    {
+      "name": "The Pfeifferhorn",
+      "cinematic_description": "Rising to 11,331 meters, The Pfeifferhorn stands as the Wasatch Front’s most majestic peak, its rugged profile dominating the skyline and offering riders a constant visual companion along the mountain roads.",
+      "rider_tip": "Plan your ride to catch morning light on The Pfeifferhorn for the most dramatic scenic contrast."
+    },
+    {
+      "name": "Emerald Lake",
+      "cinematic_description": "Nestled within the Mount Timpanogos Wilderness, Emerald Lake offers a serene contrast to the challenging roads, its clear waters reflecting the surrounding alpine forest and peaks—a perfect pause for riders to reconnect with the landscape.",
+      "rider_tip": "Use the nearby Alpine Summit pass to access the best routes leading to Emerald Lake’s viewing points."
+    },
+    {
+      "name": "Dog Lake",
+      "cinematic_description": "Located between Millcreek and Big Cottonwood Canyons, Dog Lake’s tranquil surface mirrors the towering mountain ridges, creating an inviting oasis that punctuates the Wasatch Front’s relentless terrain with peaceful respite.",
+      "rider_tip": "Approach Dog Lake via Big Cottonwood Canyon roads for smooth asphalt and well-marked pull-offs."
+    }
+  ]
+}

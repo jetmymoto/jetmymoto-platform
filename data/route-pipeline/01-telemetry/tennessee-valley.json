@@ -1,0 +1,83 @@
+{
+  "destination_slug": "tennessee-valley",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:44:51.533Z",
+  "telemetry": {
+    "road_segments": 23766,
+    "passes_found": 0,
+    "peaks_found": 316,
+    "max_altitude_m": 635,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 68,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [],
+  "osm_peaks": [
+    {
+      "name": "Short Mountain",
+      "lat": 35.8664548,
+      "lng": -85.9758215,
+      "elevation_m": 635
+    },
+    {
+      "name": "Big Butte",
+      "lat": 35.4331326,
+      "lng": -85.919149,
+      "elevation_m": 612
+    },
+    {
+      "name": "Mason Mountain",
+      "lat": 35.8708991,
+      "lng": -85.9560989,
+      "elevation_m": 533
+    },
+    {
+      "name": "Little Short Mountain",
+      "lat": 35.8517332,
+      "lng": -85.924987,
+      "elevation_m": 522
+    },
+    {
+      "name": "Sugartree Knob",
+      "lat": 35.8664548,
+      "lng": -86.0091556,
+      "elevation_m": 446
+    },
+    {
+      "name": "Locust Knob",
+      "lat": 35.6561818,
+      "lng": -86.2952708,
+      "elevation_m": 412
+    },
+    {
+      "name": "Hickory Hill",
+      "lat": 35.6575697,
+      "lng": -86.381104,
+      "elevation_m": 405
+    },
+    {
+      "name": "Gowen Knob",
+      "lat": 35.7503468,
+      "lng": -86.247771,
+      "elevation_m": 399
+    },
+    {
+      "name": "Mount Defiance",
+      "lat": 36.0742256,
+      "lng": -86.1619343,
+      "elevation_m": 398
+    },
+    {
+      "name": "Pilot Knob",
+      "lat": 35.693959,
+      "lng": -86.2730486,
+      "elevation_m": 396
+    }
+  ]
+}

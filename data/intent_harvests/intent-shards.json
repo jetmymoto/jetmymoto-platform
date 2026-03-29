@@ -1,0 +1,939 @@
+{
+  "operator_id": "shard-generator",
+  "airport_code": "MULTIPLE",
+  "source_url": "https://jetmymoto.com/shards",
+  "harvestedAt": "2026-03-29T01:50:08.098Z",
+  "intentCount": 110,
+  "intents": [
+    {
+      "keyword": "Terminal 2 Meet & Greet motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Unlimited Mileage Alps motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "No-Deposit BMW Rentals motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Alpine-ready setup motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "lowered-seat GS motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "factory-luggage-included motorcycle rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Grossglockner High Alpine Road motorcycle rental",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Bavarian Alps Loop motorcycle rental",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Munich to Stelvio Pass motorcycle rental",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Terminal 2 Meet & Greet lowered-seat GS rental Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Alpine-ready setup for Grossglockner High Alpine Road from Munich",
+      "airport_code": "MUC",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "24/7 Airport Delivery motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Cross-continental Permit motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Bosphorus Pickup motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "heavy-duty-skidplates motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "transcontinental-tanks motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "off-road-tires motorcycle rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Trans-Anatolian Express motorcycle rental",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Istanbul to Cappadocia motorcycle rental",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Black Sea Coastal Run motorcycle rental",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "24/7 Airport Delivery transcontinental-tanks rental Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "heavy-duty-skidplates for Trans-Anatolian Express from Istanbul",
+      "airport_code": "IST",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Secure Luggage Storage motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Meet & Greet Terminal 5 motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "UK Roadside Assist motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "heated-grips-standard motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "waterproof-panniers motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "A2-compliant-rentals motorcycle rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Cotswolds Discovery motorcycle rental",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "London to North Coast 500 motorcycle rental",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "South Downs Way motorcycle rental",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Secure Luggage Storage waterproof-panniers rental London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "heated-grips-standard for Cotswolds Discovery from London",
+      "airport_code": "LHR",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "VIP Terminal Pickup motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "One-Way to Nice/Cannes motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Helmet Lockers Included motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Paris-city-legal motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "luxury-touring-spec motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "automatic-DCT-models motorcycle rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Champagne Region Tour motorcycle rental",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Paris to Normandy Coast motorcycle rental",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Loire Valley Chateaux motorcycle rental",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "VIP Terminal Pickup luxury-touring-spec rental Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Paris-city-legal for Champagne Region Tour from Paris",
+      "airport_code": "CDG",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Direct Terminal Access motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Benelux Border-Free motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Low Security Deposit motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "commuter-friendly motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "integrated-GPS-mapping motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "urban-scooter-hybrid motorcycle rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Dutch Coast Route motorcycle rental",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Amsterdam to Ardennes Forest motorcycle rental",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Tulip Field Loop motorcycle rental",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Direct Terminal Access integrated-GPS-mapping rental Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "commuter-friendly for Dutch Coast Route from Amsterdam",
+      "airport_code": "AMS",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Free Airport Shuttle motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Autobahn-Ready Fleet motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Late Night Returns motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "high-speed-stability motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "unlimited-autobahn-mileage motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Euro-touring-packs motorcycle rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Black Forest B500 motorcycle rental",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Rhine Valley Run motorcycle rental",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Frankfurt to Alps Express motorcycle rental",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Free Airport Shuttle unlimited-autobahn-mileage rental Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "high-speed-stability for Black Forest B500 from Frankfurt",
+      "airport_code": "FRA",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Spanish One-Way enabled motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Terminal T4 Pickup motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Siesta-Friendly Hours motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "ventilated-mesh-gear motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "desert-spec-tires motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "low-seat-height-specialists motorcycle rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Madrid to Sierra de Gredos motorcycle rental",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Castile Plateau Loop motorcycle rental",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "The Don Quixote Trail motorcycle rental",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Spanish One-Way enabled desert-spec-tires rental Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "ventilated-mesh-gear for Madrid to Sierra de Gredos from Madrid",
+      "airport_code": "MAD",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Ferry-Ready Rentals motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Custom Coastal Delivery motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Multi-Day Discounts motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Pyrenees-ready-suspension motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "urban-agility-pro motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "GoPro-mount-ready motorcycle rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Pyrenees High Roads motorcycle rental",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Costa Brava Coastal Run motorcycle rental",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Montserrat Mountain Climb motorcycle rental",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Ferry-Ready Rentals urban-agility-pro rental Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Pyrenees-ready-suspension for Pyrenees High Roads from Barcelona",
+      "airport_code": "BCN",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Rome City Center Drop-off motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Fiumicino Terminal 3 Handover motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Instant Booking motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Italian-style-classics motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Vespa-luxury-touring motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "pillion-comfort-focus motorcycle rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Amalfi Coast Dream motorcycle rental",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Tuscan Hills Circuit motorcycle rental",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Rome to Gran Sasso motorcycle rental",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Rome City Center Drop-off Vespa-luxury-touring rental Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Italian-style-classics for Amalfi Coast Dream from Rome",
+      "airport_code": "FCO",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Dolomites Shuttle Link motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Italian Lake District Access motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Factory Performance Specs motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Ducati-specialist-fleet motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "performance-braking-packs motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "premium-riding-gear motorcycle rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Lake Como Circuit motorcycle rental",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Milan to Dolomites Traverse motorcycle rental",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Stelvio Pass North Ascent motorcycle rental",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards",
+      "brands_mentioned": [],
+      "models_mentioned": [],
+      "categories_mentioned": []
+    },
+    {
+      "keyword": "Dolomites Shuttle Link performance-braking-packs rental Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    },
+    {
+      "keyword": "Ducati-specialist-fleet for Lake Como Circuit from Milan",
+      "airport_code": "MXP",
+      "operator_id": "shard-generator",
+      "source_url": "https://jetmymoto.com/shards"
+    }
+  ]
+}

@@ -33,3 +33,45 @@ export async function createMotoQuote(payload) {
   
   return data;
 }
+
+export async function createRentalReservation(payload) {
+  const res = await fetch(`${API_URL}/createRentalReservation`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  let data;
+  try {
+    data = await res.json();
+  } catch (e) {
+    throw new Error("Invalid server response");
+  }
+
+  if (!res.ok) {
+    throw new Error(data?.error || "Reservation failed");
+  }
+
+  return data;
+}
+
+export async function createCheckoutSession(payload) {
+  const res = await fetch(`${API_URL}/createCheckoutSession`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  let data;
+  try {
+    data = await res.json();
+  } catch (e) {
+    throw new Error("Invalid server response");
+  }
+
+  if (!res.ok) {
+    throw new Error(data?.error || "Checkout session failed");
+  }
+
+  return data;
+}

@@ -1,10 +1,11 @@
+
 // src/App.jsx
 
 if (import.meta.env.DEV) {
   console.log("HOST:", window.location.hostname);
 }
 
-import React, { Suspense } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Navigate,
@@ -15,7 +16,13 @@ import {
 
 import BrandLayout from "./layouts/BrandLayout";
 import AdminLayout from "./layouts/AdminLayout";
+import { GRAPH } from "@/core/network/networkGraph";
 import { getSiteConfig } from "./utils/siteConfig";
+import {
+  getCanonicalAirportContinentPath,
+  getCanonicalAirportCountryPath,
+  getCanonicalAirportPath,
+} from "@/utils/navigationTargets";
 
 // CORE PAGES (Kept synchronous for fast LCP)
 import GlobalTower from "./pages/GlobalTower";
@@ -26,26 +33,31 @@ import RideDestinationPage from "@/pages/destination/RideDestinationPage";
 import RiderAtlasHomepage from "./pages/Rideratlashomepage";
 import JetMyMotoHomepage from "./pages/jetmymotohomepage";
 import NotFound from "./pages/NotFound";
+import TactileHardwarePrototypePage from "./pages/TactileHardwarePrototypePage";
+import PatriotPseoTemplate from "./components/seo/PatriotPseoTemplate";
+import PatriotOverlayPage from "./pages/PatriotOverlayPage";
+import MotoAirliftBooking from "./features/airport/MotoAirliftBooking";
 
 // LAZY LOADED PAGES
-const MissionDetailsPage = React.lazy(() => import("./pages/MissionDetailsPage"));
-const MissionPlannerPage = React.lazy(() => import("./pages/MissionPlannerPage"));
-const PlanSummaryPage = React.lazy(() => import("./pages/PlanSummaryPage"));
-const HangarPage = React.lazy(() => import("./pages/HangarPage"));
-const PoolPage = React.lazy(() => import("./pages/PoolPage"));
-const MotoAirliftBooking = React.lazy(() => import("./features/airport/MotoAirliftBooking"));
-const RentalDetailPage = React.lazy(() => import("./pages/rentals/RentalDetailPage"));
-const PoiPage = React.lazy(() => import("./pages/poi/PoiPage"));
+const MissionDetailsPage = lazy(() => import("./pages/MissionDetailsPage"));
+const RentalCheckoutPage = lazy(() => import("./pages/rentals/RentalCheckoutPage"));
+const MissionPlannerPage = lazy(() => import("./pages/MissionPlannerPage"));
+const PlanSummaryPage = lazy(() => import("./pages/PlanSummaryPage"));
+const HangarPage = lazy(() => import("./pages/HangarPage"));
+const PoolPage = lazy(() => import("./pages/PoolPage"));
+const RentalDetailPage = lazy(() => import("./pages/rentals/RentalDetailPage"));
+const PoiPage = lazy(() => import("./pages/poi/PoiPage"));
+const A2AMissionPage = lazy(() => import("./pages/a2a/A2AMissionPage"));
 
 // LAZY LOADED ADMIN
-const AdminOS = React.lazy(() => import("./pages/admin/AdminOS"));
-const AdminDashboard = React.lazy(() => import("./pages/AdminDashboard"));
-const AdminPostersPage = React.lazy(() => import("./pages/AdminPostersPage"));
-const AdminBookingsPage = React.lazy(() => import("./pages/admin/AdminBookingsPage"));
-const AdminCommandCenter = React.lazy(() => import("./pages/admin/AdminCommandCenter"));
-const AdminMediaManager = React.lazy(() => import("./pages/admin/AdminMediaManager"));
-const AdminRentalManager = React.lazy(() => import("./pages/admin/AdminRentalManager"));
-const AdminSectionPlaceholder = React.lazy(() => import("./pages/admin/AdminSectionPlaceholder"));
+const AdminOS = lazy(() => import("./pages/admin/AdminOS"));
+const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+const AdminPostersPage = lazy(() => import("./pages/AdminPostersPage"));
+const AdminBookingsPage = lazy(() => import("./pages/admin/AdminBookingsPage"));
+const AdminCommandCenter = lazy(() => import("./pages/admin/AdminCommandCenter"));
+const AdminMediaManager = lazy(() => import("./pages/admin/AdminMediaManager"));
+const AdminRentalManager = lazy(() => import("./pages/admin/AdminRentalManager"));
+const AdminSectionPlaceholder = lazy(() => import("./pages/admin/AdminSectionPlaceholder"));
 
 function DebugLocation() {
   const location = useLocation();
@@ -61,24 +73,71 @@ const LazyFallback = () => (
   </div>
 );
 
+const LEGACY_AIRPORTS_PATH = "/airports";
+
+function resolveLegacyAirportTarget(pathname) {
+  const suffix = pathname
+    .slice(LEGACY_AIRPORTS_PATH.length)
+    .replace(/^\/+|\/+$/g, "");
+
+  if (!suffix) {
+    return "/airport";
+  }
+
+  const segments = suffix.split("/").filter(Boolean);
+  const [scope, value] = segments;
+
+  if (scope === "country") {
+    return getCanonicalAirportCountryPath(value);
+  }
+
+  if (scope === "continent") {
+    return getCanonicalAirportContinentPath(value);
+  }
+
+  const matchedAirportCode = segments.find((segment) =>
+    GRAPH.airports?.[segment?.toUpperCase()]
+  );
+
+  if (matchedAirportCode) {
+    return getCanonicalAirportPath(matchedAirportCode);
+  }
+
+  return getCanonicalAirportContinentPath(scope);
+}
+
+function LegacyAirportMaps() {
+  const location = useLocation();
+  const target = resolveLegacyAirportTarget(location.pathname);
+
+  return <Navigate to={`${target}${location.search}`} replace />;
+}
+
 function AppRoutes({ site }) {
   return (
     <Routes>
       <Route path="/" element={site?.id === "jmm" ? <JetMyMotoHomepage /> : <RiderAtlasHomepage />} />
       <Route path="/jetmymoto" element={<JetMyMotoHomepage />} />
+      <Route path="/prototype/tactile-hardware" element={<TactileHardwarePrototypePage />} />
+      <Route path="/pseo-test" element={<PatriotPseoTemplate />} />
 
-      <Route path="/airports" element={<GlobalTower />} />
-      <Route path="/airports/:continent" element={<GlobalTower />} />
-      <Route path="/airports/country/:country" element={<AirportsCountryPage />} />
+      <Route path="/airport" element={<GlobalTower />} />
+      <Route path="/airport/continent/:continent" element={<GlobalTower />} />
+      <Route path="/airport/country/:country" element={<AirportsCountryPage />} />
       <Route path="/airport/:code" element={<AirportPage />} />
+      <Route path={LEGACY_AIRPORTS_PATH} element={<LegacyAirportMaps />} />
+      <Route path={`${LEGACY_AIRPORTS_PATH}/*`} element={<LegacyAirportMaps />} />
 
       <Route path="/moto-airlift" element={<MotoAirliftBooking />} />
       <Route path="/moto-airlift/:any" element={<Navigate to="/moto-airlift" replace />} />
 
       <Route path="/rental/:slug" element={<RentalDetailPage />} />
+      <Route path="/checkout/rental/:rentalId" element={<RentalCheckoutPage />} />
+      <Route path="/rentals/:airportCode/:rentalSlug" element={<PatriotOverlayPage />} />
       <Route path="/route/:slug" element={<RideRoutePage />} />
       <Route path="/destination/:slug" element={<RideDestinationPage />} />
       <Route path="/poi/:slug" element={<PoiPage />} />
+      <Route path="/a2a/:slug" element={<A2AMissionPage />} />
 
       <Route path="/mission/:id" element={<MissionDetailsPage />} />
       <Route path="/deploy/:missionId" element={<MissionPlannerPage />} />

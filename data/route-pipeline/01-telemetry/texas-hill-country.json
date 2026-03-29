@@ -1,0 +1,91 @@
+{
+  "destination_slug": "texas-hill-country",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:43:24.174Z",
+  "telemetry": {
+    "road_segments": 48141,
+    "passes_found": 1,
+    "peaks_found": 332,
+    "max_altitude_m": 594,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 85,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Naumans Gap",
+      "lat": 30.408264,
+      "lng": -98.5459757,
+      "elevation_m": 503,
+      "osm_id": 4645032710
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Bell Mountain",
+      "lat": 30.4468598,
+      "lng": -98.718926,
+      "elevation_m": 594
+    },
+    {
+      "name": "Nebo Mountain",
+      "lat": 30.4515817,
+      "lng": -98.73726,
+      "elevation_m": 588
+    },
+    {
+      "name": "Andy Moore Mountain",
+      "lat": 30.4157502,
+      "lng": -98.6669792,
+      "elevation_m": 585
+    },
+    {
+      "name": "Meta Mountain",
+      "lat": 30.019934,
+      "lng": -98.6416932,
+      "elevation_m": 583
+    },
+    {
+      "name": "Circle Benchmark",
+      "lat": 30.1750188,
+      "lng": -98.4819519,
+      "elevation_m": 579
+    },
+    {
+      "name": "Mount Smith",
+      "lat": 29.6880014,
+      "lng": -98.7630812,
+      "elevation_m": 578
+    },
+    {
+      "name": "Wolf Mountain",
+      "lat": 30.0185452,
+      "lng": -98.6628049,
+      "elevation_m": 571
+    },
+    {
+      "name": "Dungeon Mountain",
+      "lat": 30.4421377,
+      "lng": -98.7011474,
+      "elevation_m": 567
+    },
+    {
+      "name": "Sabinas Mountain",
+      "lat": 29.8596619,
+      "lng": -98.7458606,
+      "elevation_m": 567
+    },
+    {
+      "name": "Cave Hill",
+      "lat": 30.056877,
+      "lng": -98.6680838,
+      "elevation_m": 566
+    }
+  ]
+}

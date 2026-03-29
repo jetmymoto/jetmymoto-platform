@@ -1,0 +1,31 @@
+{
+  "destination_slug": "pyrenees",
+  "destination_name": "Pyrenees",
+  "enriched_at": "2026-03-28T23:28:15.521Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Carve through the Pyrenees’ mountain asphalt, where every twist unveils a towering peak and every pass tests your mastery on the bike. This advanced terrain invites riders seeking the thrill of narrow, sinuous roads framed by the highest summits of the range, blending precision with raw alpine grandeur.",
+  "ride_character": "An advanced, mountain asphalt ride defined by technical passes and elevation shifts that demand focus, rewarding riders with breathtaking views of Spain’s loftiest peaks.",
+  "best_season": "June through September — the passes shed their snow and the weather stabilizes, revealing clear vistas of rugged summits like Aneto and Monte Perdido.",
+  "premium_pois": [
+    {
+      "name": "Aneto",
+      "cinematic_description": "At 3404 meters, Aneto stands as the highest pinnacle in the Pyrenees, its rugged profile dominating the skyline and serving as a majestic backdrop for riders navigating the surrounding mountain passes.",
+      "rider_tip": "Plan your ride to catch early morning light on Aneto to fully appreciate its imposing silhouette while roads are quieter."
+    },
+    {
+      "name": "Monte Perdido",
+      "cinematic_description": "Straddling the border with France, Monte Perdido rises to 3355 meters, its stark alpine presence a constant companion on challenging ascents and descents that define this mountainous route.",
+      "rider_tip": "Use Monte Perdido’s nearby passes like Collado de la Paúl for technical riding with rewarding panoramic views."
+    },
+    {
+      "name": "Pico Posets",
+      "cinematic_description": "At 3375 meters, Pico Posets offers riders a striking point of reference amid the Pyrenees’ peaks, its granite massifs casting dramatic shadows over the winding, asphalt-covered mountain roads.",
+      "rider_tip": "Approach Pico Posets via the Collado de Cordier for a demanding yet exhilarating ride through high-altitude terrain."
+    }
+  ]
+}

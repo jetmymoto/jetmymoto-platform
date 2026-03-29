@@ -39,6 +39,11 @@ export default defineConfig({
           if (id.includes("/core/network/networkGraph") || id.includes("/core/network/graphHealthCheck")) {
             return undefined;
           }
+          // buildRentalGraph.js is only needed from the rentals shard loader.
+          // Keep it out of graph-core so rental source data stays off the eager path.
+          if (id.includes("/core/network/buildRentalGraph")) {
+            return "graph-rentals";
+          }
           // graphOverlayShard.js is async-imported — let Rollup split it naturally.
           // Forcing it into graph-core would pull rental formatters into sync path.
           if (id.includes("/core/network/graphOverlayShard")) {
@@ -88,5 +93,11 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
-  }
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./src/__tests__/setup.js"],
+    include: ["src/**/*.test.{js,jsx}"],
+  },
 });

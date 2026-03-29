@@ -1,0 +1,31 @@
+{
+  "destination_slug": "pacific-northwest",
+  "destination_name": "Pacific Northwest",
+  "enriched_at": "2026-03-28T23:28:44.713Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Carve through a labyrinth of mountain passes where asphalt snakes beneath towering peaks that pierce the Pacific Northwest sky. Each mile reveals a rugged symphony of elevation and precision, demanding focus and rewarding riders with breathtaking, unyielding vistas that redefine alpine adventure.",
+  "ride_character": "An advanced mountain asphalt experience, the ride challenges with steep, technical passes framed by jagged summits and relentless elevation shifts, creating an intense and immersive rhythm.",
+  "best_season": "June through September — the passes shed their snow and the weather stabilizes for optimal traction and visibility amid the high alpine terrain.",
+  "premium_pois": [
+    {
+      "name": "Mount Garibaldi",
+      "cinematic_description": "Dominating the British Columbia skyline at 2,678 meters, Mount Garibaldi's rugged silhouette offers riders a dramatic backdrop that epitomizes the untamed spirit of the Pacific Northwest.",
+      "rider_tip": "Check weather conditions before heading near Garibaldi, as sudden mountain shifts can affect visibility and road grip."
+    },
+    {
+      "name": "Mount Tantalus",
+      "cinematic_description": "At 2,608 meters, Mount Tantalus looms with steep granite faces that descend sharply towards the winding asphalt, inviting riders to test their precision against nature’s towering fortress.",
+      "rider_tip": "Approach the passes near Mount Tantalus with caution; their technical demands reward careful throttle and brake modulation."
+    },
+    {
+      "name": "The Sphinx",
+      "cinematic_description": "Rising to 2,402 meters, The Sphinx commands attention with its enigmatic presence, framing the ride with an austere grandeur that heightens every twist and turn through the mountain corridors.",
+      "rider_tip": "Take advantage of clear days to pause and absorb the panoramic views here—roadside pullouts provide safe spots for breaks."
+    }
+  ]
+}

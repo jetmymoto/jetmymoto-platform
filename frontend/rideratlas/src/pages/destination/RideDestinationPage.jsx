@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useReducer } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { ArrowUpRight, MapPin, Plane, Route, ShieldCheck } from "lucide-react";
 
 import RentalCard from "@/features/rentals/components/RentalCard";
@@ -10,6 +10,7 @@ import {
   loadGraphShard,
 } from "@/core/network/networkGraph";
 import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 function getRouteRecord(routeRef) {
   if (!routeRef) {
@@ -119,9 +120,11 @@ function SectionHeader({ eyebrow, title, body }) {
 
 export default function RideDestinationPage() {
   const { slug } = useParams();
+  const location = useLocation();
 
   const destination = GRAPH?.destinations?.[slug] || null;
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   // ── Non-blocking shard load → re-render when done ──
   useEffect(() => {
@@ -141,9 +144,9 @@ export default function RideDestinationPage() {
 
   // ── Shard-first + GRAPH fallback ──
   const rentalShard = readGraphShard("rentals");
-  const rentalsMap = rentalShard?.rentals ?? GRAPH.rentals;
+  const rentalsMap = rentalShard?.rentals ?? {};
   const rentalsByDestination =
-    rentalShard?.rentalIndexes?.rentalsByDestination ?? GRAPH.rentalsByDestination;
+    rentalShard?.rentalIndexes?.rentalsByDestination ?? {};
 
   const routes = useMemo(() => {
     return (GRAPH?.routesByDestination?.[slug] || [])
@@ -156,6 +159,12 @@ export default function RideDestinationPage() {
       .map((ref) => getRentalRecord(ref, rentalsMap))
       .filter(Boolean);
   }, [slug, rentalsMap, rentalsByDestination]);
+
+  const regionalPois = useMemo(() => {
+    return (GRAPH?.poisByDestination?.[slug] || [])
+      .map((id) => GRAPH?.pois?.[id])
+      .filter(Boolean);
+  }, [slug]);
 
   const primaryAirportCode = useMemo(() => {
     return routes.map(getRouteAirportCode).find(Boolean) || "";
@@ -176,7 +185,7 @@ export default function RideDestinationPage() {
           </p>
           <div className="mt-8">
             <Link
-              to="/airport"
+              to={withCtx("/airport")}
               className="inline-flex items-center gap-3 rounded-full border border-[#A76330]/40 bg-[#A76330]/15 px-5 py-3 text-sm font-semibold text-[#E2BB76] transition-colors hover:border-[#A76330]/60 hover:bg-[#A76330]/20"
             >
               Return To Hub Map
@@ -216,18 +225,32 @@ export default function RideDestinationPage() {
           <div className="grid w-full gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
             <div className="max-w-4xl">
               <div className="text-[10px] uppercase tracking-[0.38em] text-[#CDA755]">
-                Destination Intelligence Briefing
+                Curated Motorcycle Journeys
               </div>
               <h1 className="mt-5 font-serif text-5xl font-black italic tracking-tight text-white md:text-7xl lg:text-[5.5rem]">
-                {destination.name}
+                Curated Motorcycle Journeys in {destination.name}
               </h1>
               <p className="mt-5 text-sm uppercase tracking-[0.3em] text-zinc-300">
                 {subtitle}
               </p>
-              {destination.description ? (
+              {(destination?.cinematic_pitch || destination?.description) ? (
                 <p className="mt-6 max-w-2xl text-sm leading-7 text-zinc-300 lg:text-base">
-                  {destination.description}
+                  {destination?.cinematic_pitch || destination?.description}
                 </p>
+              ) : null}
+              {(destination?.best_season || destination?.ride_character) ? (
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {destination?.best_season ? (
+                    <span className="rounded-full border border-[#CDA755]/30 bg-[#CDA755]/10 px-4 py-1.5 text-[10px] uppercase tracking-[0.32em] text-[#CDA755]">
+                      {destination.best_season}
+                    </span>
+                  ) : null}
+                  {destination?.ride_character ? (
+                    <span className="rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-[10px] uppercase tracking-[0.32em] text-zinc-300">
+                      {destination.ride_character}
+                    </span>
+                  ) : null}
+                </div>
               ) : null}
             </div>
 
@@ -292,6 +315,48 @@ export default function RideDestinationPage() {
           )}
         </section>
 
+        {regionalPois.length > 0 && (
+          <section className="space-y-8">
+            <SectionHeader
+              eyebrow="Intelligence Layer"
+              title="Mission Waypoints"
+              body="Curated tactical stops across this theater, infused with our Premium Concierge intel to optimize your staging, refueling, and cultural immersion."
+            />
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {regionalPois.map((poi) => (
+                <div
+                  key={poi.slug || poi.id}
+                  className="flex flex-col justify-between rounded-[28px] border border-white/10 bg-[#121212] p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors hover:border-[#CDA755]/30 hover:bg-[#151515]"
+                >
+                  <div>
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+                      {poi.type || "Waypoint"}
+                    </div>
+                    <h3 className="mt-3 text-xl font-semibold text-white">
+                      {poi.name}
+                    </h3>
+                    {poi.cinematic_description && (
+                      <p className="mt-4 text-sm leading-6 text-zinc-400">
+                        {poi.cinematic_description}
+                      </p>
+                    )}
+                  </div>
+                  {poi.rider_tip && (
+                    <div className="mt-6 rounded-2xl border border-[#CDA755]/20 bg-[#050505] p-4">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#CDA755]">
+                        Rider Tip
+                      </div>
+                      <p className="mt-2 text-sm font-medium leading-relaxed text-[#CDA755]/90">
+                        {poi.rider_tip}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         <section className="space-y-8">
           <SectionHeader
             eyebrow="Tactical Route Intelligence"
@@ -309,7 +374,7 @@ export default function RideDestinationPage() {
                 return (
                   <Link
                     key={route.slug || route.id || getRouteName(route)}
-                    to={`/route/${route.slug || route.id}`}
+                    to={withCtx(`/route/${route.slug || route.id}`)}
                     className="group rounded-[28px] border border-white/10 bg-[#121212] p-6 transition-colors hover:border-[#A76330]/35 hover:bg-[#151515]"
                   >
                     <div className="flex items-start justify-between gap-4">
@@ -367,6 +432,55 @@ export default function RideDestinationPage() {
           )}
         </section>
 
+        {/* A2A Missions through this theater */}
+        {(() => {
+          const missionSlugs = GRAPH?.missionsByTheater?.[slug] || [];
+          if (missionSlugs.length === 0) return null;
+          return (
+            <section className="space-y-8">
+              <SectionHeader
+                eyebrow="A2A Missions™"
+                title="Airport-to-Airport Missions Through This Theater"
+                body="One-way motorcycle corridors that traverse this region. Fly in at the insertion hub, ride the route, drop the bike at extraction."
+              />
+              <div className="grid gap-4 lg:grid-cols-2">
+                {missionSlugs.map((ms) => {
+                  const m = GRAPH?.missions?.[ms];
+                  if (!m) return null;
+                  return (
+                    <Link
+                      key={ms}
+                      to={withCtx(`/a2a/${ms}`)}
+                      className="group rounded-[28px] border border-white/10 bg-[#121212] p-6 transition-colors hover:border-[#CDA755]/30 hover:bg-[#151515]"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                            <Plane className="h-3 w-3 text-[#CDA755]" />
+                            A2A Corridor
+                          </div>
+                          <h3 className="mt-3 text-xl font-semibold text-white">{m.title}</h3>
+                        </div>
+                        <ArrowUpRight className="mt-1 h-5 w-5 shrink-0 text-[#CDA755] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                      </div>
+                      <div className="mt-4 flex items-center gap-3 text-sm text-zinc-400">
+                        <span className="font-mono font-bold text-white">{m.insertion_airport}</span>
+                        <span className="text-zinc-600">→</span>
+                        <span className="text-zinc-300">{m.theaterData?.name || m.theater}</span>
+                        <span className="text-zinc-600">→</span>
+                        <span className="font-mono font-bold text-white">{m.extraction_airport}</span>
+                      </div>
+                      {m.distance_km ? (
+                        <div className="mt-3 text-xs text-zinc-500">~{m.distance_km} km • {m.duration_days || "Multi-day"} days</div>
+                      ) : null}
+                    </Link>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })()}
+
         <section className="rounded-[32px] border border-white/10 bg-[linear-gradient(145deg,rgba(18,18,18,0.96),rgba(10,10,10,0.9))] p-8 lg:p-10">
           <SectionHeader
             eyebrow="Dual-Engine Deployment Handoff"
@@ -377,7 +491,7 @@ export default function RideDestinationPage() {
           {primaryAirportCode ? (
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               <Link
-                to={`/moto-airlift?airport=${primaryAirportCode}`}
+                to={withCtx(`/moto-airlift?airport=${primaryAirportCode}`)}
                 className="group rounded-[28px] border border-[#A76330]/35 bg-[#A76330]/12 p-6 transition-colors hover:border-[#A76330]/55 hover:bg-[#A76330]/18"
               >
                 <div className="flex items-center justify-between gap-4">
@@ -397,7 +511,7 @@ export default function RideDestinationPage() {
               </Link>
 
               <Link
-                to={`/airport/${primaryAirportCode.toLowerCase()}?mode=rent`}
+                to={withCtx(`/airport/${primaryAirportCode.toLowerCase()}?mode=rent`)}
                 className="group rounded-[28px] border border-white/10 bg-[#121212] p-6 transition-colors hover:border-[#A76330]/35 hover:bg-[#151515]"
               >
                 <div className="flex items-center justify-between gap-4">

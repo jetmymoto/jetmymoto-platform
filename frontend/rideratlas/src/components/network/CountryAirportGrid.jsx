@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
 import { ArrowUpRight } from "lucide-react";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 const getFlagEmoji = (countryCode) => {
   if (!countryCode) return "🏳️";
@@ -12,6 +13,8 @@ const getFlagEmoji = (countryCode) => {
 };
 
 const CountryAirportGrid = ({ airports = [] }) => {
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -23,7 +26,7 @@ const CountryAirportGrid = ({ airports = [] }) => {
         return (
           <Link
             key={airport.code}
-            to={`/airport/${airport.code?.toLowerCase()}`}
+            to={withCtx(`/airport/${airport.code?.toLowerCase()}`)}
             className="group border border-white/5 bg-zinc-900/40 hover:border-amber-500/40 p-6 transition-all"
           >
 

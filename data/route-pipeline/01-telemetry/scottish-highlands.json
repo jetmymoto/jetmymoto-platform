@@ -1,0 +1,224 @@
+{
+  "destination_slug": "scottish-highlands",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:32:49.020Z",
+  "telemetry": {
+    "road_segments": 8075,
+    "passes_found": 89,
+    "peaks_found": 1614,
+    "max_altitude_m": 1345,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 59,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Bealach Toll Easa",
+      "lat": 57.3017147,
+      "lng": -5.0349605,
+      "elevation_m": 877,
+      "osm_id": 3731984741
+    },
+    {
+      "name": "Bealach an Fhioda",
+      "lat": 56.8342149,
+      "lng": -3.7087682,
+      "elevation_m": 847,
+      "osm_id": 5781300845
+    },
+    {
+      "name": "Bealach an Aoghlain",
+      "lat": 56.5540191,
+      "lng": -4.6789313,
+      "elevation_m": 813,
+      "osm_id": 5094622592
+    },
+    {
+      "name": "The Saddle",
+      "lat": 57.1103285,
+      "lng": -3.6218512,
+      "elevation_m": 807,
+      "osm_id": 5896102385
+    },
+    {
+      "name": "Bealach Buidhe",
+      "lat": 56.3312084,
+      "lng": -4.6184419,
+      "elevation_m": 805,
+      "osm_id": 563833667
+    },
+    {
+      "name": "Bealach nan Sgòr",
+      "lat": 56.7765978,
+      "lng": -4.5505186,
+      "elevation_m": 802,
+      "osm_id": 8848624391
+    },
+    {
+      "name": "Aisre nan Each",
+      "lat": 56.5773099,
+      "lng": -4.8639071,
+      "elevation_m": 779,
+      "osm_id": 5630155970
+    },
+    {
+      "name": "Corrieyairack Pass",
+      "lat": 57.0516666,
+      "lng": -4.6085148,
+      "elevation_m": 770,
+      "osm_id": 790338135
+    },
+    {
+      "name": "Cairn",
+      "lat": 56.5208582,
+      "lng": -4.7240483,
+      "elevation_m": 744,
+      "osm_id": 4218092207
+    },
+    {
+      "name": "Lairig lanachain",
+      "lat": 56.4502127,
+      "lng": -5.0395382,
+      "elevation_m": 728,
+      "osm_id": 327579631
+    },
+    {
+      "name": "Lairig Torran",
+      "lat": 56.4150218,
+      "lng": -5.0885893,
+      "elevation_m": 728,
+      "osm_id": 4433384524
+    },
+    {
+      "name": "Bealach Fuar-chathaidh",
+      "lat": 56.5952973,
+      "lng": -4.8849142,
+      "elevation_m": 697,
+      "osm_id": 5630155979
+    },
+    {
+      "name": "Lairig Noe",
+      "lat": 56.441703,
+      "lng": -5.0760913,
+      "elevation_m": 564,
+      "osm_id": 4937570836
+    },
+    {
+      "name": "Lairig Leacach",
+      "lat": 56.8361616,
+      "lng": -4.8190697,
+      "elevation_m": 505,
+      "osm_id": 4098910314
+    },
+    {
+      "name": "Drumochter Summit",
+      "lat": 56.8519737,
+      "lng": -4.2444634,
+      "elevation_m": 462,
+      "osm_id": 695152057
+    },
+    {
+      "name": "Slochd Summit",
+      "lat": 57.3110341,
+      "lng": -3.946253,
+      "elevation_m": 405,
+      "osm_id": 679089856
+    },
+    {
+      "name": "Slochd Summit",
+      "lat": 57.3061528,
+      "lng": -3.935612,
+      "elevation_m": 401,
+      "osm_id": 679089850
+    },
+    {
+      "name": "Chalamain Gap",
+      "lat": 57.1258589,
+      "lng": -3.711849,
+      "elevation_m": null,
+      "osm_id": 54184441
+    },
+    {
+      "name": "Bealach Dearg",
+      "lat": 56.6383352,
+      "lng": -5.0167447,
+      "elevation_m": null,
+      "osm_id": 293527563
+    },
+    {
+      "name": "Bealach eadar dhà Bheinn",
+      "lat": 56.3780655,
+      "lng": -4.5408742,
+      "elevation_m": null,
+      "osm_id": 561444460
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Ben Nevis",
+      "lat": 56.7968582,
+      "lng": -5.003526,
+      "elevation_m": 1345
+    },
+    {
+      "name": "Ben Macdui",
+      "lat": 57.0703889,
+      "lng": -3.6691251,
+      "elevation_m": 1309
+    },
+    {
+      "name": "Braeriach",
+      "lat": 57.0781682,
+      "lng": -3.7288293,
+      "elevation_m": 1296
+    },
+    {
+      "name": "Cairn Toul",
+      "lat": 57.054388,
+      "lng": -3.7107019,
+      "elevation_m": 1291
+    },
+    {
+      "name": "Carn na Criche",
+      "lat": 57.0626469,
+      "lng": -3.7514448,
+      "elevation_m": 1265
+    },
+    {
+      "name": "Sgor an Lochain Uaine",
+      "lat": 57.0583426,
+      "lng": -3.7257268,
+      "elevation_m": 1258
+    },
+    {
+      "name": "Cairn Gorm",
+      "lat": 57.116769,
+      "lng": -3.6444857,
+      "elevation_m": 1244
+    },
+    {
+      "name": "Aonach Beag",
+      "lat": 56.7999773,
+      "lng": -4.9541724,
+      "elevation_m": 1234
+    },
+    {
+      "name": "Aonach Mòr",
+      "lat": 56.8129504,
+      "lng": -4.9617416,
+      "elevation_m": 1221
+    },
+    {
+      "name": "Càrn Mòr Dearg",
+      "lat": 56.8052539,
+      "lng": -4.9866573,
+      "elevation_m": 1220
+    }
+  ]
+}

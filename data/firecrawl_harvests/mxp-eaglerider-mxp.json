@@ -1,0 +1,653 @@
+{
+  "operator": "eaglerider-mxp",
+  "airport": "MXP",
+  "url": "https://www.eaglerider.com/milan-italy",
+  "harvested_at": "2026-03-25T15:59:45.728Z",
+  "rental_count": 46,
+  "rentals": [
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Special",
+      "category": "cruiser",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Limited",
+      "category": "cruiser",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Special",
+      "category": "cruiser",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road King® Special",
+      "category": "cruiser",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Limited",
+      "category": "cruiser",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Ultra",
+      "category": "cruiser",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide®",
+      "category": "cruiser",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Sport Glide™",
+      "category": "cruiser",
+      "price_day": 185,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "cruiser",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Scrambler",
+      "category": "scrambler",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "F 900 R",
+      "category": "sport-touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "V100 Mandello",
+      "category": "touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Monster",
+      "category": "sport-touring",
+      "price_day": 313.09,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "G 310 R",
+      "category": "classic",
+      "price_day": 214.53,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "K 1600 GT",
+      "category": "touring",
+      "price_day": 394.26,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 RT",
+      "category": "touring",
+      "price_day": 394.26,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 850 GS",
+      "category": "adventure",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "Stelvio",
+      "category": "adventure",
+      "price_day": 313.09,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 382.67,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "V85 Strada",
+      "category": "touring",
+      "price_day": 150.75,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 230,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Kawasaki",
+      "model": "Versys 650 Tourer",
+      "category": "touring",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 353.68,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "F 850 GS",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "F 900 XR",
+      "category": "sport-touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada 950",
+      "category": "sport-touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "sport-touring",
+      "price_day": 353.68,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "F 800 GS",
+      "category": "adventure",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Honda",
+      "model": "Africa Twin",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Aprilia",
+      "model": "Tuareg 660",
+      "category": "adventure",
+      "price_day": 255.11,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "V85 TT Adventure E5",
+      "category": "adventure",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "G 310 GS",
+      "category": "classic",
+      "price_day": 214.53,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V2",
+      "category": "sport-touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "S 1000 XR",
+      "category": "sport-touring",
+      "price_day": 382.67,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "KL",
+      "model": "Brera 300",
+      "category": "classic",
+      "price_day": 66.1,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "C 650 GT",
+      "category": "classic",
+      "price_day": 214.53,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "BMW",
+      "model": "C 400 GT",
+      "category": "classic",
+      "price_day": 214.53,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Vespa",
+      "model": "Primavera 125",
+      "category": "classic",
+      "price_day": 67.26,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "KL",
+      "model": "Brera 125",
+      "category": "classic",
+      "price_day": 54.5,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Vespa",
+      "model": "GTS Super 125",
+      "category": "classic",
+      "price_day": 78.85,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Vespa",
+      "model": "GTS 300",
+      "category": "classic",
+      "price_day": 90.45,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eaglerider-mxp",
+      "brand": "Ducati",
+      "model": "Hypermotard 950",
+      "category": "sport-touring",
+      "price_day": 278.3,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "northern-italy",
+        "lake-como",
+        "tuscany"
+      ]
+    }
+  ]
+}

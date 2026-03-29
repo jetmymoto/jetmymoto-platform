@@ -1,0 +1,83 @@
+{
+  "destination_slug": "midwest-lakes",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:36:02.107Z",
+  "telemetry": {
+    "road_segments": 93863,
+    "passes_found": 0,
+    "peaks_found": 23,
+    "max_altitude_m": 362,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 81,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [],
+  "osm_peaks": [
+    {
+      "name": "High Point",
+      "lat": 42.4703596,
+      "lng": -88.5573622,
+      "elevation_m": 362
+    },
+    {
+      "name": "Lone Tree Bluff",
+      "lat": 42.7930335,
+      "lng": -88.6729182,
+      "elevation_m": 320
+    },
+    {
+      "name": "Buena Park Hill",
+      "lat": 42.7927181,
+      "lng": -88.2303783,
+      "elevation_m": 290
+    },
+    {
+      "name": "Gander Mountain",
+      "lat": 42.49363,
+      "lng": -88.1925881,
+      "elevation_m": 283
+    },
+    {
+      "name": "Hill Fifteen",
+      "lat": 42.4611303,
+      "lng": -88.2906464,
+      "elevation_m": 276
+    },
+    {
+      "name": "Johnson’s Mound",
+      "lat": 41.8639925,
+      "lng": -88.428825,
+      "elevation_m": 273
+    },
+    {
+      "name": "Camelback Kame",
+      "lat": 42.4197919,
+      "lng": -88.3309607,
+      "elevation_m": 268
+    },
+    {
+      "name": "Mount Tom",
+      "lat": 42.6547399,
+      "lng": -88.1892552,
+      "elevation_m": 265
+    },
+    {
+      "name": "Mounded Landfill",
+      "lat": 41.7303901,
+      "lng": -88.0784805,
+      "elevation_m": 259
+    },
+    {
+      "name": "Mount Moriah",
+      "lat": 42.5202962,
+      "lng": -88.2662022,
+      "elevation_m": 257
+    }
+  ]
+}

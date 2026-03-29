@@ -1,0 +1,479 @@
+{
+  "generated_at": "2026-03-29T19:34:44.927Z",
+  "operator_count": 42,
+  "diff_count": 42,
+  "diffs": [
+    {
+      "operatorId": "hertz-ride-malaga",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-malaga-734"
+        }
+      ]
+    },
+    {
+      "operatorId": "imtbike-malaga",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.imtbike.com/motorcycle-rentals/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-alicante",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-alicante-64"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-amsterdam",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/"
+        }
+      ]
+    },
+    {
+      "operatorId": "motorent-ath",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://motorent.gr/%ce%b3%ce%b5%ce%bd%ce%b9%ce%ba%ce%bf%ce%af-%cf%8c%cf%81%ce%bf%ce%b9-%ce%b5%ce%bd%ce%bf%ce%b9%ce%ba%ce%af%ce%b1%cf%83%ce%b7%cf%82-%ce%bc%ce%bf%cf%84%ce%bf%cf%83%cf%85%ce%ba%ce%bb%ce%ad%cf%84%ce%b1/"
+        }
+      ]
+    },
+    {
+      "operatorId": "eaglerider-bcn",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.eaglerider.com/"
+        }
+      ]
+    },
+    {
+      "operatorId": "imtbike-bcn",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.imtbike.com/motorcycle-rentals/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-berlin",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-brussels",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-paris",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-paris-68"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-copenhagen",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-dublin",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-dublin-760"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-dusseldorf",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-dusseldorf-dus"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-edinburgh",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "eaglerider-fco",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.eaglerider.com/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-fco",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-florence",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-florence-1214"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-frankfurt",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-geneva",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-geneva-68"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-helsinki",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hibike4u-lhr",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://hibike4u.co.uk/#services"
+        }
+      ]
+    },
+    {
+      "operatorId": "superbike-rental-lhr",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "security_deposit_amount",
+          "current": "Varies by machine",
+          "harvested": "£3,000"
+        },
+        {
+          "field": "security_deposit_policy",
+          "current": "Security deposit authorization applies under operator terms at pickup.",
+          "harvested": "The insurance excess for motorcycle rentals is £3,000."
+        },
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.superbikerental.co.uk/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-lisbon",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-lisbon-53"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-lyon",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations"
+        }
+      ]
+    },
+    {
+      "operatorId": "imtbike-madrid",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.imtbike.com/motorcycle-rentals/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-manchester",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations"
+        }
+      ]
+    },
+    {
+      "operatorId": "allround-rent-muc",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.motorradvermietung.de/muenchen/en/motorraeder"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-munich",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-munich-287"
+        }
+      ]
+    },
+    {
+      "operatorId": "eagle-rider-mxp",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.eaglerider.com/milan-airport"
+        }
+      ]
+    },
+    {
+      "operatorId": "eaglerider-mxp",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.eaglerider.com/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-milan",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-milan-285"
+        }
+      ]
+    },
+    {
+      "operatorId": "motorcycle-rental-europe-mxp",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.motorcycle-rental-europe.com/"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-nice",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-nice-1234"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-porto",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-porto-55"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-oslo",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-palma",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-palma-1234"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-prague",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-split",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-venice",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations/motorcycle-rental-venice"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-vienna",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-warsaw",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/hertz-ride-company"
+        }
+      ]
+    },
+    {
+      "operatorId": "hertz-ride-zurich",
+      "status": "changed",
+      "changes": [
+        {
+          "field": "source_terms_url",
+          "current": "",
+          "harvested": "https://www.hertzride.com/en/locations"
+        }
+      ]
+    }
+  ]
+}

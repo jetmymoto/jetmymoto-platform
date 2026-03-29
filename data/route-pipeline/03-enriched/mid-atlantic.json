@@ -1,0 +1,31 @@
+{
+  "destination_slug": "mid-atlantic",
+  "destination_name": "Mid-Atlantic",
+  "enriched_at": "2026-03-28T23:28:39.011Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Tracing the contour of the Mid-Atlantic’s coastal highways, this ride delivers a seamless blend of serene mountain vistas and gently curving gaps that invite measured precision and reverence. Each mile unfolds through storied passes and peaks where history and nature coalesce, creating a refined journey for riders who seek effortless elegance on two wheels.",
+  "ride_character": "Smooth asphalt winds through coastal terrain and historic mountain gaps, offering an easy, fluid rhythm punctuated by panoramic overlooks and subtle elevation shifts.",
+  "best_season": "May through October — the asphalt is pristine, the mountain passes are clear, and the temperate climate reveals the region’s lush greens and rugged rock formations in full clarity.",
+  "premium_pois": [
+    {
+      "name": "Turner's Gap",
+      "cinematic_description": "Nestled at 1071 meters, Turner’s Gap is a historic wind gap that offers sweeping views framed by the Blue Ridge Mountains’ rugged silhouette, making it a contemplative pause in your journey.",
+      "rider_tip": "Approach with steady throttle control to appreciate the gradual elevation changes and the scenic vista unfolding from the gap."
+    },
+    {
+      "name": "Blue Ridge Mountain",
+      "cinematic_description": "At 2388 meters, Blue Ridge Mountain dominates the landscape with its commanding presence, inviting riders to witness the interplay of shadow and light over its forested slopes as the sun shifts.",
+      "rider_tip": "Use the well-maintained asphalt to navigate the gentle curves ascending toward the peak, ensuring optimal traction and control."
+    },
+    {
+      "name": "Lambs Knoll",
+      "cinematic_description": "Rising to 1758 meters between Frederick and Washington counties, Lambs Knoll offers a distinctive vantage point where the coastal highway’s serenity meets elevated mountain grandeur.",
+      "rider_tip": "Plan a brief stop to enjoy the crisp mountain air and the layered vistas before continuing along the smooth coastal route."
+    }
+  ]
+}

@@ -2,7 +2,12 @@ const DEFAULT_OPERATOR = {
   status: "seeded",
   pricing_model: "affiliate",
   commission_type: "percentage",
-  commission_value: 15
+  commission_value: 15,
+  security_deposit_amount: "Varies by machine",
+  security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+  cancellation_policy: "Standard",
+  terms_last_verified: "",
+  source_terms_url: ""
 };
 
 function operator(data) {
@@ -24,7 +29,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["MXP"],
-    website_url: "https://www.eaglerider.com/milan-airport"
+    website_url: "https://www.eaglerider.com/milan-airport",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.eaglerider.com/milan-airport"
   }),
   "motorcycle-rental-europe-mxp": operator({
     id: "motorcycle-rental-europe-mxp",
@@ -33,7 +43,12 @@ export const OPERATORS = {
     type: "local",
     country: "IT",
     airports: ["MXP"],
-    website_url: "https://www.motorcycle-rental-europe.com/"
+    website_url: "https://www.motorcycle-rental-europe.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.motorcycle-rental-europe.com/"
   }),
   "superbike-rental-lhr": operator({
     id: "superbike-rental-lhr",
@@ -42,7 +57,12 @@ export const OPERATORS = {
     type: "local",
     country: "GB",
     airports: ["LHR"],
-    website_url: "https://www.superbikerental.co.uk/"
+    website_url: "https://www.superbikerental.co.uk/",
+    security_deposit_amount: "£3,000",
+    security_deposit_policy: "The insurance excess for motorcycle rentals is £3,000.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.superbikerental.co.uk/"
   }),
   "hibike4u-lhr": operator({
     id: "hibike4u-lhr",
@@ -51,7 +71,12 @@ export const OPERATORS = {
     type: "local",
     country: "GB",
     airports: ["LHR"],
-    website_url: "https://hibike4u.co.uk/"
+    website_url: "https://hibike4u.co.uk/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://hibike4u.co.uk/#services"
   }),
   "gogreen-motorcycles-lhr": operator({
     id: "gogreen-motorcycles-lhr",
@@ -135,7 +160,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["ALC"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-alicante-64"
   }),
   "hertz-ride-milan": operator({
     id: "hertz-ride-milan",
@@ -144,7 +174,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["MXP", "LIN"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-milan-285"
   }),
   "hertz-ride-paris": operator({
     id: "hertz-ride-paris",
@@ -153,7 +188,12 @@ export const OPERATORS = {
     type: "global",
     country: "FR",
     airports: ["CDG", "ORY"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-paris-68"
   }),
   "hertz-ride-stockholm": operator({
     id: "hertz-ride-stockholm",
@@ -171,7 +211,12 @@ export const OPERATORS = {
     type: "global",
     country: "DE",
     airports: ["BER"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-lisbon": operator({
     id: "hertz-ride-lisbon",
@@ -180,7 +225,12 @@ export const OPERATORS = {
     type: "global",
     country: "PT",
     airports: ["LIS"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-lisbon-53"
   }),
   "hertz-ride-porto": operator({
     id: "hertz-ride-porto",
@@ -189,7 +239,12 @@ export const OPERATORS = {
     type: "global",
     country: "PT",
     airports: ["OPO"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-porto-55"
   }),
   "hertz-ride-vienna": operator({
     id: "hertz-ride-vienna",
@@ -198,7 +253,12 @@ export const OPERATORS = {
     type: "global",
     country: "AT",
     airports: ["VIE"],
-    website_url: "https://www.hertzride.com/locations"
+    website_url: "https://www.hertzride.com/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "imtbike-madrid": operator({
     id: "imtbike-madrid",
@@ -207,7 +267,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["MAD"],
-    website_url: "https://www.imtbike.com/"
+    website_url: "https://www.imtbike.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.imtbike.com/motorcycle-rentals/"
   }),
   "imtbike-lisbon": operator({
     id: "imtbike-lisbon",
@@ -423,7 +488,12 @@ export const OPERATORS = {
     type: "local",
     country: "DE",
     airports: ["MUC"],
-    website_url: "https://www.motorradvermietung.de/muenchen/"
+    website_url: "https://www.motorradvermietung.de/muenchen/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.motorradvermietung.de/muenchen/en/motorraeder"
   }),
   "dwm-ducati-muc": operator({
     id: "dwm-ducati-muc",
@@ -450,7 +520,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["BCN"],
-    website_url: "https://www.eaglerider.com/"
+    website_url: "https://www.eaglerider.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.eaglerider.com/"
   }),
   "eaglerider-fco": operator({
     id: "eaglerider-fco",
@@ -459,7 +534,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["FCO"],
-    website_url: "https://www.eaglerider.com/"
+    website_url: "https://www.eaglerider.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.eaglerider.com/"
   }),
   "eaglerider-mxp": operator({
     id: "eaglerider-mxp",
@@ -468,7 +548,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["MXP"],
-    website_url: "https://www.eaglerider.com/"
+    website_url: "https://www.eaglerider.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.eaglerider.com/"
   }),
   "hertz-ride-amsterdam": operator({
     id: "hertz-ride-amsterdam",
@@ -477,7 +562,12 @@ export const OPERATORS = {
     type: "global",
     country: "NL",
     airports: ["AMS"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/"
   }),
   "hertz-ride-brussels": operator({
     id: "hertz-ride-brussels",
@@ -486,7 +576,12 @@ export const OPERATORS = {
     type: "global",
     country: "BE",
     airports: ["BRU"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-cdg": operator({
     id: "hertz-ride-cdg",
@@ -504,7 +599,12 @@ export const OPERATORS = {
     type: "global",
     country: "DK",
     airports: ["CPH"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations"
   }),
   "hertz-ride-dublin": operator({
     id: "hertz-ride-dublin",
@@ -513,7 +613,12 @@ export const OPERATORS = {
     type: "global",
     country: "IE",
     airports: ["DUB"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-dublin-760"
   }),
   "hertz-ride-dusseldorf": operator({
     id: "hertz-ride-dusseldorf",
@@ -522,7 +627,12 @@ export const OPERATORS = {
     type: "global",
     country: "DE",
     airports: ["DUS"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-dusseldorf-dus"
   }),
   "hertz-ride-edinburgh": operator({
     id: "hertz-ride-edinburgh",
@@ -531,7 +641,12 @@ export const OPERATORS = {
     type: "global",
     country: "GB",
     airports: ["EDI"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-fco": operator({
     id: "hertz-ride-fco",
@@ -540,7 +655,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["FCO"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-florence": operator({
     id: "hertz-ride-florence",
@@ -549,7 +669,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["FLR"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-florence-1214"
   }),
   "hertz-ride-frankfurt": operator({
     id: "hertz-ride-frankfurt",
@@ -558,7 +683,12 @@ export const OPERATORS = {
     type: "global",
     country: "DE",
     airports: ["FRA"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-geneva": operator({
     id: "hertz-ride-geneva",
@@ -567,7 +697,12 @@ export const OPERATORS = {
     type: "global",
     country: "CH",
     airports: ["GVA"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-geneva-68"
   }),
   "hertz-ride-helsinki": operator({
     id: "hertz-ride-helsinki",
@@ -576,7 +711,12 @@ export const OPERATORS = {
     type: "global",
     country: "FI",
     airports: ["HEL"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-lyon": operator({
     id: "hertz-ride-lyon",
@@ -585,7 +725,12 @@ export const OPERATORS = {
     type: "global",
     country: "FR",
     airports: ["LYS"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations"
   }),
   "hertz-ride-malaga": operator({
     id: "hertz-ride-malaga",
@@ -594,7 +739,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["AGP"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-malaga-734"
   }),
   "hertz-ride-manchester": operator({
     id: "hertz-ride-manchester",
@@ -603,7 +753,12 @@ export const OPERATORS = {
     type: "global",
     country: "GB",
     airports: ["MAN"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations"
   }),
   "hertz-ride-munich": operator({
     id: "hertz-ride-munich",
@@ -612,7 +767,12 @@ export const OPERATORS = {
     type: "global",
     country: "DE",
     airports: ["MUC"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-munich-287"
   }),
   "hertz-ride-nice": operator({
     id: "hertz-ride-nice",
@@ -621,7 +781,12 @@ export const OPERATORS = {
     type: "global",
     country: "FR",
     airports: ["NCE"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-nice-1234"
   }),
   "hertz-ride-oslo": operator({
     id: "hertz-ride-oslo",
@@ -630,7 +795,12 @@ export const OPERATORS = {
     type: "global",
     country: "NO",
     airports: ["OSL"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-palma": operator({
     id: "hertz-ride-palma",
@@ -639,7 +809,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["PMI"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-palma-1234"
   }),
   "hertz-ride-prague": operator({
     id: "hertz-ride-prague",
@@ -648,7 +823,12 @@ export const OPERATORS = {
     type: "global",
     country: "CZ",
     airports: ["PRG"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-split": operator({
     id: "hertz-ride-split",
@@ -657,7 +837,12 @@ export const OPERATORS = {
     type: "global",
     country: "HR",
     airports: ["SPU"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations"
   }),
   "hertz-ride-venice": operator({
     id: "hertz-ride-venice",
@@ -666,7 +851,12 @@ export const OPERATORS = {
     type: "global",
     country: "IT",
     airports: ["VCE"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations/motorcycle-rental-venice"
   }),
   "hertz-ride-warsaw": operator({
     id: "hertz-ride-warsaw",
@@ -675,7 +865,12 @@ export const OPERATORS = {
     type: "global",
     country: "PL",
     airports: ["WAW"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/hertz-ride-company"
   }),
   "hertz-ride-zurich": operator({
     id: "hertz-ride-zurich",
@@ -684,7 +879,12 @@ export const OPERATORS = {
     type: "global",
     country: "CH",
     airports: ["ZRH"],
-    website_url: "https://www.hertzride.com/en/locations"
+    website_url: "https://www.hertzride.com/en/locations",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.hertzride.com/en/locations"
   }),
   "imtbike-bcn": operator({
     id: "imtbike-bcn",
@@ -693,7 +893,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["BCN"],
-    website_url: "https://www.imtbike.com/"
+    website_url: "https://www.imtbike.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.imtbike.com/motorcycle-rentals/"
   }),
   "imtbike-malaga": operator({
     id: "imtbike-malaga",
@@ -702,7 +907,12 @@ export const OPERATORS = {
     type: "global",
     country: "ES",
     airports: ["AGP"],
-    website_url: "https://www.imtbike.com/"
+    website_url: "https://www.imtbike.com/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://www.imtbike.com/motorcycle-rentals/"
   }),
   "motorent-ath": operator({
     id: "motorent-ath",
@@ -711,6 +921,11 @@ export const OPERATORS = {
     type: "local",
     country: "GR",
     airports: ["ATH"],
-    website_url: "https://www.motorent.gr/"
+    website_url: "https://www.motorent.gr/",
+    security_deposit_amount: "Varies by machine",
+    security_deposit_policy: "Security deposit authorization applies under operator terms at pickup.",
+    cancellation_policy: "Standard",
+    terms_last_verified: "",
+    source_terms_url: "https://motorent.gr/%ce%b3%ce%b5%ce%bd%ce%b9%ce%ba%ce%bf%ce%af-%cf%8c%cf%81%ce%bf%ce%b9-%ce%b5%ce%bd%ce%bf%ce%b9%ce%ba%ce%af%ce%b1%cf%83%ce%b7%cf%82-%ce%bc%ce%bf%cf%84%ce%bf%cf%83%cf%85%ce%ba%ce%bb%ce%ad%cf%84%ce%b1/"
   })
 };

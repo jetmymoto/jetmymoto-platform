@@ -1,0 +1,224 @@
+{
+  "destination_slug": "wasatch-front",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:42:11.758Z",
+  "telemetry": {
+    "road_segments": 31115,
+    "passes_found": 55,
+    "peaks_found": 558,
+    "max_altitude_m": 3581,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 85,
+      "gravel": 0,
+      "unpaved": 2
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Sunset Pass",
+      "lat": 40.5777399,
+      "lng": -111.5968014,
+      "elevation_m": 3175,
+      "osm_id": 6872788864
+    },
+    {
+      "name": "Catherine Pass",
+      "lat": 40.5807329,
+      "lng": -111.5986161,
+      "elevation_m": 3115,
+      "osm_id": 1929326294
+    },
+    {
+      "name": "Guardsman Pass",
+      "lat": 40.6067352,
+      "lng": -111.5549287,
+      "elevation_m": 2962,
+      "osm_id": 3087386549
+    },
+    {
+      "name": "Bakers Pass",
+      "lat": 40.6643123,
+      "lng": -111.6938297,
+      "elevation_m": 2857,
+      "osm_id": 2819433223
+    },
+    {
+      "name": "Pole Line Pass",
+      "lat": 40.5317145,
+      "lng": -111.5707331,
+      "elevation_m": 2750,
+      "osm_id": 84879568
+    },
+    {
+      "name": "Empire Pass",
+      "lat": 40.6061738,
+      "lng": -111.5085928,
+      "elevation_m": 2716,
+      "osm_id": 429426093
+    },
+    {
+      "name": "Alpine Summit",
+      "lat": 40.4311203,
+      "lng": -111.6139735,
+      "elevation_m": 2457,
+      "osm_id": 84891029
+    },
+    {
+      "name": "Daniels Pass",
+      "lat": 40.298248,
+      "lng": -111.252563,
+      "elevation_m": 2440,
+      "osm_id": 84214299
+    },
+    {
+      "name": "White Fir Pass",
+      "lat": 40.6891975,
+      "lng": -111.7005473,
+      "elevation_m": 2313,
+      "osm_id": 6839494978
+    },
+    {
+      "name": "Big Mountain Pass",
+      "lat": 40.8283656,
+      "lng": -111.654008,
+      "elevation_m": 2262,
+      "osm_id": 83709600
+    },
+    {
+      "name": "Rudys Flat",
+      "lat": 40.8393898,
+      "lng": -111.812021,
+      "elevation_m": 2184,
+      "osm_id": 356679808
+    },
+    {
+      "name": "Parleys Canyon",
+      "lat": 40.7115639,
+      "lng": -111.7989941,
+      "elevation_m": 2170,
+      "osm_id": 10188411258
+    },
+    {
+      "name": "Pronghorn Pass",
+      "lat": 40.5688249,
+      "lng": -112.0767346,
+      "elevation_m": 1630.68,
+      "osm_id": 12092505666
+    },
+    {
+      "name": "Little Mountain Pass",
+      "lat": 40.7750952,
+      "lng": -111.718534,
+      "elevation_m": null,
+      "osm_id": 83516180
+    },
+    {
+      "name": "Gorilla Pass",
+      "lat": 40.5618725,
+      "lng": -111.642731,
+      "elevation_m": null,
+      "osm_id": 83518962
+    },
+    {
+      "name": "Germania Pass",
+      "lat": 40.5715207,
+      "lng": -111.6315708,
+      "elevation_m": null,
+      "osm_id": 83531719
+    },
+    {
+      "name": "Johnson Pass",
+      "lat": 40.33746,
+      "lng": -112.5727728,
+      "elevation_m": null,
+      "osm_id": 84017230
+    },
+    {
+      "name": "Sugarloaf Pass",
+      "lat": 40.5669611,
+      "lng": -111.6303598,
+      "elevation_m": null,
+      "osm_id": 84743446
+    },
+    {
+      "name": "Lambs Canyon Pass",
+      "lat": 40.7061966,
+      "lng": -111.6757849,
+      "elevation_m": null,
+      "osm_id": 2819583463
+    },
+    {
+      "name": "Timpanogos Saddle",
+      "lat": 40.395997,
+      "lng": -111.654476,
+      "elevation_m": null,
+      "osm_id": 3225944417
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Mount Timpanogos",
+      "lat": 40.3908264,
+      "lng": -111.6460609,
+      "elevation_m": 3581
+    },
+    {
+      "name": "South Timpanogos",
+      "lat": 40.384366,
+      "lng": -111.636476,
+      "elevation_m": 3572.9
+    },
+    {
+      "name": "Twin Peaks (west)",
+      "lat": 40.5519611,
+      "lng": -111.6567291,
+      "elevation_m": 3501.8
+    },
+    {
+      "name": "North Timpanogos",
+      "lat": 40.4164329,
+      "lng": -111.6683913,
+      "elevation_m": 3487.2
+    },
+    {
+      "name": "Twin Peaks (east)",
+      "lat": 40.5511378,
+      "lng": -111.650694,
+      "elevation_m": 3484.8
+    },
+    {
+      "name": "Geek Peak",
+      "lat": 40.5453551,
+      "lng": -111.652516,
+      "elevation_m": 3471
+    },
+    {
+      "name": "Bomber Peak",
+      "lat": 40.4041713,
+      "lng": -111.6575568,
+      "elevation_m": 3458.6
+    },
+    {
+      "name": "Twin Peaks (East)",
+      "lat": 40.5938705,
+      "lng": -111.720814,
+      "elevation_m": 3453.4
+    },
+    {
+      "name": "The Pfeifferhorn",
+      "lat": 40.5335434,
+      "lng": -111.70598,
+      "elevation_m": 3453
+    },
+    {
+      "name": "Twin Peaks (West)",
+      "lat": 40.5935055,
+      "lng": -111.723237,
+      "elevation_m": 3452.8
+    }
+  ]
+}

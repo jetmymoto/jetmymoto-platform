@@ -1,0 +1,111 @@
+{
+  "destination_slug": "quebec-laurentians",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:46:52.681Z",
+  "telemetry": {
+    "road_segments": 2372,
+    "passes_found": 5,
+    "peaks_found": 239,
+    "max_altitude_m": 932,
+    "difficulty": "moderate",
+    "terrain": "mountain",
+    "surface_breakdown": {
+      "asphalt": 1792,
+      "unknown": 234,
+      "paved": 155,
+      "wood": 30,
+      "gravel": 8,
+      "fine_gravel": 1,
+      "unpaved": 149,
+      "concrete": 1,
+      "metal": 2
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Col de la Grise",
+      "lat": 46.2664415,
+      "lng": -74.3931753,
+      "elevation_m": 583,
+      "osm_id": 2495077446
+    },
+    {
+      "name": "pic de Melette",
+      "lat": 46.123255,
+      "lng": -74.4633213,
+      "elevation_m": 420,
+      "osm_id": 277308818
+    },
+    {
+      "name": "Col du Trou Malin",
+      "lat": 46.092274,
+      "lng": -75.0732775,
+      "elevation_m": null,
+      "osm_id": 5638014985
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Pic Johannsen",
+      "lat": 46.2488477,
+      "lng": -74.5600592,
+      "elevation_m": 932
+    },
+    {
+      "name": "Pic Pangman",
+      "lat": 46.2417496,
+      "lng": -74.5595606,
+      "elevation_m": 899
+    },
+    {
+      "name": "Montagne-Noire",
+      "lat": 46.2438959,
+      "lng": -74.293929,
+      "elevation_m": 892
+    },
+    {
+      "name": "Montagne Blanche",
+      "lat": 46.2526317,
+      "lng": -74.3517466,
+      "elevation_m": 883
+    },
+    {
+      "name": "Pic White",
+      "lat": 46.2200593,
+      "lng": -74.552221,
+      "elevation_m": 878
+    },
+    {
+      "name": "Mont Carcan",
+      "lat": 46.4317159,
+      "lng": -74.1999468,
+      "elevation_m": 863
+    },
+    {
+      "name": "Mont des Cenelles",
+      "lat": 46.3155511,
+      "lng": -74.3319658,
+      "elevation_m": 850
+    },
+    {
+      "name": "The Edge",
+      "lat": 46.2318684,
+      "lng": -74.553297,
+      "elevation_m": 844
+    },
+    {
+      "name": "Mont Kaaikop",
+      "lat": 46.2280853,
+      "lng": -74.1889051,
+      "elevation_m": 838
+    },
+    {
+      "name": "Mont Kaaikop sommet Nord",
+      "lat": 46.2360828,
+      "lng": -74.1925563,
+      "elevation_m": 826
+    }
+  ]
+}

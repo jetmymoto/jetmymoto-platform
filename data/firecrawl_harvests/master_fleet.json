@@ -1,0 +1,1168 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-03-27T20:21:55.021Z",
+  "sources": [
+    {
+      "operator": "hertz-ride-paris",
+      "airport": "CDG",
+      "url": "https://www.hertzride.com/en/locations/paris/",
+      "harvested_at": "2026-03-27T20:21:51.052Z",
+      "rental_count": 15
+    },
+    {
+      "operator": "hibike4u-lhr",
+      "airport": "LHR",
+      "url": "https://hibike4u.co.uk/",
+      "harvested_at": "2026-03-27T20:20:18.500Z",
+      "rental_count": 6
+    },
+    {
+      "operator": "superbike-rental-lhr",
+      "airport": "LHR",
+      "url": "https://www.superbikerental.co.uk/",
+      "harvested_at": "2026-03-27T20:20:22.962Z",
+      "rental_count": 20
+    },
+    {
+      "operator": "eagle-rider-mxp",
+      "airport": "MXP",
+      "url": "https://www.eaglerider.com/milan-italy",
+      "harvested_at": "2026-03-27T20:21:54.990Z",
+      "rental_count": 21
+    },
+    {
+      "operator": "hertz-ride-milan",
+      "airport": "MXP",
+      "url": "https://www.hertzride.com/en/locations/milan/",
+      "harvested_at": "2026-03-27T20:21:01.827Z",
+      "rental_count": 11
+    },
+    {
+      "operator": "motorcycle-rental-europe-mxp",
+      "airport": "MXP",
+      "url": "https://www.motorcycle-rental-europe.com/",
+      "harvested_at": "2026-03-27T20:20:39.755Z",
+      "rental_count": 8
+    }
+  ],
+  "rental_count": 80,
+  "rentals": [
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "VESPA",
+      "model": "GTS 125 SuperSport",
+      "category": "urban-mobility",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "city-roads"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "city-roads",
+        "scenic-routes"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "MOTO MORINI",
+      "model": "X-Cape",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "CDG",
+      "operator": "hertz-ride-paris",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "local-mountains",
+        "city-roads",
+        "countryside-trails"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "Forza 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "PCX 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "SH 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Honda",
+      "model": "Vision 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "hibike4u-lhr",
+      "brand": "Yamaha",
+      "model": "NMax 125CC",
+      "category": "scooter",
+      "price_day": 10,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "london",
+        "south-east-england",
+        "kent"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure Triple Black",
+      "category": "adventure",
+      "price_day": 325,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure Trophy",
+      "category": "adventure",
+      "price_day": 325,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1300 GS TE TROPHY",
+      "category": "adventure",
+      "price_day": 290,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1300 GS TE White",
+      "category": "adventure",
+      "price_day": 290,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1300 GS TE Triple Black",
+      "category": "adventure",
+      "price_day": 290,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 RT LE",
+      "category": "touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 GS TE Rallye",
+      "category": "adventure",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 GS TE Trophy",
+      "category": "adventure",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 RS Exclusive",
+      "category": "touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "R1250 RT LE (2022)",
+      "category": "touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "BMW",
+      "model": "S1000 XR (2023)",
+      "category": "sport-touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "KTM",
+      "model": "1290 Super Adventure S",
+      "category": "adventure",
+      "price_day": 325,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Ducati",
+      "model": "Multistrada V4s Grand Tour",
+      "category": "adventure",
+      "price_day": 325,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Ducati",
+      "model": "Multistrada V4s Rally",
+      "category": "adventure",
+      "price_day": 325,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Ducati",
+      "model": "Multistrada V2 ST",
+      "category": "sport-touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Ducati",
+      "model": "Panigale V2",
+      "category": "sport-touring",
+      "price_day": 250,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Honda",
+      "model": "Africa Twin CRF 1100 L",
+      "category": "adventure",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Yamaha",
+      "model": "Tracer 7 GT",
+      "category": "sport-touring",
+      "price_day": 295,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "LHR",
+      "operator": "superbike-rental-lhr",
+      "brand": "Yamaha",
+      "model": "MT07 689cc",
+      "category": "sport-touring",
+      "price_day": 250,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kent",
+        "cotswolds",
+        "surrey"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Special",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Road King® Special",
+      "category": "touring",
+      "price_day": 200,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Limited",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide® Ultra",
+      "category": "touring",
+      "price_day": 210,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide®",
+      "category": "touring",
+      "price_day": 199,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Sport Glide™",
+      "category": "cruiser",
+      "price_day": 185,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Heritage Softail® Classic",
+      "category": "cruiser",
+      "price_day": 195,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Scrambler",
+      "category": "scrambler",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "F 900 R",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Moto Guzzi",
+      "model": "V100 Mandello",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Monster",
+      "category": "sport-touring",
+      "price_day": 311.43,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "G 310 R",
+      "category": "sport-touring",
+      "price_day": 213.39,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "R 1300 RT",
+      "category": "touring",
+      "price_day": 392.17,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Kawasaki",
+      "model": "Versys 650 Tourer",
+      "category": "adventure",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 253.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V2",
+      "category": "adventure",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "adventure",
+      "price_day": 351.8,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "eagle-rider-mxp",
+      "brand": "Ducati",
+      "model": "Hypermotard 950",
+      "category": "sport-touring",
+      "price_day": 276.83,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lombardy",
+        "veneto",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "Ducati",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "Ducati",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "hertz-ride-milan",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "milan",
+        "lake-como",
+        "como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 120,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "dolomites"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "touring",
+      "price_day": 140,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lake-como",
+        "tuscany",
+        "liguria"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Honda",
+      "model": "Gold Wing",
+      "category": "touring",
+      "price_day": 150,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "dolomites",
+        "amalficoast"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide",
+      "category": "cruiser",
+      "price_day": 130,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "lake-como",
+        "tuscany",
+        "amalfi-coast"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "KTM",
+      "model": "1290 Super Adventure",
+      "category": "adventure",
+      "price_day": 110,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "dolomites",
+        "tuscany",
+        "lake-como"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Yamaha",
+      "model": "FJR1300",
+      "category": "sport-touring",
+      "price_day": 100,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "liguria",
+        "piedmont"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "Triumph",
+      "model": "Bonneville T120",
+      "category": "classic",
+      "price_day": 90,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "cinque-terre"
+      ]
+    },
+    {
+      "airport": "MXP",
+      "operator": "motorcycle-rental-europe-mxp",
+      "brand": "BMW",
+      "model": "R nineT",
+      "category": "scrambler",
+      "price_day": 95,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "tuscany",
+        "lake-como",
+        "liguria"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { useReducer, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import {
   ArrowUpRight,
   Clock3,
@@ -20,6 +20,7 @@ import {
 } from "@/core/network/networkGraph";
 import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 import { trackEvent } from "@/core/analytics/trackEvent";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 function getRouteDistance(route) {
   return (
@@ -108,7 +109,7 @@ function getPoiRecords(route) {
         return GRAPH?.pois?.[slug] || poiRef || null;
       })
       .filter(Boolean)
-      .slice(0, 6);
+      .slice(0, 3);
   }
 
   const destinationSlug = route?.destination?.slug?.toLowerCase?.();
@@ -116,7 +117,7 @@ function getPoiRecords(route) {
   return (GRAPH?.poisByDestination?.[destinationSlug] || [])
     .map((poiSlug) => GRAPH?.pois?.[poiSlug])
     .filter(Boolean)
-    .slice(0, 6);
+    .slice(0, 3);
 }
 
 function BriefMetric({ label, value, icon: Icon }) {
@@ -163,8 +164,10 @@ function FallbackCard({ title, body }) {
 
 export default function RideRoutePage() {
   const { slug } = useParams();
+  const location = useLocation();
   const route = GRAPH?.routes?.[slug];
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   // ── Non-blocking shard load → re-render when done ──
   useEffect(() => {
@@ -197,7 +200,7 @@ export default function RideRoutePage() {
           </p>
           <div className="mt-8">
             <Link
-              to="/airport"
+              to={withCtx("/airport")}
               className="inline-flex items-center gap-3 rounded-full border border-[#A76330]/40 bg-[#A76330]/15 px-5 py-3 text-sm font-semibold text-[#E2BB76] transition-colors hover:border-[#A76330]/60 hover:bg-[#A76330]/20"
             >
               Return To Hub Map
@@ -224,9 +227,9 @@ export default function RideRoutePage() {
   const pois = getPoiRecords(route);
 
   const rentalShard = readGraphShard("rentals");
-  const rentalsMap = rentalShard?.rentals ?? GRAPH.rentals;
+  const rentalsMap = rentalShard?.rentals ?? {};
   const rentalsByAirport =
-    rentalShard?.rentalIndexes?.rentalsByAirport ?? GRAPH.rentalsByAirport;
+    rentalShard?.rentalIndexes?.rentalsByAirport ?? {};
 
   const rentals = (rentalsByAirport?.[airportCode] || [])
     .map((rentalId) => rentalsMap?.[rentalId])
@@ -247,10 +250,11 @@ export default function RideRoutePage() {
     : "/moto-airlift";
 
   const canonicalUrl = `https://jetmymoto.com/route/${route?.slug || slug}`;
+  const displayRouteName = routeName.replace(/^The\s+/i, "");
   const routeSchema = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    name: routeName,
+    name: `Ride the ${displayRouteName}: Motorcycle Route & Fleet Guide`,
     touristType: "Motorcycle",
     location: [airportCity, destinationName].filter(Boolean).join(" to ")
   };
@@ -258,8 +262,8 @@ export default function RideRoutePage() {
   return (
     <div className="min-h-screen bg-[#050505] text-zinc-200">
       <SeoHelmet
-        title={`${routeName} | Motorcycle Mission Briefing | JetMyMoto`}
-        description={`Mission briefing for ${routeName}. Deploy from ${airportCity}${airportCode ? ` (${airportCode})` : ""} and choose between local rentals or full motorcycle logistics.`}
+        title={`Ride the ${displayRouteName}: Motorcycle Route & Fleet Guide | JetMyMoto`}
+        description={`Ride the ${displayRouteName}. Premium motorcycle route guide from ${airportCity}${airportCode ? ` (${airportCode})` : ""}. Choose between curated local rentals or full motorcycle logistics.`}
         canonicalUrl={canonicalUrl}
       />
 
@@ -287,7 +291,7 @@ export default function RideRoutePage() {
                 Tactical Mission Briefing
               </div>
               <h1 className="mt-5 text-5xl font-black tracking-tight text-white md:text-7xl lg:text-[5.5rem]">
-                {routeName}
+                Ride the {displayRouteName}: Motorcycle Route &amp; Fleet Guide
               </h1>
               <p className="mt-5 text-sm uppercase tracking-[0.3em] text-zinc-300">
                 {airportCity}
@@ -346,7 +350,7 @@ export default function RideRoutePage() {
                 <div className="mt-2 text-sm text-zinc-300">{airportCity}</div>
                 <div className="mt-5">
                   <Link
-                    to={airportCode ? `/airport/${airportCode.toLowerCase()}` : "/airport"}
+                    to={withCtx(airportCode ? `/airport/${airportCode.toLowerCase()}` : "/airport")}
                     className="inline-flex items-center gap-2 text-sm font-medium text-[#E2BB76] transition-colors hover:text-white"
                   >
                     Open Hub Briefing
@@ -357,32 +361,46 @@ export default function RideRoutePage() {
             </div>
 
             <div className="space-y-4">
+              <div className="text-[10px] uppercase tracking-[0.32em] text-[#CDA755]">
+                Tactical Waypoints
+              </div>
               {pois.length > 0 ? (
-                <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid gap-4 md:grid-cols-2">
                   {pois.map((poi) => (
-                    <Link
+                    <div
                       key={poi?.slug || poi?.id || poi?.name}
-                      to={`/poi/${poi?.slug || poi?.id}`}
-                      className="group rounded-[28px] border border-white/10 bg-[#121212] p-5 transition-colors hover:border-[#A76330]/35 hover:bg-[#151515]"
+                      className="flex flex-col justify-between rounded-[28px] border border-white/10 bg-[#121212] p-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] transition-colors hover:border-[#CDA755]/30 hover:bg-[#151515]"
                     >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <div className="text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-                            Waypoint
+                      <div>
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <div className="text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                              {poi?.type || "Tactical Waypoint"}
+                            </div>
+                            <h3 className="mt-3 text-xl font-semibold text-white">
+                              {poi?.name || "Unnamed POI"}
+                            </h3>
                           </div>
-                          <h3 className="mt-3 text-xl font-semibold text-white">
-                            {poi?.name || "Unnamed POI"}
-                          </h3>
+                          <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#CDA755]" />
                         </div>
-                        <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#CDA755]" />
+                        {poi?.cinematic_description && (
+                          <p className="mt-4 text-sm leading-6 text-zinc-400">
+                            {poi.cinematic_description}
+                          </p>
+                        )}
                       </div>
-
-                      <div className="mt-4 text-sm leading-6 text-zinc-400">
-                        {[poi?.type, poi?.country, poi?.region]
-                          .filter(Boolean)
-                          .join(" • ") || "Route intelligence node"}
-                      </div>
-                    </Link>
+                      
+                      {poi?.rider_tip && (
+                        <div className="mt-6 rounded-2xl border border-[#CDA755]/20 bg-[#050505] p-4 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)]">
+                          <div className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#CDA755]">
+                            Rider Tip
+                          </div>
+                          <p className="mt-2 text-sm font-medium leading-relaxed text-[#CDA755]/90">
+                            {poi.rider_tip}
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               ) : (
@@ -482,7 +500,7 @@ export default function RideRoutePage() {
                 </div>
 
                 <Link
-                  to={routeToAirportRentPath}
+                  to={withCtx(routeToAirportRentPath)}
                   onClick={() =>
                     trackLeadEvent({
                       routeSlug: route?.slug || slug,
@@ -499,7 +517,7 @@ export default function RideRoutePage() {
 
                 <div className="mt-3 text-center">
                   <Link
-                    to={`/rental/${bestRental?.slug || bestRental?.id}`}
+                    to={withCtx(`/rental/${bestRental?.slug || bestRental?.id}`)}
                     className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
                   >
                     View Machine Details
@@ -516,7 +534,7 @@ export default function RideRoutePage() {
                 No optimized machine found — showing all available units
               </p>
               <Link
-                to={routeToAirportRentPath}
+                to={withCtx(routeToAirportRentPath)}
                 className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-amber-500 px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-black transition-colors hover:bg-amber-400"
               >
                 Browse Fleet at {airportCode || "Hub"}
@@ -589,7 +607,7 @@ export default function RideRoutePage() {
                       <p className="mt-1 text-sm leading-6 text-zinc-300">{antiA}</p>
                     </div>
                     <Link
-                      to={linkA}
+                      to={withCtx(linkA)}
                       onClick={() =>
                         trackLeadEvent({
                           routeSlug: route?.slug || slug,
@@ -620,7 +638,7 @@ export default function RideRoutePage() {
                       <p className="mt-1 text-sm leading-6 text-zinc-300">{antiB}</p>
                     </div>
                     <Link
-                      to={linkB}
+                      to={withCtx(linkB)}
                       onClick={() =>
                         trackLeadEvent({
                           routeSlug: route?.slug || slug,
@@ -653,7 +671,7 @@ export default function RideRoutePage() {
           ) : (
             <FallbackCard
               title="No staged rental fleet indexed"
-              body="No rental machines are currently linked to this route's origin airport in `GRAPH.rentalsByAirport`. The logistics handoff remains fully available."
+              body="No rental machines are currently linked to this route's origin airport in the rentals shard. The logistics handoff remains fully available."
             />
           )}
         </section>
@@ -668,7 +686,7 @@ export default function RideRoutePage() {
           <div className="mt-8 space-y-4">
             {/* PRIMARY — Rent Locally */}
             <Link
-              to={routeToAirportRentPath}
+              to={withCtx(routeToAirportRentPath)}
               onClick={() =>
                 trackLeadEvent({
                   routeSlug: route?.slug || slug,
@@ -695,7 +713,7 @@ export default function RideRoutePage() {
 
             {/* SECONDARY — Ship Your Machine */}
             <Link
-              to={routeToAirliftPath}
+              to={withCtx(routeToAirliftPath)}
               onClick={() =>
                 trackLeadEvent({
                   routeSlug: route?.slug || slug,
@@ -721,7 +739,7 @@ export default function RideRoutePage() {
           {destinationSlug ? (
             <div className="mt-6">
               <Link
-                to={`/destination/${destinationSlug}`}
+                to={withCtx(`/destination/${destinationSlug}`)}
                 className="inline-flex items-center gap-2 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
               >
                 Continue into destination intelligence

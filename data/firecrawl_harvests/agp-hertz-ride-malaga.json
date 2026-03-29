@@ -1,0 +1,205 @@
+{
+  "operator": "hertz-ride-malaga",
+  "airport": "AGP",
+  "url": "https://www.hertzride.com/en/locations/malaga/",
+  "harvested_at": "2026-03-25T16:07:30.069Z",
+  "rental_count": 14,
+  "rentals": [
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "MOTO MORINI",
+      "model": "X-CAPE",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    },
+    {
+      "airport": "AGP",
+      "operator": "hertz-ride-malaga",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "sierra-nevada",
+        "alpujarras",
+        "coastline"
+      ]
+    }
+  ]
+}

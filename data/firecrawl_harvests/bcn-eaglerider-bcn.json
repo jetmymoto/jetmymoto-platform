@@ -1,0 +1,317 @@
+{
+  "operator": "eaglerider-bcn",
+  "airport": "BCN",
+  "url": "https://www.eaglerider.com/barcelona-spain",
+  "harvested_at": "2026-03-25T16:09:29.164Z",
+  "rental_count": 22,
+  "rentals": [
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide® Ultra",
+      "category": "touring",
+      "price_day": 347.88,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Harley-Davidson",
+      "model": "Electra Glide® Ultra",
+      "category": "touring",
+      "price_day": 347.88,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "NT1100 DCT",
+      "category": "touring",
+      "price_day": 166.98,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide®",
+      "category": "touring",
+      "price_day": 347.88,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide®",
+      "category": "touring",
+      "price_day": 347.88,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "NT1100",
+      "category": "touring",
+      "price_day": 183.22,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "DAX 125",
+      "category": "scrambler",
+      "price_day": 68.42,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "Rebel 1100",
+      "category": "cruiser",
+      "price_day": 178.58,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "CB750 Hornet",
+      "category": "sport-touring",
+      "price_day": 155.39,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "Rebel 500",
+      "category": "cruiser",
+      "price_day": 132.19,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "CB125F",
+      "category": "classic",
+      "price_day": 48.7,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "Monkey",
+      "category": "classic",
+      "price_day": 68.42,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Honda",
+      "model": "CB500F",
+      "category": "classic",
+      "price_day": 132.19,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 189.02,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "price_day": 216.85,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "price_day": 230.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "R 1250 GS",
+      "category": "adventure",
+      "price_day": 347.88,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "R 1300 RT",
+      "category": "touring",
+      "price_day": 230.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "Kawasaki",
+      "model": "Versys 650 Tourer",
+      "category": "adventure",
+      "price_day": 121.76,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "KTM",
+      "model": "1290 Super Adventure",
+      "category": "adventure",
+      "price_day": 165.82,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "F 750 GS",
+      "category": "adventure",
+      "price_day": 148.43,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "eaglerider-bcn",
+      "brand": "BMW",
+      "model": "F 850 GS",
+      "category": "adventure",
+      "price_day": 143.79,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "barcelona",
+        "madrid",
+        "marseille"
+      ]
+    }
+  ]
+}

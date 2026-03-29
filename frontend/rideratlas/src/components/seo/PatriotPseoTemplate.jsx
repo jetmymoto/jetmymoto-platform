@@ -101,8 +101,7 @@ const PatriotPseoTemplate = ({
             </div>
             
             <h1 className="font-headline text-5xl md:text-8xl font-bold tracking-tight mb-6 leading-tight text-white">
-              {bike_name} Deployment: <br/>
-              <span className="text-[#eac26d] italic">{airport_city} ({airport_code})</span>
+              Rent a {bike_name} in {airport_city} | Premium Motorcycle Hire
             </h1>
             
             <p className="text-xl md:text-3xl text-[#c6c6c9] max-w-3xl mx-auto mb-12 font-light">

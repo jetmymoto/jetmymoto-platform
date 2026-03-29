@@ -1,0 +1,687 @@
+{
+  "destination_slug": "alps",
+  "destination_name": "European Alps",
+  "sources": [
+    "internal_proprietary_db",
+    "scraped_target_list"
+  ],
+  "processed_at": "2026-03-29T00:11:10.317Z",
+  "poi_count": 75,
+  "pois": [
+    {
+      "global_id": "alibi-18192",
+      "name": "Alibi",
+      "lat": 47.1313225,
+      "lng": 10.2688049,
+      "nearest_airport": "",
+      "category": "NIGHTLIFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "b-12930",
+      "name": "B+",
+      "lat": 44.952752,
+      "lng": 8.2230719,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col",
+      "name": "Col",
+      "lat": 46.1699461,
+      "lng": 15.4271766,
+      "nearest_airport": "VIE",
+      "category": "SCENIC_POINT",
+      "raw_context": "Auto-imported SCENIC_POINT. Altitude: 557m"
+    },
+    {
+      "global_id": "col-agnel",
+      "name": "Col Agnel",
+      "lat": 44.6839269,
+      "lng": 6.9795824,
+      "nearest_airport": "TRN",
+      "category": "SCENIC_POINT",
+      "raw_context": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+    },
+    {
+      "global_id": "col-agnel-colle-dellagnello",
+      "name": "Col Agnel / Colle dell'Agnello",
+      "lat": 44.6839194,
+      "lng": 6.9795741,
+      "nearest_airport": "TRN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2744m"
+    },
+    {
+      "global_id": "col-agnel-colle-dellagnello-602",
+      "name": "Col Agnel / Colle dell'Agnello",
+      "lat": 44.6839194,
+      "lng": 6.9795741,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col-de-la-bonette",
+      "name": "Col de la Bonette",
+      "lat": 44.3266504,
+      "lng": 6.8074465,
+      "nearest_airport": "NCE",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2715m"
+    },
+    {
+      "global_id": "col-de-la-bonette-2811",
+      "name": "Col de la Bonette",
+      "lat": 44.3266504,
+      "lng": 6.8074465,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col-de-liseran",
+      "name": "Col de l'Iseran",
+      "lat": 45.4171195,
+      "lng": 7.0308387,
+      "nearest_airport": "TRN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2770m"
+    },
+    {
+      "global_id": "col-de-liseran-76",
+      "name": "Col de l'Iseran",
+      "lat": 45.4171195,
+      "lng": 7.0308387,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col-de-turini",
+      "name": "Col de Turini",
+      "lat": 43.9775666,
+      "lng": 7.3916029,
+      "nearest_airport": "NCE",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 1604m"
+    },
+    {
+      "global_id": "col-de-turini-3613",
+      "name": "Col de Turini",
+      "lat": 43.9775666,
+      "lng": 7.3916029,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col-dizoard",
+      "name": "Col d'Izoard",
+      "lat": 44.8196595,
+      "lng": 6.734975,
+      "nearest_airport": "TRN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2361m"
+    },
+    {
+      "global_id": "col-dizoard-506",
+      "name": "Col d'Izoard",
+      "lat": 44.8196595,
+      "lng": 6.734975,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "col-du-galibier",
+      "name": "Col du Galibier",
+      "lat": 45.0641384,
+      "lng": 6.407857,
+      "nearest_airport": "TRN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2642m"
+    },
+    {
+      "global_id": "col-du-galibier-3690",
+      "name": "Col du Galibier",
+      "lat": 45.0641384,
+      "lng": 6.407857,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "duga-15252",
+      "name": "Duga",
+      "lat": 45.1877181,
+      "lng": 14.6817438,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. pizza;barbecue"
+    },
+    {
+      "global_id": "e-2595",
+      "name": "E",
+      "lat": 44.2779001,
+      "lng": 9.39302,
+      "nearest_airport": "MXP",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "e-3567",
+      "name": "E",
+      "lat": 44.4175519,
+      "lng": 8.926752,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "eno-14928",
+      "name": "Enò",
+      "lat": 45.059729,
+      "lng": 7.6819956,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. pasta;regional;italian;seafood;mediterranean;local"
+    },
+    {
+      "global_id": "furka-pass",
+      "name": "Furka Pass",
+      "lat": 46.5618,
+      "lng": 8.4143,
+      "nearest_airport": "EML",
+      "category": "Pass",
+      "raw_context": "Iconic hairpins."
+    },
+    {
+      "global_id": "furka-pass-hotel-belvdre",
+      "name": "Furka Pass (Hotel BelvÃ©dÃ¨re)",
+      "lat": 46.5772,
+      "lng": 8.3887,
+      "nearest_airport": "EML",
+      "category": "pass",
+      "raw_context": "james bond goldfinger"
+    },
+    {
+      "global_id": "furkapass",
+      "name": "Furkapass",
+      "lat": 46.5726851,
+      "lng": 8.415184,
+      "nearest_airport": "ZRH",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2429m"
+    },
+    {
+      "global_id": "furkapass-2277",
+      "name": "Furkapass",
+      "lat": 46.5726851,
+      "lng": 8.415184,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "grimsel-pass",
+      "name": "Grimsel Pass",
+      "lat": 46.5614,
+      "lng": 8.3306,
+      "nearest_airport": "EML",
+      "category": "pass",
+      "raw_context": "totensee"
+    },
+    {
+      "global_id": "grimselpass",
+      "name": "Grimselpass",
+      "lat": 46.5615193,
+      "lng": 8.3376971,
+      "nearest_airport": "ZRH",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2164m"
+    },
+    {
+      "global_id": "grimselpass-2270",
+      "name": "Grimselpass",
+      "lat": 46.5615193,
+      "lng": 8.3376971,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "grossglockner-high-alpine-road",
+      "name": "Grossglockner High Alpine Road",
+      "lat": 47.0742,
+      "lng": 12.8427,
+      "nearest_airport": "SZG",
+      "category": "road",
+      "raw_context": "highest mountain austria"
+    },
+    {
+      "global_id": "ina-12276",
+      "name": "inä",
+      "lat": 47.2280196,
+      "lng": 8.8185559,
+      "nearest_airport": "",
+      "category": "CAFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "jul-22745",
+      "name": "JUL",
+      "lat": 46.9483936,
+      "lng": 7.451022,
+      "nearest_airport": "",
+      "category": "NIGHTLIFE",
+      "raw_context": "Official Website Available. international"
+    },
+    {
+      "global_id": "julier-pass",
+      "name": "Julier Pass",
+      "lat": 46.4722,
+      "lng": 9.7281,
+      "nearest_airport": "SMV",
+      "category": "pass",
+      "raw_context": "winter open"
+    },
+    {
+      "global_id": "julierpass",
+      "name": "Julierpass",
+      "lat": 46.4722136,
+      "lng": 9.7281463,
+      "nearest_airport": "MXP",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2284m"
+    },
+    {
+      "global_id": "julierpass-2407",
+      "name": "Julierpass",
+      "lat": 46.4722136,
+      "lng": 9.7281463,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "k-2744",
+      "name": "K",
+      "lat": 45.297139,
+      "lng": 8.852974,
+      "nearest_airport": "MXP",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "k-4723",
+      "name": "K",
+      "lat": 46.7852345,
+      "lng": 11.2296588,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "kals-am-grossglockner",
+      "name": "Kals am Grossglockner",
+      "lat": 47,
+      "lng": 12.6333,
+      "nearest_airport": "SZG",
+      "category": "town",
+      "raw_context": "glockner view"
+    },
+    {
+      "global_id": "klaus-5811",
+      "name": "Klaus",
+      "lat": 47.3789337,
+      "lng": 8.5273866,
+      "nearest_airport": "",
+      "category": "NIGHTLIFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "klausen-pass",
+      "name": "Klausen Pass",
+      "lat": 46.8683,
+      "lng": 8.8558,
+      "nearest_airport": "EML",
+      "category": "pass",
+      "raw_context": "grand tour"
+    },
+    {
+      "global_id": "klausenpass",
+      "name": "Klausenpass",
+      "lat": 46.868191,
+      "lng": 8.8554418,
+      "nearest_airport": "ZRH",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 1952m"
+    },
+    {
+      "global_id": "klausenpass-2408",
+      "name": "Klausenpass",
+      "lat": 46.868191,
+      "lng": 8.8554418,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "ko-16990",
+      "name": "Kö",
+      "lat": 47.5680748,
+      "lng": 10.689358,
+      "nearest_airport": "",
+      "category": "NIGHTLIFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "la-14692",
+      "name": "LA",
+      "lat": 47.5628093,
+      "lng": 7.5848459,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. regional"
+    },
+    {
+      "global_id": "lab-14385",
+      "name": "LAB",
+      "lat": 44.3601404,
+      "lng": 11.6917188,
+      "nearest_airport": "",
+      "category": "NIGHTLIFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "lv-8579",
+      "name": "LV",
+      "lat": 44.870178,
+      "lng": 10.0752116,
+      "nearest_airport": "MXP",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "lv-8580",
+      "name": "LV",
+      "lat": 44.870652,
+      "lng": 10.0753079,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "melo-22827",
+      "name": "Melò",
+      "lat": 45.4885877,
+      "lng": 9.1950191,
+      "nearest_airport": "",
+      "category": "CAFE",
+      "raw_context": "Official Website Available. breakfast;italian"
+    },
+    {
+      "global_id": "mont",
+      "name": "Mont",
+      "lat": 47.243411,
+      "lng": 7.1679616,
+      "nearest_airport": "ZRH",
+      "category": "SCENIC_POINT",
+      "raw_context": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+    },
+    {
+      "global_id": "na-20606",
+      "name": "Na",
+      "lat": 47.7621785,
+      "lng": 12.7456047,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. asian"
+    },
+    {
+      "global_id": "nu-20108",
+      "name": "Nu!",
+      "lat": 45.3240466,
+      "lng": 14.4439551,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. regional"
+    },
+    {
+      "global_id": "nufenen-pass",
+      "name": "Nufenen Pass",
+      "lat": 46.4775,
+      "lng": 8.3883,
+      "nearest_airport": "LUG",
+      "category": "pass",
+      "raw_context": "highest paved pass swiss"
+    },
+    {
+      "global_id": "nufenenpass-passo-della-novena",
+      "name": "Nufenenpass / Passo della Novena",
+      "lat": 46.4771192,
+      "lng": 8.3878277,
+      "nearest_airport": "MXP",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2480m"
+    },
+    {
+      "global_id": "nufenenpass-passo-della-novena-2299",
+      "name": "Nufenenpass / Passo della Novena",
+      "lat": 46.4771192,
+      "lng": 8.3878277,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "pas",
+      "name": "(Pas)",
+      "lat": 43.5241843,
+      "lng": 5.5953193,
+      "nearest_airport": "NCE",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+    },
+    {
+      "global_id": "passo-dello-stelvio-stilfser-joch",
+      "name": "Passo dello Stelvio - Stilfser Joch",
+      "lat": 46.5286176,
+      "lng": 10.4532056,
+      "nearest_airport": "INN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2758m"
+    },
+    {
+      "global_id": "passo-dello-stelvio-stilfser-joch-3559",
+      "name": "Passo dello Stelvio - Stilfser Joch",
+      "lat": 46.5286176,
+      "lng": 10.4532056,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "piu-12817",
+      "name": "Più",
+      "lat": 47.3886962,
+      "lng": 8.520129,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. italian"
+    },
+    {
+      "global_id": "ran-112",
+      "name": "RAN",
+      "lat": 47.6567871,
+      "lng": 9.4535278,
+      "nearest_airport": "ZRH",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "ran-13835",
+      "name": "RAN",
+      "lat": 47.6818558,
+      "lng": 9.8244632,
+      "nearest_airport": "ZRH",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "ran-15877",
+      "name": "RAN",
+      "lat": 47.8231477,
+      "lng": 10.0157165,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "ran-5060",
+      "name": "Ran",
+      "lat": 45.5907136,
+      "lng": 9.2093625,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. japanese"
+    },
+    {
+      "global_id": "ran-7414",
+      "name": "RAN",
+      "lat": 47.9569014,
+      "lng": 8.4843567,
+      "nearest_airport": "ZRH",
+      "category": "FUEL",
+      "raw_context": "Auto-imported FUEL. Verified."
+    },
+    {
+      "global_id": "san-bernardino",
+      "name": "San Bernardino",
+      "lat": 44.1763584,
+      "lng": 8.3441136,
+      "nearest_airport": "NCE",
+      "category": "SCENIC_POINT",
+      "raw_context": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+    },
+    {
+      "global_id": "san-bernardino-pass",
+      "name": "San Bernardino Pass",
+      "lat": 46.4961,
+      "lng": 9.1708,
+      "nearest_airport": "SMV",
+      "category": "pass",
+      "raw_context": "lake moesola"
+    },
+    {
+      "global_id": "sen-21721",
+      "name": "Sen",
+      "lat": 47.6108593,
+      "lng": 8.2340008,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. vietnamese"
+    },
+    {
+      "global_id": "sen-23024",
+      "name": "SEN",
+      "lat": 47.5546206,
+      "lng": 7.9473661,
+      "nearest_airport": "",
+      "category": "GASTRO",
+      "raw_context": "Official Website Available. asian;vietnamese"
+    },
+    {
+      "global_id": "st-20389",
+      "name": "ST",
+      "lat": 45.071647,
+      "lng": 7.6814082,
+      "nearest_airport": "",
+      "category": "CAFE",
+      "raw_context": "Official Website Available. "
+    },
+    {
+      "global_id": "susten-pass",
+      "name": "Susten Pass",
+      "lat": 46.7294,
+      "lng": 8.4469,
+      "nearest_airport": "EML",
+      "category": "pass",
+      "raw_context": "stein glacier"
+    },
+    {
+      "global_id": "sustenpass",
+      "name": "Sustenpass",
+      "lat": 46.7291199,
+      "lng": 8.4465197,
+      "nearest_airport": "ZRH",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2224m"
+    },
+    {
+      "global_id": "sustenpass-2229",
+      "name": "Sustenpass",
+      "lat": 46.7291199,
+      "lng": 8.4465197,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "te-1120",
+      "name": "TE",
+      "lat": 45.023261,
+      "lng": 9.128705,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "te-7897",
+      "name": "Te",
+      "lat": 45.7113657,
+      "lng": 11.3732843,
+      "nearest_airport": "",
+      "category": "FUEL",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "timmelsjoch-austrian-side",
+      "name": "Timmelsjoch (Austrian Side)",
+      "lat": 46.9056,
+      "lng": 11.0967,
+      "nearest_airport": "INN",
+      "category": "pass",
+      "raw_context": "motorcycle museum"
+    },
+    {
+      "global_id": "timmelsjoch-passo-rombo",
+      "name": "Timmelsjoch - Passo Rombo",
+      "lat": 46.9053451,
+      "lng": 11.0973198,
+      "nearest_airport": "INN",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Auto-imported MOUNTAIN_PASS. Altitude: 2474m"
+    },
+    {
+      "global_id": "timmelsjoch-passo-rombo-3616",
+      "name": "Timmelsjoch - Passo Rombo",
+      "lat": 46.9053451,
+      "lng": 11.0973198,
+      "nearest_airport": "",
+      "category": "MOUNTAIN_PASS",
+      "raw_context": "Verified Location."
+    },
+    {
+      "global_id": "tremola-gotthard-pass",
+      "name": "Tremola (Gotthard Pass)",
+      "lat": 46.5589,
+      "lng": 8.5622,
+      "nearest_airport": "EML",
+      "category": "pass",
+      "raw_context": "cobblestone road"
+    }
+  ]
+}

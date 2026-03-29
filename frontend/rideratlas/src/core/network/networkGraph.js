@@ -1,13 +1,13 @@
 import { buildNetworkGraph } from "./buildNetworkGraph";
 import { runGraphHealthCheck } from "./graphHealthCheck";
-import { buildRentalGraph } from "./buildRentalGraph";
-import { INTENT_SIGNALS } from "../patriot/data/intentSignals.js";
 import { createGraphShardRuntime } from "./graphShardRuntime.js";
 import {
   GRAPH_SHARD_PUBLIC_CONTRACT,
 } from "./graphShards.contract.js";
-import { buildOverlayIndexOnly } from "./graphOverlayIndex.js";
-import { createGraphRentalShardLoader } from "./graphRentalShard.js";
+import {
+  createGraphRentalShardLoader,
+  mergeCoreGraphWithRentalShard,
+} from "./graphRentalShard.js";
 
 function validateGraph(graph) {
   if (!graph.routesByAirport) {
@@ -38,7 +38,6 @@ export function assertIndex(path, value) {
 }
 
 const coreGraph = validateGraph(buildNetworkGraph());
-const rentalGraph = buildRentalGraph();
 
 const GRAPH_SHARD_LOADERS = {
   // First Wave 2 slice: optional heavy POI details map loaded on demand.
@@ -62,34 +61,26 @@ export function getGraphShardStatus(name) {
   return graphShardRuntime.status(name);
 }
 
-// Phase 1: Merge and alias — old flat paths stay, new canonical paths added
-const merged = { ...coreGraph, ...rentalGraph };
+export function readGraphSnapshot() {
+  return GRAPH_SNAPSHOT;
+}
 
-// ── Overlay shard: lazy payload, eager indexes ──
-// Heavy overlay enrichment (renderData + rental formatters) loads async.
-// Light indexes stay in sync path for instant URL → ID resolution.
+graphShardRuntime.register("rentals", createGraphRentalShardLoader());
 graphShardRuntime.register("overlays", async () => {
+  const rentalShard = await loadGraphShard("rentals");
+  const mergedGraph = mergeCoreGraphWithRentalShard(coreGraph, rentalShard);
   const { buildGraphOverlayShard } = await import("./graphOverlayShard.js");
-  return buildGraphOverlayShard(merged, INTENT_SIGNALS);
+  return buildGraphOverlayShard(mergedGraph);
 });
-graphShardRuntime.register("rentals", createGraphRentalShardLoader(merged));
-
-// ── Patriot pSEO indexes (light — no rental formatters) ──
-const {
-  rawPatriotOverlays,
-  overlayIndexes,
-  overlayRejections,
-  publishedOverlayUrls,
-} = buildOverlayIndexOnly(merged, INTENT_SIGNALS);
 
 export const GRAPH = {
   // ── Legacy flat access (KEEP until Phase 4) ──
-  ...merged,
+  ...coreGraph,
 
-  // ── Patriot pSEO overlays (raw — no renderData, deprecated) ──
-  patriotOverlays: rawPatriotOverlays,
-  publishedOverlayUrls,
-  overlayRejections,
+  // ── Deprecated eager overlay exports ──
+  patriotOverlays: {},
+  publishedOverlayUrls: [],
+  overlayRejections: [],
 
   // ── Additive Wave 2 shard runtime (non-breaking) ──
   shardMeta: {
@@ -104,63 +95,65 @@ export const GRAPH = {
 
   // ── New canonical entity stores ──
   entities: {
-    airports:     merged.airports,
-    routes:       merged.routes,
-    rentals:      merged.rentals,
-    destinations: merged.destinations,
-    operators:    merged.operators,
-    pois:         merged.pois,
+    airports:     coreGraph.airports,
+    routes:       coreGraph.routes,
+    destinations: coreGraph.destinations,
+    pois:         coreGraph.pois,
   },
 
   // ── New canonical indexes ──
   indexes: {
-    routesByAirport:      merged.routesByAirport,
-    routesByDestination:  merged.routesByDestination,
-    rentalsByAirport:     merged.rentalsByAirport,
-    rentalsByOperator:    merged.rentalsByOperator,
-    rentalsByType:        merged.rentalsByType,
-    rentalsByDestination: merged.rentalsByDestination,
-    airportsBySlug:       merged.airportsBySlug,
-    destinationsByRegion: merged.destinationsByRegion,
-    poisByDestination:    merged.poisByDestination,
+    routesByAirport:      coreGraph.routesByAirport,
+    routesByDestination:  coreGraph.routesByDestination,
+    airportsBySlug:       coreGraph.airportsBySlug,
+    destinationsByRegion: coreGraph.destinationsByRegion,
+    poisByDestination:    coreGraph.poisByDestination,
+    poisByAirport:        coreGraph.poisByAirport,
     // Phase 2: New precomputed indexes
-    airportsByContinent:  merged.airportsByContinent,
-    airportsByCountry:    merged.airportsByCountry,
-    routesByCountry:      merged.routesByCountry,
-    clusterByAirport:     merged.clusterByAirport,
-    neighborsByAirport:   merged.neighborsByAirport,
-    regionsByCountry:     merged.regionsByCountry,
-    allAirportCodes:      merged.allAirportCodes,
-    allRouteSlugs:        merged.allRouteSlugs,
-    allDestinationSlugs:  merged.allDestinationSlugs,
-    // Patriot overlay indexes
-    overlayIdByPath:         overlayIndexes.overlayIdByPath,
-    overlayIdsByAirport:     overlayIndexes.overlayIdsByAirport,
-    overlayIdsByRental:      overlayIndexes.overlayIdsByRental,
-    overlayIdsByRoute:       overlayIndexes.overlayIdsByRoute,
-    overlayIdsByDestination: overlayIndexes.overlayIdsByDestination,
-    overlayIdsByOverlayType: overlayIndexes.overlayIdsByOverlayType,
-    overlayIdsByIntentType:  overlayIndexes.overlayIdsByIntentType,
+    airportsByContinent:  coreGraph.airportsByContinent,
+    airportsByCountry:    coreGraph.airportsByCountry,
+    routesByCountry:      coreGraph.routesByCountry,
+    clusterByAirport:     coreGraph.clusterByAirport,
+    neighborsByAirport:   coreGraph.neighborsByAirport,
+    regionsByCountry:     coreGraph.regionsByCountry,
+    allAirportCodes:      coreGraph.allAirportCodes,
+    allRouteSlugs:        coreGraph.allRouteSlugs,
+    allDestinationSlugs:  coreGraph.allDestinationSlugs,
   },
+};
+
+const GRAPH_SNAPSHOT = {
+  entities: {
+    airports: coreGraph.airports,
+    routes: coreGraph.routes,
+    destinations: coreGraph.destinations,
+    pois: coreGraph.pois,
+    clusters: coreGraph.clusters,
+  },
+  indexes: GRAPH.indexes,
 };
 
 // Run the diagnostic health check
 runGraphHealthCheck(GRAPH);
 
-// ── DEV deprecation warning for direct GRAPH.patriotOverlays access ──
-if (import.meta.env.DEV) {
-  const _rawOverlays = GRAPH.patriotOverlays;
-  let _warnedOnce = false;
-  Object.defineProperty(GRAPH, "patriotOverlays", {
+function defineDeprecatedGraphField(key, fallbackValue, message) {
+  let warned = false;
+
+  Object.defineProperty(GRAPH, key, {
     get() {
-      if (!_warnedOnce) {
-        console.warn(
-          "[DEPRECATED] GRAPH.patriotOverlays is deprecated. Use readGraphShard('overlays') instead."
-        );
-        _warnedOnce = true;
+      if (import.meta.env.DEV && !warned) {
+        console.warn(message);
+        warned = true;
       }
-      return _rawOverlays;
+
+      return fallbackValue;
     },
     configurable: true,
   });
 }
+
+defineDeprecatedGraphField(
+  "patriotOverlays",
+  {},
+  "[DEPRECATED] GRAPH.patriotOverlays is deprecated. Use readGraphShard('overlays') instead."
+);

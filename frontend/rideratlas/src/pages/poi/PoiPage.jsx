@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useLocation, useParams, Link } from "react-router-dom";
 
 import { AIRPORT_INDEX } from "@/features/airport/network/airportIndex";
 import { GRAPH, loadGraphShard, readGraphShard } from "@/core/network/networkGraph";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 function hasPoiDetailData(poi) {
   return Boolean(poi?.description) && Boolean(poi?.nearest_airport);
@@ -62,8 +63,10 @@ function resolvePoiRecord(slug) {
 
 export default function PoiPage() {
   const { slug } = useParams();
+  const location = useLocation();
   const [poi, setPoi] = useState(() => resolvePoiRecord(slug));
   const [loading, setLoading] = useState(() => !hasPoiDetailData(resolvePoiRecord(slug)));
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   useEffect(() => {
     let active = true;
@@ -132,8 +135,13 @@ export default function PoiPage() {
       </h1>
 
       <p className="mb-4">
-        {poi.description}
+        {poi?.cinematic_description || poi?.description}
       </p>
+      {poi?.rider_tip ? (
+        <p className="mb-4 text-sm italic text-zinc-400">
+          {poi.rider_tip}
+        </p>
+      ) : null}
 
       <h2 className="mt-8 text-xl font-semibold">
         Nearest Airport
@@ -141,7 +149,7 @@ export default function PoiPage() {
 
       {airport ? (
         <Link
-          to={`/airport/${(airport.code || "").toLowerCase()}`}
+          to={withCtx(`/airport/${(airport.code || "").toLowerCase()}`)}
           className="text-blue-500"
         >
           {airport.city} ({airport.code})
@@ -157,7 +165,7 @@ export default function PoiPage() {
       <ul>
         {routes.slice(0,5).map(r => (
           <li key={r.slug}>
-            <Link to={`/route/${r.slug}`} className="text-blue-500">
+            <Link to={withCtx(`/route/${r.slug}`)} className="text-blue-500">
               Ride from {r.airport.city} to the {r.destination.name}
             </Link>
           </li>

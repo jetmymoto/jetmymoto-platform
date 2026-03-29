@@ -1,0 +1,79 @@
+{
+  "operator": "imtbike-bcn",
+  "airport": "BCN",
+  "url": "https://www.imtbike.com/motorcycle-rentals-spain/barcelona/",
+  "harvested_at": "2026-03-25T15:45:03.579Z",
+  "rental_count": 5,
+  "rentals": [
+    {
+      "airport": "BCN",
+      "operator": "imtbike-bcn",
+      "brand": "BMW",
+      "model": "R 1250 GS",
+      "category": "adventure",
+      "price_day": 120,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "catalonia-coast",
+        "pyrenees",
+        "montserrat"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "imtbike-bcn",
+      "brand": "BMW",
+      "model": "R 1250 RT",
+      "category": "touring",
+      "price_day": 130,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "catalonia-coast",
+        "pyrenees",
+        "priorat"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "imtbike-bcn",
+      "brand": "BMW",
+      "model": "S 1000 XR",
+      "category": "sport-touring",
+      "price_day": 140,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "montserrat",
+        "catalonia-coast",
+        "pyrenees"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "imtbike-bcn",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "adventure",
+      "price_day": 150,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "catalonia-coast",
+        "pyrenees",
+        "montserrat"
+      ]
+    },
+    {
+      "airport": "BCN",
+      "operator": "imtbike-bcn",
+      "brand": "Honda",
+      "model": "CBF 1000",
+      "category": "touring",
+      "price_day": 100,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "catalonia-coast",
+        "priorat",
+        "montserrat"
+      ]
+    }
+  ]
+}

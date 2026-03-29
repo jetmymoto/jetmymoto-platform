@@ -1,0 +1,31 @@
+{
+  "destination_slug": "texas-hill-country",
+  "destination_name": "Texas Hill Country",
+  "enriched_at": "2026-03-28T23:29:14.292Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Texas Hill Country unfolds beneath your wheels with a seamless ribbon of pristine asphalt threading through rugged coastal terrain, punctuated by the commanding silhouettes of Bell Mountain and Nebo Mountain. This ride invites discerning motorcyclists to explore historic sites and alpine passes where every curve reveals a new vista of layered hills and serene reservoirs.",
+  "ride_character": "A smooth, easy cruise on impeccably paved roads that balance gentle coastal undulations with the subtle drama of alpine passes like Naumans Gap.",
+  "best_season": "March through May — mild temperatures and clear skies enhance the region's natural beauty and make mountain passes like Naumans Gap effortlessly enjoyable.",
+  "premium_pois": [
+    {
+      "name": "Naumans Gap",
+      "cinematic_description": "This alpine pass at 503 meters offers a rare elevation shift amidst Texas Hill Country’s coastal landscape, rewarding riders with sweeping views and a refreshing change in terrain.",
+      "rider_tip": "Approach Naumans Gap with a steady pace to fully appreciate its gentle curves and vantage points."
+    },
+    {
+      "name": "Bell Mountain",
+      "cinematic_description": "Rising prominently in the heart of Texas Hill Country, Bell Mountain commands attention with its rugged profile and panoramic views that stretch across the surrounding hills and valleys.",
+      "rider_tip": "Scout out nearby pull-off points to pause and absorb the mountain’s serene vistas without disrupting your rhythm."
+    },
+    {
+      "name": "Fort Croghan",
+      "cinematic_description": "Step into history at this well-preserved museum site nestled in the region, where the echoes of Texas pioneer life offer a compelling cultural counterpoint to the natural grandeur outside.",
+      "rider_tip": "Plan a mid-ride stop here to stretch and immerse yourself in local heritage before continuing through the hill country."
+    }
+  ]
+}

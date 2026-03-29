@@ -1,0 +1,31 @@
+{
+  "destination_slug": "quebec-laurentians",
+  "destination_name": "Quebec & Laurentians",
+  "enriched_at": "2026-03-28T23:29:00.891Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Navigating the serpentine mountain roads of Quebec & Laurentians reveals a tapestry of rugged alpine passes and serene glacial lakes framed by ancient peaks. This ride offers an immersive dialogue between precision asphalt and untouched nature, where every curve invites mastery and every vista promises quiet grandeur.",
+  "ride_character": "A moderate difficulty mountain terrain ride that balances technical alpine passes with smooth stretches of asphalt, offering a rhythmic challenge punctuated by breathtaking natural panoramas.",
+  "best_season": "June through September — the mountain passes like Col de la Grise and pic de Melette are clear of snow, and the lakes shimmer under long, temperate days ideal for exploration.",
+  "premium_pois": [
+    {
+      "name": "Col de la Grise",
+      "cinematic_description": "This alpine pass at 583 meters commands attention with its sweeping switchbacks and elevated vantage points, offering riders a rare blend of technical riding and expansive mountain views.",
+      "rider_tip": "Approach the ascent with steady throttle control to navigate its moderate but continuous elevation changes smoothly."
+    },
+    {
+      "name": "Mount Pinnacle",
+      "cinematic_description": "At 712 meters, Mount Pinnacle stands as a commanding mountain peak that crowns the landscape with rugged elegance, inviting riders to pause and absorb the vast Laurentian wilderness unfolding beneath.",
+      "rider_tip": "Plan a stop here to stretch and capture panoramic views, ensuring your bike is cool before tackling subsequent climbs."
+    },
+    {
+      "name": "Lac Beauvais",
+      "cinematic_description": "Nestled at 439 meters, Lac Beauvais reflects the surrounding forested slopes with pristine clarity, creating a tranquil counterpoint to the energetic mountain roads.",
+      "rider_tip": "Use the lake’s nearby quiet roads for a restorative break, checking tire pressure after the demanding mountain segments."
+    }
+  ]
+}

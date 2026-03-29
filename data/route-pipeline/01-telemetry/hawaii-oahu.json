@@ -1,0 +1,98 @@
+{
+  "destination_slug": "hawaii-oahu",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:43:00.860Z",
+  "telemetry": {
+    "road_segments": 7838,
+    "passes_found": 2,
+    "peaks_found": 150,
+    "max_altitude_m": 1229,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 70,
+      "gravel": 0,
+      "unpaved": 1
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Pōhākea Pass",
+      "lat": 21.4339464,
+      "lng": -158.0940266,
+      "elevation_m": 651,
+      "osm_id": 10154294877
+    },
+    {
+      "name": "Kolekole Pass",
+      "lat": 21.4754447,
+      "lng": -158.1136381,
+      "elevation_m": 497,
+      "osm_id": 10154286609
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Kaʻala",
+      "lat": 21.5077472,
+      "lng": -158.142296,
+      "elevation_m": 1229
+    },
+    {
+      "name": "Puʻukalena",
+      "lat": 21.4890116,
+      "lng": -158.1324105,
+      "elevation_m": 1068
+    },
+    {
+      "name": "Kamaohanui",
+      "lat": 21.5120988,
+      "lng": -158.132809,
+      "elevation_m": 1024
+    },
+    {
+      "name": "Kōnāhuanui (K1)",
+      "lat": 21.3579902,
+      "lng": -157.7879031,
+      "elevation_m": 960
+    },
+    {
+      "name": "Kōnāhuanui (K2)",
+      "lat": 21.3532629,
+      "lng": -157.7886225,
+      "elevation_m": 946
+    },
+    {
+      "name": "Puʻukaua",
+      "lat": 21.441298,
+      "lng": -158.0986905,
+      "elevation_m": 940
+    },
+    {
+      "name": "Palikea",
+      "lat": 21.4145035,
+      "lng": -158.1002774,
+      "elevation_m": 938
+    },
+    {
+      "name": "Puʻukawiwi",
+      "lat": 21.4907365,
+      "lng": -158.1677821,
+      "elevation_m": 899
+    },
+    {
+      "name": "Puʻuhapapa",
+      "lat": 21.4677173,
+      "lng": -158.1042024,
+      "elevation_m": 879
+    },
+    {
+      "name": "Puʻukūmakaliʻi",
+      "lat": 21.4802995,
+      "lng": -158.1220059,
+      "elevation_m": 878
+    }
+  ]
+}

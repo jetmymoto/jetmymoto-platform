@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { withBrandContext } from "@/utils/navigationTargets";
 
 const RoutesGrid = ({ routes = [] }) => {
+  const location = useLocation();
+  const withCtx = (path) => withBrandContext(path, location.search);
 
   if (!routes.length) return null;
 
@@ -18,7 +21,7 @@ const RoutesGrid = ({ routes = [] }) => {
           <li key={route.slug}>
 
             <Link
-              to={`/route/${route.slug}`}
+              to={withCtx(`/route/${route.slug}`)}
               className="text-blue-500 hover:underline"
             >
               {route.airport.city} → {route.destination.name}

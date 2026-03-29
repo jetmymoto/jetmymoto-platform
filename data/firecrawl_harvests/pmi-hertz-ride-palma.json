@@ -1,0 +1,163 @@
+{
+  "operator": "hertz-ride-palma",
+  "airport": "PMI",
+  "url": "https://www.hertzride.com/en/locations/palma-de-mallorca/",
+  "harvested_at": "2026-03-25T16:10:40.848Z",
+  "rental_count": 11,
+  "rentals": [
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "DUCATI",
+      "model": "DESERTX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    },
+    {
+      "airport": "PMI",
+      "operator": "hertz-ride-palma",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "mallorca-hills",
+        "sierra-de-tramuntana",
+        "beaches-of-mallorca"
+      ]
+    }
+  ]
+}

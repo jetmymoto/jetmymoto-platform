@@ -1,0 +1,224 @@
+{
+  "destination_slug": "dolomites",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:32:02.967Z",
+  "telemetry": {
+    "road_segments": 73168,
+    "passes_found": 1836,
+    "peaks_found": 6482,
+    "max_altitude_m": 3798,
+    "difficulty": "Advanced",
+    "terrain": "Mountain Asphalt",
+    "surface_breakdown": {
+      "asphalt": 68,
+      "gravel": 1,
+      "unpaved": 1
+    }
+  },
+  "osm_passes": [
+    {
+      "name": "Obere Glocknerscharte",
+      "lat": 47.0742812,
+      "lng": 12.6945093,
+      "elevation_m": 3756,
+      "osm_id": 91313900
+    },
+    {
+      "name": "Untere Glocknerscharte",
+      "lat": 47.077239,
+      "lng": 12.6893966,
+      "elevation_m": 3596,
+      "osm_id": 256041738
+    },
+    {
+      "name": "Romariswandscharte",
+      "lat": 47.0883878,
+      "lng": 12.6768336,
+      "elevation_m": 3424,
+      "osm_id": 2667085149
+    },
+    {
+      "name": "Rainertörl",
+      "lat": 47.1029951,
+      "lng": 12.3550041,
+      "elevation_m": 3421,
+      "osm_id": 502448078
+    },
+    {
+      "name": "Schneewinkelscharte",
+      "lat": 47.0937476,
+      "lng": 12.6648388,
+      "elevation_m": 3412,
+      "osm_id": 2667085155
+    },
+    {
+      "name": "Venedigerscharte",
+      "lat": 47.1117788,
+      "lng": 12.3572582,
+      "elevation_m": 3407,
+      "osm_id": 2676984875
+    },
+    {
+      "name": "Bratschenkopfscharte",
+      "lat": 47.149952,
+      "lng": 12.7444235,
+      "elevation_m": 3378,
+      "osm_id": 4350654116
+    },
+    {
+      "name": "Meynow-Scharte",
+      "lat": 47.1136265,
+      "lng": 12.3420422,
+      "elevation_m": 3375,
+      "osm_id": 7977082767
+    },
+    {
+      "name": "Westliche Möselescharte",
+      "lat": 46.9896194,
+      "lng": 11.7810211,
+      "elevation_m": 3370,
+      "osm_id": 8899266352
+    },
+    {
+      "name": "Keidel-Scharte",
+      "lat": 47.1153371,
+      "lng": 12.3408076,
+      "elevation_m": 3283,
+      "osm_id": 7977082768
+    },
+    {
+      "name": "Östliche Möselescharte",
+      "lat": 46.9904069,
+      "lng": 11.7932308,
+      "elevation_m": 3240,
+      "osm_id": 333900159
+    },
+    {
+      "name": "Rossruggscharte",
+      "lat": 46.991072,
+      "lng": 11.8054663,
+      "elevation_m": 3235,
+      "osm_id": 1628957238
+    },
+    {
+      "name": "Dockscharte",
+      "lat": 47.1307857,
+      "lng": 12.7371107,
+      "elevation_m": 3233,
+      "osm_id": 2929609583
+    },
+    {
+      "name": "Wildlahnerscharte",
+      "lat": 47.0562615,
+      "lng": 11.6572507,
+      "elevation_m": 3230,
+      "osm_id": 2808382404
+    },
+    {
+      "name": "Obere Ödenwinkelscharte",
+      "lat": 47.1167298,
+      "lng": 12.6665702,
+      "elevation_m": 3228,
+      "osm_id": 2527860079
+    },
+    {
+      "name": "Wielingerscharte",
+      "lat": 47.1533115,
+      "lng": 12.7454422,
+      "elevation_m": 3228,
+      "osm_id": 4350654520
+    },
+    {
+      "name": "Gramulsattel",
+      "lat": 47.074478,
+      "lng": 12.6736377,
+      "elevation_m": 3218,
+      "osm_id": 2667085087
+    },
+    {
+      "name": "Sandbodenscharte",
+      "lat": 47.1643833,
+      "lng": 12.7599534,
+      "elevation_m": 3210,
+      "osm_id": 4270534356
+    },
+    {
+      "name": "Obere Weisszintscharte",
+      "lat": 46.9622049,
+      "lng": 11.7402871,
+      "elevation_m": 3183,
+      "osm_id": 932271781
+    },
+    {
+      "name": "Trippachscharte",
+      "lat": 47.028101,
+      "lng": 11.9110909,
+      "elevation_m": 3182,
+      "osm_id": 333900506
+    }
+  ],
+  "osm_peaks": [
+    {
+      "name": "Großglockner",
+      "lat": 47.0745464,
+      "lng": 12.6938826,
+      "elevation_m": 3798
+    },
+    {
+      "name": "Kleinglockner",
+      "lat": 47.0741836,
+      "lng": 12.6946761,
+      "elevation_m": 3770
+    },
+    {
+      "name": "Pöschlturm",
+      "lat": 47.0796608,
+      "lng": 12.6863771,
+      "elevation_m": 3722
+    },
+    {
+      "name": "Hörtnaglturm",
+      "lat": 47.0783883,
+      "lng": 12.6875895,
+      "elevation_m": 3719
+    },
+    {
+      "name": "Gerinturm",
+      "lat": 47.0792782,
+      "lng": 12.6866824,
+      "elevation_m": 3718
+    },
+    {
+      "name": "Draschturm",
+      "lat": 47.0788108,
+      "lng": 12.6871569,
+      "elevation_m": 3716
+    },
+    {
+      "name": "Hofmannspitze",
+      "lat": 47.0801832,
+      "lng": 12.6858237,
+      "elevation_m": 3711
+    },
+    {
+      "name": "Glocknerhorn",
+      "lat": 47.0766919,
+      "lng": 12.6916376,
+      "elevation_m": 3680
+    },
+    {
+      "name": "Teufelshorn",
+      "lat": 47.0766667,
+      "lng": 12.6909954,
+      "elevation_m": 3677
+    },
+    {
+      "name": "Grögerschneid",
+      "lat": 47.0756405,
+      "lng": 12.6918934,
+      "elevation_m": 3660
+    }
+  ]
+}

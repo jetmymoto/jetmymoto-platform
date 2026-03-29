@@ -1,0 +1,205 @@
+{
+  "operator": "hertz-ride-warsaw",
+  "airport": "WAW",
+  "url": "https://www.hertzride.com/en/locations/warsaw/",
+  "harvested_at": "2026-03-25T16:08:55.493Z",
+  "rental_count": 14,
+  "rentals": [
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "Moto Morini",
+      "model": "X-Cape",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 28,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    },
+    {
+      "airport": "WAW",
+      "operator": "hertz-ride-warsaw",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 25,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "kraj-lubusz",
+        "kraj-mazowieckie",
+        "kraj-wielkopolskie"
+      ]
+    }
+  ]
+}

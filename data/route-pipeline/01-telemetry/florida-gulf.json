@@ -1,0 +1,83 @@
+{
+  "destination_slug": "florida-gulf",
+  "source": "openstreetmap",
+  "license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "queried_at": "2026-03-28T22:34:48.247Z",
+  "telemetry": {
+    "road_segments": 49300,
+    "passes_found": 0,
+    "peaks_found": 21,
+    "max_altitude_m": 94,
+    "difficulty": "Easy",
+    "terrain": "Coastal Highway",
+    "surface_breakdown": {
+      "asphalt": 73,
+      "gravel": 0,
+      "unpaved": 0
+    }
+  },
+  "osm_passes": [],
+  "osm_peaks": [
+    {
+      "name": "Sugarloaf Mountain",
+      "lat": 28.6494413,
+      "lng": -81.7331317,
+      "elevation_m": 94
+    },
+    {
+      "name": "Chinsegut Hill",
+      "lat": 28.6191584,
+      "lng": -82.3645371,
+      "elevation_m": 82
+    },
+    {
+      "name": "Lakeland Highlands",
+      "lat": 27.9628703,
+      "lng": -81.9181641,
+      "elevation_m": 81
+    },
+    {
+      "name": "Munden Hill",
+      "lat": 28.5441615,
+      "lng": -82.3053678,
+      "elevation_m": 80
+    },
+    {
+      "name": "LeHeup Hill",
+      "lat": 28.3136157,
+      "lng": -82.2009174,
+      "elevation_m": 74
+    },
+    {
+      "name": "Nursery Hill",
+      "lat": 28.3175045,
+      "lng": -82.1995286,
+      "elevation_m": 74
+    },
+    {
+      "name": "Hickory Hill",
+      "lat": 28.4833304,
+      "lng": -82.2736993,
+      "elevation_m": 73
+    },
+    {
+      "name": "Greer Hill",
+      "lat": 28.2961166,
+      "lng": -82.1889727,
+      "elevation_m": 68
+    },
+    {
+      "name": "Kirk Hill",
+      "lat": 28.5847155,
+      "lng": -82.3073126,
+      "elevation_m": 65
+    },
+    {
+      "name": "Bailey Hill",
+      "lat": 28.6019363,
+      "lng": -82.4787077,
+      "elevation_m": 64
+    }
+  ]
+}

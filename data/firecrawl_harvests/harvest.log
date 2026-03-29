@@ -1,0 +1,219 @@
+[2026-03-25T13:37:07.946Z] MERGE 2 rentals from 1 files → master_fleet.json
+[2026-03-25T13:37:20.348Z] TRANSFORM injected=2 skipped=0 → rentals.js
+[2026-03-25T13:40:35.795Z] TRANSFORM injected=2 skipped=0 → rentals.js
+[2026-03-25T13:42:12.360Z] TRANSFORM injected=2 skipped=0 → rentals.js
+[2026-03-25T13:44:34.434Z] TRANSFORM injected=1 skipped=1 → rentals.js
+[2026-03-25T13:54:16.088Z] START harvest operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan
+[2026-03-25T13:54:16.118Z] ERROR hertz-ride-milan: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:16.244Z] START harvest operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris
+[2026-03-25T13:54:16.268Z] ERROR hertz-ride-paris: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:16.391Z] START harvest operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations/alicante
+[2026-03-25T13:54:16.414Z] ERROR hertz-ride-alicante: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:16.555Z] START harvest operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations/lisbon
+[2026-03-25T13:54:16.581Z] ERROR hertz-ride-lisbon: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:16.794Z] START harvest operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/en/locations/vienna
+[2026-03-25T13:54:16.836Z] ERROR hertz-ride-vienna: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:16.956Z] START harvest operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/motorcycle-rentals/spain/madrid/
+[2026-03-25T13:54:16.983Z] ERROR imtbike-madrid: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-25T13:54:28.260Z] START harvest operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan
+[2026-03-25T13:54:56.611Z] OK 14 rentals → mxp-hertz-ride-milan.json
+[2026-03-25T13:54:56.735Z] START harvest operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris
+[2026-03-25T13:55:47.201Z] OK 14 rentals → cdg-hertz-ride-paris.json
+[2026-03-25T13:55:47.332Z] START harvest operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations/alicante
+[2026-03-25T13:56:52.360Z] ERROR hertz-ride-alicante: timeout of 65000ms exceeded
+[2026-03-25T13:56:52.488Z] START harvest operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations/lisbon
+[2026-03-25T13:57:36.338Z] OK 12 rentals → lis-hertz-ride-lisbon.json
+[2026-03-25T13:57:36.458Z] START harvest operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/en/locations/vienna
+[2026-03-25T13:58:18.790Z] OK 12 rentals → vie-hertz-ride-vienna.json
+[2026-03-25T13:58:18.901Z] START harvest operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/motorcycle-rentals/spain/madrid/
+[2026-03-25T13:58:37.573Z] OK 8 rentals → mad-imtbike-madrid.json
+[2026-03-25T14:06:17.869Z] START harvest operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan
+[2026-03-25T14:07:05.108Z] OK 14 rentals → mxp-hertz-ride-milan.json
+[2026-03-25T14:07:05.229Z] START harvest operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris
+[2026-03-25T14:07:37.721Z] OK 13 rentals → cdg-hertz-ride-paris.json
+[2026-03-25T14:07:37.842Z] START harvest operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations/alicante
+[2026-03-25T14:08:21.483Z] OK 13 rentals → alc-hertz-ride-alicante.json
+[2026-03-25T14:08:21.601Z] START harvest operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations/lisbon
+[2026-03-25T14:09:22.635Z] OK 14 rentals → lis-hertz-ride-lisbon.json
+[2026-03-25T14:09:22.774Z] START harvest operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/en/locations/vienna
+[2026-03-25T14:09:51.832Z] OK 13 rentals → vie-hertz-ride-vienna.json
+[2026-03-25T14:09:51.965Z] START harvest operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/motorcycle-rentals/spain/madrid/
+[2026-03-25T14:10:13.360Z] OK 6 rentals → mad-imtbike-madrid.json
+[2026-03-25T14:10:18.237Z] MERGE 73 rentals from 6 files → master_fleet.json
+[2026-03-25T14:10:19.909Z] TRANSFORM injected=63 skipped=10 → rentals.js
+[2026-03-25T14:10:19.967Z] TRANSFORM SYNTAX_ERROR — manual fix required
+[2026-03-25T14:10:33.143Z] TRANSFORM no-op: all 73 rentals already present
+[2026-03-25T14:55:39.623Z] BATCH-RUN 8 targets, concurrency=10
+[2026-03-25T14:55:39.625Z] BATCH-START operator=allround-rent-muc airport=MUC url=https://www.motorradvermietung.de/muenchen/
+[2026-03-25T14:55:39.647Z] BATCH-START operator=hertz-ride-fco airport=FCO url=https://www.hertzride.com/en/locations/rome/
+[2026-03-25T14:55:39.649Z] BATCH-START operator=eaglerider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-25T14:55:39.650Z] BATCH-START operator=imtbike-bcn airport=BCN url=https://www.imtbike.com/motorcycle-rentals-spain/barcelona/
+[2026-03-25T14:55:39.651Z] BATCH-START operator=hertz-ride-cdg airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-25T14:55:39.653Z] BATCH-START operator=lmr-lhr airport=LHR url=https://www.londonmotorcyclerental.com/
+[2026-03-25T14:55:39.654Z] BATCH-START operator=motorrad-bohling-str airport=STR url=https://www.motorradvermietung.de/stuttgart/
+[2026-03-25T14:55:39.655Z] BATCH-START operator=motorbike-greece-ath airport=ATH url=https://www.motorbikegreece.com/rentals/
+[2026-03-25T14:55:40.405Z] BATCH-ERROR lmr-lhr@LHR: DNS resolution failed for hostname "www.londonmotorcyclerental.com". This means the domain name could not be translated to an IP address. Possible causes: (1) The domain name is misspelled (check for typos), (2) The domain does not exist or has expired, (3) The DNS servers are temporarily unavailable, or (4) The domain was recently registered and DNS has not propagated yet. Please verify the URL is correct and the website exists.
+[2026-03-25T14:55:55.649Z] BATCH-WARN 0 rentals for motorrad-bohling-str@STR
+[2026-03-25T14:56:02.862Z] BATCH-OK 8 rentals for imtbike-bcn@BCN → bcn-imtbike-bcn.json
+[2026-03-25T14:56:17.953Z] BATCH-OK 14 rentals for hertz-ride-cdg@CDG → cdg-hertz-ride-cdg.json
+[2026-03-25T14:57:00.314Z] BATCH-ERROR motorbike-greece-ath@ATH: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T14:57:00.341Z] BATCH-ERROR eaglerider-mxp@MXP: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T14:57:06.513Z] BATCH-OK 14 rentals for hertz-ride-fco@FCO → fco-hertz-ride-fco.json
+[2026-03-25T14:57:40.221Z] BATCH-ERROR allround-rent-muc@MUC: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T14:57:40.222Z] BATCH-DONE successes=3 warnings=1 failures=4 total_rentals=36
+[2026-03-25T14:57:40.464Z] MERGE 96 rentals from 9 files → master_fleet.json
+[2026-03-25T14:57:40.721Z] TRANSFORM injected=25 skipped=71 → rentals.js
+[2026-03-25T15:43:09.353Z] BATCH-RUN 13 targets, concurrency=5
+[2026-03-25T15:43:09.355Z] BATCH-START operator=allround-rent-muc airport=MUC url=https://www.motorradvermietung.de/muenchen/
+[2026-03-25T15:43:09.377Z] BATCH-START operator=hertz-ride-fco airport=FCO url=https://www.hertzride.com/en/locations/rome/
+[2026-03-25T15:43:09.379Z] BATCH-START operator=eaglerider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-25T15:43:09.381Z] BATCH-START operator=imtbike-bcn airport=BCN url=https://www.imtbike.com/motorcycle-rentals-spain/barcelona/
+[2026-03-25T15:43:09.382Z] BATCH-START operator=hertz-ride-cdg airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-25T15:43:50.015Z] BATCH-OK 14 rentals for hertz-ride-cdg@CDG → cdg-hertz-ride-cdg.json
+[2026-03-25T15:43:50.015Z] BATCH-START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-25T15:44:42.081Z] BATCH-OK 42 rentals for allround-rent-muc@MUC → muc-allround-rent-muc.json
+[2026-03-25T15:44:42.081Z] BATCH-START operator=motorrad-bohling-str airport=STR url=https://www.motorradvermietung.de/stuttgart/
+[2026-03-25T15:44:52.679Z] BATCH-OK 45 rentals for eaglerider-mxp@MXP → mxp-eaglerider-mxp.json
+[2026-03-25T15:44:52.680Z] BATCH-START operator=motorbike-greece-ath airport=ATH url=https://www.motorbikegreece.com/rentals/
+[2026-03-25T15:45:03.579Z] BATCH-OK 5 rentals for imtbike-bcn@BCN → bcn-imtbike-bcn.json
+[2026-03-25T15:45:03.579Z] BATCH-START operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations/lisbon/
+[2026-03-25T15:45:05.219Z] BATCH-WARN 0 rentals for motorrad-bohling-str@STR
+[2026-03-25T15:45:05.219Z] BATCH-START operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/en/locations/vienna/
+[2026-03-25T15:45:05.689Z] BATCH-ERROR motorbike-greece-ath@ATH: DNS resolution failed for hostname "www.motorbikegreece.com". This means the domain name could not be translated to an IP address. Possible causes: (1) The domain name is misspelled (check for typos), (2) The domain does not exist or has expired, (3) The DNS servers are temporarily unavailable, or (4) The domain was recently registered and DNS has not propagated yet. Please verify the URL is correct and the website exists.
+[2026-03-25T15:45:05.689Z] BATCH-START operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations/alicante/
+[2026-03-25T15:45:10.382Z] BATCH-ERROR hertz-ride-fco@FCO: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T15:45:10.383Z] BATCH-START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-25T15:45:34.353Z] BATCH-OK 14 rentals for hertz-ride-vienna@VIE → vie-hertz-ride-vienna.json
+[2026-03-25T15:45:34.353Z] BATCH-START operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/motorcycle-rentals-spain/madrid/
+[2026-03-25T15:45:54.621Z] BATCH-OK 6 rentals for imtbike-madrid@MAD → mad-imtbike-madrid.json
+[2026-03-25T15:46:22.780Z] BATCH-OK 13 rentals for hertz-ride-alicante@ALC → alc-hertz-ride-alicante.json
+[2026-03-25T15:46:41.814Z] BATCH-OK 41 rentals for superbike-rental-lhr@LHR → lhr-superbike-rental-lhr.json
+[2026-03-25T15:46:43.228Z] BATCH-OK 13 rentals for hertz-ride-lisbon@LIS → lis-hertz-ride-lisbon.json
+[2026-03-25T15:47:17.258Z] BATCH-OK 14 rentals for hertz-ride-milan@MXP → mxp-hertz-ride-milan.json
+[2026-03-25T15:47:17.259Z] BATCH-DONE successes=10 warnings=1 failures=2 total_rentals=207
+[2026-03-25T15:47:17.510Z] MERGE 220 rentals from 12 files → master_fleet.json
+[2026-03-25T15:47:17.747Z] TRANSFORM injected=99 skipped=121 → rentals.js
+[2026-03-25T15:56:56.552Z] BATCH-RUN 45 targets, concurrency=5
+[2026-03-25T15:56:56.553Z] BATCH-START operator=allround-rent-muc airport=MUC url=https://www.motorradvermietung.de/muenchen/
+[2026-03-25T15:56:56.595Z] BATCH-START operator=eaglerider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-25T15:56:56.597Z] BATCH-START operator=imtbike-bcn airport=BCN url=https://www.imtbike.com/motorcycle-rentals-spain/barcelona/
+[2026-03-25T15:56:56.598Z] BATCH-START operator=hertz-ride-cdg airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-25T15:56:56.599Z] BATCH-START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-25T15:57:44.799Z] BATCH-OK 42 rentals for allround-rent-muc@MUC → muc-allround-rent-muc.json
+[2026-03-25T15:57:44.799Z] BATCH-START operator=eaglerider-str airport=STR url=https://www.eaglerider.com/stuttgart-germany
+[2026-03-25T15:58:36.924Z] BATCH-OK 15 rentals for hertz-ride-cdg@CDG → cdg-hertz-ride-cdg.json
+[2026-03-25T15:58:36.924Z] BATCH-START operator=motorent-ath airport=ATH url=https://www.motorent.gr/
+[2026-03-25T15:58:57.324Z] BATCH-ERROR imtbike-bcn@BCN: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T15:58:57.324Z] BATCH-START operator=hertz-ride-lisbon airport=LIS url=https://www.hertzride.com/en/locations/lisbon/
+[2026-03-25T15:59:38.568Z] BATCH-OK 41 rentals for superbike-rental-lhr@LHR → lhr-superbike-rental-lhr.json
+[2026-03-25T15:59:38.568Z] BATCH-START operator=hertz-ride-vienna airport=VIE url=https://www.hertzride.com/en/locations/vienna/
+[2026-03-25T15:59:45.042Z] BATCH-ERROR eaglerider-str@STR: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T15:59:45.043Z] BATCH-START operator=hertz-ride-alicante airport=ALC url=https://www.hertzride.com/en/locations/alicante/
+[2026-03-25T15:59:45.729Z] BATCH-OK 46 rentals for eaglerider-mxp@MXP → mxp-eaglerider-mxp.json
+[2026-03-25T15:59:45.729Z] BATCH-START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-25T16:00:20.349Z] BATCH-OK 14 rentals for hertz-ride-vienna@VIE → vie-hertz-ride-vienna.json
+[2026-03-25T16:00:20.349Z] BATCH-START operator=imtbike-madrid airport=MAD url=https://www.imtbike.com/motorcycle-rentals-spain/madrid/
+[2026-03-25T16:00:23.906Z] BATCH-OK 13 rentals for hertz-ride-alicante@ALC → alc-hertz-ride-alicante.json
+[2026-03-25T16:00:23.907Z] BATCH-START operator=hertz-ride-frankfurt airport=FRA url=https://www.hertzride.com/en/locations/frankfurt/
+[2026-03-25T16:00:42.143Z] BATCH-OK 13 rentals for hertz-ride-lisbon@LIS → lis-hertz-ride-lisbon.json
+[2026-03-25T16:00:42.143Z] BATCH-START operator=hertz-ride-berlin airport=BER url=https://www.hertzride.com/en/locations/berlin/
+[2026-03-25T16:00:56.695Z] BATCH-OK 6 rentals for motorent-ath@ATH → ath-motorent-ath.json
+[2026-03-25T16:00:56.695Z] BATCH-START operator=hertz-ride-zurich airport=ZRH url=https://www.hertzride.com/en/locations/zurich/
+[2026-03-25T16:01:18.575Z] BATCH-OK 13 rentals for hertz-ride-milan@MXP → mxp-hertz-ride-milan.json
+[2026-03-25T16:01:18.575Z] BATCH-START operator=hertz-ride-geneva airport=GVA url=https://www.hertzride.com/en/locations/geneva/
+[2026-03-25T16:01:47.109Z] BATCH-OK 13 rentals for hertz-ride-frankfurt@FRA → fra-hertz-ride-frankfurt.json
+[2026-03-25T16:01:47.110Z] BATCH-START operator=hertz-ride-edinburgh airport=EDI url=https://www.hertzride.com/en/locations/edinburgh/
+[2026-03-25T16:02:05.720Z] BATCH-OK 14 rentals for hertz-ride-berlin@BER → ber-hertz-ride-berlin.json
+[2026-03-25T16:02:05.720Z] BATCH-START operator=hertz-ride-manchester airport=MAN url=https://www.hertzride.com/en/locations/manchester/
+[2026-03-25T16:02:20.645Z] BATCH-ERROR imtbike-madrid@MAD: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:02:20.645Z] BATCH-START operator=hertz-ride-venice airport=VCE url=https://www.hertzride.com/en/locations/venice/
+[2026-03-25T16:02:54.945Z] BATCH-OK 14 rentals for hertz-ride-edinburgh@EDI → edi-hertz-ride-edinburgh.json
+[2026-03-25T16:02:54.945Z] BATCH-START operator=hertz-ride-naples airport=NAP url=https://www.hertzride.com/en/locations/naples/
+[2026-03-25T16:02:59.313Z] BATCH-OK 13 rentals for hertz-ride-zurich@ZRH → zrh-hertz-ride-zurich.json
+[2026-03-25T16:02:59.313Z] BATCH-START operator=hertz-ride-amsterdam airport=AMS url=https://www.hertzride.com/en/locations/amsterdam/
+[2026-03-25T16:03:45.507Z] BATCH-OK 13 rentals for hertz-ride-manchester@MAN → man-hertz-ride-manchester.json
+[2026-03-25T16:03:45.508Z] BATCH-START operator=hertz-ride-brussels airport=BRU url=https://www.hertzride.com/en/locations/brussels/
+[2026-03-25T16:03:48.937Z] BATCH-OK 13 rentals for hertz-ride-geneva@GVA → gva-hertz-ride-geneva.json
+[2026-03-25T16:03:48.938Z] BATCH-START operator=hertz-ride-dublin airport=DUB url=https://www.hertzride.com/en/locations/dublin/
+[2026-03-25T16:04:22.654Z] BATCH-OK 14 rentals for hertz-ride-venice@VCE → vce-hertz-ride-venice.json
+[2026-03-25T16:04:22.654Z] BATCH-START operator=hertz-ride-copenhagen airport=CPH url=https://www.hertzride.com/en/locations/copenhagen/
+[2026-03-25T16:04:47.547Z] BATCH-OK 14 rentals for hertz-ride-amsterdam@AMS → ams-hertz-ride-amsterdam.json
+[2026-03-25T16:04:47.547Z] BATCH-START operator=hertz-ride-oslo airport=OSL url=https://www.hertzride.com/en/locations/oslo/
+[2026-03-25T16:04:55.276Z] BATCH-ERROR hertz-ride-naples@NAP: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:04:55.277Z] BATCH-START operator=hertz-ride-stockholm airport=ARN url=https://www.hertzride.com/en/locations/stockholm/
+[2026-03-25T16:05:13.585Z] BATCH-OK 14 rentals for hertz-ride-brussels@BRU → bru-hertz-ride-brussels.json
+[2026-03-25T16:05:13.585Z] BATCH-START operator=hertz-ride-porto airport=OPO url=https://www.hertzride.com/en/locations/porto/
+[2026-03-25T16:05:36.845Z] BATCH-OK 13 rentals for hertz-ride-copenhagen@CPH → cph-hertz-ride-copenhagen.json
+[2026-03-25T16:05:36.845Z] BATCH-START operator=hertz-ride-malaga airport=AGP url=https://www.hertzride.com/en/locations/malaga/
+[2026-03-25T16:06:06.586Z] BATCH-OK 14 rentals for hertz-ride-oslo@OSL → osl-hertz-ride-oslo.json
+[2026-03-25T16:06:06.586Z] BATCH-START operator=hertz-ride-nice airport=NCE url=https://www.hertzride.com/en/locations/nice/
+[2026-03-25T16:06:38.620Z] BATCH-OK 14 rentals for hertz-ride-nice@NCE → nce-hertz-ride-nice.json
+[2026-03-25T16:06:38.620Z] BATCH-START operator=hertz-ride-lyon airport=LYS url=https://www.hertzride.com/en/locations/lyon/
+[2026-03-25T16:06:47.352Z] BATCH-OK 14 rentals for hertz-ride-porto@OPO → opo-hertz-ride-porto.json
+[2026-03-25T16:06:47.352Z] BATCH-START operator=hertz-ride-hamburg airport=HAM url=https://www.hertzride.com/en/locations/hamburg/
+[2026-03-25T16:06:55.694Z] BATCH-ERROR hertz-ride-stockholm@ARN: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:06:55.694Z] BATCH-START operator=hertz-ride-dusseldorf airport=DUS url=https://www.hertzride.com/en/locations/dusseldorf/
+[2026-03-25T16:07:22.958Z] BATCH-OK 14 rentals for hertz-ride-lyon@LYS → lys-hertz-ride-lyon.json
+[2026-03-25T16:07:22.959Z] BATCH-START operator=hertz-ride-prague airport=PRG url=https://www.hertzride.com/en/locations/prague/
+[2026-03-25T16:07:30.070Z] BATCH-OK 14 rentals for hertz-ride-malaga@AGP → agp-hertz-ride-malaga.json
+[2026-03-25T16:07:30.070Z] BATCH-START operator=hertz-ride-budapest airport=BUD url=https://www.hertzride.com/en/locations/budapest/
+[2026-03-25T16:07:59.257Z] BATCH-OK 14 rentals for hertz-ride-dublin@DUB → dub-hertz-ride-dublin.json
+[2026-03-25T16:07:59.257Z] BATCH-START operator=hertz-ride-warsaw airport=WAW url=https://www.hertzride.com/en/locations/warsaw/
+[2026-03-25T16:08:21.110Z] BATCH-OK 14 rentals for hertz-ride-dusseldorf@DUS → dus-hertz-ride-dusseldorf.json
+[2026-03-25T16:08:21.110Z] BATCH-START operator=hertz-ride-munich airport=MUC url=https://www.hertzride.com/en/locations/munich/
+[2026-03-25T16:08:47.742Z] BATCH-ERROR hertz-ride-hamburg@HAM: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:08:47.742Z] BATCH-START operator=eaglerider-bcn airport=BCN url=https://www.eaglerider.com/barcelona-spain
+[2026-03-25T16:08:50.906Z] BATCH-OK 13 rentals for hertz-ride-munich@MUC → muc-hertz-ride-munich.json
+[2026-03-25T16:08:50.906Z] BATCH-START operator=eaglerider-cdg airport=CDG url=https://www.eaglerider.com/paris-france
+[2026-03-25T16:08:55.493Z] BATCH-OK 14 rentals for hertz-ride-warsaw@WAW → waw-hertz-ride-warsaw.json
+[2026-03-25T16:08:55.493Z] BATCH-START operator=eaglerider-fco airport=FCO url=https://www.eaglerider.com/rome-italy
+[2026-03-25T16:09:09.729Z] BATCH-WARN 0 rentals for eaglerider-cdg@CDG
+[2026-03-25T16:09:09.729Z] BATCH-START operator=imtbike-malaga airport=AGP url=https://www.imtbike.com/motorcycle-rentals-spain/malaga/
+[2026-03-25T16:09:29.165Z] BATCH-OK 22 rentals for eaglerider-bcn@BCN → bcn-eaglerider-bcn.json
+[2026-03-25T16:09:29.165Z] BATCH-START operator=hertz-ride-helsinki airport=HEL url=https://www.hertzride.com/en/locations/helsinki/
+[2026-03-25T16:09:30.489Z] BATCH-ERROR hertz-ride-budapest@BUD: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:09:30.492Z] BATCH-START operator=hertz-ride-catania airport=CTA url=https://www.hertzride.com/en/locations/catania/
+[2026-03-25T16:09:37.901Z] BATCH-OK 13 rentals for hertz-ride-prague@PRG → prg-hertz-ride-prague.json
+[2026-03-25T16:09:37.901Z] BATCH-START operator=hertz-ride-palma airport=PMI url=https://www.hertzride.com/en/locations/palma-de-mallorca/
+[2026-03-25T16:10:40.309Z] BATCH-OK 48 rentals for eaglerider-fco@FCO → fco-eaglerider-fco.json
+[2026-03-25T16:10:40.309Z] BATCH-START operator=hertz-ride-split airport=SPU url=https://www.hertzride.com/en/locations/split/
+[2026-03-25T16:10:40.849Z] BATCH-OK 11 rentals for hertz-ride-palma@PMI → pmi-hertz-ride-palma.json
+[2026-03-25T16:10:40.849Z] BATCH-START operator=hertz-ride-florence airport=FLR url=https://www.hertzride.com/en/locations/florence/
+[2026-03-25T16:11:01.152Z] BATCH-OK 6 rentals for imtbike-malaga@AGP → agp-imtbike-malaga.json
+[2026-03-25T16:11:22.223Z] BATCH-OK 14 rentals for hertz-ride-helsinki@HEL → hel-hertz-ride-helsinki.json
+[2026-03-25T16:11:30.783Z] BATCH-ERROR hertz-ride-catania@CTA: The scrape operation timed out before completing. This happens when a page takes too long to load, render, or process. Possible causes: (1) The website is slow or unresponsive, (2) The page has heavy JavaScript that takes time to execute, (3) The page is very large or has many resources to load, (4) Network latency is high. To fix this, try increasing the timeout parameter in your scrape request, or if using actions, ensure your selectors are correct and the page is ready before actions are executed.
+[2026-03-25T16:11:42.440Z] BATCH-OK 14 rentals for hertz-ride-florence@FLR → flr-hertz-ride-florence.json
+[2026-03-25T16:12:09.601Z] BATCH-OK 13 rentals for hertz-ride-split@SPU → spu-hertz-ride-split.json
+[2026-03-25T16:12:09.605Z] BATCH-DONE successes=36 warnings=1 failures=8 total_rentals=604
+[2026-03-25T16:12:09.879Z] MERGE 609 rentals from 40 files → master_fleet.json
+[2026-03-25T16:12:10.141Z] TRANSFORM injected=389 skipped=220 → rentals.js
+[2026-03-27T20:19:27.773Z] BATCH-RUN 6 targets, concurrency=5
+[2026-03-27T20:19:27.774Z] BATCH-START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-27T20:19:27.801Z] BATCH-START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-27T20:19:27.803Z] BATCH-START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-27T20:19:27.804Z] BATCH-START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-27T20:19:27.805Z] BATCH-START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-27T20:19:27.811Z] BATCH-ERROR hertz-ride-milan@MXP: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.811Z] BATCH-START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-27T20:19:27.813Z] BATCH-ERROR eagle-rider-mxp@MXP: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.814Z] BATCH-ERROR motorcycle-rental-europe-mxp@MXP: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.814Z] BATCH-ERROR superbike-rental-lhr@LHR: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.814Z] BATCH-ERROR hibike4u-lhr@LHR: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.816Z] BATCH-ERROR hertz-ride-paris@CDG: getaddrinfo EAI_AGAIN api.firecrawl.dev
+[2026-03-27T20:19:27.816Z] BATCH-DONE successes=0 warnings=0 failures=6 total_rentals=0
+[2026-03-27T20:19:45.576Z] BATCH-RUN 6 targets, concurrency=5
+[2026-03-27T20:19:45.577Z] BATCH-START operator=hertz-ride-milan airport=MXP url=https://www.hertzride.com/en/locations/milan/
+[2026-03-27T20:19:45.603Z] BATCH-START operator=eagle-rider-mxp airport=MXP url=https://www.eaglerider.com/milan-italy
+[2026-03-27T20:19:45.605Z] BATCH-START operator=motorcycle-rental-europe-mxp airport=MXP url=https://www.motorcycle-rental-europe.com/
+[2026-03-27T20:19:45.606Z] BATCH-START operator=superbike-rental-lhr airport=LHR url=https://www.superbikerental.co.uk/
+[2026-03-27T20:19:45.608Z] BATCH-START operator=hibike4u-lhr airport=LHR url=https://hibike4u.co.uk/
+[2026-03-27T20:20:18.500Z] BATCH-OK 6 rentals for hibike4u-lhr@LHR → lhr-hibike4u-lhr.json
+[2026-03-27T20:20:18.500Z] BATCH-START operator=hertz-ride-paris airport=CDG url=https://www.hertzride.com/en/locations/paris/
+[2026-03-27T20:20:22.967Z] BATCH-OK 20 rentals for superbike-rental-lhr@LHR → lhr-superbike-rental-lhr.json
+[2026-03-27T20:20:39.756Z] BATCH-OK 8 rentals for motorcycle-rental-europe-mxp@MXP → mxp-motorcycle-rental-europe-mxp.json
+[2026-03-27T20:21:01.827Z] BATCH-OK 11 rentals for hertz-ride-milan@MXP → mxp-hertz-ride-milan.json
+[2026-03-27T20:21:51.053Z] BATCH-OK 15 rentals for hertz-ride-paris@CDG → cdg-hertz-ride-paris.json
+[2026-03-27T20:21:54.990Z] BATCH-OK 21 rentals for eagle-rider-mxp@MXP → mxp-eagle-rider-mxp.json
+[2026-03-27T20:21:54.990Z] BATCH-DONE successes=6 warnings=0 failures=0 total_rentals=81
+[2026-03-27T20:21:55.022Z] MERGE 80 rentals from 6 files → master_fleet.json
+[2026-03-27T20:21:55.065Z] TRANSFORM injected_rentals=29 skipped_rentals=51 injected_operators=0

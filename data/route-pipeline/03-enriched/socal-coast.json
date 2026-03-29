@@ -1,0 +1,31 @@
+{
+  "destination_slug": "socal-coast",
+  "destination_name": "Southern California",
+  "enriched_at": "2026-03-28T23:29:45.479Z",
+  "model": "gpt-4.1-mini",
+  "provider": "openai",
+  "source_data": {
+    "telemetry_available": true,
+    "poi_available": true
+  },
+  "cinematic_pitch": "Southern California's mountain asphalt roads carve through a labyrinth of iconic summits and challenging passes, inviting riders to master advanced terrain while soaking in panoramic vistas of peaks like Toro and Santa Rosa. This is a journey defined by precision, elevation, and the rare luxury of solitude amid some of the region’s most storied natural landmarks.",
+  "ride_character": "An advanced mountain asphalt experience where each pass—from Saddle Junction to Champagne Pass—demands skillful control and rewards with sweeping, cinematic views.",
+  "best_season": "April through November — the mountain roads remain clear and accessible while the temperate climate enhances every ride under expansive blue skies.",
+  "premium_pois": [
+    {
+      "name": "Toro Peak",
+      "cinematic_description": "Rising to 8,717 feet, Toro Peak commands the landscape with its majestic presence, offering riders the chance to ascend near one of Southern California’s highest summits framed by rugged ridgelines and crisp alpine air.",
+      "rider_tip": "Prepare for rapid elevation changes and tight switchbacks that require steady throttle control and sharp focus."
+    },
+    {
+      "name": "Santa Rosa Mountain",
+      "cinematic_description": "Santa Rosa Mountain punctuates the horizon with its dramatic profile, where the road twists through ridges and saddles, delivering a tactile connection to the region’s geological grandeur and a visual feast of jagged peaks and valleys.",
+      "rider_tip": "Fuel up before the climb; services are sparse near the summit passes like Santa Rosa Summit."
+    },
+    {
+      "name": "Palomar Mountain",
+      "cinematic_description": "Known for its sweeping views and dense pine forests, Palomar Mountain offers a serene yet demanding ride, with asphalt ribboning through elevations that reveal the vastness of San Diego County’s mountainous heart.",
+      "rider_tip": "Watch for variable pavement conditions and be ready for cooler temperatures at altitude."
+    }
+  ]
+}

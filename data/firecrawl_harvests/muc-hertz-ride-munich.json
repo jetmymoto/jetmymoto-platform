@@ -1,0 +1,191 @@
+{
+  "operator": "hertz-ride-munich",
+  "airport": "MUC",
+  "url": "https://www.hertzride.com/en/locations/munich/",
+  "harvested_at": "2026-03-25T16:08:50.905Z",
+  "rental_count": 13,
+  "rentals": [
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "HONDA",
+      "model": "XL 750 TRANSALP",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "HONDA",
+      "model": "NX 500",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "VOGE",
+      "model": "900 DSX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "HONDA",
+      "model": "NC 750X",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "HONDA",
+      "model": "AFRICA TWIN 1100",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "Moto Morini",
+      "model": "X-Cape",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V2 S",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "DUCATI",
+      "model": "MULTISTRADA V4",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "DUCATI",
+      "model": "DesertX",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    },
+    {
+      "airport": "MUC",
+      "operator": "hertz-ride-munich",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "price_day": 21,
+      "currency": "EUR",
+      "compatible_destinations": [
+        "bavarian-alps",
+        "lake-bavaria",
+        "nuremberg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "operator": "motorent-ath",
+  "airport": "ATH",
+  "url": "https://www.motorent.gr/",
+  "harvested_at": "2026-03-29T19:20:34.268Z",
+  "terms": {
+    "security_deposit_amount": "",
+    "security_deposit_policy": "",
+    "cancellation_policy": "",
+    "terms_last_verified": "",
+    "source_terms_url": "https://motorent.gr/%ce%b3%ce%b5%ce%bd%ce%b9%ce%ba%ce%bf%ce%af-%cf%8c%cf%81%ce%bf%ce%b9-%ce%b5%ce%bd%ce%bf%ce%b9%ce%ba%ce%af%ce%b1%cf%83%ce%b7%cf%82-%ce%bc%ce%bf%cf%84%ce%bf%cf%83%cf%85%ce%ba%ce%bb%ce%ad%cf%84%ce%b1/"
+  }
+}

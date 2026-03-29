@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { getCanonicalPaths } from "@/utils/navigationTargets";
 
 const GlobalCTA = () => {
+  const location = useLocation();
+  const paths = getCanonicalPaths(location.search);
 
   return (
     <section className="py-24 text-center border-t border-white/5">
@@ -14,7 +17,7 @@ const GlobalCTA = () => {
       </p>
 
       <Link
-        to="/moto-airlift"
+        to={paths.logistics}
         className="px-8 py-4 border border-white/10 hover:border-amber-500 transition"
       >
         Request Global Deployment Strategy

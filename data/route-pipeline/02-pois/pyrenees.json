@@ -1,0 +1,11 @@
+{
+  "destination_slug": "pyrenees",
+  "destination_name": "Pyrenees",
+  "sources": [
+    "internal_proprietary_db",
+    "scraped_target_list"
+  ],
+  "processed_at": "2026-03-29T00:11:10.318Z",
+  "poi_count": 0,
+  "pois": []
+}
