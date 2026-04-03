@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+set timeout 10
+spawn firebase login:ci --no-localhost
+expect "Paste authorization code here:"
+send "4/0Aci98E91OTPkekkO6D_dSWRBOiPEtMlq6So2cg-Wa3BYrkt5X2AQvxZjfSj_OdZ5WeJ28g\r"
+expect eof
