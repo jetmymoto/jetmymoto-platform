@@ -5,3 +5,17 @@ dist
 build
 .firebase
 .DS_Store
+serviceAccountKey.json
+.mcp-servers
+
+.cache/
+.claude/
+.codex
+.gemini/
+.vscode/
+*.log
+exports/
+screenshots/
+scripts/temp_frames/
+missions/generation-report.json
+
