@@ -1,0 +1,79 @@
+{
+  "costa-balmera": {
+    "name": "Costa Balmera",
+    "slug": "costa-balmera",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.2416279,
+    "lng": 7.4320659,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "costa-cargadore": {
+    "name": "Costa Cargadore",
+    "slug": "costa-cargadore",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1452102,
+    "lng": 11.1244887,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 430m"
+  },
+  "costa-del-vento": {
+    "name": "Costa del Vento",
+    "slug": "costa-del-vento",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9633202,
+    "lng": 9.230615,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "costa-grant": {
+    "name": "Costa Grant",
+    "slug": "costa-grant",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.5211489,
+    "lng": 7.0748786,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1650m"
+  },
+  "costa-pelata": {
+    "name": "Costa Pelata",
+    "slug": "costa-pelata",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9587792,
+    "lng": 9.1928251,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "costa-peramula": {
+    "name": "Costa Peramula",
+    "slug": "costa-peramula",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1585693,
+    "lng": 12.0742658,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "costolo": {
+    "name": "Costolo",
+    "slug": "costolo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1817166,
+    "lng": 10.6455124,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

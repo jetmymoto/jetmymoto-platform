@@ -1,0 +1,13 @@
+{
+  "3eme-panoramique-du-glacier-des-bossons": {
+    "name": "3ème Panoramique du Glacier des Bossons",
+    "slug": "3eme-panoramique-du-glacier-des-bossons",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8933047,
+    "lng": 6.8560687,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1564m"
+  }
+}

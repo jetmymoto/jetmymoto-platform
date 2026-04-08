@@ -1,0 +1,145 @@
+{
+  "col-accarias": {
+    "name": "Col Accarias",
+    "slug": "col-accarias",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8360246,
+    "lng": 5.7375093,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 892m"
+  },
+  "col-agnel": {
+    "name": "Col Agnel",
+    "slug": "col-agnel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6839269,
+    "lng": 6.9795824,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "col-agnel-colle-dellagnello": {
+    "name": "Col Agnel / Colle dell'Agnello",
+    "slug": "col-agnel-colle-dellagnello",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6839194,
+    "lng": 6.9795741,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2744m"
+  },
+  "col-agnel-colle-dellagnello-602": {
+    "name": "Col Agnel / Colle dell'Agnello",
+    "slug": "col-agnel-colle-dellagnello-602",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6839194,
+    "lng": 6.9795741,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-albert": {
+    "name": "Col Albert",
+    "slug": "col-albert",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6245127,
+    "lng": 6.8547552,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2846m"
+  },
+  "col-albert-3325": {
+    "name": "Col Albert",
+    "slug": "col-albert-3325",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6245127,
+    "lng": 6.8547552,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-allonge": {
+    "name": "Col Allongé",
+    "slug": "col-allonge",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6340954,
+    "lng": 6.8572382,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2838m"
+  },
+  "col-allonge-2777": {
+    "name": "Col Allongé",
+    "slug": "col-allonge-2777",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6340954,
+    "lng": 6.8572382,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-amic": {
+    "name": "Col Amic",
+    "slug": "col-amic",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8754863,
+    "lng": 7.1273463,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 828m"
+  },
+  "col-amic-235": {
+    "name": "Col Amic",
+    "slug": "col-amic-235",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.8754863,
+    "lng": 7.1273463,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-armand-charlet": {
+    "name": "Col Armand Charlet",
+    "slug": "col-armand-charlet",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9339051,
+    "lng": 6.9749886,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3998m"
+  },
+  "col-armand-charlet-971": {
+    "name": "Col Armand Charlet",
+    "slug": "col-armand-charlet-971",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.9339051,
+    "lng": 6.9749886,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-astier": {
+    "name": "Col Astier",
+    "slug": "col-astier",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.7395053,
+    "lng": 5.7093313,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

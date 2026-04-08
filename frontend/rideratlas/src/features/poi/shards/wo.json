@@ -1,0 +1,233 @@
+{
+  "wodeturm-1590m": {
+    "name": "Wodeturm (1590m)",
+    "slug": "wodeturm-1590m",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1022982,
+    "lng": 10.6447555,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wohrenberg": {
+    "name": "Wohrenberg",
+    "slug": "wohrenberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7095279,
+    "lng": 9.2680599,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolfermoos-460m": {
+    "name": "Wolfermoos 460m",
+    "slug": "wolfermoos-460m",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6921025,
+    "lng": 8.7874445,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 460m"
+  },
+  "wolfgang-lang-aussicht": {
+    "name": "Wolfgang Lang Aussicht",
+    "slug": "wolfgang-lang-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9968718,
+    "lng": 15.9506665,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolfgangpass": {
+    "name": "Wolfgangpass",
+    "slug": "wolfgangpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8326555,
+    "lng": 9.8537391,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1630m"
+  },
+  "wolfgangpass-2274": {
+    "name": "Wolfgangpass",
+    "slug": "wolfgangpass-2274",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8326555,
+    "lng": 9.8537391,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wolflescharte": {
+    "name": "Wölflescharte",
+    "slug": "wolflescharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8536822,
+    "lng": 10.5922034,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2842m"
+  },
+  "wolflescharte-1063": {
+    "name": "Wölflescharte",
+    "slug": "wolflescharte-1063",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8536822,
+    "lng": 10.5922034,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wolfsfelsen": {
+    "name": "Wolfsfelsen",
+    "slug": "wolfsfelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9564403,
+    "lng": 6.9287883,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolfskanzel": {
+    "name": "Wolfskanzel",
+    "slug": "wolfskanzel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4757143,
+    "lng": 8.7236135,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolfsknobel": {
+    "name": "Wolfsknobel",
+    "slug": "wolfsknobel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6310887,
+    "lng": 10.4531666,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolfsprung-aussicht": {
+    "name": "Wolfsprung Aussicht",
+    "slug": "wolfsprung-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9844647,
+    "lng": 8.6117991,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolkensteinerberg": {
+    "name": "Wolkensteinerberg",
+    "slug": "wolkensteinerberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6750825,
+    "lng": 8.8418724,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wolkerkogel": {
+    "name": "Wölkerkogel",
+    "slug": "wolkerkogel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0803875,
+    "lng": 14.9247241,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wollbachjoch": {
+    "name": "Wollbachjoch",
+    "slug": "wollbachjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0449829,
+    "lng": 11.9717395,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2832m"
+  },
+  "wollbachjoch-469": {
+    "name": "Wollbachjoch",
+    "slug": "wollbachjoch-469",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0449829,
+    "lng": 11.9717395,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wood-bridge-platform": {
+    "name": "Wood Bridge platform",
+    "slug": "wood-bridge-platform",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1468735,
+    "lng": 9.5258559,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 650m"
+  },
+  "worberg": {
+    "name": "Worberg",
+    "slug": "worberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8179956,
+    "lng": 8.6226986,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wornersattel": {
+    "name": "Wörnersattel",
+    "slug": "wornersattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4537735,
+    "lng": 11.3331928,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1989m"
+  },
+  "wostersattel": {
+    "name": "Wöstersattel",
+    "slug": "wostersattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2193404,
+    "lng": 10.1853392,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2175m"
+  },
+  "wostersattel-907": {
+    "name": "Wöstersattel",
+    "slug": "wostersattel-907",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.2193404,
+    "lng": 10.1853392,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

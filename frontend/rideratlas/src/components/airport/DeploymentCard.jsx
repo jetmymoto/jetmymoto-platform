@@ -53,12 +53,12 @@ const DeploymentGraphic = ({ code, country, coords }) => {
 
           <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-300">
             <Crosshair size={10} className="text-amber-500"/>
-            LAT: {coords?.lat}
+            LAT: {coords?.lat ?? "--"}
           </div>
 
           <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-300">
             <Compass size={10} className="text-amber-500"/>
-            LNG: {coords?.long}
+            LNG: {coords?.long ?? "--"}
           </div>
 
         </div>
@@ -140,7 +140,7 @@ export default function DeploymentCard({ mission, to }) {
 
               <div className="text-[10px] text-zinc-300 flex items-center gap-2">
                 <Tag size={10}/>
-                €{rental?.price}
+                {rental?.price != null ? `€${rental.price}` : "—"}
               </div>
 
             </div>
@@ -153,7 +153,7 @@ export default function DeploymentCard({ mission, to }) {
 
               <div className="text-[10px] text-zinc-300 flex items-center gap-2">
                 <Bike size={10}/>
-                {rental?.class}
+                {rental?.class || "—"}
               </div>
 
             </div>

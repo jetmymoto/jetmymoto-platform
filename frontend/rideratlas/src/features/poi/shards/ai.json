@@ -1,0 +1,79 @@
+{
+  "aia-de-canon": {
+    "name": "Aia de Canon",
+    "slug": "aia-de-canon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1868681,
+    "lng": 11.5864254,
+    "nearest_airport": "VCE",
+    "description": "Punto panoramico dove sostava con le sue pecore il pastore Canon. Il ricovero non esiste più."
+  },
+  "aiguille-rouge": {
+    "name": "Aiguille Rouge",
+    "slug": "aiguille-rouge",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.5519846,
+    "lng": 6.8486789,
+    "nearest_airport": "TRN",
+    "description": "Nice view on all the major peaks including Montblanc."
+  },
+  "aiguillette-des-houches": {
+    "name": "Aiguillette des Houches",
+    "slug": "aiguillette-des-houches",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9213583,
+    "lng": 6.8053923,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2285m"
+  },
+  "aiguillette-des-houches-3405": {
+    "name": "Aiguillette des Houches",
+    "slug": "aiguillette-des-houches-3405",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.9213583,
+    "lng": 6.8053923,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "aiguillons-de-brasse": {
+    "name": "Aiguillons de Brasse",
+    "slug": "aiguillons-de-brasse",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0258925,
+    "lng": 6.2904122,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aire-de-repos-de-porrentruy": {
+    "name": "Aire de repos de Porrentruy",
+    "slug": "aire-de-repos-de-porrentruy",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4044241,
+    "lng": 7.0598633,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "airwalk-kolnbreinsperre": {
+    "name": "Airwalk Kölnbreinsperre",
+    "slug": "airwalk-kolnbreinsperre",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0794923,
+    "lng": 13.3404918,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

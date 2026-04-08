@@ -1,0 +1,13 @@
+{
+  "col-isabelle": {
+    "name": "Col Isabelle",
+    "slug": "col-isabelle",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.5015871,
+    "lng": 5.9961771,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1002m"
+  }
+}

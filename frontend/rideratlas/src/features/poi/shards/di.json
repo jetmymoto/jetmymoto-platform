@@ -1,0 +1,112 @@
+{
+  "dichtlalm": {
+    "name": "Dichtlalm",
+    "slug": "dichtlalm",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.911185,
+    "lng": 13.2411316,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "didis-bankerl": {
+    "name": "Didis Bankerl",
+    "slug": "didis-bankerl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.258651,
+    "lng": 11.16214,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "die-kanzel-ausgang-grotte": {
+    "name": "Die Kanzel - Ausgang Grotte",
+    "slug": "die-kanzel-ausgang-grotte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1616279,
+    "lng": 14.6428396,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "die-schone-aussicht": {
+    "name": "Die \"Schöne Aussicht\"",
+    "slug": "die-schone-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3442728,
+    "lng": 11.7171538,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "dielenbergflue": {
+    "name": "Dielenbergflue",
+    "slug": "dielenbergflue",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3979268,
+    "lng": 7.7647397,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 796m"
+  },
+  "dientner-sattel": {
+    "name": "Dientner Sattel",
+    "slug": "dientner-sattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3915377,
+    "lng": 13.0575304,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1370m"
+  },
+  "dientner-sattel-2832": {
+    "name": "Dientner Sattel",
+    "slug": "dientner-sattel-2832",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3915377,
+    "lng": 13.0575304,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "diga-della-verzasca": {
+    "name": "Diga della Verzasca",
+    "slug": "diga-della-verzasca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1966119,
+    "lng": 8.8485317,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "dinosaurierspuren": {
+    "name": "Dinosaurierspuren",
+    "slug": "dinosaurierspuren",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2359374,
+    "lng": 7.4771284,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "dirrengrind": {
+    "name": "Dirrengrind",
+    "slug": "dirrengrind",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7794613,
+    "lng": 8.036079,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1850m"
+  }
+}

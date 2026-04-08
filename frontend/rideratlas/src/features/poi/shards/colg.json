@@ -1,0 +1,156 @@
+{
+  "col-garnier": {
+    "name": "Col Garnier",
+    "slug": "col-garnier",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.716542,
+    "lng": 6.6890444,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2279m"
+  },
+  "col-garnier-2199": {
+    "name": "Col Garnier",
+    "slug": "col-garnier-2199",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.716542,
+    "lng": 6.6890444,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-gimont": {
+    "name": "Col Gimont",
+    "slug": "col-gimont",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9026736,
+    "lng": 6.761386,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2436m"
+  },
+  "col-gimont-3470": {
+    "name": "Col Gimont",
+    "slug": "col-gimont-3470",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.9026736,
+    "lng": 6.761386,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-girardin": {
+    "name": "Col Girardin",
+    "slug": "col-girardin",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6076676,
+    "lng": 6.8210935,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2699m"
+  },
+  "col-girardin-280": {
+    "name": "Col Girardin",
+    "slug": "col-girardin-280",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6076676,
+    "lng": 6.8210935,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-giron": {
+    "name": "Col Giron",
+    "slug": "col-giron",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6960205,
+    "lng": 7.5657729,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2602m"
+  },
+  "col-giron-3730": {
+    "name": "Col Giron",
+    "slug": "col-giron-3730",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6960205,
+    "lng": 7.5657729,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-giulian": {
+    "name": "Col Giulian",
+    "slug": "col-giulian",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8458206,
+    "lng": 7.0673465,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2451m"
+  },
+  "col-giulian-1841": {
+    "name": "Col Giulian",
+    "slug": "col-giulian-1841",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.8458206,
+    "lng": 7.0673465,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-gourdin": {
+    "name": "Col Gourdin",
+    "slug": "col-gourdin",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8129376,
+    "lng": 6.818173,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2812m"
+  },
+  "col-gourdin-2915": {
+    "name": "Col Gourdin",
+    "slug": "col-gourdin-2915",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.8129376,
+    "lng": 6.818173,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-grepillon-col-petit-ferret": {
+    "name": "Col Grépillon / Col Petit Ferret",
+    "slug": "col-grepillon-col-petit-ferret",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8985011,
+    "lng": 7.068298,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2490m"
+  },
+  "col-grepillon-col-petit-ferret-2468": {
+    "name": "Col Grépillon / Col Petit Ferret",
+    "slug": "col-grepillon-col-petit-ferret-2468",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8985011,
+    "lng": 7.068298,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

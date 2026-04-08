@@ -1,0 +1,123 @@
+{
+  "slap-boka": {
+    "name": "Slap Boka",
+    "slug": "slap-boka",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3189279,
+    "lng": 13.485562,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slap-lahomniski-sopot": {
+    "name": "Slap Lahomniški sopot",
+    "slug": "slap-lahomniski-sopot",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1446075,
+    "lng": 15.2962502,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slap-savica": {
+    "name": "Slap Savica",
+    "slug": "slap-savica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2927009,
+    "lng": 13.7970597,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slap-soska-pot": {
+    "name": "Slap soska pot",
+    "slug": "slap-soska-pot",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2997053,
+    "lng": 13.6785421,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slap-waterfall": {
+    "name": "Slap / Waterfall",
+    "slug": "slap-waterfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6659017,
+    "lng": 13.9909488,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slemenova-spica": {
+    "name": "Slemenova špica",
+    "slug": "slemenova-spica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4460072,
+    "lng": 13.7264851,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1911m"
+  },
+  "slemenova-spica-1738": {
+    "name": "Slemenova špica",
+    "slug": "slemenova-spica-1738",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4460072,
+    "lng": 13.7264851,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "sljeme": {
+    "name": "Sljeme",
+    "slug": "sljeme",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.460706,
+    "lng": 14.5058539,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slowenienblick": {
+    "name": "Slowenienblick",
+    "slug": "slowenienblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9521756,
+    "lng": 15.2435222,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slunj-fortress": {
+    "name": "Slunj Fortress",
+    "slug": "slunj-fortress",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1182381,
+    "lng": 15.5861949,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "slunjcica": {
+    "name": "Slunjčica",
+    "slug": "slunjcica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1174736,
+    "lng": 15.5877866,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

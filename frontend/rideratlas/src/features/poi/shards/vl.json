@@ -1,0 +1,13 @@
+{
+  "vlidikovac-fortica": {
+    "name": "Vlidikovac Fortica",
+    "slug": "vlidikovac-fortica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0866351,
+    "lng": 14.1253212,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

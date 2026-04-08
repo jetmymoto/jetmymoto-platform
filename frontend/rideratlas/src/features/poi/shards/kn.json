@@ -1,0 +1,134 @@
+{
+  "knabl-bankerl": {
+    "name": "Knabl-Bankerl",
+    "slug": "knabl-bankerl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8227944,
+    "lng": 15.8920384,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "knappenkanzel": {
+    "name": "Knappenkanzel",
+    "slug": "knappenkanzel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2313974,
+    "lng": 12.2659255,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "knaudachtorl": {
+    "name": "Knaudachtörl",
+    "slug": "knaudachtorl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3825214,
+    "lng": 14.5423283,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2023m"
+  },
+  "knaudachtorl-2035": {
+    "name": "Knaudachtörl",
+    "slug": "knaudachtorl-2035",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3825214,
+    "lng": 14.5423283,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "kneja": {
+    "name": "Kneja",
+    "slug": "kneja",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2504677,
+    "lng": 15.1748805,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "knepsovo-sedlo": {
+    "name": "Knepsovo sedlo",
+    "slug": "knepsovo-sedlo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5045779,
+    "lng": 14.7665665,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2012m"
+  },
+  "knepsovo-sedlo-1960": {
+    "name": "Knepsovo sedlo",
+    "slug": "knepsovo-sedlo-1960",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5045779,
+    "lng": 14.7665665,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "kniepass": {
+    "name": "Kniepass",
+    "slug": "kniepass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5265573,
+    "lng": 10.709072,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 872m"
+  },
+  "kniepass-157": {
+    "name": "Kniepass",
+    "slug": "kniepass-157",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.5265573,
+    "lng": 10.709072,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "kniepass-la-serra": {
+    "name": "Kniepass - La Serra",
+    "slug": "kniepass-la-serra",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7888675,
+    "lng": 11.8713767,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "knollerhag": {
+    "name": "Knollerhag",
+    "slug": "knollerhag",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7243271,
+    "lng": 10.4458362,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "knottnkino": {
+    "name": "Knottnkino",
+    "slug": "knottnkino",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6200792,
+    "lng": 11.2143559,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

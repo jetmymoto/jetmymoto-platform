@@ -1,0 +1,35 @@
+{
+  "pyhrnpass": {
+    "name": "Pyhrnpass",
+    "slug": "pyhrnpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6190877,
+    "lng": 14.2979681,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 954m"
+  },
+  "pyhrnpass-62": {
+    "name": "Pyhrnpass",
+    "slug": "pyhrnpass-62",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.6190877,
+    "lng": 14.2979681,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "pyrkerhohe": {
+    "name": "Pyrkerhöhe",
+    "slug": "pyrkerhohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.168057,
+    "lng": 13.0944353,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

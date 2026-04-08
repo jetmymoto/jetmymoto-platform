@@ -1,0 +1,101 @@
+{
+  "sv-jakob": {
+    "name": "Sv. Jakob",
+    "slug": "sv-jakob",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.104987,
+    "lng": 14.3690675,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sv-jost-nad-kranjem": {
+    "name": "Sv. Jošt nad Kranjem",
+    "slug": "sv-jost-nad-kranjem",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2427444,
+    "lng": 14.3030308,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 847m"
+  },
+  "sv-lovrenc": {
+    "name": "Sv. Lovrenc",
+    "slug": "sv-lovrenc",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3261889,
+    "lng": 14.3924325,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sv-rok": {
+    "name": "Sv. Rok",
+    "slug": "sv-rok",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2248769,
+    "lng": 15.5224954,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 369m"
+  },
+  "sveta-helena": {
+    "name": "Sveta Helena",
+    "slug": "sveta-helena",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1729014,
+    "lng": 15.4509821,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sveta-katarina": {
+    "name": "Sveta Katarina",
+    "slug": "sveta-katarina",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.854701,
+    "lng": 13.7260826,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sveti-juraj-vrh-brda": {
+    "name": "Sveti Juraj vrh brda",
+    "slug": "sveti-juraj-vrh-brda",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3772808,
+    "lng": 13.7591873,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sveti-peter": {
+    "name": "Sveti Peter",
+    "slug": "sveti-peter",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3829633,
+    "lng": 14.1933083,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "svetog-nikole": {
+    "name": "Svetog Nikole",
+    "slug": "svetog-nikole",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7552808,
+    "lng": 15.7420527,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 40m"
+  }
+}

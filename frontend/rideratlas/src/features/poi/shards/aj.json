@@ -1,0 +1,13 @@
+{
+  "ajdna-nad-potoki": {
+    "name": "Ajdna nad Potoki",
+    "slug": "ajdna-nad-potoki",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4209095,
+    "lng": 14.1307069,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kybfelsen": {
+    "name": "Kybfelsen",
+    "slug": "kybfelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9607842,
+    "lng": 7.8849218,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 812m"
+  },
+  "kybun-tower": {
+    "name": "Kybun Tower",
+    "slug": "kybun-tower",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4999508,
+    "lng": 9.3945085,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

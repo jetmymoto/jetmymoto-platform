@@ -1,0 +1,90 @@
+{
+  "urfahrner-spitz": {
+    "name": "Urfahrner Spitz",
+    "slug": "urfahrner-spitz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8752294,
+    "lng": 12.3887007,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "urkundsattel": {
+    "name": "Urkundsattel",
+    "slug": "urkundsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8922115,
+    "lng": 10.8113485,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3033m"
+  },
+  "urkundsattel-1026": {
+    "name": "Urkundsattel",
+    "slug": "urkundsattel-1026",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8922115,
+    "lng": 10.8113485,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "urseeblick": {
+    "name": "Urseeblick",
+    "slug": "urseeblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7393566,
+    "lng": 10.0194235,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ursprungpass": {
+    "name": "Ursprungpass",
+    "slug": "ursprungpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.61646,
+    "lng": 12.0216625,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 836m"
+  },
+  "ursprungpass-70": {
+    "name": "Ursprungpass",
+    "slug": "ursprungpass-70",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.61646,
+    "lng": 12.0216625,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ursprungssattel": {
+    "name": "Ursprungssattel",
+    "slug": "ursprungssattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3211745,
+    "lng": 11.2449566,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2095m"
+  },
+  "ursprungssattel-1100": {
+    "name": "Ursprungssattel",
+    "slug": "ursprungssattel-1100",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3211745,
+    "lng": 11.2449566,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "i-brusai": {
+    "name": "I Brusai",
+    "slug": "i-brusai",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7929838,
+    "lng": 10.9927438,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "iberg-aussicht": {
+    "name": "Iberg-Aussicht",
+    "slug": "iberg-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6322756,
+    "lng": 10.0460944,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ibergeregg": {
+    "name": "Ibergeregg",
+    "slug": "ibergeregg",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0174278,
+    "lng": 8.7332101,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1406m"
+  },
+  "ibergeregg-3683": {
+    "name": "Ibergeregg",
+    "slug": "ibergeregg-3683",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0174278,
+    "lng": 8.7332101,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ibergflue": {
+    "name": "Ibergflue",
+    "slug": "ibergflue",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.463287,
+    "lng": 8.1125735,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ibsenplatz": {
+    "name": "Ibsenplatz",
+    "slug": "ibsenplatz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.943434,
+    "lng": 11.4405821,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

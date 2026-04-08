@@ -1,0 +1,35 @@
+{
+  "uscita-dalla-gola-delle-saline": {
+    "name": "Uscita dalla gola delle Saline",
+    "slug": "uscita-dalla-gola-delle-saline",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1614609,
+    "lng": 7.7406399,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "usserie-nanzlicke": {
+    "name": "Üsserie Nanzlicke",
+    "slug": "usserie-nanzlicke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2579545,
+    "lng": 7.9818908,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2602m"
+  },
+  "usserie-nanzlicke-190": {
+    "name": "Üsserie Nanzlicke",
+    "slug": "usserie-nanzlicke-190",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2579545,
+    "lng": 7.9818908,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "psosser-buhl": {
+    "name": "Psosser Bühl",
+    "slug": "psosser-buhl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.483683,
+    "lng": 11.4584123,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

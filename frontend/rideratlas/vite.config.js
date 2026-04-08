@@ -14,7 +14,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // ── Vendor chunks ──
           if (id.includes("node_modules")) {
             if (id.includes("react-dom") || id.includes("react-router") || id.includes("/react/")) {
               return "vendor-react";
@@ -28,53 +27,65 @@ export default defineConfig({
             if (id.includes("lucide-react")) {
               return "vendor-icons";
             }
-            if (id.includes("cytoscape") || id.includes("@react-google-maps")) {
+            if (id.includes("mapbox-gl") || id.includes("cytoscape") || id.includes("@react-google-maps")) {
               return "vendor-maps";
             }
           }
 
-          // ── Graph data chunks ──
-          // networkGraph.js is the assembler that wires core + patriot + rentals.
-          // Keep it in the entry chunk to avoid circular chunk dependencies.
-          if (id.includes("/core/network/networkGraph") || id.includes("/core/network/graphHealthCheck")) {
-            return undefined;
+          if (id.includes("/src/features/poi/shards/")) {
+            const match = id.match(/\/shards\/([a-z0-9]+|misc)\.json$/);
+            return match ? `graph-poi-${match[1]}` : "graph-poi-data";
           }
-          // buildRentalGraph.js is only needed from the rentals shard loader.
-          // Keep it out of graph-core so rental source data stays off the eager path.
+
+          if (id.includes("/src/features/poi/poiFilteredShard")) {
+            return "graph-poi-runtime";
+          }
+
+          if (id.includes("/src/features/poi/poiFilteredBucketIndex")) {
+            return "graph-poi-runtime";
+          }
+
           if (id.includes("/core/network/buildRentalGraph")) {
             return "graph-rentals";
           }
-          // graphOverlayShard.js is async-imported — let Rollup split it naturally.
-          // Forcing it into graph-core would pull rental formatters into sync path.
+
           if (id.includes("/core/network/graphOverlayShard")) {
             return "graph-overlay-shard";
           }
+
           if (id.includes("/core/patriot/")) {
             return "graph-patriot";
           }
-          if (id.includes("/core/network/")) {
-            return "graph-core";
+
+          if (id.includes("/core/visual/")) {
+            return "graph-visual";
           }
 
-          // ── Rental data ──
           if (id.includes("/features/rentals/data/") || id.includes("/features/rentals/utils/")) {
             return "graph-rentals";
           }
 
-          // ── Airport data ──
           if (id.includes("/features/airport/data/") || id.includes("/features/airport/network/")) {
-            return "graph-core";
+            return "graph-airports";
           }
 
-          // ── Route/destination data ──
           if (id.includes("/features/routes/data/") || id.includes("/features/rides/rideRegions")) {
-            return "graph-core";
+            return "graph-routes";
           }
 
-          // ── Operator data ──
-          if (id.includes("/features/operators/")) {
-            return "graph-rentals";
+          if (id.includes("/core/network/")) {
+            return "graph-runtime";
           }
+
+          if (id.includes("/pages/admin/") || id.includes("/pages/AdminDashboard") || id.includes("/pages/AdminPostersPage")) {
+            return "admin";
+          }
+
+          if (id.includes("/pages/Mission") || id.includes("/pages/PoolPage") || id.includes("/pages/HangarPage")) {
+            return "mission-tools";
+          }
+
+          return undefined;
         },
       },
     },

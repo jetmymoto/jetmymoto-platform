@@ -1,0 +1,24 @@
+{
+  "f-da-lavaz-2510m": {
+    "name": "F. da Lavaz 2510m",
+    "slug": "f-da-lavaz-2510m",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6399337,
+    "lng": 8.9142844,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2510m"
+  },
+  "f-da-lavaz-2510m-3851": {
+    "name": "F. da Lavaz 2510m",
+    "slug": "f-da-lavaz-2510m-3851",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.6399337,
+    "lng": 8.9142844,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

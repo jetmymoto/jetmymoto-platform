@@ -1,0 +1,13 @@
+{
+  "paarseenblick": {
+    "name": "Paarseenblick",
+    "slug": "paarseenblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2758382,
+    "lng": 13.1116814,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

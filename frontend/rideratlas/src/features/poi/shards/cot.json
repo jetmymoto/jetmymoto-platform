@@ -1,0 +1,57 @@
+{
+  "cote-de-champagne": {
+    "name": "Côte de Champagne",
+    "slug": "cote-de-champagne",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0319096,
+    "lng": 5.8070178,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cote-de-megeve": {
+    "name": "Côte de Megeve",
+    "slug": "cote-de-megeve",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8679251,
+    "lng": 6.6277989,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1096m"
+  },
+  "cote-de-montcusel": {
+    "name": "Côte de Montcusel",
+    "slug": "cote-de-montcusel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3580587,
+    "lng": 5.6663449,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 673m"
+  },
+  "cote-de-quinquambaye": {
+    "name": "Côte de Quinquambaye",
+    "slug": "cote-de-quinquambaye",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8684227,
+    "lng": 5.5377994,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1750m"
+  },
+  "cotolivier": {
+    "name": "Cotolivier",
+    "slug": "cotolivier",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0159072,
+    "lng": 6.796188,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

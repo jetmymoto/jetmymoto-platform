@@ -1,0 +1,13 @@
+{
+  "bsangtenfluh": {
+    "name": "Bsangtenfluh",
+    "slug": "bsangtenfluh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7459312,
+    "lng": 8.1639285,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

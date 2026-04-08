@@ -1,0 +1,13 @@
+{
+  "passwang": {
+    "name": "Passwang",
+    "slug": "passwang",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3672873,
+    "lng": 7.6803674,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

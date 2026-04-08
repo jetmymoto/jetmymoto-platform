@@ -33,32 +33,32 @@ function OperatorCard({ operator, fleetCount, onSelect, index }) {
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.06, duration: 0.35 }}
-      className="group flex h-[156px] cursor-pointer flex-col justify-between rounded-[24px] border border-white/10 bg-[#121212] p-5 text-left transition-all duration-400 hover:-translate-y-1 hover:border-[#CDA755]/40 hover:shadow-[0_20px_60px_rgba(167,99,48,0.18)] focus:outline-none focus:ring-2 focus:ring-[#CDA755]/60"
+      className="group flex h-[156px] cursor-pointer flex-col justify-between border border-white/5 bg-[#050505] p-6 text-left transition-all duration-400 hover:-translate-y-1 hover:border-[#CDA755]/40 hover:shadow-[0_0_30px_rgba(205,167,85,0.15)] focus:outline-none"
       aria-label={`View fleet from ${operator.name}: ${fleetCount} machines`}
     >
-      <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#A76330]/30 bg-[#A76330]/10 text-[#CDA755]">
-          <Building2 size={16} />
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#CDA755]/20 bg-[#CDA755]/5 text-[#CDA755]">
+          <Building2 size={18} />
         </div>
         <div className="min-w-0 flex-1">
-          <h3 className="truncate text-sm font-bold uppercase tracking-[0.08em] text-white">
+          <h3 className="truncate font-headline text-2xl font-bold uppercase tracking-[0.05em] text-white">
             {operator.name}
           </h3>
-          <p className="mt-0.5 text-[10px] uppercase tracking-[0.2em] text-white/40">
-            {operator.type === "global" ? "Global Partner" : "Local Specialist"}
-            {operator.country ? ` · ${operator.country}` : ""}
+          <p className="mt-1 text-[9px] font-mono uppercase tracking-widest text-[#CDA755]/70">
+            {operator.type === "global" ? "GLOBAL PARTNER" : "LOCAL SPECIALIST"}
+            {operator.country ? ` // ${operator.country}` : ""}
           </p>
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-[0.22em] text-white/45 tabular-nums">
-          <Bike size={12} className="text-[#CDA755]" />
-          {fleetCount} machine{fleetCount !== 1 ? "s" : ""}
+      <div className="flex items-center justify-between mt-auto">
+        <div className="flex items-center gap-2 text-[10px] font-mono font-bold uppercase tracking-widest text-white/40 tabular-nums">
+          <Bike size={14} className="text-[#CDA755]" />
+          {fleetCount} ASSET{fleetCount !== 1 ? "S" : ""}
         </div>
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-[#A76330]/40 bg-[#A76330]/8 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#CDA755] transition-all group-hover:border-[#CDA755]/60 group-hover:bg-[#CDA755]/15">
-          View Fleet
-          <ChevronRight size={12} />
+        <span className="inline-flex items-center gap-2 border border-[#CDA755]/30 bg-transparent px-4 py-2 text-[9px] font-mono font-bold uppercase tracking-widest text-[#CDA755] transition-all group-hover:bg-[#CDA755] group-hover:text-black">
+          ACCESS FLEET
+          <ChevronRight size={14} />
         </span>
       </div>
     </motion.button>

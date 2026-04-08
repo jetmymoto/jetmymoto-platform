@@ -1,0 +1,13 @@
+{
+  "ojstra-pec": {
+    "name": "Ojstra peč",
+    "slug": "ojstra-pec",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3199084,
+    "lng": 14.2025082,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "col-dhahnenbrunnen": {
+    "name": "Col d'Hahnenbrunnen",
+    "slug": "col-dhahnenbrunnen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9515694,
+    "lng": 7.0195089,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1186m"
+  },
+  "col-dhahnenbrunnen-128": {
+    "name": "Col d'Hahnenbrunnen",
+    "slug": "col-dhahnenbrunnen-128",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.9515694,
+    "lng": 7.0195089,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dherens": {
+    "name": "Col d'Hérens",
+    "slug": "col-dherens",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9944958,
+    "lng": 7.5860828,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3458m"
+  },
+  "col-dherens-3762": {
+    "name": "Col d'Hérens",
+    "slug": "col-dherens-3762",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.9944958,
+    "lng": 7.5860828,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dhurtieres": {
+    "name": "Col d'Hurtières",
+    "slug": "col-dhurtieres",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8637074,
+    "lng": 5.9584406,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1825m"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mlicni-vrh": {
+    "name": "Mlični vrh",
+    "slug": "mlicni-vrh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.396876,
+    "lng": 14.5834541,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1223m"
+  }
+}

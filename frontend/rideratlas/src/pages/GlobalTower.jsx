@@ -8,8 +8,9 @@ import DeploymentCard from "@/components/airport/DeploymentCard";
 import AdventureNetworkCard from "@/components/routes/AdventureNetworkCard";
 import RouteIntelCard from "@/components/routes/RouteIntelCard";
 
-import { GRAPH } from "@/core/network/networkGraph";
+import { GRAPH, readGraphShard } from "@/core/network/networkGraph";
 import { withBrandContext } from "@/utils/navigationTargets";
+import { AIRPORT_COORDS } from "@/features/airport/data/airportCoords";
 
 
 
@@ -295,6 +296,16 @@ const GlobalTower = () => {
     return Array.from(uniqueRegions.values());
   }, [continentClusters]);
 
+  const rentalShard = readGraphShard("rentals");
+  const rentalsMap = rentalShard?.rentals ?? {};
+  const rentalsByAirport = rentalShard?.rentalIndexes?.rentalsByAirport ?? {};
+
+  const sortedHubs = useMemo(() => {
+    return [...continentAirports]
+      .sort((a, b) => (GRAPH.routesByAirport?.[b.code]?.length || 0) - (GRAPH.routesByAirport?.[a.code]?.length || 0))
+      .slice(0, 9);
+  }, [continentAirports]);
+
   useEffect(() => {
     console.log("CONTINENT AIRPORTS:", continentAirports.length)
     console.log("CLUSTERS:", continentClusters.length)
@@ -323,7 +334,7 @@ const GlobalTower = () => {
         />
 
         {/* HERO */}
-        <section className="relative h-[85vh] flex flex-col items-center justify-center overflow-hidden border-b border-white/5">
+        <section className="relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden border-b border-white/5">
           <div className="absolute inset-0 z-0 overflow-hidden">
             <video
               autoPlay
@@ -408,7 +419,7 @@ const GlobalTower = () => {
         </section>
 
         {/* CONTINENT COMMAND */}
-        <nav className="sticky top-20 z-40 bg-[#050505]/90 backdrop-blur-2xl border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
+        <nav className="sticky top-20 z-40 bg-[rgba(5,5,5,0.97)] border-b border-white/5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative">
           <ControlStripRadar />
 
           <div className="max-w-7xl mx-auto px-6 py-6">
@@ -542,24 +553,32 @@ const GlobalTower = () => {
                 <RadarSectorOverlay />
 
                 <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                  {continentAirports.slice(0, 9).map((airport) => {
+                  {sortedHubs.map((airport) => {
+                    const routeCount = GRAPH.routesByAirport?.[airport.code]?.length || 0;
+                    const airportRentals = (rentalsByAirport[airport.code] || [])
+                      .map((id) => rentalsMap[id])
+                      .filter(Boolean);
+                    const cheapest = airportRentals.reduce(
+                      (min, r) => {
+                        const p = parseFloat(r?.pricePerDay ?? r?.price ?? Infinity);
+                        return p < min ? p : min;
+                      },
+                      Infinity
+                    );
+                    const fleetClass = airportRentals[0]?.category || airportRentals[0]?.class || null;
+
                     const mission = {
-                      id: airport.code,
-                      airport_slug: airport.slug,
-                      airport_name: airport.city || airport.name,
-                      region_desc: airport.region || airport.country,
+                      airport_slug: airport.slug || airport.code,
                       airport_code: airport.code,
-                      country_code: airport.country,
-                      coords: airport.coords || { lat: "0", long: "0" },
+                      airport_name: airport.name || `${airport.city || airport.code} Hub`,
+                      region_desc: airport.region || airport.city || "Premier Logistics Node",
+                      country_code: airport.country_code || airport.country,
+                      coords: AIRPORT_COORDS[airport.code] || { lat: airport.coords?.lat ?? "--", long: airport.coords?.long ?? "--" },
+                      rental: cheapest < Infinity ? { price: cheapest, class: fleetClass } : null,
                       weather: {
-                        temp: "--",
-                        condition: "Ready",
-                        Icon: Activity,
+                        condition: `${routeCount} routes available`,
                       },
-                      rental: {
-                        price: "--",
-                        class: "Logistics Hub",
-                      },
+                      routeCount,
                     };
 
                     return <DeploymentCard key={airport.code} mission={mission} />;

@@ -1,0 +1,24 @@
+{
+  "axengalerie": {
+    "name": "Axengalerie",
+    "slug": "axengalerie",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9252742,
+    "lng": 8.613611,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "axenstein": {
+    "name": "Axenstein",
+    "slug": "axenstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9866887,
+    "lng": 8.6155413,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

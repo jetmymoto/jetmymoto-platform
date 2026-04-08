@@ -1,0 +1,24 @@
+{
+  "2e-col-dorgeval": {
+    "name": "2e col d'Orgeval",
+    "slug": "2e-col-dorgeval",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6854428,
+    "lng": 6.2428184,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1731m"
+  },
+  "2eme-panoramique-du-glacier-des-bossons": {
+    "name": "2ème Panoramique du Glacier des Bossons",
+    "slug": "2eme-panoramique-du-glacier-des-bossons",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8946485,
+    "lng": 6.8540705,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

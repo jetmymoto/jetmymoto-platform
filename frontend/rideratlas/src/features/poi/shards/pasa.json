@@ -1,0 +1,35 @@
+{
+  "pas-a-lane": {
+    "name": "Pas à l'âne",
+    "slug": "pas-a-lane",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0138976,
+    "lng": 6.6429345,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pas-au-taureau": {
+    "name": "Pas au Taureau",
+    "slug": "pas-au-taureau",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1274272,
+    "lng": 6.8120834,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2555m"
+  },
+  "pas-au-taureau-3802": {
+    "name": "Pas au Taureau",
+    "slug": "pas-au-taureau-3802",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1274272,
+    "lng": 6.8120834,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

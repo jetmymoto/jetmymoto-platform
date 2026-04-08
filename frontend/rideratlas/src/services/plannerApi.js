@@ -1,5 +1,5 @@
 import { httpsCallable } from "firebase/functions";
-import { functions } from "../firebase";
+import { functions } from "@/lib/firebase";
 
 export async function generateMission(payload) {
   const fn = httpsCallable(functions, "generateMission");

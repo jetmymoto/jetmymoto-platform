@@ -1,0 +1,57 @@
+{
+  "paulitschsattel-pavlicevo-sedlo": {
+    "name": "Paulitschsattel / Pavličevo sedlo",
+    "slug": "paulitschsattel-pavlicevo-sedlo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4252064,
+    "lng": 14.5851927,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1338m"
+  },
+  "paulitschsattel-pavlicevo-sedlo-2500": {
+    "name": "Paulitschsattel / Pavličevo sedlo",
+    "slug": "paulitschsattel-pavlicevo-sedlo-2500",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4252064,
+    "lng": 14.5851927,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "pauls-ruh": {
+    "name": "Pauls Ruh",
+    "slug": "pauls-ruh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8538414,
+    "lng": 12.4095764,
+    "nearest_airport": "SZG",
+    "description": "Seezugang und Anlandestelle für Kleinboote zwischen zwei Schutzgebieten, Markierungsbojen beachten"
+  },
+  "paulscharte-forcella-di-san-paolo": {
+    "name": "Paulscharte - Forcella di San Paolo",
+    "slug": "paulscharte-forcella-di-san-paolo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8886327,
+    "lng": 11.6606273,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2579m"
+  },
+  "paulscharte-forcella-di-san-paolo-3473": {
+    "name": "Paulscharte - Forcella di San Paolo",
+    "slug": "paulscharte-forcella-di-san-paolo-3473",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8886327,
+    "lng": 11.6606273,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "gmeiner-aussicht": {
+    "name": "Gmeiner Aussicht",
+    "slug": "gmeiner-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7286573,
+    "lng": 14.3302927,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "gmoosblick": {
+    "name": "Gmoosblick",
+    "slug": "gmoosblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2758317,
+    "lng": 15.9723551,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

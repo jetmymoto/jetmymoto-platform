@@ -1,0 +1,13 @@
+{
+  "whiskypass": {
+    "name": "Whiskypass",
+    "slug": "whiskypass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3495675,
+    "lng": 8.460075,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 558m"
+  }
+}

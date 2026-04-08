@@ -1,0 +1,13 @@
+{
+  "4-massifs-from-la-roche": {
+    "name": "4 massifs from la Roche",
+    "slug": "4-massifs-from-la-roche",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2794886,
+    "lng": 5.5959285,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

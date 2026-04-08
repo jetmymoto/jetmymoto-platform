@@ -2,6 +2,7 @@ import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFunctions } from "firebase/functions";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -15,19 +16,21 @@ const firebaseConfig = {
 };
 
 // PREVENT DUPLICATE APP ERRORS
-let app;
+let firebaseApp;
 try {
-  app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+  firebaseApp = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 } catch (error) {
   console.warn("Firebase re-init caught, using existing app.");
-  app = getApp();
+  firebaseApp = getApp();
 }
 
 // EXPORT EVERYTHING NEEDED
-export const db = getFirestore(app);
-export const storage = getStorage(app);
-export const auth = getAuth(app);
+export { firebaseApp };
+export const db = getFirestore(firebaseApp);
+export const storage = getStorage(firebaseApp);
+export const auth = getAuth(firebaseApp);
+export const functions = getFunctions(firebaseApp);
 export const provider = new GoogleAuthProvider();
-export const analytics = isSupported().then(yes => yes ? getAnalytics(app) : null);
+export const analytics = isSupported().then(yes => yes ? getAnalytics(firebaseApp) : null);
 
-export default app;
+export default firebaseApp;

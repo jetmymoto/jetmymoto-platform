@@ -1,0 +1,200 @@
+{
+  "coral-beach": {
+    "name": "Coral beach",
+    "slug": "coral-beach",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9009414,
+    "lng": 13.7891368,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corda": {
+    "name": "Corda",
+    "slug": "corda",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8933599,
+    "lng": 9.3662241,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cormet-de-roselend": {
+    "name": "Cormet de Roselend",
+    "slug": "cormet-de-roselend",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6913293,
+    "lng": 6.6906249,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1968m"
+  },
+  "cormet-de-roselend-44": {
+    "name": "Cormet de Roselend",
+    "slug": "cormet-de-roselend-44",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6913293,
+    "lng": 6.6906249,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "corna-del-mass": {
+    "name": "Corna del Màss",
+    "slug": "corna-del-mass",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7936933,
+    "lng": 9.6149812,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corna-di-pizzino": {
+    "name": "Corna di Pizzino",
+    "slug": "corna-di-pizzino",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8969231,
+    "lng": 9.5678353,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corna-piana": {
+    "name": "Corna Piana",
+    "slug": "corna-piana",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7606574,
+    "lng": 10.9758433,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corne-de-sorebois": {
+    "name": "Corne de Sorebois",
+    "slug": "corne-de-sorebois",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1508701,
+    "lng": 7.5866098,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2895m"
+  },
+  "corniche": {
+    "name": "Corniche",
+    "slug": "corniche",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0528107,
+    "lng": 5.8107135,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corniche-de-goumois": {
+    "name": "Corniche de Goumois",
+    "slug": "corniche-de-goumois",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2462601,
+    "lng": 6.9488235,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cornillon": {
+    "name": "Cornillon",
+    "slug": "cornillon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2571418,
+    "lng": 6.8052236,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corno-daquilio": {
+    "name": "Corno d'Aquilio",
+    "slug": "corno-daquilio",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.671456,
+    "lng": 10.943048,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1545m"
+  },
+  "corno-daquilio-592": {
+    "name": "Corno d'Aquilio",
+    "slug": "corno-daquilio-592",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.671456,
+    "lng": 10.943048,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "corno-del-maradeto": {
+    "name": "Corno del Maradeto",
+    "slug": "corno-del-maradeto",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.802932,
+    "lng": 11.4099809,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "corno-mozzo": {
+    "name": "Corno Mozzo",
+    "slug": "corno-mozzo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6710901,
+    "lng": 10.9600642,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1535m"
+  },
+  "corona-dei-pinci": {
+    "name": "Corona dei Pinci",
+    "slug": "corona-dei-pinci",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1548976,
+    "lng": 8.7166451,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1291m"
+  },
+  "corona-dei-pinci-1229": {
+    "name": "Corona dei Pinci",
+    "slug": "corona-dei-pinci-1229",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1548976,
+    "lng": 8.7166451,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "corvara": {
+    "name": "Corvara",
+    "slug": "corvara",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5448143,
+    "lng": 11.8764557,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -24,17 +24,21 @@ export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null 
     return `${basePath}${separator}ctx=${brandCtx}`;
   };
   const withCurrentContext = (basePath) => {
+    const shouldEnforceContext = isJetMyMoto && site.id !== "jmm";
+    if (shouldEnforceContext) {
+      return withContext(basePath, "jet");
+    }
     return brandCtx ? withContext(basePath, brandCtx) : basePath;
   };
 
   const closeMenu = () => setOpen(false);
   const surfaceClass = isJetMyMoto
-    ? "bg-[#F8F8F8]/92 border-[#574C43]/10"
-    : "bg-[#121212]/90 border-white/5";
+    ? "bg-[rgba(16,16,16,0.97)] border-white/5"
+    : "bg-[rgba(16,16,16,0.97)] border-white/5";
   const brandTextClass = isJetMyMoto ? "text-[#574C43]" : "text-white";
   const navIdleClass = isJetMyMoto ? "text-[#574C43]/70 hover:text-[#CDA755]" : "text-zinc-400 hover:text-white";
   const mobileToggleClass = isJetMyMoto ? "text-[#574C43]/70 hover:text-[#CDA755]" : "text-zinc-300 hover:text-white";
-  const menuSurfaceClass = isJetMyMoto ? "bg-[#F8F8F8] border-[#574C43]/10" : "bg-[#121212] border-white/5";
+  const menuSurfaceClass = isJetMyMoto ? "bg-[#121212] border-white/5" : "bg-[#121212] border-white/5";
   const subtleBorderClass = isJetMyMoto ? "border-[#574C43]/10" : "border-white/5";
   const rentalsCtaClass = isJetMyMoto
     ? "border border-[#574C43]/15 text-[#574C43] px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest hover:border-[#CDA755] hover:text-[#CDA755] transition-all duration-300"
@@ -44,26 +48,26 @@ export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null 
     : "bg-amber-600 text-white px-5 py-2.5 rounded-sm font-semibold text-xs uppercase tracking-widest shadow-lg hover:bg-amber-500 transition-all duration-300";
 
   const navLinks = [
-    { label: "Atlas", path: withCurrentContext("/") },
-    { label: "Hubs", path: withCurrentContext(paths.airports) },
-    { label: "Routes", path: withCurrentContext(paths.route) },
-    { label: "Fleets", path: withCurrentContext(paths.rentals) },
+    { label: isJetMyMoto ? "Home" : "Atlas", path: isJetMyMoto ? "/jetmymoto" : "/" },
+    { label: "Airports", path: withCurrentContext(paths.airports) },
+    { label: "Rides", path: withCurrentContext(paths.route) },
+    { label: "Showroom", path: withCurrentContext(paths.rentals) },
   ];
 
   const isActive = (label) => {
-    if (label === "Atlas") {
-      return location.pathname === "/";
+    if (label === "Atlas" || label === "Home") {
+      return location.pathname === "/" || location.pathname === "/jetmymoto";
     }
 
-    if (label === "Hubs") {
+    if (label === "Airports") {
       return location.pathname === "/airport" || (location.pathname.startsWith("/airport") && mode !== "rent");
     }
 
-    if (label === "Routes") {
+    if (label === "Rides") {
       return ["/route/", "/destination/", "/poi/"].some((prefix) => location.pathname.startsWith(prefix));
     }
 
-    if (label === "Fleets") {
+    if (label === "Showroom") {
       return location.pathname.startsWith("/airport/") && mode === "rent";
     }
 
@@ -71,7 +75,7 @@ export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null 
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-[120] backdrop-blur-lg transition-colors duration-700 border-b ${surfaceClass}`}>
+    <header className={`fixed top-0 left-0 w-full z-[120] transition-colors duration-700 border-b ${surfaceClass}`}>
       
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
 
@@ -109,20 +113,12 @@ export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null 
 
         {/* The Dual-Engine CTAs (50/50 UX Strategy) */}
         <div className="hidden md:flex items-center gap-4">
-          {/* Rentals CTA - Luxury Outline Style */}
+          {/* Agent CTA - Solid Tactical Style */}
           <Link
-            to={withContext(paths.rentals, "ra")}
-            className={rentalsCtaClass}
-          >
-            Find a Bike
-          </Link>
-
-          {/* Logistics CTA - Solid Tactical Style */}
-          <Link
-            to={withContext(paths.logistics, "jet")}
+            to="/jetmymoto"
             className={logisticsCtaClass}
           >
-            Ship Machine
+            Agent
           </Link>
         </div>
 
@@ -156,19 +152,11 @@ export default function HeaderJetMyMoto({ isJetMyMoto: forcedIsJetMyMoto = null 
 
           <div className={`flex flex-col gap-3 pt-4 border-t ${subtleBorderClass}`}>
             <Link
-              to={withContext(paths.rentals, "ra")}
+              to="/jetmymoto"
               onClick={closeMenu}
-              className={`block px-6 py-3 rounded-sm font-semibold text-center tracking-widest ${isJetMyMoto ? "border border-[#574C43]/15 text-[#574C43] hover:border-[#CDA755] hover:text-[#CDA755]" : "border border-white/20 text-white hover:border-amber-500 hover:text-amber-500"}`}
+              className={`block w-full px-6 py-3 rounded-sm font-semibold text-center tracking-widest ${isJetMyMoto ? "bg-[#CDA755] text-[#574C43] hover:bg-[#A76330] hover:text-white" : "bg-amber-600 text-white"}`}
             >
-              Find a Bike
-            </Link>
-
-            <Link
-              to={withContext(paths.logistics, "jet")}
-              onClick={closeMenu}
-              className={`block px-6 py-3 rounded-sm font-semibold text-center tracking-widest ${isJetMyMoto ? "bg-[#CDA755] text-[#574C43] hover:bg-[#A76330] hover:text-white" : "bg-amber-600 text-white"}`}
-            >
-              Ship Machine
+              Agent
             </Link>
           </div>
 

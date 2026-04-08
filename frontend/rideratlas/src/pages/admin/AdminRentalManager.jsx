@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import { GRAPH } from "@/core/network/networkGraph";
-import app from "@/lib/firebase";
 import { CINEMATIC_NEGATIVE_PROMPT, CINEMATIC_POSITIVE_PROMPT_TEMPLATE } from "../../../../../shared/mediaPromptConstants.js";
 
 const OPERATOR_SCHEMA = `[

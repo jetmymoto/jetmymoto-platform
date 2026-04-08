@@ -1,0 +1,211 @@
+{
+  "passo-reforti": {
+    "name": "Passo Reforti",
+    "slug": "passo-reforti",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9404532,
+    "lng": 10.4838175,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2408m"
+  },
+  "passo-reforti-1380": {
+    "name": "Passo Reforti",
+    "slug": "passo-reforti-1380",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.9404532,
+    "lng": 10.4838175,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-rest-pas-di-rest": {
+    "name": "Passo Rest / Pas di Rest",
+    "slug": "passo-rest-pas-di-rest",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3559335,
+    "lng": 12.7827778,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1052m"
+  },
+  "passo-rest-pas-di-rest-158": {
+    "name": "Passo Rest / Pas di Rest",
+    "slug": "passo-rest-pas-di-rest-158",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3559335,
+    "lng": 12.7827778,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-ristele": {
+    "name": "Passo Ristele",
+    "slug": "passo-ristele",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6870217,
+    "lng": 11.1569954,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1641m"
+  },
+  "passo-rive-del-cerro": {
+    "name": "Passo Rive del Cerro",
+    "slug": "passo-rive-del-cerro",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1872446,
+    "lng": 11.629748,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 604m"
+  },
+  "passo-rocca-di-penna": {
+    "name": "Passo Rocca di Penna",
+    "slug": "passo-rocca-di-penna",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.0264394,
+    "lng": 7.7329208,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1390m"
+  },
+  "passo-rocchetta": {
+    "name": "Passo Rocchetta",
+    "slug": "passo-rocchetta",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8347352,
+    "lng": 10.8017421,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1159m"
+  },
+  "passo-rodecche": {
+    "name": "Passo Rodecche",
+    "slug": "passo-rodecche",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.673552,
+    "lng": 11.1887789,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1635m"
+  },
+  "passo-rolle": {
+    "name": "Passo Rolle",
+    "slug": "passo-rolle",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2963002,
+    "lng": 11.786321,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1971m"
+  },
+  "passo-rolle-98": {
+    "name": "Passo Rolle",
+    "slug": "passo-rolle-98",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2963002,
+    "lng": 11.786321,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-ronchi-di-berna": {
+    "name": "Passo Ronchi di Berna",
+    "slug": "passo-ronchi-di-berna",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.0674237,
+    "lng": 11.4947042,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1103m"
+  },
+  "passo-ronchina": {
+    "name": "Passo Ronchina",
+    "slug": "passo-ronchina",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2089154,
+    "lng": 10.5945635,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2447m"
+  },
+  "passo-ronchina-3693": {
+    "name": "Passo Ronchina",
+    "slug": "passo-ronchina-3693",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2089154,
+    "lng": 10.5945635,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-rosole": {
+    "name": "Passo Rosole",
+    "slug": "passo-rosole",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4357203,
+    "lng": 10.6204967,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3502m"
+  },
+  "passo-rosole-1393": {
+    "name": "Passo Rosole",
+    "slug": "passo-rosole-1393",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4357203,
+    "lng": 10.6204967,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-rotta-dei-cavalli": {
+    "name": "Passo Rotta dei Cavalli",
+    "slug": "passo-rotta-dei-cavalli",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7689525,
+    "lng": 11.9731455,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1172m"
+  },
+  "passo-roverello": {
+    "name": "Passo Roverello",
+    "slug": "passo-roverello",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3064266,
+    "lng": 11.6983085,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "passo-rutorto": {
+    "name": "Passo Rutorto",
+    "slug": "passo-rutorto",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4133753,
+    "lng": 12.1563501,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1931m"
+  }
+}

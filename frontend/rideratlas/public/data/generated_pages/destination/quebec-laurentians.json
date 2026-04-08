@@ -1,0 +1,65 @@
+{
+  "entity": {
+    "id": "quebec-laurentians",
+    "slug": "quebec-laurentians",
+    "type": "destination",
+    "name": "Quebec & Laurentians",
+    "region": "laurentians",
+    "country": "",
+    "summary": ""
+  },
+  "template": "RideDestinationPage",
+  "tokens": {
+    "colors": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "accent": "#CDA755"
+    },
+    "fonts": {
+      "heading": "serif",
+      "body": "sans-serif"
+    },
+    "motion": {
+      "reveal": "fade-up",
+      "durationMs": 800
+    },
+    "rules": {
+      "maxCards": 3,
+      "showPricingOnInspirationPages": false,
+      "accentUsage": "micro-only"
+    }
+  },
+  "assets": {
+    "hero": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    "thumbnail": null,
+    "gallery": [],
+    "poster": null,
+    "alt": "Quebec & Laurentians",
+    "caption": ""
+  },
+  "related": {
+    "destinations": [],
+    "routes": [],
+    "airports": [],
+    "rentals": [],
+    "experiences": [],
+    "pois": []
+  },
+  "seo": {
+    "title": "Quebec & Laurentians Motorcycle Journeys | Luxury Riding Destination",
+    "description": "Discover Quebec & Laurentians through cinematic motorcycle travel, curated routes, and premium regional experiences.",
+    "canonicalPath": "/quebec-laurentians",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Quebec & Laurentians",
+      "description": "",
+      "url": "/quebec-laurentians"
+    }
+  },
+  "generatedAt": "2026-04-03T20:54:05.126Z",
+  "audit": {
+    "passed": true,
+    "violations": []
+  }
+}

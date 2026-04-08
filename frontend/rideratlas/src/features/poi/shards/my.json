@@ -1,0 +1,13 @@
+{
+  "mythenblick": {
+    "name": "Mythenblick",
+    "slug": "mythenblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9947187,
+    "lng": 8.6141916,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

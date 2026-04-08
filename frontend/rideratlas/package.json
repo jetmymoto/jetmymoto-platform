@@ -5,10 +5,15 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:sitemap": "node ../../scripts/generateSitemap.js",
+    "build": "npm run build:sitemap && vite build",
     "preview": "vite preview",
     "validate:overlays": "node scripts/validateOverlayPayload.mjs",
     "seo:enrich-patriots": "node scripts/seo/enrichPatriotSignals.mjs",
+    "balkan:harvest": "node scripts/seo/serpApiBalkanHarvest.mjs",
+    "balkan:harvest:dry": "DRY_RUN=1 node scripts/seo/serpApiBalkanHarvest.mjs",
+    "balkan:inject": "node scripts/seo/injectBalkanOperators.mjs",
+    "balkan:inject:write": "node scripts/seo/injectBalkanOperators.mjs --write",
     "test": "vitest run",
     "test:watch": "vitest",
     "ci:build": "npm run test && npm run validate:overlays && npm run build"

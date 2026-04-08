@@ -1,0 +1,112 @@
+{
+  "quaglioblick": {
+    "name": "Quaglioblick",
+    "slug": "quaglioblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.567217,
+    "lng": 10.7031767,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "quagliodromo": {
+    "name": "quagliodromo",
+    "slug": "quagliodromo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1687459,
+    "lng": 8.2870684,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "quai-de-lamiral-ponchardier": {
+    "name": "Quai de l'Amiral Ponchardier",
+    "slug": "quai-de-lamiral-ponchardier",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7046606,
+    "lng": 7.3126737,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "quaibrucke": {
+    "name": "Quaibrücke",
+    "slug": "quaibrucke",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3666263,
+    "lng": 8.5424316,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "quelljoch-passo-della-sorgente": {
+    "name": "Quelljoch - Passo della Sorgente",
+    "slug": "quelljoch-passo-della-sorgente",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7807976,
+    "lng": 10.7305704,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3270m"
+  },
+  "quelljoch-passo-della-sorgente-1035": {
+    "name": "Quelljoch - Passo della Sorgente",
+    "slug": "quelljoch-passo-della-sorgente-1035",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7807976,
+    "lng": 10.7305704,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "querung": {
+    "name": "Querung",
+    "slug": "querung",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0506613,
+    "lng": 12.9640314,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2855m"
+  },
+  "querung-3916": {
+    "name": "Querung",
+    "slug": "querung-3916",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0506613,
+    "lng": 12.9640314,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "questo-e-il-cielo-del-pirata": {
+    "name": "Questo è il cielo del Pirata",
+    "slug": "questo-e-il-cielo-del-pirata",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7904552,
+    "lng": 12.3376111,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "quota-2610": {
+    "name": "quota 2610",
+    "slug": "quota-2610",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.571613,
+    "lng": 7.0447278,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

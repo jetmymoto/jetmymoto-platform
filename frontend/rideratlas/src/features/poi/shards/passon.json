@@ -1,0 +1,57 @@
+{
+  "passo-nabries": {
+    "name": "Passo Nabries",
+    "slug": "passo-nabries",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1859967,
+    "lng": 13.5996371,
+    "nearest_airport": "VCE",
+    "description": "Passo Nabries \" Brieza \" 880 m. s.l.m."
+  },
+  "passo-naldoni": {
+    "name": "Passo Naldoni",
+    "slug": "passo-naldoni",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7726047,
+    "lng": 11.962186,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1173m"
+  },
+  "passo-nambrone": {
+    "name": "Passo Nambrone",
+    "slug": "passo-nambrone",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.24498,
+    "lng": 10.7681144,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2460m"
+  },
+  "passo-nambrone-846": {
+    "name": "Passo Nambrone",
+    "slug": "passo-nambrone-846",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.24498,
+    "lng": 10.7681144,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-nota": {
+    "name": "Passo Nota",
+    "slug": "passo-nota",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8371718,
+    "lng": 10.7443133,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1204m"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pticja-opazovalnica": {
+    "name": "Ptičja opazovalnica",
+    "slug": "pticja-opazovalnica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3061422,
+    "lng": 15.5929932,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

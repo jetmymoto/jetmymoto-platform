@@ -1,0 +1,24 @@
+{
+  "packsattel": {
+    "name": "Packsattel",
+    "slug": "packsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9654645,
+    "lng": 14.9779263,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1169m"
+  },
+  "packsattel-167": {
+    "name": "Packsattel",
+    "slug": "packsattel-167",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9654645,
+    "lng": 14.9779263,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

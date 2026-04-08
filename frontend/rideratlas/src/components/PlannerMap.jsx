@@ -135,7 +135,8 @@ export default function PlannerMap({
     if (safeCoords.length < 2) return;
 
     const coordString = safeCoords.map(c => c.join(',')).join(';');
-    const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${coordString}?geometries=geojson&access_token=${mapboxgl.accessToken}`;
+    // Hardcode 'exclude=motorway' to ensure cinematic routes avoid highways
+    const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${coordString}?geometries=geojson&exclude=motorway&access_token=${mapboxgl.accessToken}`;
     
     try {
       const query = await fetch(url);

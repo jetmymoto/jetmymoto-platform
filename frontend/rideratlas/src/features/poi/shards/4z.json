@@ -1,0 +1,13 @@
+{
+  "4-zub": {
+    "name": "4. zub",
+    "slug": "4-zub",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1325127,
+    "lng": 16.4600357,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

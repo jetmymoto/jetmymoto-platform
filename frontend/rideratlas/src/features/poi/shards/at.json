@@ -1,0 +1,101 @@
+{
+  "atmosphare-und-klimawandel": {
+    "name": "Atmosphäre und Klimawandel",
+    "slug": "atmosphare-und-klimawandel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6548076,
+    "lng": 14.1770504,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "attemsmoor-niedermoor": {
+    "name": "Attemsmoor - Niedermoor",
+    "slug": "attemsmoor-niedermoor",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7382597,
+    "lng": 15.6342161,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "attemsmoor-schwarzerlenbruchwald": {
+    "name": "Attemsmoor - Schwarzerlenbruchwald",
+    "slug": "attemsmoor-schwarzerlenbruchwald",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7361285,
+    "lng": 15.6358851,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "attention-bord-de-falaise": {
+    "name": "Attention bord de falaise",
+    "slug": "attention-bord-de-falaise",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0180085,
+    "lng": 6.6274877,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "atterkarjochl": {
+    "name": "Atterkarjöchl",
+    "slug": "atterkarjochl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0207141,
+    "lng": 11.0398631,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2976m"
+  },
+  "atterkarjochl-3781": {
+    "name": "Atterkarjöchl",
+    "slug": "atterkarjochl-3781",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0207141,
+    "lng": 11.0398631,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "attilafelsen": {
+    "name": "Attilafelsen",
+    "slug": "attilafelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9935335,
+    "lng": 7.6758318,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "attracco-fluviale-di-cremona": {
+    "name": "attracco fluviale di Cremona",
+    "slug": "attracco-fluviale-di-cremona",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1272902,
+    "lng": 9.9986962,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "atzwanger-aussicht": {
+    "name": "Atzwanger Aussicht",
+    "slug": "atzwanger-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5345685,
+    "lng": 11.4793896,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

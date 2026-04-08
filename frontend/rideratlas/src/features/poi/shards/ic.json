@@ -1,0 +1,13 @@
+{
+  "i-cunscitt": {
+    "name": "I Cunscitt",
+    "slug": "i-cunscitt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9966556,
+    "lng": 8.4079814,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "6-seen-blick": {
+    "name": "6-Seen-Blick",
+    "slug": "6-seen-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6022878,
+    "lng": 10.810782,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

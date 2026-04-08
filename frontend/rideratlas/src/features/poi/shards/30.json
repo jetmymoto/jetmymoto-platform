@@ -1,0 +1,13 @@
+{
+  "300-70": {
+    "name": "300-70",
+    "slug": "300-70",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4623562,
+    "lng": 9.8548598,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

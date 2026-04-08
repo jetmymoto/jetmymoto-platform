@@ -1,0 +1,68 @@
+{
+  "passo-xii-apostoli": {
+    "name": "Passo XII Apostoli",
+    "slug": "passo-xii-apostoli",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1455785,
+    "lng": 10.8479894,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2584m"
+  },
+  "passo-xii-apostoli-320": {
+    "name": "Passo XII Apostoli",
+    "slug": "passo-xii-apostoli-320",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1455785,
+    "lng": 10.8479894,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-xomo": {
+    "name": "Passo Xomo",
+    "slug": "passo-xomo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7771002,
+    "lng": 11.2375529,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1058m"
+  },
+  "passo-xomo-377": {
+    "name": "Passo Xomo",
+    "slug": "passo-xomo-377",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.7771002,
+    "lng": 11.2375529,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-xon": {
+    "name": "Passo Xon",
+    "slug": "passo-xon",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7202682,
+    "lng": 11.2210989,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 671m"
+  },
+  "passo-xon-312": {
+    "name": "Passo Xon",
+    "slug": "passo-xon-312",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.7202682,
+    "lng": 11.2210989,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

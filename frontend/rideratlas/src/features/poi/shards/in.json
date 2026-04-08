@@ -1,0 +1,211 @@
+{
+  "i-naav": {
+    "name": "I Nàav",
+    "slug": "i-naav",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2087287,
+    "lng": 9.216459,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2350m"
+  },
+  "i-naav-3810": {
+    "name": "I Nàav",
+    "slug": "i-naav-3810",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2087287,
+    "lng": 9.216459,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "incrocio": {
+    "name": "Incrocio",
+    "slug": "incrocio",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4846841,
+    "lng": 9.2230746,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "industriestrasse": {
+    "name": "Industriestrasse",
+    "slug": "industriestrasse",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5621072,
+    "lng": 8.8944378,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "infoblick-stein": {
+    "name": "Infoblick Stein",
+    "slug": "infoblick-stein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6129841,
+    "lng": 14.5344079,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "innblick": {
+    "name": "Innblick",
+    "slug": "innblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8980171,
+    "lng": 10.4783322,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "innere-nanzlucke": {
+    "name": "Innere Nanzlücke",
+    "slug": "innere-nanzlucke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2525141,
+    "lng": 7.9825199,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2598m"
+  },
+  "innere-nanzlucke-1831": {
+    "name": "Innere Nanzlücke",
+    "slug": "innere-nanzlucke-1831",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2525141,
+    "lng": 7.9825199,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "innerjoch-giogo-di-dentro": {
+    "name": "Innerjoch - Giogo di Dentro",
+    "slug": "innerjoch-giogo-di-dentro",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9926215,
+    "lng": 11.8262216,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2999m"
+  },
+  "innerjoch-giogo-di-dentro-463": {
+    "name": "Innerjoch - Giogo di Dentro",
+    "slug": "innerjoch-giogo-di-dentro-463",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9926215,
+    "lng": 11.8262216,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "innersbachklamm-blick": {
+    "name": "Innersbachklamm-Blick",
+    "slug": "innersbachklamm-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6280411,
+    "lng": 12.726428,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "innichriedl-forcella-di-san-candido": {
+    "name": "Innichriedl - Forcella di San Candido",
+    "slug": "innichriedl-forcella-di-san-candido",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6454276,
+    "lng": 12.3120477,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2382m"
+  },
+  "innichriedl-forcella-di-san-candido-1471": {
+    "name": "Innichriedl - Forcella di San Candido",
+    "slug": "innichriedl-forcella-di-san-candido-1471",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.6454276,
+    "lng": 12.3120477,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "innsbruckblick": {
+    "name": "Innsbruckblick",
+    "slug": "innsbruckblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3119271,
+    "lng": 11.3813701,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "innsbrucker-bankl": {
+    "name": "Innsbrucker Bankl",
+    "slug": "innsbrucker-bankl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2080868,
+    "lng": 11.1833571,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "inntalblick": {
+    "name": "Inntalblick",
+    "slug": "inntalblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2879406,
+    "lng": 11.2085337,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "inocina-greda": {
+    "name": "Inoćina greda",
+    "slug": "inocina-greda",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6978182,
+    "lng": 15.9930797,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 854m"
+  },
+  "ins-land-eini-schaun": {
+    "name": "Ins Land eini schaun",
+    "slug": "ins-land-eini-schaun",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0073237,
+    "lng": 15.8865174,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "inseli": {
+    "name": "Inseli",
+    "slug": "inseli",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0502468,
+    "lng": 8.3140734,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

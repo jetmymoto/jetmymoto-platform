@@ -1,0 +1,112 @@
+{
+  "passo-zandila": {
+    "name": "Passo Zandila",
+    "slug": "passo-zandila",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3833264,
+    "lng": 10.3106218,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2758m"
+  },
+  "passo-zandila-1302": {
+    "name": "Passo Zandila",
+    "slug": "passo-zandila-1302",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3833264,
+    "lng": 10.3106218,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-zebru": {
+    "name": "Passo Zebrù",
+    "slug": "passo-zebru",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.456971,
+    "lng": 10.5611179,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3005m"
+  },
+  "passo-zebru-673": {
+    "name": "Passo Zebrù",
+    "slug": "passo-zebru-673",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.456971,
+    "lng": 10.5611179,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-zeno": {
+    "name": "Passo Zeno",
+    "slug": "passo-zeno",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7748085,
+    "lng": 10.4394557,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1456m"
+  },
+  "passo-zevola": {
+    "name": "Passo Zevola",
+    "slug": "passo-zevola",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6869499,
+    "lng": 11.1390034,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1820m"
+  },
+  "passo-zovo": {
+    "name": "Passo Zovo",
+    "slug": "passo-zovo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6839681,
+    "lng": 11.3097585,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 631m"
+  },
+  "passo-zovo-491": {
+    "name": "Passo Zovo",
+    "slug": "passo-zovo-491",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6839681,
+    "lng": 11.3097585,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-zucchero": {
+    "name": "Passo Zucchero",
+    "slug": "passo-zucchero",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3508559,
+    "lng": 8.7148266,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2518m"
+  },
+  "passo-zucchero-1822": {
+    "name": "Passo Zucchero",
+    "slug": "passo-zucchero-1822",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3508559,
+    "lng": 8.7148266,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

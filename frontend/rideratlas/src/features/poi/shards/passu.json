@@ -1,0 +1,24 @@
+{
+  "pass-umbrail-giogo-di-santa-maria": {
+    "name": "Pass Umbrail - Giogo di Santa Maria",
+    "slug": "pass-umbrail-giogo-di-santa-maria",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5416478,
+    "lng": 10.4331773,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2501m"
+  },
+  "pass-umbrail-giogo-di-santa-maria-2633": {
+    "name": "Pass Umbrail - Giogo di Santa Maria",
+    "slug": "pass-umbrail-giogo-di-santa-maria-2633",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5416478,
+    "lng": 10.4331773,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

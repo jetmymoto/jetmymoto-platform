@@ -22,8 +22,7 @@ const JetHero = ({ variant }) => {
         />
         
         {/* Luxury Vignette & Masking */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/30 to-transparent" />
       </div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">

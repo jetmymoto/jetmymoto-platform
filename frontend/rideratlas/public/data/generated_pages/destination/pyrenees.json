@@ -1,0 +1,65 @@
+{
+  "entity": {
+    "id": "pyrenees",
+    "slug": "pyrenees",
+    "type": "destination",
+    "name": "Pyrenees",
+    "region": "mountain",
+    "country": "",
+    "summary": ""
+  },
+  "template": "RideDestinationPage",
+  "tokens": {
+    "colors": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "accent": "#CDA755"
+    },
+    "fonts": {
+      "heading": "serif",
+      "body": "sans-serif"
+    },
+    "motion": {
+      "reveal": "fade-up",
+      "durationMs": 800
+    },
+    "rules": {
+      "maxCards": 3,
+      "showPricingOnInspirationPages": false,
+      "accentUsage": "micro-only"
+    }
+  },
+  "assets": {
+    "hero": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    "thumbnail": null,
+    "gallery": [],
+    "poster": null,
+    "alt": "Pyrenees",
+    "caption": ""
+  },
+  "related": {
+    "destinations": [],
+    "routes": [],
+    "airports": [],
+    "rentals": [],
+    "experiences": [],
+    "pois": []
+  },
+  "seo": {
+    "title": "Pyrenees Motorcycle Journeys | Luxury Riding Destination",
+    "description": "Discover Pyrenees through cinematic motorcycle travel, curated routes, and premium regional experiences.",
+    "canonicalPath": "/pyrenees",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Pyrenees",
+      "description": "",
+      "url": "/pyrenees"
+    }
+  },
+  "generatedAt": "2026-04-03T20:54:05.110Z",
+  "audit": {
+    "passed": true,
+    "violations": []
+  }
+}

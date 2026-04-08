@@ -1,0 +1,13 @@
+{
+  "pampichlerwarte": {
+    "name": "Pampichlerwarte",
+    "slug": "pampichlerwarte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3737406,
+    "lng": 15.112595,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 717m"
+  }
+}

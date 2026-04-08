@@ -1,0 +1,134 @@
+{
+  "asam-punkt": {
+    "name": "Asam-Punkt",
+    "slug": "asam-punkt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6683,
+    "lng": 11.1827973,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aschau-blick": {
+    "name": "Aschau-Blick",
+    "slug": "aschau-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6437833,
+    "lng": 12.7599551,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aschauer-klamm-blick": {
+    "name": "Aschauer Klamm-Blick",
+    "slug": "aschauer-klamm-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6541492,
+    "lng": 12.7768449,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ascher": {
+    "name": "Ascher",
+    "slug": "ascher",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.814094,
+    "lng": 15.9413874,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 738.9m"
+  },
+  "ascher-1720": {
+    "name": "Ascher",
+    "slug": "ascher-1720",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.814094,
+    "lng": 15.9413874,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "aserlescharte": {
+    "name": "Aserlescharte",
+    "slug": "aserlescharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3401092,
+    "lng": 10.752057,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2179m"
+  },
+  "aserlescharte-1092": {
+    "name": "Aserlescharte",
+    "slug": "aserlescharte-1092",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3401092,
+    "lng": 10.752057,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "asperstrihen": {
+    "name": "Asperstrihen",
+    "slug": "asperstrihen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4387623,
+    "lng": 8.033909,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aspiegg": {
+    "name": "Aspiegg",
+    "slug": "aspiegg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.964212,
+    "lng": 7.660801,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "astatt-sattel": {
+    "name": "Astatt Sattel",
+    "slug": "astatt-sattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7744908,
+    "lng": 12.3674966,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2288m"
+  },
+  "astatt-sattel-2451": {
+    "name": "Astatt Sattel",
+    "slug": "astatt-sattel-2451",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7744908,
+    "lng": 12.3674966,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "astriedl-passo-monte-riva": {
+    "name": "Astriedl - Passo Monte Riva",
+    "slug": "astriedl-passo-monte-riva",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7043573,
+    "lng": 12.1314305,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1736m"
+  }
+}

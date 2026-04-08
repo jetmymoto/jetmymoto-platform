@@ -1,0 +1,13 @@
+{
+  "1er-panoramique-du-glacier-des-bossons": {
+    "name": "1er Panoramique du Glacier des Bossons",
+    "slug": "1er-panoramique-du-glacier-des-bossons",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8951247,
+    "lng": 6.8535747,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "col-fenetre": {
+    "name": "Col Fenêtre",
+    "slug": "col-fenetre",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.5826096,
+    "lng": 7.0897674,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "col-fenetre-2399": {
+    "name": "Col Fenêtre",
+    "slug": "col-fenetre-2399",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.7766814,
+    "lng": 7.1776732,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-ferriere": {
+    "name": "Col Ferrière",
+    "slug": "col-ferriere",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1206758,
+    "lng": 7.1792156,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2484m"
+  },
+  "col-ferriere-2308": {
+    "name": "Col Ferrière",
+    "slug": "col-ferriere-2308",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.1206758,
+    "lng": 7.1792156,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-fetita": {
+    "name": "Col Fetita",
+    "slug": "col-fetita",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7807972,
+    "lng": 7.1098461,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2557m"
+  },
+  "col-fetita-2424": {
+    "name": "Col Fetita",
+    "slug": "col-fetita-2424",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.7807972,
+    "lng": 7.1098461,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-forongol": {
+    "name": "Col Foróngol",
+    "slug": "col-forongol",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1973642,
+    "lng": 12.1946547,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "col-france": {
+    "name": "Col France",
+    "slug": "col-france",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.978876,
+    "lng": 6.56134,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1121m"
+  },
+  "col-fromage": {
+    "name": "Col Fromage",
+    "slug": "col-fromage",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.689685,
+    "lng": 6.806025,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2301m"
+  },
+  "col-fromage-279": {
+    "name": "Col Fromage",
+    "slug": "col-fromage-279",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.689685,
+    "lng": 6.806025,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-fussy": {
+    "name": "Col Fussy",
+    "slug": "col-fussy",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6270146,
+    "lng": 7.5328875,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2910m"
+  },
+  "col-fussy-215": {
+    "name": "Col Fussy",
+    "slug": "col-fussy-215",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6270146,
+    "lng": 7.5328875,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

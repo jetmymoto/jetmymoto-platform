@@ -1,0 +1,68 @@
+{
+  "passo-qualido-nord": {
+    "name": "Passo Qualido Nord",
+    "slug": "passo-qualido-nord",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2753384,
+    "lng": 9.6408462,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2647m"
+  },
+  "passo-qualido-nord-1189": {
+    "name": "Passo Qualido Nord",
+    "slug": "passo-qualido-nord-1189",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2753384,
+    "lng": 9.6408462,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-qualido-sud": {
+    "name": "Passo Qualido Sud",
+    "slug": "passo-qualido-sud",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.273257,
+    "lng": 9.6414792,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2650m"
+  },
+  "passo-qualido-sud-1186": {
+    "name": "Passo Qualido Sud",
+    "slug": "passo-qualido-sud-1186",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.273257,
+    "lng": 9.6414792,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-quintena": {
+    "name": "Passo Quintena",
+    "slug": "passo-quintena",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3515619,
+    "lng": 10.2886896,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2280m"
+  },
+  "passo-quintena-1301": {
+    "name": "Passo Quintena",
+    "slug": "passo-quintena-1301",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3515619,
+    "lng": 10.2886896,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

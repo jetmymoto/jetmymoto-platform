@@ -1,0 +1,24 @@
+{
+  "uebeschi-aussicht-auf-thun-thunersee": {
+    "name": "Uebeschi Aussicht auf Thun + Thunersee",
+    "slug": "uebeschi-aussicht-auf-thun-thunersee",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7342908,
+    "lng": 7.5477914,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "uedeli-panorama": {
+    "name": "Üedeli, Panorama",
+    "slug": "uedeli-panorama",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.016151,
+    "lng": 7.451068,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 586m"
+  }
+}

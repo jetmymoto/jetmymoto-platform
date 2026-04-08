@@ -1,0 +1,24 @@
+{
+  "pas-pasche": {
+    "name": "Pas Pasche",
+    "slug": "pas-pasche",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4150555,
+    "lng": 11.8060188,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2499m"
+  },
+  "pas-pasche-2906": {
+    "name": "Pas Pasche",
+    "slug": "pas-pasche-2906",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4150555,
+    "lng": 11.8060188,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

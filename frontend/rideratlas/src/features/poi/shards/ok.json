@@ -1,0 +1,13 @@
+{
+  "okenshohe": {
+    "name": "Okenshöhe",
+    "slug": "okenshohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2888,
+    "lng": 8.6763397,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 802m"
+  }
+}

@@ -307,44 +307,83 @@ export default function AirportTemplate({
         rankingData={rankingData}
       />
 
-      {/* RIDE MODE SELECTOR - 50/50 Dual Engine Bridge */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row border border-white/10 rounded-sm overflow-hidden bg-[#050505]/50 backdrop-blur-md shadow-2xl">
-          <button 
-            onClick={() => setRideMode("bring")}
-            className={`flex-1 py-10 px-6 flex flex-col items-center justify-center transition-all duration-300 ${
-              rideMode === "bring" 
-                ? "bg-amber-500 text-black border-b-4 border-black" 
-                : "bg-transparent text-zinc-500 hover:bg-white/5"
-            }`}
-          >
-            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Ship Your Bike</span>
-            <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "bring" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
-              White-Glove Shipping & Handoff
-            </span>
-          </button>
-          
-          <div className="w-px bg-white/10 hidden md:block" />
-          <div className="h-px w-full bg-white/10 md:hidden block" />
+      {/* RIDE MODE SELECTOR - 50/50 Dual Engine Bridge (Visual First) */}
+      <section className="h-screen flex flex-col md:flex-row overflow-hidden border-y border-white/5">
+        
+        {/* LEFT: SHIP */}
+        <div 
+          className="flex-1 relative group cursor-pointer overflow-hidden"
+          onClick={() => {
+            setRideMode("bring");
+            setTimeout(() => {
+              document.getElementById("engine-content")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100);
+          }}
+        >
+          {/* Background */}
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZA7f1r7imAVZyCuKgGk2rFca2LzrVwA_h3UbKZW1GcNQimGvXVKDmNOXR8xN2S4nFgP79ubqZjv3yjCBN3sBVc1-iSL0JToBkG_PRXS3gZRwsZ72fE8i2PyfoYhN9spK_8uyfhSa9zeZotnxFEOQTn6FcFDCLdvIpxfO1JPLLx41hH1fyIF_P3F4sD5Uda58Lr1SME2DjdF1TOAnf6BBB4w03XksxYoiz-rf8oACHpSbXaaMEYwcvN07kmYCcVJuWgY5Mk4b9-H8"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+            alt="Ship Your Bike"
+          />
 
-          <button 
-            onClick={() => setRideMode("rent")}
-            className={`flex-1 py-10 px-6 flex flex-col items-center justify-center transition-all duration-300 ${
-              rideMode === "rent" 
-                ? "bg-amber-500 text-black border-b-4 border-black" 
-                : "bg-transparent text-zinc-500 hover:bg-white/5"
-            }`}
-          >
-            <span className="text-lg font-serif italic tracking-wide font-black uppercase mb-2">Rent A Motorcycle</span>
-            <span className={`text-[10px] font-mono tracking-[0.2em] uppercase ${rideMode === "rent" ? "text-black/80 font-bold" : "text-zinc-600"}`}>
-              Curated Local Partners
+          {/* Overlay (FIXED: lighter + gradient) */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent group-hover:from-black/30 transition-all duration-500"></div>
+
+          {/* Content */}
+          <div className="relative z-10 h-full flex flex-col justify-end items-start text-left px-12 pb-20 md:pb-24">
+            <span className="text-[10px] tracking-[0.4em] uppercase text-[#CDA755] mb-4 flex items-center gap-4">
+              <div className="w-8 h-[1px] bg-[#CDA755]"></div>
+              Logistic Path A
             </span>
-          </button>
+            <h2 className="font-headline text-5xl md:text-6xl font-bold tracking-[0.05em] mb-8 uppercase leading-[0.9]">
+              SHIP YOUR<br/>BIKE
+            </h2>
+            <button className={`border border-[#CDA755] px-8 py-4 text-[11px] tracking-widest uppercase transition-all duration-300 ${rideMode === 'bring' ? 'bg-[#CDA755] text-black' : 'text-[#CDA755] hover:bg-[#CDA755] hover:text-black'}`}>
+              {rideMode === 'bring' ? 'Active Protocol' : 'Initiate Transport'}
+            </button>
+          </div>
         </div>
-      </div>
+
+        {/* RIGHT: RENT */}
+        <div 
+          className="flex-1 relative group cursor-pointer overflow-hidden"
+          onClick={() => {
+            setRideMode("rent");
+            setTimeout(() => {
+              document.getElementById("engine-content")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 100);
+          }}
+        >
+          {/* Background */}
+          <img 
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsk2C-PP06ooSIFwakaibhulI-wDSMxm6916YIdmVWzJgnUbH8PLH95yNYm2pkw1k1aeu6uBTNCKRbkvDNLWl6FOs5hbGCiHzPjG3PvTJTDU1emX54b3WMTxLzYNpk9Ld3i8741vbcSjOm1iT9ghmqOifat-fO3ZtQv4h_9NOHJCUFQ2QsjMAQzPCUbn-rahIocBdxEKs0HIiw-_8W9HRIvtMhHgI4Pt1Rv4S6JqNUM1cHC3HCjZc151IVMiUyEOR3T4wJEvLbe9Q"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110"
+            alt="Rent a Machine"
+          />
+
+          {/* Overlay (slightly warmer tone for variation) */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent group-hover:from-black/25 transition-all duration-500"></div>
+
+          {/* Content */}
+          <div className="relative z-10 h-full flex flex-col justify-end items-start text-left px-12 pb-20 md:pb-24">
+            <span className="text-[10px] tracking-[0.4em] uppercase text-[#CDA755] mb-4 flex items-center gap-4">
+              <div className="w-8 h-[1px] bg-[#CDA755]"></div>
+              Logistic Path B
+            </span>
+            <h2 className="font-headline text-5xl md:text-6xl font-bold tracking-[0.05em] mb-8 uppercase leading-[0.9]">
+              RENT A<br/>MACHINE
+            </h2>
+            <button className={`border border-[#CDA755] px-8 py-4 text-[11px] tracking-widest uppercase transition-all duration-300 ${rideMode === 'rent' ? 'bg-[#CDA755] text-black' : 'text-[#CDA755] hover:bg-[#CDA755] hover:text-black'}`}>
+              {rideMode === 'rent' ? 'Active Protocol' : 'View Hub Fleet'}
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* Conditionally Render Engine Components */}
-      <AnimatePresence mode="wait">
+      <div id="engine-content" className="pt-16 md:pt-24 scroll-mt-0">
+        <AnimatePresence mode="wait">
         {rideMode === "bring" ? (
           <motion.div key="bring" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
             <div className="max-w-7xl mx-auto px-6">
@@ -406,7 +445,7 @@ export default function AirportTemplate({
         </motion.div>
         )}
       </AnimatePresence>
-
+      </div>
     </div>
   );
 }

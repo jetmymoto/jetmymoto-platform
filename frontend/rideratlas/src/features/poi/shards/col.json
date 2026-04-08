@@ -1,0 +1,13 @@
+{
+  "col": {
+    "name": "Col",
+    "slug": "col",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1699461,
+    "lng": 15.4271766,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 557m"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entity": {
+    "id": "ALC",
+    "slug": "alicante-alc",
+    "type": "airport",
+    "region": "Costa Blanca",
+    "country": "es",
+    "summary": "Your gateway to Costa Blanca."
+  },
+  "template": "AirportTemplate",
+  "tokens": {
+    "colors": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "accent": "#CDA755"
+    },
+    "fonts": {
+      "heading": "serif",
+      "body": "sans-serif"
+    },
+    "motion": {
+      "reveal": "fade-up",
+      "durationMs": 800
+    },
+    "rules": {
+      "maxCards": 3,
+      "showPricingOnInspirationPages": false,
+      "accentUsage": "micro-only"
+    }
+  },
+  "assets": {
+    "hero": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    "thumbnail": null,
+    "gallery": [],
+    "poster": null,
+    "caption": ""
+  },
+  "related": {
+    "destinations": [],
+    "routes": [],
+    "airports": [],
+    "rentals": [],
+    "experiences": [],
+    "pois": []
+  },
+  "seo": {
+    "title": "undefined Airport Transfers & Motorcycle Access | Journey Gateway",
+    "description": "Begin your motorcycle journey from undefined with curated routes, destinations, and premium machine access.",
+    "canonicalPath": "/alicante-alc",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Airport",
+      "description": "Your gateway to Costa Blanca.",
+      "url": "/alicante-alc"
+    }
+  },
+  "generatedAt": "2026-04-03T20:54:05.164Z",
+  "audit": {
+    "passed": true,
+    "violations": []
+  }
+}

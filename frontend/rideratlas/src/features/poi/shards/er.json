@@ -1,0 +1,189 @@
+{
+  "erbsattel": {
+    "name": "Erbsattel",
+    "slug": "erbsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.656892,
+    "lng": 14.6604982,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 671m"
+  },
+  "erbsattel-3800": {
+    "name": "Erbsattel",
+    "slug": "erbsattel-3800",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.656892,
+    "lng": 14.6604982,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "erdpyramiden": {
+    "name": "Erdpyramiden",
+    "slug": "erdpyramiden",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2039822,
+    "lng": 10.7901133,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erdpyramiden-im-finsterbachgraben-piramidi-di-terra-nella-gola-del-rio-fosco": {
+    "name": "Erdpyramiden im Finsterbachgraben - Piramidi di terra nella gola del rio Fosco",
+    "slug": "erdpyramiden-im-finsterbachgraben-piramidi-di-terra-nella-gola-del-rio-fosco",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5522246,
+    "lng": 11.469319,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erdpyramiden-im-rivelaungraben-piramidi-di-terra-nella-gola-del-rio-rivellone": {
+    "name": "Erdpyramiden im Rivelaungraben - Piramidi di terra nella gola del Rio Rivellone",
+    "slug": "erdpyramiden-im-rivelaungraben-piramidi-di-terra-nella-gola-del-rio-rivellone",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5186064,
+    "lng": 11.4004557,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erdpyramiden-piramidi-di-sabbia": {
+    "name": "Erdpyramiden - Piramidi di sabbia",
+    "slug": "erdpyramiden-piramidi-di-sabbia",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6975529,
+    "lng": 11.1453271,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erdrutsch": {
+    "name": "Erdrutsch",
+    "slug": "erdrutsch",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7378457,
+    "lng": 9.3994717,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eremo-di-meda": {
+    "name": "Eremo di Meda",
+    "slug": "eremo-di-meda",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7770158,
+    "lng": 11.4038936,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ergolz-wasserfall": {
+    "name": "Ergolz-Wasserfall",
+    "slug": "ergolz-wasserfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4922133,
+    "lng": 7.728702,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erlaufseeblick": {
+    "name": "Erlaufseeblick",
+    "slug": "erlaufseeblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7917144,
+    "lng": 15.3340573,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erlijoch": {
+    "name": "Erlijoch",
+    "slug": "erlijoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1756089,
+    "lng": 10.2178953,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2430m"
+  },
+  "erlijoch-3315": {
+    "name": "Erlijoch",
+    "slug": "erlijoch-3315",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1756089,
+    "lng": 10.2178953,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "erlinsburg": {
+    "name": "Erlinsburg",
+    "slug": "erlinsburg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2863122,
+    "lng": 7.6930415,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erste-flue": {
+    "name": "Erste Flue",
+    "slug": "erste-flue",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0603069,
+    "lng": 7.63306,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erster-blick-zum-attersee": {
+    "name": "Erster Blick zum Attersee",
+    "slug": "erster-blick-zum-attersee",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7929028,
+    "lng": 13.5481663,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erzbergblick": {
+    "name": "Erzbergblick",
+    "slug": "erzbergblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5379562,
+    "lng": 14.9263135,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "erzkogel": {
+    "name": "Erzkogel",
+    "slug": "erzkogel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6223452,
+    "lng": 15.8574524,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1504m"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "copcev-mlin": {
+    "name": "Čopčev Mlin",
+    "slug": "copcev-mlin",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8121453,
+    "lng": 14.3783522,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "copiet": {
+    "name": "Copiet",
+    "slug": "copiet",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7233905,
+    "lng": 7.4831937,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "col-emile-pic": {
+    "name": "Col Emile Pic",
+    "slug": "col-emile-pic",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.955256,
+    "lng": 6.3866476,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3483m"
+  },
+  "col-emile-pic-547": {
+    "name": "Col Emile Pic",
+    "slug": "col-emile-pic-547",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.955256,
+    "lng": 6.3866476,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-entre-deux-sauts": {
+    "name": "Col Entre Deux Sauts",
+    "slug": "col-entre-deux-sauts",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.826757,
+    "lng": 7.044287,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2524.9m"
+  },
+  "col-entre-deux-sauts-2394": {
+    "name": "Col Entre Deux Sauts",
+    "slug": "col-entre-deux-sauts-2394",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.826757,
+    "lng": 7.044287,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-entrelor": {
+    "name": "Col Entrelor",
+    "slug": "col-entrelor",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.5476168,
+    "lng": 7.157221,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3002m"
+  },
+  "col-entrelor-2604": {
+    "name": "Col Entrelor",
+    "slug": "col-entrelor-2604",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.5476168,
+    "lng": 7.157221,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-est-de-la-gittaz": {
+    "name": "Col Est de la Gittaz",
+    "slug": "col-est-de-la-gittaz",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.743506,
+    "lng": 6.6718987,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2300m"
+  },
+  "col-est-de-la-gittaz-1655": {
+    "name": "Col Est de la Gittaz",
+    "slug": "col-est-de-la-gittaz-1655",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.743506,
+    "lng": 6.6718987,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "colentum": {
+    "name": "Colentum",
+    "slug": "colentum",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.8337062,
+    "lng": 15.5955773,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

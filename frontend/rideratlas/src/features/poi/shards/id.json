@@ -1,0 +1,13 @@
+{
+  "ida-warte": {
+    "name": "Ida Warte",
+    "slug": "ida-warte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5987465,
+    "lng": 13.3526527,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "tschabitscher": {
+    "name": "Tschabitscher",
+    "slug": "tschabitscher",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7329589,
+    "lng": 13.2483747,
+    "nearest_airport": "SZG",
+    "description": "Blick auf die Lienzer Dolomiten"
+  },
+  "tschager-joch-pas-da-le-coronele-passo-delle-coronelle": {
+    "name": "Tschager Joch - Pas da le Coronele - Passo delle Coronelle",
+    "slug": "tschager-joch-pas-da-le-coronele-passo-delle-coronelle",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4398384,
+    "lng": 11.6193393,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2630m"
+  },
+  "tschager-joch-pas-da-le-coronele-passo-delle-coronelle-299": {
+    "name": "Tschager Joch - Pas da le Coronele - Passo delle Coronelle",
+    "slug": "tschager-joch-pas-da-le-coronele-passo-delle-coronelle-299",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4398384,
+    "lng": 11.6193393,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "tschaufer-wand-pareti-colle-del-giovo": {
+    "name": "Tschaufer Wänd' - Pareti Colle del Giovo",
+    "slug": "tschaufer-wand-pareti-colle-del-giovo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5496548,
+    "lng": 11.2679437,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "tschawinerpass": {
+    "name": "Tschawinerpass",
+    "slug": "tschawinerpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1448075,
+    "lng": 8.1296178,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2406m"
+  },
+  "tschawinerpass-3104": {
+    "name": "Tschawinerpass",
+    "slug": "tschawinerpass-3104",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1448075,
+    "lng": 8.1296178,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "tschengg": {
+    "name": "Tschengg",
+    "slug": "tschengg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5533864,
+    "lng": 11.1671088,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "tscheyer-scharte-forcella-delle-capre": {
+    "name": "Tscheyer Scharte - Forcella delle Capre",
+    "slug": "tscheyer-scharte-forcella-delle-capre",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8585615,
+    "lng": 10.608846,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2806m"
+  },
+  "tscheyer-scharte-forcella-delle-capre-1017": {
+    "name": "Tscheyer Scharte - Forcella delle Capre",
+    "slug": "tscheyer-scharte-forcella-delle-capre-1017",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8585615,
+    "lng": 10.608846,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "tscheyjoch": {
+    "name": "Tscheyjoch",
+    "slug": "tscheyjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8875054,
+    "lng": 10.5729977,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2600m"
+  },
+  "tscheyjoch-979": {
+    "name": "Tscheyjoch",
+    "slug": "tscheyjoch-979",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8875054,
+    "lng": 10.5729977,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "tschigg-maso-ciga": {
+    "name": "Tschigg - Maso Ciga",
+    "slug": "tschigg-maso-ciga",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4592649,
+    "lng": 11.4624237,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "tschingelpass": {
+    "name": "Tschingelpass",
+    "slug": "tschingelpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4915396,
+    "lng": 7.8160976,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2774m"
+  },
+  "tschingelpass-3175": {
+    "name": "Tschingelpass",
+    "slug": "tschingelpass-3175",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4915396,
+    "lng": 7.8160976,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "tschirggen": {
+    "name": "Tschirggen",
+    "slug": "tschirggen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2705784,
+    "lng": 10.1548304,
+    "nearest_airport": "INN",
+    "description": "Alter Walser Gerichtsplatz"
+  },
+  "tschuchas": {
+    "name": "Tschüchas",
+    "slug": "tschuchas",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4645228,
+    "lng": 9.7953365,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "tschugga": {
+    "name": "Tschugga",
+    "slug": "tschugga",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0757541,
+    "lng": 9.4196999,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "tschuggen": {
+    "name": "Tschuggen",
+    "slug": "tschuggen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2854491,
+    "lng": 7.8501814,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

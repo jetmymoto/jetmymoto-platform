@@ -1,0 +1,24 @@
+{
+  "znachsattel": {
+    "name": "Znachsattel",
+    "slug": "znachsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2744707,
+    "lng": 13.6389962,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2059m"
+  },
+  "znachsattel-618": {
+    "name": "Znachsattel",
+    "slug": "znachsattel-618",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.2744707,
+    "lng": 13.6389962,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "2-wasserfall": {
+    "name": "2. Wasserfall",
+    "slug": "2-wasserfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5911539,
+    "lng": 9.8384123,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -404,7 +404,7 @@ const HangarPage = () => {
         <HangarSubnav />
 
         {/* 2. FLEET */}
-        <section id="fleet" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-black/40 to-[#061733]/80 border-b border-white/5 relative overflow-hidden">
+        <section id="fleet" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#050505]/40 to-[#061733]/80 border-b border-white/5 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-soft-light pointer-events-none"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <MyFleetContent />
@@ -420,7 +420,7 @@ const HangarPage = () => {
         </section>
         
         {/* 4. LIVE OPS (Placeholder) */}
-        <section id="live-ops" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#061733]/80 to-black/40 border-y border-white/5">
+        <section id="live-ops" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#061733]/80 to-[#050505]/40 border-y border-white/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-12">
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-3">Live Operations</h2>
@@ -438,7 +438,7 @@ const HangarPage = () => {
         </section>
         
         {/* 6. ACHIEVEMENTS */}
-        <section id="achievements" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-black/40 to-[#061733]/80">
+        <section id="achievements" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#050505]/40 to-[#061733]/80">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
              {/* Stats CTA */}
              <div className="text-center">
@@ -457,7 +457,7 @@ const HangarPage = () => {
         </section>
 
         {/* 7. BLACK BOX (Placeholder) */}
-        <section id="black-box" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#061733] to-black relative">
+        <section id="black-box" className="scroll-mt-32 py-16 md:py-24 bg-gradient-to-b from-[#061733] to-[#050505] relative">
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay pointer-events-none"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="mb-16 text-center max-w-3xl mx-auto">

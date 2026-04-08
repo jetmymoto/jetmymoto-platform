@@ -1,0 +1,24 @@
+{
+  "odenstein": {
+    "name": "Ödenstein",
+    "slug": "odenstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.696141,
+    "lng": 9.267039,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "odmoriste-marune": {
+    "name": "Odmorište Marune",
+    "slug": "odmoriste-marune",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.2494883,
+    "lng": 15.6370349,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

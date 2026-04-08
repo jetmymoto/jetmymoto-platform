@@ -1,0 +1,24 @@
+{
+  "paggio": {
+    "name": "Paggio",
+    "slug": "paggio",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1905323,
+    "lng": 9.5694284,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pagoda": {
+    "name": "Pagoda",
+    "slug": "pagoda",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2927689,
+    "lng": 11.4630508,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

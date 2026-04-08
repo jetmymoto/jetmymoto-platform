@@ -1,0 +1,13 @@
+{
+  "affenschlucht": {
+    "name": "Affenschlucht",
+    "slug": "affenschlucht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5183007,
+    "lng": 8.6751076,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

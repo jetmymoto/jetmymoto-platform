@@ -169,7 +169,7 @@ import { getSiteConfig } from '@/utils/siteConfig';
           </section>
 
           {/* --- CONNECT MISSION --- */}
-          <section id="connect-airlift" className="relative py-28 border-y border-white/10 bg-gradient-to-b from-black via-[#070b12] to-black text-center">
+          <section id="connect-airlift" className="relative py-28 border-y border-white/10 bg-gradient-to-b from-[#050505] via-[#070b12] to-[#050505] text-center">
             <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">Connect Any Mission</h2>
             <div className="mt-12">
                {/* BUTTON 5: CONNECT VIDEO */}

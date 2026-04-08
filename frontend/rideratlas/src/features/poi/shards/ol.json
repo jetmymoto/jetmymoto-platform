@@ -1,0 +1,101 @@
+{
+  "ol-simal": {
+    "name": "Ol Simàl",
+    "slug": "ol-simal",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0556013,
+    "lng": 9.988486,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2712m"
+  },
+  "ol-simal-2792": {
+    "name": "Ol Simàl",
+    "slug": "ol-simal-2792",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.0556013,
+    "lng": 9.988486,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "olber": {
+    "name": "Olber",
+    "slug": "olber",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7363848,
+    "lng": 9.1463359,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "old-bridge-view": {
+    "name": "Old bridge view",
+    "slug": "old-bridge-view",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9816737,
+    "lng": 7.5470099,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "old-military-tower": {
+    "name": "Old military tower",
+    "slug": "old-military-tower",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.344168,
+    "lng": 14.59044,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "olgrubenjoch": {
+    "name": "Ölgrubenjoch",
+    "slug": "olgrubenjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.896106,
+    "lng": 10.7771659,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3044m"
+  },
+  "olgrubenjoch-1006": {
+    "name": "Ölgrubenjoch",
+    "slug": "olgrubenjoch-1006",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.896106,
+    "lng": 10.7771659,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "oljscica": {
+    "name": "Oljščica",
+    "slug": "oljscica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7491484,
+    "lng": 13.6604377,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "oltar": {
+    "name": "Oltar",
+    "slug": "oltar",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.830935,
+    "lng": 13.9751197,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 426m"
+  }
+}

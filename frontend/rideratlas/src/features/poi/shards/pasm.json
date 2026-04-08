@@ -1,0 +1,13 @@
+{
+  "pas-morta": {
+    "name": "Pas Morta",
+    "slug": "pas-morta",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9577986,
+    "lng": 5.5240538,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1889m"
+  }
+}

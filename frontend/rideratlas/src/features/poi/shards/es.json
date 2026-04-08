@@ -1,0 +1,79 @@
+{
+  "eschers": {
+    "name": "Eschers",
+    "slug": "eschers",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8476894,
+    "lng": 10.3765005,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "esel": {
+    "name": "Esel",
+    "slug": "esel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9791394,
+    "lng": 8.2561651,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2119m"
+  },
+  "eselgrabenfelsen": {
+    "name": "Eselgrabenfelsen",
+    "slug": "eselgrabenfelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8041902,
+    "lng": 7.7217248,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eselstein": {
+    "name": "Eselstein",
+    "slug": "eselstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6522941,
+    "lng": 15.8498946,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 982m"
+  },
+  "esplanade-bonaparte": {
+    "name": "Esplanade Bonaparte",
+    "slug": "esplanade-bonaparte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5226161,
+    "lng": 6.5614227,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "esplanade-de-montbenon": {
+    "name": "Esplanade de Montbenon",
+    "slug": "esplanade-de-montbenon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5203197,
+    "lng": 6.6267351,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "esplanade-du-chateau": {
+    "name": "Esplanade du Château",
+    "slug": "esplanade-du-chateau",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3820086,
+    "lng": 6.2409628,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

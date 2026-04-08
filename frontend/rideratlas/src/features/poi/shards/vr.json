@@ -1,0 +1,189 @@
+{
+  "vrana": {
+    "name": "Vrana",
+    "slug": "vrana",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9583212,
+    "lng": 15.5579652,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "vrata": {
+    "name": "Vrata",
+    "slug": "vrata",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.342272,
+    "lng": 13.7940298,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2192m"
+  },
+  "vrata-3633": {
+    "name": "Vrata",
+    "slug": "vrata-3633",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.342272,
+    "lng": 13.7940298,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "vratarski-kuk": {
+    "name": "Vratarski kuk",
+    "slug": "vratarski-kuk",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.7685542,
+    "lng": 14.9986787,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "vratca": {
+    "name": "Vratca",
+    "slug": "vratca",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2393132,
+    "lng": 13.8214918,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1668m"
+  },
+  "vratca-prelaz": {
+    "name": "Vratca prelaz",
+    "slug": "vratca-prelaz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4411669,
+    "lng": 13.7422924,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "vratni-rob": {
+    "name": "Vratni rob",
+    "slug": "vratni-rob",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2667819,
+    "lng": 14.1472797,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "vratnik": {
+    "name": "Vratnik",
+    "slug": "vratnik",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1599725,
+    "lng": 16.1390806,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 427m"
+  },
+  "vratnik-1897": {
+    "name": "Vratnik",
+    "slug": "vratnik-1897",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.978506,
+    "lng": 14.9869435,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "vratnik-panoramic-view": {
+    "name": "Vratnik panoramic view",
+    "slug": "vratnik-panoramic-view",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9787596,
+    "lng": 14.9849235,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "vrenelisgartli": {
+    "name": "Vrenelisgärtli",
+    "slug": "vrenelisgartli",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3913845,
+    "lng": 8.5522289,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "vrenski-zob": {
+    "name": "Vrenski zob",
+    "slug": "vrenski-zob",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1668017,
+    "lng": 15.5717469,
+    "nearest_airport": "VIE",
+    "description": "40m tower on top of a hill. 360° view of the surroundings."
+  },
+  "vrh-bace": {
+    "name": "Vrh Bače",
+    "slug": "vrh-bace",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2377065,
+    "lng": 13.9804417,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1273m"
+  },
+  "vrh-mazinske-planine": {
+    "name": "Vrh Mazinske planine",
+    "slug": "vrh-mazinske-planine",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.47814,
+    "lng": 15.9993888,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1093m"
+  },
+  "vrh-plazi": {
+    "name": "Vrh Plazi",
+    "slug": "vrh-plazi",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1607428,
+    "lng": 14.0026364,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1289m"
+  },
+  "vrhivski-prelaz": {
+    "name": "Vrhivški prelaz",
+    "slug": "vrhivski-prelaz",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3610792,
+    "lng": 15.3067563,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 766m"
+  },
+  "vrhprag": {
+    "name": "Vrhprag",
+    "slug": "vrhprag",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.2636525,
+    "lng": 15.6477446,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 856m"
+  }
+}

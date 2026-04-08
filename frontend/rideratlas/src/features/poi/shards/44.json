@@ -1,0 +1,13 @@
+{
+  "44-parallelo-terrestre": {
+    "name": "44° parallelo terrestre",
+    "slug": "44-parallelo-terrestre",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.0002451,
+    "lng": 12.350049,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

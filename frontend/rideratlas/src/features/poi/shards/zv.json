@@ -1,0 +1,24 @@
+{
+  "zvezdarna": {
+    "name": "Zvezdarna",
+    "slug": "zvezdarna",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5053994,
+    "lng": 15.5433912,
+    "nearest_airport": "VIE",
+    "description": "https://www.facebook.com/zvezdarna/"
+  },
+  "zvonik-sv-martin": {
+    "name": "Zvonik sv. Martin",
+    "slug": "zvonik-sv-martin",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1509917,
+    "lng": 13.6062339,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

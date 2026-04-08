@@ -1,0 +1,35 @@
+{
+  "zoparina": {
+    "name": "Zoparina",
+    "slug": "zoparina",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0127452,
+    "lng": 11.3873502,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zopetscharte": {
+    "name": "Zopetscharte",
+    "slug": "zopetscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0539304,
+    "lng": 12.3635437,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2980m"
+  },
+  "zopetscharte-2171": {
+    "name": "Zopetscharte",
+    "slug": "zopetscharte-2171",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0539304,
+    "lng": 12.3635437,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

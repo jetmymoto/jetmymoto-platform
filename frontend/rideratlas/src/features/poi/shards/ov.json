@@ -1,0 +1,13 @@
+{
+  "ovronnaz": {
+    "name": "Ovronnaz",
+    "slug": "ovronnaz",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.201546,
+    "lng": 7.1780864,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1360m"
+  }
+}

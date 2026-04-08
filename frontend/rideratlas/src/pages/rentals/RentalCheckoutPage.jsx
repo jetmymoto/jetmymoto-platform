@@ -156,7 +156,7 @@ export default function RentalCheckoutPage() {
       {/* ── Top Bar ── */}
       <div className="mx-auto max-w-5xl px-4 pt-8 sm:px-6">
         <Link
-          to={withCtx(`/rentals/${rental.airportCode || rental.airport}/${rental.slug || rentalId}`)}
+          to={withCtx(`/rental/${rental.slug || rentalId}`)}
           className="inline-flex items-center gap-2 text-[10px] font-mono font-bold uppercase tracking-[0.25em] text-zinc-500 hover:text-[#CDA755] transition-colors"
         >
           <ArrowLeft size={14} />

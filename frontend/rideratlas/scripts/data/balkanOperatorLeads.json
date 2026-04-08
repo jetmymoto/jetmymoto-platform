@@ -1,0 +1,602 @@
+{
+  "meta": {
+    "harvestedAt": "2026-04-06T08:38:39.579Z",
+    "airports": [
+      "ATH",
+      "ZAG",
+      "SPU",
+      "DBV",
+      "BEG",
+      "SOF",
+      "TIA",
+      "SKG",
+      "PRN",
+      "SKP"
+    ],
+    "totalLeads": 20,
+    "dryRun": true,
+    "engine": "google_maps"
+  },
+  "leads": [
+    {
+      "name": "Moto Rentals Athens",
+      "address": "Airport Rd, Athens",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-ath-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "ATH",
+      "airportCity": "Athens",
+      "airportCountry": "gr",
+      "airportRegion": "Aegean Gateway & Peloponnese Entry",
+      "compatibleDestinations": [
+        "peloponnese",
+        "meteora",
+        "greek-islands-tour"
+      ],
+      "operatorSlug": "moto-rentals-athens-ath",
+      "rentalSlugPrefix": "moto-rentals-athens-ath",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near ATH airport"
+    },
+    {
+      "name": "Athens Adventure Bikes",
+      "address": "Terminal Zone, Athens",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-ath-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "ATH",
+      "airportCity": "Athens",
+      "airportCountry": "gr",
+      "airportRegion": "Aegean Gateway & Peloponnese Entry",
+      "compatibleDestinations": [
+        "peloponnese",
+        "meteora",
+        "greek-islands-tour"
+      ],
+      "operatorSlug": "athens-adventure-bikes-ath",
+      "rentalSlugPrefix": "athens-adventure-bikes-ath",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near ATH airport"
+    },
+    {
+      "name": "Moto Rentals Zagreb",
+      "address": "Airport Rd, Zagreb",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-zag-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "ZAG",
+      "airportCity": "Zagreb",
+      "airportCountry": "hr",
+      "airportRegion": "North Adriatic & Pannonian Entry",
+      "compatibleDestinations": [
+        "plitvice-lakes",
+        "kvarner-bay",
+        "slovenian-alps"
+      ],
+      "operatorSlug": "moto-rentals-zagreb-zag",
+      "rentalSlugPrefix": "moto-rentals-zagreb-zag",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near ZAG airport"
+    },
+    {
+      "name": "Zagreb Adventure Bikes",
+      "address": "Terminal Zone, Zagreb",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-zag-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "ZAG",
+      "airportCity": "Zagreb",
+      "airportCountry": "hr",
+      "airportRegion": "North Adriatic & Pannonian Entry",
+      "compatibleDestinations": [
+        "plitvice-lakes",
+        "kvarner-bay",
+        "slovenian-alps"
+      ],
+      "operatorSlug": "zagreb-adventure-bikes-zag",
+      "rentalSlugPrefix": "zagreb-adventure-bikes-zag",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near ZAG airport"
+    },
+    {
+      "name": "Moto Rentals Split",
+      "address": "Airport Rd, Split",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-spu-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "SPU",
+      "airportCity": "Split",
+      "airportCountry": "hr",
+      "airportRegion": "Dalmatian Coast Mission Anchor",
+      "compatibleDestinations": [
+        "dalmatian-coast",
+        "krka-canyon",
+        "mostar-valley"
+      ],
+      "operatorSlug": "moto-rentals-split-spu",
+      "rentalSlugPrefix": "moto-rentals-split-spu",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SPU airport"
+    },
+    {
+      "name": "Split Adventure Bikes",
+      "address": "Terminal Zone, Split",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-spu-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "SPU",
+      "airportCity": "Split",
+      "airportCountry": "hr",
+      "airportRegion": "Dalmatian Coast Mission Anchor",
+      "compatibleDestinations": [
+        "dalmatian-coast",
+        "krka-canyon",
+        "mostar-valley"
+      ],
+      "operatorSlug": "split-adventure-bikes-spu",
+      "rentalSlugPrefix": "split-adventure-bikes-spu",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SPU airport"
+    },
+    {
+      "name": "Moto Rentals Dubrovnik",
+      "address": "Airport Rd, Dubrovnik",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-dbv-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "DBV",
+      "airportCity": "Dubrovnik",
+      "airportCountry": "hr",
+      "airportRegion": "Premium Adriatic Extraction Point",
+      "compatibleDestinations": [
+        "dubrovnik-hinterland",
+        "dalmatian-coast",
+        "kotor-bay"
+      ],
+      "operatorSlug": "moto-rentals-dubrovnik-dbv",
+      "rentalSlugPrefix": "moto-rentals-dubrovnik-dbv",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near DBV airport"
+    },
+    {
+      "name": "Dubrovnik Adventure Bikes",
+      "address": "Terminal Zone, Dubrovnik",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-dbv-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "DBV",
+      "airportCity": "Dubrovnik",
+      "airportCountry": "hr",
+      "airportRegion": "Premium Adriatic Extraction Point",
+      "compatibleDestinations": [
+        "dubrovnik-hinterland",
+        "dalmatian-coast",
+        "kotor-bay"
+      ],
+      "operatorSlug": "dubrovnik-adventure-bikes-dbv",
+      "rentalSlugPrefix": "dubrovnik-adventure-bikes-dbv",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near DBV airport"
+    },
+    {
+      "name": "Moto Rentals Belgrade",
+      "address": "Airport Rd, Belgrade",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-beg-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "BEG",
+      "airportCity": "Belgrade",
+      "airportCountry": "rs",
+      "airportRegion": "Central Balkan Logistical Heart",
+      "compatibleDestinations": [
+        "iron-gates-gorge",
+        "tara-mountain",
+        "fruska-gora"
+      ],
+      "operatorSlug": "moto-rentals-belgrade-beg",
+      "rentalSlugPrefix": "moto-rentals-belgrade-beg",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near BEG airport"
+    },
+    {
+      "name": "Belgrade Adventure Bikes",
+      "address": "Terminal Zone, Belgrade",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-beg-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "BEG",
+      "airportCity": "Belgrade",
+      "airportCountry": "rs",
+      "airportRegion": "Central Balkan Logistical Heart",
+      "compatibleDestinations": [
+        "iron-gates-gorge",
+        "tara-mountain",
+        "fruska-gora"
+      ],
+      "operatorSlug": "belgrade-adventure-bikes-beg",
+      "rentalSlugPrefix": "belgrade-adventure-bikes-beg",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near BEG airport"
+    },
+    {
+      "name": "Moto Rentals Sofia",
+      "address": "Airport Rd, Sofia",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-sof-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "SOF",
+      "airportCity": "Sofia",
+      "airportCountry": "bg",
+      "airportRegion": "Eastern Balkan & Black Sea Vector",
+      "compatibleDestinations": [
+        "rila-mountains",
+        "vitosha-ridge",
+        "rhodope-highlands"
+      ],
+      "operatorSlug": "moto-rentals-sofia-sof",
+      "rentalSlugPrefix": "moto-rentals-sofia-sof",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SOF airport"
+    },
+    {
+      "name": "Sofia Adventure Bikes",
+      "address": "Terminal Zone, Sofia",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-sof-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "SOF",
+      "airportCity": "Sofia",
+      "airportCountry": "bg",
+      "airportRegion": "Eastern Balkan & Black Sea Vector",
+      "compatibleDestinations": [
+        "rila-mountains",
+        "vitosha-ridge",
+        "rhodope-highlands"
+      ],
+      "operatorSlug": "sofia-adventure-bikes-sof",
+      "rentalSlugPrefix": "sofia-adventure-bikes-sof",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SOF airport"
+    },
+    {
+      "name": "Moto Rentals Tirana",
+      "address": "Airport Rd, Tirana",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-tia-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "TIA",
+      "airportCity": "Tirana",
+      "airportCountry": "al",
+      "airportRegion": "Albanian Alps Adventure Hub",
+      "compatibleDestinations": [
+        "albanian-alps",
+        "valbona-valley",
+        "ohrid-lake"
+      ],
+      "operatorSlug": "moto-rentals-tirana-tia",
+      "rentalSlugPrefix": "moto-rentals-tirana-tia",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near TIA airport"
+    },
+    {
+      "name": "Tirana Adventure Bikes",
+      "address": "Terminal Zone, Tirana",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-tia-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "TIA",
+      "airportCity": "Tirana",
+      "airportCountry": "al",
+      "airportRegion": "Albanian Alps Adventure Hub",
+      "compatibleDestinations": [
+        "albanian-alps",
+        "valbona-valley",
+        "ohrid-lake"
+      ],
+      "operatorSlug": "tirana-adventure-bikes-tia",
+      "rentalSlugPrefix": "tirana-adventure-bikes-tia",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near TIA airport"
+    },
+    {
+      "name": "Moto Rentals Thessaloniki",
+      "address": "Airport Rd, Thessaloniki",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-skg-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "SKG",
+      "airportCity": "Thessaloniki",
+      "airportCountry": "gr",
+      "airportRegion": "Northern Greece Tactical Terminal",
+      "compatibleDestinations": [
+        "mount-olympus",
+        "chalkidiki-coast",
+        "macedonian-highlands"
+      ],
+      "operatorSlug": "moto-rentals-thessaloniki-skg",
+      "rentalSlugPrefix": "moto-rentals-thessaloniki-skg",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SKG airport"
+    },
+    {
+      "name": "Thessaloniki Adventure Bikes",
+      "address": "Terminal Zone, Thessaloniki",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-skg-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "SKG",
+      "airportCity": "Thessaloniki",
+      "airportCountry": "gr",
+      "airportRegion": "Northern Greece Tactical Terminal",
+      "compatibleDestinations": [
+        "mount-olympus",
+        "chalkidiki-coast",
+        "macedonian-highlands"
+      ],
+      "operatorSlug": "thessaloniki-adventure-bikes-skg",
+      "rentalSlugPrefix": "thessaloniki-adventure-bikes-skg",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SKG airport"
+    },
+    {
+      "name": "Moto Rentals Pristina",
+      "address": "Airport Rd, Pristina",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-prn-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "PRN",
+      "airportCity": "Pristina",
+      "airportCountry": "xk",
+      "airportRegion": "Dinaric Spine Inland Hub",
+      "compatibleDestinations": [
+        "dinaric-spine",
+        "rugova-valley",
+        "sar-mountains"
+      ],
+      "operatorSlug": "moto-rentals-pristina-prn",
+      "rentalSlugPrefix": "moto-rentals-pristina-prn",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near PRN airport"
+    },
+    {
+      "name": "Pristina Adventure Bikes",
+      "address": "Terminal Zone, Pristina",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-prn-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "PRN",
+      "airportCity": "Pristina",
+      "airportCountry": "xk",
+      "airportRegion": "Dinaric Spine Inland Hub",
+      "compatibleDestinations": [
+        "dinaric-spine",
+        "rugova-valley",
+        "sar-mountains"
+      ],
+      "operatorSlug": "pristina-adventure-bikes-prn",
+      "rentalSlugPrefix": "pristina-adventure-bikes-prn",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near PRN airport"
+    },
+    {
+      "name": "Moto Rentals Skopje",
+      "address": "Airport Rd, Skopje",
+      "phone": null,
+      "website": null,
+      "rating": 4.5,
+      "reviews": 23,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-skp-001",
+      "type": "Motorcycle rental agency",
+      "is_mock": true,
+      "airportCode": "SKP",
+      "airportCity": "Skopje",
+      "airportCountry": "mk",
+      "airportRegion": "Vardar Corridor Strategic Link",
+      "compatibleDestinations": [
+        "matka-canyon",
+        "ohrid-lake",
+        "galicica-ridge"
+      ],
+      "operatorSlug": "moto-rentals-skopje-skp",
+      "rentalSlugPrefix": "moto-rentals-skopje-skp",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SKP airport"
+    },
+    {
+      "name": "Skopje Adventure Bikes",
+      "address": "Terminal Zone, Skopje",
+      "phone": null,
+      "website": null,
+      "rating": 4.2,
+      "reviews": 11,
+      "gps_coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "place_id": "mock-skp-002",
+      "type": "Vehicle rental agency",
+      "is_mock": true,
+      "airportCode": "SKP",
+      "airportCity": "Skopje",
+      "airportCountry": "mk",
+      "airportRegion": "Vardar Corridor Strategic Link",
+      "compatibleDestinations": [
+        "matka-canyon",
+        "ohrid-lake",
+        "galicica-ridge"
+      ],
+      "operatorSlug": "skopje-adventure-bikes-skp",
+      "rentalSlugPrefix": "skopje-adventure-bikes-skp",
+      "discoveredAt": "2026-04-06T08:38:39.579Z",
+      "queryEngine": "google_maps",
+      "query": "motorcycle rental near SKP airport"
+    }
+  ]
+}

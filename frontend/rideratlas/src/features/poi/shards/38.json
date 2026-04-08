@@ -1,0 +1,13 @@
+{
+  "389m": {
+    "name": "389m",
+    "slug": "389m",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.868776,
+    "lng": 10.9215755,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

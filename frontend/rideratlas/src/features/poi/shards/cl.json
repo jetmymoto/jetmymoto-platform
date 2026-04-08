@@ -1,0 +1,112 @@
+{
+  "clabinualp": {
+    "name": "Clabinualp",
+    "slug": "clabinualp",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3919863,
+    "lng": 7.6501084,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "claridenpass": {
+    "name": "Claridenpass",
+    "slug": "claridenpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.829175,
+    "lng": 8.8824428,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2952m"
+  },
+  "claridenpass-1892": {
+    "name": "Claridenpass",
+    "slug": "claridenpass-1892",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.829175,
+    "lng": 8.8824428,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "clavanovs": {
+    "name": "Clavanövs",
+    "slug": "clavanovs",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4642185,
+    "lng": 9.7965365,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cliff": {
+    "name": "Cliff",
+    "slug": "cliff",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.7682529,
+    "lng": 13.9157674,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cliff-diving": {
+    "name": "Cliff Diving",
+    "slug": "cliff-diving",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8359568,
+    "lng": 13.8273066,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "clock-tower-belvedere": {
+    "name": "clock tower belvedère",
+    "slug": "clock-tower-belvedere",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8053404,
+    "lng": 7.1607745,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "clot-de-la-siva": {
+    "name": "Clot de la Siva",
+    "slug": "clot-de-la-siva",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8282168,
+    "lng": 6.5505351,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "clot-della-soma": {
+    "name": "Clot della Soma",
+    "slug": "clot-della-soma",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.992116,
+    "lng": 6.9486295,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "clot-du-puy": {
+    "name": "Clot du Puy",
+    "slug": "clot-du-puy",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.7591444,
+    "lng": 6.5514039,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1645m"
+  }
+}

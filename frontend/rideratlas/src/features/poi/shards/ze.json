@@ -1,0 +1,222 @@
+{
+  "zeblarjeva-pec": {
+    "name": "Žeblarjeva peč",
+    "slug": "zeblarjeva-pec",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3546071,
+    "lng": 15.219628,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 574m"
+  },
+  "zeblasjoch": {
+    "name": "Zeblasjoch",
+    "slug": "zeblasjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9375886,
+    "lng": 10.3089838,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "zehentner-stange": {
+    "name": "Zehentner Stange",
+    "slug": "zehentner-stange",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3292659,
+    "lng": 12.5333729,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2114m"
+  },
+  "zehentner-stange-3117": {
+    "name": "Zehentner Stange",
+    "slug": "zehentner-stange-3117",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3292659,
+    "lng": 12.5333729,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zei-de-forca": {
+    "name": "Zéi de Forca",
+    "slug": "zei-de-forca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3147251,
+    "lng": 11.9979145,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1040m"
+  },
+  "zeigersattel": {
+    "name": "Zeigersattel",
+    "slug": "zeigersattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4092371,
+    "lng": 10.3476872,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1922m"
+  },
+  "zeinenfurggel": {
+    "name": "Zeinenfurggel",
+    "slug": "zeinenfurggel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9826592,
+    "lng": 8.9789361,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2435m"
+  },
+  "zeinenfurggel-3751": {
+    "name": "Zeinenfurggel",
+    "slug": "zeinenfurggel-3751",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9826592,
+    "lng": 8.9789361,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zeinisjoch": {
+    "name": "Zeinisjoch",
+    "slug": "zeinisjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9776728,
+    "lng": 10.1410232,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1840m"
+  },
+  "zeinisjoch-3288": {
+    "name": "Zeinisjoch",
+    "slug": "zeinisjoch-3288",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9776728,
+    "lng": 10.1410232,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zeitberg": {
+    "name": "Zeitberg",
+    "slug": "zeitberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6444288,
+    "lng": 11.0548916,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1404.0m"
+  },
+  "zeleno-okno": {
+    "name": "Zeleno okno",
+    "slug": "zeleno-okno",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5200086,
+    "lng": 16.0241521,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 325m"
+  },
+  "zeller-giessen": {
+    "name": "Zeller Giessen",
+    "slug": "zeller-giessen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4520887,
+    "lng": 8.8302217,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zeller-scharte": {
+    "name": "Zeller Scharte",
+    "slug": "zeller-scharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7029405,
+    "lng": 12.0172874,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1611m"
+  },
+  "zelleraussicht": {
+    "name": "Zelleraussicht",
+    "slug": "zelleraussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7311765,
+    "lng": 14.3302385,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 736m"
+  },
+  "zellerrain": {
+    "name": "Zellerrain",
+    "slug": "zellerrain",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7915017,
+    "lng": 15.2151491,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1121m"
+  },
+  "zellerrain-13": {
+    "name": "Zellerrain",
+    "slug": "zellerrain-13",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.7915017,
+    "lng": 15.2151491,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zeltpavillion": {
+    "name": "Zeltpavillion",
+    "slug": "zeltpavillion",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6723305,
+    "lng": 9.0624976,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zensko-sedlo": {
+    "name": "Žensko sedlo",
+    "slug": "zensko-sedlo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8952657,
+    "lng": 15.9401526,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 964m"
+  },
+  "zeppelinhohe": {
+    "name": "Zeppelinhöhe",
+    "slug": "zeppelinhohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7725741,
+    "lng": 12.4342885,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

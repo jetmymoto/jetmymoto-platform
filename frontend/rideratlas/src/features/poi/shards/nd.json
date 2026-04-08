@@ -1,0 +1,13 @@
+{
+  "nd-de-bois-vert": {
+    "name": "N.D. de bois vert",
+    "slug": "nd-de-bois-vert",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6664967,
+    "lng": 6.0566326,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

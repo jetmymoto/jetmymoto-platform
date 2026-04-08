@@ -1,3 +1,5 @@
+import { selectBestImage } from "../../../core/visual/selectBestImage.js";
+
 /**
  * Pure utility functions for deriving rental display values from rental records.
  * Extracted from RentalCard.jsx so that both UI components and build-time code
@@ -117,13 +119,47 @@ export function formatRentalPrice(rental) {
   }).format(amount);
 }
 
-export function getRentalPosterUrl(rental) {
-  return (
-    rental?.posterUrl ||
-    rental?.imageUrl ||
-    CATEGORY_MEDIA[String(rental?.category || "").toLowerCase()] ||
-    CATEGORY_MEDIA.default
-  );
+function generate15RentalImagesX1Url(brand, model) {
+  if (!brand || !model) return null;
+  const b = String(brand).toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  let m = String(model).toLowerCase();
+  
+  // Aggressive flattening for model names
+  m = m.replace(/^([a-z])\s+(\d+)\s+([a-z]+)/, "$1$2$3"); // R 1300 GS -> r1300gs
+  m = m.replace(/^([a-z]+)\s+(\d+)\s+([a-z]+)/, "$1$2$3"); // F 900 GS -> f900gs
+  
+  // Replace anything that is not alphanumeric with a hyphen
+  m = m.replace(/[^a-z0-9]/g, '-');
+  // Remove duplicate hyphens and trim
+  m = m.replace(/-+/g, '-').replace(/(^-|-$)/g, '');
+
+  const bucket = "movie-chat-factory.firebasestorage.app";
+  return `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/15rentalimagesx1%2F${b}-${m}.jpg?alt=media`;
+}
+
+export function getRentalPosterUrl(rental, imageGraph) {
+  if (imageGraph) {
+    const selected = selectBestImage(imageGraph, {
+      brand: rental?.brand,
+      model: rental?.model,
+      category: rental?.category,
+      entityType: "rental",
+    });
+    if (selected?.storageUrl) return selected.storageUrl;
+  }
+
+  // 1. PRIMARY SOURCE: Database studio images (highest accuracy)
+  if (rental?.imageUrl) return rental.imageUrl;
+  if (rental?.posterUrl) return rental.posterUrl;
+  if (rental?.generatedImageUrl) return rental.generatedImageUrl;
+
+  // 2. SECONDARY: Deterministic guess to optimized 15rentalimagesx1 bucket
+  const brand = getRentalBrand(rental);
+  const model = getRentalModelName(rental);
+  const cleanUrl = generate15RentalImagesX1Url(brand, model);
+
+  // 3. TERTIARY: Category splash fallback
+  return cleanUrl || CATEGORY_MEDIA[String(rental?.category || "").toLowerCase()] || CATEGORY_MEDIA.default;
 }
 
 export { CATEGORY_PRICE_MAP, CATEGORY_MEDIA };

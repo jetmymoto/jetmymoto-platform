@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { db } from "../firebase";
+import { db } from "@/lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import SeoHelmet from '../components/seo/SeoHelmet'; // Import SeoHelmet
 import { createAdminPoster } from "@/services/adminPosterService";

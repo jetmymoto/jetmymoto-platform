@@ -1,0 +1,112 @@
+{
+  "the-galleries": {
+    "name": "The galleries",
+    "slug": "the-galleries",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3755192,
+    "lng": 14.0308138,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "the-roof-milano-bar-and-restaurant": {
+    "name": "The Roof Milano Bar & Restaurant",
+    "slug": "the-roof-milano-bar-and-restaurant",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.4608254,
+    "lng": 9.1886983,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "the-roof-milano-bar-and-restaurant-20809": {
+    "name": "The Roof Milano Bar & Restaurant",
+    "slug": "the-roof-milano-bar-and-restaurant-20809",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.4608254,
+    "lng": 9.1886983,
+    "nearest_airport": "",
+    "description": "Official Website Available. "
+  },
+  "theodulpass": {
+    "name": "Theodulpass",
+    "slug": "theodulpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9434979,
+    "lng": 7.7087135,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3295m"
+  },
+  "theodulpass-3417": {
+    "name": "Theodulpass",
+    "slug": "theodulpass-3417",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.9434979,
+    "lng": 7.7087135,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "theresienfelsen": {
+    "name": "Theresienfelsen",
+    "slug": "theresienfelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.788614,
+    "lng": 15.915959,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "theresienstein": {
+    "name": "Theresienstein",
+    "slug": "theresienstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7061724,
+    "lng": 13.4954348,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "thurnerfluh": {
+    "name": "Thürnerfluh",
+    "slug": "thurnerfluh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.455591,
+    "lng": 7.841004,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "thurnerpass": {
+    "name": "Thurnerpass",
+    "slug": "thurnerpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9770461,
+    "lng": 8.131436,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1035m"
+  },
+  "thusisblick": {
+    "name": "Thusisblick",
+    "slug": "thusisblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7802348,
+    "lng": 9.4319122,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

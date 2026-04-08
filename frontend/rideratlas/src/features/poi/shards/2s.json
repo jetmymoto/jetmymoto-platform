@@ -1,0 +1,13 @@
+{
+  "2-seen-blick": {
+    "name": "2-Seen-Blick",
+    "slug": "2-seen-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8822941,
+    "lng": 12.1901116,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

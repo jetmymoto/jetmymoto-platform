@@ -1,0 +1,35 @@
+{
+  "uf-der-grate": {
+    "name": "Uf der Gräte",
+    "slug": "uf-der-grate",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7629692,
+    "lng": 8.6151699,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "uf-der-stig": {
+    "name": "Uf der Stig",
+    "slug": "uf-der-stig",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7317837,
+    "lng": 8.5768166,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ufem-tritt": {
+    "name": "Ufem Tritt",
+    "slug": "ufem-tritt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1023436,
+    "lng": 8.7431237,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1323m"
+  }
+}

@@ -37,7 +37,7 @@ export function RecoverySection({ data }) {
 
         <div className="grid md:grid-cols-2 gap-8">
           {data.premium?.name && (
-            <div className="group bg-gradient-to-br from-zinc-900 to-black border border-amber-500/20 p-8 rounded-[2rem] hover:border-amber-500/50 transition-all shadow-2xl">
+            <div className="group bg-gradient-to-br from-zinc-900 to-[#050505] border border-amber-500/20 p-8 rounded-[2rem] hover:border-amber-500/50 transition-all shadow-2xl">
               <div className="flex justify-between items-start mb-8">
                 <div className="p-3 bg-amber-500/10 rounded-2xl border border-amber-500/20">
                   <Hotel className="text-amber-500" size={24} />
@@ -343,7 +343,7 @@ export function PivotSection({ airport }) {
       className="py-24 bg-[#050505] border-t border-white/5 relative overflow-hidden text-center md:text-left"
     >
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        <div className="rounded-[3rem] border border-amber-500/20 bg-gradient-to-br from-zinc-900/80 via-black/90 to-black p-10 md:p-20 backdrop-blur-2xl">
+        <div className="rounded-[3rem] border border-amber-500/20 bg-gradient-to-br from-zinc-900/80 via-[#050505]/90 to-[#050505] p-10 md:p-20">
           <h2 className="text-4xl md:text-6xl font-serif font-black italic uppercase text-white leading-[0.9] mb-12">
             Enthusiast Mode: <br />{" "}
             <span className="text-amber-500">Bring Your Own.</span>

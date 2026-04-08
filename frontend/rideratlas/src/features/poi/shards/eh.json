@@ -1,0 +1,13 @@
+{
+  "ehemalige-gatterlhutte": {
+    "name": "Ehemalige Gatterlhütte",
+    "slug": "ehemalige-gatterlhutte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3991658,
+    "lng": 11.0108578,
+    "nearest_airport": "INN",
+    "description": "Blick zum Zugspitzplatt und ins Reintal"
+  }
+}

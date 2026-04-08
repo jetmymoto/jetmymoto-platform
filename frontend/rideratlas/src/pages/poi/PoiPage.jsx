@@ -47,7 +47,7 @@ function resolvePoiRecord(slug) {
     return null;
   }
 
-  const shardPoi = readGraphShard("poiDetails")?.[slug] || null;
+  const shardPoi = readGraphShard("poiFiltered")?.readRecord?.(slug) || null;
   const graphPoi = GRAPH.pois?.[slug] || null;
 
   if (hasPoiDetailData(shardPoi)) {
@@ -59,6 +59,19 @@ function resolvePoiRecord(slug) {
   }
 
   return graphPoi;
+}
+
+function PoiSkeleton() {
+  return (
+    <div className="container mx-auto py-12 text-white">
+      <div className="max-w-3xl space-y-4">
+        <div className="h-10 w-2/3 animate-pulse bg-white/10" />
+        <div className="h-4 w-full animate-pulse bg-white/5" />
+        <div className="h-4 w-5/6 animate-pulse bg-white/5" />
+        <div className="h-4 w-1/2 animate-pulse bg-white/5" />
+      </div>
+    </div>
+  );
 }
 
 export default function PoiPage() {
@@ -80,7 +93,8 @@ export default function PoiPage() {
       }
 
       const graphPoi = GRAPH.pois?.[slug];
-      const shardPoi = readGraphShard("poiDetails")?.[slug] || null;
+      const poiShard = readGraphShard("poiFiltered");
+      const shardPoi = poiShard?.readRecord?.(slug) || null;
 
       if (hasPoiDetailData(shardPoi) || hasPoiDetailData(graphPoi)) {
         if (!active) return;
@@ -92,10 +106,12 @@ export default function PoiPage() {
       setLoading(true);
 
       try {
-        await loadGraphShard("poiDetails");
+        await loadGraphShard("poiFiltered");
         if (!active) return;
-        const poiShard = readGraphShard("poiDetails");
-        setPoi(mergePoiRecord(graphPoi, poiShard?.[slug] || null));
+        const poiShard = readGraphShard("poiFiltered");
+        const loadedPoi = await poiShard?.loadRecord?.(slug);
+        if (!active) return;
+        setPoi(mergePoiRecord(graphPoi, loadedPoi || null));
       } catch (error) {
         if (!active) return;
         console.error("Failed to load POI dataset", error);
@@ -115,7 +131,7 @@ export default function PoiPage() {
   }, [slug]);
 
   if (loading) {
-    return <div className="container mx-auto py-12 text-white">Loading POI...</div>;
+    return <PoiSkeleton />;
   }
 
   if (!poi) {

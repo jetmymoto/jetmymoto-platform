@@ -1,0 +1,167 @@
+{
+  "ende-rheindamm-links": {
+    "name": "Ende Rheindamm links",
+    "slug": "ende-rheindamm-links",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5248121,
+    "lng": 9.6434848,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ende-rheindamm-rechts": {
+    "name": "Ende Rheindamm rechts",
+    "slug": "ende-rheindamm-rechts",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.525832,
+    "lng": 9.6460451,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "engelberger-lucke": {
+    "name": "Engelberger Lücke",
+    "slug": "engelberger-lucke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8518966,
+    "lng": 8.4989256,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2688m"
+  },
+  "engelberger-lucke-1594": {
+    "name": "Engelberger Lücke",
+    "slug": "engelberger-lucke-1594",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8518966,
+    "lng": 8.4989256,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "engelrast": {
+    "name": "Engelrast",
+    "slug": "engelrast",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5520049,
+    "lng": 11.6189868,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "engelstein": {
+    "name": "Engelstein",
+    "slug": "engelstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6107267,
+    "lng": 12.1654581,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "engstligengrat": {
+    "name": "Engstligengrat",
+    "slug": "engstligengrat",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4385415,
+    "lng": 7.5950833,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2625m"
+  },
+  "engstligengrat-1766": {
+    "name": "Engstligengrat",
+    "slug": "engstligengrat-1766",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4385415,
+    "lng": 7.5950833,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "enns-steg": {
+    "name": "Enns-Steg",
+    "slug": "enns-steg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5778065,
+    "lng": 14.3470941,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "entenberg": {
+    "name": "Entenberg",
+    "slug": "entenberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5719869,
+    "lng": 9.679434,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "entenhugel": {
+    "name": "Entenhügel",
+    "slug": "entenhugel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6877673,
+    "lng": 15.7182699,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1415m"
+  },
+  "enterisches-eck": {
+    "name": "Enterisches Eck",
+    "slug": "enterisches-eck",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7384628,
+    "lng": 13.819871,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "entrata-nella-gola-delle-saline": {
+    "name": "Entrata nella gola delle Saline",
+    "slug": "entrata-nella-gola-delle-saline",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1602247,
+    "lng": 7.7393335,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "envers-des-roches-de-court": {
+    "name": "Envers des roches de Court",
+    "slug": "envers-des-roches-de-court",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2531452,
+    "lng": 7.3545902,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "enzbirch": {
+    "name": "Enzbirch",
+    "slug": "enzbirch",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4245845,
+    "lng": 11.3636385,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

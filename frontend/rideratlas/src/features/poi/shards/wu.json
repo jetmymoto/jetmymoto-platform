@@ -1,0 +1,112 @@
+{
+  "wuksch-tor": {
+    "name": "Wuksch Tor",
+    "slug": "wuksch-tor",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.581251,
+    "lng": 14.110345,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "wulchestei": {
+    "name": "Wulchestei",
+    "slug": "wulchestei",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6802142,
+    "lng": 8.8380114,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wunderschone-aussicht-uber-graz": {
+    "name": "Wunderschöne Aussicht über Graz",
+    "slug": "wunderschone-aussicht-uber-graz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1444833,
+    "lng": 15.4336056,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "wurbauerkogel": {
+    "name": "Wurbauerkogel",
+    "slug": "wurbauerkogel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7261962,
+    "lng": 14.3403857,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 858m"
+  },
+  "wurbauerkogel-330": {
+    "name": "Wurbauerkogel",
+    "slug": "wurbauerkogel-330",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.7261962,
+    "lng": 14.3403857,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wurmtaler-jochl-giogo-val-dei-covoni": {
+    "name": "Wurmtaler Jöchl - Giogo Val dei Covoni",
+    "slug": "wurmtaler-jochl-giogo-val-dei-covoni",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9179223,
+    "lng": 11.8336902,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2285m"
+  },
+  "wurmtaler-jochl-giogo-val-dei-covoni-859": {
+    "name": "Wurmtaler Jöchl - Giogo Val dei Covoni",
+    "slug": "wurmtaler-jochl-giogo-val-dei-covoni-859",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9179223,
+    "lng": 11.8336902,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wurmtalerjoch": {
+    "name": "Wurmtalerjoch",
+    "slug": "wurmtalerjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.942387,
+    "lng": 10.78671,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "wutenkarsattel": {
+    "name": "Wütenkarsattel",
+    "slug": "wutenkarsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9913917,
+    "lng": 11.070329,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3103m"
+  },
+  "wutenkarsattel-3150": {
+    "name": "Wütenkarsattel",
+    "slug": "wutenkarsattel-3150",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9913917,
+    "lng": 11.070329,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

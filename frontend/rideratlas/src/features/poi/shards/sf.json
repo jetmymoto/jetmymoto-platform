@@ -1,0 +1,68 @@
+{
+  "sforcela-de-la-marmoleda": {
+    "name": "Sforcela de la Marmolèda",
+    "slug": "sforcela-de-la-marmoleda",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4387644,
+    "lng": 11.8401822,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2885m"
+  },
+  "sforcela-de-la-marmoleda-828": {
+    "name": "Sforcela de la Marmolèda",
+    "slug": "sforcela-de-la-marmoleda-828",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4387644,
+    "lng": 11.8401822,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "sforcela-de-vernel": {
+    "name": "Sforcela de Vernel",
+    "slug": "sforcela-de-vernel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4408,
+    "lng": 11.834,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2996m"
+  },
+  "sforcela-de-vernel-3309": {
+    "name": "Sforcela de Vernel",
+    "slug": "sforcela-de-vernel-3309",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4408,
+    "lng": 11.834,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "sforcela-del-bachet": {
+    "name": "Sforcela Del Bachet",
+    "slug": "sforcela-del-bachet",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4119,
+    "lng": 11.8407,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2836m"
+  },
+  "sforcela-del-bachet-3310": {
+    "name": "Sforcela Del Bachet",
+    "slug": "sforcela-del-bachet-3310",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4119,
+    "lng": 11.8407,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

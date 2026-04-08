@@ -1,0 +1,35 @@
+{
+  "izletiste-tonimir": {
+    "name": "Izletište Tonimir",
+    "slug": "izletiste-tonimir",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2197757,
+    "lng": 16.416826,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "izvor-cetine": {
+    "name": "Izvor Cetine",
+    "slug": "izvor-cetine",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.976711,
+    "lng": 16.4293732,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "izvor-sljunjcice": {
+    "name": "izvor Sljunjčice",
+    "slug": "izvor-sljunjcice",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0790849,
+    "lng": 15.5875292,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

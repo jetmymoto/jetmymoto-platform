@@ -14,7 +14,7 @@ const FinalCTA = () => {
   return <section className="relative py-32 px-4 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-[#050505]/30 z-10" />
         <img className="w-full h-full object-cover" alt="Luxury motorcycle in front of Monte Carlo casino at night" src="https://images.unsplash.com/photo-1617329092870-ca99b7fa5f23" />
       </div>
 

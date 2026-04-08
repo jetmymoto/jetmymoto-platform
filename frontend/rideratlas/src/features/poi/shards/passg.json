@@ -1,0 +1,46 @@
+{
+  "pass-griessen": {
+    "name": "Pass Grießen",
+    "slug": "pass-griessen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4563609,
+    "lng": 12.6432086,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 975m"
+  },
+  "pass-griessen-2259": {
+    "name": "Pass Grießen",
+    "slug": "pass-griessen-2259",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.4563609,
+    "lng": 12.6432086,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "pass-gschutt": {
+    "name": "Pass Gschütt",
+    "slug": "pass-gschutt",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5913708,
+    "lng": 13.5056271,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 957m"
+  },
+  "pass-gschutt-1497": {
+    "name": "Pass Gschütt",
+    "slug": "pass-gschutt-1497",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.5913708,
+    "lng": 13.5056271,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

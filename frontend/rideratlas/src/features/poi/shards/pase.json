@@ -1,0 +1,13 @@
+{
+  "pas-ernadant": {
+    "name": "Pas Ernadant",
+    "slug": "pas-ernadant",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9724436,
+    "lng": 5.5269016,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1833m"
+  }
+}

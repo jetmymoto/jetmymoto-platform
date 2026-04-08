@@ -1,0 +1,24 @@
+{
+  "passo-juribrutto-sforcela-grana": {
+    "name": "Passo Juribrutto - Sforcèla Grana",
+    "slug": "passo-juribrutto-sforcela-grana",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3513819,
+    "lng": 11.7616255,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2387m"
+  },
+  "passo-juribrutto-sforcela-grana-623": {
+    "name": "Passo Juribrutto - Sforcèla Grana",
+    "slug": "passo-juribrutto-sforcela-grana-623",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3513819,
+    "lng": 11.7616255,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

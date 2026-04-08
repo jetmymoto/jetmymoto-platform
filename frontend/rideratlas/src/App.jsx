@@ -16,7 +16,6 @@ import {
 
 import BrandLayout from "./layouts/BrandLayout";
 import AdminLayout from "./layouts/AdminLayout";
-import { GRAPH } from "@/core/network/networkGraph";
 import { getSiteConfig } from "./utils/siteConfig";
 import {
   getCanonicalAirportContinentPath,
@@ -24,21 +23,20 @@ import {
   getCanonicalAirportPath,
 } from "@/utils/navigationTargets";
 
-// CORE PAGES (Kept synchronous for fast LCP)
-import GlobalTower from "./pages/GlobalTower";
-import AirportsCountryPage from "./pages/AirportsCountryPage";
-import AirportPage from "./pages/AirportPage";
-import RideRoutePage from "@/pages/routes/RideRoutePage";
-import RideDestinationPage from "@/pages/destination/RideDestinationPage";
 import RiderAtlasHomepage from "./pages/Rideratlashomepage";
 import JetMyMotoHomepage from "./pages/jetmymotohomepage";
 import NotFound from "./pages/NotFound";
 import TactileHardwarePrototypePage from "./pages/TactileHardwarePrototypePage";
 import PatriotPseoTemplate from "./components/seo/PatriotPseoTemplate";
-import PatriotOverlayPage from "./pages/PatriotOverlayPage";
-import MotoAirliftBooking from "./features/airport/MotoAirliftBooking";
 
 // LAZY LOADED PAGES
+const GlobalTower = lazy(() => import("./pages/GlobalTower"));
+const AirportsCountryPage = lazy(() => import("./pages/AirportsCountryPage"));
+const AirportPage = lazy(() => import("./pages/AirportPage"));
+const RideRoutePage = lazy(() => import("@/pages/routes/RideRoutePage"));
+const RideDestinationPage = lazy(() => import("@/pages/destination/RideDestinationPage"));
+const PatriotOverlayPage = lazy(() => import("./pages/rentals/PatriotOverlayPage"));
+const MotoAirliftBooking = lazy(() => import("./features/airport/MotoAirliftBooking"));
 const MissionDetailsPage = lazy(() => import("./pages/MissionDetailsPage"));
 const RentalCheckoutPage = lazy(() => import("./pages/rentals/RentalCheckoutPage"));
 const MissionPlannerPage = lazy(() => import("./pages/MissionPlannerPage"));
@@ -46,8 +44,11 @@ const PlanSummaryPage = lazy(() => import("./pages/PlanSummaryPage"));
 const HangarPage = lazy(() => import("./pages/HangarPage"));
 const PoolPage = lazy(() => import("./pages/PoolPage"));
 const RentalDetailPage = lazy(() => import("./pages/rentals/RentalDetailPage"));
+const ModelDeploymentPage = lazy(() => import("./pages/rentals/ModelDeploymentPage"));
 const PoiPage = lazy(() => import("./pages/poi/PoiPage"));
 const A2AMissionPage = lazy(() => import("./pages/a2a/A2AMissionPage"));
+const OneWayRentalsPage = lazy(() => import("./pages/OneWayRentalsPage"));
+const OperatorPage = lazy(() => import("./pages/OperatorPage"));
 
 // LAZY LOADED ADMIN
 const AdminOS = lazy(() => import("./pages/admin/AdminOS"));
@@ -95,9 +96,7 @@ function resolveLegacyAirportTarget(pathname) {
     return getCanonicalAirportContinentPath(value);
   }
 
-  const matchedAirportCode = segments.find((segment) =>
-    GRAPH.airports?.[segment?.toUpperCase()]
-  );
+  const matchedAirportCode = segments.find((segment) => /^[a-z]{3}$/i.test(segment));
 
   if (matchedAirportCode) {
     return getCanonicalAirportPath(matchedAirportCode);
@@ -133,11 +132,14 @@ function AppRoutes({ site }) {
 
       <Route path="/rental/:slug" element={<RentalDetailPage />} />
       <Route path="/checkout/rental/:rentalId" element={<RentalCheckoutPage />} />
-      <Route path="/rentals/:airportCode/:rentalSlug" element={<PatriotOverlayPage />} />
+      <Route path="/rentals/:airportCode/:bikeSlug" element={<PatriotOverlayPage />} />
+      <Route path="/deploy/:airportCode/:modelSlug" element={<ModelDeploymentPage />} />
       <Route path="/route/:slug" element={<RideRoutePage />} />
       <Route path="/destination/:slug" element={<RideDestinationPage />} />
       <Route path="/poi/:slug" element={<PoiPage />} />
+      <Route path="/operators/:id" element={<OperatorPage />} />
       <Route path="/a2a/:slug" element={<A2AMissionPage />} />
+      <Route path="/one-way-rentals" element={<OneWayRentalsPage />} />
 
       <Route path="/mission/:id" element={<MissionDetailsPage />} />
       <Route path="/deploy/:missionId" element={<MissionPlannerPage />} />

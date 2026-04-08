@@ -1,0 +1,79 @@
+{
+  "ghiacciaio-dei-forni": {
+    "name": "Ghiacciaio dei Forni",
+    "slug": "ghiacciaio-dei-forni",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4035642,
+    "lng": 10.5844439,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ghicet-di-sea": {
+    "name": "Ghicet di Sea",
+    "slug": "ghicet-di-sea",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.325591,
+    "lng": 7.1889856,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2750m"
+  },
+  "ghicet-di-sea-3650": {
+    "name": "Ghicet di Sea",
+    "slug": "ghicet-di-sea-3650",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.325591,
+    "lng": 7.1889856,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ghicet-dou-rat": {
+    "name": "Ghicet dou Rat",
+    "slug": "ghicet-dou-rat",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2877575,
+    "lng": 7.1908122,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2438m"
+  },
+  "ghicet-dou-rat-3653": {
+    "name": "Ghicet dou Rat",
+    "slug": "ghicet-dou-rat-3653",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.2877575,
+    "lng": 7.1908122,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ghoch-pass": {
+    "name": "Ghöch Pass",
+    "slug": "ghoch-pass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3313738,
+    "lng": 8.9021111,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 962m"
+  },
+  "ghoch-pass-3895": {
+    "name": "Ghöch Pass",
+    "slug": "ghoch-pass-3895",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3313738,
+    "lng": 8.9021111,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -9,6 +9,7 @@ import WhyRidersChoose from "@/components/WhyRidersChoose";
 import RouteDiscoverySection from "@/components/RouteDiscoverySection";
 import DynamicCinematicCTA from "@/components/home/DynamicCinematicCTA";
 import TrustInfrastructure from "@/components/home/TrustInfrastructure";
+import AmberDivider from "@/components/ui/AmberDivider";
 import { getCanonicalPaths } from "@/utils/navigationTargets";
 import {
   GRAPH,
@@ -77,16 +78,19 @@ export default function JetMyMotoHomepage() {
           transition={pageTransition}
         >
           <TrustInfrastructure layout="marquee" />
-
+          <AmberDivider />
           <HowItWorksSection />
+          <AmberDivider />
           <ChooseHowYouShipSection />
+          <AmberDivider />
           <RouteDiscoverySection
             GRAPH={GRAPH}
             rentalShard={rentalShard}
             shardStatus={shardStatus}
           />
+          <AmberDivider />
           <WhyRidersChoose />
-          
+          <AmberDivider />
           <DynamicCinematicCTA />
         </motion.div>
       </div>

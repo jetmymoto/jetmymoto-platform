@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useMemo, useReducer, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import {
   ArrowRight,
@@ -17,6 +17,14 @@ import {
   readGraphSnapshot,
   readGraphShard,
 } from "@/core/network/networkGraph";
+import RelatedEntityLinks from "@/components/seo/RelatedEntityLinks";
+import EntityIntroBlock from "@/components/seo/EntityIntroBlock";
+import EntityFitSummary from "@/components/seo/EntityFitSummary";
+import FaqBlock from "@/components/seo/FaqBlock";
+import { getLinksForRentalPage } from "@/utils/seoLinkGraph";
+import { getFaqsForRental, getFaqSchema } from "@/utils/seoFaqEngine";
+import JsonLd from "@/components/seo/JsonLd";
+import { getRentalSchema, getBreadcrumbSchema } from "@/utils/seoSchema";
 import {
   formatRentalPrice,
   getRentalBrand,
@@ -25,6 +33,7 @@ import {
   getRentalPosterUrl
 } from "@/features/rentals/utils/rentalFormatters";
 import { withBrandContext } from "@/utils/navigationTargets";
+import { useAssetLibrary } from "@/hooks/useAssetLibrary";
 
 const DEFAULT_SUITABILITY = {
   adventure: {
@@ -147,7 +156,7 @@ function buildSpecs(rental) {
   ];
 }
 
-function buildRequestPath(rental, machineLabel, operatorName) {
+function buildRequestPath(rental, machineLabel, operatorName, missionContext = {}) {
   const params = new URLSearchParams({
     intent: "rent",
     airport: String(rental?.airportCode || rental?.airport || ""),
@@ -156,7 +165,23 @@ function buildRequestPath(rental, machineLabel, operatorName) {
     operator: operatorName
   });
 
-  return `/moto-airlift?${params.toString()}#booking`;
+  if (missionContext.insertionCode) params.set("insertion", missionContext.insertionCode);
+  if (missionContext.extractionCode) params.set("extraction", missionContext.extractionCode);
+  if (missionContext.missionSlug) params.set("mission", missionContext.missionSlug);
+
+  return `/checkout/rental/${rental?.id || rental?.slug || ""}?${params.toString()}`;
+}
+
+function buildOneWayLandingPath(rental, missionSlug = "") {
+  const params = new URLSearchParams();
+  if (rental?.id) params.set("rental", rental.id);
+  if (rental?.airportCode || rental?.airport) {
+    params.set("hub", String(rental.airportCode || rental.airport).toUpperCase());
+  }
+  if (missionSlug) params.set("mission", missionSlug);
+
+  const query = params.toString();
+  return query ? `/one-way-rentals?${query}` : "/one-way-rentals";
 }
 
 function FallbackState({ slug, isLoading = false }) {
@@ -224,25 +249,35 @@ export default function RentalDetailPage() {
   const withCtx = (path) => withBrandContext(path, location.search);
 
   useEffect(() => {
-    const status = getGraphShardStatus("rentals");
+    const cleanups = ["rentals", "a2a"].map((name) => {
+      const status = getGraphShardStatus(name);
 
-    if (status === "idle") {
-      loadGraphShard("rentals")
-        .then(forceUpdate)
-        .catch(() => {});
-    } else if (status === "loading") {
-      const interval = setInterval(() => {
-        if (getGraphShardStatus("rentals") === "loaded") {
-          clearInterval(interval);
-          forceUpdate();
-        }
-      }, 50);
+      if (status === "idle") {
+        loadGraphShard(name)
+          .then(forceUpdate)
+          .catch(() => {});
+        return () => {};
+      }
 
-      return () => clearInterval(interval);
-    }
+      if (status === "loading") {
+        const interval = setInterval(() => {
+          if (getGraphShardStatus(name) === "loaded") {
+            clearInterval(interval);
+            forceUpdate();
+          }
+        }, 50);
+
+        return () => clearInterval(interval);
+      }
+
+      return () => {};
+    });
+
+    return () => cleanups.forEach((cleanup) => cleanup());
   }, []);
 
   const rentalShard = readGraphShard("rentals");
+  const a2aShard = readGraphShard("a2a");
   const rentalStatus = getGraphShardStatus("rentals");
 
   if (!rentalShard) {
@@ -268,6 +303,7 @@ export default function RentalDetailPage() {
 
   const operator = operators?.[rental.operatorId || rental.operator];
   const airport = graph.entities.airports?.[rental.airportCode || rental.airport];
+  const missionEntities = graph?.entities?.missions ?? graph?.missions ?? {};
   const destinations = (rental.compatibleDestinations || rental.compatible_destinations || []).map((destinationSlug) => ({
     slug: destinationSlug,
     destination:
@@ -284,10 +320,68 @@ export default function RentalDetailPage() {
   const posterUrl = getRentalPosterUrl(rental);
   const specs = buildSpecs(rental);
   const machineLabel = `${brand} ${modelName}`.trim();
+
+  const fullGraph = { ...graph, ...rentalShard };
+  const linkGraph = getLinksForRentalPage(rental, fullGraph, location.pathname);
+  const rentalSchema = getRentalSchema(rental, operator, airport);
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Rentals", url: "/airport" },
+    { name: airport?.code || rental.airportCode, url: `/airport/${airport?.code || rental.airportCode}` },
+    { name: machineLabel, url: `/rental/${rental.slug}` }
+  ]);
+
+  const faqs = getFaqsForRental(rental, operator, airport);
+  const faqSchema = getFaqSchema(faqs);
+
   const operatorName = operator?.name || rental.operatorId || rental.operator || "Verified Operator";
-  const requestPath = buildRequestPath(rental, machineLabel, operatorName);
+  const searchParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
+  const activeMissionSlug = searchParams.get("mission") || "";
+  const missionContext = useMemo(
+    () => ({
+      insertionCode: searchParams.get("insertion") || "",
+      extractionCode: searchParams.get("extraction") || "",
+      missionSlug: activeMissionSlug,
+    }),
+    [searchParams, activeMissionSlug]
+  );
+  const requestPath = buildRequestPath(rental, machineLabel, operatorName, missionContext);
   const videoUrl = rental?.videoUrl || rental?.video?.url || null;
   const shouldRenderVideo = Boolean(videoUrl) && !videoFailed;
+  const oneWayEnabled = Boolean(
+    rental?.one_way_enabled ||
+      (Array.isArray(rental?.dropoff_airports) && rental.dropoff_airports.length > 0)
+  );
+  const corridorMissionSlugs = useMemo(() => {
+    const corridorIndex = a2aShard?.corridorsByRental ?? {};
+    const base = corridorIndex[rental.id] ?? corridorIndex[rental.slug] ?? [];
+    const unique = [...new Set(base)].filter(Boolean);
+
+    if (activeMissionSlug && unique.includes(activeMissionSlug)) {
+      return [activeMissionSlug, ...unique.filter((slug) => slug !== activeMissionSlug)];
+    }
+
+    return unique;
+  }, [a2aShard, rental.id, rental.slug, activeMissionSlug]);
+  const eligibleMissions = useMemo(() => {
+    return corridorMissionSlugs
+      .map((missionSlug) => missionEntities[missionSlug])
+      .filter(Boolean);
+  }, [corridorMissionSlugs, missionEntities]);
+  const primaryOneWayMission = eligibleMissions[0] ?? null;
+  const oneWayLandingPath = buildOneWayLandingPath(rental, primaryOneWayMission?.slug || activeMissionSlug);
+
+  // ── Asset Library (VAF) Integration ──
+  const assetIdForLibrary = `${brand.toLowerCase()}-${modelName.toLowerCase().replace(/\s+/g, "")}`;
+  const { currentImage, caption: assetCaption, alt: assetAlt } = useAssetLibrary(
+    "rental",
+    assetIdForLibrary,
+    getRentalPosterUrl(rental)
+  );
+
+  const finalPosterUrl = currentImage;
+  const finalDescription = assetCaption || `Precision-matched for premium arrivals through ${airport?.name || rental.airportCode || rental.airport}. This machine is indexed directly from the rental graph and staged for fast handoff into the existing Moto Airlift intake flow.`;
+
   const insuranceLabel = getInsuranceLabel(rental);
   const depositLabel =
     typeof rental?.deposit === "string" && rental.deposit.trim()
@@ -299,6 +393,9 @@ export default function RentalDetailPage() {
 
   return (
     <div className="min-h-screen bg-[#050606] pb-36 text-white">
+      <JsonLd schema={rentalSchema} />
+      <JsonLd schema={breadcrumbs} />
+
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 bg-[#050606]" />
 
@@ -309,7 +406,7 @@ export default function RentalDetailPage() {
             muted
             playsInline
             preload="metadata"
-            poster={posterUrl}
+            poster={finalPosterUrl}
             onError={() => setVideoFailed(true)}
             className="absolute inset-0 h-full w-full object-cover"
           >
@@ -317,8 +414,8 @@ export default function RentalDetailPage() {
           </video>
         ) : (
           <img
-            src={posterUrl}
-            alt={machineLabel}
+            src={finalPosterUrl}
+            alt={assetAlt || machineLabel}
             className="absolute inset-0 h-full w-full object-cover"
           />
         )}
@@ -351,9 +448,7 @@ export default function RentalDetailPage() {
                 <span className="block text-[#F7F0DF]">{modelName}</span>
               </h1>
               <p className="mt-5 max-w-2xl text-sm leading-7 text-white/64 sm:text-base">
-                Precision-matched for premium arrivals through {airport?.name || rental.airportCode || rental.airport}.
-                This machine is indexed directly from the rental graph and staged for fast handoff
-                into the existing Moto Airlift intake flow.
+                {finalDescription}
               </p>
             </div>
 
@@ -379,6 +474,11 @@ export default function RentalDetailPage() {
       </section>
 
       <main className="mx-auto max-w-7xl space-y-10 px-6 py-10 lg:px-8">
+        <div className="mb-10 w-full text-left">
+          <EntityIntroBlock entityType="rental" entityData={rental} graphData={{ airport, operator }} />
+          <EntityFitSummary entityType="rental" entityData={rental} graphData={{ airport, operator }} />
+        </div>
+
         <section className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,18,18,0.96)_0%,rgba(12,12,12,0.92)_100%)] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:p-8">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -457,6 +557,78 @@ export default function RentalDetailPage() {
             )}
           </div>
         </section>
+
+        {(oneWayEnabled || eligibleMissions.length > 0) && (
+          <section className="rounded-[32px] border border-[#CDA755]/15 bg-[linear-gradient(180deg,rgba(28,24,14,0.98)_0%,rgba(10,10,10,0.96)_100%)] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:p-8">
+            <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.3em] text-[#CDA755]">
+                  One-Way Deployment Path
+                </div>
+                <h2 className="mt-3 text-3xl font-black uppercase tracking-[-0.04em] text-white">
+                  This Machine Is Not a Dead End
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-white/62">
+                  This rental is one-way capable. If you landed here from an A2A mission or the one-way corridor grid, continue straight into the eligible corridor briefing or secure the machine directly.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3 sm:items-end">
+                <Link
+                  to={withCtx(oneWayLandingPath)}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-[#CDA755]/40 hover:text-[#CDA755]"
+                >
+                  Browse One-Way Corridors
+                  <ChevronRight size={14} />
+                </Link>
+                {primaryOneWayMission ? (
+                  <Link
+                    to={withCtx(`/a2a/${primaryOneWayMission.slug}`)}
+                    className="inline-flex items-center gap-2 rounded-full border border-[#CDA755]/40 bg-[#CDA755]/10 px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#CDA755] transition-colors hover:bg-[#CDA755] hover:text-[#050606]"
+                  >
+                    {activeMissionSlug === primaryOneWayMission.slug ? "Return To Active Corridor" : "Open Best-Match Corridor"}
+                    <ArrowRight size={14} />
+                  </Link>
+                ) : null}
+              </div>
+            </div>
+
+            {eligibleMissions.length > 0 ? (
+              <div className="grid gap-4 lg:grid-cols-3">
+                {eligibleMissions.slice(0, 3).map((mission) => (
+                  <Link
+                    key={mission.slug}
+                    to={withCtx(`/a2a/${mission.slug}`)}
+                    className="group rounded-[24px] border border-white/10 bg-[#121212] p-5 transition-all duration-300 hover:border-[#CDA755]/40 hover:bg-[#151515]"
+                  >
+                    <div className="text-[10px] uppercase tracking-[0.24em] text-white/46">
+                      Eligible Corridor
+                    </div>
+                    <div className="mt-3 flex items-center gap-2 font-mono text-xl font-black text-white tabular-nums">
+                      <span>{mission.insertion_airport}</span>
+                      <ArrowRight size={14} className="text-[#CDA755]" />
+                      <span>{mission.extraction_airport}</span>
+                    </div>
+                    <div className="mt-3 text-lg font-black uppercase tracking-[-0.03em] text-white">
+                      {mission.title}
+                    </div>
+                    <div className="mt-3 text-sm leading-6 text-white/58">
+                      {mission.cinematic_pitch || "One-way corridor ready for fleet rebalancing deployment."}
+                    </div>
+                    <div className="mt-4 flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-[#CDA755]">
+                      Open Corridor Briefing
+                      <ChevronRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-[24px] border border-white/10 bg-[#121212] px-5 py-6 text-sm leading-7 text-white/58">
+                The rental is flagged as one-way capable, but no corridor index is attached yet. Use the one-way landing page to browse currently active fleet-rebalancing routes from this hub.
+              </div>
+            )}
+          </section>
+        )}
 
         <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)]">
           <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(18,18,18,0.96)_0%,rgba(5,6,6,0.94)_100%)] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:p-8">
@@ -554,26 +726,41 @@ export default function RentalDetailPage() {
             </div>
           </div>
         </section>
+
+        <RelatedEntityLinks linkGraph={linkGraph} />
+        <FaqBlock faqs={faqs} />
       </main>
 
       <div className="fixed bottom-0 left-0 z-50 w-full border-t border-white/10 bg-[#050606]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div className="min-w-0">
             <div className="text-[10px] uppercase tracking-[0.28em] text-[#CDA755]">
-              Ready For Booking Handoff
+              {primaryOneWayMission ? "Ready For One-Way Deployment" : "Ready For Booking Handoff"}
             </div>
             <div className="mt-2 truncate text-sm font-semibold uppercase tracking-[0.18em] text-white sm:text-base">
               {machineLabel} • {rental.airportCode || rental.airport} Hub
             </div>
           </div>
 
-          <Link
-            to={withCtx(requestPath)}
-            className="inline-flex items-center justify-center gap-3 rounded-full border border-[#A76330]/80 bg-[#A76330] px-6 py-4 text-sm font-black uppercase tracking-[0.24em] text-[#F7F0DF] shadow-[0_0_30px_rgba(167,99,48,0.32)] transition-all duration-300 hover:border-[#CDA755] hover:bg-[#CDA755] hover:text-[#050606]"
-          >
-            Request This Machine
-            <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            {primaryOneWayMission ? (
+              <Link
+                to={withCtx(`/a2a/${primaryOneWayMission.slug}`)}
+                className="inline-flex items-center justify-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-4 text-sm font-black uppercase tracking-[0.24em] text-white transition-all duration-300 hover:border-[#CDA755]/40 hover:text-[#CDA755]"
+              >
+                {activeMissionSlug === primaryOneWayMission.slug ? "Return To Corridor" : "View One-Way Corridor"}
+                <ArrowRight size={16} />
+              </Link>
+            ) : null}
+
+            <Link
+              to={withCtx(requestPath)}
+              className="inline-flex items-center justify-center gap-3 rounded-full border border-[#A76330]/80 bg-[#A76330] px-6 py-4 text-sm font-black uppercase tracking-[0.24em] text-[#F7F0DF] shadow-[0_0_30px_rgba(167,99,48,0.32)] transition-all duration-300 hover:border-[#CDA755] hover:bg-[#CDA755] hover:text-[#050606]"
+            >
+              Reserve This Machine
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

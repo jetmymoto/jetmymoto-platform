@@ -1,0 +1,13 @@
+{
+  "oedenburg": {
+    "name": "Oedenburg",
+    "slug": "oedenburg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4420747,
+    "lng": 7.8940097,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

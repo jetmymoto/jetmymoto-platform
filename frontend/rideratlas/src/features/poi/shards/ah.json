@@ -1,0 +1,24 @@
+{
+  "ahrntaler-lenke": {
+    "name": "Ahrntaler Lenke",
+    "slug": "ahrntaler-lenke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.860884,
+    "lng": 12.4036889,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2658m"
+  },
+  "ahrntaler-lenke-1740": {
+    "name": "Ahrntaler Lenke",
+    "slug": "ahrntaler-lenke-1740",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.860884,
+    "lng": 12.4036889,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "rheinblick": {
+    "name": "Rheinblick",
+    "slug": "rheinblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.250782,
+    "lng": 9.5969426,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "rheinfall-blick": {
+    "name": "Rheinfall-Blick",
+    "slug": "rheinfall-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6793947,
+    "lng": 8.609799,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "rheinfallfelsen": {
+    "name": "Rheinfallfelsen",
+    "slug": "rheinfallfelsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6780732,
+    "lng": 8.6149092,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "rheintal-blick": {
+    "name": "Rheintal-Blick",
+    "slug": "rheintal-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8273832,
+    "lng": 7.7395908,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "rheintal-bodenseeblick": {
+    "name": "Rheintal-Bodenseeblick",
+    "slug": "rheintal-bodenseeblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3332117,
+    "lng": 9.6679322,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "rheintalblick": {
+    "name": "Rheintalblick",
+    "slug": "rheintalblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5856981,
+    "lng": 8.283142,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 520m"
+  }
+}

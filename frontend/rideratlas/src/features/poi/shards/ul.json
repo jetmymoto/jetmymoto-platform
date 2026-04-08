@@ -1,0 +1,35 @@
+{
+  "ulis-gutedelplatz": {
+    "name": "Uli's Gutedelplatz",
+    "slug": "ulis-gutedelplatz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7618459,
+    "lng": 7.6349324,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ulsenjoch-giogo-di-ulsen": {
+    "name": "Ulsenjoch - Giogo di Ulsen",
+    "slug": "ulsenjoch-giogo-di-ulsen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7582984,
+    "lng": 11.101092,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2645m"
+  },
+  "ulsenjoch-giogo-di-ulsen-1058": {
+    "name": "Ulsenjoch - Giogo di Ulsen",
+    "slug": "ulsenjoch-giogo-di-ulsen-1058",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7582984,
+    "lng": 11.101092,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

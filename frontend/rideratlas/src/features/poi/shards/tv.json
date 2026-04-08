@@ -1,0 +1,13 @@
+{
+  "tvn-spitze-schwarzenberg": {
+    "name": "TVN-Spitze Schwarzenberg",
+    "slug": "tvn-spitze-schwarzenberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9517428,
+    "lng": 14.9995545,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 948m"
+  }
+}

@@ -5,7 +5,8 @@ import { SITE_MEDIA } from "@/config/siteMedia";
 
 import CountryAirportGrid from "@/components/network/CountryAirportGrid";
 import DeploymentCard from "@/components/airport/DeploymentCard";
-import { GRAPH } from "@/core/network/networkGraph";
+import { GRAPH, readGraphShard } from "@/core/network/networkGraph";
+import { AIRPORT_COORDS } from "@/features/airport/data/airportCoords";
 import { withBrandContext } from "@/utils/navigationTargets";
 
 const COUNTRY_NAMES = {
@@ -48,6 +49,10 @@ export default function AirportsCountryPage() {
 
   const code = country.toUpperCase();
   const countryName = COUNTRY_NAMES[code] || code;
+
+  const rentalShard = readGraphShard("rentals");
+  const rentalsMap = rentalShard?.rentals ?? {};
+  const rentalsByAirport = rentalShard?.rentalIndexes?.rentalsByAirport ?? {};
 
   const airports = useMemo(() => {
     const normalizedCountry = country?.toLowerCase();
@@ -128,16 +133,31 @@ export default function AirportsCountryPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {airports.slice(0, 6).map(airport => {
+            const routeCount = GRAPH.routesByAirport?.[airport.code]?.length || 0;
+            const airportRentals = (rentalsByAirport[airport.code] || [])
+              .map((id) => rentalsMap[id])
+              .filter(Boolean);
+            const cheapest = airportRentals.reduce(
+              (min, r) => {
+                const p = parseFloat(r?.pricePerDay ?? r?.price ?? Infinity);
+                return p < min ? p : min;
+              },
+              Infinity
+            );
+            const fleetClass = airportRentals[0]?.category || airportRentals[0]?.class || null;
+
             const mission = {
-              id: airport.code,
-              airport_slug: airport.slug,
-              airport_name: airport.city,
-              region_desc: airport.region || airport.country,
+              airport_slug: airport.slug || airport.code,
               airport_code: airport.code,
-              country_code: airport.country,
-              coords: airport.coords || { lat: "0", long: "0" },
-              weather: { temp: "--", condition: "Ready" },
-              rental: { price: "--", class: "Logistics Hub" }
+              airport_name: airport.name || `${airport.city || airport.code} Hub`,
+              region_desc: airport.region || airport.city || "Premier Logistics Node",
+              country_code: airport.country_code || airport.country,
+              coords: AIRPORT_COORDS[airport.code] || { lat: airport.coords?.lat ?? "--", long: airport.coords?.long ?? "--" },
+              rental: cheapest < Infinity ? { price: cheapest, class: fleetClass } : null,
+              weather: {
+                condition: `${routeCount} routes available`,
+              },
+              routeCount,
             };
 
             return (

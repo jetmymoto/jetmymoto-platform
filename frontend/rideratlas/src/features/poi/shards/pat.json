@@ -1,0 +1,24 @@
+{
+  "patrolscharte": {
+    "name": "Patrolscharte",
+    "slug": "patrolscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.17409,
+    "lng": 10.4824241,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2846m"
+  },
+  "patrolscharte-2496": {
+    "name": "Patrolscharte",
+    "slug": "patrolscharte-2496",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.17409,
+    "lng": 10.4824241,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

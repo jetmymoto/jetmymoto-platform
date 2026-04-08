@@ -1,0 +1,35 @@
+{
+  "eppzirler-scharte": {
+    "name": "Eppzirler Scharte",
+    "slug": "eppzirler-scharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3170428,
+    "lng": 11.2788214,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2181m"
+  },
+  "eppzirler-scharte-2420": {
+    "name": "Eppzirler Scharte",
+    "slug": "eppzirler-scharte-2420",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3170428,
+    "lng": 11.2788214,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "eppzirltalblick": {
+    "name": "Eppzirltalblick",
+    "slug": "eppzirltalblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3486434,
+    "lng": 11.2565817,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

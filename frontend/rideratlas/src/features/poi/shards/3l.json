@@ -1,0 +1,13 @@
+{
+  "3-lander-blick": {
+    "name": "3-Länder-Blick",
+    "slug": "3-lander-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4540464,
+    "lng": 9.5529203,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

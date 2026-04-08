@@ -1,0 +1,90 @@
+{
+  "i-selletti": {
+    "name": "I Selletti",
+    "slug": "i-selletti",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8832562,
+    "lng": 8.207773,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1240m"
+  },
+  "isar-und-karwendelklamm-blick": {
+    "name": "Isar- und Karwendelklamm-Blick",
+    "slug": "isar-und-karwendelklamm-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3692792,
+    "lng": 11.2656658,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "isarschlucht-blick": {
+    "name": "Isarschlucht-Blick",
+    "slug": "isarschlucht-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3757912,
+    "lng": 11.310685,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "iselsberg": {
+    "name": "Iselsberg",
+    "slug": "iselsberg",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8542485,
+    "lng": 12.8581239,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1209m"
+  },
+  "iselsberg-3138": {
+    "name": "Iselsberg",
+    "slug": "iselsberg-3138",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8542485,
+    "lng": 12.8581239,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "islabord": {
+    "name": "Islabord",
+    "slug": "islabord",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8034671,
+    "lng": 9.3207165,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "isnyoval": {
+    "name": "IsnyOval",
+    "slug": "isnyoval",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7067497,
+    "lng": 10.0334431,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "isteiner-schwellen": {
+    "name": "Isteiner Schwellen",
+    "slug": "isteiner-schwellen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6474165,
+    "lng": 7.5425508,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

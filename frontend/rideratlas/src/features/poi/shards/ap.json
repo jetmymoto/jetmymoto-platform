@@ -1,0 +1,79 @@
+{
+  "ap-hochrain": {
+    "name": "AP Hochrain",
+    "slug": "ap-hochrain",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3499386,
+    "lng": 11.151446,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ap-wildried": {
+    "name": "AP Wildried",
+    "slug": "ap-wildried",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0887282,
+    "lng": 10.0240901,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aperes-ferwalljoch": {
+    "name": "Aperes Ferwalljoch",
+    "slug": "aperes-ferwalljoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8549398,
+    "lng": 11.0717701,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2903m"
+  },
+  "aperes-ferwalljoch-411": {
+    "name": "Aperes Ferwalljoch",
+    "slug": "aperes-ferwalljoch-411",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8549398,
+    "lng": 11.0717701,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "aperes-madatschjoch": {
+    "name": "Aperes Madatschjoch",
+    "slug": "aperes-madatschjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9966348,
+    "lng": 10.7968287,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3037m"
+  },
+  "aperes-madatschjoch-1004": {
+    "name": "Aperes Madatschjoch",
+    "slug": "aperes-madatschjoch-1004",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9966348,
+    "lng": 10.7968287,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "apfelstein": {
+    "name": "Apfelstein",
+    "slug": "apfelstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1708681,
+    "lng": 15.2744431,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

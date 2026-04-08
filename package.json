@@ -24,6 +24,11 @@
     "harvest:intent:pipeline": "npm run harvest:intent && npm run harvest:intent:merge && npm run harvest:intent:transform",
     "harvest:branding": "node scripts/harvestBrandDNA.js",
     "harvest:tokens": "node scripts/generateDesignTokens.js",
+    "stitch:sync": "node scripts/stitch/syncStitch.js",
+    "stitch:sync:project": "node scripts/stitch/syncStitch.js --project=16924906170154734878",
+    "stitch:diff": "node scripts/stitch/diffTokens.js",
+    "stitch:diff:strict": "node scripts/stitch/diffTokens.js --strict",
+    "stitch:import": "node scripts/stitch/importScreen.js",
     "debug:rejections": "node scripts/dumpOverlayRejections.mjs",
     "route-pipeline:telemetry": "node scripts/route-pipeline/01-ingestRoutes.mjs",
     "route-pipeline:pois": "node scripts/route-pipeline/02-ingestPois.mjs",
@@ -57,6 +62,8 @@
     "migrate:motorcycles:cleanup-slugs": "node scripts/deprecateMalformedMotorcycleSlugs.mjs"
   },
   "devDependencies": {
+    "@google-cloud/vertexai": "^1.10.4",
+    "@google/stitch-sdk": "^0.1.0",
     "concurrently": "^8.2.2"
   },
   "dependencies": {
@@ -64,6 +71,7 @@
     "crawlee": "^3.16.0",
     "dotenv": "^17.3.1",
     "firebase-admin": "^13.7.0",
+    "googleapis": "^171.4.0",
     "openai": "^6.33.0",
     "playwright": "^1.59.1",
     "puppeteer": "^24.40.0",

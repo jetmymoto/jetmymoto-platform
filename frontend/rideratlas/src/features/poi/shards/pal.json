@@ -1,0 +1,57 @@
+{
+  "pale-dal-pup": {
+    "name": "Pale dal Pup",
+    "slug": "pale-dal-pup",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4186771,
+    "lng": 13.0319722,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 760m"
+  },
+  "paleoalveo-volta-di-brenta-vecchia": {
+    "name": "Paleoalveo - Volta di Brenta Vecchia",
+    "slug": "paleoalveo-volta-di-brenta-vecchia",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.442936,
+    "lng": 11.9048584,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "palfner-scharte": {
+    "name": "Palfner Scharte",
+    "slug": "palfner-scharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0898991,
+    "lng": 13.1747593,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2321m"
+  },
+  "palfner-scharte-2587": {
+    "name": "Palfner Scharte",
+    "slug": "palfner-scharte-2587",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0898991,
+    "lng": 13.1747593,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "palon": {
+    "name": "Palon",
+    "slug": "palon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0269684,
+    "lng": 11.0587172,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

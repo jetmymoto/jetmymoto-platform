@@ -1,0 +1,222 @@
+{
+  "unbekannt": {
+    "name": "Unbekannt",
+    "slug": "unbekannt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9022379,
+    "lng": 6.6563249,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "untere-albtalschanze": {
+    "name": "Untere Albtalschanze",
+    "slug": "untere-albtalschanze",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7367152,
+    "lng": 8.1457859,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "untere-dammkarscharte": {
+    "name": "Untere Dammkarscharte",
+    "slug": "untere-dammkarscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.430838,
+    "lng": 11.3024133,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "untere-klafferscharte": {
+    "name": "Untere Klafferscharte",
+    "slug": "untere-klafferscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3005467,
+    "lng": 13.7975216,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2280m"
+  },
+  "untere-klafferscharte-2654": {
+    "name": "Untere Klafferscharte",
+    "slug": "untere-klafferscharte-2654",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3005467,
+    "lng": 13.7975216,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "untere-odenwinkelscharte": {
+    "name": "Untere Ödenwinkelscharte",
+    "slug": "untere-odenwinkelscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1027357,
+    "lng": 12.6620634,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3154m"
+  },
+  "untere-odenwinkelscharte-3263": {
+    "name": "Untere Ödenwinkelscharte",
+    "slug": "untere-odenwinkelscharte-3263",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1027357,
+    "lng": 12.6620634,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "untere-pfandlscharte": {
+    "name": "Untere Pfandlscharte",
+    "slug": "untere-pfandlscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0924806,
+    "lng": 12.7845911,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2663m"
+  },
+  "untere-pfandlscharte-3099": {
+    "name": "Untere Pfandlscharte",
+    "slug": "untere-pfandlscharte-3099",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0924806,
+    "lng": 12.7845911,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "untere-weisszintscharte": {
+    "name": "Untere Weisszintscharte",
+    "slug": "untere-weisszintscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9550947,
+    "lng": 11.7264802,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2974m"
+  },
+  "untere-weisszintscharte-1806": {
+    "name": "Untere Weisszintscharte",
+    "slug": "untere-weisszintscharte-1806",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9550947,
+    "lng": 11.7264802,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "unterer-hauenstein": {
+    "name": "Unterer Hauenstein",
+    "slug": "unterer-hauenstein",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3813435,
+    "lng": 7.8689804,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 690m"
+  },
+  "unterer-hauenstein-2325": {
+    "name": "Unterer Hauenstein",
+    "slug": "unterer-hauenstein-2325",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3813435,
+    "lng": 7.8689804,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "unterer-keesboden": {
+    "name": "Unterer Keesboden",
+    "slug": "unterer-keesboden",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1144049,
+    "lng": 12.4133481,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "unteres-guslarjoch": {
+    "name": "Unteres Guslarjoch",
+    "slug": "unteres-guslarjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8501834,
+    "lng": 10.7939825,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3312m"
+  },
+  "unteres-guslarjoch-1029": {
+    "name": "Unteres Guslarjoch",
+    "slug": "unteres-guslarjoch-1029",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8501834,
+    "lng": 10.7939825,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "unternberg": {
+    "name": "Unternberg",
+    "slug": "unternberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7293144,
+    "lng": 12.6401193,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1450m"
+  },
+  "unternberg-1228": {
+    "name": "Unternberg",
+    "slug": "unternberg-1228",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.7293144,
+    "lng": 12.6401193,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "untschenpass": {
+    "name": "Üntschenpass",
+    "slug": "untschenpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2902854,
+    "lng": 10.0892839,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1854m"
+  },
+  "untschenpass-1728": {
+    "name": "Üntschenpass",
+    "slug": "untschenpass-1728",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.2902854,
+    "lng": 10.0892839,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pass-thurn": {
+    "name": "Pass Thurn",
+    "slug": "pass-thurn",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3085876,
+    "lng": 12.4084885,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1273m"
+  },
+  "pass-thurn-2691": {
+    "name": "Pass Thurn",
+    "slug": "pass-thurn-2691",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.3085876,
+    "lng": 12.4084885,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

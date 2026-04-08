@@ -1,0 +1,57 @@
+{
+  "col-varotta": {
+    "name": "Col Varotta",
+    "slug": "col-varotta",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.68595,
+    "lng": 7.5586955,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2589m"
+  },
+  "col-varotta-2456": {
+    "name": "Col Varotta",
+    "slug": "col-varotta-2456",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.68595,
+    "lng": 7.5586955,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-vert": {
+    "name": "Col Vert",
+    "slug": "col-vert",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0527575,
+    "lng": 5.5971855,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "col-vieux": {
+    "name": "Col Vieux",
+    "slug": "col-vieux",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6956358,
+    "lng": 6.9866447,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2806m"
+  },
+  "col-vieux-1944": {
+    "name": "Col Vieux",
+    "slug": "col-vieux-1944",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6956358,
+    "lng": 6.9866447,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

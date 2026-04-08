@@ -1,0 +1,211 @@
+{
+  "dumpfe": {
+    "name": "Dümpfe",
+    "slug": "dumpfe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8784038,
+    "lng": 13.5122712,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "dunantplatz": {
+    "name": "Dunantplatz",
+    "slug": "dunantplatz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4459682,
+    "lng": 9.5329653,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "durance-ancien-pont-de-mirabeau": {
+    "name": "Durance -ancien Pont de Mirabeau",
+    "slug": "durance-ancien-pont-de-mirabeau",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.6906926,
+    "lng": 5.6671068,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "durannapass": {
+    "name": "Durannapass",
+    "slug": "durannapass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.857748,
+    "lng": 9.785527,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2117m"
+  },
+  "durannapass-1107": {
+    "name": "Durannapass",
+    "slug": "durannapass-1107",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.857748,
+    "lng": 9.785527,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "durce": {
+    "name": "Durce",
+    "slug": "durce",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4149412,
+    "lng": 14.7487003,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1910m"
+  },
+  "durchblick": {
+    "name": "Durchblick",
+    "slug": "durchblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.293939,
+    "lng": 7.6845992,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "durnbergview": {
+    "name": "Dürnbergview",
+    "slug": "durnbergview",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2962382,
+    "lng": 14.8233431,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "durnholzer-jochl-forcella-di-valdurna": {
+    "name": "Durnholzer Jöchl - Forcella di Valdurna",
+    "slug": "durnholzer-jochl-forcella-di-valdurna",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7534841,
+    "lng": 11.4296491,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2235m"
+  },
+  "durnholzer-jochl-forcella-di-valdurna-2256": {
+    "name": "Durnholzer Jöchl - Forcella di Valdurna",
+    "slug": "durnholzer-jochl-forcella-di-valdurna-2256",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7534841,
+    "lng": 11.4296491,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "durrakreuz": {
+    "name": "Durrakreuz",
+    "slug": "durrakreuz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4426257,
+    "lng": 11.7484765,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "durrensteinscharte-forcella-picco-di-vallandro": {
+    "name": "Dürrensteinscharte - Forcella Picco di Vallandro",
+    "slug": "durrensteinscharte-forcella-picco-di-vallandro",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6656902,
+    "lng": 12.191307,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2611m"
+  },
+  "durrensteinscharte-forcella-picco-di-vallandro-3905": {
+    "name": "Dürrensteinscharte - Forcella Picco di Vallandro",
+    "slug": "durrensteinscharte-forcella-picco-di-vallandro-3905",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.6656902,
+    "lng": 12.191307,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "durres-eck": {
+    "name": "Dürres Eck",
+    "slug": "durres-eck",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9108972,
+    "lng": 14.2711303,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1222m"
+  },
+  "durrschartli": {
+    "name": "Dürrschartli",
+    "slug": "durrschartli",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0132831,
+    "lng": 10.2238354,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2666m"
+  },
+  "durrschartli-452": {
+    "name": "Dürrschartli",
+    "slug": "durrschartli-452",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0132831,
+    "lng": 10.2238354,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "durst": {
+    "name": "Durst",
+    "slug": "durst",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2744834,
+    "lng": 8.6372122,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "duttenbuhl": {
+    "name": "Duttenbühl",
+    "slug": "duttenbuhl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7419889,
+    "lng": 9.1132317,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 520m"
+  },
+  "duxer-kopfl": {
+    "name": "Duxer Köpfl",
+    "slug": "duxer-kopfl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5871051,
+    "lng": 12.1871509,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

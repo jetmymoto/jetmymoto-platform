@@ -1,0 +1,68 @@
+{
+  "echauguette": {
+    "name": "Echauguette",
+    "slug": "echauguette",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6687483,
+    "lng": 6.6272198,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "echelles-de-la-mort": {
+    "name": "Echelles de la mort",
+    "slug": "echelles-de-la-mort",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1862562,
+    "lng": 6.8710504,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "echolinde": {
+    "name": "Echolinde",
+    "slug": "echolinde",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3823498,
+    "lng": 8.0376648,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "echowand": {
+    "name": "Echowand",
+    "slug": "echowand",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.234471,
+    "lng": 9.9449528,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eckarter-kanzel-pulpito-di-eckart": {
+    "name": "Eckarter Kanzel - Pulpito di Eckart",
+    "slug": "eckarter-kanzel-pulpito-di-eckart",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6458035,
+    "lng": 11.1211264,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eckhalde": {
+    "name": "Eckhalde",
+    "slug": "eckhalde",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5448402,
+    "lng": 10.1486171,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1430m"
+  }
+}

@@ -7,6 +7,19 @@ import { ENRICHED_ROUTE_INTEL } from "../../features/routes/data/enrichedRouteIn
 import { ENRICHED_POIS } from "../../features/routes/data/enrichedPois";
 import { A2A_MISSIONS } from "../../features/routes/data/a2aMissions";
 import RIDE_REGIONS from "../../features/rides/rideRegions.json";
+import { AIRPORT_COORDS } from "../../features/airport/data/airportCoords";
+
+// ── Haversine: great-circle distance between two lat/lon points (km) ──
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
 
 function toArray(value) {
   if (Array.isArray(value)) return value;
@@ -298,6 +311,8 @@ export function buildNetworkGraph() {
   const missionsByInsertion = {};
   const missionsByExtraction = {};
   const missionsByTheater = {};
+  const missionsByCorridorPair = {};  // "MXP-MUC" → [slug, ...]
+  const missionsByContinent = {};     // "europe"  → [slug, ...]
   const allMissionSlugs = [];
 
   for (const mission of A2A_MISSIONS) {
@@ -306,13 +321,36 @@ export function buildNetworkGraph() {
     const insertionCode = (mission.insertion_airport || "").toUpperCase();
     const extractionCode = (mission.extraction_airport || "").toUpperCase();
     const theaterSlug = (mission.theater || "").toLowerCase();
+    const continent = (mission.continent || "").toLowerCase();
+
+    // Haversine corridor distance (straight-line between hubs, computed once)
+    let corridorDistanceKm = null;
+    const insCoords = AIRPORT_COORDS[insertionCode];
+    const extCoords = AIRPORT_COORDS[extractionCode];
+    if (insCoords && extCoords) {
+      corridorDistanceKm = Math.round(
+        haversineKm(
+          parseFloat(insCoords.lat),
+          parseFloat(insCoords.long),
+          parseFloat(extCoords.lat),
+          parseFloat(extCoords.long)
+        )
+      );
+    }
 
     const hydrated = {
       ...mission,
       insertion: airports[insertionCode] || { code: insertionCode },
       extraction: airports[extractionCode] || { code: extractionCode },
       theaterData: destinations[theaterSlug] || null,
+      corridor_distance_km: corridorDistanceKm,
     };
+
+    // ZLS Check: pick up high-fidelity road coordinates from airport metadata if available
+    const roadCoords = hydrated.insertion?.missions?.[mission.slug]?.roadCoordinates;
+    if (roadCoords) {
+      hydrated.road_coordinates = roadCoords;
+    }
 
     missions[mission.slug] = hydrated;
     allMissionSlugs.push(mission.slug);
@@ -328,6 +366,19 @@ export function buildNetworkGraph() {
     if (theaterSlug) {
       if (!missionsByTheater[theaterSlug]) missionsByTheater[theaterSlug] = [];
       missionsByTheater[theaterSlug].push(mission.slug);
+    }
+
+    // Corridor pair index — directional key for O(1) specific-pair lookup
+    if (insertionCode && extractionCode) {
+      const pairKey = `${insertionCode}-${extractionCode}`;
+      if (!missionsByCorridorPair[pairKey]) missionsByCorridorPair[pairKey] = [];
+      missionsByCorridorPair[pairKey].push(mission.slug);
+    }
+
+    // Continent index — enables continent-scoped mission surfacing
+    if (continent) {
+      if (!missionsByContinent[continent]) missionsByContinent[continent] = [];
+      missionsByContinent[continent].push(mission.slug);
     }
   }
 
@@ -358,6 +409,8 @@ export function buildNetworkGraph() {
     missionsByInsertion,
     missionsByExtraction,
     missionsByTheater,
+    missionsByCorridorPair,
+    missionsByContinent,
     allMissionSlugs,
   };
 }

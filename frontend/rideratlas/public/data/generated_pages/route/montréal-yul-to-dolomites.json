@@ -1,0 +1,62 @@
+{
+  "entity": {
+    "id": "montréal-yul-to-dolomites",
+    "slug": "montréal-yul-to-dolomites",
+    "type": "route",
+    "region": "",
+    "country": "",
+    "summary": ""
+  },
+  "template": "RideRoutePage",
+  "tokens": {
+    "colors": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "accent": "#CDA755"
+    },
+    "fonts": {
+      "heading": "serif",
+      "body": "sans-serif"
+    },
+    "motion": {
+      "reveal": "fade-up",
+      "durationMs": 800
+    },
+    "rules": {
+      "maxCards": 3,
+      "showPricingOnInspirationPages": false,
+      "accentUsage": "micro-only"
+    }
+  },
+  "assets": {
+    "hero": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    "thumbnail": null,
+    "gallery": [],
+    "poster": null,
+    "caption": ""
+  },
+  "related": {
+    "destinations": [],
+    "routes": [],
+    "airports": [],
+    "rentals": [],
+    "experiences": [],
+    "pois": []
+  },
+  "seo": {
+    "title": "undefined Motorcycle Route | Luxury Ride Guide",
+    "description": "Explore undefined, a curated motorcycle route designed for premium travel, clear planning, and unforgettable riding.",
+    "canonicalPath": "/montréal-yul-to-dolomites",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "Trip",
+      "description": "",
+      "url": "/montréal-yul-to-dolomites"
+    }
+  },
+  "generatedAt": "2026-04-03T20:54:05.158Z",
+  "audit": {
+    "passed": true,
+    "violations": []
+  }
+}

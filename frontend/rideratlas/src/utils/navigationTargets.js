@@ -1,9 +1,14 @@
-import { readGraphSnapshot } from "@/core/network/networkGraph";
-import { missions } from "@/data/missions";
-
 function normalizePathSegment(value) {
   return typeof value === "string" && value ? value.toLowerCase() : "";
 }
+
+const FEATURED_TARGETS = Object.freeze({
+  airportCode: "MXP",
+  routeSlug: "milan-mxp-to-alps",
+  destinationSlug: "alps",
+  poiSlug: "360",
+  missionId: "dolomiti-kings-loop",
+});
 
 function getContextValue(searchInput) {
   if (typeof searchInput === "string") {
@@ -18,55 +23,6 @@ function getContextValue(searchInput) {
   }
 
   return "";
-}
-
-function firstKey(record) {
-  return Object.keys(record || {})[0] || null;
-}
-
-function firstIndexedValue(indexRecord) {
-  for (const value of Object.values(indexRecord || {})) {
-    if (Array.isArray(value) && value.length > 0) {
-      return value[0];
-    }
-  }
-
-  return null;
-}
-
-export function getFeaturedRouteSlug() {
-  const graph = readGraphSnapshot();
-  return (
-    firstIndexedValue(graph.indexes.routesByAirport) ||
-    firstKey(graph.entities.routes)
-  );
-}
-
-export function getFeaturedDestinationSlug() {
-  const graph = readGraphSnapshot();
-  const featuredRoute = graph.entities.routes?.[getFeaturedRouteSlug()];
-  return featuredRoute?.destination?.slug || firstKey(graph.entities.destinations);
-}
-
-export function getFeaturedRentalAirportCode() {
-  const graph = readGraphSnapshot();
-  return (
-    graph.entities.routes?.[getFeaturedRouteSlug()]?.airport?.code ||
-    firstKey(graph.entities.airports)
-  );
-}
-
-export function getFeaturedPoiSlug() {
-  const graph = readGraphSnapshot();
-  const featuredDestination = getFeaturedDestinationSlug();
-  return (
-    graph.indexes.poisByDestination?.[featuredDestination]?.[0] ||
-    firstKey(graph.entities.pois)
-  );
-}
-
-export function getFeaturedMissionId() {
-  return missions[0]?.id || null;
 }
 
 export function getCanonicalAirportPath(airportCode) {
@@ -100,11 +56,11 @@ export function withBrandContext(path, searchInput) {
 }
 
 export function getCanonicalPaths(searchInput) {
-  const routeSlug = getFeaturedRouteSlug();
-  const destinationSlug = getFeaturedDestinationSlug();
-  const rentalAirportCode = getFeaturedRentalAirportCode();
-  const poiSlug = getFeaturedPoiSlug();
-  const missionId = getFeaturedMissionId();
+  const routeSlug = FEATURED_TARGETS.routeSlug;
+  const destinationSlug = FEATURED_TARGETS.destinationSlug;
+  const rentalAirportCode = FEATURED_TARGETS.airportCode;
+  const poiSlug = FEATURED_TARGETS.poiSlug;
+  const missionId = FEATURED_TARGETS.missionId;
 
   return {
     airports: withBrandContext("/airport", searchInput),

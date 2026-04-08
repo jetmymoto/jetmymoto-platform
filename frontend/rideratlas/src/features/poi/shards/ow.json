@@ -1,0 +1,24 @@
+{
+  "owelenke": {
+    "name": "Öwelenke",
+    "slug": "owelenke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.838267,
+    "lng": 12.3711558,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2559m"
+  },
+  "owelenke-1739": {
+    "name": "Öwelenke",
+    "slug": "owelenke-1739",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.838267,
+    "lng": 12.3711558,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

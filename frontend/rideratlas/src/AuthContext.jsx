@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-// FIX: Point to the correct config file we just created
 import { auth, provider, db } from "./lib/firebase"; 
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";

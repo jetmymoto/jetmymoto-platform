@@ -1,0 +1,112 @@
+{
+  "etang-du-buron": {
+    "name": "Étang du Buron",
+    "slug": "etang-du-buron",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6840587,
+    "lng": 6.6201855,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "etang-infeste-de-poissons-non-indigenes": {
+    "name": "Étang infesté de poissons non-indigènes",
+    "slug": "etang-infeste-de-poissons-non-indigenes",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0872862,
+    "lng": 6.8073512,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "etschlsattel": {
+    "name": "Etschlsattel",
+    "slug": "etschlsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0398608,
+    "lng": 13.2152314,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2546m"
+  },
+  "etschlsattel-2803": {
+    "name": "Etschlsattel",
+    "slug": "etschlsattel-2803",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0398608,
+    "lng": 13.2152314,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ettaler-sattel": {
+    "name": "Ettaler Sattel",
+    "slug": "ettaler-sattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5617771,
+    "lng": 11.1011288,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 876m"
+  },
+  "etzel": {
+    "name": "Etzel",
+    "slug": "etzel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1774769,
+    "lng": 8.7676073,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1098m"
+  },
+  "etzel-1129": {
+    "name": "Etzel",
+    "slug": "etzel-1129",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1774769,
+    "lng": 8.7676073,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "etzelpass": {
+    "name": "Etzelpass",
+    "slug": "etzelpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.173448,
+    "lng": 8.7722721,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 950m"
+  },
+  "etzelpass-2453": {
+    "name": "Etzelpass",
+    "slug": "etzelpass-2453",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.173448,
+    "lng": 8.7722721,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "etzenbacherhohe": {
+    "name": "Etzenbacherhöhe",
+    "slug": "etzenbacherhohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8771414,
+    "lng": 7.7578993,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 715m"
+  }
+}

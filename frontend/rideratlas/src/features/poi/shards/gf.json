@@ -1,0 +1,13 @@
+{
+  "gfasssattel": {
+    "name": "Gfaßsattel",
+    "slug": "gfasssattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.504856,
+    "lng": 11.7837208,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1226m"
+  }
+}

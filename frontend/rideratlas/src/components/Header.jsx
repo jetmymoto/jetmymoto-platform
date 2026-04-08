@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { auth, provider, signInWithPopup, signOut } from '../firebase';
+import { signInWithPopup, signOut } from 'firebase/auth';
+import { auth, provider } from '@/lib/firebase';
 import { withBrandContext } from "@/utils/navigationTargets";
 import {
   Disc,

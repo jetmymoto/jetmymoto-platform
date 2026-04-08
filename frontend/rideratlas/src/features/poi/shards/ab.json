@@ -1,0 +1,68 @@
+{
+  "abblasbuhel": {
+    "name": "Abblasbühel",
+    "slug": "abblasbuhel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6901915,
+    "lng": 13.9404663,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1850m"
+  },
+  "aberseeblick": {
+    "name": "Aberseeblick",
+    "slug": "aberseeblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7579145,
+    "lng": 13.4048915,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "abisso-del-conte-ugolino": {
+    "name": "Abisso del Conte Ugolino",
+    "slug": "abisso-del-conte-ugolino",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8511515,
+    "lng": 11.7866302,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ablanca": {
+    "name": "Ablanca",
+    "slug": "ablanca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3530039,
+    "lng": 13.8841729,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2005m"
+  },
+  "abzweig-forstweg": {
+    "name": "Abzweig Forstweg",
+    "slug": "abzweig-forstweg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.574908,
+    "lng": 14.4130371,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "abzweigung-burgplateau": {
+    "name": "Abzweigung Burgplateau",
+    "slug": "abzweigung-burgplateau",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2198661,
+    "lng": 10.1453537,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

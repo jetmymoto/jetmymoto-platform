@@ -1,0 +1,35 @@
+{
+  "ave-cruz": {
+    "name": "Ave Cruz",
+    "slug": "ave-cruz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7588876,
+    "lng": 10.8675701,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "aven": {
+    "name": "Aven",
+    "slug": "aven",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.757349,
+    "lng": 6.5387958,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "avenue-jean-medecin": {
+    "name": "Avenue Jean Médecin",
+    "slug": "avenue-jean-medecin",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7009919,
+    "lng": 7.2679093,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

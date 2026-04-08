@@ -1,0 +1,13 @@
+{
+  "syphon-du-gafayon": {
+    "name": "Syphon du Gafayon",
+    "slug": "syphon-du-gafayon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9305705,
+    "lng": 6.1326644,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

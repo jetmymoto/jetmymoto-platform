@@ -1,0 +1,200 @@
+{
+  "zidana-skala": {
+    "name": "Zidana skala",
+    "slug": "zidana-skala",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.284604,
+    "lng": 14.1819468,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ziegelberg-721-m-nn": {
+    "name": "Ziegelberg 721 m NN",
+    "slug": "ziegelberg-721-m-nn",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.87128,
+    "lng": 9.8635755,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ziehberg": {
+    "name": "Ziehberg",
+    "slug": "ziehberg",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8879399,
+    "lng": 14.0805134,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 683m"
+  },
+  "zigollerkogel-glatze": {
+    "name": "Zigöllerkogel Glatze",
+    "slug": "zigollerkogel-glatze",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0709434,
+    "lng": 15.0767027,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zija": {
+    "name": "Zija",
+    "slug": "zija",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1964382,
+    "lng": 16.23122,
+    "nearest_airport": "VIE",
+    "description": "Vidikovac"
+  },
+  "zijavka": {
+    "name": "Zijavka",
+    "slug": "zijavka",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3172908,
+    "lng": 14.1965638,
+    "nearest_airport": "VCE",
+    "description": "View point"
+  },
+  "zillerplattenscharte": {
+    "name": "Zillerplattenscharte",
+    "slug": "zillerplattenscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0999801,
+    "lng": 12.1270318,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2880m"
+  },
+  "zillerplattenscharte-1541": {
+    "name": "Zillerplattenscharte",
+    "slug": "zillerplattenscharte-1541",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0999801,
+    "lng": 12.1270318,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zillertaler-almtribune": {
+    "name": "Zillertaler Almtribüne",
+    "slug": "zillertaler-almtribune",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2021752,
+    "lng": 11.9042002,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1682m"
+  },
+  "zillhohe": {
+    "name": "Zillhöhe",
+    "slug": "zillhohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6283352,
+    "lng": 14.2466471,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 536m"
+  },
+  "zimbajoch": {
+    "name": "Zimbajoch",
+    "slug": "zimbajoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0896612,
+    "lng": 9.7852669,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2366m"
+  },
+  "zimbajoch-1765": {
+    "name": "Zimbajoch",
+    "slug": "zimbajoch-1765",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0896612,
+    "lng": 9.7852669,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zimmermanns-felsen": {
+    "name": "Zimmermanns-Felsen",
+    "slug": "zimmermanns-felsen",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8270343,
+    "lng": 7.7583633,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zimmerwiese": {
+    "name": "Zimmerwiese",
+    "slug": "zimmerwiese",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7988626,
+    "lng": 9.1113419,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zireiner-see": {
+    "name": "Zireiner See",
+    "slug": "zireiner-see",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4653253,
+    "lng": 11.8188375,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zischgenscharte": {
+    "name": "Zischgenscharte",
+    "slug": "zischgenscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1221981,
+    "lng": 11.09289,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2936m"
+  },
+  "zischgenscharte-2163": {
+    "name": "Zischgenscharte",
+    "slug": "zischgenscharte-2163",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1221981,
+    "lng": 11.09289,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zise": {
+    "name": "Zise",
+    "slug": "zise",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2142704,
+    "lng": 11.2189071,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1245m"
+  }
+}

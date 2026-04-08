@@ -1,0 +1,200 @@
+{
+  "col-di-belleface": {
+    "name": "Col di Belleface",
+    "slug": "col-di-belleface",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6015107,
+    "lng": 7.2401369,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3109m"
+  },
+  "col-di-belleface-3590": {
+    "name": "Col di Belleface",
+    "slug": "col-di-belleface-3590",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6015107,
+    "lng": 7.2401369,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-di-grado": {
+    "name": "Col di Grado",
+    "slug": "col-di-grado",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7672292,
+    "lng": 11.7191398,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 160m"
+  },
+  "col-di-mulets": {
+    "name": "Col di Mulets",
+    "slug": "col-di-mulets",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.3804532,
+    "lng": 7.169984,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2310m"
+  },
+  "col-di-mulets-2697": {
+    "name": "Col di Mulets",
+    "slug": "col-di-mulets-2697",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.3804532,
+    "lng": 7.169984,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-di-pealda-bassa": {
+    "name": "Col di Pealda Bassa",
+    "slug": "col-di-pealda-bassa",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6812688,
+    "lng": 10.9628804,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1471m"
+  },
+  "col-di-raye-chevrere": {
+    "name": "Col Di Raye Chevrere",
+    "slug": "col-di-raye-chevrere",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6680207,
+    "lng": 7.54088,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2703m"
+  },
+  "col-di-raye-chevrere-2478": {
+    "name": "Col Di Raye Chevrere",
+    "slug": "col-di-raye-chevrere-2478",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6680207,
+    "lng": 7.54088,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-di-saint-barthelemey": {
+    "name": "Col Di Saint Barthelemey",
+    "slug": "col-di-saint-barthelemey",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8156344,
+    "lng": 7.4160704,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2645m"
+  },
+  "col-di-saint-barthelemey-2350": {
+    "name": "Col Di Saint Barthelemey",
+    "slug": "col-di-saint-barthelemey-2350",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8156344,
+    "lng": 7.4160704,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-di-tzaboc": {
+    "name": "Col di Tzaboc",
+    "slug": "col-di-tzaboc",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6210498,
+    "lng": 7.106898,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3082m"
+  },
+  "col-di-tzaboc-3178": {
+    "name": "Col di Tzaboc",
+    "slug": "col-di-tzaboc-3178",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6210498,
+    "lng": 7.106898,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-di-vamea": {
+    "name": "Col Di Vamea",
+    "slug": "col-di-vamea",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8283972,
+    "lng": 7.4218114,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2591m"
+  },
+  "col-di-vamea-2116": {
+    "name": "Col Di Vamea",
+    "slug": "col-di-vamea-2116",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8283972,
+    "lng": 7.4218114,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dilloire": {
+    "name": "Col d'Illoire",
+    "slug": "col-dilloire",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7753974,
+    "lng": 6.2604073,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 967m"
+  },
+  "col-dizoard": {
+    "name": "Col d'Izoard",
+    "slug": "col-dizoard",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8196595,
+    "lng": 6.734975,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2361m"
+  },
+  "col-dizoard-506": {
+    "name": "Col d'Izoard",
+    "slug": "col-dizoard-506",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.8196595,
+    "lng": 6.734975,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dizon": {
+    "name": "Col d'Izon",
+    "slug": "col-dizon",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.257539,
+    "lng": 5.5556007,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1343m"
+  }
+}

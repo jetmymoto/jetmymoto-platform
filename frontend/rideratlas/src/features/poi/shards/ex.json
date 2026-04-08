@@ -1,0 +1,35 @@
+{
+  "ex-batterie-rossapoan": {
+    "name": "Ex Batterie Rossapoan",
+    "slug": "ex-batterie-rossapoan",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9313533,
+    "lng": 11.4240693,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1890m"
+  },
+  "ex-caserma": {
+    "name": "Ex Caserma",
+    "slug": "ex-caserma",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.006636,
+    "lng": 11.7566083,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ex-pozzo-perticara": {
+    "name": "Ex Pozzo Perticara",
+    "slug": "ex-pozzo-perticara",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9060131,
+    "lng": 12.2379968,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

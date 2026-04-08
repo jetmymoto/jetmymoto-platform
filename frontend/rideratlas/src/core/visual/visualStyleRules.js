@@ -1,0 +1,42 @@
+export const VISUAL_STYLE_RULES = {
+  rental: {
+    type: "studio",
+    composition: "side_profile",
+    lighting: "studio_soft",
+    emotion: "power",
+    fallbackType: "action",
+    fallbackComposition: "three_quarter",
+  },
+  route: {
+    type: "action",
+    composition: "leading_lines",
+    lighting: "golden_hour",
+    emotion: "freedom",
+    fallbackType: "landscape",
+    fallbackComposition: "panoramic",
+  },
+  destination: {
+    type: "landscape",
+    composition: "panoramic",
+    lighting: "golden_hour",
+    emotion: "awe",
+    fallbackType: "cinematic",
+    fallbackComposition: "leading_lines",
+  },
+  overlay: {
+    type: "cinematic",
+    composition: "three_quarter",
+    lighting: "dramatic",
+    emotion: "adventure",
+    fallbackType: "studio",
+    fallbackComposition: "side_profile",
+  },
+  hero: {
+    type: "cinematic",
+    composition: "three_quarter",
+    lighting: "dramatic",
+    emotion: "power",
+    fallbackType: "action",
+    fallbackComposition: "leading_lines",
+  },
+};

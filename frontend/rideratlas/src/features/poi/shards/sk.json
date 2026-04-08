@@ -1,0 +1,145 @@
+{
+  "skala": {
+    "name": "Skala",
+    "slug": "skala",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5871052,
+    "lng": 15.0324212,
+    "nearest_airport": "SZG",
+    "description": "Skala nad Dravogradom, razgledna točka"
+  },
+  "skalca": {
+    "name": "Skalca",
+    "slug": "skalca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3352809,
+    "lng": 14.3324651,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skalica": {
+    "name": "Skalica",
+    "slug": "skalica",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0685115,
+    "lng": 15.4035556,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 951m"
+  },
+  "skarje": {
+    "name": "Škarje",
+    "slug": "skarje",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3617646,
+    "lng": 14.6292513,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2132m"
+  },
+  "skarje-267": {
+    "name": "Škarje",
+    "slug": "skarje-267",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3617646,
+    "lng": 14.6292513,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "skisprung-schanzenturm": {
+    "name": "Skisprung-Schanzenturm",
+    "slug": "skisprung-schanzenturm",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4044599,
+    "lng": 10.2952806,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skol": {
+    "name": "Škol",
+    "slug": "skol",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8749802,
+    "lng": 14.0595711,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skozno": {
+    "name": "Skozno",
+    "slug": "skozno",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9588784,
+    "lng": 13.7303426,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "sky-walk": {
+    "name": "Sky Walk",
+    "slug": "sky-walk",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2148033,
+    "lng": 14.8676965,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skyline-walk": {
+    "name": "Skyline Walk",
+    "slug": "skyline-walk",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5616868,
+    "lng": 7.8579036,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skywalk": {
+    "name": "Skywalk",
+    "slug": "skywalk",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5683709,
+    "lng": 15.2236592,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skywalk-monte-di-mezzocorona": {
+    "name": "SkyWalk Monte di Mezzocorona",
+    "slug": "skywalk-monte-di-mezzocorona",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2234459,
+    "lng": 11.1208787,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "skywalk-trauttmansdorff": {
+    "name": "Skywalk Trauttmansdorff",
+    "slug": "skywalk-trauttmansdorff",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6610915,
+    "lng": 11.1871728,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

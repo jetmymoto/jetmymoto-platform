@@ -10,6 +10,10 @@
  * normalize payloads, and enforce schemas.
  */
 
+import { collection, doc, writeBatch } from "firebase/firestore";
+
+import { db } from "@/lib/firebase";
+
 let eventBuffer = [];
 const FLUSH_INTERVAL_MS = 5000;
 const FLUSH_BATCH_SIZE = 10;
@@ -38,15 +42,12 @@ function sendToGtag(eventName, payload) {
   window.gtag("event", eventName, payload);
 }
 
-// ── Firestore batch dispatch (deferred — only imports firebase when flushing) ──
+// ── Firestore batch dispatch ──
 
 async function flushToFirestore(events) {
   if (events.length === 0) return;
 
   try {
-    const { db } = await import("@/lib/firebase");
-    const { collection, writeBatch, doc } = await import("firebase/firestore");
-
     const batch = writeBatch(db);
     const eventsRef = collection(db, "events");
 

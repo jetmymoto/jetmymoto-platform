@@ -1,0 +1,134 @@
+{
+  "col-doberlauchen": {
+    "name": "Col d'Oberlauchen",
+    "slug": "col-doberlauchen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9480331,
+    "lng": 7.0455259,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1211m"
+  },
+  "col-doderen": {
+    "name": "Col d'Oderen",
+    "slug": "col-doderen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9226869,
+    "lng": 6.9173627,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 884m"
+  },
+  "col-dolen": {
+    "name": "Col d'Olen",
+    "slug": "col-dolen",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8705005,
+    "lng": 7.8687877,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2880m"
+  },
+  "col-dolen-2842": {
+    "name": "Col d'Olen",
+    "slug": "col-dolen-2842",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8705005,
+    "lng": 7.8687877,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dorchera": {
+    "name": "Col d'Orchèra",
+    "slug": "col-dorchera",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1132512,
+    "lng": 7.3575518,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3033m"
+  },
+  "col-dorchera-786": {
+    "name": "Col d'Orchèra",
+    "slug": "col-dorchera-786",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1132512,
+    "lng": 7.3575518,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dorgeval": {
+    "name": "Col d'Orgeval",
+    "slug": "col-dorgeval",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6852643,
+    "lng": 6.239641,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1745m"
+  },
+  "col-dornon": {
+    "name": "Col d'Ornon",
+    "slug": "col-dornon",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0082793,
+    "lng": 5.9674424,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1371m"
+  },
+  "col-dornon-645": {
+    "name": "Col d'Ornon",
+    "slug": "col-dornon-645",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.0082793,
+    "lng": 5.9674424,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-dou-porti-neu": {
+    "name": "Col dou Porti Neu",
+    "slug": "col-dou-porti-neu",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2909359,
+    "lng": 7.3369155,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1760m"
+  },
+  "col-doule": {
+    "name": "Col d'Oule",
+    "slug": "col-doule",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.5133319,
+    "lng": 5.8386201,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1389m"
+  },
+  "col-doutanne": {
+    "name": "Col d'Outanne",
+    "slug": "col-doutanne",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3129513,
+    "lng": 6.8215245,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1856m"
+  }
+}

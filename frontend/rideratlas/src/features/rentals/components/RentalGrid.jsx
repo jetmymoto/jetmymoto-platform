@@ -1,23 +1,15 @@
 import React, { useEffect, useMemo, useReducer, useState } from "react";
-import { motion } from "framer-motion";
-import { ArrowLeft, Filter, SlidersHorizontal } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { SlidersHorizontal, ChevronLeft, ChevronRight } from "lucide-react";
 import {
-  GRAPH,
   readGraphShard,
   getGraphShardStatus,
   loadGraphShard,
 } from "@/core/network/networkGraph";
 import RentalCard from "@/features/rentals/components/RentalCard";
-import OperatorSelector from "@/features/rentals/components/OperatorSelector";
-import PriceGapBadge from "@/features/rentals/components/PriceGapBadge";
 import {
-  getRentalBrand,
   getRentalCategoryLabel,
-  getRentalPrice,
 } from "@/features/rentals/utils/rentalFormatters";
-
-const FILTER_SELECT_CLASS =
-  "h-12 min-w-[190px] rounded-full border border-white/10 bg-[#121212] px-4 text-xs font-semibold uppercase tracking-[0.18em] text-white outline-none transition-colors hover:border-[#CDA755]/45 focus:border-[#CDA755]";
 
 // Force React re-render after async shard load completes.
 function useForceUpdate() {
@@ -28,9 +20,19 @@ function useForceUpdate() {
 export default function RentalGrid({ airportCode, highlightedRentalId = null }) {
   const normalizedAirportCode = String(airportCode || "").toUpperCase();
   const forceUpdate = useForceUpdate();
+  const scrollRef = React.useRef(null);
 
-  // ── Two-step state: null = operator selection, string = fleet reveal ──
-  const [selectedOperator, setSelectedOperator] = useState(null);
+  const scrollGrid = (direction) => {
+    if (scrollRef.current) {
+      const amount = window.innerWidth > 1024 ? 1200 : window.innerWidth > 768 ? 800 : 350;
+      scrollRef.current.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
+    }
+  };
+
+  // ── Intent Selection State ──
+  const [selectedIntent, setSelectedIntent] = useState("all");
+  const [selectedOperator, setSelectedOperator] = useState("all");
+  const [selectedBrand, setSelectedBrand] = useState("all");
 
   // ── Shard-first + GRAPH fallback ──
   const rentalsShard = readGraphShard("rentals");
@@ -41,8 +43,6 @@ export default function RentalGrid({ airportCode, highlightedRentalId = null }) 
   const operators = rentalsShard?.operators || {};
   const rentalIndexes = rentalsShard?.rentalIndexes || {};
   const rentalsByAirport = rentalIndexes?.rentalsByAirport || {};
-  const rentalsByOperatorByAirport = rentalIndexes?.rentalsByOperatorByAirport || {};
-  const cheapestByAirport = rentalIndexes?.cheapestByAirport || {};
 
   // ── Idle-guard: trigger shard load → re-render when done ──
   useEffect(() => {
@@ -65,80 +65,77 @@ export default function RentalGrid({ airportCode, highlightedRentalId = null }) 
     }
   }, [forceUpdate]);
 
-  // ── Fleet-level data (Step 2 — only when operator selected) ──
-  const rentalIds = selectedOperator
-    ? rentalsByOperatorByAirport?.[normalizedAirportCode]?.[selectedOperator] || []
-    : rentalsByAirport?.[normalizedAirportCode] || [];
+  // ── Fleet-level data ──
+  const rentalIds = rentalsByAirport?.[normalizedAirportCode] || [];
 
   const rawRentals = useMemo(
     () => rentalIds.map((id) => rentalsMap?.[id]).filter(Boolean),
     [rentalsMap, rentalIds]
   );
 
-  const totalMachines = rentalsByAirport?.[normalizedAirportCode]?.length || 0;
-
-  const [filterType, setFilterType] = useState("ALL");
-  const [filterBrand, setFilterBrand] = useState("ALL");
-  const [sortPrice, setSortPrice] = useState("RECOMMENDED");
-
-  // Reset filters when switching operators
-  useEffect(() => {
-    setFilterType("ALL");
-    setFilterBrand("ALL");
-    setSortPrice("RECOMMENDED");
-  }, [selectedOperator]);
+  const totalMachines = rawRentals.length;
 
   const filterOptions = useMemo(() => {
-    const brands = Array.from(
-      new Set(rawRentals.map((rental) => getRentalBrand(rental)))
-    ).sort((a, b) => a.localeCompare(b));
+    // Generate dynamic categories from the available fleet so we never show an empty filter
+    const categories = new Set(rawRentals.map((rental) => {
+      const label = getRentalCategoryLabel(rental);
+      return label ? label.toLowerCase() : "other";
+    }));
+    
+    // Convert to array and sort
+    const mapped = Array.from(categories).sort();
+    
+    return ["all", ...mapped];
+  }, [rawRentals]);
 
-    const categories = Array.from(
-      new Set(rawRentals.map((rental) => getRentalCategoryLabel(rental)))
-    ).sort((a, b) => a.localeCompare(b));
+  
+  const brandOptions = useMemo(() => {
+    const brands = new Set(rawRentals.map((rental) => rental.brand || rental.make).filter(Boolean));
+    return ["all", ...Array.from(brands).sort()];
+  }, [rawRentals]);
 
-    return {
-      brands: ["ALL", ...brands],
-      categories: ["ALL", ...categories],
-    };
+  const operatorOptions = useMemo(() => {
+    const ops = new Set(rawRentals.map((rental) => rental.operatorId || rental.operator).filter(Boolean));
+    return ["all", ...Array.from(ops).sort()];
   }, [rawRentals]);
 
   const filteredRentals = useMemo(() => {
-    const next = rawRentals.filter((rental) => {
-      const brandMatches =
-        filterBrand === "ALL" || getRentalBrand(rental) === filterBrand;
-      const typeMatches =
-        filterType === "ALL" ||
-        getRentalCategoryLabel(rental) === filterType;
-
-      return brandMatches && typeMatches;
-    });
-
-    if (sortPrice === "LOW_TO_HIGH") {
-      next.sort((a, b) => getRentalPrice(a) - getRentalPrice(b));
-    } else if (sortPrice === "HIGH_TO_LOW") {
-      next.sort((a, b) => getRentalPrice(b) - getRentalPrice(a));
+    let result = rawRentals;
+    if (selectedIntent !== "all") {
+      result = result.filter((rental) => {
+        const category = getRentalCategoryLabel(rental)?.toLowerCase() || "other";
+        return category === selectedIntent;
+      });
     }
-
-    return next;
-  }, [rawRentals, filterBrand, filterType, sortPrice]);
-
-  const cheapest = cheapestByAirport?.[normalizedAirportCode] || null;
+    if (selectedOperator !== "all") {
+      result = result.filter((rental) => {
+        const op = rental.operatorId || rental.operator;
+        return op === selectedOperator;
+      });
+    }
+    if (selectedBrand !== "all") {
+      result = result.filter((rental) => {
+        const b = rental.brand || rental.make;
+        return b === selectedBrand;
+      });
+    }
+    return result;
+  }, [rawRentals, selectedIntent, selectedOperator, selectedBrand]);
 
   // ── Empty state (no rentals at all for this airport) ──
   if (!isShardLoading && totalMachines === 0) {
     return (
-      <section className="rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,#121212_0%,#050505_100%)] px-8 py-20 text-center shadow-[0_30px_80px_rgba(5,5,5,0.22)]">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#A76330]/35 bg-[#A76330]/10 text-[#CDA755]">
+      <section className="border border-white/5 bg-[#050505] px-8 py-20 text-center">
+        <div className="mx-auto flex h-14 w-14 items-center justify-center border border-[#CDA755]/30 bg-[#CDA755]/10 text-[#CDA755]">
           <SlidersHorizontal size={20} />
         </div>
-        <div className="mt-6 text-[11px] uppercase tracking-[0.28em] text-white/45">
+        <div className="mt-6 text-[11px] font-mono uppercase tracking-[0.28em] text-white/45">
           Fleet Sync Pending
         </div>
-        <h3 className="mt-3 text-3xl font-black uppercase tracking-[-0.03em] text-white">
-          No Verified Rentals For {normalizedAirportCode}
+        <h3 className="mt-3 text-3xl font-headline font-bold uppercase tracking-[0.05em] text-white">
+          No Verified Assets For {normalizedAirportCode}
         </h3>
-        <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-white/58">
+        <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-white/60 font-mono">
           This hub does not currently expose a live rental showroom in the graph
           engine. The component is network-safe and will render inventory
           automatically as soon as rentals are indexed for this airport.
@@ -148,136 +145,157 @@ export default function RentalGrid({ airportCode, highlightedRentalId = null }) 
   }
 
   return (
-    <section className="space-y-8">
-      {/* ── Showroom Header ── */}
-      <div className="sticky top-[92px] z-30 overflow-hidden rounded-[30px] border border-white/10 bg-[linear-gradient(135deg,rgba(18,18,18,0.96)_0%,rgba(5,5,5,0.96)_100%)] shadow-[0_24px_60px_rgba(5,5,5,0.26)] backdrop-blur-xl">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(205,167,85,0.14),transparent_30%),linear-gradient(90deg,rgba(167,99,48,0.08),transparent_35%)]" />
+    <section className="space-y-8" id="fleet-showroom">
+      {/* ── PHASE 1 & 2: INTENT SWITCH (Cinematic Filter) ── */}
+      <div className="max-w-7xl mx-auto mb-16 pt-8">
+        <div className="flex flex-col items-center justify-center">
+          <div className="text-[10px] tracking-[0.4em] uppercase text-[#CDA755] mb-6 font-mono font-bold flex items-center gap-4">
+            <div className="w-8 h-[1px] bg-[#CDA755]"></div>
+            Asset Class Selection
+            <div className="w-8 h-[1px] bg-[#CDA755]"></div>
+          </div>
+          
+                    <div className="flex flex-wrap gap-4 justify-center">
+            {filterOptions.map((intent) => {
+              const isActive = selectedIntent === intent;
+              const label = intent === "all" ? "All Machines" : intent;
 
-        <div className="relative flex flex-col gap-6 px-5 py-5 lg:flex-row lg:items-center lg:justify-between lg:px-7">
-          <div className="min-w-0">
-            <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.26em] text-[#CDA755]">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[#A76330]/35 bg-[#A76330]/10">
-                <Filter size={14} />
+              return (
+                <button
+                  key={intent}
+                  onClick={() => setSelectedIntent(intent)}
+                  className={`font-mono text-[11px] tracking-[0.2em] uppercase px-5 py-2.5 transition-all duration-300 border ${
+                    isActive
+                      ? "bg-[#CDA755] text-[#050505] border-[#CDA755] font-bold shadow-[0_0_20px_rgba(205,167,85,0.4)]"
+                      : "border-[#CDA755]/20 text-white/50 hover:text-[#CDA755] hover:border-[#CDA755]/60"
+                  }`}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
+          
+          {/* Brand Selection */}
+          {brandOptions.length > 2 && (
+            <>
+              <div className="text-[10px] tracking-[0.4em] uppercase text-white/30 mt-12 mb-6 font-mono font-bold flex items-center gap-4 justify-center">
+                <div className="w-4 h-[1px] bg-white/20"></div>
+                Manufacturer
+                <div className="w-4 h-[1px] bg-white/20"></div>
               </div>
-              Mobility Access Showroom
-            </div>
-            <h2 className="mt-3 text-2xl font-black uppercase tracking-[-0.03em] text-white md:text-3xl">
-              {normalizedAirportCode} Rental Fleet
-            </h2>
-            <p className="mt-2 text-sm text-white/56">
-              {selectedOperator
-                ? "Browsing operator fleet. Refine by brand, type, and daily rate."
-                : "Select a verified operator to explore their fleet."}
-            </p>
-          </div>
+              
+              <div className="flex flex-wrap gap-3 justify-center">
+                {brandOptions.map((brand) => {
+                  const isActive = selectedBrand === brand;
+                  const label = brand === "all" ? "All Brands" : brand;
 
-          <div className="flex flex-wrap items-center gap-3">
-            {cheapest && (
-              <PriceGapBadge cheapest={cheapest} airportCode={normalizedAirportCode} />
-            )}
+                  return (
+                    <button
+                      key={brand}
+                      onClick={() => setSelectedBrand(brand)}
+                      className={`font-mono text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-all duration-300 border ${
+                        isActive
+                          ? "bg-white/10 text-white border-white/20 font-bold"
+                          : "border-white/5 text-white/30 hover:text-white hover:border-white/10 bg-[#050505]"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
 
-            {selectedOperator && (
-              <>
-                <select
-                  value={filterBrand}
-                  onChange={(event) => setFilterBrand(event.target.value)}
-                  className={FILTER_SELECT_CLASS}
-                  aria-label="Filter rentals by brand"
-                >
-                  {filterOptions.brands.map((brand) => (
-                    <option key={brand} value={brand}>
-                      {brand === "ALL" ? "Brand: All" : `Brand: ${brand}`}
-                    </option>
-                  ))}
-                </select>
+          {/* Operator Selection */}
+          {operatorOptions.length > 2 && (
+            <>
+              <div className="text-[10px] tracking-[0.4em] uppercase text-white/30 mt-12 mb-6 font-mono font-bold flex items-center gap-4">
+                <div className="w-4 h-[1px] bg-white/20"></div>
+                Operator Assignment
+                <div className="w-4 h-[1px] bg-white/20"></div>
+              </div>
+              
+              <div className="flex flex-wrap gap-3 justify-center">
+                {operatorOptions.map((opId) => {
+                  const isActive = selectedOperator === opId;
+                  const label = opId === "all" ? "All Operators" : operators?.[opId]?.name || opId;
 
-                <select
-                  value={filterType}
-                  onChange={(event) => setFilterType(event.target.value)}
-                  className={FILTER_SELECT_CLASS}
-                  aria-label="Filter rentals by type"
-                >
-                  {filterOptions.categories.map((category) => (
-                    <option key={category} value={category}>
-                      {category === "ALL" ? "Type: All" : `Type: ${category}`}
-                    </option>
-                  ))}
-                </select>
-
-                <select
-                  value={sortPrice}
-                  onChange={(event) => setSortPrice(event.target.value)}
-                  className={FILTER_SELECT_CLASS}
-                  aria-label="Sort rentals by price"
-                >
-                  <option value="RECOMMENDED">Price: Recommended</option>
-                  <option value="LOW_TO_HIGH">Price: Low to High</option>
-                  <option value="HIGH_TO_LOW">Price: High to Low</option>
-                </select>
-              </>
-            )}
-          </div>
-        </div>
-
-        <div className="relative flex items-center justify-between border-t border-white/10 px-5 py-3 text-[11px] uppercase tracking-[0.24em] text-white/45 lg:px-7">
-          <span className="tabular-nums">{totalMachines} Machines Indexed</span>
-          {selectedOperator && (
-            <span className="tabular-nums">{filteredRentals.length} Visible</span>
+                  return (
+                    <button
+                      key={opId}
+                      onClick={() => setSelectedOperator(opId)}
+                      className={`font-mono text-[10px] tracking-[0.2em] uppercase px-4 py-2 transition-all duration-300 border ${
+                        isActive
+                          ? "bg-white/10 text-white border-white/20 font-bold"
+                          : "border-white/5 text-white/30 hover:text-white hover:border-white/10 bg-[#050505]"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
           )}
         </div>
       </div>
 
-      {/* ── Step 1: Operator Selection (or skeleton while loading) ── */}
-      {!selectedOperator && (
-        <OperatorSelector
-          airportCode={normalizedAirportCode}
-          rentalIndexes={rentalIndexes}
-          operators={operators}
-          onSelectOperator={setSelectedOperator}
-          isLoading={isShardLoading}
-        />
-      )}
-
-      {/* ── Step 2: Fleet Reveal ── */}
-      {selectedOperator && (
-        <>
-          {/* Back to operators breadcrumb */}
-          <motion.div
-            initial={{ opacity: 0, x: -8 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            <button
-              type="button"
-              onClick={() => setSelectedOperator(null)}
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#121212] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/60 transition-colors hover:border-[#CDA755]/40 hover:text-[#CDA755]"
-            >
-              <ArrowLeft size={14} />
-              All Operators · {normalizedAirportCode}
-            </button>
-          </motion.div>
-
-          {filteredRentals.length === 0 ? (
-            <div className="rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,#121212_0%,#050505_100%)] px-8 py-20 text-center">
-              <div className="text-[11px] uppercase tracking-[0.26em] text-[#CDA755]">
-                No Match
-              </div>
-              <h3 className="mt-3 text-2xl font-black uppercase text-white">
-                No Fleet Matches This Filter Stack
-              </h3>
-              <p className="mx-auto mt-4 max-w-lg text-sm leading-7 text-white/56">
-                Adjust brand or type filters to reopen the showroom. The component is
-                still rendering from the indexed airport fleet only.
-              </p>
+      {/* ── Cinematic Fleet Reveal ── */}
+      <div className="relative max-w-[1400px] mx-auto">
+        <div className="flex items-center justify-between border-y border-white/5 px-5 py-4 text-[10px] font-mono font-bold uppercase tracking-widest text-[#CDA755] bg-[#050505] mb-8 lg:px-0">
+          <div className="flex items-center gap-4">
+            <span>{normalizedAirportCode} Asset Showroom</span>
+            <span className="text-white/40 hidden md:inline"> // {filteredRentals.length} Machines Authorized</span>
+          </div>
+          {/* Scroll Controls */}
+          {filteredRentals.length > 0 && (
+            <div className="flex items-center gap-2">
+              <button 
+                onClick={() => scrollGrid('left')} 
+                className="p-2 border border-white/10 hover:border-[#CDA755] hover:text-[#CDA755] transition-colors text-white/50"
+                aria-label="Scroll Left"
+              >
+                <ChevronLeft size={16} />
+              </button>
+              <button 
+                onClick={() => scrollGrid('right')} 
+                className="p-2 border border-white/10 hover:border-[#CDA755] hover:text-[#CDA755] transition-colors text-white/50"
+                aria-label="Scroll Right"
+              >
+                <ChevronRight size={16} />
+              </button>
             </div>
-          ) : (
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-              {filteredRentals.map((rental, index) => (
+          )}
+        </div>
+
+        {filteredRentals.length === 0 && !isShardLoading ? (
+           <div className="border border-white/5 bg-[#050505] px-8 py-20 text-center mx-5 lg:mx-0">
+             <div className="text-[10px] font-mono uppercase tracking-widest text-[#CDA755]">
+               Class Unavailable
+             </div>
+             <h3 className="mt-3 text-2xl font-headline font-bold uppercase text-white">
+               No Assets Match This Selection
+             </h3>
+           </div>
+        ) : (
+          <motion.div 
+            layout 
+            ref={scrollRef}
+            className="flex overflow-x-auto gap-6 pb-8 px-5 lg:px-0 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          >
+            <AnimatePresence mode="popLayout">
+              {filteredRentals.map((rental) => (
                 <motion.div
                   key={rental.id}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.04, duration: 0.35 }}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="flex-none w-[85vw] sm:w-[360px] lg:w-[calc(33.333%-1rem)] xl:w-[400px] snap-start"
                 >
                   <RentalCard
                     rental={rental}
@@ -287,10 +305,10 @@ export default function RentalGrid({ airportCode, highlightedRentalId = null }) 
                   />
                 </motion.div>
               ))}
-            </div>
-          )}
-        </>
-      )}
+            </AnimatePresence>
+          </motion.div>
+        )}
+      </div>
     </section>
   );
 }

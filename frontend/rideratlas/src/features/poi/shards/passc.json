@@ -1,0 +1,46 @@
+{
+  "pass-cacciabella-nord": {
+    "name": "Pass Cacciabella Nord",
+    "slug": "pass-cacciabella-nord",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3184622,
+    "lng": 9.6299898,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2878m"
+  },
+  "pass-cacciabella-nord-3614": {
+    "name": "Pass Cacciabella Nord",
+    "slug": "pass-cacciabella-nord-3614",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3184622,
+    "lng": 9.6299898,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "pass-cacciabella-sud": {
+    "name": "Pass Cacciabella Sud",
+    "slug": "pass-cacciabella-sud",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3161913,
+    "lng": 9.6305496,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2896m"
+  },
+  "pass-cacciabella-sud-2613": {
+    "name": "Pass Cacciabella Sud",
+    "slug": "pass-cacciabella-sud-2613",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3161913,
+    "lng": 9.6305496,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

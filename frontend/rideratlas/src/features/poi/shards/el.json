@@ -1,0 +1,134 @@
+{
+  "el-balcon": {
+    "name": "El Balcon",
+    "slug": "el-balcon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8607345,
+    "lng": 11.8165547,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "el-piz": {
+    "name": "El Piz",
+    "slug": "el-piz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1076168,
+    "lng": 11.9849454,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1333m"
+  },
+  "elabria": {
+    "name": "Elabria",
+    "slug": "elabria",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0876074,
+    "lng": 9.4284545,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "elendscharte": {
+    "name": "Elendscharte",
+    "slug": "elendscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4408708,
+    "lng": 14.4012523,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2323m"
+  },
+  "elendscharte-1742": {
+    "name": "Elendscharte",
+    "slug": "elendscharte-1742",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.4408708,
+    "lng": 14.4012523,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "elisabethaussicht": {
+    "name": "Elisabethaussicht",
+    "slug": "elisabethaussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.883763,
+    "lng": 15.981329,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 734m"
+  },
+  "elke-bankerl": {
+    "name": "Elke Bankerl",
+    "slug": "elke-bankerl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7961525,
+    "lng": 13.5435903,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ellmauer-tor": {
+    "name": "Ellmauer Tor",
+    "slug": "ellmauer-tor",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5659252,
+    "lng": 12.3207684,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1980m"
+  },
+  "ellmauer-tor-849": {
+    "name": "Ellmauer Tor",
+    "slug": "ellmauer-tor-849",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.5659252,
+    "lng": 12.3207684,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ellmaustein": {
+    "name": "Ellmaustein",
+    "slug": "ellmaustein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7952333,
+    "lng": 13.312387,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "elmau-and-zugspitzmassiv": {
+    "name": "Elmau & Zugspitzmassiv",
+    "slug": "elmau-and-zugspitzmassiv",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4652344,
+    "lng": 11.1914366,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "elmauer-alm": {
+    "name": "Elmauer Alm",
+    "slug": "elmauer-alm",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4746945,
+    "lng": 11.1881461,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

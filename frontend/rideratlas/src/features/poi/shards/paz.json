@@ -1,0 +1,24 @@
+{
+  "pazin-cave": {
+    "name": "Pazin cave",
+    "slug": "pazin-cave",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2395853,
+    "lng": 13.9296921,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pazinski-krov": {
+    "name": "Pazinski krov",
+    "slug": "pazinski-krov",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2435192,
+    "lng": 13.9352203,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

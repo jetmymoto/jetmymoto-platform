@@ -49,7 +49,7 @@ const cardVariants = {
 
 const HowItWorksSection = () => {
   return (
-    <section className="relative py-28 bg-[#050505] text-white overflow-hidden">
+    <section className="relative py-16 md:py-28 bg-[#050505] text-white overflow-hidden">
       
       {/* 🔥 ambient glow (ties with hero) */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(205,167,85,0.08),transparent_40%)]" />
@@ -61,7 +61,7 @@ const HowItWorksSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-12 md:mb-20"
         >
           <div className="flex items-center gap-4 mb-6">
             <div className="h-[1px] w-12 bg-[#CDA755]/50" />
@@ -81,17 +81,17 @@ const HowItWorksSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="relative grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8"
         >
           {steps.map((step, idx) => (
             <motion.div
               key={idx}
               variants={cardVariants}
-              className={`group relative p-7 rounded-[24px] border transition-all duration-500 
+              className={`group relative p-7 border transition-all duration-500 shadow-inset-hardware
               ${
                 idx === 3
                   ? "border-[#CDA755]/30 bg-gradient-to-br from-[#CDA755]/10 to-transparent"
-                  : "border-white/10 bg-white/[0.03] hover:bg-white/[0.06] hover:border-[#CDA755]/40"
+                  : "border-white/10 bg-surface-card hover:bg-surface-elevated hover:border-[#CDA755]/40"
               }`}
             >
               {/* STEP NUMBER */}

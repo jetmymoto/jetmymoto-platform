@@ -1,0 +1,13 @@
+{
+  "1056m": {
+    "name": "1056m",
+    "slug": "1056m",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1824429,
+    "lng": 7.1900257,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1056m"
+  }
+}

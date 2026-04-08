@@ -1,0 +1,35 @@
+{
+  "wyssegglicke": {
+    "name": "Wyssegglicke",
+    "slug": "wyssegglicke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2014323,
+    "lng": 7.7524598,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2992m"
+  },
+  "wyssegglicke-3670": {
+    "name": "Wyssegglicke",
+    "slug": "wyssegglicke-3670",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2014323,
+    "lng": 7.7524598,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "wyssi-flue": {
+    "name": "Wyssi Flue",
+    "slug": "wyssi-flue",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2833694,
+    "lng": 7.9347478,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1820m"
+  }
+}

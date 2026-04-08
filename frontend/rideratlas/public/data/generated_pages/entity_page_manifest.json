@@ -1,0 +1,491 @@
+{
+  "generatedAt": "2026-04-03T20:54:05.104Z",
+  "totals": {
+    "requested": 60,
+    "generated": 60,
+    "rejected": 0
+  },
+  "pages": [
+    {
+      "id": "alps",
+      "slug": "alps",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "dolomites",
+      "slug": "dolomites",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "pyrenees",
+      "slug": "pyrenees",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/pyrenees.json",
+      "auditPassed": true
+    },
+    {
+      "id": "scottish-highlands",
+      "slug": "scottish-highlands",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/scottish-highlands.json",
+      "auditPassed": true
+    },
+    {
+      "id": "norwegian-fjords",
+      "slug": "norwegian-fjords",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/norwegian-fjords.json",
+      "auditPassed": true
+    },
+    {
+      "id": "wasatch-front",
+      "slug": "wasatch-front",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/wasatch-front.json",
+      "auditPassed": true
+    },
+    {
+      "id": "mid-atlantic",
+      "slug": "mid-atlantic",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/mid-atlantic.json",
+      "auditPassed": true
+    },
+    {
+      "id": "pacific-northwest",
+      "slug": "pacific-northwest",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/pacific-northwest.json",
+      "auditPassed": true
+    },
+    {
+      "id": "socal-coast",
+      "slug": "socal-coast",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/socal-coast.json",
+      "auditPassed": true
+    },
+    {
+      "id": "florida-gulf",
+      "slug": "florida-gulf",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/florida-gulf.json",
+      "auditPassed": true
+    },
+    {
+      "id": "tennessee-valley",
+      "slug": "tennessee-valley",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/tennessee-valley.json",
+      "auditPassed": true
+    },
+    {
+      "id": "quebec-laurentians",
+      "slug": "quebec-laurentians",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/quebec-laurentians.json",
+      "auditPassed": true
+    },
+    {
+      "id": "hawaii-oahu",
+      "slug": "hawaii-oahu",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/hawaii-oahu.json",
+      "auditPassed": true
+    },
+    {
+      "id": "texas-hill-country",
+      "slug": "texas-hill-country",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/texas-hill-country.json",
+      "auditPassed": true
+    },
+    {
+      "id": "midwest-lakes",
+      "slug": "midwest-lakes",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/midwest-lakes.json",
+      "auditPassed": true
+    },
+    {
+      "id": "wasatch-ridge-assault",
+      "slug": "wasatch-ridge-assault",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/wasatch-ridge-assault.json",
+      "auditPassed": true
+    },
+    {
+      "id": "mirror-lake-sweep",
+      "slug": "mirror-lake-sweep",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/mirror-lake-sweep.json",
+      "auditPassed": true
+    },
+    {
+      "id": "flaming-gorge-recon",
+      "slug": "flaming-gorge-recon",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/flaming-gorge-recon.json",
+      "auditPassed": true
+    },
+    {
+      "id": "chesapeake-bay-reach",
+      "slug": "chesapeake-bay-reach",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/chesapeake-bay-reach.json",
+      "auditPassed": true
+    },
+    {
+      "id": "piedmont-forest-strike",
+      "slug": "piedmont-forest-strike",
+      "type": "destination",
+      "template": "RideDestinationPage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/destination/piedmont-forest-strike.json",
+      "auditPassed": true
+    },
+    {
+      "id": "milan-mxp-to-alps",
+      "slug": "milan-mxp-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/milan-mxp-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "paris-cdg-to-alps",
+      "slug": "paris-cdg-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/paris-cdg-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "london-lhr-to-alps",
+      "slug": "london-lhr-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/london-lhr-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "oslo-osl-to-alps",
+      "slug": "oslo-osl-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/oslo-osl-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "montréal-yul-to-alps",
+      "slug": "montréal-yul-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/montréal-yul-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "baltimore-bwi-to-alps",
+      "slug": "baltimore-bwi-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/baltimore-bwi-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "washington-dca-to-alps",
+      "slug": "washington-dca-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/washington-dca-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "washington-iad-to-alps",
+      "slug": "washington-iad-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/washington-iad-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "chicago-mdw-to-alps",
+      "slug": "chicago-mdw-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/chicago-mdw-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "nashville-bna-to-alps",
+      "slug": "nashville-bna-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/nashville-bna-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "tampa-tpa-to-alps",
+      "slug": "tampa-tpa-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/tampa-tpa-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "vancouver-yvr-to-alps",
+      "slug": "vancouver-yvr-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/vancouver-yvr-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "salt-lake-city-slc-to-alps",
+      "slug": "salt-lake-city-slc-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/salt-lake-city-slc-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "austin-aus-to-alps",
+      "slug": "austin-aus-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/austin-aus-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "san-diego-san-to-alps",
+      "slug": "san-diego-san-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/san-diego-san-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "honolulu-hnl-to-alps",
+      "slug": "honolulu-hnl-to-alps",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/honolulu-hnl-to-alps.json",
+      "auditPassed": true
+    },
+    {
+      "id": "milan-mxp-to-dolomites",
+      "slug": "milan-mxp-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/milan-mxp-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "paris-cdg-to-dolomites",
+      "slug": "paris-cdg-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/paris-cdg-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "london-lhr-to-dolomites",
+      "slug": "london-lhr-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/london-lhr-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "oslo-osl-to-dolomites",
+      "slug": "oslo-osl-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/oslo-osl-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "montréal-yul-to-dolomites",
+      "slug": "montréal-yul-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/montréal-yul-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "baltimore-bwi-to-dolomites",
+      "slug": "baltimore-bwi-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/baltimore-bwi-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "washington-dca-to-dolomites",
+      "slug": "washington-dca-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/washington-dca-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "washington-iad-to-dolomites",
+      "slug": "washington-iad-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/washington-iad-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "chicago-mdw-to-dolomites",
+      "slug": "chicago-mdw-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/chicago-mdw-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "nashville-bna-to-dolomites",
+      "slug": "nashville-bna-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/nashville-bna-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "tampa-tpa-to-dolomites",
+      "slug": "tampa-tpa-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/tampa-tpa-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "vancouver-yvr-to-dolomites",
+      "slug": "vancouver-yvr-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/vancouver-yvr-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "salt-lake-city-slc-to-dolomites",
+      "slug": "salt-lake-city-slc-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/salt-lake-city-slc-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "austin-aus-to-dolomites",
+      "slug": "austin-aus-to-dolomites",
+      "type": "route",
+      "template": "RideRoutePage",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/route/austin-aus-to-dolomites.json",
+      "auditPassed": true
+    },
+    {
+      "id": "ALC",
+      "slug": "alicante-alc",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/alicante-alc.json",
+      "auditPassed": true
+    },
+    {
+      "id": "AMS",
+      "slug": "amsterdam-ams",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/amsterdam-ams.json",
+      "auditPassed": true
+    },
+    {
+      "id": "ARN",
+      "slug": "stockholm-arn",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/stockholm-arn.json",
+      "auditPassed": true
+    },
+    {
+      "id": "ATH",
+      "slug": "athens-ath",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/athens-ath.json",
+      "auditPassed": true
+    },
+    {
+      "id": "BCN",
+      "slug": "barcelona-bcn",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/barcelona-bcn.json",
+      "auditPassed": true
+    },
+    {
+      "id": "BER",
+      "slug": "berlin-ber",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/berlin-ber.json",
+      "auditPassed": true
+    },
+    {
+      "id": "BGY",
+      "slug": "bergamo-bgy",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/bergamo-bgy.json",
+      "auditPassed": true
+    },
+    {
+      "id": "BLQ",
+      "slug": "bologna-blq",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/bologna-blq.json",
+      "auditPassed": true
+    },
+    {
+      "id": "BRU",
+      "slug": "brussels-bru",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/brussels-bru.json",
+      "auditPassed": true
+    },
+    {
+      "id": "CDG",
+      "slug": "paris-cdg",
+      "type": "airport",
+      "template": "AirportTemplate",
+      "path": "/workspaces/jetmymoto-platform/frontend/rideratlas/public/data/generated_pages/airport/paris-cdg.json",
+      "auditPassed": true
+    }
+  ],
+  "rejected": []
+}

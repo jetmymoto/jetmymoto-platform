@@ -1,0 +1,24 @@
+{
+  "gnoppnitztorl": {
+    "name": "Gnoppnitztörl",
+    "slug": "gnoppnitztorl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.791794,
+    "lng": 13.2035097,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2070m"
+  },
+  "gnoppnitztorl-1530": {
+    "name": "Gnoppnitztörl",
+    "slug": "gnoppnitztorl-1530",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.791794,
+    "lng": 13.2035097,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

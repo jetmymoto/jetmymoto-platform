@@ -1,0 +1,112 @@
+{
+  "col-nache": {
+    "name": "Col Nâche",
+    "slug": "col-nache",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6859181,
+    "lng": 7.6824378,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 750m"
+  },
+  "col-nazie": {
+    "name": "Col Nazié",
+    "slug": "col-nazie",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.0769155,
+    "lng": 6.1951464,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1902m"
+  },
+  "col-nodry": {
+    "name": "Col Nodry",
+    "slug": "col-nodry",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8599532,
+    "lng": 5.938784,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1827m"
+  },
+  "col-nord-de-letret": {
+    "name": "Col Nord de l'Étret",
+    "slug": "col-nord-de-letret",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8983383,
+    "lng": 6.2395029,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3335m"
+  },
+  "col-nord-de-letret-1994": {
+    "name": "Col Nord de l'Étret",
+    "slug": "col-nord-de-letret-1994",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.8983383,
+    "lng": 6.2395029,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-nord-des-lacs": {
+    "name": "Col Nord des Lacs",
+    "slug": "col-nord-des-lacs",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.2048795,
+    "lng": 6.1802337,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2533m"
+  },
+  "col-nord-des-lacs-3545": {
+    "name": "Col Nord des Lacs",
+    "slug": "col-nord-des-lacs-3545",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.2048795,
+    "lng": 6.1802337,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-nord-du-cristillan": {
+    "name": "Col Nord du Cristillan",
+    "slug": "col-nord-du-cristillan",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6495618,
+    "lng": 6.9035983,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3000m"
+  },
+  "col-nord-du-cristillan-2773": {
+    "name": "Col Nord du Cristillan",
+    "slug": "col-nord-du-cristillan-2773",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6495618,
+    "lng": 6.9035983,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-nord-du-plaret": {
+    "name": "Col Nord du Plaret",
+    "slug": "col-nord-du-plaret",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9626151,
+    "lng": 6.2613527,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

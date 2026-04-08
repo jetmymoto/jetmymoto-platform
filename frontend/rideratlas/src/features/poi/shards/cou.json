@@ -1,0 +1,35 @@
+{
+  "coumbalieres": {
+    "name": "Coumbalières",
+    "slug": "coumbalieres",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.423337,
+    "lng": 7.2013069,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1642m"
+  },
+  "coup-de-sabre": {
+    "name": "Coup de Sabre",
+    "slug": "coup-de-sabre",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8915133,
+    "lng": 6.3788459,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3494m"
+  },
+  "coup-de-sabre-1667": {
+    "name": "Coup de Sabre",
+    "slug": "coup-de-sabre-1667",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.8915133,
+    "lng": 6.3788459,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

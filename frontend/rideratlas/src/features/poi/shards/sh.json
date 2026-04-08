@@ -1,0 +1,13 @@
+{
+  "sherlock-holmes-and-professor-james-moriarty": {
+    "name": "Sherlock Holmes and Professor James Moriarty",
+    "slug": "sherlock-holmes-and-professor-james-moriarty",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.713577,
+    "lng": 8.1833534,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

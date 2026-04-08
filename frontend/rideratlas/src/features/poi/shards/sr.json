@@ -1,0 +1,24 @@
+{
+  "srce-med-vinogradi-cesta-v-obliki-srca": {
+    "name": "Srce med vinogradi (Cesta v obliki srca)",
+    "slug": "srce-med-vinogradi-cesta-v-obliki-srca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.670401,
+    "lng": 15.5513043,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "srenjski-preval": {
+    "name": "Srenjski preval",
+    "slug": "srenjski-preval",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3611511,
+    "lng": 13.8943541,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1959m"
+  }
+}

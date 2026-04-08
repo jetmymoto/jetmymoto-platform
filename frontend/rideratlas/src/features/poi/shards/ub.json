@@ -1,0 +1,35 @@
+{
+  "ubergang": {
+    "name": "Übergang",
+    "slug": "ubergang",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6493533,
+    "lng": 14.7122232,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 626m"
+  },
+  "uberraschung": {
+    "name": "Überraschung",
+    "slug": "uberraschung",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8797526,
+    "lng": 13.8223568,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 789m"
+  },
+  "uberschalljoch": {
+    "name": "Überschalljoch",
+    "slug": "uberschalljoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3535519,
+    "lng": 11.4956917,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1910m"
+  }
+}

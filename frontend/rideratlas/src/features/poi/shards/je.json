@@ -1,0 +1,134 @@
+{
+  "jegertosse": {
+    "name": "Jegertosse",
+    "slug": "jegertosse",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4707665,
+    "lng": 7.672155,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2154.5m"
+  },
+  "jelenk": {
+    "name": "Jelenk",
+    "slug": "jelenk",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.056135,
+    "lng": 13.6608052,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "jelenov-rog": {
+    "name": "Jelenov rog",
+    "slug": "jelenov-rog",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1862887,
+    "lng": 14.9448645,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "jetee-albert-edouard-sud": {
+    "name": "Jetée Albert Edouard Sud",
+    "slug": "jetee-albert-edouard-sud",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.547648,
+    "lng": 7.016188,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "jeuf-da-duron-mahlknechtjoch-passo-duron": {
+    "name": "Jëuf da Duron - Mahlknechtjoch - Passo Duron",
+    "slug": "jeuf-da-duron-mahlknechtjoch-passo-duron",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4975194,
+    "lng": 11.65362,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2204m"
+  },
+  "jeuf-da-duron-mahlknechtjoch-passo-duron-132": {
+    "name": "Jëuf da Duron - Mahlknechtjoch - Passo Duron",
+    "slug": "jeuf-da-duron-mahlknechtjoch-passo-duron-132",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4975194,
+    "lng": 11.65362,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "jeuf-de-fascia-giogo-di-fassa": {
+    "name": "Jeuf de Fascia - Giogo di Fassa",
+    "slug": "jeuf-de-fascia-giogo-di-fassa",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5047196,
+    "lng": 11.7006912,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2297m"
+  },
+  "jeuf-de-fascia-giogo-di-fassa-147": {
+    "name": "Jeuf de Fascia - Giogo di Fassa",
+    "slug": "jeuf-de-fascia-giogo-di-fassa-147",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5047196,
+    "lng": 11.7006912,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "jezero-v-ledvicah": {
+    "name": "Jezero v Ledvicah",
+    "slug": "jezero-v-ledvicah",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3445401,
+    "lng": 13.7859633,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "jezero-v-ledvicah-high-viewpoint": {
+    "name": "Jezero v Ledvicah High Viewpoint",
+    "slug": "jezero-v-ledvicah-high-viewpoint",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3469031,
+    "lng": 13.7900094,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "jezerski-preval": {
+    "name": "Jezerski preval",
+    "slug": "jezerski-preval",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3412233,
+    "lng": 13.8413881,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1945m"
+  },
+  "jezerski-stog": {
+    "name": "Jezerski Stog",
+    "slug": "jezerski-stog",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3384601,
+    "lng": 13.8450297,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2039m"
+  }
+}

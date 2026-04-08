@@ -1,0 +1,112 @@
+{
+  "col-ratti": {
+    "name": "Col Ratti",
+    "slug": "col-ratti",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1889654,
+    "lng": 6.620797,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1905m"
+  },
+  "col-remy": {
+    "name": "Col Rémy",
+    "slug": "col-remy",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.454138,
+    "lng": 6.8827664,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2552m"
+  },
+  "col-remy-3805": {
+    "name": "Col Rémy",
+    "slug": "col-remy-3805",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.454138,
+    "lng": 6.8827664,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-replan": {
+    "name": "Col Replan",
+    "slug": "col-replan",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6829222,
+    "lng": 7.3351947,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2366m"
+  },
+  "col-replan-2331": {
+    "name": "Col Replan",
+    "slug": "col-replan-2331",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6829222,
+    "lng": 7.3351947,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-rosset": {
+    "name": "Col Rosset",
+    "slug": "col-rosset",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3998826,
+    "lng": 6.7600528,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2570m"
+  },
+  "col-rosset-3445": {
+    "name": "Col Rosset",
+    "slug": "col-rosset-3445",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.3998826,
+    "lng": 6.7600528,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-rouge": {
+    "name": "Col Rouge",
+    "slug": "col-rouge",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3186964,
+    "lng": 6.6534778,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2731m"
+  },
+  "col-rouge-516": {
+    "name": "Col Rouge",
+    "slug": "col-rouge-516",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.3186964,
+    "lng": 6.6534778,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-routier-de-laiguillon": {
+    "name": "Col routier de l'Aiguillon",
+    "slug": "col-routier-de-laiguillon",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7893286,
+    "lng": 6.4596296,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1283m"
+  }
+}

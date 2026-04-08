@@ -1,0 +1,24 @@
+{
+  "ljubimer": {
+    "name": "Ljubimer",
+    "slug": "ljubimer",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.9504081,
+    "lng": 14.7505853,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ljubovo": {
+    "name": "Ljubovo",
+    "slug": "ljubovo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6664781,
+    "lng": 15.5796914,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 980m"
+  }
+}

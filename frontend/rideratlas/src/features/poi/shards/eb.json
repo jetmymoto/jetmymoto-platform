@@ -1,0 +1,68 @@
+{
+  "ebenes-jochl-giogo-piano": {
+    "name": "Ebenes Jöchl - Giogo Piano",
+    "slug": "ebenes-jochl-giogo-piano",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5163291,
+    "lng": 10.7566578,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2786m"
+  },
+  "ebenes-jochl-giogo-piano-2746": {
+    "name": "Ebenes Jöchl - Giogo Piano",
+    "slug": "ebenes-jochl-giogo-piano-2746",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5163291,
+    "lng": 10.7566578,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ebnersattel": {
+    "name": "Ebnersattel",
+    "slug": "ebnersattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7816221,
+    "lng": 14.1176257,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 971m"
+  },
+  "ebnerscharte": {
+    "name": "Ebnerscharte",
+    "slug": "ebnerscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3307411,
+    "lng": 12.8981334,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1873m"
+  },
+  "ebnerscharte-997": {
+    "name": "Ebnerscharte",
+    "slug": "ebnerscharte-997",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0174046,
+    "lng": 10.9455503,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ebni": {
+    "name": "Ebni",
+    "slug": "ebni",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1411636,
+    "lng": 10.7659817,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2000m"
+  }
+}

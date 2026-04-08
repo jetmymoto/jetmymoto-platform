@@ -1,0 +1,35 @@
+{
+  "passo-ignaga": {
+    "name": "Passo Ignaga",
+    "slug": "passo-ignaga",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0616392,
+    "lng": 10.4892634,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2527m"
+  },
+  "passo-ignaga-3271": {
+    "name": "Passo Ignaga",
+    "slug": "passo-ignaga-3271",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.0616392,
+    "lng": 10.4892634,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-incisa-ju-dinzija": {
+    "name": "Passo Incisa - Ju d'Inzija",
+    "slug": "passo-incisa-ju-dinzija",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5298273,
+    "lng": 11.9014747,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1938m"
+  }
+}

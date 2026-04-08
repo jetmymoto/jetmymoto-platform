@@ -1,0 +1,13 @@
+{
+  "ozben-vzletisce": {
+    "name": "Ozben - vzletišče",
+    "slug": "ozben-vzletisce",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.249595,
+    "lng": 13.6040917,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 750m"
+  }
+}

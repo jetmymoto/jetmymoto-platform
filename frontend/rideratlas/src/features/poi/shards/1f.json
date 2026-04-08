@@ -1,0 +1,13 @@
+{
+  "1-fallertumpf": {
+    "name": "1. Fallertumpf",
+    "slug": "1-fallertumpf",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0105696,
+    "lng": 13.4323906,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

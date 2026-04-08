@@ -1,0 +1,46 @@
+{
+  "cocca-del-santellone": {
+    "name": "Cocca del Santellone",
+    "slug": "cocca-del-santellone",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7120191,
+    "lng": 10.4918969,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 873m"
+  },
+  "cocca-di-lodrino": {
+    "name": "Cocca di Lodrino",
+    "slug": "cocca-di-lodrino",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7118669,
+    "lng": 10.2861765,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 735m"
+  },
+  "cocca-didro": {
+    "name": "Cocca d'Idro",
+    "slug": "cocca-didro",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7466803,
+    "lng": 10.4961255,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 682m"
+  },
+  "cocula-hugelfestung": {
+    "name": "Cocula - Hügelfestung",
+    "slug": "cocula-hugelfestung",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6364742,
+    "lng": 11.3471248,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

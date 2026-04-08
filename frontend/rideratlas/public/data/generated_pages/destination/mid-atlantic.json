@@ -1,0 +1,65 @@
+{
+  "entity": {
+    "id": "mid-atlantic",
+    "slug": "mid-atlantic",
+    "type": "destination",
+    "name": "Mid-Atlantic",
+    "region": "appalachia",
+    "country": "",
+    "summary": ""
+  },
+  "template": "RideDestinationPage",
+  "tokens": {
+    "colors": {
+      "background": "#050505",
+      "foreground": "#FFFFFF",
+      "accent": "#CDA755"
+    },
+    "fonts": {
+      "heading": "serif",
+      "body": "sans-serif"
+    },
+    "motion": {
+      "reveal": "fade-up",
+      "durationMs": 800
+    },
+    "rules": {
+      "maxCards": 3,
+      "showPricingOnInspirationPages": false,
+      "accentUsage": "micro-only"
+    }
+  },
+  "assets": {
+    "hero": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    "thumbnail": null,
+    "gallery": [],
+    "poster": null,
+    "alt": "Mid-Atlantic",
+    "caption": ""
+  },
+  "related": {
+    "destinations": [],
+    "routes": [],
+    "airports": [],
+    "rentals": [],
+    "experiences": [],
+    "pois": []
+  },
+  "seo": {
+    "title": "Mid-Atlantic Motorcycle Journeys | Luxury Riding Destination",
+    "description": "Discover Mid-Atlantic through cinematic motorcycle travel, curated routes, and premium regional experiences.",
+    "canonicalPath": "/mid-atlantic",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Mid-Atlantic",
+      "description": "",
+      "url": "/mid-atlantic"
+    }
+  },
+  "generatedAt": "2026-04-03T20:54:05.120Z",
+  "audit": {
+    "passed": true,
+    "violations": []
+  }
+}

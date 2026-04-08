@@ -1,0 +1,90 @@
+{
+  "cuca-chetoi": {
+    "name": "Cuca Chetoi",
+    "slug": "cuca-chetoi",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7839698,
+    "lng": 10.488456,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 895m"
+  },
+  "cuca-del-frinc": {
+    "name": "Cuca del Frinc",
+    "slug": "cuca-del-frinc",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7923191,
+    "lng": 10.4748726,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1290m"
+  },
+  "cuca-hohenbar": {
+    "name": "cUcA Höhenbar",
+    "slug": "cuca-hohenbar",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8691992,
+    "lng": 12.1065951,
+    "nearest_airport": "MUC",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cuca-hohenbar-22875": {
+    "name": "cUcA Höhenbar",
+    "slug": "cuca-hohenbar-22875",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.8691992,
+    "lng": 12.1065951,
+    "nearest_airport": "",
+    "description": "Official Website Available. "
+  },
+  "cucche": {
+    "name": "Cucche",
+    "slug": "cucche",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.749145,
+    "lng": 9.9765659,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1189m"
+  },
+  "cuel-di-forcja": {
+    "name": "Cuel di Forcja",
+    "slug": "cuel-di-forcja",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2734733,
+    "lng": 13.0127867,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 884m"
+  },
+  "curva-del-salto": {
+    "name": "Curva del Salto",
+    "slug": "curva-del-salto",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.374697,
+    "lng": 8.6266192,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "curvone-di-terrarossa": {
+    "name": "Curvone di Terrarossa",
+    "slug": "curvone-di-terrarossa",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4090172,
+    "lng": 8.691783,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

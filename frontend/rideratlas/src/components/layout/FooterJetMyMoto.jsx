@@ -17,7 +17,13 @@ const FooterJetMyMoto = ({ isJetMyMoto: forcedIsJetMyMoto = null }) => {
   const isJetMyMoto = forcedIsJetMyMoto ?? isJetContext;
 
   const ctx = new URLSearchParams(location.search).get("ctx");
-  const withCtx = (path) => withBrandContext(path, ctx ? `?ctx=${ctx}` : "");
+  const withCtx = (path) => {
+    const shouldEnforceContext = isJetMyMoto && site.id !== "jmm";
+    if (shouldEnforceContext) {
+      return withBrandContext(path, "?ctx=jet");
+    }
+    return withBrandContext(path, ctx ? `?ctx=${ctx}` : "");
+  };
 
   const linkClass = "hover:text-[#CDA755] transition-all duration-300 hover:translate-x-1";
 

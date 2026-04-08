@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { collection, onSnapshot, doc, updateDoc } from 'firebase/firestore';
-import { db } from '../../firebase';
+import { db } from '@/lib/firebase';
 import { Map, Settings, ChevronRight, X } from 'lucide-react';
 
 const statusColors = {

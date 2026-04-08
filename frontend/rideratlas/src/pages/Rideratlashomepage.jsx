@@ -27,7 +27,7 @@ const canonicalPaths = getCanonicalPaths();
 
 // 1. Hero Section (The Inspiration Hook)
 const CinematicHero = () => (
-  <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#050505]">
+  <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#050505]">
     {/* Background Video */}
     <video 
       autoPlay 
@@ -40,12 +40,12 @@ const CinematicHero = () => (
     </video>
     
     {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-[#050505] z-0" />
+    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/30 via-[#050505]/10 to-[#050505] z-0" />
 
     <div className="relative z-10 text-center px-6">
       <motion.h1 
-        initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}
-        className="text-5xl md:text-8xl font-serif text-white font-black italic mb-6 tracking-wide drop-shadow-2xl"
+        initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", stiffness: 300, damping: 28 }}
+        className="text-5xl md:text-8xl font-serif text-white font-black italic mb-6 tracking-tight drop-shadow-2xl"
       >
         Where Will You <br className="hidden md:block" /> Ride Next?
       </motion.h1>
@@ -99,13 +99,13 @@ const RidingTheaters = () => {
             >
               <div className="absolute inset-0">
                 <img src={region.image} alt={region.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/70 via-[#050505]/15 to-transparent" />
               </div>
               <div className="absolute bottom-0 left-0 p-8 w-full">
                 <div className="text-[10px] text-amber-500 font-mono tracking-[0.3em] uppercase font-bold mb-3">
                   {region.subtitle}
                 </div>
-                <h3 className="text-3xl font-black uppercase text-white mb-2 font-serif italic tracking-wide group-hover:text-amber-500 transition-colors">
+                <h3 className="text-3xl font-black uppercase text-white mb-2 font-serif italic tracking-tight group-hover:text-amber-500 transition-colors">
                   {region.title}
                 </h3>
                 <p className="text-sm text-zinc-300 font-light max-w-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
@@ -310,7 +310,7 @@ const HandoffArchitecture = () => (
              <span className="w-8 h-px bg-amber-500/50"></span>
              JetMyMoto Logistics
           </div>
-          <h3 className="text-3xl font-black uppercase text-white mb-6 font-serif italic tracking-wide group-hover:text-amber-500 transition-colors">
+          <h3 className="text-3xl font-black uppercase text-white mb-6 font-serif italic tracking-tight group-hover:text-amber-500 transition-colors">
             Ship Your Bike
           </h3>
           <p className="text-sm text-zinc-400 mb-10 leading-relaxed font-light flex-1">
@@ -330,7 +330,7 @@ const HandoffArchitecture = () => (
              <span className="w-8 h-px bg-amber-500/50"></span>
              JetMyMoto Rentals
           </div>
-          <h3 className="text-3xl font-black uppercase text-white mb-6 font-serif italic tracking-wide group-hover:text-amber-500 transition-colors">
+          <h3 className="text-3xl font-black uppercase text-white mb-6 font-serif italic tracking-tight group-hover:text-amber-500 transition-colors">
             Rent a Bike
           </h3>
           <p className="text-sm text-zinc-400 mb-10 leading-relaxed font-light flex-1">
@@ -353,7 +353,7 @@ export default function RiderAtlasHomepage() {
       <SeoHelmet
           title="RiderAtlas | Discover the World's Greatest Motorcycle Routes"
           description="Explore epic motorcycle routes, legendary destinations, and premium rentals across the globe with RiderAtlas."
-          canonicalUrl="https://rideratlas.com/"
+          canonicalUrl="https://jetmymoto.com/"
       />
       <div className="bg-[#050505] selection:bg-amber-500/30 font-sans">
         <motion.div

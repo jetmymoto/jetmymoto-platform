@@ -1,0 +1,46 @@
+{
+  "pavillon": {
+    "name": "Pavillon",
+    "slug": "pavillon",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0714849,
+    "lng": 7.1408182,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pavillon-des-golats": {
+    "name": "Pavillon des Golats",
+    "slug": "pavillon-des-golats",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2838826,
+    "lng": 7.3801844,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pavillon-lustbuhl": {
+    "name": "Pavillon Lustbühl",
+    "slug": "pavillon-lustbuhl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6903159,
+    "lng": 7.854415,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "pavillon-schloss": {
+    "name": "Pavillon Schloss",
+    "slug": "pavillon-schloss",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2231549,
+    "lng": 8.6771512,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

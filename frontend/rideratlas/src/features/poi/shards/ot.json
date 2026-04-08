@@ -1,0 +1,112 @@
+{
+  "otoski-stol": {
+    "name": "Otoški Stol",
+    "slug": "otoski-stol",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3051657,
+    "lng": 14.2338946,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "otscher-panorama": {
+    "name": "Ötscher Panorama",
+    "slug": "otscher-panorama",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8547019,
+    "lng": 15.1827856,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "otscherblick": {
+    "name": "Ötscherblick",
+    "slug": "otscherblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9467298,
+    "lng": 14.7774468,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "otschergraben": {
+    "name": "Ötschergräben",
+    "slug": "otschergraben",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8437907,
+    "lng": 15.2642798,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "otschibachfall": {
+    "name": "Otschibachfall",
+    "slug": "otschibachfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7346301,
+    "lng": 8.1150259,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ottenegg": {
+    "name": "Ottenegg",
+    "slug": "ottenegg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3998583,
+    "lng": 8.9670699,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "otterepass": {
+    "name": "Otterepass",
+    "slug": "otterepass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5390272,
+    "lng": 7.5450524,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2278m"
+  },
+  "otterepass-1909": {
+    "name": "Otterepass",
+    "slug": "otterepass-1909",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5390272,
+    "lng": 7.5450524,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ottmar-hollerer-platzl": {
+    "name": "Ottmar-Hollerer-Platzl",
+    "slug": "ottmar-hollerer-platzl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7347469,
+    "lng": 15.3517333,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ottos-ruh": {
+    "name": "Ottos Ruh",
+    "slug": "ottos-ruh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8543386,
+    "lng": 12.3875868,
+    "nearest_airport": "SZG",
+    "description": "Standort bis 18 Jhr. einer Kirche"
+  }
+}

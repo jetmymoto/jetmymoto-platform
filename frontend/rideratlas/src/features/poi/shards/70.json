@@ -1,0 +1,13 @@
+{
+  "700-jahre-rickenbacher": {
+    "name": "700 Jahre Rickenbacher",
+    "slug": "700-jahre-rickenbacher",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2350978,
+    "lng": 8.1557666,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

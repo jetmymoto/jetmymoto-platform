@@ -1,0 +1,13 @@
+{
+  "combigabel": {
+    "name": "Combigabel",
+    "slug": "combigabel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6256926,
+    "lng": 7.2623006,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1928m"
+  }
+}

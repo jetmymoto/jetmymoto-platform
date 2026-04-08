@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebase"; // verify path to firebase.js
+import { db } from "@/lib/firebase";
 import { motion } from "framer-motion";
 import { CheckCircle2, Users, MapPin, Bike, Clock } from "lucide-react";
 
@@ -146,7 +146,7 @@ export default function PoolPage() {
                 <h3 className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Clock size={12} className="text-amber-500" /> Expiry
                 </h3>
-                <div className="text-sm font-mono tracking-widest text-[#574C43] uppercase bg-[#F8F8F8] inline-block px-3 py-2 border border-[#574C43]/10">
+                <div className="text-sm font-mono tracking-widest text-[#CDA755] uppercase bg-surface-raised inline-block px-3 py-2 border border-white/10">
                   {pool.expiresAt ? `Pool expires in ${Math.max(0, Math.round((new Date(pool.expiresAt.seconds * 1000) - Date.now()) / 3600000))} hours` : "Pool expires in 48 hours"}
                 </div>
                 <div className="text-[9px] text-zinc-500 font-mono uppercase tracking-widest mt-2 italic font-bold">
@@ -156,7 +156,7 @@ export default function PoolPage() {
             </div>
 
             {/* Right Column: Pool Status */}
-            <div className="bg-[#F8F8F8] border border-[#574C43]/10 p-6 space-y-6 rounded-sm">
+            <div className="bg-surface-raised border border-white/10 p-6 space-y-6 rounded-sm">
               <div>
                 <h3 className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest mb-3 flex items-center gap-2">
                   <Users size={12} className="text-amber-500" /> Participants
@@ -205,7 +205,7 @@ export default function PoolPage() {
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 bg-white border border-[#574C43]/10 p-2 pr-4 rounded-sm w-full overflow-hidden shadow-sm">
-               <div className="bg-[#F8F8F8] px-4 py-3 font-mono text-xs text-[#A76330] truncate select-all flex-1 text-left">
+               <div className="bg-surface-raised px-4 py-3 font-mono text-xs text-[#CDA755] truncate select-all flex-1 text-left">
                  {pool.shareUrl || `${window.location.origin}/pool/${poolId}`}
                </div>
                <button 

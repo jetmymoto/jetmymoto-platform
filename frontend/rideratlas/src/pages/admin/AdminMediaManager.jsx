@@ -117,7 +117,7 @@ function MediaPreview({ type, subtitle, videoUrl, imageUrl, title }) {
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/10" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/10" />
         <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-[#050505]/85 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#CDA755]">
           {getBadgeText(type)}
         </div>
@@ -129,7 +129,7 @@ function MediaPreview({ type, subtitle, videoUrl, imageUrl, title }) {
     return (
       <div className="relative aspect-video overflow-hidden rounded-[28px] border border-white/10 bg-[#121212]">
         <img src={imageUrl} alt={title} className="h-full w-full object-cover" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-black/10" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/10" />
         <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-[#050505]/85 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#CDA755]">
           {getBadgeText(type)}
         </div>

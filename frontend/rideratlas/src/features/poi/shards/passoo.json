@@ -1,0 +1,35 @@
+{
+  "passo-oberenghe": {
+    "name": "Passo Oberenghe",
+    "slug": "passo-oberenghe",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5210196,
+    "lng": 12.624668,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2081m"
+  },
+  "passo-oberenghe-2898": {
+    "name": "Passo Oberenghe",
+    "slug": "passo-oberenghe-2898",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5210196,
+    "lng": 12.624668,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-olone": {
+    "name": "Passo Olone",
+    "slug": "passo-olone",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9460727,
+    "lng": 10.0356524,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1852m"
+  }
+}

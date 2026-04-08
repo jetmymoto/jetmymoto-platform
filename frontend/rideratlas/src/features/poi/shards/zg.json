@@ -1,0 +1,13 @@
+{
+  "zgornje-sleme": {
+    "name": "Zgornje Sleme",
+    "slug": "zgornje-sleme",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4446373,
+    "lng": 14.727524,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1308m"
+  }
+}

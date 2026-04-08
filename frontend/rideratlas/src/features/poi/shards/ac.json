@@ -1,0 +1,112 @@
+{
+  "achenpass": {
+    "name": "Achenpass",
+    "slug": "achenpass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6045893,
+    "lng": 11.6359109,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 941m"
+  },
+  "achenpass-29": {
+    "name": "Achenpass",
+    "slug": "achenpass-29",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.6045893,
+    "lng": 11.6359109,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "achensee-ausblick": {
+    "name": "Achensee Ausblick",
+    "slug": "achensee-ausblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4283692,
+    "lng": 11.7030503,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "acherchonzili": {
+    "name": "Acherchönzili",
+    "slug": "acherchonzili",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9773437,
+    "lng": 8.3287948,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "acherlipass": {
+    "name": "Ächerlipass",
+    "slug": "acherlipass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9046801,
+    "lng": 8.3351861,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1458m"
+  },
+  "achplatte": {
+    "name": "Achplatte",
+    "slug": "achplatte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1890151,
+    "lng": 10.9386386,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2423m"
+  },
+  "achplatte-2960": {
+    "name": "Achplatte",
+    "slug": "achplatte-2960",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1890151,
+    "lng": 10.9386386,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "achsel": {
+    "name": "Achsel",
+    "slug": "achsel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.521365,
+    "lng": 10.671545,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1154m"
+  },
+  "achselscharte": {
+    "name": "Achselscharte",
+    "slug": "achselscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4244482,
+    "lng": 10.7350083,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1862m"
+  },
+  "acque-rosse": {
+    "name": "Acque Rosse",
+    "slug": "acque-rosse",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4408667,
+    "lng": 9.3444825,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

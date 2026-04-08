@@ -31,8 +31,8 @@ export default function TrustInfrastructure({ layout = "marquee" }) {
     <section className="py-16 bg-[#030303] border-b border-white/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="text-center">
-          <span className="text-[10px] text-zinc-500 font-mono uppercase tracking-[0.3em] font-bold">
-            Powered by Global Logistics & Insurance Infrastructure
+          <span className="text-[10px] text-[#CDA755] font-mono uppercase tracking-[0.3em] font-bold">
+            Trusted Global Infrastructure
           </span>
         </div>
       </div>

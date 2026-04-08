@@ -1,0 +1,35 @@
+{
+  "euroairport-observation-platform": {
+    "name": "EuroAirport Observation Platform",
+    "slug": "euroairport-observation-platform",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.611174,
+    "lng": 7.5122293,
+    "nearest_airport": "ZRH",
+    "description": "EuroAirport Observation Platform - Main Runway 15-33"
+  },
+  "europaberg": {
+    "name": "Europaberg",
+    "slug": "europaberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0791143,
+    "lng": 15.6720349,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "europaplatz": {
+    "name": "Europaplatz",
+    "slug": "europaplatz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0513441,
+    "lng": 8.3122744,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

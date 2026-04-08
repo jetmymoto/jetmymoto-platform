@@ -1,0 +1,46 @@
+{
+  "smarna-gora": {
+    "name": "Šmarna gora",
+    "slug": "smarna-gora",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1296144,
+    "lng": 14.4640812,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "smereska-pec": {
+    "name": "Smereška peč",
+    "slug": "smereska-pec",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3830139,
+    "lng": 15.2801555,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 712m"
+  },
+  "smokuski-vrh": {
+    "name": "Smokuški vrh",
+    "slug": "smokuski-vrh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3942644,
+    "lng": 14.183803,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1122m"
+  },
+  "smuk": {
+    "name": "SMUK",
+    "slug": "smuk",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.660976,
+    "lng": 15.1803948,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

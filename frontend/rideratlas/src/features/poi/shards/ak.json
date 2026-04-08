@@ -1,0 +1,46 @@
+{
+  "akarscharte": {
+    "name": "Akarscharte",
+    "slug": "akarscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2794033,
+    "lng": 13.6231262,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2315m"
+  },
+  "akarscharte-617": {
+    "name": "Akarscharte",
+    "slug": "akarscharte-617",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.2794033,
+    "lng": 13.6231262,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "akogel-aussicht": {
+    "name": "Akogel Aussicht",
+    "slug": "akogel-aussicht",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6785166,
+    "lng": 14.7934095,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "akustik-rohre": {
+    "name": "Akustik Rohre",
+    "slug": "akustik-rohre",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9776865,
+    "lng": 8.6141784,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

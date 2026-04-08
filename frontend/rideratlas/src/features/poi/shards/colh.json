@@ -1,0 +1,24 @@
+{
+  "col-haut": {
+    "name": "Col Haut",
+    "slug": "col-haut",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4497265,
+    "lng": 6.4966954,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2503m"
+  },
+  "col-haut-2977": {
+    "name": "Col Haut",
+    "slug": "col-haut-2977",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.4497265,
+    "lng": 6.4966954,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

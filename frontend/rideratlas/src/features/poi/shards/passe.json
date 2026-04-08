@@ -1,0 +1,167 @@
+{
+  "passenjoch": {
+    "name": "Passenjoch",
+    "slug": "passenjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8908552,
+    "lng": 11.7644091,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2440m"
+  },
+  "passenjoch-861": {
+    "name": "Passenjoch",
+    "slug": "passenjoch-861",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8908552,
+    "lng": 11.7644091,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passenscharte": {
+    "name": "Passenscharte",
+    "slug": "passenscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8929769,
+    "lng": 11.7902311,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2593m"
+  },
+  "passenscharte-2434": {
+    "name": "Passenscharte",
+    "slug": "passenscharte-2434",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8929769,
+    "lng": 11.7902311,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passerella-birdwatching": {
+    "name": "Passerella birdwatching",
+    "slug": "passerella-birdwatching",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.4083594,
+    "lng": 10.7159058,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerella-panoramica-di-ladrigo": {
+    "name": "Passerella panoramica di Ladrigo",
+    "slug": "passerella-panoramica-di-ladrigo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4197592,
+    "lng": 8.9646568,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerelle": {
+    "name": "Passerelle",
+    "slug": "passerelle",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0520177,
+    "lng": 5.8110863,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerelle-de-cheyres": {
+    "name": "Passerelle de Cheyres",
+    "slug": "passerelle-de-cheyres",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8147305,
+    "lng": 6.7772283,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerelle-de-lebron": {
+    "name": "Passerelle de L'Ébron",
+    "slug": "passerelle-de-lebron",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.8728392,
+    "lng": 5.6761085,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerelle-des-thermes": {
+    "name": "Passerelle des Thermes",
+    "slug": "passerelle-des-thermes",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8949711,
+    "lng": 6.707379,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passerschlucht-gola-del-passirio": {
+    "name": "Passerschlucht - Gola del Passirio",
+    "slug": "passerschlucht-gola-del-passirio",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8261143,
+    "lng": 11.1781393,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "passeur-de-gargan": {
+    "name": "Passeur de Gargan",
+    "slug": "passeur-de-gargan",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6493892,
+    "lng": 6.6703972,
+    "nearest_airport": "GVA",
+    "description": "Passage aérien. Suivre les points rouges. Très délicat par mauvais temps."
+  },
+  "passeur-de-gargan-3882": {
+    "name": "Passeur de Gargan",
+    "slug": "passeur-de-gargan-3882",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6493892,
+    "lng": 6.6703972,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passeur-de-pralognan": {
+    "name": "Passeur de Pralognan",
+    "slug": "passeur-de-pralognan",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.668863,
+    "lng": 6.712145,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2567m"
+  },
+  "passeur-de-pralognan-3143": {
+    "name": "Passeur de Pralognan",
+    "slug": "passeur-de-pralognan-3143",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.668863,
+    "lng": 6.712145,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

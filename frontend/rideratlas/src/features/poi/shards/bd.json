@@ -1,0 +1,24 @@
+{
+  "bd-de-la-corne-dor": {
+    "name": "Bd de la Corne d'Or",
+    "slug": "bd-de-la-corne-dor",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7097543,
+    "lng": 7.3170981,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "bd-princesse-grace-de-monaco-rochambeau": {
+    "name": "bd Princesse Grace de Monaco-Rochambeau",
+    "slug": "bd-princesse-grace-de-monaco-rochambeau",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.6941244,
+    "lng": 7.3063347,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

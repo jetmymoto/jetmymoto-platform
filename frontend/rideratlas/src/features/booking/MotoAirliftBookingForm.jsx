@@ -356,7 +356,7 @@ export default function MotoAirliftBookingForm() {
                           type="button"
                           onClick={() => handleBikeChange(size, -1)}
                           disabled={formData.bikes[size] === 0}
-                          className="w-8 h-8 flex items-center justify-center rounded bg-[#F8F8F8] border border-[#574C43]/12 text-zinc-500 hover:text-[#574C43] disabled:opacity-30 disabled:hover:text-zinc-500 transition-all"
+                          className="w-8 h-8 flex items-center justify-center rounded bg-surface-raised border border-white/10 text-zinc-500 hover:text-white disabled:opacity-30 disabled:hover:text-zinc-500 transition-all"
                         >
                           -
                         </button>
@@ -366,7 +366,7 @@ export default function MotoAirliftBookingForm() {
                         <button
                           type="button"
                           onClick={() => handleBikeChange(size, 1)}
-                          className="w-8 h-8 flex items-center justify-center rounded bg-[#F8F8F8] border border-[#574C43]/12 text-[#574C43] hover:bg-amber-500 hover:border-amber-500 hover:text-black transition-all"
+                          className="w-8 h-8 flex items-center justify-center rounded bg-surface-raised border border-white/10 text-white hover:bg-amber-500 hover:border-amber-500 hover:text-black transition-all"
                         >
                           +
                         </button>

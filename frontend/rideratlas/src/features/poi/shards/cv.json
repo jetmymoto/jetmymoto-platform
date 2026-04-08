@@ -1,0 +1,24 @@
+{
+  "cvinger": {
+    "name": "CVINGER",
+    "slug": "cvinger",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7796093,
+    "lng": 14.327871,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cvitrsko-sedlo": {
+    "name": "Cvitrško sedlo",
+    "slug": "cvitrsko-sedlo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5828827,
+    "lng": 15.0670001,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 677m"
+  }
+}

@@ -8,6 +8,7 @@ import {
   createRentalReservation,
 } from "@/services/bookingService";
 import { buildRentalLegalAcknowledgement } from "@/features/rentals/utils/legalAcknowledgement";
+import { GRAPH } from "@/core/network/networkGraph";
 
 const FLOW = ["hook", "dates", "insurance", "identity", "confirm", "success"];
 const BROKER_RESERVATION_FEE_CENTS = 5000;
@@ -34,9 +35,11 @@ export default function SalesSharkChatWidget({ rental, operator, airport }) {
   const category = rental?.category || "adventure";
   const machineName = rental?.machineLabel || rental?.name || "Tactical Hardware";
   const airportCode = rental?.airportCode || rental?.airport || airport?.code || "the hub";
-  const operatorName = operator?.name || rental?.operator || "The verified operator";
-  const operatorId = operator?.id || rental?.operatorId || rental?.operator || "";
-  const legalAcknowledgement = buildRentalLegalAcknowledgement(operator, {
+  const resolvedOperator = operator || GRAPH?.operators?.[rental?.operator] || GRAPH?.operators?.[rental?.operatorId];
+  
+  const operatorName = resolvedOperator?.name || rental?.operator || "The verified operator";
+  const operatorId = resolvedOperator?.id || rental?.operatorId || rental?.operator || "";
+  const legalAcknowledgement = buildRentalLegalAcknowledgement(resolvedOperator, {
     brokerFeeLabel: BROKER_RESERVATION_FEE_LABEL,
   });
   
@@ -513,10 +516,23 @@ export default function SalesSharkChatWidget({ rental, operator, airport }) {
       );
     } else {
       controlPanel = (
-        <button className="btn-accent w-full relative overflow-hidden group" onClick={handleConfirm} disabled={loading}>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-          {loading ? "Establishing Uplink..." : "Lock This Machine Now"}
-        </button>
+        <div className="flex flex-col gap-3">
+          <div className="border border-[#CDA755]/30 bg-[#121212] px-4 py-3 rounded-sm">
+            <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#CDA755] font-black mb-2 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#CDA755] rounded-full animate-pulse"></span>
+              Operator Terms Verification
+            </div>
+            <div className="text-[9px] font-mono text-zinc-400 leading-relaxed uppercase tracking-widest space-y-2">
+              <p>Commander, please note {operatorName} requires a <strong className="text-white">{legalAcknowledgement.securityDepositAmount}</strong> security deposit on arrival.</p>
+              <p><strong className="text-zinc-500">Deposit Policy:</strong> {legalAcknowledgement.securityDepositPolicy}</p>
+              <p><strong className="text-zinc-500">Cancellation:</strong> {legalAcknowledgement.cancellationPolicy}</p>
+            </div>
+          </div>
+          <button className="btn-accent w-full relative overflow-hidden group" onClick={handleConfirm} disabled={loading}>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+            {loading ? "Establishing Uplink..." : "Lock This Machine Now"}
+          </button>
+        </div>
       );
     }
   } else if (step === "success") {

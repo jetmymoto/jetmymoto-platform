@@ -1,0 +1,57 @@
+{
+  "za-gradom": {
+    "name": "Za Gradom",
+    "slug": "za-gradom",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1851105,
+    "lng": 13.6589807,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1042 m"
+  },
+  "zaferafurka": {
+    "name": "Zaferafurka",
+    "slug": "zaferafurka",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.266123,
+    "lng": 9.93216,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1874m"
+  },
+  "zamask": {
+    "name": "Zamask",
+    "slug": "zamask",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3263911,
+    "lng": 13.8783528,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zappello-della-culmine": {
+    "name": "Zappello della Culmine",
+    "slug": "zappello-della-culmine",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.827083,
+    "lng": 9.435991,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 918m"
+  },
+  "zault": {
+    "name": "Zault",
+    "slug": "zault",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8097592,
+    "lng": 9.3461811,
+    "nearest_airport": "ZRH",
+    "description": "Aussicht in Rheinschlucht"
+  }
+}

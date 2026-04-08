@@ -1,0 +1,13 @@
+{
+  "360": {
+    "name": "360°",
+    "slug": "360",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.292784,
+    "lng": 14.2473215,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

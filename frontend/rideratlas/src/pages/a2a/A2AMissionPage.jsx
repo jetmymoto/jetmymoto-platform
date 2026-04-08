@@ -16,7 +16,16 @@ import {
 
 import SeoHelmet from "../../components/seo/SeoHelmet";
 import A2AOperatorFleet from "@/features/a2a/components/A2AOperatorFleet";
+import MissionCinematicVideo from "@/features/a2a/components/MissionCinematicVideo";
 import TacticalDossierTrap from "@/components/conversion/TacticalDossierTrap";
+import RelatedEntityLinks from "@/components/seo/RelatedEntityLinks";
+import EntityIntroBlock from "@/components/seo/EntityIntroBlock";
+import EntityFitSummary from "@/components/seo/EntityFitSummary";
+import FaqBlock from "@/components/seo/FaqBlock";
+import { getLinksForMissionPage } from "@/utils/seoLinkGraph";
+import { getFaqsForMission, getFaqSchema } from "@/utils/seoFaqEngine";
+import JsonLd from "@/components/seo/JsonLd";
+import { getA2AMissionSchema, getBreadcrumbSchema } from "@/utils/seoSchema";
 import {
   GRAPH,
   readGraphShard,
@@ -328,34 +337,19 @@ export default function A2AMissionPage() {
     theater?.posterUrl ||
     CINEMATIC_BACKGROUNDS.bridgeLogistics;
 
-  const canonicalUrl = `https://rideratlas.com/a2a/${mission.slug}`;
-  const missionSchema = {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    name: mission.title,
-    description: mission.cinematic_pitch,
-    touristType: "Motorcycle",
-    itinerary: {
-      "@type": "ItemList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: `Fly into ${mission.insertion?.city || insertionCode} (${insertionCode})`,
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: `Ride through ${theater?.name || mission.theater}`,
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: `Extract from ${mission.extraction?.city || extractionCode} (${extractionCode})`,
-        },
-      ],
-    },
-  };
+  const canonicalUrl = `https://jetmymoto.com/a2a/${mission.slug}`;
+  
+  const fullGraph = { ...GRAPH, ...rentalShard };
+  const linkGraph = getLinksForMissionPage(mission, fullGraph, location.pathname);
+  const missionSchema = getA2AMissionSchema(mission);
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "A2A Missions", url: "/airport" },
+    { name: mission.title || mission.slug, url: `/a2a/${mission.slug}` }
+  ]);
+
+  const faqs = getFaqsForMission(mission, mission?.insertion, mission?.extraction, theater);
+  const faqSchema = getFaqSchema(faqs);
 
   return (
     <div className="min-h-screen bg-[#050505] text-zinc-200">
@@ -367,21 +361,26 @@ export default function A2AMissionPage() {
         canonicalUrl={canonicalUrl}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(missionSchema) }}
-      />
+      <JsonLd schema={missionSchema} />
+      <JsonLd schema={breadcrumbs} />
+      <JsonLd schema={faqSchema} />
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt={mission.title}
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.2)_0%,rgba(5,5,5,0.5)_38%,rgba(5,5,5,0.9)_72%,rgba(5,5,5,1)_100%)]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent" />
+          {mission.videoUrl ? (
+            <MissionCinematicVideo mission={mission} />
+          ) : (
+            <>
+              <img
+                src={heroImage}
+                alt={mission.title}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,5,5,0.2)_0%,rgba(5,5,5,0.5)_38%,rgba(5,5,5,0.9)_72%,rgba(5,5,5,1)_100%)]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent" />
+            </>
+          )}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(205,167,85,0.16),transparent_28%)]" />
         </div>
 
@@ -423,6 +422,10 @@ export default function A2AMissionPage() {
 
       {/* ── Main Content ────────────────────────────────────────────────── */}
       <main className="mx-auto max-w-7xl space-y-20 px-6 pb-24 pt-10">
+        <div>
+          <EntityIntroBlock entityType="a2a" entityData={mission} graphData={{ insertion: mission.insertion, extraction: mission.extraction, theater: theater }} />
+        </div>
+
         {/* ── Mission Spine ─────────────────────────────────────────────── */}
         <section>
           <MissionSpine
@@ -433,6 +436,10 @@ export default function A2AMissionPage() {
             duration={mission.duration_days}
           />
         </section>
+
+        <div>
+          <EntityFitSummary entityType="a2a" entityData={mission} graphData={{ insertion: mission.insertion, extraction: mission.extraction, theater: theater }} />
+        </div>
 
         {/* ── Theater Intel ─────────────────────────────────────────────── */}
         <section className="space-y-8">
@@ -557,6 +564,9 @@ export default function A2AMissionPage() {
         <section className="space-y-8">
           <TacticalDossierTrap hubName={theater?.name || mission.title || "A2A"} />
         </section>
+
+        <RelatedEntityLinks linkGraph={linkGraph} />
+        <FaqBlock faqs={faqs} />
 
         {/* ── Back to Hub ────────────────────────────────────────────────── */}
         <div className="flex justify-center">

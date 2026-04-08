@@ -1,0 +1,13 @@
+{
+  "umhausen-view": {
+    "name": "Umhausen view",
+    "slug": "umhausen-view",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1398628,
+    "lng": 10.9360404,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

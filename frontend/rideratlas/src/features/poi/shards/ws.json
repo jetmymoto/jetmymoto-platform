@@ -1,0 +1,13 @@
+{
+  "wsserfall": {
+    "name": "Wsserfall",
+    "slug": "wsserfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4193912,
+    "lng": 10.9188357,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

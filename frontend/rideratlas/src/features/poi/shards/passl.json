@@ -1,0 +1,46 @@
+{
+  "pass-lueg": {
+    "name": "Pass Lueg",
+    "slug": "pass-lueg",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5756073,
+    "lng": 13.1946919,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 553m"
+  },
+  "pass-lueg-3737": {
+    "name": "Pass Lueg",
+    "slug": "pass-lueg-3737",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.5756073,
+    "lng": 13.1946919,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "pass-lunghin": {
+    "name": "Pass Lunghin",
+    "slug": "pass-lunghin",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.413607,
+    "lng": 9.6634295,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2644m"
+  },
+  "pass-lunghin-1646": {
+    "name": "Pass Lunghin",
+    "slug": "pass-lunghin-1646",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.413607,
+    "lng": 9.6634295,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

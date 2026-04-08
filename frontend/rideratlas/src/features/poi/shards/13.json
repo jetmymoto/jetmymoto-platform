@@ -1,0 +1,13 @@
+{
+  "1361-m": {
+    "name": "1361 m",
+    "slug": "1361-m",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.484794,
+    "lng": 6.4574359,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

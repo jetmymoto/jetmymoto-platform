@@ -1,0 +1,13 @@
+{
+  "dvojno-jezero": {
+    "name": "Dvojno jezero",
+    "slug": "dvojno-jezero",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3163532,
+    "lng": 13.780451,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

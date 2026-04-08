@@ -1,0 +1,200 @@
+{
+  "paradies": {
+    "name": "Paradies",
+    "slug": "paradies",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2414384,
+    "lng": 8.8177643,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parapluie": {
+    "name": "Parapluie",
+    "slug": "parapluie",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.770478,
+    "lng": 16.3224072,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parco-del-ventaglio": {
+    "name": "parco del ventaglio",
+    "slug": "parco-del-ventaglio",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7880566,
+    "lng": 11.279633,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parcobaleno": {
+    "name": "Parcobaleno",
+    "slug": "parcobaleno",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1396953,
+    "lng": 10.8028968,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parcours-vert": {
+    "name": "Parcours vert",
+    "slug": "parcours-vert",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5229962,
+    "lng": 6.5660124,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parentium-sunset": {
+    "name": "Parentium Sunset",
+    "slug": "parentium-sunset",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.205365,
+    "lng": 13.5868405,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parkplatz-panorama": {
+    "name": "Parkplatz Panorama",
+    "slug": "parkplatz-panorama",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4502334,
+    "lng": 9.9195658,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parseierjoch": {
+    "name": "Parseierjoch",
+    "slug": "parseierjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1795137,
+    "lng": 10.481642,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2560m"
+  },
+  "parseierjoch-1074": {
+    "name": "Parseierjoch",
+    "slug": "parseierjoch-1074",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1795137,
+    "lng": 10.481642,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "parseierscharte": {
+    "name": "Parseierscharte",
+    "slug": "parseierscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.166626,
+    "lng": 10.4484165,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2604m"
+  },
+  "parseierscharte-1075": {
+    "name": "Parseierscharte",
+    "slug": "parseierscharte-1075",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.166626,
+    "lng": 10.4484165,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "parsennfurgga": {
+    "name": "Parsennfurgga",
+    "slug": "parsennfurgga",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8488264,
+    "lng": 9.8120944,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2435m"
+  },
+  "parsennfurgga-3915": {
+    "name": "Parsennfurgga",
+    "slug": "parsennfurgga-3915",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8488264,
+    "lng": 9.8120944,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "parsettens": {
+    "name": "Parsettens",
+    "slug": "parsettens",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.568274,
+    "lng": 9.6773657,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2399m"
+  },
+  "parsettens-2463": {
+    "name": "Parsettens",
+    "slug": "parsettens-2463",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.568274,
+    "lng": 9.6773657,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "partnach-ursprung": {
+    "name": "Partnach Ursprung",
+    "slug": "partnach-ursprung",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4058688,
+    "lng": 11.0283094,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "partschinser-wasserfall-cascata-di-parcines": {
+    "name": "Partschinser Wasserfall - Cascata di Parcines",
+    "slug": "partschinser-wasserfall-cascata-di-parcines",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6936174,
+    "lng": 11.0494507,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "parzinnscharte": {
+    "name": "Parzinnscharte",
+    "slug": "parzinnscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2350009,
+    "lng": 10.5755148,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

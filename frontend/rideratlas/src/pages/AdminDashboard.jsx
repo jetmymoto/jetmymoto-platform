@@ -11,7 +11,7 @@ import {
 } from 'firebase/firestore';
 import SeoHelmet from '../components/seo/SeoHelmet'; // Import SeoHelmet
 import NetworkPanel from '../components/admin/NetworkPanel';
-import { db } from '../firebase';
+import { db } from '@/lib/firebase';
 import {
   LayoutDashboard,
   Plus,

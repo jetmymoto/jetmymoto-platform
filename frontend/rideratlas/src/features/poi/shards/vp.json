@@ -1,0 +1,13 @@
+{
+  "vpisna-knjiga": {
+    "name": "Vpisna knjiga",
+    "slug": "vpisna-knjiga",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2066956,
+    "lng": 13.7222771,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -8,6 +8,9 @@ import {
   createGraphRentalShardLoader,
   mergeCoreGraphWithRentalShard,
 } from "./graphRentalShard.js";
+import { createGraphA2AShardLoader } from "./graphA2AShard.js";
+import { buildImageGraph } from "../visual/buildImageGraph.js";
+import { createPoiFilteredShard } from "@/features/poi/poiFilteredShard";
 
 function validateGraph(graph) {
   if (!graph.routesByAirport) {
@@ -38,13 +41,12 @@ export function assertIndex(path, value) {
 }
 
 const coreGraph = validateGraph(buildNetworkGraph());
+const IMAGE_GRAPH = buildImageGraph();
+const poiFilteredShard = createPoiFilteredShard();
 
 const GRAPH_SHARD_LOADERS = {
-  // First Wave 2 slice: optional heavy POI details map loaded on demand.
-  poiDetails: async () => {
-    const module = await import("@/features/poi/poiFiltered.json");
-    return module.default || null;
-  },
+  poiFiltered: async () => poiFilteredShard,
+  poiDetails: async () => poiFilteredShard,
 };
 
 const graphShardRuntime = createGraphShardRuntime(GRAPH_SHARD_LOADERS);
@@ -66,6 +68,7 @@ export function readGraphSnapshot() {
 }
 
 graphShardRuntime.register("rentals", createGraphRentalShardLoader());
+graphShardRuntime.register("a2a", createGraphA2AShardLoader(coreGraph));
 graphShardRuntime.register("overlays", async () => {
   const rentalShard = await loadGraphShard("rentals");
   const mergedGraph = mergeCoreGraphWithRentalShard(coreGraph, rentalShard);
@@ -119,7 +122,17 @@ export const GRAPH = {
     allAirportCodes:      coreGraph.allAirportCodes,
     allRouteSlugs:        coreGraph.allRouteSlugs,
     allDestinationSlugs:  coreGraph.allDestinationSlugs,
+    // ── A2A Mission indexes (Phase 3) ──
+    missionsByInsertion:     coreGraph.missionsByInsertion,
+    missionsByExtraction:    coreGraph.missionsByExtraction,
+    missionsByTheater:       coreGraph.missionsByTheater,
+    missionsByCorridorPair:  coreGraph.missionsByCorridorPair,
+    missionsByContinent:     coreGraph.missionsByContinent,
+    allMissionSlugs:         coreGraph.allMissionSlugs,
   },
+
+  // ── Image Graph (visual brain) ──
+  imageGraph: IMAGE_GRAPH,
 };
 
 const GRAPH_SNAPSHOT = {

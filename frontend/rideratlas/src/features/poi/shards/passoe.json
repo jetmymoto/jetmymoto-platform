@@ -1,0 +1,57 @@
+{
+  "passo-eira": {
+    "name": "Passo Eira",
+    "slug": "passo-eira",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5383225,
+    "lng": 10.1664242,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2208m"
+  },
+  "passo-eira-45": {
+    "name": "Passo Eira",
+    "slug": "passo-eira-45",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5383225,
+    "lng": 10.1664242,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-elbel": {
+    "name": "Passo Elbel",
+    "slug": "passo-elbel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5192336,
+    "lng": 12.6518141,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1963m"
+  },
+  "passo-elsi": {
+    "name": "Passo Elsi",
+    "slug": "passo-elsi",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.8280922,
+    "lng": 7.5110391,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1106m"
+  },
+  "passo-eores-halsl": {
+    "name": "Passo Eores (Halsl)",
+    "slug": "passo-eores-halsl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6662476,
+    "lng": 11.7739548,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1863m"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "col-ouille": {
+    "name": "Col Ouille",
+    "slug": "col-ouille",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6007423,
+    "lng": 7.3267734,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2492m"
+  },
+  "col-ouille-2493": {
+    "name": "Col Ouille",
+    "slug": "col-ouille-2493",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6007423,
+    "lng": 7.3267734,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "colosso-di-san-carlo-borromeo-statua": {
+    "name": "Colosso di san Carlo Borromeo (Statua)",
+    "slug": "colosso-di-san-carlo-borromeo-statua",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7702534,
+    "lng": 8.5433818,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

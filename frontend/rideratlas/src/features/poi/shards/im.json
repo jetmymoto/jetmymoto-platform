@@ -1,0 +1,68 @@
+{
+  "im-gemark-passo-cimabanche": {
+    "name": "Im Gemärk - Passo Cimabanche",
+    "slug": "im-gemark-passo-cimabanche",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.620591,
+    "lng": 12.1839834,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1530m"
+  },
+  "im-gemark-passo-cimabanche-624": {
+    "name": "Im Gemärk - Passo Cimabanche",
+    "slug": "im-gemark-passo-cimabanche-624",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.620591,
+    "lng": 12.1839834,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "imbocco-per-sito-paleo": {
+    "name": "Imbocco per sito Paleo",
+    "slug": "imbocco-per-sito-paleo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4968816,
+    "lng": 10.3737618,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "imbocco-sito-paleo": {
+    "name": "Imbocco sito Paleo",
+    "slug": "imbocco-sito-paleo",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4975163,
+    "lng": 10.373512,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "imhofrast": {
+    "name": "Imhofrast",
+    "slug": "imhofrast",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6824877,
+    "lng": 15.6998244,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "impau-pass": {
+    "name": "Impau-Pass",
+    "slug": "impau-pass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5064225,
+    "lng": 13.1154841,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

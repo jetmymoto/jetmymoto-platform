@@ -1,0 +1,123 @@
+{
+  "passo-alpe-oultoir": {
+    "name": "Passo Alpe Oultoir",
+    "slug": "passo-alpe-oultoir",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4120727,
+    "lng": 10.3867023,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2672m"
+  },
+  "passo-alpe-oultoir-1315": {
+    "name": "Passo Alpe Oultoir",
+    "slug": "passo-alpe-oultoir-1315",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4120727,
+    "lng": 10.3867023,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-alpicella": {
+    "name": "Passo Alpicella",
+    "slug": "passo-alpicella",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.2398635,
+    "lng": 9.8562411,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 710m"
+  },
+  "passo-altar": {
+    "name": "Passo Altar",
+    "slug": "passo-altar",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1203959,
+    "lng": 10.6453286,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2386m"
+  },
+  "passo-altar-2904": {
+    "name": "Passo Altar",
+    "slug": "passo-altar-2904",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1203959,
+    "lng": 10.6453286,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-alvis": {
+    "name": "Passo Alvis",
+    "slug": "passo-alvis",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1467802,
+    "lng": 11.9227704,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1881m"
+  },
+  "passo-antermarucol": {
+    "name": "Passo Antermarucol",
+    "slug": "passo-antermarucol",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2870463,
+    "lng": 11.8703777,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2334m"
+  },
+  "passo-antermarucol-1155": {
+    "name": "Passo Antermarucol",
+    "slug": "passo-antermarucol-1155",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.2870463,
+    "lng": 11.8703777,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-arietta": {
+    "name": "Passo Arietta",
+    "slug": "passo-arietta",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9820179,
+    "lng": 7.8493687,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "passo-avanza": {
+    "name": "Passo Avanzà",
+    "slug": "passo-avanza",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1698325,
+    "lng": 6.9547441,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2538m"
+  },
+  "passo-avanza-2213": {
+    "name": "Passo Avanzà",
+    "slug": "passo-avanza-2213",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.1698325,
+    "lng": 6.9547441,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

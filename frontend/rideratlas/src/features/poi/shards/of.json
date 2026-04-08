@@ -1,0 +1,68 @@
+{
+  "ofapass": {
+    "name": "Öfapass",
+    "slug": "ofapass",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0361933,
+    "lng": 9.795661,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2291m"
+  },
+  "ofapass-1481": {
+    "name": "Öfapass",
+    "slug": "ofapass-1481",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0361933,
+    "lng": 9.795661,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ofentalpasspasso-di-antigine": {
+    "name": "Ofentalpass/Passo di Antigine",
+    "slug": "ofentalpasspasso-di-antigine",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0193806,
+    "lng": 8.011405,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2834m"
+  },
+  "ofentalpasspasso-di-antigine-2101": {
+    "name": "Ofentalpass/Passo di Antigine",
+    "slug": "ofentalpasspasso-di-antigine-2101",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.0193806,
+    "lng": 8.011405,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "offensee-blick": {
+    "name": "Offensee-Blick",
+    "slug": "offensee-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7402595,
+    "lng": 13.8260088,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "offeren": {
+    "name": "Offeren",
+    "slug": "offeren",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8038861,
+    "lng": 8.8089625,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

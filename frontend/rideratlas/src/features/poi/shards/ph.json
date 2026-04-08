@@ -1,0 +1,90 @@
+{
+  "phillippsruh": {
+    "name": "Phillippsruh",
+    "slug": "phillippsruh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6761236,
+    "lng": 9.1923297,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 431m"
+  },
+  "photo-frame": {
+    "name": "Photo frame",
+    "slug": "photo-frame",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9290168,
+    "lng": 9.5312861,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "photo-point": {
+    "name": "Photo point",
+    "slug": "photo-point",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.4290952,
+    "lng": 6.433023,
+    "nearest_airport": "GVA",
+    "description": "View- and photo point with old chairlift seat with Mont Blanc in the background"
+  },
+  "photo-point-nassfeld-kino": {
+    "name": "Photo Point Nassfeld Kino",
+    "slug": "photo-point-nassfeld-kino",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5666853,
+    "lng": 13.2987167,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "photo-spot-6": {
+    "name": "Photo Spot #6",
+    "slug": "photo-spot-6",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9843468,
+    "lng": 7.7645724,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "photo-spot-7": {
+    "name": "Photo Spot #7",
+    "slug": "photo-spot-7",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9813655,
+    "lng": 7.7679651,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "photo-spot-8": {
+    "name": "Photo Spot #8",
+    "slug": "photo-spot-8",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9834135,
+    "lng": 7.7638634,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "photo-spot-9": {
+    "name": "Photo Spot #9",
+    "slug": "photo-spot-9",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9842407,
+    "lng": 7.7537579,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "passo-tanamea": {
+    "name": "Passo Tanamea",
+    "slug": "passo-tanamea",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3033941,
+    "lng": 13.3428565,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 870m"
+  },
+  "passo-tappe": {
+    "name": "Passo Tappe",
+    "slug": "passo-tappe",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.5176338,
+    "lng": 8.2625335,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "passo-tardie": {
+    "name": "Passo Tardie",
+    "slug": "passo-tardie",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.4386659,
+    "lng": 8.6875358,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 862m"
+  },
+  "passo-tartoria": {
+    "name": "Passo Tartoria",
+    "slug": "passo-tartoria",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.231848,
+    "lng": 13.3300195,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 663m"
+  },
+  "passo-teglia": {
+    "name": "Passo Teglia",
+    "slug": "passo-teglia",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.9952906,
+    "lng": 7.8336391,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1390m"
+  },
+  "passo-timiline": {
+    "name": "Passo Timiline",
+    "slug": "passo-timiline",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1639725,
+    "lng": 10.3914315,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1740m"
+  },
+  "passo-torri-di-fraele": {
+    "name": "Passo Torri di Fraele",
+    "slug": "passo-torri-di-fraele",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5022719,
+    "lng": 10.3098412,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1941m"
+  },
+  "passo-tratto-spino": {
+    "name": "Passo Tratto Spino",
+    "slug": "passo-tratto-spino",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7675511,
+    "lng": 10.8654726,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1760m"
+  },
+  "passo-tratto-spino-111": {
+    "name": "Passo Tratto Spino",
+    "slug": "passo-tratto-spino-111",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.7675511,
+    "lng": 10.8654726,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-tre-croci-passo-della-lora": {
+    "name": "Passo Tre Croci (Passo della Lora)",
+    "slug": "passo-tre-croci-passo-della-lora",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6968398,
+    "lng": 11.1386998,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1716m"
+  },
+  "passo-tre-croci-passo-della-lora-1096": {
+    "name": "Passo Tre Croci (Passo della Lora)",
+    "slug": "passo-tre-croci-passo-della-lora-1096",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6968398,
+    "lng": 11.1386998,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-tre-croci-son-zuogo": {
+    "name": "Passo Tre Croci - Son Zuógo",
+    "slug": "passo-tre-croci-son-zuogo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5570248,
+    "lng": 12.2018532,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1809m"
+  },
+  "passo-tre-croci-son-zuogo-255": {
+    "name": "Passo Tre Croci - Son Zuógo",
+    "slug": "passo-tre-croci-son-zuogo-255",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5570248,
+    "lng": 12.2018532,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-tre-denti": {
+    "name": "Passo Tre Denti",
+    "slug": "passo-tre-denti",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.1964207,
+    "lng": 10.5480617,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3012m"
+  },
+  "passo-tre-denti-1373": {
+    "name": "Passo Tre Denti",
+    "slug": "passo-tre-denti-1373",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.1964207,
+    "lng": 10.5480617,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-trela": {
+    "name": "Passo Trela",
+    "slug": "passo-trela",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5275437,
+    "lng": 10.2189296,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2295m"
+  },
+  "passo-trela-3628": {
+    "name": "Passo Trela",
+    "slug": "passo-trela-3628",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5275437,
+    "lng": 10.2189296,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-tremoncelli": {
+    "name": "Passo Tremoncelli",
+    "slug": "passo-tremoncelli",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3005472,
+    "lng": 10.3816207,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2542m"
+  },
+  "passo-tremoncelli-1305": {
+    "name": "Passo Tremoncelli",
+    "slug": "passo-tremoncelli-1305",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.3005472,
+    "lng": 10.3816207,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "passo-turchino": {
+    "name": "Passo Turchino",
+    "slug": "passo-turchino",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1605018,
+    "lng": 11.3065553,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1131m"
+  }
+}

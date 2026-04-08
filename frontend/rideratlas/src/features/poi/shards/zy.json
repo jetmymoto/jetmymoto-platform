@@ -1,0 +1,13 @@
+{
+  "zytturm": {
+    "name": "Zytturm",
+    "slug": "zytturm",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0543471,
+    "lng": 8.3044748,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

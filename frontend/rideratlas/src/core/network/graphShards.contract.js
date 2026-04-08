@@ -15,6 +15,7 @@ export const GRAPH_SHARD_NAMES = Object.freeze({
   CORE: "core",
   RENTALS: "rentals",
   OVERLAYS: "overlays",
+  POI_FILTERED: "poiFiltered",
   POI_DETAILS: "poiDetails",
 });
 
@@ -22,13 +23,14 @@ export const SHARDS = Object.freeze({
   CORE: "eager",
   RENTALS: "lazy",
   OVERLAYS: "lazy",
+  POI_FILTERED: "lazy",
   POI_DETAILS: "lazy",
 });
 
 export const GRAPH_SHARD_INVARIANTS = Object.freeze({
   OVERLAY_ABOVE_THE_FOLD:
     "Overlay pages must render above-the-fold without requiring additional shard loads.",
-  POI_REFERENCE_IMPLEMENTATION: "poiDetails is the reference shard implementation.",
+  POI_REFERENCE_IMPLEMENTATION: "poiFiltered is the reference shard implementation. poiDetails remains a compatibility alias.",
 });
 
 export const GRAPH_SHARD_PUBLIC_CONTRACT = Object.freeze({
@@ -36,11 +38,12 @@ export const GRAPH_SHARD_PUBLIC_CONTRACT = Object.freeze({
   loading: SHARDS,
   states: Object.freeze(Object.values(GRAPH_SHARD_STATES)),
   unknownStatus: GRAPH_SHARD_UNKNOWN_STATUS,
-  referenceImplementation: GRAPH_SHARD_NAMES.POI_DETAILS,
+  referenceImplementation: GRAPH_SHARD_NAMES.POI_FILTERED,
   invariants: GRAPH_SHARD_INVARIANTS,
 });
 
 const GRAPH_SHARD_VALUE_VALIDATORS = Object.freeze({
+  poiFiltered: (value) => value === null || isObjectRecord(value),
   poiDetails: (value) => value === null || isObjectRecord(value),
   overlays: (value) => {
     return (

@@ -1,0 +1,24 @@
+{
+  "col-jassits": {
+    "name": "Col Jassits",
+    "slug": "col-jassits",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6015208,
+    "lng": 7.8821067,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2018m"
+  },
+  "col-jassits-2366": {
+    "name": "Col Jassits",
+    "slug": "col-jassits-2366",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6015208,
+    "lng": 7.8821067,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

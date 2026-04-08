@@ -1,0 +1,189 @@
+{
+  "egesennieder": {
+    "name": "Egesennieder",
+    "slug": "egesennieder",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9998794,
+    "lng": 11.1276332,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2506m"
+  },
+  "egesennieder-1691": {
+    "name": "Egesennieder",
+    "slug": "egesennieder-1691",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9998794,
+    "lng": 11.1276332,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "egg": {
+    "name": "Egg",
+    "slug": "egg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5413924,
+    "lng": 8.1906257,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 598m"
+  },
+  "eggberge-aussichtspunkt": {
+    "name": "Eggberge Aussichtspunkt",
+    "slug": "eggberge-aussichtspunkt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9036197,
+    "lng": 8.6444107,
+    "nearest_airport": "ZRH",
+    "description": "Aussichtspunkt auf der Sonnenterrasse von Eggberge mit Blick auf Berge, Wald und den Urnersee."
+  },
+  "eggerjoch": {
+    "name": "Eggerjoch",
+    "slug": "eggerjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0461906,
+    "lng": 11.4278695,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2130m"
+  },
+  "eggerjoch-293": {
+    "name": "Eggerjoch",
+    "slug": "eggerjoch-293",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0461906,
+    "lng": 11.4278695,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "eggersattel": {
+    "name": "Eggersattel",
+    "slug": "eggersattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3823089,
+    "lng": 15.368655,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 844m"
+  },
+  "eggfluh": {
+    "name": "Eggfluh",
+    "slug": "eggfluh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.450477,
+    "lng": 7.5780179,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 685m"
+  },
+  "egghubel": {
+    "name": "Egghübel",
+    "slug": "egghubel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4178077,
+    "lng": 7.743487,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 613m"
+  },
+  "egginerjoch": {
+    "name": "Egginerjoch",
+    "slug": "egginerjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.06823,
+    "lng": 7.9257827,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2990m"
+  },
+  "egginerjoch-3319": {
+    "name": "Egginerjoch",
+    "slug": "egginerjoch-3319",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.06823,
+    "lng": 7.9257827,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "eggjoch": {
+    "name": "Eggjoch",
+    "slug": "eggjoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7908336,
+    "lng": 10.7783394,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3163m"
+  },
+  "eggjoch-1037": {
+    "name": "Eggjoch",
+    "slug": "eggjoch-1037",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7908336,
+    "lng": 10.7783394,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "eggli": {
+    "name": "Eggli",
+    "slug": "eggli",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2921553,
+    "lng": 9.1740132,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1005m"
+  },
+  "eglisbohl": {
+    "name": "Eglisbohl",
+    "slug": "eglisbohl",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7732454,
+    "lng": 9.1410864,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eglise-de-luins": {
+    "name": "Église de Luins",
+    "slug": "eglise-de-luins",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4465373,
+    "lng": 6.2728228,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eglise-saint-martin": {
+    "name": "Église Saint Martin",
+    "slug": "eglise-saint-martin",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8284393,
+    "lng": 6.5590867,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

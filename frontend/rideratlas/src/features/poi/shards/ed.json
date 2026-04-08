@@ -1,0 +1,68 @@
+{
+  "edelsberg": {
+    "name": "Edelsberg",
+    "slug": "edelsberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5919004,
+    "lng": 10.4965208,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1630m"
+  },
+  "edelsberg-3525": {
+    "name": "Edelsberg",
+    "slug": "edelsberg-3525",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.5919004,
+    "lng": 10.4965208,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "edelweiss-alpenkino": {
+    "name": "Edelweiss Alpenkino",
+    "slug": "edelweiss-alpenkino",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3844546,
+    "lng": 12.5847316,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "edelweisswarte": {
+    "name": "Edelweißwarte",
+    "slug": "edelweisswarte",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8877103,
+    "lng": 15.9152733,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "edgar-faure": {
+    "name": "Edgar Faure",
+    "slug": "edgar-faure",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.001288,
+    "lng": 5.8184472,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "eduardshohe": {
+    "name": "Eduardshöhe",
+    "slug": "eduardshohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9112967,
+    "lng": 7.8617498,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "uhlandhohe": {
+    "name": "Uhlandhöhe",
+    "slug": "uhlandhohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7701373,
+    "lng": 9.1565384,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "uhufels": {
+    "name": "Uhufels",
+    "slug": "uhufels",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9189192,
+    "lng": 6.9754848,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "uhustein": {
+    "name": "Uhustein",
+    "slug": "uhustein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.736668,
+    "lng": 8.1914347,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

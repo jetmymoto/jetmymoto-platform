@@ -1,0 +1,13 @@
+{
+  "p2960": {
+    "name": "P2960",
+    "slug": "p2960",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.168352,
+    "lng": 7.7216291,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

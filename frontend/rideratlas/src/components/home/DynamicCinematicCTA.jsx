@@ -41,7 +41,7 @@ export default function DynamicCinematicCTA() {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-t from-transparent to-[#050505] z-10 pointer-events-none" />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/30 to-[#050505]/70" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full">
@@ -66,7 +66,7 @@ export default function DynamicCinematicCTA() {
         >
           <Link
             to={ctaLink}
-            className="inline-block bg-[#CDA755] text-[#050505] px-8 py-4 rounded-full text-xs font-bold uppercase tracking-[0.25em] shadow-[0_0_30px_rgba(205,167,85,0.3)] hover:scale-105 hover:shadow-[0_0_40px_rgba(205,167,85,0.5)] transition-all duration-300"
+            className="inline-block bg-[#CDA755] text-[#050505] px-8 py-4 text-xs font-bold uppercase tracking-[0.25em] shadow-[0_0_30px_rgba(205,167,85,0.3)] hover:scale-105 hover:shadow-[0_0_40px_rgba(205,167,85,0.5)] transition-all duration-300"
           >
             {ctaText}
           </Link>

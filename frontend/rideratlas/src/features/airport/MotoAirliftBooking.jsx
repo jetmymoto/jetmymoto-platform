@@ -115,7 +115,7 @@ export default function MotoAirliftBooking() {
   return (
     <div className="bg-zinc-950 text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
       {/* STICKY ACTION RAIL */}
-      <nav className="fixed bottom-0 left-0 w-full z-[90] md:top-20 md:bottom-auto h-20 bg-[#050505]/80 backdrop-blur-xl border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
+      <nav className="fixed bottom-0 left-0 w-full z-[90] md:top-20 md:bottom-auto h-20 bg-[rgba(5,5,5,0.97)] border-t md:border-b border-white/5 flex items-center px-6 md:px-12">
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="hidden md:flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
@@ -184,7 +184,7 @@ export default function MotoAirliftBooking() {
             className="w-full h-full object-cover grayscale opacity-40 contrast-[1.1]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-zinc-950/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/20 via-transparent to-zinc-950/80" />
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80vw] h-[40vh] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none" />
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
         </motion.div>

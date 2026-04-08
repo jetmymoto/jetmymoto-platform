@@ -1,0 +1,167 @@
+{
+  "occhio-vaccaresse": {
+    "name": "Occhio Vaccaresse",
+    "slug": "occhio-vaccaresse",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7816852,
+    "lng": 11.3080221,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "ochsattel": {
+    "name": "Ochsattel",
+    "slug": "ochsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.882301,
+    "lng": 15.6394699,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 820m"
+  },
+  "ochsattel-12": {
+    "name": "Ochsattel",
+    "slug": "ochsattel-12",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.882301,
+    "lng": 15.6394699,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ochsenalmtorl": {
+    "name": "Ochsenalmtörl",
+    "slug": "ochsenalmtorl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8105609,
+    "lng": 12.9995621,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2460m"
+  },
+  "ochsenalmtorl-2304": {
+    "name": "Ochsenalmtörl",
+    "slug": "ochsenalmtorl-2304",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8105609,
+    "lng": 12.9995621,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ochsenbergscharte-passo-dei-buoi": {
+    "name": "Ochsenbergscharte - Passo dei Buoi",
+    "slug": "ochsenbergscharte-passo-dei-buoi",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7788663,
+    "lng": 10.5934152,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2702m"
+  },
+  "ochsenbergscharte-passo-dei-buoi-3019": {
+    "name": "Ochsenbergscharte - Passo dei Buoi",
+    "slug": "ochsenbergscharte-passo-dei-buoi-3019",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7788663,
+    "lng": 10.5934152,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ochsenboden": {
+    "name": "Ochsenboden",
+    "slug": "ochsenboden",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4910016,
+    "lng": 10.7691433,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "ochsenheide": {
+    "name": "Ochsenheide",
+    "slug": "ochsenheide",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.872609,
+    "lng": 15.965516,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 582m"
+  },
+  "ochsenhofer-scharte": {
+    "name": "Ochsenhofer Scharte",
+    "slug": "ochsenhofer-scharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3245557,
+    "lng": 10.0884992,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1850m"
+  },
+  "ochsenlenke": {
+    "name": "Ochsenlenke",
+    "slug": "ochsenlenke",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9952385,
+    "lng": 12.0990309,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2585m"
+  },
+  "ochsenlenke-1425": {
+    "name": "Ochsenlenke",
+    "slug": "ochsenlenke-1425",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9952385,
+    "lng": 12.0990309,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "ochsenscharte": {
+    "name": "Ochsenscharte",
+    "slug": "ochsenscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9173114,
+    "lng": 11.3675649,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "ochsentorl": {
+    "name": "Ochsentörl",
+    "slug": "ochsentorl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7826208,
+    "lng": 13.1172925,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2070m"
+  },
+  "ochsentorl-390": {
+    "name": "Ochsentörl",
+    "slug": "ochsentorl-390",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.7826208,
+    "lng": 13.1172925,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

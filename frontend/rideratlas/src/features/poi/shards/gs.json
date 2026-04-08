@@ -1,0 +1,233 @@
+{
+  "gsatzle": {
+    "name": "Gsätzle",
+    "slug": "gsatzle",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3631167,
+    "lng": 9.6931999,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "gscheid": {
+    "name": "Gscheid",
+    "slug": "gscheid",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9631008,
+    "lng": 15.4709641,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 867m"
+  },
+  "gscheidl": {
+    "name": "Gscheidl",
+    "slug": "gscheidl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8382236,
+    "lng": 15.912743,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 861m"
+  },
+  "gscheidlhohe": {
+    "name": "Gscheidlhöhe",
+    "slug": "gscheidlhohe",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.788473,
+    "lng": 15.6070539,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1132m"
+  },
+  "gscheidlhohe-2565": {
+    "name": "Gscheidlhöhe",
+    "slug": "gscheidlhohe-2565",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.788473,
+    "lng": 15.6070539,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "gschirrsattel": {
+    "name": "Gschirrsattel",
+    "slug": "gschirrsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7449432,
+    "lng": 13.8643873,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1029m"
+  },
+  "gschnoatahohe": {
+    "name": "Gschnoatahöhe",
+    "slug": "gschnoatahohe",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9776184,
+    "lng": 14.793127,
+    "nearest_airport": "VIE",
+    "description": "Most-Tankstelle"
+  },
+  "gschutzspitzsattel": {
+    "name": "Gschützspitzsattel",
+    "slug": "gschutzspitzsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.1238392,
+    "lng": 11.6433149,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2657m"
+  },
+  "gschutzspitzsattel-1490": {
+    "name": "Gschützspitzsattel",
+    "slug": "gschutzspitzsattel-1490",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.1238392,
+    "lng": 11.6433149,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "gschwandtsattel": {
+    "name": "Gschwandtsattel",
+    "slug": "gschwandtsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.6741419,
+    "lng": 13.7875965,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1743m"
+  },
+  "gschwendtsattel": {
+    "name": "Gschwendtsattel",
+    "slug": "gschwendtsattel",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.393111,
+    "lng": 9.815059,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1266m"
+  },
+  "gsieser-torl": {
+    "name": "Gsieser Torl",
+    "slug": "gsieser-torl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8871374,
+    "lng": 12.2596968,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2206m"
+  },
+  "gsieser-torl-2189": {
+    "name": "Gsieser Torl",
+    "slug": "gsieser-torl-2189",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.8871374,
+    "lng": 12.2596968,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "gspitzte-wand": {
+    "name": "G'spitzte Wand",
+    "slug": "gspitzte-wand",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4085266,
+    "lng": 15.0339675,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 869m"
+  },
+  "gstansjochli": {
+    "name": "Gstansjöchli",
+    "slug": "gstansjochli",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0851391,
+    "lng": 10.1609633,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2573m"
+  },
+  "gstansjochli-3041": {
+    "name": "Gstansjöchli",
+    "slug": "gstansjochli-3041",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0851391,
+    "lng": 10.1609633,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "gsteier-blick": {
+    "name": "Gsteier Blick",
+    "slug": "gsteier-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.678278,
+    "lng": 11.231477,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "gstemmerscharte": {
+    "name": "Gstemmerscharte",
+    "slug": "gstemmerscharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3626394,
+    "lng": 14.0726472,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1886m"
+  },
+  "gstihlberg": {
+    "name": "Gstihlberg",
+    "slug": "gstihlberg",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8856209,
+    "lng": 7.8303914,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "gstreinjochl": {
+    "name": "Gstreinjöchl",
+    "slug": "gstreinjochl",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0015787,
+    "lng": 11.3568639,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2540m"
+  },
+  "gstreinjochl-3184": {
+    "name": "Gstreinjöchl",
+    "slug": "gstreinjochl-3184",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 47.0015787,
+    "lng": 11.3568639,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

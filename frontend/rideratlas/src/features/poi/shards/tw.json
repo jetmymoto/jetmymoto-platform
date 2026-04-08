@@ -1,0 +1,13 @@
+{
+  "tweralpspitz": {
+    "name": "Tweralpspitz",
+    "slug": "tweralpspitz",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.2907006,
+    "lng": 9.0262541,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1332m"
+  }
+}

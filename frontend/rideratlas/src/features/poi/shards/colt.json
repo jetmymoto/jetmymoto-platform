@@ -1,0 +1,145 @@
+{
+  "col-tantane": {
+    "name": "Col Tantané",
+    "slug": "col-tantane",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8194018,
+    "lng": 7.6568891,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2612m"
+  },
+  "col-tantane-3477": {
+    "name": "Col Tantané",
+    "slug": "col-tantane-3477",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8194018,
+    "lng": 7.6568891,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-termin": {
+    "name": "Col Termin",
+    "slug": "col-termin",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.0549764,
+    "lng": 7.2986444,
+    "nearest_airport": "GVA",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2648m"
+  },
+  "col-termin-782": {
+    "name": "Col Termin",
+    "slug": "col-termin-782",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.0549764,
+    "lng": 7.2986444,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-terray": {
+    "name": "Col Terray",
+    "slug": "col-terray",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.8566123,
+    "lng": 7.5012681,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2775m"
+  },
+  "col-terray-1933": {
+    "name": "Col Terray",
+    "slug": "col-terray-1933",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.8566123,
+    "lng": 7.5012681,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-traverse": {
+    "name": "Col Traverse",
+    "slug": "col-traverse",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.553785,
+    "lng": 6.8909664,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2668m"
+  },
+  "col-traverse-1457": {
+    "name": "Col Traverse",
+    "slug": "col-traverse-1457",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.553785,
+    "lng": 6.8909664,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-tronchet": {
+    "name": "Col Tronchet",
+    "slug": "col-tronchet",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.6113924,
+    "lng": 6.8476798,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2661m"
+  },
+  "col-tronchet-2750": {
+    "name": "Col Tronchet",
+    "slug": "col-tronchet-2750",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 44.6113924,
+    "lng": 6.8476798,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-tsa-setze": {
+    "name": "Col Tsa Setze",
+    "slug": "col-tsa-setze",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.6515043,
+    "lng": 7.3317462,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2815m"
+  },
+  "col-tsa-setze-2335": {
+    "name": "Col Tsa Setze",
+    "slug": "col-tsa-setze-2335",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 45.6515043,
+    "lng": 7.3317462,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "col-tzecore": {
+    "name": "Col Tzecore",
+    "slug": "col-tzecore",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7280646,
+    "lng": 7.7184055,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1607m"
+  }
+}

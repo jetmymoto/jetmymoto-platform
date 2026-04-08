@@ -1,0 +1,145 @@
+{
+  "ceci": {
+    "name": "Čeči",
+    "slug": "ceci",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5522102,
+    "lng": 14.1332323,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cedecpass-passo-di-cedec": {
+    "name": "Cedecpass - Passo di Cedec",
+    "slug": "cedecpass-passo-di-cedec",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4718446,
+    "lng": 10.5867377,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3238m"
+  },
+  "cedecpass-passo-di-cedec-1394": {
+    "name": "Cedecpass - Passo di Cedec",
+    "slug": "cedecpass-passo-di-cedec-1394",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4718446,
+    "lng": 10.5867377,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "cengia": {
+    "name": "Cengia",
+    "slug": "cengia",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.4187893,
+    "lng": 11.5322475,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cengio-rosso": {
+    "name": "Cengio Rosso",
+    "slug": "cengio-rosso",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9194339,
+    "lng": 11.1107512,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "centurijacija": {
+    "name": "Centurijacija",
+    "slug": "centurijacija",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.5085895,
+    "lng": 16.4779318,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "certosa-di-vigodarzere": {
+    "name": "Certosa di Vigodarzere",
+    "slug": "certosa-di-vigodarzere",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.4552069,
+    "lng": 11.8669685,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cervino-e-grandes-murailles": {
+    "name": "Cervino e Grandes Murailles",
+    "slug": "cervino-e-grandes-murailles",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9197645,
+    "lng": 7.6226191,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cervino-e-lago-di-layet": {
+    "name": "Cervino e Lago di Layet",
+    "slug": "cervino-e-lago-di-layet",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9236363,
+    "lng": 7.6223298,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "cetrt": {
+    "name": "Četrt",
+    "slug": "cetrt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2306991,
+    "lng": 13.9165932,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1832m"
+  },
+  "cez-brezic-sella-mogenza": {
+    "name": "Čez Brežič / Sella Mogenza",
+    "slug": "cez-brezic-sella-mogenza",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.385773,
+    "lng": 13.523969,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1700m"
+  },
+  "cez-dol": {
+    "name": "Čez Dol",
+    "slug": "cez-dol",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3604113,
+    "lng": 13.7805634,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1632m"
+  },
+  "cez-suho": {
+    "name": "Čez Suho",
+    "slug": "cez-suho",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2330802,
+    "lng": 13.8457399,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

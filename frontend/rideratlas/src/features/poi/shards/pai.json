@@ -1,0 +1,13 @@
+{
+  "pain-de-sucre": {
+    "name": "Pain de Sucre",
+    "slug": "pain-de-sucre",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.1896626,
+    "lng": 6.4170256,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

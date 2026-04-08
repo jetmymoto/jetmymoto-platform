@@ -1,0 +1,13 @@
+{
+  "square-albert-1er": {
+    "name": "Square Albert 1er",
+    "slug": "square-albert-1er",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.5760182,
+    "lng": 7.125761,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

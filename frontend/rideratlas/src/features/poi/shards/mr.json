@@ -1,0 +1,13 @@
+{
+  "mrezce": {
+    "name": "Mrežce",
+    "slug": "mrezce",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.3777529,
+    "lng": 13.9196073,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1965m"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "col-dla-seitiva": {
+    "name": "Col d'la Seitiva",
+    "slug": "col-dla-seitiva",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.3465225,
+    "lng": 7.3876346,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1180m"
+  }
+}

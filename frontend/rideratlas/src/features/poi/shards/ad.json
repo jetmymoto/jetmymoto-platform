@@ -1,0 +1,123 @@
+{
+  "adamstalblick": {
+    "name": "Adamstalblick",
+    "slug": "adamstalblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.952047,
+    "lng": 15.8362875,
+    "nearest_airport": "VIE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "adlerblick": {
+    "name": "Adlerblick",
+    "slug": "adlerblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0264178,
+    "lng": 10.7504757,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "adlerfluh": {
+    "name": "Adlerfluh",
+    "slug": "adlerfluh",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.929345,
+    "lng": 8.3382665,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1865m"
+  },
+  "adlergschwend": {
+    "name": "Adlergschwend",
+    "slug": "adlergschwend",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5303216,
+    "lng": 10.7224627,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "adlerhorst": {
+    "name": "Adlerhorst",
+    "slug": "adlerhorst",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.8295576,
+    "lng": 13.6795503,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "adlerkanzel": {
+    "name": "Adlerkanzel",
+    "slug": "adlerkanzel",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3906052,
+    "lng": 11.270859,
+    "nearest_airport": "INN",
+    "description": "Schöner Aussichtspunkt hoch über Scharnitz mit Blick auf das Dorf. \n"
+  },
+  "adlerstein": {
+    "name": "Adlerstein",
+    "slug": "adlerstein",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7915907,
+    "lng": 13.4726585,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1119m"
+  },
+  "adlwangblick": {
+    "name": "Adlwangblick",
+    "slug": "adlwangblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9769343,
+    "lng": 14.2290665,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "admiralsblick": {
+    "name": "Admiralsblick",
+    "slug": "admiralsblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.809699,
+    "lng": 8.1823379,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "adulajoch": {
+    "name": "Adulajoch",
+    "slug": "adulajoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4954003,
+    "lng": 9.038574,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 3290m"
+  },
+  "adulajoch-2707": {
+    "name": "Adulajoch",
+    "slug": "adulajoch-2707",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4954003,
+    "lng": 9.038574,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "bkw-aussichtspunkt": {
+    "name": "BKW Aussichtspunkt",
+    "slug": "bkw-aussichtspunkt",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6722173,
+    "lng": 7.8449663,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

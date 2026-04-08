@@ -29,6 +29,8 @@ service cloud.firestore {
       return coord == null || coord is string || isValidNewCoordinate(coord);
     }
 
+    // --- CORE COLLECTIONS ---
+
     match /pools/{poolId} {
       // Anyone can read pools (admin dashboards need access to non-OPEN pools too)
       allow read: if true;
@@ -60,6 +62,82 @@ service cloud.firestore {
                        ]));
       
       allow delete: if false; // Only admin can delete
+    }
+
+    // --- NEW RULES TO FIX PERMISSION DENIED ERRORS ---
+
+    // Airports metadata (public read)
+    match /airports/{code} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Asset Library / VAF Integration (public read)
+    match /asset_library/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Missions and active items (public read)
+    match /missions_v4/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    match /missions_v5/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /live_feed/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // POIs and Maps
+    match /pois/{id} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Analytics Events
+    match /events/{id} {
+      allow create: if true;
+      allow read: if request.auth != null;
+    }
+
+    // Plans and Bookings
+    match /plans/{id} {
+      allow read, write: if request.auth != null;
+    }
+    
+    match /bookings/{id} {
+      allow read, write: if request.auth != null;
+    }
+
+    match /users/{uid} {
+      allow read, write: if request.auth != null && (request.auth.uid == uid || request.auth.token.email != null);
+    }
+
+    // Artifacts / Multi-app data
+    match /artifacts/{appId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // CRM Leads
+    match /crm_leads/{id} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Poster Renders
+    match /poster_renders/{id} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Asset Jobs
+    match /asset_jobs/{id} {
+      allow read, write: if request.auth != null;
     }
   }
 }

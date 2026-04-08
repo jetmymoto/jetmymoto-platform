@@ -1,0 +1,13 @@
+{
+  "pas": {
+    "name": "(Pas)",
+    "slug": "pas",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.5241843,
+    "lng": 5.5953193,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  }
+}

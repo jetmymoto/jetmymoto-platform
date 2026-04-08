@@ -1,0 +1,90 @@
+{
+  "nucetto-santa-lucia": {
+    "name": "Nucetto Santa Lucia",
+    "slug": "nucetto-santa-lucia",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.3462331,
+    "lng": 8.0492426,
+    "nearest_airport": "TRN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 715m"
+  },
+  "nufenenpass-passo-della-novena": {
+    "name": "Nufenenpass / Passo della Novena",
+    "slug": "nufenenpass-passo-della-novena",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.4771192,
+    "lng": 8.3878277,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2480m"
+  },
+  "nufenenpass-passo-della-novena-2299": {
+    "name": "Nufenenpass / Passo della Novena",
+    "slug": "nufenenpass-passo-della-novena-2299",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.4771192,
+    "lng": 8.3878277,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "nuit-a-la-turbie": {
+    "name": "Nuit à la turbie",
+    "slug": "nuit-a-la-turbie",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.7377382,
+    "lng": 7.3996634,
+    "nearest_airport": "NCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "nurnberger-scharte": {
+    "name": "Nürnberger Scharte",
+    "slug": "nurnberger-scharte",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9807941,
+    "lng": 11.2390869,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2914m"
+  },
+  "nurnberger-scharte-953": {
+    "name": "Nürnberger Scharte",
+    "slug": "nurnberger-scharte-953",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9807941,
+    "lng": 11.2390869,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "nusellstock": {
+    "name": "Nüsellstock",
+    "slug": "nusellstock",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0903517,
+    "lng": 8.6955919,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 1479m"
+  },
+  "nussbaum": {
+    "name": "Nussbaum",
+    "slug": "nussbaum",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7251049,
+    "lng": 7.6877977,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

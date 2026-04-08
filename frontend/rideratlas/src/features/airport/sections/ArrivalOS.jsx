@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SITE_MEDIA } from "@/config/siteMedia";
 import { withBrandContext } from "@/utils/navigationTargets";
+import { useAssetLibrary } from "@/hooks/useAssetLibrary";
 import {
   Bike,
   Car,
@@ -45,7 +46,7 @@ function ActionRail({ airport, intent, withCtx }) {
   return (
     <>
       <div
-        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-[#050505]/40 backdrop-blur-xl border-b border-white/5"
+        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-[rgba(5,5,5,0.97)] border-b border-white/5"
       >
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-3">
@@ -96,7 +97,7 @@ function ActionRail({ airport, intent, withCtx }) {
         </div>
       </div>
 
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-[#050505]/90 backdrop-blur-xl border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-[rgba(5,5,5,0.97)] border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
         <button
           type="button"
           onClick={() => scrollToSection("ranking")}
@@ -180,6 +181,17 @@ function IntentToggle({ intent, setIntent }) {
 export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, derivedRegions, derivedCountries, derivedTheater, rankingData }) {
   const location = useLocation();
   const withCtx = (path) => withBrandContext(path, location.search);
+
+  // ── Asset Library (VAF) Integration ──
+  const { currentImage, caption: assetCaption } = useAssetLibrary(
+    "airport",
+    airport.id || airport.code,
+    airport.hero?.posterUrl || SITE_MEDIA.EUROPE_PAGE_H1
+  );
+
+  const finalHeroImage = currentImage;
+  const finalMotto = assetCaption || airport.motto;
+
   if (import.meta.env.DEV) {
     console.log("ArrivalOS airport payload:", airport);
   }
@@ -214,7 +226,8 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src={SITE_MEDIA.EUROPE_PAGE_H1}
+          poster={finalHeroImage}
+          src={a.hero?.videoUrl || SITE_MEDIA.EUROPE_PAGE_H1}
         />
 
         <div className="absolute inset-0 bg-[#050505]/60" />
@@ -281,7 +294,7 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
             </h1>
 
             <p className="text-xl text-zinc-200/90 italic max-w-xl leading-relaxed mb-10">
-              {a.motto}
+              {finalMotto}
             </p>
 
             {/* INTENT */}

@@ -10,18 +10,18 @@ const HERO_MEDIA = {
 
 export default function TheAviationHero() {
   return (
-    <section className="relative w-full h-[85vh] min-h-[560px] overflow-hidden bg-[#050505]">
+    <section className="relative w-full min-h-[85vh] overflow-hidden bg-[#050505]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${HERO_MEDIA.poster})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", stiffness: 120, damping: 20 }}
+          transition={{ type: "spring", stiffness: 300, damping: 28 }}
         >
           <div className="flex items-center gap-2 text-[#CDA755] text-xs tracking-[0.3em] uppercase mb-6">
             <Plane className="w-4 h-4" />

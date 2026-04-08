@@ -1,0 +1,24 @@
+{
+  "sboccata-dei-bagnadori": {
+    "name": "Sboccata dei Bagnadori",
+    "slug": "sboccata-dei-bagnadori",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 44.1465837,
+    "lng": 10.8534434,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1274m"
+  },
+  "sbocco-le-macinelle": {
+    "name": "Sbocco le Macinelle",
+    "slug": "sbocco-le-macinelle",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 43.5915204,
+    "lng": 12.2482462,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 964m"
+  }
+}

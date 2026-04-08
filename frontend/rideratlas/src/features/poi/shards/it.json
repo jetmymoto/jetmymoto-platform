@@ -1,0 +1,13 @@
+{
+  "itonskopf": {
+    "name": "Itonskopf",
+    "slug": "itonskopf",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.116328,
+    "lng": 9.9334145,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 2089m"
+  }
+}

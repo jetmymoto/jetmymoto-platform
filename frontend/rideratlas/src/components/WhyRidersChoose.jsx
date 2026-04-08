@@ -24,7 +24,7 @@ export default function WhyRidersChoose() {
   return (
     <section className="relative bg-[#070707] border-t border-white/5 overflow-hidden">
       {/* subtle separation from slider */}
-      <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#050505]/40 to-transparent pointer-events-none" />
 
       {/* MAP-LINE BACKDROP: HOME → AIRPORT → BASECAMP */}
       <div className="absolute inset-0 pointer-events-none">

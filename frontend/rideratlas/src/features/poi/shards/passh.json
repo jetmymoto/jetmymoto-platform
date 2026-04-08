@@ -1,0 +1,24 @@
+{
+  "passhohe-graf-aygo": {
+    "name": "Passhöhe Graf Aygo",
+    "slug": "passhohe-graf-aygo",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.9651538,
+    "lng": 11.7889086,
+    "nearest_airport": "MUC",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 647.45m"
+  },
+  "passhohe-weissenstein": {
+    "name": "Passhöhe Weissenstein",
+    "slug": "passhohe-weissenstein",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.255168,
+    "lng": 7.5083024,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 1279m"
+  }
+}

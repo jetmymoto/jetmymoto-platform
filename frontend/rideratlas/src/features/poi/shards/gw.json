@@ -1,0 +1,35 @@
+{
+  "gwattegg": {
+    "name": "Gwattegg",
+    "slug": "gwattegg",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7168328,
+    "lng": 7.6211253,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 636m"
+  },
+  "gweiljoch": {
+    "name": "Gweiljoch",
+    "slug": "gweiljoch",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.0188662,
+    "lng": 9.9014135,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: N/Am"
+  },
+  "gwild-plattform": {
+    "name": "Gwild Plattform",
+    "slug": "gwild-plattform",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5690273,
+    "lng": 7.807919,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

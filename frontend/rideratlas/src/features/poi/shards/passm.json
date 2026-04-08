@@ -1,0 +1,24 @@
+{
+  "pass-maighels": {
+    "name": "Pass Maighels",
+    "slug": "pass-maighels",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.5948614,
+    "lng": 8.6805779,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2420m"
+  },
+  "pass-maighels-522": {
+    "name": "Pass Maighels",
+    "slug": "pass-maighels-522",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.5948614,
+    "lng": 8.6805779,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  }
+}

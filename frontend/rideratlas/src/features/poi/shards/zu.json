@@ -1,0 +1,189 @@
+{
+  "zu-torla": {
+    "name": "Zu Törla",
+    "slug": "zu-torla",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9968188,
+    "lng": 11.8808257,
+    "nearest_airport": "INN",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 2746m"
+  },
+  "zu-torla-2436": {
+    "name": "Zu Törla",
+    "slug": "zu-torla-2436",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "",
+    "lat": 46.9968188,
+    "lng": 11.8808257,
+    "nearest_airport": "",
+    "description": "Verified Location."
+  },
+  "zub": {
+    "name": "Zub",
+    "slug": "zub",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.7409789,
+    "lng": 15.6848021,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zublisnase": {
+    "name": "Züblisnase",
+    "slug": "zublisnase",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3435969,
+    "lng": 9.1944294,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zuc-de-cros": {
+    "name": "Zuc de Crôs",
+    "slug": "zuc-de-cros",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.2673081,
+    "lng": 13.1795337,
+    "nearest_airport": "VCE",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 859m"
+  },
+  "zucco-della-rocca": {
+    "name": "Zucco della Rocca",
+    "slug": "zucco-della-rocca",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 45.9107158,
+    "lng": 9.3516096,
+    "nearest_airport": "MXP",
+    "description": "Auto-imported SCENIC_POINT. Altitude: 855m"
+  },
+  "zuckerhut": {
+    "name": "Zuckerhut",
+    "slug": "zuckerhut",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5584884,
+    "lng": 8.8997149,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zug": {
+    "name": "Züg",
+    "slug": "zug",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.8962981,
+    "lng": 9.4281384,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zugspitz-blick": {
+    "name": "Zugspitz-Blick",
+    "slug": "zugspitz-blick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3265182,
+    "lng": 11.1490618,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zugspitzblick": {
+    "name": "Zugspitzblick",
+    "slug": "zugspitzblick",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.34911,
+    "lng": 11.0997516,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zum-bruggn": {
+    "name": "Zum Brugg'n",
+    "slug": "zum-bruggn",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.6682984,
+    "lng": 12.789651,
+    "nearest_airport": "SZG",
+    "description": "wasserfall - cascata"
+  },
+  "zum-chanzeli": {
+    "name": "zum Chänzeli",
+    "slug": "zum-chanzeli",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.3250982,
+    "lng": 7.7919268,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zumis": {
+    "name": "Zumis",
+    "slug": "zumis",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.7752661,
+    "lng": 11.7271699,
+    "nearest_airport": "INN",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zundelbacher-linde": {
+    "name": "Zundelbacher Linde",
+    "slug": "zundelbacher-linde",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.7965129,
+    "lng": 9.6672716,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zurzacherberg-passhohe": {
+    "name": "Zurzacherberg Passhöhe",
+    "slug": "zurzacherberg-passhohe",
+    "category": "MOUNTAIN_PASS",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.5755906,
+    "lng": 8.2775172,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported MOUNTAIN_PASS. Altitude: 490m"
+  },
+  "zuschauerterrasse-dock-b": {
+    "name": "Zuschauerterrasse Dock B",
+    "slug": "zuschauerterrasse-dock-b",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.451205,
+    "lng": 8.5574081,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  },
+  "zuschauerterrasse-dock-e": {
+    "name": "Zuschauerterrasse Dock E",
+    "slug": "zuschauerterrasse-dock-e",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 47.4613697,
+    "lng": 8.5520353,
+    "nearest_airport": "ZRH",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}

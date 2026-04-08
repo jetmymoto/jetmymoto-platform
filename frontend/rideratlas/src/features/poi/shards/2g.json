@@ -1,0 +1,13 @@
+{
+  "2-gossfall": {
+    "name": "2. Gössfall",
+    "slug": "2-gossfall",
+    "category": "SCENIC_POINT",
+    "region": "Alps",
+    "country": "Europe",
+    "lat": 46.9837259,
+    "lng": 13.4517379,
+    "nearest_airport": "SZG",
+    "description": "Auto-imported SCENIC_POINT. Altitude: N/Am"
+  }
+}
