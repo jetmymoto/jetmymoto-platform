@@ -83,4 +83,25 @@ Outputs: RA033.pdf (206K) - size increased slightly due to richer CSS and conten
 Blockers: None.
 Next recommended action: Final review of generated output and commit if stable.
 
+### 2026-05-02 13:45 — Agent Gemini
+
+Task: WAVE 2 verification.
+Commit: 181ea9b
+Files verified: functions/src/lib/buildDossierHtml.js, functions/src/createMotoQuote.js, functions/src/createRentalReservation.js (all untouched)
+Result: WAVE 2 verification successful. PDF rendered correctly (8 pages, 206 KB). No placeholder leftovers in HTML.
+Outputs: /tmp/jetmymoto/mission-dossiers/RA033.html, /tmp/jetmymoto/mission-dossiers/RA033.pdf
+Blockers: None.
+Next recommended action: Handover for deployment or further feature work.
+
+### 2026-05-02 14:10 — Agent Gemini
+
+Task: Mission Dossier Storage Delivery (WAVE 3).
+Files changed: functions/src/missions/dossier/uploadMissionDossier.js, functions/src/missions/dossier/renderMissionDossier.js
+Result: Storage delivery support added. RA033 PDF and HTML successfully uploaded to GCS.
+GCS Path: gs://factory1/mission_dossiers/RA033/RA033-mission-dossier.pdf
+URL Type: Signed URL (expires 2500-03-01).
+PDF Size: 206,649 bytes.
+Blockers: None.
+Next recommended action: Proceed with email delivery integration (Wave 4) or final architectural review.
+
 ---

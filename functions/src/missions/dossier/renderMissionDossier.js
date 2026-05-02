@@ -1,9 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const { generateDossierPdf } = require('../../lib/generateDossierPdf');
+const { uploadMissionDossier } = require('./uploadMissionDossier');
 
 const MISSION_ID = 'RA033';
 const OUTPUT_DIR = '/tmp/jetmymoto/mission-dossiers';
+
+// Check for --upload flag
+const SHOULD_UPLOAD = process.argv.includes('--upload');
 
 async function render() {
     console.log(`[Dossier] Starting local render for ${MISSION_ID}...`);
@@ -58,19 +62,36 @@ async function render() {
     // Save HTML
     const htmlPath = path.join(OUTPUT_DIR, `${MISSION_ID}.html`);
     fs.writeFileSync(htmlPath, html);
-    console.log(`[Dossier] HTML generated: ${htmlPath} (${fs.statSync(htmlPath).size} bytes)`);
+    const htmlSize = fs.statSync(htmlPath).size;
+    console.log(`[Dossier] HTML generated: ${htmlPath} (${htmlSize} bytes)`);
 
     // Generate PDF
     console.log(`[Dossier] Generating PDF (Isolated Pipeline)...`);
     const pdfBuffer = await generateDossierPdf(html);
 
+    let pdfPath;
     if (pdfBuffer) {
-        const pdfPath = path.join(OUTPUT_DIR, `${MISSION_ID}.pdf`);
+        pdfPath = path.join(OUTPUT_DIR, `${MISSION_ID}.pdf`);
         fs.writeFileSync(pdfPath, pdfBuffer);
-        console.log(`[Dossier] PDF generated: ${pdfPath} (${fs.statSync(pdfPath).size} bytes)`);
+        const pdfSize = fs.statSync(pdfPath).size;
+        console.log(`[Dossier] PDF generated: ${pdfPath} (${pdfSize} bytes)`);
     } else {
         console.error(`[Dossier] PDF generation failed (buffer empty or exceeded cap)`);
         process.exit(1);
+    }
+
+    // Storage Upload (Wave 3)
+    if (SHOULD_UPLOAD) {
+        console.log(`[Dossier] Uploading artifacts to Firebase Storage...`);
+        try {
+            const { pdfUrl, htmlUrl, pdfTarget } = await uploadMissionDossier(MISSION_ID, pdfPath, htmlPath);
+            console.log(`[Dossier] Upload Success!`);
+            console.log(`[Dossier] GCS Path: gs://factory1/${pdfTarget}`);
+            console.log(`[Dossier] Download URL: ${pdfUrl}`);
+        } catch (uploadErr) {
+            console.error(`[Dossier] Upload Failed:`, uploadErr.message);
+            // Don't exit(1) if local render was successful, but log the error
+        }
     }
 
     console.log(`[Dossier] Pipeline complete for ${MISSION_ID}.`);
