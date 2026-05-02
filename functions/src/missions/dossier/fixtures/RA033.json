@@ -20,5 +20,7 @@
     "phone": "+41 22 717 80 00"
   },
   "deployment_date": "2026-06-15",
-  "booking_ref": "RA033-PROTOTYPE"
+  "booking_ref": "RA033-PROTOTYPE",
+  "rider_name": "ALEX RIDER",
+  "selected_bike": "BMW R 1300 GS (TRIPLE BLACK)"
 }
