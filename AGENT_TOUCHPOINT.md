@@ -19,9 +19,9 @@ Mission Dossier PDF prototype for RA033.
 
 ### Agent A — Mission Dossier PDF
 
-Status: Prototype Generated (WAVE 1)
+Status: Template Hardened (WAVE 2 Complete)
 Files: functions/src/missions/dossier/*
-Next: Visual verification and layout polish.
+Next: Final verification and handoff.
 
 ### Agent B — Support / Debug / Verification
 
@@ -73,5 +73,14 @@ Result: HTML and PDF successfully generated in /tmp/jetmymoto/mission-dossiers/.
 Outputs: RA033.html (15K), RA033.pdf (147K).
 Blockers: None.
 Next recommended action: Review output quality and proceed to WAVE 2 or further polish.
+
+### 2026-05-02 13:20 — Agent Gemini
+
+Task: Visual QA and Template Hardening (WAVE 2).
+Files changed: functions/src/missions/dossier/mission-dossier-template.html
+Result: Template hardened with improved typography, tactical amber accents, and better margin consistency. Verified 8-page integrity.
+Outputs: RA033.pdf (206K) - size increased slightly due to richer CSS and content.
+Blockers: None.
+Next recommended action: Final review of generated output and commit if stable.
 
 ---
