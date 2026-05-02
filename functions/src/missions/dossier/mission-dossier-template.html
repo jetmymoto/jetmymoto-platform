@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Dossier - {{slug}}</title>
     <style>
+        /* Base Palette */
+        :root {
+            --ivory: #FDFCFB;
+            --champagne: #F4F1EA;
+            --stone: #1C1917;
+            --gold: #CDA755;
+            --muted: #8A8175;
+            --line: rgba(28,25,23,0.12);
+        }
+
         /* Base Reset */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #050505;
-            color: #E0E0E0;
+            background: #D6D2CC; /* Preview background */
+            color: var(--stone);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 14px;
             line-height: 1.5;
@@ -22,7 +32,7 @@
             margin: 0;
         }
         @media print {
-            body { background: #050505; -webkit-print-color-adjust: exact; }
+            body { background: #D6D2CC; -webkit-print-color-adjust: exact; }
             .page { page-break-after: always; }
         }
 
@@ -32,64 +42,85 @@
             height: 297mm;
             position: relative;
             overflow: hidden;
-            padding: 48px;
-            border-bottom: 1px solid #1A1A1A;
+            padding: 54px;
+            background: var(--ivory);
+            border-bottom: 1px solid var(--line);
         }
 
-        .amber { color: #CDA755; }
+        .page.dark {
+            background: var(--stone);
+            color: var(--ivory);
+        }
+
+        .gold { color: var(--gold); }
         .mono { font-family: "SF Mono", "Monaco", "Inconsolata", "Courier New", monospace; letter-spacing: 0.05em; }
 
         /* Typography */
-        h1 { font-size: 52px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 24px; color: #FFFFFF; }
-        h2 { font-size: 11px; font-weight: 700; letter-spacing: 5px; text-transform: uppercase; color: #CDA755; margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 10px; }
-        h3 { font-size: 26px; font-weight: 700; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px; }
-        h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #FFFFFF; }
-        p { margin-bottom: 16px; color: #A0A0A0; line-height: 1.6; }
+        h1 { font-size: 52px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 24px; color: var(--stone); }
+        .page.dark h1 { color: var(--ivory); }
+        
+        h2 { font-size: 11px; font-weight: 700; letter-spacing: 5px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+        .page.dark h2 { border-bottom-color: rgba(255,255,255,0.1); }
+        
+        h3 { font-size: 26px; font-weight: 700; color: var(--stone); margin-bottom: 14px; letter-spacing: -0.5px; }
+        .page.dark h3 { color: var(--ivory); }
+        
+        h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--stone); }
+        .page.dark h4 { color: var(--ivory); }
+        
+        p { margin-bottom: 16px; color: var(--muted); line-height: 1.6; }
+        .page.dark p { color: #A0A0A0; }
 
         /* Grid */
         .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
         .col-3 { grid-column: span 3; }
         .col-4 { grid-column: span 4; }
+        .col-5 { grid-column: span 5; }
         .col-6 { grid-column: span 6; }
+        .col-7 { grid-column: span 7; }
         .col-8 { grid-column: span 8; }
         .col-9 { grid-column: span 9; }
         .col-12 { grid-column: span 12; }
 
         /* Components */
-        .card { background: #0A0A0A; padding: 28px; border: 1px solid #1A1A1A; border-radius: 2px; }
-        .stat-label { font-size: 9px; text-transform: uppercase; letter-spacing: 3px; color: #555; margin-bottom: 6px; font-weight: 600; }
-        .stat-value { font-size: 20px; font-weight: 700; color: #FFFFFF; }
+        .card { background: var(--champagne); padding: 28px; border: 1px solid var(--line); border-radius: 2px; }
+        .page.dark .card { background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.1); }
+        
+        .stat-label { font-size: 9px; text-transform: uppercase; letter-spacing: 3px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+        .stat-value { font-size: 20px; font-weight: 700; color: var(--stone); }
+        .page.dark .stat-value { color: var(--ivory); }
 
-        .tag { display: inline-block; padding: 5px 14px; background: #CDA755; color: #000; font-size: 9px; font-weight: 800; text-transform: uppercase; border-radius: 1px; margin-right: 10px; letter-spacing: 1px; }
+        .tag { display: inline-block; padding: 5px 14px; background: var(--gold); color: #FFF; font-size: 9px; font-weight: 800; text-transform: uppercase; border-radius: 1px; margin-right: 10px; letter-spacing: 1px; }
 
         /* Sections */
         .header { margin-bottom: 80px; }
         .footer { 
             position: absolute; 
-            bottom: 48px; 
-            left: 48px; 
-            right: 48px; 
-            border-top: 1px solid #1A1A1A; 
+            bottom: 54px; 
+            left: 54px; 
+            right: 54px; 
+            border-top: 1px solid var(--line); 
             padding-top: 20px; 
             font-size: 9px; 
-            color: #333; 
+            color: var(--muted); 
             display: flex; 
             justify-content: space-between; 
             align-items: center;
         }
+        .page.dark .footer { border-top-color: rgba(255,255,255,0.1); color: #555; }
 
         /* Section Specifics */
         #section-hero { display: flex; flex-direction: column; justify-content: center; height: 100%; }
         
         .map-placeholder {
-            background: #080808; 
+            background: var(--champagne); 
             height: 340px; 
             border-radius: 2px; 
             display: flex; 
             flex-direction: column;
             align-items: center; 
             justify-content: center; 
-            border: 1px solid #1A1A1A;
+            border: 1px solid var(--line);
             margin-top: 20px;
             position: relative;
             overflow: hidden;
@@ -98,37 +129,39 @@
         .map-grid-overlay {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background-image: linear-gradient(#111 1px, transparent 1px), linear-gradient(90deg, #111 1px, transparent 1px);
+            background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
             background-size: 20px 20px;
             opacity: 0.5;
         }
 
         .highlight-item {
             margin-bottom: 16px; 
-            border-left: 3px solid #CDA755; 
+            border-left: 3px solid var(--gold); 
             padding: 12px 20px;
-            background: #0D0D0D;
+            background: var(--champagne);
             font-weight: 500;
-            color: #E0E0E0;
+            color: var(--stone);
+            border-radius: 0 2px 2px 0;
         }
 
         .hardware-spec {
-            border-bottom: 1px solid #1A1A1A;
+            border-bottom: 1px solid var(--line);
             padding: 12px 0;
             display: flex;
             justify-content: space-between;
             font-size: 12px;
         }
         .hardware-spec:last-child { border-bottom: none; }
-        .spec-label { color: #555; text-transform: uppercase; letter-spacing: 1px; }
-        .spec-value { color: #CDA755; font-family: monospace; }
+        .spec-label { color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+        .spec-value { color: var(--gold); font-family: monospace; }
 
         .system-ref {
             font-size: 8px;
-            color: #222;
+            color: var(--muted);
             text-transform: uppercase;
             letter-spacing: 2px;
             font-family: monospace;
+            opacity: 0.6;
         }
 
         .package-item {
@@ -136,7 +169,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 16px;
-            border-bottom: 1px solid #1A1A1A;
+            border-bottom: 1px solid var(--line);
         }
         .package-item:last-child { border-bottom: none; }
 
@@ -147,34 +180,36 @@
     <!-- PAGE 1: HERO & MISSION OVERVIEW -->
     <div class="page" id="section-hero">
         <div class="header">
-            <div class="brand amber mono" style="font-size: 16px; letter-spacing: 8px; font-weight: 800;">JETMYMOTO / RIDER ATLAS</div>
-            <div class="ref mono" style="font-size: 9px; color: #444; margin-top: 10px;">EXECUTIVE BRIEFING // {{booking_ref}}</div>
-            <div class="system-ref" style="margin-top: 4px;">ATLAS SYSTEM // GENERATED INSTANCE</div>
+            <div class="brand gold mono" style="font-size: 16px; letter-spacing: 8px; font-weight: 800;">JETMYMOTO / RIDER ATLAS</div>
+            <div class="ref mono" style="font-size: 9px; color: var(--muted); margin-top: 10px;">EXECUTIVE BRIEFING // {{booking_ref}}</div>
+            <div class="system-ref" style="margin-top: 4px;">JETMYMOTO OPERATIONS // GENERATED INSTANCE</div>
         </div>
         
         <div style="flex-grow: 1;">
             <h2>MISSION BRIEFING</h2>
             <h1>{{title}}</h1>
-            <p style="font-size: 20px; line-height: 1.5; max-width: 640px; color: #FFFFFF; font-weight: 300;">{{cinematic_pitch}}</p>
+            <p style="font-size: 20px; line-height: 1.5; max-width: 640px; color: var(--stone); font-weight: 300;">{{cinematic_pitch}}</p>
             
             <div class="grid" style="margin-top: 64px;">
                 <div class="col-4">
                     <div class="stat-label">Mission ID</div>
-                    <div class="stat-value amber mono" style="font-size: 24px;">{{slug}}</div>
+                    <div class="stat-value gold mono" style="font-size: 24px;">{{slug}}</div>
                 </div>
                 <div class="col-4">
                     <div class="stat-label">Total Distance</div>
-                    <div class="stat-value" style="font-size: 24px;">{{distance_km}} <span style="font-size: 14px; font-weight: 400; color: #555;">KM</span></div>
+                    <div class="stat-value" style="font-size: 24px;">{{distance_km}} <span style="font-size: 14px; font-weight: 400; color: var(--muted);">KM</span></div>
                 </div>
                 <div class="col-4">
                     <div class="stat-label">Duration</div>
-                    <div class="stat-value" style="font-size: 24px;">{{duration_days}} <span style="font-size: 14px; font-weight: 400; color: #555;">DAYS</span></div>
+                    <div class="stat-value" style="font-size: 24px;">{{duration_days}} <span style="font-size: 14px; font-weight: 400; color: var(--muted);">DAYS</span></div>
                 </div>
             </div>
+            
+            <div style="margin-top: 80px; width: 100%; height: 1px; background: var(--gold); opacity: 0.3;"></div>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 01 / 08</div>
         </div>
     </div>
@@ -182,51 +217,49 @@
     <!-- PAGE 2: EXECUTIVE INTEL & PERSONALIZATION -->
     <div class="page" id="section-intel">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // EXECUTIVE BRIEFING</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // EXECUTIVE BRIEFING</div>
             <div class="system-ref" style="margin-top: 4px;">INSTANCE: {{booking_ref}}</div>
         </div>
 
-        <div class="card" style="margin-bottom: 40px; border-left: 4px solid #CDA755;">
+        <div class="card" style="margin-bottom: 40px; border-left: 4px solid var(--gold);">
             <div class="stat-label">RIDER ASSIGNMENT</div>
             <div class="grid" style="margin-top: 10px;">
                 <div class="col-3">
-                    <div class="stat-label" style="font-size: 8px; color: #444;">Rider / Client</div>
+                    <div class="stat-label" style="font-size: 8px;">Rider / Client</div>
                     <div class="stat-value" style="font-size: 16px;">{{rider_name}}</div>
                 </div>
                 <div class="col-3">
-                    <div class="stat-label" style="font-size: 8px; color: #444;">Rider Class</div>
-                    <div class="stat-value" style="font-size: 14px; color: #CDA755;">{{rider_archetype}}</div>
+                    <div class="stat-label" style="font-size: 8px;">Rider Class</div>
+                    <div class="stat-value" style="font-size: 14px; color: var(--gold);">{{rider_archetype}}</div>
                 </div>
                 <div class="col-3">
-                    <div class="stat-label" style="font-size: 8px; color: #444;">Machine Allocation</div>
+                    <div class="stat-label" style="font-size: 8px;">Machine Allocation</div>
                     <div class="stat-value" style="font-size: 14px;">{{selected_bike}}</div>
                 </div>
                 <div class="col-3">
-                    <div class="stat-label" style="font-size: 8px; color: #444;">Execution Date</div>
+                    <div class="stat-label" style="font-size: 8px;">Execution Date</div>
                     <div class="stat-value" style="font-size: 14px;">{{deployment_date}}</div>
                 </div>
             </div>
         </div>
 
-        <h2>EXECUTIVE BRIEFING</h2>
-        <h3>Mission Corridor: <span class="amber">{{theater}}</span></h3>
-        <p style="max-width: 600px;">RA033 is a high-ticket motorcycle logistics mission designed for riders who prioritize precision and control. By removing the friction of airport handovers, luggage flow, and machine staging, JetMyMoto allows you to focus entirely on the technical core of the Alps. This is an elite execution of the highest alpine corridor in Europe.</p>
+        <h2>EXECUTIVE SUMMARY</h2>
+        <h3>Mission Corridor: <span class="gold">{{theater}}</span></h3>
+        <p style="max-width: 600px;">RA033 is a premium motorcycle logistics mission designed for executives who prioritize precision and luxury. By removing the friction of airport handovers, luggage flow, and machine staging, JetMyMoto allows you to focus entirely on the technical core of the Alps. This is an elite execution of the highest alpine corridor in Europe, managed by our professional operations team.</p>
         
         <div class="grid" style="margin-top: 40px;">
             <div class="col-12">
-                <div class="card" style="background: transparent; padding: 0; border: none;">
-                    <div class="stat-label" style="margin-bottom: 20px;">Primary Objectives & Strategic Highlights</div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        {{#each highlights}}
-                        <div class="highlight-item">{{this}}</div>
-                        {{/each}}
-                    </div>
+                <div class="stat-label" style="margin-bottom: 20px;">Primary Objectives & Strategic Highlights</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    {{#each highlights}}
+                    <div class="highlight-item">{{this}}</div>
+                    {{/each}}
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <div class="mono">ATLAS SYSTEM // GENERATED INSTANCE | NODE: {{slug}} | STATUS: ACTIVE</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 02 / 08</div>
         </div>
     </div>
@@ -234,7 +267,7 @@
     <!-- PAGE 3: ROUTE INTELLIGENCE -->
     <div class="page" id="section-route">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // ROUTE BRIEFING</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // ROUTE BRIEFING</div>
         </div>
 
         <h2>NAVIGATIONAL DATA</h2>
@@ -255,26 +288,27 @@
         
         <div style="margin-top: 48px;">
             <h3>3-Phase Execution Breakdown</h3>
-            <p>Phase 01 — Alpine Entry. Rapid ascent from Geneva into the high technical sectors. Phase 02 — High Pass Technical Core. conquring the primary mountain ranges with sustained focus. Phase 03 — Mediterranean Descent. Technical descent towards the coastal extraction hub in Nice.</p>
-            <div class="map-placeholder" style="background: #050505; border-color: #333;">
-                <div class="map-grid-overlay"></div>
+            <p>Phase 01 — Alpine Entry. Rapid ascent from Geneva into the high technical sectors. Phase 02 — High Pass Technical Core. Conquering the primary mountain ranges with sustained focus. Phase 03 — Mediterranean Descent. Technical descent towards the coastal extraction hub in Nice.</p>
+            
+            <div class="map-placeholder" style="background: var(--stone); border-color: var(--stone); color: var(--ivory);">
+                <div class="map-grid-overlay" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);"></div>
                 <!-- CSS Simulated Cinematic Render -->
-                <div style="width: 280px; height: 160px; border: 1px solid #444; position: relative; background: #000; overflow: hidden; border-radius: 4px; box-shadow: 0 0 40px rgba(205, 167, 85, 0.05);">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(transparent, #CDA75515);"></div>
-                    <div style="position: absolute; top: 20%; left: 10%; width: 80%; height: 2px; background: #CDA755; opacity: 0.15;"></div>
-                    <div style="position: absolute; top: 40%; left: 20%; width: 60%; height: 1px; background: #CDA755; opacity: 0.1;"></div>
-                    <div style="position: absolute; top: 10px; right: 10px; font-size: 6px; color: #444;" class="mono">RIDER ATLAS RENDER v4.0</div>
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #222;">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <div style="width: 320px; height: 180px; border: 1px solid rgba(255,255,255,0.1); position: relative; background: #000; overflow: hidden; border-radius: 4px; box-shadow: 0 0 60px rgba(205, 167, 85, 0.1);">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(transparent, rgba(205, 167, 85, 0.15));"></div>
+                    <div style="position: absolute; top: 20%; left: 10%; width: 80%; height: 2px; background: var(--gold); opacity: 0.3;"></div>
+                    <div style="position: absolute; top: 40%; left: 20%; width: 60%; height: 1px; background: var(--gold); opacity: 0.2;"></div>
+                    <div style="position: absolute; top: 10px; right: 10px; font-size: 6px; color: #666;" class="mono">MISSION GEOMETRY RENDER v5.0</div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #333;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
                 </div>
-                <div class="mono amber" style="font-size: 11px; letter-spacing: 3px; font-weight: 700; margin-top: 20px; z-index: 1;">MAPBOX EXECUTIVE RENDER // PREVIEW MODE</div>
-                <div class="mono" style="font-size: 9px; color: #555; margin-top: 8px; text-transform: uppercase; z-index: 1;">FULL RESOLUTION GPX UNLOCKED UPON CONFIRMATION</div>
+                <div class="mono gold" style="font-size: 11px; letter-spacing: 3px; font-weight: 700; margin-top: 24px; z-index: 1;">MISSION GEOMETRY // EXECUTION PREVIEW</div>
+                <div class="mono" style="font-size: 9px; color: #888; margin-top: 8px; text-transform: uppercase; z-index: 1;">HIGH-RESOLUTION GPX UNLOCKED UPON FINAL CONFIRMATION</div>
             </div>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 03 / 08</div>
         </div>
     </div>
@@ -282,17 +316,17 @@
     <!-- PAGE 4: LOGISTICS -->
     <div class="page" id="section-logistics">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // LOGISTICS & CONCIERGE</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // LOGISTICS & CONCIERGE</div>
         </div>
 
         <h2>LOGISTICS & CONCIERGE</h2>
         <div class="grid">
             <div class="col-12">
-                <div class="card" style="border-left: 4px solid #CDA755;">
+                <div class="card" style="border-left: 4px solid var(--gold);">
                     <div class="stat-label">Verified Staging Operator</div>
                     <div class="stat-value" style="font-size: 28px; margin-bottom: 12px;">{{operator_info.name}}</div>
-                    <p class="mono" style="font-size: 11px; margin-bottom: 6px; color: #E0E0E0;">{{operator_info.address}}</p>
-                    <p class="mono amber" style="font-size: 13px; font-weight: 700;">{{operator_info.phone}}</p>
+                    <p class="mono" style="font-size: 11px; margin-bottom: 6px; color: var(--stone);">{{operator_info.address}}</p>
+                    <p class="mono gold" style="font-size: 13px; font-weight: 700;">{{operator_info.phone}}</p>
                 </div>
             </div>
             <div class="col-12" style="margin-top: 24px;">
@@ -300,25 +334,25 @@
                     <div class="col-6">
                         <div class="card">
                             <div class="stat-label">Execution Date</div>
-                            <div class="stat-value amber mono">{{deployment_date}}</div>
+                            <div class="stat-value gold mono">{{deployment_date}}</div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="card">
                             <div class="stat-label">Handover Window</div>
-                            <div class="stat-value">09:00 - 11:00 <span style="font-size: 12px; color: #444;">LOCAL</span></div>
+                            <div class="stat-value">09:00 - 11:00 <span style="font-size: 12px; color: var(--muted);">LOCAL</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div style="margin-top: 48px; padding: 20px; border: 1px solid #222; background: #080808;">
-            <p style="font-size: 12px; color: #888; margin-bottom: 0;"><strong>EXECUTIVE CONCIERGE:</strong> Your mission begins before the ride. The value of RA033 is the complete removal of airport, machine, luggage, and timing friction. Our concierge team manages the complexity so you can focus on the route.</p>
+        <div style="margin-top: 48px; padding: 24px; border: 1px solid var(--gold); background: var(--champagne); border-radius: 2px;">
+            <p style="font-size: 13px; color: var(--stone); margin-bottom: 0; line-height: 1.6;"><strong>EXECUTIVE CONCIERGE:</strong> Your mission begins before the ride. The value of RA033 is the complete removal of airport, machine, luggage, and timing friction. Our professional concierge team manages the complexity so you can focus on the route execution.</p>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 04 / 08</div>
         </div>
     </div>
@@ -326,7 +360,7 @@
     <!-- PAGE 5: HARDWARE MANIFEST -->
     <div class="page" id="section-hardware">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // HARDWARE MANIFEST</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // HARDWARE MANIFEST</div>
         </div>
 
         <h2>HARDWARE ALLOCATION</h2>
@@ -355,88 +389,89 @@
                 </div>
             </div>
             <div class="col-5">
-                <div style="background: #0A0A0A; height: 100%; border: 1px solid #1A1A1A; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;">
-                    <div style="width: 100%; height: 200px; background: #111; border: 1px solid #222; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                        <div class="mono" style="font-size: 8px; color: #444;">[ MACHINE PROFILE: BMW R1300GS ]</div>
+                <div style="background: var(--champagne); height: 100%; border: 1px solid var(--line); border-radius: 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px;">
+                    <div style="width: 100%; height: 240px; background: #FFF; border: 1px solid var(--line); border-radius: 2px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                        <div class="mono" style="font-size: 8px; color: var(--muted);">[ MACHINE PROFILE: BMW R1300GS ]</div>
                     </div>
-                    <div class="mono" style="font-size: 10px; color: #555; text-align: center;">ASSET CLASS: 12.A // ADVENTURE TOURING</div>
+                    <div class="mono" style="font-size: 10px; color: var(--stone); text-align: center; font-weight: 600;">ASSET CLASS: 12.A // ADVENTURE TOURING</div>
+                    <div class="mono" style="font-size: 8px; color: var(--gold); margin-top: 8px;">VERIFIED FOR ALPINE CORRIDORS</div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 05 / 08</div>
         </div>
     </div>
 
-    <!-- PAGE 6: WAYPOINT INTEL -->
+    <!-- PAGE 6: SECTOR ANALYSIS -->
     <div class="page" id="section-waypoints">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // WAYPOINT INTEL</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // SECTOR ANALYSIS</div>
         </div>
 
-        <h2>SECTOR ANALYSIS</h2>
+        <h2>SECTOR INTELLIGENCE</h2>
         <div class="grid">
             <div class="col-12">
-                <div class="card">
+                <div class="card" style="background: #FFF;">
                     <div class="stat-label">Phase 1: Alpine Entry & Initial Climb</div>
-                    <h4 style="color: #FFF; margin-bottom: 8px;">Geneva to Col de l'Iseran</h4>
-                    <p style="font-size: 12px; margin-bottom: 8px;"><strong>Riding Character:</strong> Sweeping valley roads transitioning into tight high-altitude switchbacks. Expect significant temperature drops.</p>
-                    <p style="font-size: 11px; color: #666; margin-bottom: 0;"><strong>Logistics Note:</strong> Primary fuel stop at Val d'Isère. Gastronomy anchor: L'Atelier d'Edmond (2-Star Michelin) recommended for overnight recovery.</p>
+                    <h4 style="margin-bottom: 8px;">Geneva to Col de l'Iseran</h4>
+                    <p style="font-size: 12px; margin-bottom: 8px; color: var(--stone);"><strong>Riding Character:</strong> Sweeping valley roads transitioning into tight high-altitude switchbacks. Expect significant temperature drops as you ascend into the high technical sectors.</p>
+                    <p style="font-size: 11px; color: var(--muted); margin-bottom: 0;"><strong>Logistics Note:</strong> Primary fuel stop at Val d'Isère. Gastronomy anchor: L'Atelier d'Edmond (2-Star Michelin) recommended for overnight recovery.</p>
                 </div>
             </div>
             <div class="col-12">
-                <div class="card">
+                <div class="card" style="background: var(--champagne);">
                     <div class="stat-label">Phase 2: High Pass Technical Core</div>
-                    <h4 style="color: #FFF; margin-bottom: 8px;">Val d'Isère to Briançon</h4>
-                    <p style="font-size: 12px; margin-bottom: 8px;"><strong>Riding Character:</strong> Sustained technical concentration. The core of the mission. Col du Galibier requires precise throttle control.</p>
-                    <p style="font-size: 11px; color: #666; margin-bottom: 0;"><strong>Logistics Note:</strong> Fatigue management is critical here. Recovery stop at Briançon old town. POI: Cité Vauban (UNESCO World Heritage).</p>
+                    <h4 style="margin-bottom: 8px;">Val d'Isère to Briançon</h4>
+                    <p style="font-size: 12px; margin-bottom: 8px; color: var(--stone);"><strong>Riding Character:</strong> Sustained technical concentration. The core of the mission. Col du Galibier requires precise throttle control and absolute focus.</p>
+                    <p style="font-size: 11px; color: var(--muted); margin-bottom: 0;"><strong>Logistics Note:</strong> Fatigue management is critical here. Recovery stop at Briançon old town. POI: Cité Vauban (UNESCO World Heritage).</p>
                 </div>
             </div>
             <div class="col-12">
-                <div class="card">
+                <div class="card" style="background: #FFF;">
                     <div class="stat-label">Phase 3: Mediterranean Descent</div>
-                    <h4 style="color: #FFF; margin-bottom: 8px;">Briançon to Nice Coastal Arrival</h4>
-                    <p style="font-size: 12px; margin-bottom: 8px;"><strong>Riding Character:</strong> Transitions from jagged alpine peaks to the softer, warmer air of the Mercantour. Coastal arrival in Nice.</p>
-                    <p style="font-size: 11px; color: #666; margin-bottom: 0;"><strong>Logistics Note:</strong> Final exit at Nice Airport hub. Overnight anchor: Hotel Negresco for post-mission debrief.</p>
+                    <h4 style="margin-bottom: 8px;">Briançon to Nice Coastal Arrival</h4>
+                    <p style="font-size: 12px; margin-bottom: 8px; color: var(--stone);"><strong>Riding Character:</strong> Transitions from jagged alpine peaks to the softer, warmer air of the Mercantour. Technical descent towards the coastal extraction hub in Nice.</p>
+                    <p style="font-size: 11px; color: var(--muted); margin-bottom: 0;"><strong>Logistics Note:</strong> Final exit at Nice Airport hub. Overnight anchor: Hotel Negresco for post-mission debrief and recovery.</p>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 06 / 08</div>
         </div>
     </div>
 
-    <!-- PAGE 7: SAFETY & CONCIERGE -->
+    <!-- PAGE 7: DEPLOYMENT OPTIONS -->
     <div class="page" id="section-safety">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // EXECUTION & SUPPORT</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // DEPLOYMENT OPTIONS</div>
         </div>
 
-        <h2>EXECUTION OPTIONS</h2>
+        <h2>DECISION FRAMEWORK</h2>
         <div class="grid" style="margin-bottom: 40px;">
             <div class="col-4">
-                <div class="card" style="padding: 20px; text-align: center; border-color: #222;">
-                    <div class="mono amber" style="font-size: 10px; margin-bottom: 8px;">01</div>
+                <div class="card" style="padding: 24px; text-align: center; background: #FFF;">
+                    <div class="mono gold" style="font-size: 10px; margin-bottom: 12px;">01</div>
                     <div class="mono" style="font-size: 11px; font-weight: 700; letter-spacing: 1px;">LOCAL RENTAL</div>
-                    <p style="font-size: 8px; color: #444; margin-top: 8px; margin-bottom: 0;">FASTEST ENTRY. CONVENIENT BUT LESS CONTROL OVER EXACT MACHINE SPECIFICATION.</p>
+                    <p style="font-size: 9px; color: var(--muted); margin-top: 12px; margin-bottom: 0; line-height: 1.4;">FASTEST ENTRY. CONVENIENT BUT LESS CONTROL OVER EXACT MACHINE SPECIFICATION AND ACCESSORIES.</p>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card" style="padding: 20px; text-align: center; border-color: #CDA755; background: #0F0F0F;">
-                    <div class="mono amber" style="font-size: 10px; margin-bottom: 8px;">02</div>
+                <div class="card" style="padding: 24px; text-align: center; border-color: var(--gold); background: var(--champagne); box-shadow: 0 8px 24px rgba(205, 167, 85, 0.1);">
+                    <div class="mono gold" style="font-size: 10px; margin-bottom: 12px;">02</div>
                     <div class="mono" style="font-size: 11px; font-weight: 700; letter-spacing: 1px;">JETMYMOTO AIRLIFT</div>
-                    <div style="font-size: 8px; color: #CDA755; margin-top: 8px; margin-bottom: 0;">HIGHEST CONTROL. YOUR OWN MACHINE MEETS YOU AT THE START HUB.</div>
+                    <p style="font-size: 9px; color: var(--stone); margin-top: 12px; margin-bottom: 0; line-height: 1.4; font-weight: 600;">HIGHEST CONTROL. YOUR OWN MACHINE MEETS YOU AT THE START HUB, PREPPED BY OUR TEAM.</p>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card" style="padding: 20px; text-align: center; border-color: #222;">
-                    <div class="mono amber" style="font-size: 10px; margin-bottom: 8px;">03</div>
+                <div class="card" style="padding: 24px; text-align: center; background: #FFF;">
+                    <div class="mono gold" style="font-size: 10px; margin-bottom: 12px;">03</div>
                     <div class="mono" style="font-size: 11px; font-weight: 700; letter-spacing: 1px;">HYBRID EXECUTION</div>
-                    <p style="font-size: 8px; color: #444; margin-top: 8px; margin-bottom: 0;">PRE-SELECTED RENTAL MACHINE PLUS JETMYMOTO LOGISTICS AND LUGGAGE LAYER.</p>
+                    <p style="font-size: 9px; color: var(--muted); margin-top: 12px; margin-bottom: 0; line-height: 1.4;">PRE-SELECTED RENTAL MACHINE PLUS JETMYMOTO LOGISTICS AND LUGGAGE LAYER.</p>
                 </div>
             </div>
         </div>
@@ -444,86 +479,81 @@
         <h2>SUPPORT PROTOCOLS</h2>
         <div class="grid">
             <div class="col-12">
-                <div class="card" style="background: #0A0A0A; border-color: #1A1A1A; padding: 20px;">
-                    <h3 style="color: #CDA755; font-size: 18px;">Concierge Assistance</h3>
-                    <ul style="list-style: none; margin-top: 16px;">
-                        <li style="margin-bottom: 8px; border-left: 2px solid #CDA755; padding: 8px 16px; background: rgba(205,167,85,0.03);">
-                            <div class="stat-label" style="color: #CDA755; font-size: 8px;">Support 01</div>
-                            <div style="font-weight: 600; font-size: 12px;">24/7 Digital Concierge via Rider Atlas App</div>
-                        </li>
-                        <li style="margin-bottom: 8px; border-left: 2px solid #CDA755; padding: 8px 16px; background: rgba(205,167,85,0.03);">
-                            <div class="stat-label" style="color: #CDA755; font-size: 8px;">Support 02</div>
-                            <div style="font-weight: 600; font-size: 12px;">Direct Line to JetMyMoto Operations</div>
-                        </li>
-                    </ul>
+                <div class="card" style="padding: 32px;">
+                    <h3 style="color: var(--stone); font-size: 18px; margin-bottom: 24px;">Concierge Assistance</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div style="border-left: 2px solid var(--gold); padding: 12px 20px; background: var(--ivory);">
+                            <div class="stat-label" style="color: var(--gold); font-size: 8px;">Support 01</div>
+                            <div style="font-weight: 700; font-size: 13px; color: var(--stone);">24/7 Digital Concierge via Rider Atlas</div>
+                        </div>
+                        <div style="border-left: 2px solid var(--gold); padding: 12px 20px; background: var(--ivory);">
+                            <div class="stat-label" style="color: var(--gold); font-size: 8px;">Support 02</div>
+                            <div style="font-weight: 700; font-size: 13px; color: var(--stone);">Direct Line to JetMyMoto Operations</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div style="margin-top: 30px;">
+        <div style="margin-top: 40px; border-top: 1px solid var(--line); padding-top: 32px;">
             <h3 style="font-size: 18px;">Environmental Awareness</h3>
-            <p style="font-size: 12px;">Alpine weather systems are dynamic. We recommend technical multi-layer gear to manage temperature variance from valley floor to the 2,770m summits.</p>
+            <p style="font-size: 12px; max-width: 600px;">Alpine weather systems are dynamic. We recommend technical multi-layer gear to manage temperature variance from valley floor to the 2,770m summits. Our operations team provides live updates on pass conditions.</p>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 07 / 08</div>
         </div>
     </div>
 
-    <!-- PAGE 8: MISSION PACKAGE & LEGAL -->
-    <div class="page" id="section-legal">
+    <!-- PAGE 8: MISSION PACKAGE -->
+    <div class="page dark" id="section-package">
         <div class="header" style="margin-bottom: 40px;">
-            <div class="brand amber mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // MISSION PACKAGE</div>
+            <div class="brand gold mono" style="font-size: 12px; letter-spacing: 4px;">{{slug}} // MISSION PACKAGE</div>
         </div>
 
         <h2>MISSION PACKAGE INCLUDES</h2>
-        <div class="card" style="padding: 0; margin-bottom: 40px;">
-            <div class="package-item">
+        <div class="card" style="padding: 0; margin-bottom: 40px; background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
+            <div class="package-item" style="border-bottom-color: rgba(255,255,255,0.1);">
                 <div>
-                    <h4 class="amber" style="font-size: 12px;">✔ VERIFIED: GPX ROUTE TELEMETRY</h4>
-                    <div style="font-size: 10px; color: #555;">Precision navigation data for Garmin / BMW Connected</div>
+                    <h4 class="gold" style="font-size: 12px;">✔ VERIFIED: GPX ROUTE TELEMETRY</h4>
+                    <div style="font-size: 10px; color: #888; margin-top: 4px;">Precision navigation data for Garmin / BMW Connected</div>
+                </div>
+            </div>
+            <div class="package-item" style="border-bottom-color: rgba(255,255,255,0.1);">
+                <div>
+                    <h4 class="gold" style="font-size: 12px;">✔ ACTIVE: AIRPORT HANDOVER & LUGGAGE FLOW</h4>
+                    <div style="font-size: 10px; color: #888; margin-top: 4px;">Seamless transition from terminal to machine</div>
+                </div>
+            </div>
+            <div class="package-item" style="border-bottom-color: rgba(255,255,255,0.1);">
+                <div>
+                    <h4 style="font-size: 12px; color: #EEE;">✔ INCLUDED: RIDER ATLAS MISSION ACCESS</h4>
+                    <div style="font-size: 10px; color: #888; margin-top: 4px;">Full digital dossier and live corridor updates</div>
+                </div>
+            </div>
+            <div class="package-item" style="border-bottom-color: rgba(255,255,255,0.1);">
+                <div>
+                    <h4 style="font-size: 12px; color: #EEE;">✔ QUEUED: CINEMATIC MISSION REEL</h4>
+                    <div style="font-size: 10px; color: #888; margin-top: 4px;">High-resolution visual summary of your execution</div>
                 </div>
             </div>
             <div class="package-item">
                 <div>
-                    <h4 class="amber" style="font-size: 12px;">✔ ACTIVE: AIRPORT HANDOVER & LUGGAGE FLOW</h4>
-                    <div style="font-size: 10px; color: #555;">Seamless transition from terminal to machine</div>
-                </div>
-            </div>
-            <div class="package-item">
-                <div>
-                    <h4 style="font-size: 12px; color: #BBB;">✔ INCLUDED: RIDER ATLAS MISSION ACCESS</h4>
-                    <div style="font-size: 10px; color: #777;">Full digital dossier and live corridor updates</div>
-                </div>
-            </div>
-            <div class="package-item">
-                <div>
-                    <h4 style="font-size: 12px; color: #BBB;">✔ QUEUED: CINEMATIC MISSION REEL</h4>
-                    <div style="font-size: 10px; color: #777;">High-resolution visual summary of your execution</div>
-                </div>
-            </div>
-            <div class="package-item">
-                <div>
-                    <h4 style="font-size: 12px; color: #BBB;">✔ GRANTED: PRIORITY ACCESS</h4>
-                    <div style="font-size: 10px; color: #777;">Early notification for future A2A alpine missions</div>
+                    <h4 style="font-size: 12px; color: #EEE;">✔ GRANTED: PRIORITY ACCESS</h4>
+                    <div style="font-size: 10px; color: #888; margin-top: 4px;">Early notification for future premium A2A missions</div>
                 </div>
             </div>
         </div>
 
-        <h2>DISCLOSURES</h2>
-        <div class="card" style="margin-top: 20px; padding: 20px;">
-            <p style="font-size: 10px; line-height: 1.6; color: #666; margin-bottom: 0;">This document serves as an executive briefing and does not replace the standard rental or service agreements. All logistics are subject to local operator availability and technical compliance.</p>
-        </div>
-        
-        <div style="margin-top: 50px; text-align: center;">
-            <div class="mono" style="font-size: 10px; letter-spacing: 4px; color: #333; text-transform: uppercase;">PREPARED BY JETMYMOTO OPERATIONS</div>
-            <div style="margin-top: 15px; font-size: 28px; font-weight: 800; color: #CDA755; letter-spacing: 2px;">[ CONFIRMED ]</div>
-            <div class="mono" style="font-size: 8px; color: #222; margin-top: 10px;">REFERENCE: {{booking_ref}}-{{slug}}-LUXURY</div>
+        <div style="background: rgba(205, 167, 85, 0.05); border: 1px solid var(--gold); padding: 32px; border-radius: 2px; text-align: center; margin-top: 64px;">
+            <div class="mono gold" style="font-size: 10px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 16px;">PREPARED BY JETMYMOTO OPERATIONS</div>
+            <div style="font-size: 32px; font-weight: 800; color: var(--ivory); letter-spacing: 2px;">[ MISSION CONFIRMED ]</div>
+            <div class="mono" style="font-size: 9px; color: #666; margin-top: 16px;">REFERENCE: {{booking_ref}}-{{slug}}-EXECUTIVE-IVORY</div>
         </div>
 
         <div class="footer">
-            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | STATUS: CONFIRMED</div>
+            <div class="mono">JETMYMOTO OPERATIONS | NODE: {{slug}} | PREPARED BY JETMYMOTO OPERATIONS</div>
             <div class="mono">PAGE 08 / 08</div>
         </div>
     </div>
