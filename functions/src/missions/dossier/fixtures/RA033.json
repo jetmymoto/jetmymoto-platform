@@ -4,15 +4,15 @@
   "continent": "europe",
   "insertion_airport": "GVA",
   "extraction_airport": "NCE",
-  "theater": "alps",
+  "theater": "Alpine Corridor",
   "distance_km": 700,
   "duration_days": "3-5",
-  "cinematic_pitch": "High-altitude technical strike. 700km of pure alpine gravity. Execution requires 100% focus from insertion to extraction.",
+  "cinematic_pitch": "Land in Geneva. Ride the highest alpine corridor in Europe. Exit through Nice. RA033 is a 700 km A2A motorcycle mission built for riders who want the Alps without the logistics friction.",
   "highlights": [
-    "Col de l'Iseran: Tactical summit at 2,770m. Thin air. Technical hairpins.",
-    "Col de la Bonette: Strategic apex of Europe. Zero margin for error.",
-    "Geneva to Nice: Total theater dominance. 17 major passes.",
-    "Alpine Isolation: High-precision navigation required."
+    "Col de l'Iseran: The highest paved pass in the Alps at 2,770m. A masterpiece of technical engineering.",
+    "Col de la Bonette: Reach the strategic apex of Europe with panoramic mediterranean views.",
+    "Geneva to Nice: A seamless traverse of 17 major passes with precision logistics.",
+    "Alpine Executive: Curated route corridors with verified recovery and gastronomy anchors."
   ],
   "operator_info": {
     "name": "EagleRider Geneva",
@@ -20,8 +20,8 @@
     "phone": "+41 22 717 80 00"
   },
   "deployment_date": "2026-06-15",
-  "booking_ref": "RA033-PROTOTYPE",
+  "booking_ref": "RA033-EXECUTIVE",
   "rider_name": "ALEX RIDER",
-  "rider_archetype": "ALPINE APEX RIDER",
+  "rider_archetype": "EXECUTIVE RIDER",
   "selected_bike": "BMW R 1300 GS (TRIPLE BLACK)"
 }

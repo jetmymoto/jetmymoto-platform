@@ -146,3 +146,13 @@
 - restore session context quickly
 - reduce repeated token usage
 - keep future sessions architecture-aware without restating the full spec
+- **Log execution:** After each executed prompt under the "33" context, update this file by appending a timestamp and a short summary of the executed commands.
+
+## Execution Log
+- `2026-03-31 16:17:34 UTC` - Context restored via shortcut 33. Ready for further instructions.
+- `2026-03-31 21:20:39 UTC` - Context restored via shortcut 33. Ready for further instructions.
+- `2026-04-01 10:00:00 UTC` - Executed Luxury UI/UX Audit and full cinematic refactor of `RideRoutePage.jsx`. Transitioned UI from "Tactical Data" to "Luxury Editorial" using Serif typography, curated fleet logic (Max 3), and Framer Motion animations. Verified build stability.
+- `2026-04-04 21:25:45 UTC` - Context restored via shortcut 33. Fixed rental cards missing the right model images by rewriting deterministic image fallback generation to use the '13clean' dataset instead of the broken '14cinematic' path.
+\n- Sat Apr  4 23:11:17 UTC 2026: Successfully prototyped background removal for 5 images from '13clean_export/' using 'rembg' and 'sharp'. Results stored in '16studio_prototypes_local/'.
+\n- Sat Apr  4 23:12:01 UTC 2026: Attempted Imagen 3 Generative AI prototype, but failed due to 'aiplatform.endpoints.predict' IAM permission denied on the GCP project. This reinforces Option 1 (Background Removal) as the most viable path forward.
+- 2026-05-02 16:06:58 UTC - Executed Wave 4D — Executive Luxury Rewrite for RA033 Mission Dossier. Transformed tactical/military tone into executive concierge briefing. Updated RA033.json fixture and mission-dossier-template.html. Regenerated and uploaded PDF to GCS.
