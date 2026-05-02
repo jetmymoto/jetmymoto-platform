@@ -1,0 +1,24 @@
+{
+  "slug": "RA033",
+  "title": "Route des Grandes Alpes",
+  "continent": "europe",
+  "insertion_airport": "GVA",
+  "extraction_airport": "NCE",
+  "theater": "alps",
+  "distance_km": 700,
+  "duration_days": "3-5",
+  "cinematic_pitch": "The legendary Route des Grandes Alpes. From the shores of Lake Geneva to the Mediterranean coast at Nice. Crossing the highest passes in Europe including the Col de l'Iseran and Col de la Bonette.",
+  "highlights": [
+    "Col de l'Iseran — the highest paved pass in the Alps",
+    "Col de la Bonette — the highest road in Europe",
+    "Lake Geneva to Nice — from the peaks to the palms",
+    "17 major mountain passes in one continuous line"
+  ],
+  "operator_info": {
+    "name": "EagleRider Geneva",
+    "address": "Route de l'Aeroport 21, 1215 Geneva, Switzerland",
+    "phone": "+41 22 717 80 00"
+  },
+  "deployment_date": "2026-06-15",
+  "booking_ref": "RA033-PROTOTYPE"
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Dossier - {{slug}}</title>
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #050505;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Print Setup */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            body { background: #050505; -webkit-print-color-adjust: exact; }
+            .page { page-break-after: always; }
+        }
+
+        /* Layout Primitives */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+            border-bottom: 1px solid #1A1A1A;
+        }
+
+        .amber { color: #CDA755; }
+        .mono { font-family: "SF Mono", "Monaco", "Inconsolata", "Courier New", monospace; }
+
+        /* Typography */
+        h1 { font-size: 48px; font-weight: 800; letter-spacing: -1px; line-height: 1.1; margin-bottom: 24px; color: #FFFFFF; }
+        h2 { font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #CDA755; margin-bottom: 16px; border-bottom: 1px solid #333; padding-bottom: 8px; }
+        h3 { font-size: 24px; font-weight: 700; color: #FFFFFF; margin-bottom: 12px; }
+        p { margin-bottom: 16px; color: #BBBBBB; }
+
+        /* Grid */
+        .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-8 { grid-column: span 8; }
+        .col-12 { grid-column: span 12; }
+
+        /* Components */
+        .card { background: #111111; padding: 24px; border: 1px solid #222; border-radius: 4px; }
+        .stat-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 4px; }
+        .stat-value { font-size: 18px; font-weight: 700; color: #FFFFFF; }
+
+        .tag { display: inline-block; padding: 4px 12px; background: #CDA755; color: #000; font-size: 10px; font-weight: 700; text-transform: uppercase; border-radius: 2px; margin-right: 8px; }
+
+        /* Sections */
+        .header { margin-bottom: 64px; }
+        .footer { position: absolute; bottom: 40px; left: 40px; right: 40px; border-top: 1px solid #222; padding-top: 16px; font-size: 10px; color: #444; display: flex; justify-content: space-between; }
+
+        /* Section 1: Hero */
+        #section-hero { display: flex; flex-direction: column; justify-content: center; height: 100%; }
+        
+        /* Section 2: Intel */
+        #section-intel { }
+
+        /* Section 3: Route */
+        #section-route { }
+
+        /* Section 4: Logistics */
+        #section-logistics { }
+
+        /* Section 5: Hardware */
+        #section-hardware { }
+
+        /* Section 6: Waypoints */
+        #section-waypoints { }
+
+        /* Section 7: Safety */
+        #section-safety { }
+
+        /* Section 8: Legal/Footer */
+        #section-legal { }
+
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: HERO & MISSION OVERVIEW -->
+    <div class="page" id="section-hero">
+        <div class="header">
+            <div class="brand amber mono" style="font-size: 14px; letter-spacing: 6px;">JETMYMOTO / RIDER ATLAS</div>
+            <div class="ref mono" style="font-size: 10px; color: #666; margin-top: 8px;">Dossier ID: {{booking_ref}}</div>
+        </div>
+        
+        <div style="flex-grow: 1;">
+            <h2>MISSION BRIEFING</h2>
+            <h1>{{title}}</h1>
+            <p style="font-size: 18px; line-height: 1.6; max-width: 600px;">{{cinematic_pitch}}</p>
+            
+            <div class="grid" style="margin-top: 48px;">
+                <div class="col-4">
+                    <div class="stat-label">Mission ID</div>
+                    <div class="stat-value amber mono">{{slug}}</div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-label">Total Distance</div>
+                    <div class="stat-value">{{distance_km}} KM</div>
+                </div>
+                <div class="col-4">
+                    <div class="stat-label">Duration</div>
+                    <div class="stat-value">{{duration_days}} DAYS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 01 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: STRATEGIC INTEL -->
+    <div class="page" id="section-intel">
+        <h2>STRATEGIC INTEL</h2>
+        <h3>Mission Theater: <span class="amber">{{theater}}</span></h3>
+        <p>Tactical evaluation of the Route des Grandes Alpes indicates high-altitude technical sectors with extreme temperature variance. Execution requires precision mountain navigation.</p>
+        
+        <div class="grid" style="margin-top: 32px;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="stat-label">Mission Highlights</div>
+                    <ul style="list-style: none; margin-top: 16px;">
+                        {{#each highlights}}
+                        <li style="margin-bottom: 12px; border-left: 2px solid #CDA755; padding-left: 16px;">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 02 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: ROUTE INTELLIGENCE -->
+    <div class="page" id="section-route">
+        <h2>ROUTE INTELLIGENCE</h2>
+        <div class="grid">
+            <div class="col-6">
+                <div class="card">
+                    <div class="stat-label">Insertion Point</div>
+                    <div class="stat-value">{{insertion_airport}}</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="stat-label">Extraction Point</div>
+                    <div class="stat-value">{{extraction_airport}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 48px;">
+            <h3>Terrain Analysis</h3>
+            <p>The mission transitions through multiple climatic zones. Expect high-grip tarmac in lower sectors, transitioning to technical switchbacks at summits.</p>
+            <div style="background: #1A1A1A; height: 300px; border-radius: 4px; display: flex; align-items: center; justify-content: center; border: 1px dashed #333;">
+                <div class="mono amber" style="font-size: 12px; letter-spacing: 2px;">MAP DATA NOT LOADED — INLINE GEOMETRY REQUIRED</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 03 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: LOGISTICS -->
+    <div class="page" id="section-logistics">
+        <h2>LOGISTICS & COMMAND</h2>
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <div class="stat-label">Operator Info</div>
+                    <div class="stat-value" style="font-size: 24px; margin-bottom: 8px;">{{operator_info.name}}</div>
+                    <p class="mono" style="font-size: 12px; margin-bottom: 4px;">{{operator_info.address}}</p>
+                    <p class="mono amber" style="font-size: 12px;">{{operator_info.phone}}</p>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 24px;">
+                <div class="card">
+                    <div class="stat-label">Deployment Timeline</div>
+                    <div class="grid" style="margin-top: 16px;">
+                        <div class="col-6">
+                            <div class="stat-label">Handover</div>
+                            <div class="stat-value">{{deployment_date}} 09:00</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-label">Extraction</div>
+                            <div class="stat-value">TBD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 04 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: HARDWARE MANIFEST -->
+    <div class="page" id="section-hardware">
+        <h2>HARDWARE MANIFEST</h2>
+        <div class="grid">
+            <div class="col-8">
+                <h3>Recommended Asset</h3>
+                <p>The <strong>BMW R1300GS</strong> or <strong>Ducati Multistrada V4</strong> is recommended for this mission due to its asymmetric performance capabilities across varied alpine sectors.</p>
+                <div style="margin-top: 24px;">
+                    <span class="tag">Technical</span>
+                    <span class="tag">Alpine</span>
+                    <span class="tag">Endurance</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="background: #111; height: 150px; border: 1px solid #333; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                    <div class="mono" style="font-size: 8px; color: #444;">ASSET PREVIEW</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 05 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: WAYPOINT INTEL -->
+    <div class="page" id="section-waypoints">
+        <h2>WAYPOINT INTEL</h2>
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <div class="stat-label">Sector 1: Lake Geneva to Col de l'Iseran</div>
+                    <p style="font-size: 12px; margin-top: 8px;">Initial insertion followed by a rapid climb into the high mountains. Focus on fuel management and tire heat.</p>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 16px;">
+                <div class="card">
+                    <div class="stat-label">Sector 2: Val d'Isère to Briançon</div>
+                    <p style="font-size: 12px; margin-top: 8px;">Technical hairpins and high-exposure cliffs. Maintain visual scanning for mountain fauna and gravel patches.</p>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 16px;">
+                <div class="card">
+                    <div class="stat-label">Sector 3: Briançon to Nice</div>
+                    <p style="font-size: 12px; margin-top: 8px;">The final descent through the Gorges du Cians and the Verdon fringe. Temperature will rise significantly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 06 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: SAFETY & PROCEDURES -->
+    <div class="page" id="section-safety">
+        <h2>SAFETY & PROCEDURES</h2>
+        <div class="grid">
+            <div class="col-12">
+                <h3>Emergency Extraction</h3>
+                <p>In the event of hardware failure or medical emergency, utilize the following protocol:</p>
+                <ul style="list-style: none; margin-top: 16px;">
+                    <li style="margin-bottom: 8px; border-left: 2px solid #CDA755; padding-left: 16px;">Contact local emergency services (112)</li>
+                    <li style="margin-bottom: 8px; border-left: 2px solid #CDA755; padding-left: 16px;">Notify JetMyMoto Concierge immediately</li>
+                    <li style="margin-bottom: 8px; border-left: 2px solid #CDA755; padding-left: 16px;">Secure the asset if safe to do so</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 07 / 08</div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: LEGAL & CONFIRMATION -->
+    <div class="page" id="section-legal">
+        <h2>LEGAL & CONFIRMATION</h2>
+        <div class="card" style="margin-top: 32px;">
+            <h3>Terms of Deployment</h3>
+            <p style="font-size: 11px; line-height: 1.4;">This document is a tactical dossier and does not constitute a legal rental agreement. The legal agreement must be signed with the verified operator at the time of insertion. JetMyMoto acts as a logistics and command facilitator only.</p>
+            <p style="font-size: 11px; line-height: 1.4; margin-top: 12px;">By proceeding with this mission, the operative acknowledges the inherent risks of high-altitude mountain travel and assumes all responsibility for hardware management and safety.</p>
+        </div>
+        
+        <div style="margin-top: 64px; text-align: center;">
+            <div class="mono" style="font-size: 12px; letter-spacing: 4px; color: #444;">MISSION VALIDATED BY JETMYMOTO CMD</div>
+            <div style="margin-top: 16px; font-size: 24px; font-weight: 800; color: #CDA755;">CMD-APPROVED</div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO TACTICAL OPERATIONS</div>
+            <div class="mono">PAGE 08 / 08</div>
+        </div>
+    </div>
+
+</body>
+</html>
