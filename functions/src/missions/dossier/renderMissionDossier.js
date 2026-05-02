@@ -84,10 +84,11 @@ async function render() {
     if (SHOULD_UPLOAD) {
         console.log(`[Dossier] Uploading artifacts to Firebase Storage...`);
         try {
-            const { pdfUrl, htmlUrl, pdfTarget } = await uploadMissionDossier(MISSION_ID, pdfPath, htmlPath);
+            const { pdfUrl, pdfTarget, expiryDate } = await uploadMissionDossier(MISSION_ID, pdfPath, htmlPath);
             console.log(`[Dossier] Upload Success!`);
-            console.log(`[Dossier] GCS Path: gs://factory1/${pdfTarget}`);
-            console.log(`[Dossier] Download URL: ${pdfUrl}`);
+            console.log(`[Dossier] Internal GCS Path: gs://factory1/${pdfTarget}`);
+            console.log(`[Dossier] Browser URL: ${pdfUrl}`);
+            console.log(`[Dossier] URL Expiry: ${expiryDate.toISOString()}`);
         } catch (uploadErr) {
             console.error(`[Dossier] Upload Failed:`, uploadErr.message);
             // Don't exit(1) if local render was successful, but log the error

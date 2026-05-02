@@ -46,19 +46,21 @@ async function uploadMissionDossier(missionId, pdfPath, htmlPath) {
         }
     });
 
-    // Generate Signed URLs (preferred if private, but user also said "return a usable URL")
-    // We'll generate a signed URL with a long expiration for verification.
+    // Generate Signed URLs with 7-day expiration (production-safe window)
+    const expiryDate = new Date();
+    expiryDate.setDate(expiryDate.getDate() + 7);
+
     const [pdfUrl] = await bucket.file(pdfTarget).getSignedUrl({
         action: 'read',
-        expires: '03-01-2500' // Far future
+        expires: expiryDate
     });
 
     const [htmlUrl] = await bucket.file(htmlTarget).getSignedUrl({
         action: 'read',
-        expires: '03-01-2500'
+        expires: expiryDate
     });
 
-    return { pdfUrl, htmlUrl, pdfTarget, htmlTarget };
+    return { pdfUrl, htmlUrl, pdfTarget, htmlTarget, expiryDate };
 }
 
 module.exports = {
