@@ -1,0 +1,98 @@
+[
+  {
+    "source_platform": "BikesBooking",
+    "target_url": "https://bikesbooking.com/en/sitemap/",
+    "target_type": "city_search_url",
+    "mapped_airports": ["MIA", "LAX", "MXP", "BCN"],
+    "country": "Global",
+    "city": "Multi-City",
+    "scrape_method": "sitemap",
+    "legal_scrape_risk": "low",
+    "priority_score": 1,
+    "notes": "Exhaustive global directory sitemap. Low extraction friction."
+  },
+  {
+    "source_platform": "Riderly",
+    "target_url": "https://riderly.com/rental-locations/",
+    "target_type": "city_search_url",
+    "mapped_airports": ["LAX", "VGT", "MXP"],
+    "country": "Global",
+    "city": "Multi-City",
+    "scrape_method": "requests",
+    "legal_scrape_risk": "low",
+    "priority_score": 2,
+    "notes": "Predictable SSR URL taxonomy for massive city coverage."
+  },
+  {
+    "source_platform": "IMTBike",
+    "target_url": "https://imtbike.com/motorcycle-rentals/",
+    "target_type": "inventory_url",
+    "mapped_airports": ["BCN", "MAD", "LIS"],
+    "country": "Spain",
+    "city": "Barcelona",
+    "scrape_method": "requests",
+    "legal_scrape_risk": "low",
+    "priority_score": 4,
+    "notes": "Static public HTML tables fielding premium Iberian BMW fleet data."
+  },
+  {
+    "source_platform": "EagleRider",
+    "target_url": "https://www.eaglerider.com/offers",
+    "target_type": "deals_url",
+    "mapped_airports": ["LAX", "LAS", "MIA"],
+    "country": "USA",
+    "city": "Multi-City",
+    "scrape_method": "requests",
+    "legal_scrape_risk": "medium",
+    "priority_score": 6,
+    "notes": "High-value promotional pricing data, waivers, and specials."
+  },
+  {
+    "source_platform": "Hertz Ride",
+    "target_url": "https://www.hertzride.com/en/locations/",
+    "target_type": "city_search_url",
+    "mapped_airports": ["MXP", "MUC", "LAX"],
+    "country": "Global",
+    "city": "Multi-City",
+    "scrape_method": "playwright",
+    "legal_scrape_risk": "medium",
+    "priority_score": 5,
+    "notes": "Premier BMW provider. Captures fixed depot location contexts."
+  },
+  {
+    "source_platform": "HP Motorrad",
+    "target_url": "https://www.hpmotorrad.com/experience/ducati-rent/",
+    "target_type": "city_search_url",
+    "mapped_airports": ["MXP", "FCO"],
+    "country": "Italy",
+    "city": "Milan",
+    "scrape_method": "requests",
+    "legal_scrape_risk": "low",
+    "priority_score": 8,
+    "notes": "Official Ducati agency hubs. Static HTML list extraction."
+  },
+  {
+    "source_platform": "Motoroads",
+    "target_url": "https://www.motoroads.com/motorcycle-rental-milan-italy.html",
+    "target_type": "inventory_url",
+    "mapped_airports": ["MXP"],
+    "country": "Italy",
+    "city": "Milan",
+    "scrape_method": "requests",
+    "legal_scrape_risk": "low",
+    "priority_score": 12,
+    "notes": "Simple legacy HTML structure, excellent for local Italian listings."
+  },
+  {
+    "source_platform": "OK Mobility",
+    "target_url": "https://okmobility.com/en/rent/stores/spain/barcelona",
+    "target_type": "airport_pickup_url",
+    "mapped_airports": ["BCN"],
+    "country": "Spain",
+    "city": "Barcelona",
+    "scrape_method": "playwright",
+    "legal_scrape_risk": "low",
+    "priority_score": 9,
+    "notes": "Terminal 1 and Terminal 2 integrated desk operations mapping."
+  }
+]

@@ -1,10 +1,10 @@
 import { useState, useEffect, useMemo } from "react"
 import { useParams, useSearchParams } from "react-router-dom"
-import AirportTemplate from "@/features/airport/AirportTemplate"
 import { resolveAirport } from "@/utils/resolveAirport"
 import { useAirportExperience } from "@/features/airport/hooks/useAirportExperience"
-
 import { usePSeoManifest } from "@/hooks/usePSeoManifest"
+
+import AirportTemplate from "@/features/airport/AirportTemplate"
 
 export default function AirportPage() {
   const { airportCode: routeParam } = useParams()
@@ -21,7 +21,6 @@ export default function AirportPage() {
   const experience = useAirportExperience(canonicalCode);
 
   const initialRideMode = searchParams.get("mode") === "rent" ? "rent" : "bring";
-  const [intent, setIntent] = useState("moto")
 
   // 3. Fetch Premium pSEO Data using Canonical Slug
   useEffect(() => {
@@ -59,9 +58,8 @@ export default function AirportPage() {
     <AirportTemplate
       airport={premiumData?.entity || airport}
       experience={experience}
-      intent={intent}
-      setIntent={setIntent}
       initialRideMode={initialRideMode}
     />
   )
 }
+

@@ -1,0 +1,72 @@
+[
+  {
+    "city": "Miami",
+    "country": "USA",
+    "source_platform": "Riders Share",
+    "target_url": "https://www.riders-share.com/us/miami-fl",
+    "target_type": "standard_listing"
+  },
+  {
+    "city": "Los Angeles",
+    "country": "USA",
+    "source_platform": "Riders Share",
+    "target_url": "https://www.riders-share.com/us/los-angeles-ca",
+    "target_type": "standard_listing"
+  },
+  {
+    "city": "Discovered",
+    "country": "Global",
+    "source_platform": "Riderly",
+    "target_url": "https://riderly.com/rental-locations/united-arab-emirates/",
+    "target_type": "standard_listing"
+  },
+  {
+    "city": "Discovered",
+    "country": "Global",
+    "source_platform": "Riderly",
+    "target_url": "https://riderly.com/rental-locations/united-arab-emirates/dubai/",
+    "target_type": "standard_listing"
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain",
+    "source_platform": "IMTBike",
+    "target_url": "https://imtbike.com/motorcycle-rentals/",
+    "target_type": "inventory_url"
+  },
+  {
+    "city": "Multi-City",
+    "country": "USA",
+    "source_platform": "EagleRider",
+    "target_url": "https://www.eaglerider.com/offers",
+    "target_type": "deals_url"
+  },
+  {
+    "city": "Milan",
+    "country": "Italy",
+    "source_platform": "HP Motorrad",
+    "target_url": "https://www.hpmotorrad.com/experience/ducati-rent/",
+    "target_type": "city_search_url"
+  },
+  {
+    "city": "Milan",
+    "country": "Italy",
+    "source_platform": "Motoroads",
+    "target_url": "https://www.motoroads.com/motorcycle-rental-milan-italy.html",
+    "target_type": "inventory_url"
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain",
+    "source_platform": "OK Mobility",
+    "target_url": "https://okmobility.com/en/rent/stores/spain/barcelona#",
+    "target_type": "standard_listing"
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain",
+    "source_platform": "OK Mobility",
+    "target_url": "https://okmobility.com/en/rent/stores/spain/barcelona#",
+    "target_type": "standard_listing"
+  }
+]

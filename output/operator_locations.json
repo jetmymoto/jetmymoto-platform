@@ -1,0 +1,16 @@
+[
+  {
+    "source_platform": "Riders Share",
+    "city": "Miami",
+    "lat": 25.7617,
+    "lng": -80.1918,
+    "notes": "Peer-to-peer fleet across central Miami hub"
+  },
+  {
+    "source_platform": "Riders Share",
+    "city": "Los Angeles",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "notes": "Distributed regional vehicle pool"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "airport_code": "MIA",
+    "airport_name": "Miami International Airport",
+    "city": "Miami",
+    "country": "USA",
+    "lat": 25.7959,
+    "lng": -80.2870
+  },
+  {
+    "airport_code": "LAX",
+    "airport_name": "Los Angeles International Airport",
+    "city": "Los Angeles",
+    "country": "USA",
+    "lat": 33.9416,
+    "lng": -118.4085
+  },
+  {
+    "airport_code": "BUR",
+    "airport_name": "Hollywood Burbank Airport",
+    "city": "Los Angeles",
+    "country": "USA",
+    "lat": 34.2007,
+    "lng": -118.3590
+  }
+]
