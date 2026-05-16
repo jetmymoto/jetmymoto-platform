@@ -1,0 +1,59 @@
+[
+  {
+    "url": "https://www.blacktomato.com",
+    "primary_colors": [
+      "#000000",
+      "#FFFFFF",
+      "#DAA520"
+    ],
+    "font_families": [
+      "Georgia",
+      "Arial",
+      "Helvetica"
+    ]
+  },
+  {
+    "url": "https://www.aman.com",
+    "primary_colors": [
+      "#000000",
+      "#FFFFFF",
+      "#C0C0C0"
+    ],
+    "font_families": [
+      "Helvetica Neue",
+      "Roboto",
+      "Times New Roman"
+    ]
+  },
+  {
+    "url": "https://www.belmond.com",
+    "primary_colors": [
+      "#F1A651",
+      "#5C5D74",
+      "#CA6A3B"
+    ],
+    "font_families": [
+      "Serif",
+      "Arial",
+      "Verdana"
+    ]
+  },
+  {
+    "url": "https://www.abercrombiekent.com",
+    "primary_colors": [
+      "#000000",
+      "#FFFFFF",
+      "#C0C0C0"
+    ],
+    "font_families": [
+      "Serif",
+      "Sans-serif",
+      "Display"
+    ]
+  },
+  {
+    "url": "https://www.rosewoodhotels.com",
+    "primary_colors": [],
+    "font_families": []
+  }
+]

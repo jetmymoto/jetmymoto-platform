@@ -127,7 +127,7 @@ export default function WhyRidersChoose() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#070707] via-transparent to-[#070707]" />
       </div>
 
-      <div className="container mx-auto max-w-7xl px-6 md:px-12 py-20 md:py-24 relative z-10">
+      <div className="container mx-auto max-w-7xl px-6 md:px-12 py-24 md:py-32 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -177,7 +177,7 @@ export default function WhyRidersChoose() {
                 delay: i * 0.12,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="relative border-t border-white/10 pt-8"
+              className="relative pt-8"
             >
               <div className="flex items-start gap-4">
                 <div className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/10 text-amber-500 ring-1 ring-amber-500/20">

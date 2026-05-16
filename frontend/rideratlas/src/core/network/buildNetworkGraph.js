@@ -1,6 +1,7 @@
 import { AIRPORT_INDEX } from "../../features/airport/network/airportIndex";
 import { staticAirports } from "@/features/airport/data/staticAirports";
 import { staticAirportsEnriched } from "@/features/airport/data/staticAirportsEnriched";
+import { OPERATIONAL_INTEL } from "@/features/airport/data/operationalIntel";
 import { RIDE_DESTINATIONS } from "../../features/routes/data/rideDestinations";
 import { GENERATED_RIDE_ROUTES } from "../../features/routes/data/generatedRideRoutes";
 import { ENRICHED_ROUTE_INTEL } from "../../features/routes/data/enrichedRouteIntel";
@@ -45,6 +46,14 @@ const safeCompare = (a, b) => {
   return strA.localeCompare(strB);
 };
 
+function withConfidence(value, source, confidence) {
+  return {
+    value,
+    source,
+    confidence,
+  };
+}
+
 function createDefaultArrivalOS(city) {
   return {
     arrivals: [{ label: `${city} Arrivals`, note: "Follow airport signage" }],
@@ -72,11 +81,26 @@ export function buildNetworkGraph() {
     const base = AIRPORT_INDEX[airportCode];
     const ops = staticAirports[airportCode] || {};
     const enriched = staticAirportsEnriched[airportCode] || {};
+    const intel = OPERATIONAL_INTEL[airportCode] || null;
+
+    // ── Apply Confidence Tagging to Operational Intel ──
+    const taggedIntel = intel ? { ...intel } : null;
+    if (taggedIntel?.logistics_standard) {
+      const standard = taggedIntel.logistics_standard;
+      taggedIntel.logistics_standard = {
+        avg_response_time: withConfidence(standard.avg_response_time, "manual", "high"),
+        bike_ready_timing: withConfidence(standard.bike_ready_timing, "manual", "high"),
+        luggage_handling: withConfidence(standard.luggage_handling, "manual", "high"),
+        weather_support: withConfidence(standard.weather_support, "manual", "high"),
+        handover_protocol: withConfidence(standard.handover_protocol, "manual", "high"),
+      };
+    }
 
     const merged = {
       ...base,
       ...ops,
-      ...enriched
+      ...enriched,
+      ...(taggedIntel ? { operational_intel: taggedIntel } : {}),
     };
 
     if (!merged.arrivalOS) {

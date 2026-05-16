@@ -9,16 +9,41 @@ function normalizeCode(value) {
 }
 
 function normalizeSlug(value) {
-  return String(value || "").trim().toLowerCase();
+  return String(value || "").trim().toLowerCase().replace(/\s+/g, '-');
 }
 
-// Pre-built reverse index: slug → IATA code
-const SLUG_TO_CODE = Object.fromEntries(
-  Object.entries(AIRPORT_INDEX).map(([code, entry]) => [
-    normalizeSlug(entry.slug),
-    code,
-  ])
-);
+// Pre-built reverse indexes for fast deterministic lookup
+const SLUG_TO_CODE = {};
+const NAME_TO_CODE = {};
+
+Object.entries(AIRPORT_INDEX).forEach(([code, entry]) => {
+  const iata = normalizeCode(code);
+  
+  // 1. Index by slug
+  if (entry.slug) {
+    const fullSlug = normalizeSlug(entry.slug);
+    SLUG_TO_CODE[fullSlug] = iata;
+    
+    // If slug is "city-iata" (e.g. "munich-muc"), also index "city"
+    if (fullSlug.includes('-')) {
+      const parts = fullSlug.split('-');
+      if (parts[parts.length - 1].toUpperCase() === iata) {
+        const citySlug = parts.slice(0, -1).join('-');
+        SLUG_TO_CODE[citySlug] = iata;
+      }
+    }
+  }
+  
+  // 2. Index by city
+  if (entry.city) {
+    NAME_TO_CODE[normalizeSlug(entry.city)] = iata;
+  }
+  
+  // 3. Index by full name
+  if (entry.name) {
+    NAME_TO_CODE[normalizeSlug(entry.name)] = iata;
+  }
+});
 
 function createDefaultArrivalOS(city) {
   return {
@@ -30,21 +55,23 @@ function createDefaultArrivalOS(city) {
   };
 }
 
-function buildStaticFallback(code) {
-  const airportCode = normalizeCode(code);
-  const airportSlug = normalizeSlug(code);
+function buildStaticFallback(input) {
+  const iataCode = normalizeCode(input);
+  const inputSlug = normalizeSlug(input);
 
-  // Try reverse slug → code first
-  const resolvedCode = SLUG_TO_CODE[airportSlug] || airportCode;
+  // Try reverse lookup chain
+  const resolvedCode = SLUG_TO_CODE[inputSlug] || NAME_TO_CODE[inputSlug] || iataCode;
 
   const baseAirport =
     airportConfig.find((a) => {
+      const aCode = normalizeCode(a.code);
+      const aSlug = normalizeSlug(a.slug);
       return (
-        normalizeCode(a.code) === resolvedCode ||
-        normalizeSlug(a.slug) === airportSlug ||
-        normalizeSlug(a.slug) === resolvedCode.toLowerCase()
+        aCode === resolvedCode ||
+        aSlug === inputSlug ||
+        aSlug === resolvedCode.toLowerCase()
       );
-    }) || null;
+    }) || AIRPORT_INDEX[resolvedCode];
 
   if (!baseAirport) return null;
 
@@ -63,7 +90,7 @@ function buildStaticFallback(code) {
       normalizeSlug(enrichedData.slug) ||
       normalizeSlug(staticData.slug) ||
       normalizeSlug(baseAirport.slug) ||
-      airportSlug,
+      inputSlug,
   };
 
   if (!merged.arrivalOS) {
@@ -76,38 +103,37 @@ function buildStaticFallback(code) {
 }
 
 /**
- * Resolve an airport from any input format:
- *   - Direct IATA code: "CDG"
- *   - Lowercase IATA: "cdg"
- *   - Compound slug: "paris-cdg"
- *
- * Lookup chain:
- *   1. GRAPH.airports[CODE]          — direct IATA hit
- *   2. GRAPH.airportsBySlug[slug]    — slug index hit
- *   3. SLUG_TO_CODE reverse lookup   — slug → IATA → GRAPH
- *   4. Static fallback               — airportConfig + enriched data
+ * Resolve an airport from any input format (IATA, slug, or name).
+ * Chain of truth:
+ *   1. Exact IATA code match in GRAPH
+ *   2. Reverse index match (slug or city name)
+ *   3. Static fallback
+ * 
+ * @param {string} input - The identifier to resolve (e.g. "MUC", "munich", "munich-muc")
+ * @returns {object|null} The resolved canonical airport object
  */
 export function resolveAirport(input) {
   if (!input) return null;
 
-  const code = normalizeCode(input);
-  const slug = normalizeSlug(input);
+  const iataCode = normalizeCode(input);
+  const inputSlug = normalizeSlug(input);
 
-  // 1. Direct IATA code
-  const byCode = GRAPH.airports?.[code];
-  if (byCode) return byCode;
+  // 1. Check direct IATA code first (Highest Priority)
+  let airport = GRAPH.airports?.[iataCode];
+  if (airport) return airport;
 
-  // 2. Slug index
-  const bySlug = GRAPH.airportsBySlug?.[slug];
-  if (bySlug) return bySlug;
-
-  // 3. Reverse slug → IATA code → GRAPH
-  const reversedCode = SLUG_TO_CODE[slug];
-  if (reversedCode) {
-    const byReversed = GRAPH.airports?.[reversedCode];
-    if (byReversed) return byReversed;
+  // 2. Check reverse indexes
+  const resolvedCode = SLUG_TO_CODE[inputSlug] || NAME_TO_CODE[inputSlug];
+  if (resolvedCode) {
+    airport = GRAPH.airports?.[resolvedCode];
+    if (airport) return airport;
   }
 
-  // 4. Static fallback
+  // 3. Check GRAPH BySlug index
+  const bySlug = GRAPH.airportsBySlug?.[inputSlug];
+  if (bySlug) return bySlug;
+
+  // 4. Static fallback (Ensures we always return something if it exists in source)
   return buildStaticFallback(input);
 }
+

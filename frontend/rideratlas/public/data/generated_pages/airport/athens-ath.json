@@ -3,9 +3,9 @@
     "id": "ATH",
     "slug": "athens-ath",
     "type": "airport",
-    "region": "Aegean Staging",
+    "region": "Aegean Gateway & Peloponnese Entry",
     "country": "gr",
-    "summary": "Your gateway to Aegean Staging."
+    "summary": "Your gateway to Aegean Gateway & Peloponnese Entry."
   },
   "template": "AirportTemplate",
   "tokens": {
@@ -50,11 +50,11 @@
     "schema": {
       "@context": "https://schema.org",
       "@type": "Airport",
-      "description": "Your gateway to Aegean Staging.",
+      "description": "Your gateway to Aegean Gateway & Peloponnese Entry.",
       "url": "/athens-ath"
     }
   },
-  "generatedAt": "2026-04-03T20:54:05.170Z",
+  "generatedAt": "2026-05-13T21:39:54.891Z",
   "audit": {
     "passed": true,
     "violations": []

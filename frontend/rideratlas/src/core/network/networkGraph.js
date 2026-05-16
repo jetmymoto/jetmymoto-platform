@@ -80,11 +80,6 @@ export const GRAPH = {
   // ── Legacy flat access (KEEP until Phase 4) ──
   ...coreGraph,
 
-  // ── Deprecated eager overlay exports ──
-  patriotOverlays: {},
-  publishedOverlayUrls: [],
-  overlayRejections: [],
-
   // ── Additive Wave 2 shard runtime (non-breaking) ──
   shardMeta: {
     available: graphShardRuntime.keys(),
@@ -169,4 +164,16 @@ defineDeprecatedGraphField(
   "patriotOverlays",
   {},
   "[DEPRECATED] GRAPH.patriotOverlays is deprecated. Use readGraphShard('overlays') instead."
+);
+
+defineDeprecatedGraphField(
+  "publishedOverlayUrls",
+  [],
+  "[DEPRECATED] GRAPH.publishedOverlayUrls is deprecated. Use readGraphShard('overlays') instead."
+);
+
+defineDeprecatedGraphField(
+  "overlayRejections",
+  [],
+  "[DEPRECATED] GRAPH.overlayRejections is deprecated. Use readGraphShard('overlays') instead."
 );

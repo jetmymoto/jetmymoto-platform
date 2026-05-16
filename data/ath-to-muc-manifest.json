@@ -1,0 +1,94 @@
+{
+  "missionSlug": "ath-to-muc-alpine-return",
+  "title": "The Alpine Return",
+  "theater": "balkan-spine",
+  "totalDistanceKm": 2327,
+  "estimatedDays": 7,
+  "dailyStages": [
+    {
+      "day": 1,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_01_map.jpg",
+      "label": "Day 1"
+    },
+    {
+      "day": 2,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_02_map.jpg",
+      "label": "Day 2"
+    },
+    {
+      "day": 3,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_03_map.jpg",
+      "label": "Day 3"
+    },
+    {
+      "day": 4,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_04_map.jpg",
+      "label": "Day 4"
+    },
+    {
+      "day": 5,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_05_map.jpg",
+      "label": "Day 5"
+    },
+    {
+      "day": 6,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_06_map.jpg",
+      "label": "Day 6"
+    },
+    {
+      "day": 7,
+      "distanceKm": 332,
+      "mapAsset": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_07_map.jpg",
+      "label": "Day 7"
+    }
+  ],
+  "mapAssets": {
+    "theaterMap": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/theater_map.jpg",
+    "operationalMap": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/operational_map.jpg",
+    "elevationProfile": "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/elevation_profile.jpg",
+    "dailyMaps": [
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_01_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_02_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_03_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_04_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_05_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_06_map.jpg",
+      "gs://factory1/route-intelligence-v1/ath-to-muc-alpine-return/days/day_07_map.jpg"
+    ]
+  },
+  "shapingWaypoints": [
+    {
+      "lng": 23.9445,
+      "lat": 37.9364
+    },
+    {
+      "lng": 11.7861,
+      "lat": 48.3538
+    }
+  ],
+  "intelligence": {
+    "terrainType": "mixed_topography",
+    "ridingMood": "dynamic_transit",
+    "fatigueScore": 0.95,
+    "scenicDensity": 0.75,
+    "remoteFactor": 0.3,
+    "weatherVolatility": 0.4,
+    "bestSeason": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+    "cinematicProfile": "cinematic_neutral",
+    "recommendedBikeTypes": [
+      "touring",
+      "adventure"
+    ]
+  }
+}

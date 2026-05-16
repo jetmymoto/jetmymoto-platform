@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { A2A_MISSIONS } from "@/features/routes/data/a2aMissions";
+import { getMotorcycleImageForMission } from "@/data/motorcycleImages";
 
 // ── Curated mission catalog ───────────────────────────────────────────────
 // Each entry is an editorial mission. GRAPH data enriches but never blocks;
@@ -230,33 +231,6 @@ function SkeletonCard() {
   );
 }
 
-// ── Mission Selector ──────────────────────────────────────────────────────
-
-function MissionSelector({ activeIntent, onSelect }) {
-  return (
-    <motion.div
-      {...sectionReveal}
-      viewport={{ once: true }}
-      className="mb-10 flex flex-wrap gap-2"
-    >
-      {MISSION_INTENTS.map((intent) => (
-        <button
-          key={intent.id}
-          type="button"
-          onClick={() => onSelect(intent.id)}
-          className={`px-5 py-2 rounded-full text-[12px] font-mono uppercase tracking-[0.18em] border transition-all duration-300 ${
-            activeIntent === intent.id
-              ? "border-[#CDA755] bg-[#CDA755]/15 text-[#CDA755] shadow-[0_0_16px_rgba(205,167,85,0.12)]"
-              : "border-white/[0.1] bg-white/[0.02] text-white/45 hover:text-white/65 hover:border-white/[0.2]"
-          }`}
-        >
-          {intent.label}
-        </button>
-      ))}
-    </motion.div>
-  );
-}
-
 // ── Filter Chip ───────────────────────────────────────────────────────────
 
 function FilterChip({ label, active, onClick }) {
@@ -275,8 +249,370 @@ function FilterChip({ label, active, onClick }) {
   );
 }
 
+// ── Featured Mission Card (Simplified) ────────────────────────────────────
+
+function FeaturedMissionCard({ mission, index, isHighlighted }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const isA2A = mission.isA2A ?? false;
+  const countriesLabel = (mission.countries ?? []).join(" → ");
+  const ctaHref = mission.graphDest
+    ? `/destination/${encodeURIComponent(mission.graphDest)}`
+    : "/routes";
+
+  // Calculate urgency indicators for A2A missions
+  const pricePerDay = isA2A && mission.finalPrice
+    ? Math.floor(mission.finalPrice / parseDurationDays(mission.duration))
+    : 0;
+
+  return (
+    <motion.div
+      {...cardReveal(index)}
+      viewport={{ once: true }}
+      whileHover={{ y: -4, scale: 1.02 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className={`group relative flex flex-col justify-end overflow-hidden rounded-2xl cursor-pointer ${
+        isHighlighted
+          ? "h-[420px] bg-[#1a1a1a] border border-[#CDA755]/30 shadow-[0_0_40px_rgba(205,167,85,0.1)]"
+          : "h-[380px] bg-[#111] border border-white/5"
+      }`}
+    >
+      {/* Background image */}
+      <div className="absolute inset-0 overflow-hidden">
+        {mission.image ? (
+          <>
+            <div
+              className={`absolute inset-0 bg-cover bg-center transition-all duration-[1200ms] ease-out ${
+                isHighlighted ? "brightness-90" : "brightness-75"
+              } group-hover:brightness-100 ${
+                imgLoaded ? "opacity-100" : "opacity-0"
+              } group-hover:scale-[1.02]`}
+              style={{ backgroundImage: `url(${mission.image})` }}
+            />
+            <img
+              src={mission.image}
+              alt=""
+              className="sr-only"
+              onLoad={() => setImgLoaded(true)}
+            />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900" />
+        )}
+      </div>
+
+      {/* Controlled vertical gradient for guaranteed legibility */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.15)_0%,rgba(0,0,0,0.45)_40%,rgba(0,0,0,0.85)_100%)] pointer-events-none" />
+
+      {/* DESIRE-DRIVEN Content */}
+      <Link to={ctaHref} className="relative z-10 p-6 flex flex-col group/card h-full justify-end text-left">
+        {/* 1. Experience Hook */}
+        <div className="mb-2">
+          <p className="text-white/70 text-[10px] font-mono uppercase tracking-[0.2em] mb-1.5">
+            {countriesLabel}
+          </p>
+          {mission.featuredBike && (
+            <p className="text-white text-base font-semibold drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+              Ride {mission.featuredBike} across {mission.title}
+            </p>
+          )}
+        </div>
+
+        {/* 2. The "Hook" Moment */}
+        {isA2A && pricePerDay > 0 ? (
+          <div>
+            <div className="text-white font-black text-3xl leading-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+              €{pricePerDay}<span className="text-lg text-white/70 font-semibold ml-1">/day</span>
+            </div>
+            <div className="text-white/60 text-sm mt-1">
+              {mission.duration} • {mission.featuredBike || 'Premium machine'}
+            </div>
+            {mission.savings && (
+              <div className="text-white/50 text-xs mt-1">
+                (Save €{mission.savings.toLocaleString()})
+              </div>
+            )}
+          </div>
+        ) : (
+          <h3 className="font-serif text-white text-2xl leading-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+            {mission.title}
+          </h3>
+        )}
+
+        {/* 4. Desire-focused CTA */}
+        <button className="w-full bg-[#CDA755] text-black py-3 px-6 font-black text-sm uppercase tracking-[0.2em] hover:bg-[#F3E5C7] transition-colors duration-300 mt-5 mb-3">
+          Begin This Ride
+        </button>
+
+        {/* 5. Quiet Scarcity */}
+        {isA2A && (
+          <div className="text-left text-white/40 text-[10px] font-mono uppercase tracking-widest">
+            Allocated inventory
+          </div>
+        )}
+      </Link>
+    </motion.div>
+  );
+}
+function FeaturedMissions({ missions, shardState, rentalShard }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Get top 6 missions, prioritizing A2A missions
+  const featuredMissions = missions
+    .slice(0, 12) // Get more to choose from
+    .sort((a, b) => {
+      // A2A missions first, then by priority score
+      if (a.isA2A && !b.isA2A) return -1;
+      if (!a.isA2A && b.isA2A) return 1;
+      return (b.priorityScore || 0) - (a.priorityScore || 0);
+    })
+    .slice(0, 6); // Limit to 6 cards max
+
+  const canScrollLeft = currentIndex > 0;
+  const canScrollRight = currentIndex < featuredMissions.length - 3;
+
+  const scrollLeft = () => {
+    if (canScrollLeft) {
+      setCurrentIndex(prev => Math.max(0, prev - 1));
+    }
+  };
+
+  const scrollRight = () => {
+    if (canScrollRight) {
+      setCurrentIndex(prev => Math.min(featuredMissions.length - 3, prev + 1));
+    }
+  };
+
+  return (
+    <motion.div
+      {...sectionReveal}
+      viewport={{ once: true }}
+      className="mb-20"
+    >
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div className="flex flex-col text-left max-w-2xl">
+          {/* Micro Trust / Value Line */}
+          <div className="flex items-center gap-2 mb-3">
+            <span className="relative flex h-1.5 w-1.5 flex-shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#CDA755] opacity-50" />
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#CDA755]" />
+            </span>
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#CDA755]/80">
+              Operator-supported rates available
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h2 className="text-3xl md:text-4xl font-serif tracking-tight text-white mb-2">
+            Rebalancing Missions
+          </h2>
+
+          {/* Subline */}
+          <p className="text-white/60 text-sm md:text-base leading-relaxed">
+            These routes exist to move fleet between cities. You ride premium machines across Europe at reduced one-way rates.
+          </p>
+        </div>
+
+        {/* Slider Controls */}
+        {featuredMissions.length > 3 && (
+          <div className="hidden md:flex gap-2">
+            <button
+              onClick={scrollLeft}
+              disabled={!canScrollLeft}
+              className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${
+                canScrollLeft
+                  ? "border-[#CDA755] text-[#CDA755] hover:bg-[#CDA755] hover:text-black"
+                  : "border-white/20 text-white/20 cursor-not-allowed"
+              }`}
+            >
+              ←
+            </button>
+            <button
+              onClick={scrollRight}
+              disabled={!canScrollRight}
+              className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${
+                canScrollRight
+                  ? "border-[#CDA755] text-[#CDA755] hover:bg-[#CDA755] hover:text-black"
+                  : "border-white/20 text-white/20 cursor-not-allowed"
+              }`}
+            >
+              →
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Card Container with Slider */}
+      <div className="relative overflow-hidden">
+        <div
+          className="flex gap-6 transition-transform duration-500 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+            width: `${(featuredMissions.length / 3) * 100}%`
+          }}
+        >
+          {featuredMissions.map((mission, i) => (
+            <div key={mission.slug} className="flex-shrink-0" style={{ width: `${100 / featuredMissions.length}%` }}>
+              <FeaturedMissionCard
+                mission={mission}
+                index={i}
+                isHighlighted={i === 0} // Always highlight first card as "default choice"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Scroll Indicators */}
+      {featuredMissions.length > 1 && (
+        <div className="flex justify-center gap-2 mt-6 md:hidden">
+          {Array.from({ length: Math.ceil(featuredMissions.length / 3) }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentIndex(i)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                Math.floor(currentIndex / 3) === i ? "bg-[#CDA755]" : "bg-white/20"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+    </motion.div>
+  );
+}
+
 // ── Mission Card ──────────────────────────────────────────────────────────
 
+// ── Simplified Mission Card ───────────────────────────────────────────────
+
+function SimplifiedMissionCard({ mission, index, shardState, rentalShard, onMissionHover }) {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [motorcycleImgLoaded, setMotorcycleImgLoaded] = useState(false);
+
+  const isA2A = mission.isA2A ?? false;
+  const countriesLabel = (mission.countries ?? []).join(" → ");
+  const ctaHref = mission.graphDest
+    ? `/destination/${encodeURIComponent(mission.graphDest)}`
+    : "/routes";
+
+  // Get cinematic motorcycle image for this mission
+  const motorcycleImage = getMotorcycleImageForMission(mission);
+  const displayImage = motorcycleImage?.url || mission.image;
+
+  const handleMouseEnter = () => {
+    onMissionHover?.({
+      image: displayImage,
+      title: mission.title,
+      subtitle: countriesLabel,
+      subsidyPct: mission.subsidyPct ?? null,
+      finalPrice: mission.finalPrice ?? null,
+      savings: mission.savings ?? null,
+      motorcycleBrand: motorcycleImage?.brand,
+      motorcycleModel: motorcycleImage?.model,
+    });
+  };
+
+  return (
+    <motion.div
+      {...cardReveal(index)}
+      viewport={{ once: true }}
+      whileHover={{ y: -4, scale: 1.01 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      onMouseEnter={handleMouseEnter}
+      className="group relative flex flex-col justify-end overflow-hidden rounded-2xl bg-[#111] h-[340px] cursor-pointer border border-white/5"
+    >
+      {/* Cinematic motorcycle background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {displayImage ? (
+          <>
+            <div
+              className={`absolute inset-0 bg-cover bg-center transition-all duration-[1200ms] ease-out ${
+                motorcycleImgLoaded ? "opacity-100" : "opacity-0"
+              } group-hover:scale-[1.02] transform-gpu`}
+              style={{
+                backgroundImage: `url(${displayImage})`,
+              }}
+            />
+
+            <img
+              src={displayImage}
+              alt={motorcycleImage ? `${motorcycleImage.brand} ${motorcycleImage.model}` : ""}
+              className="sr-only"
+              onLoad={() => {
+                setMotorcycleImgLoaded(true);
+                setImgLoaded(true);
+              }}
+            />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900" />
+        )}
+      </div>
+
+      {/* Controlled vertical gradient for guaranteed legibility */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.15)_0%,rgba(0,0,0,0.45)_40%,rgba(0,0,0,0.85)_100%)] pointer-events-none" />
+
+      {/* Motorcycle brand badge */}
+      {motorcycleImage && (
+        <div className="absolute top-5 left-5 z-20 bg-black/40 backdrop-blur-md px-2.5 py-1.5 rounded border border-white/10 text-left">
+          <div className="text-white/70 text-[8px] font-mono uppercase tracking-[0.2em] leading-none">
+            {motorcycleImage.brand}
+          </div>
+          <div className="text-white text-[10px] font-semibold leading-none mt-1">
+            {motorcycleImage.model}
+          </div>
+        </div>
+      )}
+
+      {/* Desire-Driven Simplified Content */}
+      <Link to={ctaHref} className="relative z-10 p-6 flex flex-col group/card h-full justify-end text-left">
+        {/* 1. Experience Hook */}
+        <div className="mb-2">
+          <p className="text-white/70 text-[10px] font-mono uppercase tracking-[0.2em] mb-1.5">
+            {countriesLabel}
+          </p>
+          {motorcycleImage && (
+            <p className="text-white text-sm font-semibold transition-colors duration-500 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+              Ride {motorcycleImage.brand} {motorcycleImage.model}
+            </p>
+          )}
+        </div>
+
+        {/* 2. The Hook Moment */}
+        {isA2A && mission.finalPrice ? (
+          <div>
+            <div className="text-white font-black text-2xl leading-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+              €{Math.floor(mission.finalPrice / parseDurationDays(mission.duration))}<span className="text-base text-white/70 font-semibold ml-1">/day</span>
+            </div>
+            <div className="text-white/60 text-xs mt-1">
+              {mission.duration} • {motorcycleImage ? `${motorcycleImage.brand} ${motorcycleImage.model}` : 'Premium machine'}
+            </div>
+            {mission.savings && (
+              <div className="text-white/50 text-xs mt-1">
+                (Save €{mission.savings.toLocaleString()})
+              </div>
+            )}
+          </div>
+        ) : (
+          <h3 className="font-serif text-white text-xl leading-tight drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+            {mission.title}
+          </h3>
+        )}
+
+        {/* 4. Desire CTA */}
+        <button className="w-full bg-[#CDA755] text-black py-2.5 px-6 font-black text-sm uppercase tracking-[0.2em] hover:bg-[#F3E5C7] transition-colors duration-300 mt-5 mb-3">
+          Begin This Ride
+        </button>
+
+        {/* 5. Quiet Scarcity */}
+        {isA2A && (
+          <div className="text-left text-white/40 text-[10px] font-mono uppercase tracking-widest">
+            Allocated inventory
+          </div>
+        )}
+      </Link>
+    </motion.div>
+  );
+}
 function MissionCard({ mission, index, shardState, rentalShard, onMissionHover, isFeatured }) {
   const [imgLoaded, setImgLoaded] = useState(false);
 
@@ -327,7 +663,7 @@ function MissionCard({ mission, index, shardState, rentalShard, onMissionHover, 
         {mission.image ? (
           <>
             <div
-              className={`absolute inset-0 bg-cover bg-center transition-all duration-[1200ms] ease-out ${
+              className={`absolute inset-0 bg-cover bg-center transition-all duration-[1200ms] ease-out brightness-75 group-hover:brightness-100 ${
                 imgLoaded ? "opacity-100" : "opacity-0"
               } group-hover:scale-[1.04]`}
               style={{ backgroundImage: `url(${mission.image})` }}
@@ -357,8 +693,8 @@ function MissionCard({ mission, index, shardState, rentalShard, onMissionHover, 
         )}
       </div>
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#050505]/60 to-transparent transition-opacity duration-500 group-hover:from-[#0a0a0a]/95" />
+      {/* Enhanced gradient overlay with darkening */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#050505]/60 to-black/40 transition-opacity duration-500 group-hover:from-[#0a0a0a]/90" />
 
       {/* A2A glow ring */}
       {isA2A && (
@@ -726,67 +1062,64 @@ export default function RouteDiscoverySection({
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
 
-        {/* ── Mission Selector (intent layer) ── */}
-        <MissionSelector activeIntent={missionIntent} onSelect={handleIntentSelect} />
+        
 
-        {/* ── Header + Filters ── */}
+        {/* ── Featured Missions ── */}
+        <FeaturedMissions
+          missions={filteredMissions}
+          shardState={shardStatus}
+          rentalShard={rentalShard}
+        />
+
+        {/* ── Collapsed Filter System & Full Mission Grid ── */}
         <motion.div
           {...sectionReveal}
           viewport={{ once: true }}
-          className="mb-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8"
+          className="mt-16 border-t border-white/10 pt-16"
         >
-          <div>
-            <div className="flex items-center gap-4 mb-5">
-              <div className="h-[1px] w-10 bg-[#CDA755]/40" />
-              <span className="text-[#CDA755] font-mono text-[10px] tracking-[0.4em] uppercase">
-                Mission Discovery
-              </span>
+          {/* Explore All Header */}
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-serif tracking-tight text-white mb-4">
+              Explore All Missions
+            </h3>
+
+            {/* Collapsed Filters */}
+            <div className="flex flex-wrap justify-center gap-2 opacity-70">
+              {REGIONS.map((r) => (
+                <FilterChip key={r} label={r} active={regionFilter === r} onClick={() => setRegionFilter(r)} />
+              ))}
+              <div className="w-px h-6 bg-white/[0.08] self-center mx-1" />
+              {RIDE_TYPES.map((t) => (
+                <FilterChip key={t} label={t} active={typeFilter === t} onClick={() => setTypeFilter(t)} />
+              ))}
+              <div className="w-px h-6 bg-white/[0.08] self-center mx-1" />
+              {DIFFICULTIES.map((d) => (
+                <FilterChip key={d} label={d} active={difficultyFilter === d} onClick={() => setDifficultyFilter(d)} />
+              ))}
             </div>
-            <h2 className="text-4xl md:text-5xl font-serif tracking-tight">
-              Select your mission
-            </h2>
-            <p className="text-white/40 mt-4 max-w-lg text-[15px] leading-relaxed">
-              Choose your intent. See what's possible. Initiate the ride.
-            </p>
           </div>
 
-          {/* Granular Filters */}
-          <div className="flex flex-wrap gap-2 lg:justify-end">
-            {REGIONS.map((r) => (
-              <FilterChip key={r} label={r} active={regionFilter === r} onClick={() => setRegionFilter(r)} />
-            ))}
-            <div className="w-px h-6 bg-white/[0.08] self-center mx-1 hidden sm:block" />
-            {RIDE_TYPES.map((t) => (
-              <FilterChip key={t} label={t} active={typeFilter === t} onClick={() => setTypeFilter(t)} />
-            ))}
-            <div className="w-px h-6 bg-white/[0.08] self-center mx-1 hidden sm:block" />
-            {DIFFICULTIES.map((d) => (
-              <FilterChip key={d} label={d} active={difficultyFilter === d} onClick={() => setDifficultyFilter(d)} />
-            ))}
+          {/* Mission Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <AnimatePresence mode="popLayout">
+              {filteredMissions.length > 0
+                ? filteredMissions.map((mission, i) => (
+                    <SimplifiedMissionCard
+                      key={mission.slug}
+                      mission={mission}
+                      index={i}
+                      shardState={shardStatus}
+                      rentalShard={rentalShard}
+                      onMissionHover={onMissionFocus}
+                    />
+                  ))
+                : hasActiveFilters
+                  ? <NoResults onReset={resetAll} />
+                  : Array.from({ length: 3 }, (_, i) => <SkeletonCard key={i} />)
+              }
+            </AnimatePresence>
           </div>
         </motion.div>
-
-        {/* ── Mission Grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AnimatePresence mode="popLayout">
-            {filteredMissions.length > 0
-              ? filteredMissions.map((mission, i) => (
-                  <MissionCard
-                    key={mission.slug}
-                    mission={mission}
-                    index={i}
-                    isFeatured={mission.slug === FEATURED_SLUG && i === 0}
-                    shardState={shardStatus}
-                    rentalShard={rentalShard}
-                    onMissionHover={onMissionFocus}
-                  />
-                ))
-              : hasActiveFilters
-                ? <NoResults onReset={resetAll} />
-                : Array.from({ length: 3 }, (_, i) => <SkeletonCard key={i} />)
-            }
-          </AnimatePresence>
-        </div>
 
         {/* Browse all */}
         {filteredMissions.length > 0 && (

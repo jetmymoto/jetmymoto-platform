@@ -1,0 +1,30 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://www.cycleworld.com/",
+  "timestamp": "2026-04-02T17:54:27.077Z",
+  "dryRun": true,
+  "mode": "targeted",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 4,
+    "imagesFound": 53,
+    "imagesKept": 0,
+    "rejectedSmall": 0,
+    "rejectedUi": 2,
+    "rejectedDuplicate": 26,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "targetedStats": {
+    "modelMatches": 0,
+    "modelSkipped": 25,
+    "showroomRejected": 0,
+    "matchedModels": {}
+  },
+  "sampleImages": []
+}

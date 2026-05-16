@@ -19,3 +19,21 @@ screenshots/
 scripts/temp_frames/
 missions/generation-report.json
 
+node_modules
+start-claude.sh
+
+y/
+tmp/
+functions/video-engine/output/
+*.mp4
+*.tar.gz
+
+movie-chat-factory-firebase-adminsdk-fbsvc-fcca93d15b.json
+keys/
+runproxy.md
+data/stitch/
+scripts/dossier/prototypes/batchRouteIntelligenceHarvest.mjs
+scripts/gi-v3/
+functions/src/video/renderMissionVideoNode.js
+
+scripts/

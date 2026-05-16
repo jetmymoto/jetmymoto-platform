@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { GRAPH } from "@/core/network/networkGraph";
-import { ArrowRight, MapPin, Navigation } from "lucide-react";
+import { ArrowRight, MapPin, Navigation, Phone, ExternalLink } from "lucide-react";
 import { withBrandContext } from "@/utils/navigationTargets";
 
 function AirportControlPanel({ data, airport }) {
@@ -11,122 +11,133 @@ function AirportControlPanel({ data, airport }) {
     const routeSlugs = GRAPH.routesByAirport?.[airport?.code] || [];
     const routes = routeSlugs.map(r => GRAPH.routes[r]).filter(Boolean);
     const destinations = routes.map(r => r.destination).filter(Boolean);
-    
-    // Group destinations by unique slug
     const uniqueDestinations = Array.from(new Map(destinations.map(d => [d.slug, d])).values());
 
-    const getCategoryTheme = (cat) => {
-      switch (cat) {
-        case "Auth":
-          return "border-rose-500/10 hover:border-rose-500/40 hover:bg-rose-500/5 text-rose-500/70 group-hover:text-rose-400";
-        case "Transfer":
-          return "border-blue-500/10 hover:border-blue-500/40 hover:bg-blue-500/5 text-blue-500/70 group-hover:text-blue-400";
-        default:
-          return "border-white/5 hover:border-amber-500/30 hover:bg-amber-500/5 text-zinc-500 group-hover:text-amber-500";
-      }
-    };
+    const graphAirport = GRAPH.airports?.[airport?.code];
+    const intel = graphAirport?.operational_intel;
   
     return (
-      <section id="control" className="py-20 bg-[#050505]/40 border-b border-white/5">
+      <section id="control" className="py-20 bg-[#F7F6F3]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+
+          {/* Section Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <div className="text-amber-500 font-mono text-[10px] font-black tracking-[0.4em] uppercase italic mb-3">
-                HUB AMENITIES & SERVICES
-              </div>
-              <h2 className="text-2xl font-black italic uppercase text-white tracking-tight">
-                Hub Overview & Amenities
+              <p className="text-xs tracking-wide uppercase text-[#CDA755] mb-2">Hub Services</p>
+              <h2 className="text-3xl font-serif font-bold text-zinc-900">
+                Hub Overview &amp; Amenities
               </h2>
             </div>
-            <div className="text-[10px] font-mono text-zinc-600 italic uppercase tracking-widest max-w-[300px] md:text-right">
-              Concierge hub details. Verify live information with {airport?.name}.
+            <p className="text-sm text-zinc-500 max-w-xs md:text-right leading-relaxed">
+              Verify live information with {airport?.name}.
               <br />
-              <span className="text-amber-500/80 mt-1 block">
-                Connected to {routes.length} routes across {uniqueDestinations.length} destinations.
+              <span className="text-[#CDA755]">
+                {routes.length} routes &middot; {uniqueDestinations.length} destinations
               </span>
-            </div>
+            </p>
           </div>
-  
+
+          {/* Operational Intel Bar */}
+          {intel && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+              {intel?.arrival_link && (
+                <a href={intel.arrival_link} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-2xl bg-white shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                  <div className="p-2 rounded-xl bg-[#CDA755]/10">
+                    <ExternalLink size={16} className="text-[#CDA755]" />
+                  </div>
+                  <span className="text-sm text-zinc-700 group-hover:text-zinc-900">Live Arrivals</span>
+                </a>
+              )}
+              {intel?.departure_link && (
+                <a href={intel.departure_link} target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-2xl bg-white shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                  <div className="p-2 rounded-xl bg-[#CDA755]/10">
+                    <ExternalLink size={16} className="text-[#CDA755]" />
+                  </div>
+                  <span className="text-sm text-zinc-700 group-hover:text-zinc-900">Live Departures</span>
+                </a>
+              )}
+              {intel?.baggage_phone && (
+                <a href={`tel:${intel.baggage_phone.replace(/\s+/g, "")}`}
+                  className="flex items-center gap-3 p-4 rounded-2xl bg-white shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                  <div className="p-2 rounded-xl bg-rose-50">
+                    <Phone size={16} className="text-rose-500" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm text-zinc-700 group-hover:text-zinc-900">Baggage</span>
+                    <span className="text-xs text-zinc-400">{intel.baggage_phone}</span>
+                  </div>
+                </a>
+              )}
+              {intel?.general_phone && (
+                <a href={`tel:${intel.general_phone.replace(/\s+/g, "")}`}
+                  className="flex items-center gap-3 p-4 rounded-2xl bg-white shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                  <div className="p-2 rounded-xl bg-blue-50">
+                    <Phone size={16} className="text-blue-500" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm text-zinc-700 group-hover:text-zinc-900">Info Desk</span>
+                    <span className="text-xs text-zinc-400">{intel.general_phone}</span>
+                  </div>
+                </a>
+              )}
+            </div>
+          )}
+
           {/* External Utilities */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-2 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-3 mb-16">
             {data.map((item, i) => (
-              <a
-                key={i}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`group flex flex-col items-center justify-center gap-3 p-5 rounded-xl border bg-zinc-900/20 backdrop-blur-md transition-all duration-300 text-center ${getCategoryTheme(
-                  item.category
-                )}`}
-              >
-                <item.icon
-                  size={20}
-                  className="transition-all duration-300 group-hover:scale-110"
-                />
-                <span
-                  className={`text-[9px] font-mono font-black uppercase tracking-widest transition-colors ${
-                    item.category === "Auth"
-                      ? "text-rose-500/60 group-hover:text-white"
-                      : "text-zinc-500 group-hover:text-white"
-                  }`}
-                >
+              <a key={i} href={item.href} target="_blank" rel="noopener noreferrer"
+                className="group flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-white border border-zinc-100 shadow-sm hover:shadow-md transition-all text-center">
+                <div className="p-2.5 rounded-xl bg-zinc-50 group-hover:bg-[#CDA755]/10 transition-colors">
+                  <item.icon size={18} className="text-zinc-500 group-hover:text-[#CDA755] transition-colors" />
+                </div>
+                <span className="text-xs text-zinc-600 group-hover:text-zinc-900 transition-colors">
                   {item.label}
                 </span>
               </a>
             ))}
           </div>
 
+          {/* Routes & Destinations */}
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Active Routes */}
             <div>
-                <h3 className="text-xs font-mono font-black uppercase tracking-[0.3em] text-zinc-500 mb-6 flex items-center gap-2">
-                    <Navigation size={14} className="text-amber-500" /> Epic Routes from this Hub
-                </h3>
-                <div className="grid gap-2">
-                    {routes.slice(0, 10).map(route => (
-                        <Link 
-                            key={route.slug} 
-                            to={withCtx(`/route/${route.slug}`)}
-                            className="flex items-center justify-between p-4 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/50 hover:bg-amber-500/5 transition-all group"
-                        >
-                            <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white transition-colors">
-                                {route.title || `${route.airport?.city || airport?.city} to ${route.destination?.name || "Open Route"}`}
-                            </span>
-                            <ArrowRight size={14} className="text-zinc-600 group-hover:text-amber-500 transition-colors" />
-                        </Link>
-                    ))}
-                    {routes.length > 10 && (
-                        <div className="text-[10px] font-mono text-zinc-600 uppercase italic mt-2">
-                            + {routes.length - 10} more routes available from this hub
-                        </div>
-                    )}
-                </div>
+              <h3 className="text-xs tracking-wide uppercase text-zinc-400 mb-6 flex items-center gap-2">
+                <Navigation size={14} className="text-[#CDA755]" /> Routes from this hub
+              </h3>
+              <div className="grid gap-2">
+                {routes.slice(0, 10).map(route => (
+                  <Link key={route.slug} to={withCtx(`/route/${route.slug}`)}
+                    className="flex items-center justify-between p-4 bg-white rounded-2xl shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                    <span className="text-sm text-zinc-700 group-hover:text-zinc-900 transition-colors">
+                      {route.title || `${route.airport?.city || airport?.city} to ${route.destination?.name || "Open Route"}`}
+                    </span>
+                    <ArrowRight size={14} className="text-zinc-300 group-hover:text-[#CDA755] transition-colors" />
+                  </Link>
+                ))}
+                {routes.length > 10 && (
+                  <p className="text-xs text-zinc-400 mt-2">+ {routes.length - 10} more routes</p>
+                )}
+              </div>
             </div>
 
-            {/* Primary Destinations */}
             <div>
-                <h3 className="text-xs font-mono font-black uppercase tracking-[0.3em] text-zinc-500 mb-6 flex items-center gap-2">
-                    <MapPin size={14} className="text-amber-500" /> Curated Local Journeys
-                </h3>
-                <div className="grid gap-2">
-                    {uniqueDestinations.map(dest => (
-                        <Link 
-                            key={dest.slug} 
-                            to={withCtx(`/destination/${dest.slug}`)}
-                            className="flex items-center justify-between p-4 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/50 hover:bg-amber-500/5 transition-all group"
-                        >
-                            <div className="flex flex-col">
-                                <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white transition-colors">
-                                    {dest.name}
-                                </span>
-                                <span className="text-[9px] font-mono uppercase tracking-widest text-zinc-600 group-hover:text-amber-500/60 transition-colors">
-                                    {dest.region || dest.country}
-                                </span>
-                            </div>
-                            <ArrowRight size={14} className="text-zinc-600 group-hover:text-amber-500 transition-colors" />
-                        </Link>
-                    ))}
-                </div>
+              <h3 className="text-xs tracking-wide uppercase text-zinc-400 mb-6 flex items-center gap-2">
+                <MapPin size={14} className="text-[#CDA755]" /> Curated destinations
+              </h3>
+              <div className="grid gap-2">
+                {uniqueDestinations.map(dest => (
+                  <Link key={dest.slug} to={withCtx(`/destination/${dest.slug}`)}
+                    className="flex items-center justify-between p-4 bg-white rounded-2xl shadow-sm hover:shadow-md border border-zinc-100 transition-all group">
+                    <div className="flex flex-col">
+                      <span className="text-sm text-zinc-700 group-hover:text-zinc-900 transition-colors">{dest.name}</span>
+                      <span className="text-xs text-zinc-400">{dest.region || dest.country}</span>
+                    </div>
+                    <ArrowRight size={14} className="text-zinc-300 group-hover:text-[#CDA755] transition-colors" />
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

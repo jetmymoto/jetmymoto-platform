@@ -1,0 +1,64 @@
+{
+  "template_id": "04_destination_template",
+  "path": "/destination/alps",
+  "viewport": "desktop",
+  "seo": {
+    "title": "Motorcycle Journeys in European Alps | JetMyMoto",
+    "description": "JetMyMoto provides elite private motorcycle airlift services worldwide. Seamless logistics for riders, collectors, and expeditions."
+  },
+  "content_structure": {
+    "primary_heading": "European Alps",
+    "secondary_headings": [
+      "Routes From Here",
+      "Curated Experiences",
+      "Begin Your Journey"
+    ]
+  },
+  "interactive_elements": {
+    "buttons": [],
+    "total_links": 26,
+    "sample_links": [
+      {
+        "text": "RIDERATLAS",
+        "href": "/"
+      },
+      {
+        "text": "ATLAS",
+        "href": "/"
+      },
+      {
+        "text": "HUBS",
+        "href": "/airport"
+      },
+      {
+        "text": "ROUTES",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "FLEETS",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "FIND A BIKE",
+        "href": "/airport/mxp?mode=rent&ctx=ra"
+      },
+      {
+        "text": "SHIP MACHINE",
+        "href": "/moto-airlift?ctx=jet"
+      },
+      {
+        "text": "milan mxp to alps\n\n\"A masterline journey through the region\"",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "paris cdg to alps\n\n\"A masterline journey through the region\"",
+        "href": "/route/paris-cdg-to-alps"
+      },
+      {
+        "text": "london lhr to alps\n\n\"A masterline journey through the region\"",
+        "href": "/route/london-lhr-to-alps"
+      }
+    ]
+  },
+  "timestamp": "2026-04-04T18:05:21.878Z"
+}

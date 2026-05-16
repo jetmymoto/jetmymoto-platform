@@ -36,114 +36,62 @@ function scrollToSection(sectionId) {
   target?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-
-
-
-
-
-
+/* ─── Sticky Nav Rail ─────────────────────────────────────────────────── */
 function ActionRail({ airport, intent, withCtx }) {
   return (
     <>
-      <div
-        className="hidden md:flex fixed top-20 z-[90] w-full h-16 items-center px-8 transition-all duration-300 bg-[rgba(5,5,5,0.97)] border-b border-white/5"
-      >
+      <div className="hidden md:flex fixed top-20 z-[90] w-full h-14 items-center px-8 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-zinc-100">
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="h-2 w-2 rounded-full bg-amber-500 animate-pulse" />
-            <span className="text-[10px] font-mono font-black tracking-[0.3em] text-white/70 uppercase italic">
-              {airport}_INTERCEPT_ACTIVE
-            </span>
+            <div className="h-1.5 w-1.5 rounded-full bg-[#CDA755]" />
+            <span className="text-xs text-zinc-500 tracking-wide">{airport} Hub</span>
           </div>
           <div className="flex gap-6 items-center">
             {intent === "moto" ? (
-              <Link
-                to={withCtx(LINKS.shipBikeQuote())}
-                className="text-[10px] font-mono font-black tracking-[0.2em] text-amber-500 hover:text-white uppercase italic transition-colors"
-              >
-                Ship_My_Bike
-              </Link>
+              <Link to={withCtx(LINKS.shipBikeQuote())} className="text-xs font-semibold text-[#CDA755] hover:text-zinc-900 transition-colors">Ship My Bike</Link>
             ) : (
-              <Link
-                to={withCtx(LINKS.shipGTQuote())}
-                className="text-[10px] font-mono font-black tracking-[0.2em] text-amber-500 hover:text-white uppercase italic transition-colors"
-              >
-                Ship_My_GT
-              </Link>
+              <Link to={withCtx(LINKS.shipGTQuote())} className="text-xs font-semibold text-[#CDA755] hover:text-zinc-900 transition-colors">Ship My GT</Link>
             )}
-            <button
-              type="button"
-              onClick={() => scrollToSection("recovery")}
-              className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
-            >
-              Recovery
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection("utilities")}
-              className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
-            >
-              Tactical
-            </button>
-            <div className="h-4 w-px bg-white/10 mx-2"></div>
-            <button
-              type="button"
-              onClick={() => scrollToSection("ranking")}
-              className="text-[10px] font-mono font-black tracking-[0.2em] text-zinc-400 hover:text-white uppercase italic transition-colors"
-            >
-              Rankings
-            </button>
+            <button type="button" onClick={() => scrollToSection("recovery")} className="text-xs text-zinc-500 hover:text-zinc-900 transition-colors">Stay</button>
+            <button type="button" onClick={() => scrollToSection("utilities")} className="text-xs text-zinc-500 hover:text-zinc-900 transition-colors">Essentials</button>
+            <div className="h-4 w-px bg-zinc-200 mx-1" />
+            <button type="button" onClick={() => scrollToSection("ranking")} className="text-xs text-zinc-500 hover:text-zinc-900 transition-colors">Compare</button>
           </div>
         </div>
       </div>
 
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-[rgba(5,5,5,0.97)] border-t border-white/10 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
-        <button
-          type="button"
-          onClick={() => scrollToSection("ranking")}
-          className="flex-1 py-3 bg-zinc-900/50 border border-white/10 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-white text-center flex flex-col items-center justify-center gap-1"
-        >
-          <Car size={14} /> Rankings
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-t border-zinc-100 px-4 py-3 flex justify-between gap-2 safe-area-bottom">
+        <button type="button" onClick={() => scrollToSection("ranking")} className="flex-1 py-3 bg-white border border-zinc-100 rounded-2xl text-xs text-zinc-600 text-center flex flex-col items-center justify-center gap-1 shadow-sm">
+          <Car size={14} /> Compare
         </button>
-        <Link
-          to={withCtx(intent === "moto" ? LINKS.shipBikeQuote() : LINKS.shipGTQuote())}
-          className="flex-1 py-3 bg-amber-500 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-black text-center flex flex-col items-center justify-center gap-1 shadow-[0_0_15px_rgba(245,158,11,0.3)]"
-        >
-          <Zap size={14} /> Request Quote
+        <Link to={withCtx(intent === "moto" ? LINKS.shipBikeQuote() : LINKS.shipGTQuote())} className="flex-1 py-3 bg-[#CDA755] rounded-2xl text-xs font-semibold text-white text-center flex flex-col items-center justify-center gap-1 shadow-sm">
+          <Zap size={14} /> Get Quote
         </Link>
-        <button
-          type="button"
-          onClick={() => scrollToSection("utilities")}
-          className="flex-1 py-3 bg-zinc-900/50 border border-white/10 rounded-xl text-[9px] font-mono font-black uppercase italic tracking-widest text-white text-center flex flex-col items-center justify-center gap-1"
-        >
-          <Target size={14} /> Tactical
+        <button type="button" onClick={() => scrollToSection("utilities")} className="flex-1 py-3 bg-white border border-zinc-100 rounded-2xl text-xs text-zinc-600 text-center flex flex-col items-center justify-center gap-1 shadow-sm">
+          <Target size={14} /> Essentials
         </button>
       </div>
     </>
   );
 }
 
+/* ─── Section Navigation ──────────────────────────────────────────────── */
 function SectionIndex() {
   const sections = [
-    { name: "Control", id: "control" },
-    { name: "Ranking", id: "ranking" },
-    { name: "Reality", id: "reality" },
-    { name: "Pivot", id: "pivot" },
-    { name: "Recovery", id: "recovery" },
-    { name: "Utilities", id: "utilities" },
-    { name: "Extension", id: "extension" },
+    { name: "Hub Info", id: "control" },
+    { name: "Compare", id: "ranking" },
+    { name: "Consider", id: "reality" },
+    { name: "Your Bike", id: "pivot" },
+    { name: "Stay", id: "recovery" },
+    { name: "Essentials", id: "utilities" },
+    { name: "Explore", id: "extension" },
   ];
   return (
-    <div className="max-w-7xl mx-auto px-6 hidden md:block border-b border-white/5">
+    <div className="max-w-7xl mx-auto px-6 hidden md:block border-b border-zinc-100">
       <div className="flex gap-8 py-4 overflow-x-auto no-scrollbar">
         {sections.map((s) => (
-          <button
-            key={s.id}
-            type="button"
-            onClick={() => scrollToSection(s.id)}
-            className="text-[10px] font-mono font-black uppercase tracking-[0.2em] text-zinc-500 hover:text-amber-500 transition-colors whitespace-nowrap italic"
-          >
-            / {s.name}
+          <button key={s.id} type="button" onClick={() => scrollToSection(s.id)} className="text-sm text-zinc-400 hover:text-zinc-800 transition-colors whitespace-nowrap">
+            {s.name}
           </button>
         ))}
       </div>
@@ -151,26 +99,19 @@ function SectionIndex() {
   );
 }
 
+/* ─── Intent Toggle ───────────────────────────────────────────────────── */
 function IntentToggle({ intent, setIntent }) {
   return (
-    <div className="inline-flex p-1 bg-zinc-950/80 border border-white/10 rounded-2xl backdrop-blur-md shadow-inner">
+    <div className="inline-flex p-1 bg-white/80 border border-zinc-200 rounded-full backdrop-blur-md shadow-sm">
       <button
         onClick={() => setIntent("moto")}
-        className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all text-xs font-black uppercase italic tracking-widest relative overflow-hidden ${
-          intent === "moto"
-            ? "bg-amber-500 text-black shadow-md"
-            : "text-zinc-400 hover:text-white hover:bg-white/5"
-        }`}
+        className={`flex items-center gap-2 px-6 py-3 rounded-full transition-all text-sm font-medium ${intent === "moto" ? "bg-[#CDA755] text-white shadow-md" : "text-zinc-500 hover:text-zinc-800 hover:bg-zinc-50"}`}
       >
         <Bike size={16} /> Motorcycle
       </button>
       <button
         onClick={() => setIntent("car")}
-        className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all text-xs font-black uppercase italic tracking-widest relative overflow-hidden ${
-          intent === "car"
-            ? "bg-amber-500 text-black shadow-md"
-            : "text-zinc-400 hover:text-white hover:bg-white/5"
-        }`}
+        className={`flex items-center gap-2 px-6 py-3 rounded-full transition-all text-sm font-medium ${intent === "car" ? "bg-[#CDA755] text-white shadow-md" : "text-zinc-500 hover:text-zinc-800 hover:bg-zinc-50"}`}
       >
         <Car size={16} /> Car
       </button>
@@ -178,37 +119,67 @@ function IntentToggle({ intent, setIntent }) {
   );
 }
 
-export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, derivedRegions, derivedCountries, derivedTheater, rankingData }) {
+/* ─── Arrival Operations Card ─────────────────────────────────────────── */
+function OpCard({ icon: Icon, label, items }) {
+  if (!items || items.length === 0) return null;
+  return (
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-5">
+      <h3 className="text-xs tracking-wide uppercase text-zinc-400 mb-3 flex items-center gap-2">
+        <Icon size={13} className="text-[#CDA755]" /> {label}
+      </h3>
+      <div className="space-y-1">
+        {items.map((item, i) => (
+          <div key={i} className="group flex items-center justify-between py-2 px-3 rounded-xl hover:bg-[#F7F6F3] transition-colors">
+            <span className="text-sm text-zinc-700 group-hover:text-zinc-900">{item.label || item}</span>
+            {item.href && (
+              <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-300 group-hover:text-[#CDA755] transition-colors">
+                <ExternalLink size={14} />
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+   MAIN EXPORT
+   ═════════════════════════════════════════════════════════════════════════ */
+export default function ArrivalOS({ 
+  airport, 
+  experience,
+  intent, 
+  setIntent, 
+  airportRoutes, 
+  derivedRegions, 
+  derivedCountries, 
+  derivedTheater, 
+  rankingData 
+}) {
   const location = useLocation();
   const withCtx = (path) => withBrandContext(path, location.search);
 
-  // ── Asset Library (VAF) Integration ──
-  const { currentImage, caption: assetCaption } = useAssetLibrary(
-    "airport",
-    airport.id || airport.code,
-    airport.hero?.posterUrl || SITE_MEDIA.EUROPE_PAGE_H1
-  );
-
+  const { currentImage, caption: assetCaption } = useAssetLibrary("airport", airport.id || airport.code, airport.hero?.posterUrl || SITE_MEDIA.EUROPE_PAGE_H1);
   const finalHeroImage = currentImage;
   const finalMotto = assetCaption || airport.motto;
 
   if (import.meta.env.DEV) {
     console.log("ArrivalOS airport payload:", airport);
   }
+
   const a = {
     ...airport,
-    recovery: airport.recovery || {
-      premium: { name: "", location: "", href: "#", features: [] },
-      budget: { name: "", location: "", href: "#", features: [] }
-    },
+    name: airport.name || experience?.airport?.name || airport.city,
+    recovery: airport.recovery || { premium: { name: "", location: "", href: "#", features: [] }, budget: { name: "", location: "", href: "#", features: [] } },
     utilities: Array.isArray(airport.utilities) ? airport.utilities : [],
     cityExtension: airport.cityExtension || { enabled: false, headline: "", subline: "", items: [] },
   };
-  const moneyCTA = intent === "moto"
-    ? { label: "Request Logistics Quote", href: LINKS.shipBikeQuote() }
-    : { label: "Ship Your GT Quote", href: LINKS.shipGTQuote() };
 
-  // Phase 3: HUB CONTEXT - Use airport metadata from GRAPH.airports[code]
+  const moneyCTA = intent === "moto"
+    ? { label: "Request Quote", href: LINKS.shipBikeQuote() }
+    : { label: "Ship Your GT", href: LINKS.shipGTQuote() };
+
   const arrivals = a?.arrivalOS?.arrivals ?? [];
   const departures = a?.arrivalOS?.departures ?? [];
   const baggage = a?.arrivalOS?.baggageClaim ?? [];
@@ -219,228 +190,92 @@ export default function ArrivalOS({ airport, intent, setIntent, airportRoutes, d
     <div className="relative">
       <ActionRail airport={a.code} intent={intent} withCtx={withCtx} />
 
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          poster={finalHeroImage}
-          src={a.hero?.videoUrl || SITE_MEDIA.EUROPE_PAGE_H1}
-        />
+      {/* ── HERO ─────────────────────────────────────────────────────── */}
+      <section className="relative min-h-[90vh] flex items-end overflow-hidden bg-[#F7F6F3]">
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster={finalHeroImage} src={a.hero?.videoUrl || SITE_MEDIA.EUROPE_PAGE_H1} />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#F7F6F3] via-[#F7F6F3]/40 to-transparent" />
 
-        <div className="absolute inset-0 bg-[#050505]/60" />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            {/* BREADCRUMBS */}
-            <nav className="text-xs text-zinc-500 mb-6 font-mono uppercase tracking-widest">
-              <Link to={withCtx("/airport")} className="hover:text-white transition-colors">Airports</Link>
-              {" / "}
-              <Link to={withCtx(`/airport/continent/${a.continent}`)} className="hover:text-white transition-colors">
-                {a.continent}
-              </Link>
-              {" / "}
-              <Link to={withCtx(`/airport/country/${a.country?.toLowerCase()}`)} className="hover:text-white transition-colors">
-                {a.country}
-              </Link>
-              {" / "}
-              <span className="text-white">{a.code}</span>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-40 w-full">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
+            {/* Breadcrumbs */}
+            <nav className="text-xs text-zinc-500 mb-6 flex items-center gap-1.5">
+              <Link to={withCtx("/airport")} className="hover:text-zinc-800 transition-colors">Airports</Link>
+              <span className="text-zinc-300">/</span>
+              <Link to={withCtx(`/airport/continent/${a.continent}`)} className="hover:text-zinc-800 transition-colors capitalize">{a.continent}</Link>
+              <span className="text-zinc-300">/</span>
+              <Link to={withCtx(`/airport/country/${a.country?.toLowerCase()}`)} className="hover:text-zinc-800 transition-colors">{a.country}</Link>
+              <span className="text-zinc-300">/</span>
+              <span className="text-zinc-800 font-medium">{a.code}</span>
             </nav>
 
-            {/* STATUS PILLS */}
-            <div className="flex flex-wrap items-center gap-4 mb-8">
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
-                <MapPin size={14} className="text-amber-500" />
-                <span className="text-[10px] font-mono font-black tracking-[0.35em] text-white/90 uppercase italic">
-                  ARRIVAL HUB • {a.code}
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
-                <Globe size={14} className="text-amber-500" />
-                <span className="text-[10px] font-mono font-black tracking-[0.35em] text-white/90 uppercase italic">
-                  PRIMARY THEATER • {derivedTheater}
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
-                <Map size={14} className="text-amber-500" />
-                <span className="text-[10px] font-mono font-black tracking-[0.35em] text-white/90 uppercase italic">
-                  ROUTE ACCESS • {airportRoutes?.length || 0} ROUTES
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
-                <Target size={14} className="text-amber-500" />
-                <span className="text-[10px] font-mono font-black tracking-[0.35em] text-white/90 uppercase italic">
-                  REGIONS • {derivedRegions?.length || 0}
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
-                <Globe size={14} className="text-amber-500" />
-                <span className="text-[10px] font-mono font-black tracking-[0.35em] text-white/90 uppercase italic">
-                  COUNTRIES • {derivedCountries?.length || 0}
-                </span>
-              </div>
+            {/* Label */}
+            <div className="inline-flex items-center gap-2 mb-5">
+              <span className="text-xs tracking-wide uppercase text-zinc-400">{a.code}</span>
+              <span className="text-zinc-300">&middot;</span>
+              <span className="text-xs text-zinc-500">{a.name} Hub</span>
             </div>
 
-            {/* HEADLINE */}
-            <h1 className="text-6xl md:text-8xl font-serif font-black italic uppercase leading-[0.85] tracking-[-0.03em] text-white mb-6">
+            {/* Headline */}
+            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-[1.05] tracking-tight text-zinc-900 mb-6">
               Premium Motorcycle Rentals &amp; Transport in {a.city || a.name} ({a.code})
             </h1>
 
-            <p className="text-xl text-zinc-200/90 italic max-w-xl leading-relaxed mb-10">
-              {finalMotto}
+            <p className="text-lg text-zinc-500 max-w-lg leading-relaxed mb-8">
+              {finalMotto || `Fly in. Recover. Explore ${derivedTheater || "the region"} on two wheels.`}
             </p>
 
-            {/* INTENT */}
-            <div className="mb-12">
-              <IntentToggle intent={intent} setIntent={setIntent} />
+            {/* Stats */}
+            <div className="flex flex-wrap gap-3 mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-zinc-100">
+                <Target size={13} className="text-[#CDA755]" />
+                <span className="text-xs text-zinc-600">{experience?.ride_local?.mission_count || 0} missions active</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-zinc-100">
+                <Map size={13} className="text-[#CDA755]" />
+                <span className="text-xs text-zinc-600">{airportRoutes?.length || 0} routes</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-zinc-100">
+                <Globe size={13} className="text-[#CDA755]" />
+                <span className="text-xs text-zinc-600">{derivedCountries?.length || 0} countries</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-zinc-100">
+                <MapPin size={13} className="text-[#CDA755]" />
+                <span className="text-xs text-zinc-600">{derivedRegions?.length || 0} regions</span>
+              </div>
             </div>
 
-            {/* CTA */}
-            <a
-              href={moneyCTA.href}
-              className="inline-flex items-center gap-2 px-10 py-5 rounded-2xl bg-amber-500 text-black font-mono font-black uppercase italic tracking-widest text-sm hover:bg-amber-400 transition-all shadow-[0_10px_30px_rgba(245,158,11,0.4)] hover:-translate-y-1"
-            >
-              {moneyCTA.label}
-              <ArrowRight size={18} />
-            </a>
+            {/* Intent + CTA */}
+            <div className="flex flex-col sm:flex-row items-start gap-4">
+              <IntentToggle intent={intent} setIntent={setIntent} />
+              <a href={moneyCTA.href} className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#CDA755] text-white font-medium text-sm hover:bg-[#b8943f] transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                {moneyCTA.label} <ArrowRight size={16} />
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
 
+
       <SectionIndex />
 
-      {/* ARRIVAL OPERATIONS GRID */}
-      <section className="py-16 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <h2 className="text-lg font-mono font-black tracking-widest text-amber-500 uppercase italic mb-2">
-            ARRIVAL OPERATIONS
-          </h2>
-          <div className="w-24 h-px bg-amber-500/50 mb-8" />
-
-          <div className="grid md:grid-cols-5 gap-6">
-
-            {arrivals.length > 0 && (
-              <div>
-                <h3 className="text-xs font-mono text-zinc-400 uppercase mb-3 flex items-center gap-2">
-                  <PlaneLanding size={12} className="text-amber-500" /> Arrivals
-                </h3>
-                <div className="space-y-2">
-                  {arrivals.map((item, i) => (
-                    <div key={i} className="group flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/30 transition-all">
-                      <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white">
-                        {item.label || item}
-                      </span>
-                      {item.href && (
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-600 group-hover:text-amber-500 transition-colors">
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {departures.length > 0 && (
-              <div>
-                <h3 className="text-xs font-mono text-zinc-400 uppercase mb-3 flex items-center gap-2">
-                  <PlaneTakeoff size={12} className="text-amber-500" /> Departures
-                </h3>
-                <div className="space-y-2">
-                  {departures.map((item, i) => (
-                    <div key={i} className="group flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/30 transition-all">
-                      <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white">
-                        {item.label || item}
-                      </span>
-                      {item.href && (
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-600 group-hover:text-amber-500 transition-colors">
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {baggage.length > 0 && (
-              <div>
-                <h3 className="text-xs font-mono text-zinc-400 uppercase mb-3 flex items-center gap-2">
-                  <Luggage size={12} className="text-amber-500" /> Baggage
-                </h3>
-                <div className="space-y-2">
-                  {baggage.map((item, i) => (
-                    <div key={i} className="group flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/30 transition-all">
-                      <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white">
-                        {item.label || item}
-                      </span>
-                      {item.href && (
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-600 group-hover:text-amber-500 transition-colors">
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {rideshare.length > 0 && (
-              <div>
-                <h3 className="text-xs font-mono text-zinc-400 uppercase mb-3 flex items-center gap-2">
-                  <Navigation size={12} className="text-amber-500" /> Rideshare
-                </h3>
-                <div className="space-y-2">
-                  {rideshare.map((item, i) => (
-                    <div key={i} className="group flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/30 transition-all">
-                      <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white">
-                        {item.label || item}
-                      </span>
-                      {item.href && (
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-600 group-hover:text-amber-500 transition-colors">
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {transport.length > 0 && (
-              <div>
-                <h3 className="text-xs font-mono text-zinc-400 uppercase mb-3 flex items-center gap-2">
-                  <TrainFront size={12} className="text-amber-500" /> Transport
-                </h3>
-                <div className="space-y-2">
-                  {transport.map((item, i) => (
-                    <div key={i} className="group flex items-center justify-between p-3 bg-white/5 border border-white/5 rounded-xl hover:border-amber-500/30 transition-all">
-                      <span className="text-sm font-black italic uppercase text-zinc-300 group-hover:text-white">
-                        {item.label || item}
-                      </span>
-                      {item.href && (
-                        <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-zinc-600 group-hover:text-amber-500 transition-colors">
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
+      {/* ── ARRIVAL OPS ──────────────────────────────────────────────── */}
+      {(arrivals.length > 0 || departures.length > 0 || baggage.length > 0 || rideshare.length > 0 || transport.length > 0) && (
+        <section className="py-16 bg-[#F7F6F3]">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="mb-10">
+              <p className="text-xs tracking-wide uppercase text-[#CDA755] mb-2">Arrival Information</p>
+              <h2 className="text-2xl font-serif font-bold text-zinc-900">Getting started at {a.city || a.code}</h2>
+            </div>
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <OpCard icon={PlaneLanding} label="Arrivals" items={arrivals} />
+              <OpCard icon={PlaneTakeoff} label="Departures" items={departures} />
+              <OpCard icon={Luggage} label="Baggage" items={baggage} />
+              <OpCard icon={Navigation} label="Rideshare" items={rideshare} />
+              <OpCard icon={TrainFront} label="Transport" items={transport} />
+            </div>
           </div>
-
-        </div>
-      </section>
+        </section>
+      )}
     </div>
   );
 }

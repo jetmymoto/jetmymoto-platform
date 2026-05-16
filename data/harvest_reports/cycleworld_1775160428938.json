@@ -1,0 +1,41 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://www.cycleworld.com/motorcycle-reviews/",
+  "timestamp": "2026-04-02T20:07:08.938Z",
+  "dryRun": true,
+  "mode": "semantic",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 8,
+    "imagesFound": 96,
+    "imagesKept": 0,
+    "rejectedSmall": 0,
+    "rejectedUi": 2,
+    "rejectedDuplicate": 74,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "semanticStats": {
+    "calls": 20,
+    "apiCalls": 2,
+    "kept": 0,
+    "rejected": 20,
+    "errors": 0,
+    "avgConfidence": 0.39999999999999997,
+    "confidenceSum": 7.999999999999999,
+    "matchedModels": {},
+    "categories": {
+      "cruiser": 3,
+      "unknown": 10,
+      "sport": 4,
+      "touring": 2,
+      "adventure": 1
+    }
+  },
+  "sampleImages": []
+}

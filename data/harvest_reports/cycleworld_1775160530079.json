@@ -1,0 +1,40 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://powersports.honda.com/street/adventure/africa-twin",
+  "timestamp": "2026-04-02T20:08:50.079Z",
+  "dryRun": true,
+  "mode": "semantic",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 0,
+    "imagesFound": 0,
+    "imagesKept": 0,
+    "rejectedSmall": 0,
+    "rejectedUi": 0,
+    "rejectedDuplicate": 0,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": [
+      {
+        "url": "https://powersports.honda.com/street/adventure/africa-twin",
+        "error": "Error: Request blocked - received 403 status code.\n    at PlaywrightCrawler._throwOnBlockedRequest (/workspaces/jetmymoto-platform/node_modules/@crawlee/basic/internals/basic-crawler.js:913:19)\n    at PlaywrightCrawler._responseHandler (/workspaces/jetmymoto-platform/node_modules/@crawlee/browser/internals/browser-crawler.js:383:22)\n    at PlaywrightCrawler._runRequestHandler (/workspaces/jetmymoto-platform/node_modules/@crawlee/browser/internals/browser-crawler.js:262:24)\n    at async PlaywrightCrawler._runRequestHandler (/workspaces/jetmymoto-platform/node_modules/@crawlee/playwright/internals/playwright-crawler.js:114:9)\n    at async wrap (/workspaces/jetmymoto-platform/node_modules/@apify/timeout/cjs/index.cjs:54:21)"
+      }
+    ]
+  },
+  "semanticStats": {
+    "calls": 0,
+    "apiCalls": 0,
+    "kept": 0,
+    "rejected": 0,
+    "errors": 0,
+    "avgConfidence": 0,
+    "confidenceSum": 0,
+    "matchedModels": {},
+    "categories": {}
+  },
+  "sampleImages": []
+}

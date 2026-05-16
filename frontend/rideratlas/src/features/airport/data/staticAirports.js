@@ -1,4 +1,5 @@
 import { airportConfig } from "./airportConfig.generated.js";
+import { OPERATIONAL_INTEL } from "./operationalIntel.js";
 import {
   PlaneLanding,
   PlaneTakeoff,
@@ -106,6 +107,7 @@ const enrichmentMap = {
 };
 
 function createAirport({ code, name, region, city, officialUrl }) {
+  const intel = OPERATIONAL_INTEL[code] || null;
   const base = {
     code,
     name,
@@ -120,7 +122,7 @@ function createAirport({ code, name, region, city, officialUrl }) {
       videoUrl: "",
       posterUrl: "",
     },
-    controlPanel: buildControlPanel({ officialUrl }),
+    controlPanel: buildControlPanel({ officialUrl, operational_intel: intel }),
     utilities: buildUtilities(),
     cityExtension: buildExtension(city),
     recovery: {

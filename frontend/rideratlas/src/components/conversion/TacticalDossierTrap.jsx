@@ -56,13 +56,13 @@ export default function TacticalDossierTrap({ hubName = "Regional" }) {
       
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <div className="mb-3 text-[10px] uppercase tracking-[0.34em] text-[#CDA755] font-semibold">
-          Secure Logistics Intelligence
+          Mission Logistics Guide
         </div>
-        <h3 className="mb-4 font-serif text-3xl font-black tracking-tight text-white md:text-4xl">
-          Download the {hubName} Tactical Deployment Dossier.
+        <h3 className="mb-4 font-serif text-3xl font-black tracking-tight text-white md:text-4xl uppercase">
+          Download the {hubName} Mission Dossier.
         </h3>
         <p className="mx-auto mb-8 max-w-2xl text-sm leading-7 text-zinc-400">
-          Enter your email to receive a complete breakdown of staged fleet inventory, route telemetry, and the cost-analysis of renting locally vs. shipping your own machine.
+          Enter your email to receive a complete mission briefing including technical sector metrics, terrain telemetry, and deployment protocols for this corridor.
         </p>
 
         <form onSubmit={handleUplink} className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 sm:flex-row">
@@ -72,7 +72,7 @@ export default function TacticalDossierTrap({ hubName = "Regional" }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={status !== "idle"}
-            placeholder="OPERATIVE EMAIL..."
+            placeholder="EMAIL ADDRESS..."
             className="w-full flex-1 rounded-[16px] border border-white/10 bg-[#050505] px-5 py-4 text-sm font-medium text-white placeholder:text-zinc-600 focus:border-[#CDA755]/50 focus:outline-none focus:ring-1 focus:ring-[#CDA755]/50 disabled:opacity-50 transition-all duration-300 shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)]"
           />
           <button
@@ -88,23 +88,23 @@ export default function TacticalDossierTrap({ hubName = "Regional" }) {
                 : "bg-[#CDA755] text-[#050505] hover:bg-[#F3E5C7] hover:shadow-[0_8px_30px_rgba(205,167,85,0.35)]"
             }`}
           >
-            {status === "idle" && "[ INITIALIZE UPLINK ]"}
+            {status === "idle" && "GET MISSION DOSSIER"}
             {status === "loading" && (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                TRANSMITTING...
+                SENDING...
               </>
             )}
             {status === "success" && (
               <>
                 <CheckCircle2 className="h-4 w-4" />
-                DOSSIER DISPATCHED
+                GUIDE DISPATCHED
               </>
             )}
             {status === "error" && (
               <>
                 <AlertTriangle className="h-4 w-4" />
-                UPLINK FAILED
+                REQUEST FAILED
               </>
             )}
           </button>

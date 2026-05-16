@@ -27,9 +27,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "MXP",
     extraction_airport: "MUC",
+    airport_start_code: "MXP",
+    airport_end_code: "MUC",
     theater: "alps",
     distance_km: 680,
     duration_days: "3–5",
+    elevation_gain_m: 12400,
+    riding_style: "Technical Alpine Flow",
+    weather_window: "Late June – Mid September",
+    fuel_range_requirement: "180km minimum recommended",
+    border_crossings: ["Italy/Austria (Stelvio/Reschen)"],
+    recommended_stopovers: ["Bormio", "Cortina d'Ampezzo", "Zell am See"],
     cinematic_pitch:
       "Deploy from Milan Malpensa and launch directly into the Italian Dolomites. Push north through Stelvio Pass, thread the Grossglockner High Alpine Road, and descend into Bavaria for extraction at Munich. No backtracking. No wasted highway miles. Pure vertical theater from insertion to extraction.",
     highlights: [
@@ -37,6 +45,11 @@ export const A2A_MISSIONS = [
       "Grossglockner High Alpine Road — Austria's crown jewel",
       "Dolomites corridor — UNESCO World Heritage riding",
       "Bavarian Alps descent into Munich",
+    ],
+    route_highlights: [
+      { name: "Stelvio Pass", type: "pass", reason: "48 hairpins, 2757m summit" },
+      { name: "Grossglockner", type: "pass", reason: "Austria's highest paved road" },
+      { name: "Sellaronda", type: "circuit", reason: "Iconic Dolomites peaks" }
     ],
     seo: {
       title: "Motorcycle Trip Milan to Munich | Alpine Traverse A2A Mission",
@@ -50,9 +63,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "MXP",
     extraction_airport: "ZRH",
+    airport_start_code: "MXP",
+    airport_end_code: "ZRH",
     theater: "alps",
     distance_km: 520,
     duration_days: "3–4",
+    elevation_gain_m: 11200,
+    riding_style: "High-Altitude Pass Sequence",
+    weather_window: "July – September",
+    fuel_range_requirement: "200km recommended",
+    border_crossings: ["Italy/Switzerland (Splügen)"],
+    recommended_stopovers: ["St. Moritz", "Andermatt"],
     cinematic_pitch:
       "Insert at Milan and climb directly into the Swiss Alps via the Splügen and Julier passes. Thread through the Engadin valley, push west through Andermatt, and extract at Zurich. Every kilometer is above 1,500 meters. This is altitude-locked riding at its finest.",
     highlights: [
@@ -60,6 +81,11 @@ export const A2A_MISSIONS = [
       "Julier Pass — the ancient Roman trade route",
       "Andermatt — crossroads of four major Alpine passes",
       "Engadin Valley — pristine high-altitude corridor",
+    ],
+    route_highlights: [
+      { name: "Splügen Pass", type: "pass", reason: "Dramatic border switchbacks" },
+      { name: "Furka Pass", type: "pass", reason: "James Bond Goldfinger location" },
+      { name: "Grimsel Pass", type: "pass", reason: "Granite peaks and glacial lakes" }
     ],
     seo: {
       title: "Motorcycle Trip Milan to Zurich | Swiss Alpine Crossing A2A Mission",
@@ -73,9 +99,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "CDG",
     extraction_airport: "BCN",
+    airport_start_code: "CDG",
+    airport_end_code: "BCN",
     theater: "pyrenees",
     distance_km: 920,
     duration_days: "4–6",
+    elevation_gain_m: 9800,
+    riding_style: "Remote Mountain Backroads",
+    weather_window: "June – October",
+    fuel_range_requirement: "250km minimum advised (remote sectors)",
+    border_crossings: ["France/Spain (Pyrenees Spine)"],
+    recommended_stopovers: ["Vielha", "Sort", "Andorra la Vella"],
     cinematic_pitch:
       "Launch from Paris and carve south through the Massif Central before hitting the Pyrenees head-on. Cross the spine of the range via the Col du Tourmalet and Col d'Aubisque, then descend the Spanish side through Aragón into Catalonia for extraction at Barcelona. France to Spain, Atlantic to Mediterranean.",
     highlights: [
@@ -83,6 +117,11 @@ export const A2A_MISSIONS = [
       "Col d'Aubisque — misty high-altitude switchbacks",
       "Aragón descent — dramatic Spanish valleys",
       "Catalonian coastal approach to Barcelona",
+    ],
+    route_highlights: [
+      { name: "Col du Tourmalet", type: "pass", reason: "Highest paved pass in French Pyrenees" },
+      { name: "Col d'Aubisque", type: "pass", reason: "Spectacular balcony road" },
+      { name: "N-260", type: "road", reason: "Spain's legendary 'Trans-Pyrenean' tarmac" }
     ],
     seo: {
       title: "Motorcycle Trip Paris to Barcelona | Pyrenees Crossing A2A Mission",
@@ -96,9 +135,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "LHR",
     extraction_airport: "EDI",
+    airport_start_code: "LHR",
+    airport_end_code: "EDI",
     theater: "scottish-highlands",
     distance_km: 750,
     duration_days: "4–5",
+    elevation_gain_m: 6200,
+    riding_style: "Coastal Cliffs & Glen Sweepers",
+    weather_window: "May – September",
+    fuel_range_requirement: "220km advised (Highland sectors)",
+    border_crossings: ["England/Scotland (Borders)"],
+    recommended_stopovers: ["Keswick", "Fort William", "Inverness"],
     cinematic_pitch:
       "Insert at London Heathrow and ride north through the Lake District, cross into Scotland via the Borders, then push deep into the Highlands. Tackle the North Coast 500's most dramatic sections before extracting at Edinburgh. England to Scotland in one continuous, unbroken line.",
     highlights: [
@@ -106,6 +153,11 @@ export const A2A_MISSIONS = [
       "Scottish Borders — rolling green corridors",
       "Glen Coe — the cinematic heart of the Highlands",
       "NC500 sections — coastal cliff roads above the Atlantic",
+    ],
+    route_highlights: [
+      { name: "Glen Coe", type: "glen", reason: "Scotland's most cinematic valley" },
+      { name: "Bealach na Bà", type: "pass", reason: "Single-track alpine-style climb" },
+      { name: "Loch Ness", type: "lake", reason: "Iconic highland shoreline" }
     ],
     seo: {
       title: "Motorcycle Trip London to Edinburgh | Highland Run A2A Mission",
@@ -119,9 +171,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "OSL",
     extraction_airport: "BGO",
+    airport_start_code: "OSL",
+    airport_end_code: "BGO",
     theater: "norwegian-fjords",
     distance_km: 480,
     duration_days: "3–5",
+    elevation_gain_m: 8400,
+    riding_style: "Fjord-Edge Technical",
+    weather_window: "June – August",
+    fuel_range_requirement: "200km minimum",
+    border_crossings: ["Domestic Norway"],
+    recommended_stopovers: ["Geilo", "Flåm", "Aurland"],
     cinematic_pitch:
       "Deploy from Oslo and push west into the heart of Norwegian fjord country. Thread between Sognefjorden and Hardangerfjorden on roads carved into sheer cliff faces above the water. Ride the Trollstigen if you dare, then extract at Bergen on the Atlantic coast. Midnight sun optional.",
     highlights: [
@@ -129,6 +189,11 @@ export const A2A_MISSIONS = [
       "Hardangerfjorden — orchard-lined fjord roads",
       "Trollstigen — 11 hairpins on a 10% gradient cliff",
       "Bergen — Hanseatic port extraction point",
+    ],
+    route_highlights: [
+      { name: "Trollstigen", type: "pass", reason: "11 hairpins on a 10% gradient" },
+      { name: "Sognefjellet", type: "pass", reason: "Northern Europe's highest pass" },
+      { name: "Aurlandsfjellet", type: "road", reason: "The 'Snow Road' above fjords" }
     ],
     seo: {
       title: "Motorcycle Trip Oslo to Bergen | Fjord Expedition A2A Mission",
@@ -142,9 +207,17 @@ export const A2A_MISSIONS = [
     continent: "europe",
     insertion_airport: "MUC",
     extraction_airport: "ATH",
+    airport_start_code: "MUC",
+    airport_end_code: "ATH",
     theater: "dolomites",
     distance_km: 1850,
     duration_days: "7–10",
+    elevation_gain_m: 22000,
+    riding_style: "Trans-Continental Grand Tour",
+    weather_window: "May – June / September – October",
+    fuel_range_requirement: "250km minimum (Balkan interior)",
+    border_crossings: ["Austria/Slovenia", "Slovenia/Croatia", "Montenegro/Albania", "Albania/Greece"],
+    recommended_stopovers: ["Ljubljana", "Split", "Kotor", "Meteora"],
     cinematic_pitch:
       "The ultimate long-range A2A mission. Insert at Munich, drop into the Austrian Alps, cross into the Italian Dolomites, then ride the full length of the Adriatic coast through Croatia, Montenegro, and Albania before extracting at Athens. This is a European grand tour compressed into a single directional corridor.",
     highlights: [
@@ -152,6 +225,11 @@ export const A2A_MISSIONS = [
       "Croatian coast — island-studded Adriatic highway",
       "Montenegro — Bay of Kotor switchbacks",
       "Greek approach — Meteora and the Peloponnese",
+    ],
+    route_highlights: [
+      { name: "Grossglockner", type: "pass", reason: "Alpine launch point" },
+      { name: "Adriatic Highway", type: "road", reason: "Island-studded coastal sweeping" },
+      { name: "Kotor Bay", type: "pass", reason: "Switchbacks with vertical bay views" }
     ],
     seo: {
       title: "Motorcycle Trip Munich to Athens | Adriatic Descent A2A Mission",

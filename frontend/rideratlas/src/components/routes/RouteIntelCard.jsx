@@ -16,7 +16,7 @@ export default function RouteIntelCard({ route }) {
     : 'N/A';
 
   return (
-    <div className="group border border-white/5 bg-zinc-950/50 hover:border-amber-500/30 transition-all duration-300 rounded-lg overflow-hidden flex flex-col h-full">
+    <div className="group border border-border-primary bg-surface-secondary/50 hover:border-accent-primary/30 transition-all duration-300 rounded-lg overflow-hidden flex flex-col h-full">
       
       {/* Image Section */}
       <div className="relative h-40 bg-zinc-900 overflow-hidden">

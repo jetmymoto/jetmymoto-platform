@@ -1,0 +1,67 @@
+{
+  "missionSlug": "osl-to-bgo-fjord-expedition",
+  "totalDistanceKm": 1413,
+  "dailyStages": [
+    {
+      "day": 1,
+      "distanceKm": 357,
+      "mapAsset": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_01_map.jpg",
+      "label": "OSL to Lom"
+    },
+    {
+      "day": 2,
+      "distanceKm": 102,
+      "mapAsset": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_02_map.jpg",
+      "label": "Lom to Geiranger"
+    },
+    {
+      "day": 3,
+      "distanceKm": 145,
+      "mapAsset": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_03_map.jpg",
+      "label": "Geiranger to Molde"
+    },
+    {
+      "day": 4,
+      "distanceKm": 85,
+      "mapAsset": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_04_map.jpg",
+      "label": "Molde to Kristiansund"
+    },
+    {
+      "day": 5,
+      "distanceKm": 724,
+      "mapAsset": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_05_map.jpg",
+      "label": "Kristiansund to BGO"
+    }
+  ],
+  "mapAssets": {
+    "theaterMap": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/theater_map.jpg",
+    "operationalMap": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/operational_map.jpg",
+    "elevationProfile": "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/elevation_profile.jpg",
+    "dailyMaps": [
+      "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_01_map.jpg",
+      "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_02_map.jpg",
+      "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_03_map.jpg",
+      "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_04_map.jpg",
+      "gs://factory1/route-intelligence-v1/osl-to-bgo-fjord-expedition/days/day_05_map.jpg"
+    ]
+  },
+  "intelligence": {
+    "terrainType": "glacial_valley",
+    "ridingMood": "technical_adventure",
+    "fatigueScore": 0.87,
+    "scenicDensity": 0.92,
+    "remoteFactor": 0.55,
+    "weatherVolatility": 0.88,
+    "bestSeason": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+    "cinematicProfile": "cold_epic",
+    "recommendedBikeTypes": [
+      "adventure",
+      "dual_sport"
+    ]
+  }
+}

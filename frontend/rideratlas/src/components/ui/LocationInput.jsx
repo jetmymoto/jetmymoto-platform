@@ -94,7 +94,7 @@ export default function LocationInput({ value, onChange, onSelect, placeholder =
             }
         }}
         placeholder={placeholder}
-        className="w-full bg-zinc-950 border border-white/20 p-4 pl-12 font-mono text-xs uppercase tracking-widest text-white placeholder:text-zinc-800 focus:border-amber-500 outline-none rounded-sm transition-all focus:bg-zinc-900"
+        className="w-full bg-surface-primary border border-border-primary p-4 pl-12 font-mono text-xs uppercase tracking-widest text-text-primary placeholder:text-text-secondary focus:border-accent-primary outline-none rounded-sm transition-all focus:bg-surface-secondary"
       />
       
       {/* Custom dropdown styling for the Google Autocomplete results */}

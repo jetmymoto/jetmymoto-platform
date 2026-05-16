@@ -1,0 +1,62 @@
+{
+  "template_id": "03_route_template",
+  "path": "/route/paris-cdg-to-alps",
+  "viewport": "desktop",
+  "seo": {
+    "title": "paris-cdg-to-alps | Motorcycle Route | JetMyMoto",
+    "description": "JetMyMoto provides elite private motorcycle airlift services worldwide. Seamless logistics for riders, collectors, and expeditions."
+  },
+  "content_structure": {
+    "primary_heading": "paris-cdg-to-alps",
+    "secondary_headings": [
+      "The road is waiting."
+    ]
+  },
+  "interactive_elements": {
+    "buttons": [],
+    "total_links": 19,
+    "sample_links": [
+      {
+        "text": "RIDERATLAS",
+        "href": "/"
+      },
+      {
+        "text": "ATLAS",
+        "href": "/"
+      },
+      {
+        "text": "HUBS",
+        "href": "/airport"
+      },
+      {
+        "text": "ROUTES",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "FLEETS",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "FIND A BIKE",
+        "href": "/airport/mxp?mode=rent&ctx=ra"
+      },
+      {
+        "text": "SHIP MACHINE",
+        "href": "/moto-airlift?ctx=jet"
+      },
+      {
+        "text": "BEGIN THE RIDE",
+        "href": "/airport?mode=rent&route=paris-cdg-to-alps"
+      },
+      {
+        "text": "Moto Airlift Quotes",
+        "href": "/moto-airlift"
+      },
+      {
+        "text": "Airport Recovery Protocols",
+        "href": "/airport"
+      }
+    ]
+  },
+  "timestamp": "2026-04-04T18:05:11.860Z"
+}

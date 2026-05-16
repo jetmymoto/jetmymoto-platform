@@ -16,9 +16,7 @@ export default function BrandLayout({ children }) {
 
   return (
     <div
-      className={`min-h-screen flex flex-col transition-colors duration-700 ${
-        isJetMyMoto ? "bg-surface-base text-white" : "bg-[#050505] text-white"
-      }`}
+      className={`min-h-screen flex flex-col transition-colors duration-700 bg-bg-primary text-text-primary`}
     >
       <HeaderJetMyMoto isJetMyMoto={isJetMyMoto} />
 

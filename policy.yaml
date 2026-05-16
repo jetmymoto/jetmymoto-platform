@@ -1,0 +1,9 @@
+constraint: constraints/gcp.restrictServiceUsage
+listPolicy:
+  allowedValues:
+  - firestore.googleapis.com
+  - cloudfunctions.googleapis.com
+  - storage.googleapis.com
+  - videostitcher.googleapis.com
+  - firebasestorage.googleapis.com
+  - aiplatform.googleapis.com

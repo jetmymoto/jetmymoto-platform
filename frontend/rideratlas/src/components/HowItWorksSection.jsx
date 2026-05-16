@@ -49,7 +49,7 @@ const cardVariants = {
 
 const HowItWorksSection = () => {
   return (
-    <section className="relative py-16 md:py-28 bg-[#050505] text-white overflow-hidden">
+    <section className="relative py-20 md:py-32 bg-[#050505] text-white overflow-hidden">
       
       {/* 🔥 ambient glow (ties with hero) */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(205,167,85,0.08),transparent_40%)]" />
@@ -87,12 +87,7 @@ const HowItWorksSection = () => {
             <motion.div
               key={idx}
               variants={cardVariants}
-              className={`group relative p-7 border transition-all duration-500 shadow-inset-hardware
-              ${
-                idx === 3
-                  ? "border-[#CDA755]/30 bg-gradient-to-br from-[#CDA755]/10 to-transparent"
-                  : "border-white/10 bg-surface-card hover:bg-surface-elevated hover:border-[#CDA755]/40"
-              }`}
+              className="group relative p-7 transition-all duration-500"
             >
               {/* STEP NUMBER */}
               <span className="absolute top-5 right-5 text-white/10 text-4xl font-bold transition-all duration-500 group-hover:text-[#CDA755]/20">

@@ -59,7 +59,9 @@
     "migrate:motorcycles:2025": "node scripts/migrateMotorcycles2025ToFirestore.mjs",
     "migrate:motorcycles:2025:sync-bmw-ktm": "node scripts/syncBmwKtm2025Schema.mjs",
     "ingest:brands:2025": "node scripts/ingestAdditionalBrands2025.mjs",
-    "migrate:motorcycles:cleanup-slugs": "node scripts/deprecateMalformedMotorcycleSlugs.mjs"
+    "migrate:motorcycles:cleanup-slugs": "node scripts/deprecateMalformedMotorcycleSlugs.mjs",
+    "vertex:build-rental-hero-map": "node scripts/ai/vertex/buildRentalHeroImageMap.mjs",
+    "stitch:push:rental-card": "node scripts/stitch/pushRentalCardToStitch.js"
   },
   "devDependencies": {
     "@google-cloud/vertexai": "^1.10.4",
@@ -68,6 +70,8 @@
   },
   "dependencies": {
     "@mendable/firecrawl-js": "^4.17.0",
+    "@openrouter/sdk": "^0.12.0",
+    "canvas": "^3.2.3",
     "crawlee": "^3.16.0",
     "dotenv": "^17.3.1",
     "firebase-admin": "^13.7.0",

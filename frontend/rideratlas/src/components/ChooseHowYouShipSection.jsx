@@ -65,7 +65,10 @@ const ChooseHowYouShipSection = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative p-10 rounded-[28px] border border-white/10 bg-white/[0.03] transition-all duration-500 hover:border-[#CDA755]/40 hover:bg-white/[0.06] hover:scale-[1.02]"
+            className="group relative p-10 rounded-[28px] bg-[#111111] transition-all duration-500 hover:scale-[1.02]"
+            style={{
+              background: 'radial-gradient(circle at top, rgba(205,167,85,0.08), transparent 70%), #111111'
+            }}
           >
             {/* glow */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_center,rgba(205,167,85,0.12),transparent_60%)] pointer-events-none" />
@@ -112,7 +115,10 @@ const ChooseHowYouShipSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="group relative p-10 rounded-[28px] border border-[#CDA755]/30 bg-gradient-to-br from-[#CDA755]/10 to-transparent transition-all duration-500 hover:scale-[1.02]"
+            className="group relative p-10 rounded-[28px] bg-[#111111] transition-all duration-500 hover:scale-[1.02]"
+            style={{
+              background: 'radial-gradient(circle at top, rgba(205,167,85,0.12), transparent 70%), #111111'
+            }}
           >
             {/* MOST FLEXIBLE TAG */}
             <span className="absolute top-5 right-5 text-[10px] tracking-[0.3em] uppercase text-[#CDA755] font-mono">

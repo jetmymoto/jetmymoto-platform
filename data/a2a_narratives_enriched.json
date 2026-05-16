@@ -1,0 +1,416 @@
+{
+  "generated_at": "2026-04-05T14:37:42.094Z",
+  "total": 19,
+  "model": "gemini-2.5-flash",
+  "pipeline": "SerpAPI → Gemini (Iron Legion Narrator)",
+  "missions": [
+    {
+      "slug": "mxp-to-muc-alpine-traverse",
+      "cinematic_pitch_enhanced": "Deploy from MXP, initiating immediate ascent into the UNESCO-listed Dolomites. Push north, engaging the 48-hairpin assault of Stelvio Pass (SS38) at 2,757m. Thread the high-altitude corridors of the Grossglockner High Alpine Road (B107), traversing Austria's premier mountain pass. Maintain bearing into the Bavarian Alps, executing a controlled descent for extraction at MUC. This 680km, 3-5 day corridor demands sustained concentration and precise machine control, offering zero backtracking and maximum vertical theater from insertion to extraction. Prepare for dynamic elevation shifts and variable surface conditions, requiring optimal chassis response.",
+      "highlights_enriched": [
+        "Stelvio Pass (SS38) — 48 hairpins, 2,757m summit",
+        "Grossglockner High Alpine Road (B107) — 35km length, 2,504m summit, 12% max gradient",
+        "Dolomites Corridor — UNESCO World Heritage, sustained alpine climbing",
+        "Bavarian Alps Descent — high-speed sweepers, elevation drop into MUC"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "high-altitude passes",
+        "technical switchbacks",
+        "sustained elevation changes"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its semi-active electronic suspension with 210mm front travel and 220mm rear travel provides optimal damping control across variable alpine surfaces, while the 30-liter fuel tank ensures extended range between high-altitude resupply points.",
+      "sensory_anchor": "The coarse aggregate of the alpine tarmac vibrates through the bars, a constant low-frequency hum. Lean angles generate G-forces, pressing the chassis into the apex. Cold air bites through ventilation at 2,500m.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:33:42.960Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "mxp-to-zrh-swiss-alpine-crossing",
+      "cinematic_pitch_enhanced": "Deploy from MXP, initiating immediate ascent into the Swiss Alpine theater. Push through the Splügen Pass, a 2,115m high-altitude corridor demanding precise throttle control across its 13% gradient. Navigate the ancient Roman trade route of Julier Pass at 2,284m, maintaining momentum through its sweeping curves. Thread the Engadin Valley, a high-altitude traverse at 1,800m, before engaging the technical junctions surrounding Andermatt, a critical nexus of four major Alpine passes. Maintain situational awareness through sustained exposure above 1,500m. Extract at ZRH. This is a 520km, multi-day operational sequence demanding sustained rider input and machine resilience.",
+      "highlights_enriched": [
+        "Splügen Pass — 2,115m summit, 13% maximum gradient, 20km ascent",
+        "Julier Pass — 2,284m summit, 10% maximum gradient, 36km traverse",
+        "Andermatt — Crossroads of four major Alpine passes (Gotthard, Furka, Oberalp, Susten)",
+        "Engadin Valley — 1,800m average elevation, 80km high-altitude corridor"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "high-altitude passes",
+        "technical switchbacks",
+        "sustained elevation",
+        "alpine exposure"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 270mm suspension travel and 30-liter fuel tank provide the necessary ground clearance, comfort, and range for extended high-altitude operations and varied road surfaces.",
+      "sensory_anchor": "The coarse asphalt of the Splügen bites, transmitting micro-vibrations through the bars. Cold air stings exposed skin, G-forces compress through the saddle on each hairpin exit. Engine heat pulses against the legs.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:33:53.006Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "cdg-to-bcn-pyrenees-crossing",
+      "cinematic_pitch_enhanced": "Deploy from CDG, initiating a 920km south-southeast vector. Push through the Massif Central's rolling topography, maintaining speed stability across varied surfaces. Intercept the Pyrenees front, engaging the range's core via the Col du Tourmalet and Col d'Aubisque, demanding precise throttle and chassis control at altitude. Execute descent operations into Spanish Aragón, navigating high-fidelity valley roads before a final approach into Catalonia. Extraction at BCN. This corridor traverses continental Europe, Atlantic to Mediterranean, demanding peak machine and rider performance across diverse operational environments.",
+      "highlights_enriched": [
+        "Col du Tourmalet (D918) — Summit at 2,115m, sustained 7.4% average gradient over 17km",
+        "Col d'Aubisque (D918) — Summit at 1,709m, 40+ high-altitude switchbacks",
+        "N-260 (Spanish Pyrenees) — 800km of continuous technical curves, variable camber",
+        "BP-1121 (Montserrat Approach) — 15km ascent, 12% maximum gradient, tight radius turns"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "alpine-passes",
+        "technical-switchbacks",
+        "high-speed-sweepers"
+      ],
+      "hardware_recommendation": "KTM 890 Adventure R — Its 270mm suspension travel and 21-inch front wheel are optimized for absorbing high-frequency road imperfections and maintaining stability over loose, unpredictable alpine surfaces.",
+      "sensory_anchor": "The asphalt texture shifts from smooth French tarmac to the granular, sun-baked grip of Spanish mountain passes. Wind buffets the helmet on exposed ridges, while engine vibration hums a constant frequency through the bars.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:34:09.346Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "lhr-to-edi-highland-run",
+      "cinematic_pitch_enhanced": "Deploy from LHR, vectoring north through the A65's rapid transit corridors towards the Lake District. Engage the tactical sweepers of the A591, pushing through sustained elevation changes that test chassis dynamics. Cross the Scottish Borders via the A7, entering the Highland theater. Navigate the A82 through Glen Coe, its formidable rock faces demanding precise line selection. Push deep into the North Coast 500's western flank, executing the coastal cliff roads of the B869 and A838, where high crosswinds and rapid surface transitions are mission-critical considerations. Extract at EDI, completing the 750km north-south axis.",
+      "highlights_enriched": [
+        "A65 – Settle to Ribblehead Viaduct: sustained elevation gain with panoramic visibility arcs.",
+        "A591 – Lake District: 26km of continuous sweepers, demanding precise lean angle management.",
+        "A82 – Glen Coe: 40km corridor through glacial valleys, 1500m rock face proximity, extreme wind funneling.",
+        "NC500 (B869/A838) – West Coast: 200m cliff-edge exposure, 18% gradient climbs, single-track passing zones."
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "high-speed-corridors",
+        "mountain-passes",
+        "coastal-cliffs",
+        "technical-sweepers"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure – Its 270mm suspension travel and 30-liter fuel tank provide the necessary ground clearance for varied surfaces and extended range across remote Highland sections.",
+      "sensory_anchor": "The coarse tarmac of the B869 vibrates through the bars, a constant low-frequency thrum. Gusts of Atlantic wind buffet the chassis, demanding counter-steer input. Cold air bites through ventilation, a sharp reminder of northern latitudes.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:34:20.839Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "osl-to-bgo-fjord-expedition",
+      "cinematic_pitch_enhanced": "Deploy from OSL, pushing west into the fjord matrix. Navigate the E16 corridor, transitioning to arterial routes carved into sheer rock faces. Thread the needle between Sognefjorden's deep waters and Hardangerfjorden's steep orchards. Engage the 11-hairpin ascent of Trollstigen, a 10% gradient cliff assault demanding precise throttle control and lean angle discipline. Traverse the high-alpine passes, monitoring surface integrity and ambient temperature. Extract at BGO, securing the Atlantic coast objective. This mission requires sustained focus and machine-to-rider synchronization.",
+      "highlights_enriched": [
+        "Sognefjorden — 204km length, 1,308m depth",
+        "Hardangerfjorden — 179km length, 891m depth, orchard-lined corridors",
+        "Trollstigen — 11 hairpins, 10% gradient, 858m elevation",
+        "Aurlandsfjellet Scenic Route (FV243) — 1,306m elevation, 48km length"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "fjord-carved-roads",
+        "alpine-passes",
+        "technical-hairpins",
+        "variable-surfaces"
+      ],
+      "hardware_recommendation": "KTM 890 Adventure R — Its 270mm suspension travel and 21-inch front wheel are critical for absorbing the unpredictable high-alpine surfaces and maintaining stability through sustained technical sections.",
+      "sensory_anchor": "The coarse aggregate of the mountain asphalt vibrates through the bars, a constant low-frequency hum. Cold air, dense with moisture, buffets the helmet as the road surface shifts from dry grip to damp, shaded patches.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:34:35.962Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "muc-to-ath-adriatic-descent",
+      "cinematic_pitch_enhanced": "Deploy from MUC. Initiate immediate vector south, engaging Austrian Alpine passes before breaching Italian airspace. Push through the Dolomites, navigating UNESCO-designated spires and high-altitude technical sections. Transition to coastal operations, tracking the Adriatic through Croatia, Montenegro, and Albania. Execute sustained high-speed transit along the E65. Final approach vectors target the Pindus and Tzoumerka National Parks in Greece, culminating in extraction at ATH. This 1850km corridor demands mechanical resilience and sustained rider focus across diverse European theaters.",
+      "highlights_enriched": [
+        "Stelvio Pass (SS38) — 2,757m elevation, 48 hairpin turns on northern ascent",
+        "Bay of Kotor (P1) — 25km of coastal switchbacks, 1:1 hairpin ratio to linear distance",
+        "Grossglockner High Alpine Road (B107) — 2,504m summit, 35km radius visibility arc",
+        "Transalpina (DN67C) — 2,145m highest point, sustained high-altitude exposure"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "alpine-passes",
+        "coastal-twisters",
+        "high-altitude-exposure",
+        "technical-hairpins"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 270mm telelever front suspension travel and 30-liter fuel tank capacity provide the necessary endurance and terrain absorption for sustained multi-day, mixed-surface operations.",
+      "sensory_anchor": "The asphalt bites under the tires, vibrations resonate through the bars on the 48-hairpin assault of SP239. Ambient air thins at 2,757m, wind buffeting the helmet, demanding precise lean angle input.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:34:52.192Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "lax-to-sfo-pacific-coast",
+      "cinematic_pitch_enhanced": "Deploy from LAX, vectoring immediately onto the Pacific Coast Highway, designated SR1. Engage the northbound corridor, tracking the Santa Monica Mountains before initiating the sustained coastal traverse through Malibu. Push through the 90-mile Big Sur sector, where the Santa Lucia range drops precipitously into the Pacific, demanding precise throttle control on sustained cliff-edge turns. Advance through the Monterey Peninsula, bypassing congestion, and cross the Golden Gate Bridge for final extraction at SFO. This 620km coastal operation requires sustained focus, adapting to dynamic microclimates and variable traffic density.",
+      "highlights_enriched": [
+        "SR1 Malibu Sector — 40km of coastal warm-up, sustained 30-40mph cornering capability",
+        "SR1 Big Sur Corridor — 90 miles of cliff-edge exposure, maximum elevation 300m, 350+ turns",
+        "Monterey Peninsula — strategic waypoint for refueling and systems check, 17-Mile Drive option",
+        "Golden Gate Bridge — 2.7km crossing, 67m sea clearance, high wind buffeting potential"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "coastal-twists",
+        "mountain-passes-low-elevation",
+        "sustained-sweepers"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 30-liter fuel tank provides extended range for remote Big Sur sectors, while the Telelever front suspension maintains stability through high-speed coastal sweepers.",
+      "sensory_anchor": "The asphalt shifts from sun-baked coarse aggregate to damp, fog-slicked tarmac. Wind gusts buffet the chassis, demanding counter-steer input. Vibration hums through the bars at 4,500rpm, a constant tactile report.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:35:07.555Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "yul-to-yqb-laurentian-corridor",
+      "cinematic_pitch_enhanced": "Deploy from Insertion Hub YUL, initiating a 380km traverse into the Laurentian Shield. Push north through the elevation gains of Route 329, engaging its tight radius turns between Sainte-Agathe and Saint-Donat. Navigate the dense forest corridors of Parc national de la Jacques-Cartier, maintaining situational awareness for variable road surfaces. Transition to the eastern vector along the St. Lawrence River via Route 138, a sustained coastal run demanding consistent throttle management. Conclude mission parameters with an urban extraction at Québec City, utilizing its fortified perimeter as a final waypoint. This corridor demands precise input and sustained focus across diverse terrain profiles.",
+      "highlights_enriched": [
+        "Route 329 — sustained elevation changes with high-G switchbacks between Sainte-Agathe and Saint-Donat",
+        "Parc national de la Jacques-Cartier — technical forest roads with 10%+ gradients",
+        "Route 138 — 100km+ coastal sweepers along the St. Lawrence River, high crosswind potential",
+        "Charlevoix Region — UNESCO biosphere with significant altitude variance and tight mountain passes"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "mountain-passes",
+        "coastal-sweepers",
+        "dense-forest-roads"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its 200mm telelever front suspension and 30-liter fuel tank provide the necessary compliance for varied surfaces and extended range across the Laurentian corridor.",
+      "sensory_anchor": "The asphalt tightens, vibrations from the coarse chip-seal road surface transmit through the bars. Lean angle increases, tires bite, G-forces press into the seat through a sustained radius turn. Air cools with elevation gain.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:35:21.977Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "slc-to-lax-desert-spine",
+      "cinematic_pitch_enhanced": "Deploy from Salt Lake City, ascending the Wasatch Front via Guardsman Pass, targeting alpine elevation. Push south, traversing the red rock geology of Utah, integrating Scenic Byway 12's high-desert plateaus and the Moqui Dugway's 3-mile, 10% grade ascent. Navigate the Navajo Nation, securing the Grand Canyon South Rim's mandatory visual. Blast through the Mojave Desert's high-speed corridors, maintaining vector for final extraction at Los Angeles International. This 1050km corridor demands sustained focus and machine endurance across diverse geological and climatic zones over 4-6 operational days.",
+      "highlights_enriched": [
+        "Guardsman Pass (UT-190/UT-224) — 2,987m summit elevation, 10% sustained gradient",
+        "Scenic Byway 12 (UT-12) — 196km traverse of high-desert plateaus, 2,920m maximum elevation",
+        "Moqui Dugway (UT-261) — 3-mile unpaved ascent, 10% average gradient, 1,930m summit",
+        "Grand Canyon South Rim (AZ-64) — 35km scenic loop, 2,134m average elevation"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "alpine-passes",
+        "desert-plateaus",
+        "canyon-rims",
+        "high-speed-desert"
+      ],
+      "hardware_recommendation": "KTM 890 Adventure R — Its 270mm suspension travel and 21-inch front wheel provide the necessary compliance and stability for varied surfaces, from alpine asphalt to unpaved desert sections.",
+      "sensory_anchor": "The desert heat radiates from the asphalt, vibrating through the bars. Wind buffets the helmet at speed, a constant pressure against the chassis. Fine dust coats the air, a metallic taste on the tongue.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:35:36.001Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "bna-to-tpa-dixie-run",
+      "cinematic_pitch_enhanced": "Deploy from Nashville, Tennessee (BNA), pushing east onto the Cumberland River Valley corridors before engaging the 318-curve assault of US-129, the Tail of the Dragon. Transition south onto the Blue Ridge Parkway, maintaining elevation control through its 469-mile length with a 45mph operational limit. Descend through the Appalachian foothills, navigating the two-lane blacktop of Georgia's back roads. Cross into Florida, traversing the low-country coastal plains, and execute extraction at Tampa (TPA) on the Gulf Coast. This 870km corridor demands sustained focus and adaptable throttle control across diverse surface conditions, from mountain apexes to tidewater plains.",
+      "highlights_enriched": [
+        "US-129 Tail of the Dragon — 318 curves in 17.7km (11 miles)",
+        "Blue Ridge Parkway — 469 miles (755km) with elevations ranging from 198m to 1,845m",
+        "Appalachian Foothills — sustained two-lane blacktop, elevation changes up to 600m",
+        "Gulf Coast Extraction — sea-level approach, extended straight-line velocity sectors"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "mountain-passes",
+        "technical-corners",
+        "rolling-hills",
+        "coastal-flats"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its 200mm telelever front suspension provides critical stability through high-frequency switchbacks, while the 30-liter fuel tank ensures extended range between resupply points across remote sectors.",
+      "sensory_anchor": "The asphalt bites under the tires, a granular vibration through the bars as the road surface changes. Ambient air cools, then warms. G-forces press on the apex, then release.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:35:54.812Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "yvr-to-slc-cascade-spine",
+      "cinematic_pitch_enhanced": "Deploy from YVR, initiating a southward vector through the volcanic spine of the Cascade Range. Engage the 99-Sea-to-Sky corridor, traversing coastal rainforest before pushing inland. Navigate the high-altitude ridgelines of Mount Baker, Rainier, and Hood, demanding precise throttle and brake modulation. Transition east into Oregon's high desert, where sustained speeds over varied surfaces test chassis stability. Execute a final push into Idaho's Sawtooth Mountains, confronting alpine switchbacks before extraction at SLC. This corridor demands adaptive riding, transitioning from maritime climate to arid basin, covering 1400km over 5-7 operational days.",
+      "highlights_enriched": [
+        "BC-99 Sea-to-Sky Highway — coastal ascent to 650m elevation, 100km technical sweepers",
+        "WA-123 Chinook Pass — 1,691m summit, 10% sustained gradient, alpine exposure",
+        "OR-216 Mount Hood Corridor — 1,440m pass, high-speed forest sections, variable grip",
+        "ID-75 Sawtooth Scenic Byway — 2,229m Galena Summit, 40km of sustained alpine curves"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "alpine-passes",
+        "high-desert",
+        "volcanic-ridgelines"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its 20-liter fuel tank enables extended range across high-desert sectors, while 210mm front suspension travel absorbs varied road conditions from coastal sweeps to mountain passes.",
+      "sensory_anchor": "The asphalt shifts from smooth to coarse chip-seal, transmitting a low-frequency rumble through the pegs. Cold air bites through vents at 2,000m, then warms to a dry gust across the desert basin. Lean angle increases, G-forces pressing into the seat.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:36:13.058Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "hnl-to-hnl-oahu-circuit",
+      "cinematic_pitch_enhanced": "Deploy from HNL, initiating immediate coastal perimeter engagement. Push through the Kalanianaʻole Highway's volcanic coastlines, navigating the dramatic cliffs of the Windward Coast. Transition to the Kamehameha Highway, engaging the North Shore's dynamic surf breaks, demanding constant lean angle adjustments. Ascend into the Koʻolau Range via the H-3 Freeway, traversing the ridge backbone at sustained gradients. Execute a full island circuit, returning to HNL. This mission demands consistent throttle management and precise line selection across varied tropical asphalt, anchoring all maneuvers to the machine's capabilities in high-humidity, sea-level conditions.",
+      "highlights_enriched": [
+        "Kalanianaʻole Highway — 25km of sustained coastal exposure, minimal elevation change",
+        "Kamehameha Highway (Route 83) — 50km North Shore surf break corridor, salt spray exposure",
+        "H-3 Freeway — Koʻolau Range crossing, 400m peak elevation, tunnel transit",
+        "Pali Highway (Route 61) — 17km of inland elevation gain, 6% average gradient"
+      ],
+      "difficulty_rating": 2,
+      "terrain_tags": [
+        "coastal-twists",
+        "tropical-urban-transition",
+        "moderate-elevation-gain"
+      ],
+      "hardware_recommendation": "Ducati Monster 937 — Its agile chassis and 937cc Testastretta engine, delivering 111hp and 93Nm of torque, provide the necessary responsiveness for rapid transitions between coastal sweepers and urban navigation.",
+      "sensory_anchor": "The asphalt radiates tropical heat, a humid embrace. Wind buffeting increases with speed, pushing against the chest. Engine vibration hums through the bars, a constant, low-frequency thrum beneath the palms.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:36:23.719Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "mxp-to-vie-alpine-eastward",
+      "cinematic_pitch_enhanced": "Deploy from MXP, vectoring east into the Italian Alps. Initiate ascent through the Dolomites, navigating the vertical limestone spires that demand precise throttle control and lean angle management. Push through the Brenner Corridor, transitioning into Austrian territory, where sustained high-speed sections test chassis stability. Execute the traverse of the Salzburg Alps, engaging a sequence of technical ascents and descents. Consolidate position as the terrain flattens into the Vienna Basin. Extract at VIE, completing a 918km tactical displacement across a multi-theater alpine corridor.",
+      "highlights_enriched": [
+        "Dolomites — UNESCO spires, 18 summits above 3,000m requiring high-torque delivery",
+        "Brenner Pass (SS12/A22) — 1,370m elevation, ancient alpine crossing with sustained gradient",
+        "Salzburg Alps (Grossglockner High Alpine Road) — 2,504m summit, 35km radius visibility arc, 48-hairpin assault",
+        "Vienna Basin Approach (A2) — 250m elevation drop over 60km, high-speed stability required"
+      ],
+      "difficulty_rating": 4,
+      "terrain_tags": [
+        "high-altitude passes",
+        "technical switchbacks",
+        "sustained climbs",
+        "high-speed corridors"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 270mm suspension travel and 105Nm torque at 6,000rpm provide the necessary clearance and power for variable alpine surfaces and high-altitude ascents.",
+      "sensory_anchor": "The asphalt surface shifts from coarse grit to smooth tarmac. Wind buffeting increases with elevation, requiring constant pressure through the bars. Engine vibration hums through the chassis, a low thrum against the cold air.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:36:34.198Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "mxp-to-fco-italian-spine",
+      "cinematic_pitch_enhanced": "Deploy from MXP, vectoring south along the Italian spine. Engage the Alpine foothills, navigating sustained elevation changes and high-G lean angles. Push through the Apennine Ridge, a 715km traverse demanding precise throttle control and advanced suspension articulation. Circumnavigate the volcanic caldera of Lake Bolsena before executing final approach into FCO. This corridor is a north-to-south endurance run, bypassing all primary motorways, requiring consistent rider input and machine reliability across diverse terrain profiles. Maintain situational awareness for dynamic surface conditions and localized microclimates. Extraction at FCO upon mission completion.",
+      "highlights_enriched": [
+        "SP583 Lariana — 70km lakeside sweepers, 140m elevation delta",
+        "SS67 Futa Pass — 1100m summit, sustained 8% gradient sections",
+        "Lake Bolsena Loop — 60km volcanic crater rim, variable camber turns",
+        "Via Cassia (SS2) — 180km ancient Roman alignment, high-speed transit sections"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "alpine-passes",
+        "ridge-roads",
+        "technical-sweepers"
+      ],
+      "hardware_recommendation": "Ducati Multistrada V4 S — Its semi-active Skyhook suspension with 170mm front travel and 105Nm torque at 8,750rpm provides the necessary compliance and power delivery for rapid transitions across varied Italian mountain and ridge road surfaces.",
+      "sensory_anchor": "The asphalt bites, a coarse vibration through the bars. G-forces press on switchback apexes, the air thinning at elevation. Wind buffets the helmet, a constant pressure against the chassis. Engine heat radiates, a low thrum against the legs.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:36:46.120Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "lhr-to-dub-celtic-crossing",
+      "cinematic_pitch_enhanced": "Deploy from LHR, initiating the northern vector. Push through the Welsh corridor, engaging the A487 coastal assault, a sustained 120km clifftop traverse demanding precise line selection. Consolidate at Holyhead for the Irish Sea crossing. Re-insert at Dublin, then execute a westward push across County Clare, navigating the limestone expanse of The Burren. Execute final approach to the Atlantic edge, terminating at the Cliffs of Moher, a 214m vertical drop. Pivot east for extraction at DUB, completing the bi-island operational corridor. This mission demands sustained focus across varied maritime and terrestrial environments.",
+      "highlights_enriched": [
+        "A487 Welsh Coast Road — 120km sustained clifftop traverse, multiple blind corners",
+        "Holyhead to Dublin Ferry — 110km maritime transit across the Irish Sea",
+        "The Burren Limestone Plateau — 250 sq km of exposed karst pavement, low-grip surface variability",
+        "Cliffs of Moher Approach — 214m vertical Atlantic edge drop, high wind exposure"
+      ],
+      "difficulty_rating": 2,
+      "terrain_tags": [
+        "coastal-traverse",
+        "maritime-transit",
+        "limestone-plateau",
+        "wind-exposure"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 30-litre fuel tank ensures range across remote sections, while the Telelever front suspension maintains composure over varied, low-grip surfaces.",
+      "sensory_anchor": "The wind shears across the exposed A487, buffeting the chassis. Tire hum shifts on the Burren's coarse limestone. Vibration through the bars is constant, a low-frequency thrum, signaling the road's texture.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:36:56.477Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "cdg-to-mad-iberian-corridor",
+      "cinematic_pitch_enhanced": "Deploy from CDG, initiating the Iberian Diagonal. Push south through the Massif Central, engaging the volcanic highlands via the high-speed N106 corridor, demanding precise line selection. Transition into the Pyrenees theater, executing the strategic Roncesvalles Pass crossing at 1,057m, navigating historical pilgrimage routes. Advance across the Castilian Meseta, a high-altitude plateau requiring sustained engine output and fuel management. Conclude the mission with a final ascent into the Guadarrama Range, approaching MAD. This 1,490km vector, spanning 5-8 operational days, demands consistent rider focus and machine reliability across diverse European topography.",
+      "highlights_enriched": [
+        "N106 — Auvergne Volcanic Regional Park, sustained elevation changes across 150km",
+        "Roncesvalles Pass (NA-135) — 1,057m elevation, 8% average gradient, 12 switchbacks",
+        "Castilian Meseta (A-2) — 700m average altitude, 400km open-throttle endurance sections",
+        "Sierra de Guadarrama (M-601) — 1,830m peak elevation, 15km ascent with 6% average gradient"
+      ],
+      "difficulty_rating": 3,
+      "terrain_tags": [
+        "high-speed-corridor",
+        "mountain-pass",
+        "high-plateau",
+        "alpine-foothills"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — Its 30L fuel tank provides extended range for Meseta crossings, and the 210mm suspension travel absorbs varied Pyrenean surfaces.",
+      "sensory_anchor": "The coarse aggregate of the Pyrenean tarmac vibrates through the bars, a constant thrum. Lean angle deepens, tires biting, G-forces pressing through the chassis. Wind shears past the helmet, a cold rush at 1,500m.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:37:10.242Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "cdg-to-lys-burgundy-run",
+      "cinematic_pitch_enhanced": "Deploy from CDG, initiating vector south. Push through the Île-de-France, establishing high-speed transit on the N7 through the Fontainebleau forest, a critical warm-up for chassis and rider. Engage the Morvan Regional Park's rolling highland roads, demanding precise throttle control and sustained lean angles. Transition into the Côte d'Or, a corridor defined by its vineyard topography, requiring consistent mid-range torque. Conclude with the Beaujolais descent, a final sequence of sweeping curves into the LYS extraction hub. This is a 575km operational run, designed for high-efficiency transit and dynamic engagement across varied French terrain over 3-4 days.",
+      "highlights_enriched": [
+        "N7 via Fontainebleau Forest — 40km high-speed transition, minimal elevation change",
+        "Morvan Regional Park (D978/D944) — 80km of rolling highlands, sustained gradient 3-5%",
+        "Côte d'Or (D974) — 60km vineyard corridor, requiring precise line selection through gentle curves",
+        "Beaujolais Descent (D337/D385) — 50km of flowing curves, 200m elevation drop into Lyon"
+      ],
+      "difficulty_rating": 2,
+      "terrain_tags": [
+        "rolling-hills",
+        "sweeping-curves",
+        "forest-transit"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its 30-liter fuel tank enables extended range across transit zones, minimizing refueling stops, coupled with 210mm front suspension travel for consistent comfort across varied surfaces.",
+      "sensory_anchor": "The asphalt hums a low frequency through the bars. Cold air stings exposed skin on the N7, shifting to a warmer, earthy scent as the Morvan's damp foliage closes in. Road surface: smooth, then subtly coarse.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:37:20.887Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "osl-to-arn-scandinavian-spine",
+      "cinematic_pitch_enhanced": "Deploy from OSL, initiating the 475km traverse of the Scandinavian Spine. Push northeast, tracking the E6 corridor towards the Norwegian-Swedish border. Engage the forested transition zones, utilizing precise throttle control for sustained high-speed runs. Navigate the Swedish lake district, where the terrain demands consistent lean angles through flowing sweepers. Maintain situational awareness for localized weather shifts. The objective is a high-efficiency cross-border transfer, culminating in the urban approach to ARN. This corridor prioritizes fuel management and tire longevity over extreme lean angles, requiring a machine capable of sustained, stable velocity across varied, but largely predictable, road surfaces. Extract at ARN within a 2-3 day operational window.",
+      "highlights_enriched": [
+        "Mjøsa Lake Traverse — 117km length, Norway's largest freshwater expanse",
+        "Charlottenberg Border Crossing — 1.5km controlled access point, 184m elevation",
+        "Värmland Lake District — 10,000+ lake network, sustained 90-110 km/h zones",
+        "Stockholm Archipelago Approach — 30,000 island interface, coastal air density"
+      ],
+      "difficulty_rating": 2,
+      "terrain_tags": [
+        "forested-corridor",
+        "lake-district",
+        "rolling-hills"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS — Its 136hp Boxer engine with ShiftCam technology provides robust, accessible torque (143Nm at 6,250rpm) for effortless high-speed cruising and strong passing power across the varied Scandinavian topography.",
+      "sensory_anchor": "The asphalt hums beneath the tires, a low-frequency vibration through the bars. Cool air, dense with pine, buffets the helmet. Sustained G-forces in broad sweepers press against the outer thigh.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:37:30.424Z",
+      "model": "gemini-2.5-flash"
+    },
+    {
+      "slug": "osl-to-cph-nordic-coast",
+      "cinematic_pitch_enhanced": "Deploy from OSL, pushing south along the E18 coastal corridor, tracking the Oslofjord's eastern littoral. Traverse the Swedish border, engaging the Kattegatleden's coastal dynamics south of Gothenburg. Execute the westward transition into Denmark, utilizing the Øresund Bridge's 7.8km span to reach Zealand. Final approach vectors CPH. This 722km, multi-day transit demands sustained operational focus across three distinct national theaters and two major sea crossings. Maintain readiness for varied surface conditions and maritime winds.",
+      "highlights_enriched": [
+        "E18 Oslofjord Coast Road — 120km of coastal sweepers, sustained 80km/h average speed capability",
+        "Kattegatleden Coastal Route — 370km dedicated cycle/moto path, 15m average elevation",
+        "Jutland Heathlands — 150km of low-gradient interior roads, minimal elevation change",
+        "Øresund Bridge Crossing — 7.8km span, 57m maximum clearance, high wind exposure"
+      ],
+      "difficulty_rating": 2,
+      "terrain_tags": [
+        "coastal-sweepers",
+        "low-gradient-interior",
+        "maritime-crossing"
+      ],
+      "hardware_recommendation": "BMW R 1250 GS Adventure — its 30-liter fuel tank provides extended range for remote sections, minimizing refueling stops across the 722km corridor.",
+      "sensory_anchor": "The Øresund wind buffets the helmet, a low-frequency rumble through the bars. Asphalt texture shifts from smooth Norwegian tarmac to the Kattegatleden's finer Swedish grit. Coastal air, cool and saline.",
+      "search_snippets_used": 16,
+      "generated_at": "2026-04-05T14:37:40.593Z",
+      "model": "gemini-2.5-flash"
+    }
+  ]
+}

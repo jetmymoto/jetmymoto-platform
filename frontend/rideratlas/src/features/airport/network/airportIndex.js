@@ -276,6 +276,14 @@ export const AIRPORT_INDEX = {
     "region": "Norway Hub",
     "continent": "europe"
   },
+  "BGO": {
+    "code": "BGO",
+    "city": "Bergen",
+    "slug": "bergen-bgo",
+    "country": "no",
+    "region": "Norwegian Fjords",
+    "continent": "europe"
+  },
   "OTP": {
     "code": "OTP",
     "city": "Bucharest",
@@ -483,6 +491,14 @@ export const AIRPORT_INDEX = {
     "slug": "toronto-yyz",
     "country": "ca",
     "region": "Great Lakes",
+    "continent": "north-america"
+  },
+  "YQB": {
+    "code": "YQB",
+    "city": "Quebec City",
+    "slug": "quebec-city-yqb",
+    "country": "ca",
+    "region": "Quebec",
     "continent": "north-america"
   },
   "SAN": {

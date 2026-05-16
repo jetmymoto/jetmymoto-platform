@@ -1,0 +1,76 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://ultimatemotorcycling.com/2024-honda-africa-twin-adventure-sports-review/",
+  "timestamp": "2026-04-02T20:50:47.479Z",
+  "dryRun": true,
+  "mode": "semantic",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 1,
+    "imagesFound": 14,
+    "imagesKept": 1,
+    "rejectedSmall": 6,
+    "rejectedUi": 7,
+    "rejectedDuplicate": 0,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "semanticStats": {
+    "calls": 1,
+    "apiCalls": 0,
+    "kept": 1,
+    "rejected": 0,
+    "errors": 0,
+    "avgConfidence": 0.92,
+    "confidenceSum": 0.92,
+    "matchedModels": {
+      "Honda Africa Twin": 1
+    },
+    "categories": {
+      "unknown": 1
+    }
+  },
+  "serpStats": {
+    "calls": 1,
+    "resolved": 1,
+    "fallthrough": 0,
+    "errors": 0,
+    "avgConfidence": 0.92,
+    "confidenceSum": 0.92
+  },
+  "sampleImages": [
+    {
+      "sourceUrl": "https://ultimatemotorcycling.com/2024-honda-africa-twin-adventure-sports-review/",
+      "imageUrl": "https://gallery.eocampaign1.com/ed44a1e4-bbc3-11ee-b778-9b4a8483d53b%2Fmedia-manager%2F1706224144491-2024-royal-enfield-himalayan-review-4-1536x1024.jpeg",
+      "storagePath": "assets/source/cycleworld/e5f1c93223129ccfe9b484af91f7b718dcf6bea9eebb0349c5cac1ceaf01f589.jpg",
+      "contentHash": "e5f1c93223129ccfe9b484af91f7b718dcf6bea9eebb0349c5cac1ceaf01f589",
+      "width": 1536,
+      "height": 1024,
+      "aspectRatio": "3:2",
+      "orientation": "landscape",
+      "framing": "medium",
+      "context": "editorial",
+      "sourcePriority": 0.4,
+      "isPrimary": false,
+      "alt": "",
+      "caption": "",
+      "surroundingText": "",
+      "position": 11,
+      "harvestMode": "semantic",
+      "matchedBrand": "Honda",
+      "matchedModel": "Africa Twin",
+      "showroomCandidate": true,
+      "semanticCategory": "unknown",
+      "semanticConfidence": 0.92,
+      "semanticReasoning": "SerpAPI: exact_model_in_text ()",
+      "showroomSafe": true,
+      "detectionSource": "serp",
+      "serpConfidence": 0.92
+    }
+  ]
+}

@@ -19,9 +19,7 @@ import {
 import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 import { withBrandContext } from "@/utils/navigationTargets";
 import { useAssetLibrary } from "@/hooks/useAssetLibrary";
-
-// pSEO Manifest
-import GENERATED_MANIFEST from "../../../public/data/generated_pages/entity_page_manifest.json";
+import { usePSeoManifest } from "@/hooks/usePSeoManifest";
 
 // Luxury Components
 import { FadeIn } from "@/components/luxury/FadeIn";
@@ -59,12 +57,14 @@ export default function RideDestinationPage() {
   const { slug } = useParams();
   const location = useLocation();
   const [premiumData, setPremiumData] = useState(null);
+  const { manifest: GENERATED_MANIFEST, loading: manifestLoading } = usePSeoManifest();
 
   const destination = premiumData?.entity || GRAPH?.destinations?.[slug] || null;
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
   // Check for premium pSEO data
   useEffect(() => {
+    if (!GENERATED_MANIFEST) return;
     const premiumMatch = GENERATED_MANIFEST.pages.find(p => p.type === 'destination' && p.slug === slug)
     if (premiumMatch) {
        fetch(`/data/generated_pages/destination/${slug}.json`)
@@ -72,7 +72,7 @@ export default function RideDestinationPage() {
          .then(data => setPremiumData(data))
          .catch(err => console.error("Failed to load premium destination data:", err))
     }
-  }, [slug])
+  }, [slug, GENERATED_MANIFEST])
 
   // Non-blocking shard load
   useEffect(() => {
@@ -127,6 +127,10 @@ export default function RideDestinationPage() {
     destination?.id || destination?.slug,
     destination?.imageUrl || destination?.posterUrl || CINEMATIC_BACKGROUNDS.bridgeLogistics
   );
+
+  if (manifestLoading) {
+    return <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white/20 font-mono text-xs uppercase tracking-widest">Hydrating Theater Intelligence...</div>
+  }
 
   if (!slug || !destination) {
     return (

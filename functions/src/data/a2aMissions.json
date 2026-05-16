@@ -1,0 +1,616 @@
+[
+  {
+    "slug": "mxp-to-muc-alpine-traverse",
+    "title": "The Alpine Traverse",
+    "continent": "europe",
+    "insertion_airport": "MXP",
+    "extraction_airport": "MUC",
+    "theater": "alps",
+    "distance_km": 680,
+    "duration_days": "3–5",
+    "cinematic_pitch": "Deploy from Milan Malpensa and launch directly into the Italian Dolomites. Push north through Stelvio Pass, thread the Grossglockner High Alpine Road, and descend into Bavaria for extraction at Munich. No backtracking. No wasted highway miles. Pure vertical theater from insertion to extraction.",
+    "highlights": [
+      "Stelvio Pass — 48 hairpins, 2,757m summit",
+      "Grossglockner High Alpine Road — Austria's crown jewel",
+      "Dolomites corridor — UNESCO World Heritage riding",
+      "Bavarian Alps descent into Munich"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Milan to Munich | Alpine Traverse A2A Mission",
+      "description": "Fly into Milan (MXP), ride the Dolomites and Grossglockner, drop the bike in Munich (MUC). One-way motorcycle adventure — no backtracking."
+    }
+  },
+  {
+    "slug": "mxp-to-zrh-swiss-alpine-crossing",
+    "title": "The Swiss Alpine Crossing",
+    "continent": "europe",
+    "insertion_airport": "MXP",
+    "extraction_airport": "ZRH",
+    "theater": "alps",
+    "distance_km": 520,
+    "duration_days": "3–4",
+    "cinematic_pitch": "Insert at Milan and climb directly into the Swiss Alps via the Splügen and Julier passes. Thread through the Engadin valley, push west through Andermatt, and extract at Zurich. Every kilometer is above 1,500 meters. This is altitude-locked riding at its finest.",
+    "highlights": [
+      "Splügen Pass — dramatic Italian-Swiss border crossing",
+      "Julier Pass — the ancient Roman trade route",
+      "Andermatt — crossroads of four major Alpine passes",
+      "Engadin Valley — pristine high-altitude corridor"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Milan to Zurich | Swiss Alpine Crossing A2A Mission",
+      "description": "Fly into Milan (MXP), ride the Swiss Alps via Splügen, Julier, and Andermatt, extract at Zurich (ZRH). Premium one-way motorcycle logistics."
+    }
+  },
+  {
+    "slug": "cdg-to-bcn-pyrenees-crossing",
+    "title": "The Pyrenees Crossing",
+    "continent": "europe",
+    "insertion_airport": "CDG",
+    "extraction_airport": "BCN",
+    "theater": "pyrenees",
+    "distance_km": 920,
+    "duration_days": "4–6",
+    "cinematic_pitch": "Launch from Paris and carve south through the Massif Central before hitting the Pyrenees head-on. Cross the spine of the range via the Col du Tourmalet and Col d'Aubisque, then descend the Spanish side through Aragón into Catalonia for extraction at Barcelona. France to Spain, Atlantic to Mediterranean.",
+    "highlights": [
+      "Col du Tourmalet — legendary Tour de France climb",
+      "Col d'Aubisque — misty high-altitude switchbacks",
+      "Aragón descent — dramatic Spanish valleys",
+      "Catalonian coastal approach to Barcelona"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Paris to Barcelona | Pyrenees Crossing A2A Mission",
+      "description": "Fly into Paris (CDG), ride the Pyrenees via Tourmalet and Aubisque, extract at Barcelona (BCN). One-way motorcycle adventure across France and Spain."
+    }
+  },
+  {
+    "slug": "lhr-to-edi-highland-run",
+    "title": "The Highland Run",
+    "continent": "europe",
+    "insertion_airport": "LHR",
+    "extraction_airport": "EDI",
+    "theater": "scottish-highlands",
+    "distance_km": 750,
+    "duration_days": "4–5",
+    "cinematic_pitch": "Insert at London Heathrow and ride north through the Lake District, cross into Scotland via the Borders, then push deep into the Highlands. Tackle the North Coast 500's most dramatic sections before extracting at Edinburgh. England to Scotland in one continuous, unbroken line.",
+    "highlights": [
+      "Lake District — England's most dramatic riding",
+      "Scottish Borders — rolling green corridors",
+      "Glen Coe — the cinematic heart of the Highlands",
+      "NC500 sections — coastal cliff roads above the Atlantic"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip London to Edinburgh | Highland Run A2A Mission",
+      "description": "Fly into London (LHR), ride through the Lake District and Scottish Highlands, extract at Edinburgh (EDI). No round-trip — pure one-way adventure."
+    }
+  },
+  {
+    "slug": "osl-to-bgo-fjord-expedition",
+    "title": "The Fjord Expedition",
+    "continent": "europe",
+    "insertion_airport": "OSL",
+    "extraction_airport": "BGO",
+    "theater": "norwegian-fjords",
+    "distance_km": 480,
+    "duration_days": "3–5",
+    "cinematic_pitch": "Deploy from Oslo and push west into the heart of Norwegian fjord country. Thread between Sognefjorden and Hardangerfjorden on roads carved into sheer cliff faces above the water. Ride the Trollstigen if you dare, then extract at Bergen on the Atlantic coast. Midnight sun optional.",
+    "highlights": [
+      "Sognefjorden — the king of Norwegian fjords",
+      "Hardangerfjorden — orchard-lined fjord roads",
+      "Trollstigen — 11 hairpins on a 10% gradient cliff",
+      "Bergen — Hanseatic port extraction point"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Oslo to Bergen | Fjord Expedition A2A Mission",
+      "description": "Fly into Oslo (OSL), ride through Sognefjorden and Trollstigen, extract at Bergen (BGO). One-way fjord motorcycle adventure — no backtracking."
+    }
+  },
+  {
+    "slug": "muc-to-ath-adriatic-descent",
+    "title": "The Adriatic Descent",
+    "continent": "europe",
+    "insertion_airport": "MUC",
+    "extraction_airport": "ATH",
+    "theater": "dolomites",
+    "distance_km": 1850,
+    "duration_days": "7–10",
+    "cinematic_pitch": "The ultimate long-range A2A mission. Insert at Munich, drop into the Austrian Alps, cross into the Italian Dolomites, then ride the full length of the Adriatic coast through Croatia, Montenegro, and Albania before extracting at Athens. This is a European grand tour compressed into a single directional corridor.",
+    "highlights": [
+      "Dolomites — UNESCO spires and high passes",
+      "Croatian coast — island-studded Adriatic highway",
+      "Montenegro — Bay of Kotor switchbacks",
+      "Greek approach — Meteora and the Peloponnese"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Munich to Athens | Adriatic Descent A2A Mission",
+      "description": "Fly into Munich (MUC), ride the Dolomites and Adriatic coast through Croatia and Montenegro, extract at Athens (ATH). Epic one-way motorcycle logistics."
+    }
+  },
+  {
+    "slug": "lax-to-sfo-pacific-coast",
+    "title": "The Pacific Coast Highway",
+    "continent": "north-america",
+    "insertion_airport": "LAX",
+    "extraction_airport": "SFO",
+    "theater": "socal-coast",
+    "distance_km": 620,
+    "duration_days": "2–4",
+    "cinematic_pitch": "Insert at LAX and hit the Pacific Coast Highway northbound. Ride the Big Sur coastline where the Santa Lucia mountains plunge directly into the Pacific. Push through Monterey, cross the Golden Gate, and extract at SFO. The most photographed motorcycle road in America, ridden in the right direction.",
+    "highlights": [
+      "Malibu — coastal warm-up through celebrity canyons",
+      "Big Sur — 90 miles of cliff-edge Pacific perfection",
+      "Monterey & Carmel — the gentleman's waypoint",
+      "Golden Gate Bridge — the iconic extraction crossing"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip LA to San Francisco | Pacific Coast A2A Mission",
+      "description": "Fly into LA (LAX), ride the PCH and Big Sur, extract at San Francisco (SFO). One-way coastal motorcycle adventure — no round trip needed."
+    }
+  },
+  {
+    "slug": "yul-to-yqb-laurentian-corridor",
+    "title": "The Laurentian Corridor",
+    "continent": "north-america",
+    "insertion_airport": "YUL",
+    "extraction_airport": "YQB",
+    "theater": "quebec-laurentians",
+    "distance_km": 380,
+    "duration_days": "2–3",
+    "cinematic_pitch": "Deploy from Montréal and ride north into the Laurentian Mountains. Thread through the Parc national de la Jacques-Cartier, push along the St. Lawrence River's dramatic north shore, and extract at Québec City. French-Canadian backcountry compressed into a single premium corridor.",
+    "highlights": [
+      "Laurentian Mountains — Canadian Shield riding",
+      "Route 138 — St. Lawrence River coast road",
+      "Charlevoix — UNESCO biosphere reserve",
+      "Québec City — walled colonial extraction point"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Montreal to Quebec City | Laurentian A2A Mission",
+      "description": "Fly into Montréal (YUL), ride the Laurentian Mountains and Charlevoix coast, extract at Québec City (YQB). One-way Canadian motorcycle logistics."
+    }
+  },
+  {
+    "slug": "slc-to-lax-desert-spine",
+    "title": "The Desert Spine",
+    "continent": "north-america",
+    "insertion_airport": "SLC",
+    "extraction_airport": "LAX",
+    "theater": "wasatch-front",
+    "distance_km": 1050,
+    "duration_days": "4–6",
+    "cinematic_pitch": "Insert at Salt Lake City and carve south through the red rock cathedrals of Utah. Push through Monument Valley, across the Navajo Nation, thread the Grand Canyon's south rim, and blast through the Mojave Desert for extraction at LAX. America's most cinematic landscape corridor, ridden point-to-point.",
+    "highlights": [
+      "Wasatch Range — alpine launch above Salt Lake",
+      "Monument Valley — iconic western formations",
+      "Grand Canyon South Rim — the mandatory detour",
+      "Mojave Desert — high-speed desert extraction"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Salt Lake City to LA | Desert Spine A2A Mission",
+      "description": "Fly into Salt Lake City (SLC), ride through Utah red rock and Monument Valley, extract at LA (LAX). One-way desert motorcycle adventure."
+    }
+  },
+  {
+    "slug": "bna-to-tpa-dixie-run",
+    "title": "The Dixie Run",
+    "continent": "north-america",
+    "insertion_airport": "BNA",
+    "extraction_airport": "TPA",
+    "theater": "tennessee-valley",
+    "distance_km": 870,
+    "duration_days": "3–5",
+    "cinematic_pitch": "Deploy from Nashville and ride the Tail of the Dragon and Blue Ridge Parkway before dropping south through the Appalachian foothills. Cross into Georgia, thread the back roads of the Deep South, and extract at Tampa on the Gulf Coast. Twisties to tidewater in one clean line.",
+    "highlights": [
+      "Tail of the Dragon — 318 curves in 11 miles",
+      "Blue Ridge Parkway — America's favorite scenic road",
+      "Appalachian foothills — quiet two-lane blacktop",
+      "Gulf Coast extraction — warm-weather finish"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Nashville to Tampa | Dixie Run A2A Mission",
+      "description": "Fly into Nashville (BNA), ride the Tail of the Dragon and Blue Ridge, extract at Tampa (TPA). One-way motorcycle adventure through the American South."
+    }
+  },
+  {
+    "slug": "yvr-to-slc-cascade-spine",
+    "title": "The Cascade Spine",
+    "continent": "north-america",
+    "insertion_airport": "YVR",
+    "extraction_airport": "SLC",
+    "theater": "pacific-northwest",
+    "distance_km": 1400,
+    "duration_days": "5–7",
+    "cinematic_pitch": "Insert at Vancouver and ride south through the volcanic Cascade Range. Thread Mount Baker, Rainier, and Hood before crossing into Oregon's high desert. Push through the painted hills, drop into Idaho's Sawtooth Mountains, and extract at Salt Lake City. Pacific rainforest to desert basin in one directional corridor.",
+    "highlights": [
+      "Sea-to-Sky Highway — British Columbia's coastal launch",
+      "Mount Rainier — volcanic ridge riding",
+      "Oregon high desert — Painted Hills and John Day",
+      "Sawtooth Mountains — Idaho's premier alpine road"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Vancouver to Salt Lake City | Cascade Spine A2A Mission",
+      "description": "Fly into Vancouver (YVR), ride the Cascades through Oregon and Idaho, extract at Salt Lake City (SLC). One-way motorcycle adventure — coast to basin."
+    }
+  },
+  {
+    "slug": "hnl-to-hnl-oahu-circuit",
+    "title": "The Oahu Circuit",
+    "continent": "north-america",
+    "insertion_airport": "HNL",
+    "extraction_airport": "HNL",
+    "theater": "hawaii-oahu",
+    "distance_km": 190,
+    "duration_days": "1–2",
+    "cinematic_pitch": "The one exception to the open-jaw rule. On an island, the circuit IS the mission. Insert and extract at Honolulu, but ride the full coastal perimeter — North Shore surf breaks, Windward Coast cliffs, and the Ko'olau Range spine. Tropical theater at sea level.",
+    "highlights": [
+      "North Shore — legendary surf break corridor",
+      "Windward Coast — dramatic volcanic cliffs",
+      "Ko'olau Range — jungle ridge backbone",
+      "Diamond Head — iconic extraction approach"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Oahu Circuit | Hawaii A2A Mission",
+      "description": "Fly into Honolulu (HNL), ride the full Oahu coastal perimeter — North Shore, Windward Coast, Ko'olau Range. Tropical motorcycle circuit mission."
+    }
+  },
+  {
+    "slug": "mxp-to-vie-alpine-eastward",
+    "title": "The Alpine Eastward",
+    "continent": "europe",
+    "insertion_airport": "MXP",
+    "extraction_airport": "VIE",
+    "theater": "alps",
+    "corridor_distance_km": 656,
+    "distance_km": 918,
+    "duration_days": "3–5",
+    "cinematic_pitch": "Insert at Milan and drive east through the Dolomites, crossing into Austria via the Brenner corridor. Push through the Salzburg Alps, drop into the Vienna Basin. Italy to Austria in one unbroken diagonal.",
+    "highlights": [
+      "Dolomites — UNESCO spires from the western approach",
+      "Brenner Pass — the ancient alpine crossing",
+      "Salzburg hinterland — classical roads through baroque countryside",
+      "Vienna Basin approach — alpine to city in a single descent"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "bmw-r1300gs-mxp-eagle-rider-mxp",
+      "ducati-v4-mxp-motorcycle-rental-europe-mxp"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Milan to Vienna | Alpine Eastward A2A Mission",
+      "description": "Fly into Milan (MXP), ride the Dolomites and Brenner Pass, extract at Vienna (VIE). Hardware-validated one-way motorcycle corridor."
+    }
+  },
+  {
+    "slug": "mxp-to-fco-italian-spine",
+    "title": "The Italian Spine",
+    "continent": "europe",
+    "insertion_airport": "MXP",
+    "extraction_airport": "FCO",
+    "theater": "alps",
+    "corridor_distance_km": 511,
+    "distance_km": 715,
+    "duration_days": "3–4",
+    "cinematic_pitch": "Drop into Milan and ride the length of the Italian peninsula. From the Alps to Lazio, via the Apennine ridge roads, Lake Bolsena's volcanic crater, and the Via Cassia into Rome. North to south without touching the motorway.",
+    "highlights": [
+      "Lago di Como approach — the classic northern Italian opener",
+      "Apennine Ridge Road — Italy's backbone",
+      "Lake Bolsena — ancient volcanic crater loop",
+      "Via Cassia — the Roman road into the capital"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "bmw-r1300gs-mxp-eagle-rider-mxp",
+      "ducati-v4-mxp-motorcycle-rental-europe-mxp"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Milan to Rome | Italian Spine A2A Mission",
+      "description": "Fly into Milan (MXP), ride the Apennines the full length of Italy, extract at Rome (FCO). One-way peninsula traverse."
+    }
+  },
+  {
+    "slug": "lhr-to-dub-celtic-crossing",
+    "title": "The Celtic Crossing",
+    "continent": "europe",
+    "insertion_airport": "LHR",
+    "extraction_airport": "DUB",
+    "theater": "scottish-highlands",
+    "corridor_distance_km": 449,
+    "distance_km": 629,
+    "duration_days": "3–4",
+    "cinematic_pitch": "Insert at London and ride north and west along the Welsh coast road to Holyhead, cross to Ireland by ferry, and emerge in the Republic. Push west across County Clare to the Cliffs of Moher, then south to Dublin. Two islands, one corridor.",
+    "highlights": [
+      "Welsh coast road — clifftop A487 to Snowdonia",
+      "Holyhead to Dublin ferry — the Irish Sea crossing",
+      "The Burren — limestone plateau riding",
+      "Cliffs of Moher — Atlantic edge finish"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "bmw-r1300gs-adv-lhr-superbike-rental-lhr"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip London to Dublin | Celtic Crossing A2A Mission",
+      "description": "Fly into London (LHR), ride Wales, cross to Ireland, extract at Dublin (DUB). One-way two-island motorcycle corridor."
+    }
+  },
+  {
+    "slug": "cdg-to-mad-iberian-corridor",
+    "title": "The Iberian Corridor",
+    "continent": "europe",
+    "insertion_airport": "CDG",
+    "extraction_airport": "MAD",
+    "theater": "pyrenees",
+    "corridor_distance_km": 1064,
+    "distance_km": 1490,
+    "duration_days": "5–8",
+    "cinematic_pitch": "Launch from Paris and drive the full Iberian diagonal — south through the Auvergne, across the Pyrenees via Roncesvalles, through old Castile and across the central meseta to Madrid. France to Spain in one long, unhurried line.",
+    "highlights": [
+      "Massif Central — France's volcanic highland",
+      "Roncesvalles Pass — the pilgrim's road into Spain",
+      "Castilian meseta — high plateau solitude",
+      "Madrid approach via Guadarrama — Sierra Nevada foothills"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "bmw-f750gs-cdg-hertz-ride-paris"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Paris to Madrid | Iberian Corridor A2A Mission",
+      "description": "Fly into Paris (CDG), cross the Pyrenees, ride through Castile, extract at Madrid (MAD). One-way France-to-Spain motorcycle corridor."
+    }
+  },
+  {
+    "slug": "cdg-to-lys-burgundy-run",
+    "title": "The Burgundy Run",
+    "continent": "europe",
+    "insertion_airport": "CDG",
+    "extraction_airport": "LYS",
+    "theater": "pyrenees",
+    "corridor_distance_km": 411,
+    "distance_km": 575,
+    "duration_days": "3–4",
+    "cinematic_pitch": "A shorter corridor with outsized pleasure. Leave Paris and ride the Route Nationale south through the Morvan hills, past the Côte d'Or vineyards, and into the Beaujolais before descending on Lyon. French geography in miniature.",
+    "highlights": [
+      "Fontainebleau forest — the Parisian warm-up",
+      "Morvan Regional Park — rolling highland roads",
+      "Côte d'Or — the great wine road",
+      "Beaujolais descent — rolling vine-covered hills into Lyon"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "bmw-f750gs-cdg-hertz-ride-paris"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Paris to Lyon | Burgundy Run A2A Mission",
+      "description": "Fly into Paris (CDG), ride the Morvan and Burgundy wine road, extract at Lyon (LYS). One-way short-haul French corridor."
+    }
+  },
+  {
+    "slug": "osl-to-arn-scandinavian-spine",
+    "title": "The Scandinavian Spine",
+    "continent": "europe",
+    "insertion_airport": "OSL",
+    "extraction_airport": "ARN",
+    "theater": "norwegian-fjords",
+    "corridor_distance_km": 339,
+    "distance_km": 475,
+    "duration_days": "2–3",
+    "cinematic_pitch": "Oslo to Stockholm via the forested corridor between Norway and Sweden. Cross the wooded border at Charlottenberg, thread the Swedish lake district, and arrive at the Baltic capital. A fast, serene cross-border run.",
+    "highlights": [
+      "Mjøsa — Norway's largest lake traverse",
+      "Charlottenberg crossing — the quiet Scandinavian border",
+      "Värmland lake district — Sweden's inland sea country",
+      "Stockholm Archipelago approach — the Baltic finale"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "honda-xl-750-transalp-osl-hertz"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Oslo to Stockholm | Scandinavian Spine A2A Mission",
+      "description": "Fly into Oslo (OSL), cross into Sweden through Värmland, extract at Stockholm (ARN). One-way Scandinavian corridor."
+    }
+  },
+  {
+    "slug": "osl-to-cph-nordic-coast",
+    "title": "The Nordic Coast",
+    "continent": "europe",
+    "insertion_airport": "OSL",
+    "extraction_airport": "CPH",
+    "theater": "norwegian-fjords",
+    "corridor_distance_km": 516,
+    "distance_km": 722,
+    "duration_days": "3–4",
+    "cinematic_pitch": "Push south from Oslo along the Oslofjord, cross into Sweden through Gothenburg, then sweep back west into Denmark via the Øresund Bridge. Three countries, two coastlines, one corridor.",
+    "highlights": [
+      "Oslofjord coast road — the scenic E18 south",
+      "Gothenburg — the Swedish industrial port",
+      "Jutland heathland — Denmark's quiet interior",
+      "Øresund Bridge crossing — the spectacular Scandinavian finale"
+    ],
+    "hardware_validated": true,
+    "qualifying_rental_ids": [
+      "honda-xl-750-transalp-osl-hertz"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Oslo to Copenhagen | Nordic Coast A2A Mission",
+      "description": "Fly into Oslo (OSL), ride through Sweden and Denmark, cross the Øresund, extract at Copenhagen (CPH). One-way Nordic three-country corridor."
+    }
+  },
+  {
+    "slug": "ath-to-muc-alpine-return",
+    "title": "The Alpine Return",
+    "continent": "europe",
+    "insertion_airport": "ATH",
+    "extraction_airport": "MUC",
+    "theater": "balkan-spine",
+    "distance_km": 2150,
+    "duration_days": "7–10",
+    "cinematic_pitch": "Africa Twins and big GS tourers pile up in Athens after every Greek island season. This corridor sends them home the right way — north through the Meteora pinnacles, across the Serbian highlands, through the Julian Alps, and into Bavaria. The cooling scent of pine replaces Aegean salt as elevation climbs and the bike finally stretches its legs on real mountain tarmac. Insert at Athens. Extract at Munich.",
+    "featuredBike": "Honda Africa Twin",
+    "highlights": [
+      "Meteora — rock-pillar monasteries on the northward push",
+      "Skopje to Niš — Balkan highland sweepers",
+      "Ljubljana and the Julian Alps — altitude reset",
+      "Bavarian foothills descent into Munich"
+    ],
+    "price_radar": {
+      "positioning": "rebalancing",
+      "subsidy_pct": 40,
+      "notes": "High-end touring fleet repatriation; premium hardware available at repositioning rate"
+    },
+    "seo": {
+      "title": "Motorcycle Trip Athens to Munich | Alpine Return A2A Mission",
+      "description": "Fly into Athens (ATH), ride the Balkans and Julian Alps, extract at Munich (MUC). One-way fleet rebalancing corridor — premium bikes at repositioning rates."
+    }
+  },
+  {
+    "slug": "tia-to-mxp-adriatic-extraction",
+    "title": "The Adriatic Extraction",
+    "continent": "europe",
+    "insertion_airport": "TIA",
+    "extraction_airport": "MXP",
+    "theater": "albanian-alps",
+    "distance_km": 1480,
+    "duration_days": "5–7",
+    "cinematic_pitch": "The Albanian Alps chew up adventure hardware and leave it stranded in Tirana. Royal Enfield Himalayans and Honda CRF 300Ls sit idle between tour seasons while Milan needs inventory. This corridor fixes that. Ride north out of Tirana through the Valbonë valley, cross into Montenegro over the Čakor Pass, then track the Adriatic coast all the way to Trieste before the final sprint into Milan. The scent of sea-salt fades as northern Italy's industrial plain opens ahead.",
+    "featuredBike": "Royal Enfield Himalayan",
+    "highlights": [
+      "Valbonë Accursed Mountains — Albania's raw north",
+      "Čakor Pass — Montenegro border crossing at 1,849m",
+      "Bay of Kotor — the fjord-like Adriatic inlet",
+      "Trieste to Milan — final Adriatic-to-Po sprint"
+    ],
+    "price_radar": {
+      "positioning": "rebalancing",
+      "subsidy_pct": 38,
+      "notes": "Adventure-spec hardware repatriated to Northern Italy after technical off-road tours"
+    },
+    "seo": {
+      "title": "Motorcycle Trip Tirana to Milan | Adriatic Extraction A2A Mission",
+      "description": "Fly into Tirana (TIA), ride the Albanian Alps and Adriatic coast, extract at Milan (MXP). One-way adventure corridor — rebalancing rates on Royal Enfields and CRFs."
+    }
+  },
+  {
+    "slug": "spu-to-muc-dalmatian-dash",
+    "title": "The Dalmatian Dash",
+    "continent": "europe",
+    "insertion_airport": "SPU",
+    "extraction_airport": "MUC",
+    "theater": "dalmatian-coast",
+    "distance_km": 1240,
+    "duration_days": "4–6",
+    "cinematic_pitch": "Split is a one-way trap for motorcycles. Bikes arrive for the summer Dalmatian coast season and then operators need them back in Munich before the Alpine summer peaks. This corridor is the fastest clean line: hug the coast to Zadar, cut inland through the Plitvice canyon country, ride the Slovenian Alps through Kranjska Gora, and come down into Bavaria through Garmisch. Short. Sharp. Rebalancing rate.",
+    "featuredBike": "BMW F850GS",
+    "highlights": [
+      "Zadar coast road — Adriatic sea-organ country",
+      "Plitvice canyon — the inland detour worth every kilometer",
+      "Kranjska Gora — Slovenian Alpine entry point",
+      "Garmisch descent — the Bavarian finale"
+    ],
+    "price_radar": {
+      "positioning": "rebalancing",
+      "subsidy_pct": 42,
+      "notes": "High-demand coastal rebalance; operators pay a premium to return bikes to the Bavarian hub"
+    },
+    "seo": {
+      "title": "Motorcycle Trip Split to Munich | Dalmatian Dash A2A Mission",
+      "description": "Fly into Split (SPU), ride the Dalmatian coast and Slovenian Alps, extract at Munich (MUC). One-way fleet rebalancing — BMW GS at repositioning rates."
+    }
+  },
+  {
+    "slug": "beg-to-mxp-balkan-spine",
+    "title": "The Balkan Spine",
+    "continent": "europe",
+    "insertion_airport": "BEG",
+    "extraction_airport": "MXP",
+    "theater": "balkan-spine",
+    "distance_km": 1180,
+    "duration_days": "4–6",
+    "cinematic_pitch": "Belgrade sits at the geographic heart of the Balkans — and at the logistical heart of fleet rebalancing. Honda CB500Xs and Kawasaki Versys 650s accumulate here between tour seasons while Milan's rental fleet runs thin. The corridor runs west: across the Fruška Gora plateau, through the Slovenian karst, past Triglav's northern face, and down through the Veneto into Milan. A spine of tarmac connecting the continental interior to the Western European terminal.",
+    "featuredBike": "Kawasaki Versys 650",
+    "highlights": [
+      "Fruška Gora — the Danubian wine-country plateau",
+      "Postojna karst — Slovenia's underground limestone country",
+      "Triglav foothills — Slovenian Alpine bypass",
+      "Veneto plains — the Italian approach into Milan"
+    ],
+    "price_radar": {
+      "positioning": "rebalancing",
+      "subsidy_pct": 36,
+      "notes": "Central Balkan hub to primary Western European terminal; mid-range adventure spec"
+    },
+    "seo": {
+      "title": "Motorcycle Trip Belgrade to Milan | Balkan Spine A2A Mission",
+      "description": "Fly into Belgrade (BEG), ride through Slovenia and the Veneto, extract at Milan (MXP). One-way Balkan-to-Italy corridor at fleet rebalancing rates."
+    }
+  },
+  {
+    "slug": "dbv-to-muc-premium-reposition",
+    "title": "The Premium Reposition",
+    "continent": "europe",
+    "insertion_airport": "DBV",
+    "extraction_airport": "MUC",
+    "theater": "dalmatian-coast",
+    "distance_km": 1310,
+    "duration_days": "5–7",
+    "cinematic_pitch": "Dubrovnik is where the premium fleet gets stranded. BMW R1300GS tourers, Africa Twins, and multi-day charter bikes sit parked on the Croatian south coast between the spring and autumn booking windows. Munich needs them back. The corridor runs north: climb out of Dubrovnik's walled city, cross the Neum corridor into Bosnia, ride the Neretva canyon, push through the Plitvice highlands, and descend into Bavaria through the Zugspitze massif. This is the Hangar Club route — the one where the repositioning rate makes the mission.",
+    "featuredBike": "BMW R1300GS",
+    "highlights": [
+      "Dubrovnik city walls — the cinematic departure point",
+      "Neretva canyon — Bosnia's emerald-green river gorge",
+      "Plitvice highland plateau — the Croatian interior push",
+      "Zugspitze approach — Bavaria's highest peak as the extraction landmark"
+    ],
+    "price_radar": {
+      "positioning": "rebalancing",
+      "subsidy_pct": 45,
+      "notes": "Luxury fleet migration; highest-subsidy Price Killer rate — Hangar Club priority allocation"
+    },
+    "seo": {
+      "title": "Motorcycle Trip Dubrovnik to Munich | Premium Reposition A2A Mission",
+      "description": "Fly into Dubrovnik (DBV), ride the Neretva canyon and Croatian highlands, extract at Munich (MUC). BMW GS fleet reposition — Hangar Club subsidised rate."
+    }
+  },
+  {
+    "slug": "RA033",
+    "title": "Route des Grandes Alpes",
+    "continent": "europe",
+    "insertion_airport": "GVA",
+    "extraction_airport": "NCE",
+    "theater": "alps",
+    "distance_km": 700,
+    "duration_days": "3-5",
+    "cinematic_pitch": "The legendary Route des Grandes Alpes. From the shores of Lake Geneva to the Mediterranean coast at Nice. Crossing the highest passes in Europe including the Col de l'Iseran and Col de la Bonette.",
+    "highlights": [
+      "Col de l'Iseran — the highest paved pass in the Alps",
+      "Col de la Bonette — the highest road in Europe",
+      "Lake Geneva to Nice — from the peaks to the palms",
+      "17 major mountain passes in one continuous line"
+    ],
+    "seo": {
+      "title": "Motorcycle Trip Route des Grandes Alpes | RA033 Mission",
+      "description": "Ride the full Route des Grandes Alpes from Geneva to Nice. The ultimate alpine motorcycle adventure."
+    }
+  },
+  {
+    "slug": "RA034",
+    "title": "The Black Forest Run (Temporary Test)",
+    "comment": "TEMP LEGACY PIPELINE TEST — remove after validation.",
+    "continent": "europe",
+    "insertion_airport": "MUC",
+    "extraction_airport": "ZRH",
+    "theater": "alps",
+    "distance_km": 320,
+    "duration_days": "2-3",
+    "cinematic_pitch": "Legacy pipeline test mission RA034. Traversing from Munich to Zurich through the northern Alps and Black Forest fringe.",
+    "highlights": [
+      "Munich departure",
+      "Bavarian alpine fringe",
+      "Lake Constance crossing",
+      "Zurich extraction"
+    ],
+    "seo": {
+      "title": "RA034 Legacy Test Mission",
+      "description": "Temporary mission for legacy pipeline validation."
+    }
+  }
+]

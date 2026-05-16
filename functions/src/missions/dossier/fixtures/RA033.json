@@ -23,5 +23,6 @@
   "booking_ref": "RA033-EXECUTIVE",
   "rider_name": "ALEX RIDER",
   "rider_archetype": "EXECUTIVE RIDER",
-  "selected_bike": "BMW R 1300 GS (TRIPLE BLACK)"
+  "selected_bike": "BMW R 1300 GS (TRIPLE BLACK)",
+  "include_upsell_page": false
 }

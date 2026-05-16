@@ -7,6 +7,15 @@
         "firebase-tools@latest",
         "experimental:mcp"
       ]
+    },
+    "jetmymoto-firestore": {
+      "command": "node",
+      "args": [
+        "/workspaces/jetmymoto-platform/jetmymoto-firestore-mcp/dist/index.js"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/workspaces/jetmymoto-platform/keys/service-account.json"
+      }
     }
   }
 }

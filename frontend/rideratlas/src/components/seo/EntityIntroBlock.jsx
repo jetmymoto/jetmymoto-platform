@@ -19,8 +19,8 @@ const EntityIntroBlock = ({ entityType, entityData, graphData }) => {
       const location = airport.city || rental.airportCode || "the hub";
       const category = rental.category ? rental.category.toLowerCase() : "";
       
-      let capability = "mixed terrain deployment";
-      if (category === "adventure") capability = "long-range riding and mixed terrain deployment";
+      let capability = "mixed terrain riding";
+      if (category === "adventure") capability = "long-range riding and mixed terrain capability";
       if (category === "touring" || category === "sport-touring") capability = "extended highway travel and sweeping coastal routes";
       if (category === "scrambler") capability = "agile urban navigation and light unpaved fire roads";
 
@@ -32,7 +32,7 @@ const EntityIntroBlock = ({ entityType, entityData, graphData }) => {
 
       content.push(
         `The ${machineName} at ${location} is a high-performance ${category || "premium"} platform built for ${capability}.`,
-        `This machine is staged locally and configured for ${routeContext}.`
+        `This machine is available locally and configured for ${routeContext}.`
       );
       break;
     }
@@ -55,7 +55,7 @@ const EntityIntroBlock = ({ entityType, entityData, graphData }) => {
 
       content.push(
         `${routeName} is one of the most ${terrainDesc} in the region.`,
-        `It combines ${features}, making it ideal for targeted motorcycle deployment.`
+        `It combines ${features}, making it ideal for focused motorcycle travel.`
       );
       break;
     }
@@ -70,8 +70,8 @@ const EntityIntroBlock = ({ entityType, entityData, graphData }) => {
       const theaterName = theater.name || mission.theater || "the region";
 
       content.push(
-        `This A2A mission connects ${insertionName} to ${extractionName} through the ${theaterName} corridor, enabling a one-way expedition across premium riding terrain.`,
-        `Riders deploy into the region, traverse the core routes, and extract without retracing their path.`
+        `This A2A mission connects ${insertionName} to ${extractionName} through the ${theaterName} corridor, enabling a one-way journey across premium riding terrain.`,
+        `Riders arrive in the region, traverse the core routes, and fly home from the destination without retracing their path.`
       );
       break;
     }
@@ -94,7 +94,7 @@ const EntityIntroBlock = ({ entityType, entityData, graphData }) => {
       const regionContext = airport.region ? `across ${airport.region}` : "in the surrounding region";
       
       content.push(
-        `${locationName} (${airport.code}) is a primary deployment hub for motorcycle travel ${regionContext}.`,
+        `${locationName} (${airport.code}) is a primary start point for motorcycle travel ${regionContext}.`,
         `From this hub, riders can access localized route networks, long-range touring corridors, and specialized A2A missions.`
       );
       break;

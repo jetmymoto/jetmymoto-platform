@@ -1,0 +1,83 @@
+{
+  "template_id": "00_jetmymoto_home",
+  "path": "/jetmymoto",
+  "viewport": "mobile",
+  "seo": {
+    "title": "JetMyMoto | Global Motorcycle Expeditions & Rental Platform",
+    "description": "JetMyMoto provides elite private motorcycle airlift services worldwide. Seamless logistics for riders, collectors, and expeditions."
+  },
+  "content_structure": {
+    "primary_heading": "Seamless Logistics and Premium Rides for Your Global Motorcycle Adventure",
+    "secondary_headings": [
+      "SHIP YOUR\nBIKE",
+      "RENT A\nMACHINE",
+      "How It Works",
+      "How Do You Want to Ride This Trip?",
+      "Ride the world with intent",
+      "No paperwork. No stress. Just ride.",
+      "Stop dreaming about the perfect ride.\nStart living it."
+    ]
+  },
+  "interactive_elements": {
+    "buttons": [
+      "INITIATE TRANSPORT",
+      "VIEW HUB FLEET",
+      "START SHIPPING",
+      "FIND A BIKE",
+      "ALL",
+      "EUROPE",
+      "NORTH AMERICA",
+      "TOURING",
+      "ADVENTURE",
+      "COASTAL",
+      "MOUNTAIN",
+      "EASY",
+      "INTERMEDIATE",
+      "ADVANCED"
+    ],
+    "total_links": 31,
+    "sample_links": [
+      {
+        "text": "JETMYMOTO",
+        "href": "/jetmymoto"
+      },
+      {
+        "text": "Atlas",
+        "href": "/"
+      },
+      {
+        "text": "Hubs",
+        "href": "/airport"
+      },
+      {
+        "text": "Routes",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "Fleets",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "Find a Bike",
+        "href": "/airport/mxp?mode=rent&ctx=ra"
+      },
+      {
+        "text": "Ship Machine",
+        "href": "/moto-airlift?ctx=jet"
+      },
+      {
+        "text": "SHIP MY BIKE",
+        "href": "/moto-airlift"
+      },
+      {
+        "text": "FIND A BIKE",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "LOGISTIC PATH A\nSHIP YOUR\nBIKE\nINITIATE TRANSPORT",
+        "href": "/moto-airlift"
+      }
+    ]
+  },
+  "timestamp": "2026-04-04T18:04:34.112Z"
+}

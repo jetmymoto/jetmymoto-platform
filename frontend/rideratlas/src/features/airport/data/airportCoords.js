@@ -60,4 +60,14 @@ export const AIRPORT_COORDS = {
   JFK: { lat: "40.64",  long: "-73.78"  }, // New York JFK
   ORD: { lat: "41.98",  long: "-87.91"  }, // Chicago O'Hare
   MEX: { lat: "19.44",  long: "-99.07"  }, // Mexico City
+  // Missing Hubs (Added from Audit)
+  BEG: { lat: "44.82",  long: "20.31"   }, // Belgrade
+  BGO: { lat: "60.29",  long: "5.22"    }, // Bergen
+  DBV: { lat: "42.56",  long: "18.27"   }, // Dubrovnik
+  SFO: { lat: "37.62",  long: "-122.38" }, // San Francisco
+  SLC: { lat: "40.79",  long: "-111.98" }, // Salt Lake City
+  TIA: { lat: "41.41",  long: "19.72"   }, // Tirana
+  YQB: { lat: "46.79",  long: "-71.39"  }, // Québec City
+  YUL: { lat: "45.47",  long: "-73.74"  }, // Montréal
 };
+

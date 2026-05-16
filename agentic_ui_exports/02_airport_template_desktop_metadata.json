@@ -1,0 +1,89 @@
+{
+  "template_id": "02_airport_template",
+  "path": "/airport/paris-cdg",
+  "viewport": "desktop",
+  "seo": {
+    "title": "JetMyMoto — Private Motorcycle Airlift Worldwide",
+    "description": "JetMyMoto provides elite private motorcycle airlift services worldwide. Seamless logistics for riders, collectors, and expeditions."
+  },
+  "content_structure": {
+    "primary_heading": "PREMIUM MOTORCYCLE RENTALS & TRANSPORT IN (UNK)",
+    "secondary_headings": [
+      "ARRIVAL OPERATIONS",
+      "SHIP YOUR\nBIKE",
+      "RENT A\nMACHINE",
+      "HUB OVERVIEW & AMENITIES",
+      "THE REALITY OF RENTING AT UNK",
+      "ENTHUSIAST MODE:\nBRING YOUR OWN.",
+      "START YOUR JOURNEY"
+    ]
+  },
+  "interactive_elements": {
+    "buttons": [
+      "RECOVERY",
+      "TACTICAL",
+      "RANKINGS",
+      "Rankings",
+      "Tactical",
+      "MOTORCYCLE",
+      "CAR",
+      "/ CONTROL",
+      "/ RANKING",
+      "/ REALITY",
+      "/ PIVOT",
+      "/ RECOVERY",
+      "/ UTILITIES",
+      "/ EXTENSION",
+      "ACTIVE PROTOCOL",
+      "VIEW HUB FLEET",
+      "SEND LINK TO A FRIEND",
+      "-",
+      "+",
+      "SECURE YOUR TRANSPORT"
+    ],
+    "total_links": 28,
+    "sample_links": [
+      {
+        "text": "RIDERATLAS",
+        "href": "/"
+      },
+      {
+        "text": "ATLAS",
+        "href": "/"
+      },
+      {
+        "text": "HUBS",
+        "href": "/airport"
+      },
+      {
+        "text": "ROUTES",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "FLEETS",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "FIND A BIKE",
+        "href": "/airport/mxp?mode=rent&ctx=ra"
+      },
+      {
+        "text": "SHIP MACHINE",
+        "href": "/moto-airlift?ctx=jet"
+      },
+      {
+        "text": "SHIP_MY_BIKE",
+        "href": "/moto-airlift#booking"
+      },
+      {
+        "text": "Request Quote",
+        "href": "/moto-airlift#booking"
+      },
+      {
+        "text": "AIRPORTS",
+        "href": "/airport"
+      }
+    ]
+  },
+  "timestamp": "2026-04-04T18:04:58.228Z"
+}

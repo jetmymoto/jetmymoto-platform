@@ -1,0 +1,70 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://www.cycleworld.com/",
+  "timestamp": "2026-04-02T19:17:02.319Z",
+  "dryRun": true,
+  "mode": "semantic",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 4,
+    "imagesFound": 48,
+    "imagesKept": 1,
+    "rejectedSmall": 0,
+    "rejectedUi": 2,
+    "rejectedDuplicate": 26,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "semanticStats": {
+    "calls": 20,
+    "apiCalls": 2,
+    "kept": 1,
+    "rejected": 19,
+    "errors": 0,
+    "avgConfidence": 0.615,
+    "confidenceSum": 12.299999999999999,
+    "matchedModels": {
+      "Honda Africa Twin": 1
+    },
+    "categories": {
+      "unknown": 10,
+      "cruiser": 3,
+      "sport": 4,
+      "touring": 2,
+      "adventure": 1
+    }
+  },
+  "sampleImages": [
+    {
+      "sourceUrl": "https://www.cycleworld.com/motorcycle-reviews/",
+      "imageUrl": "https://cloudfront-us-east-1.images.arcpublishing.com/octane/MRE3NOHY5FGX7F65XPQSIK2PTQ.jpg",
+      "storagePath": "assets/source/cycleworld/99280a0251c50f1b8fd7e131fafbad121ceaf0a611b1db0d999ae5de645558c1.jpg",
+      "contentHash": "99280a0251c50f1b8fd7e131fafbad121ceaf0a611b1db0d999ae5de645558c1",
+      "width": 1440,
+      "height": 1018,
+      "aspectRatio": "3:2",
+      "orientation": "landscape",
+      "framing": "medium",
+      "context": "model-page",
+      "sourcePriority": 0.6,
+      "isPrimary": false,
+      "alt": "2026 Honda Transalp E-Clutch studio 3/4 view",
+      "caption": "2026 Honda Transalp Gets Automated E-Clutch",
+      "surroundingText": "",
+      "position": 8,
+      "harvestMode": "semantic",
+      "matchedBrand": "Honda",
+      "matchedModel": "Africa Twin",
+      "showroomCandidate": true,
+      "semanticCategory": "adventure",
+      "semanticConfidence": 0.75,
+      "semanticReasoning": "Mentions 'Honda Transalp'. While 'Transalp' is not a direct match, it is a well-known adventure model from Honda, similar in spirit to the Africa Twin, making Africa Twin the closest known target.",
+      "showroomSafe": true
+    }
+  ]
+}

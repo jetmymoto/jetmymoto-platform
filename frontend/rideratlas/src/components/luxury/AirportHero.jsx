@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MapPin, Activity } from "lucide-react";
 
 export default function AirportHero({ airport, asset }) {
-  const heroImage = asset?.hero || asset?.currentImage || airport?.hero?.posterUrl || "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop";
+  const heroImage = asset?.hero || asset?.currentImage || airport?.hero?.posterUrl || "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/14cinematic%2Faprilia%2Faprilia-rs660-factory%2F3.webp?alt=media&token=b7bcced4-e9ec-4cc0-8076-b7ed1b6ddc97";
 
   // Mock coordinates for the HUD if real ones aren't available
   const lat = airport.latitude ? airport.latitude.toFixed(4) : "45.6300";

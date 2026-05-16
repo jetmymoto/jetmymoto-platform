@@ -12,7 +12,7 @@ const DEFAULT_PATHS = {
 
 const DEFAULT_MEDIA = {
   heroVideo:
-    "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/raw_assets%2FCinematic_Drone_Intro_Code_Upgrade.mp4?alt=media&token=42b8b364-5aa0-423e-bc30-5be95cd71ea2",
+    "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_videos%2Fairporttemplatehero2.mp4?alt=media&token=41ca055e-bc4e-459b-a1ee-b64e82261933",
   heroPoster:
     "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/site_images%2Fimages%20for%20ai%20scan%2FIMG-20251019-WA0017.jpg?alt=media&token=c297ab60-a072-40cd-a51e-bdb9c36ced24",
   logisticsPoster:
@@ -103,77 +103,124 @@ export default function JetMyMotoHero({
           <source src={safeMedia.heroVideo} type="video/mp4" />
         </video>
 
-        {/* bottom-only gradient — keeps sky/highlights visible */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-[#050505]/30 to-transparent" />
-        {/* subtle centered vignette for text readability */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_70%,rgba(5,5,5,0.55),transparent_65%)]" />
+        {/* LEFT-WEIGHTED overlay for text readability and visual balance */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(90deg, rgba(5,5,5,0.72) 0%, rgba(5,5,5,0.48) 32%, rgba(5,5,5,0.22) 60%, rgba(5,5,5,0.08) 100%)'
+          }}
+        />
+        {/* Bottom cinematic fade preserved */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, transparent 0%, transparent 60%, rgba(5,5,5,0.3) 80%, rgba(5,5,5,0.7) 100%)'
+          }}
+        />
 
-        {/* content — centered, pinned to lower 60% of frame */}
-        <div className="relative z-10 w-full h-full min-h-[92vh] flex flex-col items-center justify-end pb-24 md:pb-32 px-6">
-          {/* label */}
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="text-[#CDA755] text-[10px] font-mono tracking-[0.38em] uppercase mb-5"
-          >
-            Motorcycle Logistics &amp; Fly-and-Ride
-          </motion.p>
-
-          {/* headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.22 }}
-            className="font-serif text-center text-[clamp(2.4rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.01em] max-w-[800px]"
-          >
-            Global Motorcycle Transport<br className="hidden sm:block" /> &amp; One-Way Rentals
-          </motion.h1>
-
-          {/* body */}
-          <motion.p
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.65, ease: "easeOut", delay: 0.38 }}
-            className="mt-5 text-white/50 text-center text-[0.9rem] leading-relaxed max-w-[480px]"
-          >
-            Secure transport for your machine, or hardware-validated rentals for a seamless fly-and-ride experience.
-          </motion.p>
-
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.54 }}
-            className="mt-7 flex flex-wrap justify-center gap-3"
-          >
-            <Link
-              to={safePaths.logistics}
-              className="bg-[#CDA755] text-[#050505] px-7 py-3 text-[11px] font-bold uppercase tracking-[0.25em] hover:bg-[#F3E5C7] transition-colors"
+        {/* LEFT-ANCHORED CONTENT COLUMN */}
+        <div className="relative z-10 w-full h-full min-h-[92vh] flex items-start justify-start px-6">
+          <div className="max-w-[580px] ml-[4%] md:ml-[8%] mt-[12vh] md:mt-[15vh]">
+            {/* label */}
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+              className="text-[#CDA755] text-[10px] font-mono tracking-[0.38em] uppercase mb-5 text-left"
             >
-              Ship my bike
-            </Link>
-            <Link
-              to={safePaths.rentals}
-              className="border border-white/30 text-white px-7 py-3 text-[11px] uppercase tracking-[0.25em] hover:border-[#CDA755] hover:text-[#CDA755] transition-colors"
+              Motorcycle Logistics &amp; Fly-and-Ride
+            </motion.p>
+
+            {/* headline with controlled line breaks */}
+            <motion.h1
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.22 }}
+              className="font-serif text-left text-white text-5xl md:text-6xl lg:text-7xl leading-[0.9] tracking-[-0.01em]"
             >
-              Find a bike
-            </Link>
-          </motion.div>
+              Global Motorcycle<br />
+              Transport<br />
+              <span className="text-[#CDA755]">&amp; One-Way Rentals</span>
+            </motion.h1>
+
+            {/* subheadline */}
+            <motion.p
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.65, ease: "easeOut", delay: 0.38 }}
+              className="mt-6 text-white/85 text-left text-[0.95rem] leading-relaxed max-w-[460px]"
+            >
+              Secure transport for your machine, or hardware-validated rentals for a seamless fly-and-ride experience.
+            </motion.p>
+
+            {/* CTA GROUP - left aligned horizontal row */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.54 }}
+              className="mt-8 flex flex-wrap gap-4"
+            >
+              <Link
+                to={safePaths.logistics}
+                className="bg-[#CDA755] text-black px-8 py-4 text-[12px] font-bold uppercase tracking-[0.25em] shadow-[0_0_30px_rgba(205,167,85,0.25)] hover:bg-[#F3E5C7] hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(205,167,85,0.4)] transition-all duration-300"
+              >
+                Ship my bike
+              </Link>
+              <Link
+                to={safePaths.rentals}
+                className="border border-white/15 text-white/60 px-7 py-3 text-[11px] uppercase tracking-[0.25em] hover:border-white/30 hover:text-white/80 transition-all duration-300"
+              >
+                Find a bike
+              </Link>
+            </motion.div>
+
+            {/* Metadata / Microcopy */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.8 }}
+              className="mt-6 text-left"
+            >
+              <p className="text-white/35 text-[10px] font-mono uppercase tracking-[0.2em]">
+                {airportsCount}+ hubs · {rentalsLoading ? "loading fleet..." : `${rentalsCount}+ machines`} · Ride anywhere
+              </p>
+            </motion.div>
+
+            {/* Subtle scroll direction cue */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 1.0 }}
+              className="mt-8 text-left"
+            >
+              <p className="text-white/25 text-[9px] font-mono uppercase tracking-[0.3em] mb-2">
+                Explore Platform
+              </p>
+              <div className="w-px h-6 bg-gradient-to-b from-white/15 to-transparent"></div>
+            </motion.div>
+          </div>
         </div>
 
-        {/* bridge fade into section below */}
-        <div className="absolute bottom-[-120px] left-0 right-0 h-[160px] bg-gradient-to-b from-transparent to-[#030303] pointer-events-none z-20" />
+        {/* Enhanced bridge fade with stronger pull */}
+        <div
+          className="absolute bottom-[-120px] left-0 right-0 h-[160px] pointer-events-none z-20"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(5,5,5,0) 0%, rgba(5,5,5,0.6) 60%, rgba(5,5,5,1) 100%)'
+          }}
+        />
       </div>
 
-      <TrustDivider airportsCount={airportsCount} rentalsCount={rentalsCount} rentalsLoading={rentalsLoading} />
+      {/* Trust metadata now integrated into hero content */}
 
       <div className="w-full border-t border-white/5">
         <section className="h-[80vh] min-h-[600px] flex flex-col md:flex-row overflow-hidden border-y border-white/5">
           {/* LEFT: SHIP */}
-          <Link 
+          <Link
             to={safePaths.logistics}
-            className="flex-1 relative group cursor-pointer overflow-hidden block"
+            className="flex-1 relative group cursor-pointer overflow-hidden block bg-[#111111] hover:scale-[1.02] transition-all duration-300 ease-out"
+            style={{
+              background: 'radial-gradient(circle at top, rgba(205,167,85,0.08), transparent 70%), #111111'
+            }}
           >
             {/* Background */}
             <img 
@@ -201,9 +248,12 @@ export default function JetMyMotoHero({
           </Link>
 
           {/* RIGHT: RENT */}
-          <Link 
+          <Link
             to={safePaths.rentals}
-            className="flex-1 relative group cursor-pointer overflow-hidden block"
+            className="flex-1 relative group cursor-pointer overflow-hidden block bg-[#111111] hover:scale-[1.02] transition-all duration-300 ease-out"
+            style={{
+              background: 'radial-gradient(circle at top, rgba(205,167,85,0.08), transparent 70%), #111111'
+            }}
           >
             {/* Background */}
             <img 

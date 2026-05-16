@@ -1,0 +1,14 @@
+{
+  "BMW": ["R1250GS", "F900GS", "R1300GS", "S1000RR", "F900XR"],
+  "Ducati": ["Multistrada V4", "DesertX", "Panigale V4", "Monster"],
+  "Yamaha": ["Tenere 700", "MT-07", "MT-09", "R1"],
+  "Honda": ["Africa Twin", "CB650R", "Rebel 1100", "Gold Wing"],
+  "Kawasaki": ["Versys 650", "Z900", "Ninja ZX-10R", "KLR 650"],
+  "KTM": ["1290 Super Adventure", "890 Adventure", "390 Duke"],
+  "Triumph": ["Tiger 1200", "Speed Triple", "Scrambler 400X"],
+  "Harley-Davidson": ["Pan America", "Road Glide", "Sportster S"],
+  "Indian": ["FTR 1200", "Scout", "Challenger"],
+  "Aprilia": ["Tuareg 660", "RS 660", "Tuono V4"],
+  "Suzuki": ["V-Strom 1050", "GSX-8S", "Hayabusa"],
+  "Royal Enfield": ["Himalayan 450", "Continental GT 650", "Interceptor 650"]
+}

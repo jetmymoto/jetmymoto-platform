@@ -1,0 +1,63 @@
+{
+  "requestsFinished": 51,
+  "requestsFailed": 0,
+  "requestsRetries": 22,
+  "requestsFailedPerMinute": 0,
+  "requestsFinishedPerMinute": 9,
+  "requestMinDurationMillis": 4094,
+  "requestMaxDurationMillis": 23296,
+  "requestTotalFailedDurationMillis": 0,
+  "requestTotalFinishedDurationMillis": 543658,
+  "crawlerStartedAt": "2026-04-02T23:07:39.565Z",
+  "crawlerFinishedAt": "2026-04-02T23:13:01.721Z",
+  "statsPersistedAt": "2026-04-02T23:13:01.721Z",
+  "crawlerRuntimeMillis": 322607,
+  "crawlerLastStartTimestamp": 1775171259114,
+  "requestRetryHistogram": [
+    29,
+    12,
+    5,
+    5
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": null,
+  "requestAvgFinishedDurationMillis": 10660,
+  "requestTotalDurationMillis": 543658,
+  "requestsTotal": 51,
+  "requestsWithStatusCode": {
+    "200": 66
+  },
+  "errors": {},
+  "retryErrors": {
+    "/workspaces/jetmymoto-platform/scripts/flickrMotorcycleHarvester.mjs:305:34": {
+      "missing error code": {
+        "Error": {
+          "page.evaluate: Target _": {
+            "count": 12
+          }
+        }
+      }
+    },
+    "/workspaces/jetmymoto-platform/node_modules/@crawlee/playwright/internals/utils/playwright-utils.js:165:17": {
+      "missing error code": {
+        "Error": {
+          "page.goto: Target page, context or browser has been closed": {
+            "count": 2
+          },
+          "page.goto: Page crashed": {
+            "count": 20
+          }
+        }
+      }
+    },
+    "/workspaces/jetmymoto-platform/node_modules/@apify/timeout/cjs/index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 120 seconds.": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
+}

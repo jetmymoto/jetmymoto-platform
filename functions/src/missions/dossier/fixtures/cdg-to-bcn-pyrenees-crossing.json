@@ -1,0 +1,28 @@
+{
+  "slug": "cdg-to-bcn-pyrenees-crossing",
+  "title": "The Pyrenees Crossing",
+  "missionType": "a2a",
+  "insertion_airport": "CDG",
+  "extraction_airport": "BCN",
+  "theater": "pyrenees",
+  "distance_km": 920,
+  "duration_days": "4–6",
+  "subsidy_pct": 35,
+  "booking_ref": "JMM-PYR-920",
+  "include_upsell_page": false,
+  "rider_name": "Executive Client",
+  "rider_archetype": "Tactical Explorer",
+  "selected_bike": "BMW F 750 GS",
+  "deployment_date": "TBD",
+  "operator_info": {
+    "name": "Rider Atlas Node",
+    "address": "Mission Staging Area"
+  },
+  "fleet_availability": [
+    { "name": "BMW R 1300 GS TROPHY", "class": "FLAGSHIP ADVENTURE", "normal_rate": 249, "corridor_rate": 149, "available": true },
+    { "name": "DUCATI MULTISTRADA V4S", "class": "PERFORMANCE CROSSOVER", "normal_rate": 289, "corridor_rate": 179, "available": true },
+    { "name": "KTM 1290 SUPER ADV R", "class": "TECHNICAL ENDURO", "normal_rate": 239, "corridor_rate": 144, "available": false },
+    { "name": "BMW F 750 GS", "class": "MID-RANGE ADVENTURE", "normal_rate": 179, "corridor_rate": 99, "available": true },
+    { "name": "APRILIA TUAREG 660", "class": "LIGHTWEIGHT TECHNICAL", "normal_rate": 189, "corridor_rate": 109, "available": true }
+  ]
+}

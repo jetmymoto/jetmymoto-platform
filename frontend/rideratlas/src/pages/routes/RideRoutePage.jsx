@@ -20,9 +20,7 @@ import { CINEMATIC_BACKGROUNDS } from "@/utils/cinematicBackgrounds";
 import { trackEvent } from "@/core/analytics/trackEvent";
 import { withBrandContext } from "@/utils/navigationTargets";
 import { useAssetLibrary } from "@/hooks/useAssetLibrary";
-
-// pSEO Manifest
-import GENERATED_MANIFEST from "../../../public/data/generated_pages/entity_page_manifest.json";
+import { usePSeoManifest } from "@/hooks/usePSeoManifest";
 
 // Luxury Components
 import { FadeIn } from "@/components/luxury/FadeIn";
@@ -89,11 +87,13 @@ export default function RideRoutePage() {
   const { slug } = useParams();
   const location = useLocation();
   const [premiumData, setPremiumData] = useState(null);
+  const { manifest: GENERATED_MANIFEST, loading: manifestLoading } = usePSeoManifest();
   const route = premiumData?.entity || GRAPH?.routes?.[slug];
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
   // Check for premium pSEO data
   useEffect(() => {
+    if (!GENERATED_MANIFEST) return;
     const premiumMatch = GENERATED_MANIFEST.pages.find(p => p.type === 'route' && p.slug === slug)
     if (premiumMatch) {
        fetch(`/data/generated_pages/route/${slug}.json`)
@@ -101,7 +101,7 @@ export default function RideRoutePage() {
          .then(data => setPremiumData(data))
          .catch(err => console.error("Failed to load premium route data:", err))
     }
-  }, [slug])
+  }, [slug, GENERATED_MANIFEST])
 
   // Non-blocking shard load
   useEffect(() => {
@@ -186,15 +186,24 @@ export default function RideRoutePage() {
     getRouteHeroImage(route)
   );
 
-  const finalHeroImage = currentImage;
-  const finalDescription = assetCaption || route?.description || `A masterline journey ascending from the tarmac of ${airportCity} directly into the heart of ${destinationName}.`;
+  if (manifestLoading) {
+    return <div className="min-h-screen bg-[#050505] flex items-center justify-center text-white/20 font-mono text-xs uppercase tracking-widest">Hydrating Route Intelligence...</div>
+  }
 
-  const visualItems = pois.map(poi => ({
-    id: poi.slug || poi.id,
-    imageUrl: poi.imageUrl,
-    title: poi.name,
-    eyebrow: "Waypoint"
-  }));
+  const finalHeroImage = heroImage;
+  const isPlaceholderDescription = !route?.description || route.description.toLowerCase().includes("pending tactical review") || route.description.toLowerCase().includes("placeholder");
+  const finalDescription = isPlaceholderDescription 
+    ? `A masterline journey ascending from the tarmac of ${airportCity} directly into the heart of ${destinationName}.`
+    : assetCaption || route?.description;
+
+  const visualItems = pois
+    .filter(poi => poi.imageUrl) // Only show POIs with images to prevent blank boxes
+    .map(poi => ({
+      id: poi.slug || poi.id,
+      imageUrl: poi.imageUrl,
+      title: poi.name,
+      eyebrow: "Waypoint"
+    }));
 
   return (
     <div className="min-h-screen bg-[#050505] font-sans selection:bg-[#CDA755] selection:text-black">
@@ -214,16 +223,22 @@ export default function RideRoutePage() {
         subtitle={heroSubtitle}
         imageUrl={finalHeroImage}
         altText={assetAlt || routeName}
+        ctaText="Explore Logistics & Fleet"
+        ctaLink={routeToAirportRentPath}
       />
 
       {/* 2. EXPERIENCE (EMOTIONAL) */}
-      <ExperienceBlock 
-        metrics={[routeDistance, routeDuration, routeDifficulty]}
-        description={finalDescription}
-      />
+      {(routeDistance || routeDuration || routeDifficulty || finalDescription) && (
+        <ExperienceBlock 
+          metrics={[routeDistance, routeDuration, routeDifficulty]}
+          description={finalDescription}
+        />
+      )}
 
       {/* 3. VISUAL STRIP (POIs / Waypoints) */}
-      <VisualStrip items={visualItems} />
+      {visualItems.length > 0 && (
+        <VisualStrip items={visualItems} />
+      )}
 
       {/* 4. CURATED FLEET */}
       <CuratedFleet 

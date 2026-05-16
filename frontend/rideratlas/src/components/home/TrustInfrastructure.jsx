@@ -28,7 +28,11 @@ const PartnerLogo = ({ partner }) => (
 
 export default function TrustInfrastructure({ layout = "marquee" }) {
   return (
-    <section className="py-16 bg-[#030303] border-b border-white/5 overflow-hidden">
+    <section className="py-16 bg-[#030303] border-b border-white/5 overflow-hidden relative">
+      {/* Top fade */}
+      <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-[#050505] to-transparent z-10 pointer-events-none" />
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[#050505] to-transparent z-10 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="text-center">
           <span className="text-[10px] text-[#CDA755] font-mono uppercase tracking-[0.3em] font-bold">

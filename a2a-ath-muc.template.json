@@ -1,0 +1,113 @@
+{
+  "templateId": "a2a-ath-muc-terrain-telemetry-v01",
+  "templateName": "A2A Terrain Telemetry Master",
+  "system": "RiderAtlas Geographic Intelligence",
+  "sourceImage": {
+    "bucket": "factory1",
+    "path": "geographic-intelligence-v2/master_templates/a2a-ath-muc.png",
+    "publicUrl": "https://firebasestorage.googleapis.com/v0/b/factory1/o/geographic-intelligence-v2%2Fmaster_templates%2Fa2a-ath-muc.png"
+  },
+  "visualStyle": {
+    "theme": "cinematic-geographic-intelligence",
+    "mood": "luxury operational expedition intelligence",
+    "palette": {
+      "background": "#050505",
+      "deepNavy": "#071019",
+      "graphite": "#171717",
+      "routeGold": "#D6B36A",
+      "textPrimary": "#F5F1E8",
+      "textSecondary": "#9B978F",
+      "labelGold": "#C9A64E"
+    },
+    "lighting": "dark satellite night with warm gold operational glow",
+    "routeTreatment": "electric gold route line with soft bloom and node pulses",
+    "terrainTreatment": "dark topographic satellite with cloud shadows and illuminated mountain systems",
+    "atmosphere": [
+      "cinematic haze",
+      "soft cloud shadows",
+      "subtle bloom",
+      "deep vignette",
+      "satellite-night contrast"
+    ]
+  },
+  "layout": {
+    "aspectRatio": "16:9",
+    "mapDominant": true,
+    "leftInfoPanel": true,
+    "routeCenterline": true,
+    "originDestinationAnchors": true,
+    "telemetryCallouts": true,
+    "bottomMetricsPanel": true,
+    "brandLockup": true
+  },
+  "typography": {
+    "headline": {
+      "style": "luxury editorial serif",
+      "weight": "bold",
+      "color": "warm ivory",
+      "usage": "section title such as Terrain Telemetry or Geographic Intelligence"
+    },
+    "labels": {
+      "style": "uppercase operational telemetry",
+      "tracking": "wide",
+      "color": "muted gold"
+    },
+    "metrics": {
+      "style": "technical sans serif",
+      "color": "faded ivory"
+    },
+    "callouts": {
+      "style": "small operational annotations",
+      "color": "ivory and gold"
+    }
+  },
+  "replaceableFields": {
+    "originAirport": "ATH",
+    "originCity": "Athens",
+    "originCountry": "Greece",
+    "destinationAirport": "MUC",
+    "destinationCity": "Munich",
+    "destinationCountry": "Germany",
+    "distanceKm": 2180,
+    "elevationGainM": 18750,
+    "estimatedRidingTime": "26–30 hrs",
+    "terrainMix": "78% mountain / 22% valley",
+    "seasonWindow": "May–Sep",
+    "fuelRangeAdvised": "250 km min",
+    "routeGeometry": "dynamic per mission",
+    "telemetryNotes": [
+      "heat pressure",
+      "terrain variation",
+      "crosswind exposure",
+      "alpine compression"
+    ]
+  },
+  "assetRoles": {
+    "baseMap": "required",
+    "routeLine": "required",
+    "originMarker": "required",
+    "destinationMarker": "required",
+    "terrainLabels": "optional",
+    "cloudOverlay": "optional",
+    "telemetryCallouts": "optional"
+  },
+  "frontendUsage": {
+    "section": "GeographicIntelligence",
+    "componentHint": "Use as reference style for cinematic route intelligence panels.",
+    "fallbackPriority": [
+      "mission-specific terrain telemetry render",
+      "operationalMap",
+      "terrainContactSheet",
+      "firstDayMap"
+    ]
+  },
+  "rules": [
+    "Do not use bright map colors.",
+    "Do not use Google Maps default styling.",
+    "Do not create a dashboard UI.",
+    "Do not add neon cyberpunk effects.",
+    "Preserve dark luxury atmosphere.",
+    "Use real mission route data wherever available.",
+    "Never fabricate mission stats without marking them as estimated."
+  ]
+}

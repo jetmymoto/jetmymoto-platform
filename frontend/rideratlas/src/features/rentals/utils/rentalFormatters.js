@@ -1,4 +1,8 @@
 import { selectBestImage } from "../../../core/visual/selectBestImage.js";
+import {
+  RENTAL_HERO_IMAGE_MAP,
+  buildRentalHeroImageId,
+} from "../data/rentalHeroImageMap.js";
 
 /**
  * Pure utility functions for deriving rental display values from rental records.
@@ -148,6 +152,12 @@ export function getRentalPosterUrl(rental, imageGraph) {
     if (selected?.storageUrl) return selected.storageUrl;
   }
 
+  // 0. Vertex rental hero image mapping (generated against rental model registry)
+  const heroId = buildRentalHeroImageId(getRentalBrand(rental), getRentalModelName(rental));
+  if (heroId && RENTAL_HERO_IMAGE_MAP?.[heroId]) {
+    return RENTAL_HERO_IMAGE_MAP[heroId];
+  }
+
   // 1. PRIMARY SOURCE: Database studio images (highest accuracy)
   if (rental?.imageUrl) return rental.imageUrl;
   if (rental?.posterUrl) return rental.posterUrl;
@@ -156,7 +166,8 @@ export function getRentalPosterUrl(rental, imageGraph) {
   // 2. SECONDARY: Deterministic guess to optimized 15rentalimagesx1 bucket
   const brand = getRentalBrand(rental);
   const model = getRentalModelName(rental);
-  const cleanUrl = generate15RentalImagesX1Url(brand, model);
+  const hasDerivedPlaceholder = brand === "Unknown" || model === "Mission Spec";
+  const cleanUrl = hasDerivedPlaceholder ? null : generate15RentalImagesX1Url(brand, model);
 
   // 3. TERTIARY: Category splash fallback
   return cleanUrl || CATEGORY_MEDIA[String(rental?.category || "").toLowerCase()] || CATEGORY_MEDIA.default;

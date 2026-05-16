@@ -1,0 +1,66 @@
+{
+  "template_id": "01_global_hub",
+  "path": "/",
+  "viewport": "desktop",
+  "seo": {
+    "title": "RiderAtlas | Discover the World's Greatest Motorcycle Routes",
+    "description": "JetMyMoto provides elite private motorcycle airlift services worldwide. Seamless logistics for riders, collectors, and expeditions."
+  },
+  "content_structure": {
+    "primary_heading": "Where Will You\nRide Next?",
+    "secondary_headings": [
+      "GLOBAL DEPLOYMENT HUBS",
+      "ICONIC THEATERS",
+      "FEATURED ROUTES",
+      "BEST BIKES FOR THE MISSION",
+      "READY TO RIDE THIS?"
+    ]
+  },
+  "interactive_elements": {
+    "buttons": [],
+    "total_links": 29,
+    "sample_links": [
+      {
+        "text": "RIDERATLAS",
+        "href": "/"
+      },
+      {
+        "text": "ATLAS",
+        "href": "/"
+      },
+      {
+        "text": "HUBS",
+        "href": "/airport"
+      },
+      {
+        "text": "ROUTES",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "FLEETS",
+        "href": "/airport/mxp?mode=rent"
+      },
+      {
+        "text": "FIND A BIKE",
+        "href": "/airport/mxp?mode=rent&ctx=ra"
+      },
+      {
+        "text": "SHIP MACHINE",
+        "href": "/moto-airlift?ctx=jet"
+      },
+      {
+        "text": "EXPLORE ROUTES",
+        "href": "/route/milan-mxp-to-alps"
+      },
+      {
+        "text": "SECTOR LOCKED\nMXP\nMXP\nLAT: --\nLNG: --\nMILAN MALPENSA AIRPORT\nITALIAN ALPS HUB\nRENTAL_START\n—\nFLEET_CLASS\n—\nDeployment: 15 routes available\nInitialize",
+        "href": "/airport/mxp"
+      },
+      {
+        "text": "SECTOR LOCKED\nLHR\nLHR\nLAT: --\nLNG: --\nLONDON HEATHROW AIRPORT\nUK MAIN HUB\nRENTAL_START\n—\nFLEET_CLASS\n—\nDeployment: 15 routes available\nInitialize",
+        "href": "/airport/lhr"
+      }
+    ]
+  },
+  "timestamp": "2026-04-04T18:04:41.352Z"
+}

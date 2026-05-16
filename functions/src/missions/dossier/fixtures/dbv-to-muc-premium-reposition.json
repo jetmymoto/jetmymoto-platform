@@ -1,0 +1,28 @@
+{
+  "slug": "dbv-to-muc-premium-reposition",
+  "title": "The Premium Reposition",
+  "missionType": "a2a",
+  "insertion_airport": "DBV",
+  "extraction_airport": "MUC",
+  "theater": "dalmatian-coast",
+  "distance_km": 1310,
+  "duration_days": "5–7",
+  "subsidy_pct": 45,
+  "booking_ref": "JMM-DBV-1310",
+  "include_upsell_page": true,
+  "rider_name": "Executive Client",
+  "rider_archetype": "Tactical Explorer",
+  "selected_bike": "BMW R 1300 GS",
+  "deployment_date": "TBD",
+  "operator_info": {
+    "name": "Rider Atlas Node",
+    "address": "Mission Staging Area"
+  },
+  "fleet_availability": [
+    { "name": "BMW R 1300 GS TROPHY", "class": "FLAGSHIP ADVENTURE", "normal_rate": 249, "corridor_rate": 149, "available": true },
+    { "name": "DUCATI MULTISTRADA V4S", "class": "PERFORMANCE CROSSOVER", "normal_rate": 289, "corridor_rate": 179, "available": true },
+    { "name": "KTM 1290 SUPER ADV R", "class": "TECHNICAL ENDURO", "normal_rate": 239, "corridor_rate": 144, "available": false },
+    { "name": "BMW S 1000 XR", "class": "SPORT TOURER", "normal_rate": 219, "corridor_rate": 129, "available": true },
+    { "name": "APRILIA TUAREG 660", "class": "LIGHTWEIGHT TECHNICAL", "normal_rate": 189, "corridor_rate": 109, "available": true }
+  ]
+}

@@ -40,8 +40,13 @@ export default function DynamicCinematicCTA() {
       {/* Seamless transition from section above */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-t from-transparent to-[#050505] z-10 pointer-events-none" />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/30 to-[#050505]/70" />
+      {/* Enhanced gradient overlay for cinematic feel */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(to bottom, transparent 0%, rgba(5,5,5,0.4) 30%, rgba(5,5,5,0.8) 100%)'
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full">

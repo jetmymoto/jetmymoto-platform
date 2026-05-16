@@ -57,16 +57,16 @@ export default function DossierLeadCapture({ airportCode }) {
   );
 
   return (
-    <section className="my-12 rounded-2xl border border-white/10 bg-[#121212] px-6 py-10 md:px-10">
+    <section className="my-12 rounded-2xl border border-border bg-surface px-6 py-10 md:px-10 shadow-sm">
       <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#CDA755] mb-3">
         Intelligence Package
       </p>
 
-      <h3 className="text-2xl md:text-3xl font-serif italic font-black text-white uppercase leading-tight mb-4">
-        Download the {airportCode} Tactical Deployment Dossier
+      <h3 className="text-2xl md:text-3xl font-serif italic font-black text-zinc-900 uppercase leading-tight mb-4">
+        Download the {airportCode} Tactical Start Point Dossier
       </h3>
 
-      <p className="text-sm text-zinc-400 leading-relaxed max-w-xl mb-8">
+      <p className="text-sm text-zinc-600 leading-relaxed max-w-xl mb-8">
         Get live pricing, fleet availability, and the Rent vs.&nbsp;Airlift
         break-even analysis sent directly to your comms.
       </p>
@@ -98,7 +98,7 @@ export default function DossierLeadCapture({ airportCode }) {
             }}
             placeholder="operator@callsign.com"
             aria-label="Email address"
-            className="flex-1 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-zinc-600 outline-none transition focus:border-[#CDA755]/60 focus:ring-1 focus:ring-[#CDA755]/40"
+            className="flex-1 rounded-lg border border-border bg-white px-4 py-3 text-sm text-zinc-900 placeholder:text-zinc-400 outline-none transition focus:border-[#CDA755]/60 focus:ring-1 focus:ring-[#CDA755]/40"
           />
           <button
             type="submit"

@@ -1,0 +1,483 @@
+{
+  "BMW_R_1300_GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fbmw-r-1300-gs.png?alt=media",
+      "brand": "BMW",
+      "model": "R 1300 GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Ducati_Multistrada_V4": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fducati-multistrada-v4.png?alt=media",
+      "brand": "Ducati",
+      "model": "Multistrada V4",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Moto_Morini_X-CAPE": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FMoto%20Morini%20X-CAPE.jpg?alt=media",
+      "brand": "Moto Morini",
+      "model": "X-CAPE",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R_1300_GS_Adventure": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fbmw-r-1300-gs-adventure.png?alt=media",
+      "brand": "BMW",
+      "model": "R 1300 GS Adventure",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Triumph_Bonneville_T120": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Ftriumph-bonneville-t120.png?alt=media",
+      "brand": "Triumph",
+      "model": "Bonneville T120",
+      "category": "classic",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_Forza_125CC": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20Forza%20125CC.jpg?alt=media",
+      "brand": "Honda",
+      "model": "Forza 125CC",
+      "category": "scrambler",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_Tri_Glide_Ultra": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20Tri%20Glide%20Ultra.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "Tri Glide Ultra",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_Grom_125cc": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20Grom%20125cc.jpg?alt=media",
+      "brand": "Honda",
+      "model": "Grom 125cc",
+      "category": "scrambler",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Yamaha_MT-07": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FYamaha%20MT-07.jpg?alt=media",
+      "brand": "Yamaha",
+      "model": "MT-07",
+      "category": "sport-touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_Streetglide": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20Streetglide.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "Streetglide",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_Transalp_750": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20Transalp%20750.jpg?alt=media",
+      "brand": "Honda",
+      "model": "Transalp 750",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_Road_Glide": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fharley-davidson-road-glide.png?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "Road Glide",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Yamaha_Tenere_700": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fyamaha-tenere-700.png?alt=media",
+      "brand": "Yamaha",
+      "model": "Tenere 700",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_CBR650R": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20CBR650R.jpg?alt=media",
+      "brand": "Honda",
+      "model": "CBR650R",
+      "category": "sport-touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R1250GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20R1250GS.jpg?alt=media",
+      "brand": "BMW",
+      "model": "R1250GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R1250_RT": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20R1250%20RT.jpg?alt=media",
+      "brand": "BMW",
+      "model": "R1250 RT",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_XL_750_Transalp": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20XL%20750%20Transalp.jpg?alt=media",
+      "brand": "Honda",
+      "model": "XL 750 Transalp",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Moto_Morini_X-Cape_650": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FMoto%20Morini%20X-Cape%20650.jpg?alt=media",
+      "brand": "Moto Morini",
+      "model": "X-Cape 650",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_F750_GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20F750%20GS.jpg?alt=media",
+      "brand": "BMW",
+      "model": "F750 GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_NC_750X": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHonda%20NC%20750X.jpg?alt=media",
+      "brand": "Honda",
+      "model": "NC 750X",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R1250_GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20R1250%20GS.jpg?alt=media",
+      "brand": "BMW",
+      "model": "R1250 GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Ducati_DesertX": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FDucati%20DesertX.jpg?alt=media",
+      "brand": "Ducati",
+      "model": "DesertX",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R1300_GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fbmw-r1300-gs.png?alt=media",
+      "brand": "BMW",
+      "model": "R1300 GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_F900_GS_Adventure": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20F900%20GS%20Adventure.jpg?alt=media",
+      "brand": "BMW",
+      "model": "F900 GS Adventure",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_G310R": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20G310R.jpg?alt=media",
+      "brand": "BMW",
+      "model": "G310R",
+      "category": "classic",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R1300_GSA": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fbmw-r1300-gsa.png?alt=media",
+      "brand": "BMW",
+      "model": "R1300 GSA",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_F800_GS": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20F800%20GS.jpg?alt=media",
+      "brand": "BMW",
+      "model": "F800 GS",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_Street_Glide": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20Street%20Glide.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "Street Glide",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Yamaha_XSR900": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fyamaha-xsr900.png?alt=media",
+      "brand": "Yamaha",
+      "model": "XSR900",
+      "category": "sport-touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_CVO_Street_Glide": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20CVO%20Street%20Glide.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "CVO Street Glide",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_CVO_Road_Glide": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20CVO%20Road%20Glide.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "CVO Road Glide",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_R_1200_RT": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20R%201200%20RT.jpg?alt=media",
+      "brand": "BMW",
+      "model": "R 1200 RT",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Honda_Gold_Wing_Tour_DCT": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/fleet-visuals%2Fhonda-gold-wing-tour-dct.png?alt=media",
+      "brand": "Honda",
+      "model": "Gold Wing Tour DCT",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "BMW_F_750_GS_40_Years": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FBMW%20F%20750%20GS%2040%20Years.jpg?alt=media",
+      "brand": "BMW",
+      "model": "F 750 GS 40 Years",
+      "category": "adventure",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Harley-Davidson_Touring_Ultra_Limited": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FHarley-Davidson%20Touring%20Ultra%20Limited.jpg?alt=media",
+      "brand": "Harley-Davidson",
+      "model": "Touring Ultra Limited",
+      "category": "touring",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Yamaha_Bolt_R-Spec": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FYamaha%20Bolt%20R-Spec.jpg?alt=media",
+      "brand": "Yamaha",
+      "model": "Bolt R-Spec",
+      "category": "cruiser",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ],
+  "Triumph_Scrambler_400_X": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/movie-chat-factory.firebasestorage.app/o/rental%20model%20images%2FTriumph%20Scrambler%20400%20X.jpg?alt=media",
+      "brand": "Triumph",
+      "model": "Scrambler 400 X",
+      "category": "scrambler",
+      "type": "press",
+      "composition": "side_profile",
+      "quality": "high",
+      "license": "press-kit-editorial",
+      "addedAt": "2026-04-01"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://www.cycleworld.com/",
+  "timestamp": "2026-04-02T20:15:01.153Z",
+  "dryRun": true,
+  "mode": "semantic",
+  "showroom": true,
+  "stats": {
+    "pagesCrawled": 12,
+    "imagesFound": 323,
+    "imagesKept": 0,
+    "rejectedSmall": 81,
+    "rejectedUi": 2,
+    "rejectedDuplicate": 112,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "semanticStats": {
+    "calls": 128,
+    "apiCalls": 8,
+    "kept": 0,
+    "rejected": 70,
+    "errors": 58,
+    "avgConfidence": 0.2992857142857142,
+    "confidenceSum": 20.949999999999996,
+    "matchedModels": {},
+    "categories": {
+      "unknown": 56,
+      "cruiser": 3,
+      "sport": 4,
+      "touring": 2,
+      "adventure": 1,
+      "naked": 4
+    }
+  },
+  "sampleImages": []
+}

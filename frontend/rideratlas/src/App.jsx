@@ -1,4 +1,3 @@
-
 // src/App.jsx
 
 if (import.meta.env.DEV) {
@@ -37,13 +36,13 @@ const RideRoutePage = lazy(() => import("@/pages/routes/RideRoutePage"));
 const RideDestinationPage = lazy(() => import("@/pages/destination/RideDestinationPage"));
 const PatriotOverlayPage = lazy(() => import("./pages/rentals/PatriotOverlayPage"));
 const MotoAirliftBooking = lazy(() => import("./features/airport/MotoAirliftBooking"));
-const MissionDetailsPage = lazy(() => import("./pages/MissionDetailsPage"));
-const RentalCheckoutPage = lazy(() => import("./pages/rentals/RentalCheckoutPage"));
+const MissionLandingPage = lazy(() => import("./pages/missions/MissionLandingPage"));
 const MissionPlannerPage = lazy(() => import("./pages/MissionPlannerPage"));
 const PlanSummaryPage = lazy(() => import("./pages/PlanSummaryPage"));
 const HangarPage = lazy(() => import("./pages/HangarPage"));
 const PoolPage = lazy(() => import("./pages/PoolPage"));
 const RentalDetailPage = lazy(() => import("./pages/rentals/RentalDetailPage"));
+const RentalCheckoutPage = lazy(() => import("./pages/rentals/RentalCheckoutPage"));
 const ModelDeploymentPage = lazy(() => import("./pages/rentals/ModelDeploymentPage"));
 const PoiPage = lazy(() => import("./pages/poi/PoiPage"));
 const A2AMissionPage = lazy(() => import("./pages/a2a/A2AMissionPage"));
@@ -69,8 +68,8 @@ function DebugLocation() {
 }
 
 const LazyFallback = () => (
-  <div className="min-h-screen bg-[#050505] flex items-center justify-center">
-    <div className="animate-pulse w-8 h-8 rounded-full bg-amber-500/50" />
+  <div className="min-h-screen bg-primary flex items-center justify-center">
+    <div className="animate-pulse w-8 h-8 rounded-full bg-accent-primary/50" />
   </div>
 );
 
@@ -123,7 +122,7 @@ function AppRoutes({ site }) {
       <Route path="/airport" element={<GlobalTower />} />
       <Route path="/airport/continent/:continent" element={<GlobalTower />} />
       <Route path="/airport/country/:country" element={<AirportsCountryPage />} />
-      <Route path="/airport/:code" element={<AirportPage />} />
+      <Route path="/airport/:airportCode" element={<AirportPage />} />
       <Route path={LEGACY_AIRPORTS_PATH} element={<LegacyAirportMaps />} />
       <Route path={`${LEGACY_AIRPORTS_PATH}/*`} element={<LegacyAirportMaps />} />
 
@@ -141,7 +140,7 @@ function AppRoutes({ site }) {
       <Route path="/a2a/:slug" element={<A2AMissionPage />} />
       <Route path="/one-way-rentals" element={<OneWayRentalsPage />} />
 
-      <Route path="/mission/:id" element={<MissionDetailsPage />} />
+      <Route path="/mission/:slug" element={<MissionLandingPage />} />
       <Route path="/deploy/:missionId" element={<MissionPlannerPage />} />
       <Route path="/plan/:planId" element={<PlanSummaryPage />} />
       <Route path="/hangar" element={<HangarPage />} />
@@ -212,6 +211,11 @@ function AppShell({ site }) {
 
 export default function App() {
   const site = getSiteConfig();
+
+  useEffect(() => {
+    // TEMPORARY: Force light theme for redesign
+    document.body.setAttribute("data-theme", "light");
+  }, []);
 
   if (import.meta.env.DEV) {
     console.log("SITE ID:", site?.id);

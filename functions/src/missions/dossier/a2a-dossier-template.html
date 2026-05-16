@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2A Mission Dossier - {{slug}}</title>
+    <style>
+        /* A2A Mechanical Brutalist Palette - ELITE UNDERGROUND REFINEMENT */
+        :root {
+            --black: #050505;
+            --dark-gray: #0D0D0D;
+            --medium-gray: #151515;
+            --tactical-amber: #CDA755;
+            --dim-amber: rgba(205, 167, 85, 0.4);
+            --white: #E0E0E0;
+            --line: rgba(234, 234, 234, 0.08);
+            --hud-glow: 0 0 10px rgba(205, 167, 85, 0.2);
+        }
+
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            color: var(--white);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Mono", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Print Setup */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            body { background: #000; -webkit-print-color-adjust: exact; }
+            .page { page-break-after: always; }
+        }
+
+        /* Layout Primitives */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+            background: var(--black);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .cover {
+            padding: 0 !important;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* HUD Overlay Elements */
+        .hud-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .hud-bracket {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--tactical-amber);
+            opacity: 0.6;
+        }
+        .hud-tl { top: 40px; left: 40px; border-right: none; border-bottom: none; }
+        .hud-tr { top: 40px; right: 40px; border-left: none; border-bottom: none; }
+        .hud-bl { bottom: 40px; left: 40px; border-right: none; border-top: none; }
+        .hud-br { bottom: 40px; right: 40px; border-left: none; border-top: none; }
+
+        .hud-line-h { position: absolute; left: 40px; right: 40px; height: 1px; background: var(--line); }
+        .hud-line-v { position: absolute; top: 40px; bottom: 40px; width: 1px; background: var(--line); }
+
+        .gold { color: var(--tactical-amber); text-shadow: var(--hud-glow); }
+        .mono { font-family: "SF Mono", "Monaco", "Inconsolata", "Courier New", monospace; letter-spacing: 0.12em; text-transform: uppercase; }
+
+        /* Typography */
+        h1 { font-size: 52px; font-weight: 900; letter-spacing: -2.5px; line-height: 0.9; margin-bottom: 15px; text-transform: uppercase; }
+        h2 { font-size: 9px; font-weight: 800; letter-spacing: 5px; text-transform: uppercase; color: var(--tactical-amber); margin-bottom: 12px; border-bottom: 1px solid var(--tactical-amber); display: inline-block; padding-bottom: 2px; }
+        h3 { font-size: 24px; font-weight: 900; margin-bottom: 10px; letter-spacing: -0.8px; text-transform: uppercase; border-left: 3px solid var(--tactical-amber); padding-left: 15px; }
+        h4 { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #777; }
+        
+        p { margin-bottom: 10px; color: #999; }
+        .lead { font-size: 15px; font-weight: 600; color: var(--white); line-height: 1.25; }
+
+        /* Grid System */
+        .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+        .grid > div { background: var(--black); padding: 15px; }
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-8 { grid-column: span 8; }
+        .col-12 { grid-column: span 12; }
+
+        /* Components */
+        .card { background: var(--dark-gray); border: 1px solid var(--line); padding: 20px; position: relative; }
+        .card.amber { border-left: 2px solid var(--tactical-amber); background: linear-gradient(90deg, rgba(205, 167, 85, 0.05) 0%, transparent 100%); }
+        
+        .stat-label { font-size: 7px; text-transform: uppercase; letter-spacing: 2px; color: var(--tactical-amber); margin-bottom: 4px; font-weight: 900; opacity: 0.8; }
+        .stat-value { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; }
+
+        .tag { display: inline-block; padding: 3px 8px; background: var(--tactical-amber); color: var(--black); font-size: 8px; font-weight: 900; text-transform: uppercase; margin-right: 5px; }
+
+        /* Sections */
+        .footer { 
+            position: absolute; 
+            bottom: 30px; 
+            left: 40px; 
+            right: 40px; 
+            border-top: 1px solid var(--line); 
+            padding-top: 10px; 
+            font-size: 7px; 
+            color: #444; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 320px;
+            background: var(--medium-gray);
+            border: 1px solid var(--line);
+            position: relative;
+            overflow: hidden;
+        }
+        .map-image { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; filter: grayscale(100%) brightness(0.7) contrast(1.3); }
+        .map-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at center, transparent 20%, var(--black) 100%); opacity: 0.6; }
+
+        .industrial-grid {
+            background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .repro-tag {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            border: 1px solid var(--tactical-amber);
+            color: var(--tactical-amber);
+            padding: 4px 12px;
+            font-weight: 900;
+            font-size: 11px;
+            transform: rotate(3deg);
+            background: rgba(0,0,0,0.9);
+            z-index: 20;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .time-box {
+            display: flex;
+            background: var(--dark-gray);
+            border: 1px solid var(--line);
+        }
+        .time-box > div {
+            flex: 1;
+            padding: 15px;
+            border-right: 1px solid var(--line);
+        }
+        .time-box > div:last-child { border-right: none; }
+        .time-gain { color: #4ADE80; font-weight: 800; }
+        .time-loss { color: #F87171; font-weight: 800; }
+
+        /* Table styles for Showroom */
+        .showroom-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .showroom-table th { text-align: left; padding: 10px; border-bottom: 1px solid var(--line); font-size: 8px; color: var(--tactical-amber); }
+        .showroom-table td { padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+        .showroom-table tr:last-child td { border-bottom: none; }
+
+    </style>
+</head>
+<body class="industrial-grid">
+
+    <!-- HUD LAYOUT (Global) -->
+    <div class="hud-overlay" style="z-index: 100;">
+        <div class="hud-bracket hud-tl"></div>
+        <div class="hud-bracket hud-tr"></div>
+        <div class="hud-bracket hud-bl"></div>
+        <div class="hud-bracket hud-br"></div>
+    </div>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page cover">
+        <div class="repro-tag mono">FLEET REBALANCING // SUBSIDIZED</div>
+        
+        {{#if mission_visuals.hero}}
+            <img src="{{mission_visuals.hero}}" class="cover-image">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 40%, rgba(0,0,0,0.8) 100%); z-index: 25;"></div>
+            
+            <div style="position: absolute; top: 80px; left: 80px; z-index: 30;">
+                <div class="tag" style="margin-bottom: 15px; font-size: 10px; padding: 5px 12px; background: var(--tactical-amber); color: #000;">A2A CORRIDOR // ACCESS_GRANTED</div>
+                <h2 class="mono" style="margin-bottom: 5px; border: none; color: #AAA; letter-spacing: 2px;">CORRIDOR CODENAME:</h2>
+                <h1 style="font-size: 72px; text-shadow: 0 0 30px rgba(0,0,0,1);">{{title}}</h1>
+            </div>
+        {{else}}
+            <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 80px; background: #111;">
+                <div class="tag" style="margin-bottom: 15px; font-size: 10px; padding: 5px 12px; background: var(--tactical-amber); color: #000;">A2A CORRIDOR // ACCESS_GRANTED</div>
+                <h2 class="mono">MISSION ACTIVATION</h2>
+                <h1 style="font-size: 72px;">{{title}}</h1>
+            </div>
+        {{/if}}
+
+        <div style="position: absolute; bottom: 80px; left: 80px; right: 80px; background: rgba(5,5,5,0.9); padding: 40px; border: 1px solid var(--line); backdrop-filter: blur(10px); z-index: 30; border-left: 4px solid var(--tactical-amber);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 25px;">
+                <div>
+                    <div class="stat-label gold">LOGISTICAL TRANSIT</div>
+                    <div class="mono" style="font-size: 42px; font-weight: 900; letter-spacing: -1px;">{{insertion_airport}} ➔ {{extraction_airport}}</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="stat-label gold">OPERATIVE SUBSIDY</div>
+                    <div class="stat-value gold" style="font-size: 42px;">-{{subsidy_pct}}%</div>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding-top: 20px; border-top: 1px solid var(--line);">
+                <div>
+                    <div class="stat-label">AVAILABILITY SIGNAL</div>
+                    <div class="lead" style="color: #4ADE80; font-size: 14px; margin-bottom: 5px;">✔ HIGH-PRIORITY REBALANCE</div>
+                    <div class="mono" style="font-size: 9px; color: #666;">EXPIRY: 72H // REMAINING SLOTS: 03</div>
+                </div>
+                <div>
+                    <div class="stat-label">MISSION_ID</div>
+                    <div class="mono" style="font-size: 14px; color: #FFF; margin-bottom: 5px;">{{booking_ref}}</div>
+                    <div class="mono gold" style="font-size: 9px; letter-spacing: 1px;">STATUS: AWAITING_OPERATIVE_CONFIRMATION</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: CORRIDOR INTELLIGENCE -->
+    <div class="page">
+        <h2 class="mono">01 // CORRIDOR INTELLIGENCE</h2>
+        <h1>RESTRICTED MOBILITY ACCESS</h1>
+        
+        <div class="grid" style="margin-bottom: 30px;">
+            <div class="col-6">
+                <div class="stat-label">OPERATIVE SUBSIDY</div>
+                <div class="stat-value gold">-{{subsidy_pct}}%</div>
+            </div>
+            <div class="col-6">
+                <div class="stat-label">CORRIDOR STATUS</div>
+                <div class="stat-value" style="color: #4ADE80;">ACTIVE</div>
+            </div>
+            <div class="col-4">
+                <div class="stat-label">TRANSFER DISTANCE</div>
+                <div class="stat-value">{{distance_km}} KM</div>
+            </div>
+            <div class="col-4">
+                <div class="stat-label">OPERATION WINDOW</div>
+                <div class="stat-value">{{duration_days}} DAYS</div>
+            </div>
+            <div class="col-4">
+                <div class="stat-label">REBALANCE PRIORITY</div>
+                <div class="stat-value">HIGH</div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">WHY THIS ACCESS EXISTS</h3>
+        <p class="lead">Fleet imbalance detected between {{insertion_airport}} and {{extraction_airport}} sectors. Restricted mobility corridors are temporarily open to qualified operatives.</p>
+        <p style="margin-top: 15px;">By participating in the A2A rebalancing program, you gain exclusive access to the premium fleet at heavily subsidized rates. You are not a customer; you are a logistical asset executing a strategic repositioning.</p>
+
+        <div class="card amber" style="margin-top: 40px;">
+            <h4 class="gold" style="margin-bottom: 10px;">TACTICAL GAIN</h4>
+            <p style="margin-bottom: 0;">Participation grants access to flagship GS-class and Performance hardware otherwise reserved for high-season premium bookings. Subsidies apply only while the imbalance exists.</p>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO // A2A // {{slug}}</div>
+            <div class="mono">PAGE 02</div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: THE EXPERIENCE -->
+    <div class="page">
+        <h2 class="mono">02 // THE EXPERIENCE</h2>
+        <h1>THE REWARD CORRIDOR</h1>
+        <p class="lead">The transit from {{insertion_airport}} to {{extraction_airport}} is not a commute. It is a curated sequence of technical terrain and reward sectors.</p>
+
+        <div class="map-container" style="margin: 20px 0;">
+            {{#if mission_visuals.route_map}}
+                <img src="{{mission_visuals.route_map}}" class="map-image">
+                <div class="map-overlay"></div>
+            {{/if}}
+        </div>
+
+        <div class="grid" style="margin-top: 20px;">
+            <div class="col-12">
+                <h3 style="font-size: 18px;">ROUTE PROGRESSION</h3>
+                <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between;" class="mono">
+                    <div style="text-align: center;">
+                        <div class="gold" style="font-size: 14px;">{{insertion_airport}}</div>
+                        <div style="font-size: 8px; color: #555;">DEPARTURE</div>
+                    </div>
+                    <div style="flex-grow: 1; height: 1px; background: var(--line); margin: 0 20px; position: relative;">
+                        <div style="position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; border-radius: 50%; background: var(--tactical-amber);"></div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="gold" style="font-size: 14px;">ALPS</div>
+                        <div style="font-size: 8px; color: #555;">TRANSITION</div>
+                    </div>
+                    <div style="flex-grow: 1; height: 1px; background: var(--line); margin: 0 20px; position: relative;">
+                        <div style="position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; border-radius: 50%; background: var(--tactical-amber);"></div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="gold" style="font-size: 14px;">{{extraction_airport}}</div>
+                        <div style="font-size: 8px; color: #555;">ARRIVAL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">TIME RECOVERY: THE SECRET WEAPON</h3>
+        <div class="time-box" style="margin-top: 15px;">
+            <div>
+                <div class="stat-label">YOU SAVE</div>
+                <ul style="list-style: none; padding: 0; font-size: 11px;">
+                    <li class="time-loss">✘ 2 Highway Transit Days</li>
+                    <li class="time-loss">✘ 1,400 KM Autobahn Fatigue</li>
+                    <li class="time-loss">✘ Trailer Logistics/Friction</li>
+                </ul>
+            </div>
+            <div>
+                <div class="stat-label">YOU GAIN</div>
+                <ul style="list-style: none; padding: 0; font-size: 11px;">
+                    <li class="time-gain">✔ Immediate Riding Focus</li>
+                    <li class="time-gain">✔ Technical Alpine Exposure</li>
+                    <li class="time-gain">✔ Premium Asset Performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO // A2A // {{slug}}</div>
+            <div class="mono">PAGE 03</div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: FLEET SHOWROOM -->
+    <div class="page">
+        <h2 class="mono">03 // OPERATOR CLASS</h2>
+        <h1>AVAILABLE ASSET FLEET</h1>
+        <p class="lead">Select your primary machine for the repositioning window. Each asset class is maintained to high-frequency deployment standards.</p>
+
+        {{#if mission_visuals.machine_profile}}
+            <div style="width: 100%; height: 220px; background: var(--medium-gray); border: 1px solid var(--line); margin: 20px 0; overflow: hidden;">
+                <img src="{{mission_visuals.machine_profile}}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        {{/if}}
+
+        <table class="showroom-table">
+            <thead>
+                <tr>
+                    <th>MACHINE CLASS</th>
+                    <th>DAILY VALUE</th>
+                    <th>CORRIDOR RATE</th>
+                    <th>AVAILABILITY</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#if fleet_availability}}
+                    {{#each fleet_availability}}
+                    <tr>
+                        <td>
+                            <div style="font-weight: 800; font-size: 13px;">{{this.name}}</div>
+                            <div style="font-size: 8px; color: #555;">{{this.class}}</div>
+                        </td>
+                        <td class="mono" style="color: #777;">€{{this.normal_rate}}</td>
+                        <td class="mono gold" style="font-weight: 900; font-size: 15px;">€{{this.corridor_rate}}</td>
+                        <td>
+                            <div class="tag" style="background: {{#if this.available}}#4ADE80{{else}}#F87171{{/if}}; color: #000;">
+                                {{#if this.available}}READY{{else}}LOCKED{{/if}}
+                            </div>
+                        </td>
+                    </tr>
+                    {{/each}}
+                {{else}}
+                    <tr>
+                        <td>
+                            <div style="font-weight: 800; font-size: 13px;">BMW R 1300 GS TROPHY</div>
+                            <div style="font-size: 8px; color: #555;">FLAGSHIP ADVENTURE</div>
+                        </td>
+                        <td class="mono" style="color: #777;">€249</td>
+                        <td class="mono gold" style="font-weight: 900; font-size: 15px;">€149</td>
+                        <td><div class="tag" style="background: #4ADE80; color: #000;">READY</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-weight: 800; font-size: 13px;">DUCATI MULTISTRADA V4S</div>
+                            <div style="font-size: 8px; color: #555;">PERFORMANCE CROSSOVER</div>
+                        </td>
+                        <td class="mono" style="color: #777;">€289</td>
+                        <td class="mono gold" style="font-weight: 900; font-size: 15px;">€179</td>
+                        <td><div class="tag" style="background: #4ADE80; color: #000;">READY</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-weight: 800; font-size: 13px;">KTM 1290 SUPER ADV R</div>
+                            <div style="font-size: 8px; color: #555;">TECHNICAL ENDURO</div>
+                        </td>
+                        <td class="mono" style="color: #777;">€239</td>
+                        <td class="mono gold" style="font-weight: 900; font-size: 15px;">€144</td>
+                        <td><div class="tag" style="background: #F87171; color: #000;">LOCKED</div></td>
+                    </tr>
+                {{/if}}
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO // A2A // {{slug}}</div>
+            <div class="mono">PAGE 04</div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: SCARCITY -->
+    <div class="page">
+        <h2 class="mono">04 // ACCESS WINDOW</h2>
+        <h1>CORRIDOR EXPIRY</h1>
+
+        {{#if mission_visuals.offer}}
+            <div style="width: 100%; height: 280px; background: var(--medium-gray); border: 1px solid var(--line); margin: 20px 0; overflow: hidden;">
+                <img src="{{mission_visuals.offer}}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        {{/if}}
+
+        <div class="grid" style="margin-top: 20px;">
+            <div class="col-12" style="border: 1px solid var(--tactical-amber); background: rgba(205, 167, 85, 0.03); padding: 30px;">
+                <h3 style="border: none; padding: 0; color: var(--tactical-amber);">CORRIDOR ACCESS WINDOW</h3>
+                <p class="lead" style="margin-top: 10px;">Only <strong style="color: #4ADE80;">3 qualifying transfers</strong> remain before fleet equilibrium is restored and subsidies are terminated.</p>
+                <div style="margin-top: 20px; display: flex; align-items: center;">
+                    <div style="width: 100%; height: 4px; background: var(--line); position: relative;">
+                        <div style="position: absolute; top: 0; left: 0; height: 100%; width: 85%; background: var(--tactical-amber); box-shadow: 0 0 10px var(--tactical-amber);"></div>
+                    </div>
+                    <div class="mono" style="margin-left: 20px; font-size: 10px; color: var(--tactical-amber);">85% ALLOCATED</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 40px;">MISSION INTELLIGENCE</h3>
+        <p>{{mission_intelligence.execution_recommendation}}</p>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO // A2A // {{slug}}</div>
+            <div class="mono">PAGE 05</div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: TERMINAL -->
+    <div class="page dark" style="background: #000;">
+        <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; border: 1px solid var(--tactical-amber); padding: 50px; position: relative;">
+            <div class="mono" style="position: absolute; top: 20px; right: 20px; font-size: 10px; color: var(--tactical-amber); opacity: 0.5;">[ TERMINAL_SECURE ]</div>
+            
+            <h2 class="mono" style="margin-bottom: 20px; border: none; background: var(--tactical-amber); color: #000; padding: 5px 15px;">AWAITING CONFIRMATION</h2>
+            <h1 style="font-size: 64px; color: var(--white); margin-bottom: 10px;">SECURE ACCESS.</h1>
+            <p class="lead gold" style="margin-bottom: 40px; font-size: 18px;">Access to the {{insertion_airport}} ➔ {{extraction_airport}} corridor expires in <strong style="color: #FFF;">72H</strong>.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 150px; gap: 30px; align-items: center;">
+                <div>
+                    <a href="https://rideratlas.com/mission/{{slug}}?source=dossier" style="text-decoration: none;">
+                        <div style="background: var(--tactical-amber); color: var(--black); padding: 25px; text-align: center; font-weight: 900; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; box-shadow: 0 0 30px rgba(205, 167, 85, 0.3);">
+                            ACCEPT MISSION TRANSFER
+                        </div>
+                    </a>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <a href="https://rideratlas.com/mission/{{slug}}?source=dossier" style="text-decoration: none;">
+                            <div style="border: 1px solid var(--line); padding: 15px; text-align: center; color: var(--white); font-weight: 700; font-size: 11px; text-transform: uppercase; background: rgba(255,255,255,0.03);">
+                                WHATSAPP CONCIERGE
+                            </div>
+                        </a>
+                        <a href="https://rideratlas.com/mission/{{slug}}?source=dossier" style="text-decoration: none;">
+                            <div style="border: 1px solid var(--line); padding: 15px; text-align: center; color: var(--white); font-weight: 700; font-size: 11px; text-transform: uppercase; background: rgba(255,255,255,0.03);">
+                                REQUEST ASSIGNMENT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 120px; height: 120px; background: #FFF; padding: 10px; display: inline-block;">
+                        <!-- QR Placeholder -->
+                        <div style="width: 100%; height: 100%; background: #000; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 10px;" class="mono">QR_CODE</div>
+                    </div>
+                    <div class="mono" style="font-size: 8px; color: #555; margin-top: 10px;">SCAN TO ENCRYPT</div>
+                </div>
+            </div>
+
+            <p style="margin-top: 50px; font-size: 9px; color: #333; text-align: center; text-transform: uppercase; letter-spacing: 3px;">This is a restricted mobility intelligence document. Unauthorized distribution is prohibited.</p>
+        </div>
+
+        <div class="footer">
+            <div class="mono">JETMYMOTO // A2A // {{slug}}</div>
+            <div class="mono">PAGE 06</div>
+        </div>
+    </div>
+
+</body>
+</html>

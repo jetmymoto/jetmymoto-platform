@@ -1,0 +1,328 @@
+[
+  {
+    "brand": "porsche",
+    "url": "https://www.porsche.com",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Deep, dark backgrounds often provide a theatrical stage for vehicles, contrasting with bright, illuminated product shots.",
+        "Surfaces are generally clean and uncluttered, allowing content to breathe with ample negative space.",
+        "Layering is subtle, often achieved through slight elevation of content blocks or card-like structures on darker backdrops."
+      ],
+      "accentColors": [
+        "#D3000F"
+      ],
+      "gradientStyles": [
+        "Subtle, often radial or linear gradients are used to create depth and highlight focal points, especially behind vehicles or in background elements, transitioning from dark to slightly less dark or to a deep, rich color.",
+        "Light-to-dark fades are common on image overlays, particularly from top to bottom or from edges inward."
+      ],
+      "imageOverlayPatterns": [
+        "Bottom-heavy, soft scrims that fade upwards, allowing text to sit legibly over the lower portion of hero images.",
+        "Subtle, full-bleed dark overlays that slightly desaturate and deepen images, enhancing contrast for white typography.",
+        "Vignette-like effects are sometimes used to draw focus to the center of an image, particularly in editorial content."
+      ],
+      "typographyBehavior": [
+        "Headlines are typically sans-serif, bold, and set with generous tracking, conveying a sense of precision and power.",
+        "A clear typographic hierarchy is established with distinct size rhythms, moving from large, impactful headlines to smaller, refined body text.",
+        "Body text maintains a clean, legible sans-serif style, often with ample line height for readability.",
+        "Numbers and performance figures are often presented in a strong, almost architectural sans-serif, emphasizing data."
+      ],
+      "sectionRhythm": [
+        "Sections are often tall and impactful, especially hero areas, creating a sense of grandeur and allowing visuals to dominate.",
+        "Spacing cadence is generous and deliberate, contributing to a premium, unhurried feel.",
+        "Visual density varies; hero sections are minimalist and impactful, while detail sections maintain a clean, structured layout without feeling cramped."
+      ],
+      "interactionEnergy": [
+        "Motion is smooth, controlled, and precise, avoiding abrupt transitions.",
+        "Hover behaviors are subtle, often involving slight scaling, darkening, or a quick, elegant color shift.",
+        "Scroll animations are typically understated, focusing on revealing content gracefully rather than dramatic parallax.",
+        "Transitions feel refined and quick, emphasizing efficiency and a high-performance aesthetic."
+      ]
+    },
+    "designEssence": "The overall visual energy is one of sophisticated power and minimalist precision, where every element is intentionally placed to convey luxury and performance.",
+    "applicableToMotorcycleTravel": [
+      "The use of deep, dark backgrounds to dramatically stage hero visuals of motorcycles against scenic backdrops.",
+      "Subtle, bottom-heavy image overlays on hero sections to ensure legibility of travel narratives and calls to action.",
+      "A clean, bold sans-serif typography system with generous tracking for headlines, conveying the spirit of adventure and freedom.",
+      "Controlled, precise motion and hover behaviors for interactive elements, reflecting the smooth handling and engineering of motorcycles.",
+      "Generous section spacing and minimalist layouts to allow breathtaking travel photography and video to take center stage, creating a cinematic feel."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:07.384Z",
+      "searchResultCount": 10,
+      "category": "automotive-performance"
+    }
+  },
+  {
+    "brand": "redbull",
+    "url": "https://www.redbull.com",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Deep, often dark or black backgrounds provide a high-contrast stage for vibrant content.",
+        "Content blocks frequently float on subtle dark gradients or semi-transparent overlays, creating depth without losing intensity.",
+        "Bright, energetic imagery is consistently foregrounded against these darker, more subdued backdrops."
+      ],
+      "accentColors": [
+        "#FF0000",
+        "#FFFF00"
+      ],
+      "gradientStyles": [
+        "Subtle radial gradients often emanate from focal points in imagery, enhancing a sense of energy.",
+        "Linear gradients are used sparingly, usually as a dark fade at the bottom of hero sections to transition into text."
+      ],
+      "imageOverlayPatterns": [
+        "Bottom-heavy dark fades are common on hero images, allowing text to sit legibly while preserving the dynamic top portion of the image.",
+        "Full, subtle dark scrims are sometimes used to unify diverse imagery and ensure text readability across varied content.",
+        "Vignette-like effects occasionally frame action shots, drawing focus to the central subject."
+      ],
+      "typographyBehavior": [
+        "Headlines are bold, often all-caps sans-serif, with tight tracking and a strong visual hierarchy that commands attention.",
+        "Large, impactful display type is used for key messages, often with a slightly condensed feel to maintain a sense of speed.",
+        "Body text is typically a clean, legible sans-serif, providing a functional contrast to the expressive headlines, with a comfortable line height for readability against dark backgrounds."
+      ],
+      "sectionRhythm": [
+        "Sections vary dramatically in height, from full-bleed hero images to compact content modules, creating a dynamic, unpredictable scroll.",
+        "Spacing is often generous around key visual elements, giving them room to breathe and impact, but can become dense in content-heavy areas.",
+        "Visual density shifts frequently, alternating between expansive, image-driven layouts and more structured, grid-based content blocks."
+      ],
+      "interactionEnergy": [
+        "Motion is swift and direct, with quick transitions and snappy hover states that feel responsive and energetic.",
+        "Scroll animations are often subtle but impactful, revealing content with a sense of purpose rather than playful bounce.",
+        "Hover effects typically involve slight scaling, color shifts, or subtle glow effects that highlight interactivity without being overly distracting."
+      ]
+    },
+    "designEssence": "The Red Bull website exudes a high-octane, dynamic energy through bold contrasts, impactful imagery, and swift, purposeful interactions, reflecting its adventurous brand spirit.",
+    "applicableToMotorcycleTravel": [
+      "Using deep, dark backgrounds to make cinematic motorcycle footage pop with intense contrast.",
+      "Employing bottom-heavy dark fades on hero video sections to ensure legible text overlays without obscuring the action.",
+      "Implementing swift, direct interaction energy for navigation and content transitions, mirroring the speed and precision of motorcycle travel.",
+      "Utilizing bold, all-caps sans-serif typography for headlines to convey a sense of adventure and urgency.",
+      "Varying section heights and visual density to create a dynamic, engaging scroll experience that feels like a journey."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:15.510Z",
+      "searchResultCount": 10,
+      "category": "energy-adventure"
+    }
+  },
+  {
+    "brand": "garmin",
+    "url": "https://www.garmin.com",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Predominantly bright, clean white backgrounds creating an expansive feel.",
+        "Darker, often charcoal or deep grey, sections are used sparingly for product feature highlights or footers, providing strong contrast.",
+        "Subtle light grey or off-white surfaces are used for card backgrounds or secondary content areas, adding depth without heaviness."
+      ],
+      "accentColors": [
+        "#007CC3",
+        "#00A651",
+        "#FFC20E"
+      ],
+      "gradientStyles": [
+        "Minimal use of gradients, primarily subtle linear gradients for button hovers or very light background textures, transitioning from a slightly darker shade to a lighter one of the same hue.",
+        "Occasional use of radial gradients for spotlighting products, creating a soft glow effect."
+      ],
+      "imageOverlayPatterns": [
+        "Often full-width hero images with minimal or no overlay, allowing the product and environment to dominate.",
+        "When overlays are present, they are typically a subtle, dark, bottom-heavy fade, allowing text to be legible over the lower portion of the image.",
+        "Some product hero sections use a full, very light scrim or a subtle vignette to soften edges and focus attention."
+      ],
+      "typographyBehavior": [
+        "Headlines are generally sans-serif, bold, and set with generous tracking, creating a strong, modern, and highly legible presence.",
+        "A clear size rhythm is established, with large, impactful headlines for hero sections, progressively smaller for subheadings and body text.",
+        "Body text is also sans-serif, often in a medium weight, maintaining readability and a clean aesthetic.",
+        "Emphasis on clarity and directness, avoiding overly decorative or complex typefaces."
+      ],
+      "sectionRhythm": [
+        "Sections are typically tall and spacious, with ample vertical padding, creating a breathable and uncrowded feel.",
+        "A consistent spacing cadence is observed between major content blocks, promoting visual hierarchy and ease of scanning.",
+        "Visual density varies; product showcases often feature more dense arrangements of images and specs, while informational sections remain airy.",
+        "Strong use of full-width imagery and distinct background colors to delineate sections."
+      ],
+      "interactionEnergy": [
+        "Motion is generally subtle and purposeful, with smooth, quick transitions for hovers and clicks.",
+        "Hover behaviors often involve slight scaling, subtle shadow changes, or a background color shift, providing clear feedback without being distracting.",
+        "Scroll animations are minimal, focusing on content appearing smoothly into view rather than complex parallax effects.",
+        "The overall feel is responsive and efficient, prioritizing directness and clarity over elaborate flourishes."
+      ]
+    },
+    "designEssence": "Garmin's website exudes a clean, robust, and performance-oriented energy, emphasizing product clarity and user-focused functionality through a spacious and modern aesthetic.",
+    "applicableToMotorcycleTravel": [
+      "The use of full-width, high-quality imagery for hero sections, showcasing the motorcycle and scenic routes.",
+      "Clean, sans-serif typography with strong hierarchy for clear communication of routes, gear, and stories.",
+      "Spacious section rhythm with ample padding to prevent visual clutter, allowing the user to absorb information about destinations or equipment.",
+      "Subtle, efficient interaction energy for smooth navigation between travel logs, maps, and product details.",
+      "Strategic use of accent colors for calls to action like 'Explore Route' or 'Book Tour', guiding the user effectively."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:23.386Z",
+      "searchResultCount": 10,
+      "category": "outdoor-tech"
+    }
+  },
+  {
+    "brand": "patagonia",
+    "url": "https://www.patagonia.com",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Predominantly light backgrounds with ample negative space, creating an airy and clean feel.",
+        "Darker, muted tones often used for footer and utility sections, providing grounding.",
+        "Content sections frequently feature white or very light grey cards/containers, floating on a subtly textured or plain light background."
+      ],
+      "accentColors": [
+        "#FEFEFE",
+        "#000000",
+        "#2F6F4F",
+        "#D9534F"
+      ],
+      "gradientStyles": [
+        "Minimal use of gradients, favoring flat colors or subtle photographic transitions.",
+        "Occasional very soft, almost imperceptible linear gradients for background textures or subtle depth on interactive elements."
+      ],
+      "imageOverlayPatterns": [
+        "Subtle, bottom-heavy dark fades on hero images to ensure text legibility without obscuring the main subject.",
+        "Full, transparent scrims with a low opacity dark tint over some background images for a unified content layer.",
+        "Vignette effects are rare; focus is on clear, unobstructed photography with minimal manipulation."
+      ],
+      "typographyBehavior": [
+        "Headlines are typically sans-serif, often in a medium to bold weight, with generous tracking and a clear size hierarchy that encourages slower reading.",
+        "Body text is also sans-serif, highly legible, with comfortable line-heights and paragraph spacing, promoting a narrative flow.",
+        "A clear rhythm in text sizes and spacing creates a sense of calm and order, avoiding visual clutter."
+      ],
+      "sectionRhythm": [
+        "Generous vertical spacing between sections, creating a sense of breathing room and visual separation.",
+        "Sections often feature large hero images or video, followed by two-column text blocks or grid layouts, slowing down the pace.",
+        "A consistent cadence of content blocks, often alternating between full-width and multi-column layouts, maintaining visual interest without feeling rushed."
+      ],
+      "interactionEnergy": [
+        "Subtle and deliberate motion, avoiding flashy or overly complex animations.",
+        "Hover states are typically understated, involving slight color changes, subtle underlines, or gentle scaling.",
+        "Scroll behavior is smooth and natural, with content appearing or fading in gracefully rather than with abrupt transitions.",
+        "Transitions are generally quick and functional, prioritizing clarity and directness over elaborate effects."
+      ]
+    },
+    "designEssence": "Patagonia's design embodies a minimalist, authentic, and calm energy, prioritizing storytelling and environmental messaging through clean layouts and natural aesthetics.",
+    "applicableToMotorcycleTravel": [
+      "The use of large, impactful hero images or videos with subtle overlays to set a cinematic tone for travel destinations.",
+      "Generous section spacing and a deliberate content rhythm to encourage a slower, more immersive exploration of travel stories and routes.",
+      "Clean, highly legible sans-serif typography with ample tracking to make long-form travel narratives comfortable to read.",
+      "Subtle, functional interaction energy that doesn't distract from the visual journey but enhances usability.",
+      "A focus on authentic, high-quality photography as the primary visual element, minimizing decorative UI elements."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:31.233Z",
+      "searchResultCount": 10,
+      "category": "outdoor-storytelling"
+    }
+  },
+  {
+    "brand": "nike",
+    "url": "https://www.nike.com/launch",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Often features dark, high-contrast backgrounds, sometimes with subtle textural gradients or deep shadows that recede to emphasize foreground product.",
+        "Product imagery frequently uses stark white or light grey backdrops for clean isolation, contrasting with darker informational sections.",
+        "Layering is minimal, focusing on clear separation of content blocks rather than complex overlapping elements."
+      ],
+      "accentColors": [
+        "#F62D37",
+        "#FFD700",
+        "#007AFF"
+      ],
+      "gradientStyles": [
+        "Subtle, often radial or linear gradients used to create depth behind products or within dark background sections, transitioning from deep darks to slightly less dark tones.",
+        "Occasional vibrant, multi-color gradients appear as abstract backdrops for specific campaigns or product launches, conveying energy and motion."
+      ],
+      "imageOverlayPatterns": [
+        "Full-bleed hero images often feature a subtle, dark, bottom-heavy fade or a full, low-opacity scrim to ensure text legibility without obscuring key product details.",
+        "Sometimes uses a strong vignette effect, particularly on lifestyle imagery, to draw focus to the center subject.",
+        "Overlays are generally transparent and minimal, allowing the high-impact imagery to dominate."
+      ],
+      "typographyBehavior": [
+        "Headlines are bold, often all-caps sans-serif, with tight tracking and a strong, rhythmic size hierarchy that commands attention.",
+        "Body copy is typically a clean, highly legible sans-serif, often in a slightly condensed style, maintaining a performance-oriented feel.",
+        "Type scales are dramatic, with large, impactful headlines contrasting sharply with smaller, functional body text, creating a dynamic visual flow."
+      ],
+      "sectionRhythm": [
+        "Sections are often tall and impactful, with generous vertical spacing that allows content to breathe and stand out.",
+        "A strong grid system dictates consistent horizontal alignment, but vertical rhythm can vary to create visual interest and emphasize key content blocks.",
+        "Visual density shifts from sparse, high-impact hero sections to more information-rich product grids, maintaining a sense of controlled energy."
+      ],
+      "interactionEnergy": [
+        "Motion is swift and purposeful, with quick, decisive transitions and subtle, responsive hover states that provide immediate feedback.",
+        "Scroll animations are often smooth but direct, revealing content with a sense of anticipation rather than playful bounce.",
+        "Interactions feel precise and high-performance, reinforcing the brand's athletic identity."
+      ]
+    },
+    "designEssence": "Nike's design essence is a high-impact, performance-driven visual language that combines bold typography, dynamic imagery, and precise interactions to convey energy and aspiration.",
+    "applicableToMotorcycleTravel": [
+      "**High-Impact Hero Sections:** Utilize full-bleed, cinematic video or photography with subtle overlays to immediately immerse users in the adventure, similar to Nike's product launch pages.",
+      "**Bold, Legible Typography:** Employ strong, sans-serif headlines with tight tracking for titles and calls-to-action, ensuring readability against dynamic backgrounds and conveying a sense of adventure and urgency.",
+      "**Purposeful Interaction Energy:** Implement swift, responsive hover effects and smooth, direct scroll animations for revealing travel routes or destination details, mirroring Nike's performance-oriented UI.",
+      "**Dark, High-Contrast Luminance Layers:** Use deep, rich background tones for informational sections or route maps, allowing vibrant accent colors and compelling imagery of motorcycles and landscapes to pop.",
+      "**Dramatic Section Rhythm:** Create varied section heights and generous spacing to highlight breathtaking travel photography and key narrative elements, giving each segment a distinct visual weight and impact."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:40.040Z",
+      "searchResultCount": 6,
+      "category": "athletic-energy"
+    }
+  },
+  {
+    "brand": "apple",
+    "url": "https://www.apple.com/iphone/",
+    "perceptualDNA": {
+      "luminanceLayers": [
+        "Predominantly dark mode with deep, rich blacks and grays for backgrounds, creating a sophisticated and immersive feel.",
+        "Product surfaces often feature subtle gradients and reflections that suggest depth and premium materials.",
+        "Clean, bright white content blocks and text overlays provide stark contrast against dark backgrounds, guiding the eye."
+      ],
+      "accentColors": [
+        "#007AFF",
+        "#FFFFFF",
+        "#86868B"
+      ],
+      "gradientStyles": [
+        "Subtle, radial gradients emanating from product highlights, creating a soft glow.",
+        "Linear gradients used sparingly for background elements, transitioning smoothly between dark tones.",
+        "Color shifts within product imagery are often vibrant and dynamic, reflecting device capabilities."
+      ],
+      "imageOverlayPatterns": [
+        "Full-bleed hero images with minimal to no overlay, allowing the product to dominate the visual field.",
+        "Occasionally, a very subtle, almost imperceptible dark scrim at the bottom of hero images to ensure text legibility.",
+        "Product shots often feature a clean, isolated presentation against a solid or subtly textured background, rather than complex overlays."
+      ],
+      "typographyBehavior": [
+        "Headlines are bold, often large, and set in a clean sans-serif typeface (San Francisco), commanding attention.",
+        "Tracking is generally tight, contributing to a modern and precise feel.",
+        "A clear hierarchy of text sizes creates a rhythmic flow, guiding users through information without feeling cluttered.",
+        "Body text is legible and well-spaced, maintaining a sense of airiness despite dense information."
+      ],
+      "sectionRhythm": [
+        "Sections are often full-viewport height or close to it, creating a grand, cinematic presentation.",
+        "Generous vertical spacing between distinct content blocks, providing ample breathing room.",
+        "A deliberate cadence of large hero sections followed by more detailed, grid-based content, maintaining visual interest and preventing fatigue.",
+        "Visual density varies, with product showcases being sparse and detailed feature sections being more information-rich but still clean."
+      ],
+      "interactionEnergy": [
+        "Motion is fluid, precise, and often subtle, enhancing rather than distracting from content.",
+        "Hover states are understated, typically involving slight color shifts or subtle scaling, indicating interactivity without being flashy.",
+        "Scroll animations are smooth and performant, often revealing content in a staggered or parallax fashion, adding a sense of discovery.",
+        "Transitions feel deliberate and polished, reflecting a high level of engineering and design refinement."
+      ]
+    },
+    "designEssence": "The overall visual energy is one of sophisticated minimalism, precise elegance, and immersive product storytelling.",
+    "applicableToMotorcycleTravel": [
+      "Utilize full-bleed, high-quality cinematic hero images of landscapes and motorcycles to immediately immerse the user.",
+      "Adopt a dark mode aesthetic with rich, deep background colors to evoke the mood of twilight rides or vast open roads.",
+      "Employ subtle, fluid scroll animations to reveal travel narratives or route details, creating a sense of journey and discovery.",
+      "Implement a clear, bold sans-serif typography for headlines to convey a sense of adventure and directness.",
+      "Leverage generous vertical spacing between sections to give content breathing room, mirroring the expansive feel of open-road travel."
+    ],
+    "_meta": {
+      "harvestedAt": "2026-04-04T09:13:47.901Z",
+      "searchResultCount": 8,
+      "category": "premium-tech"
+    }
+  }
+]

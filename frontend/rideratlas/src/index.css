@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,18 +6,63 @@
 
 /* --- RIDER ATLAS GLOBAL THEME --- */
 :root {
-  --amber-primary: #CDA755;
-  --deep-black: #050505;
+  --bg-primary: #F7F6F3;
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #EFEDE8;
+  --border-primary: #E2DFD9;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --accent-primary: #CDA755;
+  --accent-secondary: #A76330;
+  --accent-highlight: #E6C98F;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #050505;
+  --surface-primary: #121212;
+  --surface-secondary: #181818;
+  --border-primary: #2A2A2A;
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: #9CA3AF;
 }
 
 body {
-  background-color: var(--deep-black);
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- MOBILE TYPOGRAPHY RECOVERY --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  .text-xs {
+    font-size: 12px !important;
+  }
+  
+  .text-\[10px\] {
+    font-size: 11px !important;
+  }
+
+  .text-\[9px\] {
+    font-size: 11px !important;
+  }
+
+  /* Force minimum readable size for tactical labels */
+  [class*="tracking-[0."] {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+  }
 }
 
 /* --- CINEMATIC TEXT EFFECTS --- */
 .stroke-text {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px var(--text-secondary);
   color: transparent;
 }
 
@@ -45,18 +90,18 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--deep-black); 
+  background: var(--surface-secondary); 
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #ccc;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--amber-primary);
+  background: var(--accent-primary);
 }
 
 /* Custom Selection Glow */
 ::selection {
-  background: rgba(205, 167, 85, 0.3);
-  color: white;
+  background: var(--accent-highlight);
+  color: var(--text-primary);
 }

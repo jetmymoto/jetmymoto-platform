@@ -1,0 +1,53 @@
+{
+  "missionSlug": "mxp-to-muc-alpine-traverse",
+  "totalDistanceKm": 928,
+  "dailyStages": [
+    {
+      "day": 1,
+      "distanceKm": 263,
+      "mapAsset": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_01_map.jpg",
+      "label": "MXP to Stelvio"
+    },
+    {
+      "day": 2,
+      "distanceKm": 403,
+      "mapAsset": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_02_map.jpg",
+      "label": "Stelvio to Zell am See"
+    },
+    {
+      "day": 3,
+      "distanceKm": 262,
+      "mapAsset": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_03_map.jpg",
+      "label": "Zell am See to MUC"
+    }
+  ],
+  "mapAssets": {
+    "theaterMap": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/theater_map.jpg",
+    "operationalMap": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/operational_map.jpg",
+    "elevationProfile": "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/elevation_profile.jpg",
+    "dailyMaps": [
+      "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_01_map.jpg",
+      "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_02_map.jpg",
+      "gs://factory1/route-intelligence-v1/mxp-to-muc-alpine-traverse/days/day_03_map.jpg"
+    ]
+  },
+  "intelligence": {
+    "terrainType": "high_alpine",
+    "ridingMood": "technical_adventure",
+    "fatigueScore": 0.95,
+    "scenicDensity": 0.92,
+    "remoteFactor": 0.55,
+    "weatherVolatility": 0.82,
+    "bestSeason": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+    "cinematicProfile": "cold_epic",
+    "recommendedBikeTypes": [
+      "adventure",
+      "dual_sport"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source": "cycleworld",
+  "sourceUrl": "https://www.cycleworld.com/motorcycle-reviews/",
+  "timestamp": "2026-04-02T17:02:55.838Z",
+  "dryRun": true,
+  "stats": {
+    "pagesCrawled": 1,
+    "imagesFound": 12,
+    "imagesKept": 0,
+    "rejectedSmall": 10,
+    "rejectedUi": 2,
+    "rejectedDuplicate": 0,
+    "rejectedNoSrc": 0,
+    "rejectedFetchFail": 0,
+    "rejectedBadContentType": 0,
+    "rejectedTooLarge": 0,
+    "uploaded": 0,
+    "firestoreWrites": 0,
+    "errors": []
+  },
+  "sampleImages": []
+}

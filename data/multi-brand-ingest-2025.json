@@ -1,0 +1,920 @@
+{
+  "extractedAt": "2026-04-03T16:19:50.941Z",
+  "brands": {
+    "Ducati": {
+      "guideUrl": "https://www.totalmotorcycle.com/motorcycles/2025/Ducati-models",
+      "modelCount": 34,
+      "models": [
+        {
+          "model": "V2 890cc Engine",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-v2-890cc-engine"
+        },
+        {
+          "model": "Panigale V2",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2"
+        },
+        {
+          "model": "Panigale V2 Superquadro Final Edition",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2-superquadro-final-edition"
+        },
+        {
+          "model": "Panigale V2",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2-new"
+        },
+        {
+          "model": "Panigale V2S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2s"
+        },
+        {
+          "model": "Panigale V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4"
+        },
+        {
+          "model": "Panigale V4S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4s"
+        },
+        {
+          "model": "Panigale V4R",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4r"
+        },
+        {
+          "model": "Panigale Tricolore",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-tricolore"
+        },
+        {
+          "model": "Panigale V4 Tricolore Italia",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4-tricolore-italia"
+        },
+        {
+          "model": "Streetfighter V2",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v2"
+        },
+        {
+          "model": "Streetfighter V2S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v2s"
+        },
+        {
+          "model": "Streetfighter V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4"
+        },
+        {
+          "model": "Streetfighter V4S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4s"
+        },
+        {
+          "model": "Streetfighter V4 Supreme",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4-supreme"
+        },
+        {
+          "model": "Monster Senna",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-monster-senna"
+        },
+        {
+          "model": "Diavel V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-diavel-v4"
+        },
+        {
+          "model": "XDiavel V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-xdiavel-v4"
+        },
+        {
+          "model": "DesertX",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx"
+        },
+        {
+          "model": "DesertX Rally",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx-rally"
+        },
+        {
+          "model": "DesertX Discovery",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx-discovery"
+        },
+        {
+          "model": "Scrambler 10° Anniversario Rizoma Edition",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-10-anniversario-rizoma-edition"
+        },
+        {
+          "model": "Scrambler 1100 Sport Pro",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-1100-sport-pro"
+        },
+        {
+          "model": "Scrambler Icon Dark",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-icon-dark"
+        },
+        {
+          "model": "Scrambler Full Throttle",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-full-throttle"
+        },
+        {
+          "model": "Multistrada V2",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2-new"
+        },
+        {
+          "model": "Multistrada V2S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s-new"
+        },
+        {
+          "model": "Multistrada V2S Travel",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s-travel"
+        },
+        {
+          "model": "Multistrada V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4"
+        },
+        {
+          "model": "Multistrada V4S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4s"
+        },
+        {
+          "model": "Multistrada V4 Rally",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4-rally"
+        },
+        {
+          "model": "Multistrada V4 Pikes Peak",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4-pikes-peak"
+        },
+        {
+          "model": "Multistrada V2",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2"
+        },
+        {
+          "model": "Multistrada V2S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s"
+        }
+      ],
+      "results": [
+        {
+          "status": "created",
+          "slug": "ducati-v2-890cc-engine",
+          "model": "V2 890cc Engine",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-v2-890cc-engine"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v2",
+          "model": "Panigale V2",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v2-superquadro-final-edition",
+          "model": "Panigale V2 Superquadro Final Edition",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2-superquadro-final-edition"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v2",
+          "model": "Panigale V2",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2-new"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v2s",
+          "model": "Panigale V2S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v2s"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v4",
+          "model": "Panigale V4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v4s",
+          "model": "Panigale V4S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4s"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v4r",
+          "model": "Panigale V4R",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4r"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-tricolore",
+          "model": "Panigale Tricolore",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-tricolore"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-panigale-v4-tricolore-italia",
+          "model": "Panigale V4 Tricolore Italia",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-panigale-v4-tricolore-italia"
+        },
+        {
+          "status": "incomplete",
+          "slug": "ducati-streetfighter-v2",
+          "model": "Streetfighter V2",
+          "imageCount": 1,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v2"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-streetfighter-v2s",
+          "model": "Streetfighter V2S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v2s"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-streetfighter-v4",
+          "model": "Streetfighter V4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-streetfighter-v4s",
+          "model": "Streetfighter V4S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4s"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-streetfighter-v4-supreme",
+          "model": "Streetfighter V4 Supreme",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-streetfighter-v4-supreme"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-monster-senna",
+          "model": "Monster Senna",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-monster-senna"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-diavel-v4",
+          "model": "Diavel V4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-diavel-v4"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-xdiavel-v4",
+          "model": "XDiavel V4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-xdiavel-v4"
+        },
+        {
+          "status": "created",
+          "slug": "ducati-desertx",
+          "model": "DesertX",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-desertx-rally",
+          "model": "DesertX Rally",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx-rally"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-desertx-discovery",
+          "model": "DesertX Discovery",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-desertx-discovery"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-scrambler-10-anniversario-rizoma-edition",
+          "model": "Scrambler 10° Anniversario Rizoma Edition",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-10-anniversario-rizoma-edition"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-scrambler-1100-sport-pro",
+          "model": "Scrambler 1100 Sport Pro",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-1100-sport-pro"
+        },
+        {
+          "status": "incomplete",
+          "slug": "ducati-scrambler-icon-dark",
+          "model": "Scrambler Icon Dark",
+          "imageCount": 0,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-icon-dark"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-scrambler-full-throttle",
+          "model": "Scrambler Full Throttle",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-scrambler-full-throttle"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v2",
+          "model": "Multistrada V2",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2-new"
+        },
+        {
+          "status": "created",
+          "slug": "ducati-multistrada-v2s",
+          "model": "Multistrada V2S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s-new"
+        },
+        {
+          "status": "created",
+          "slug": "ducati-multistrada-v2s-travel",
+          "model": "Multistrada V2S Travel",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s-travel"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v4",
+          "model": "Multistrada V4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v4s",
+          "model": "Multistrada V4S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4s"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v4-rally",
+          "model": "Multistrada V4 Rally",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4-rally"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v4-pikes-peak",
+          "model": "Multistrada V4 Pikes Peak",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v4-pikes-peak"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v2",
+          "model": "Multistrada V2",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2"
+        },
+        {
+          "status": "skipped",
+          "slug": "ducati-multistrada-v2s",
+          "model": "Multistrada V2S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-ducati-multistrada-v2s"
+        }
+      ]
+    },
+    "Harley-Davidson": {
+      "guideUrl": "https://www.totalmotorcycle.com/motorcycles/2025/Harley-Davidson-models",
+      "modelCount": 31,
+      "models": [
+        {
+          "model": "Milwaukee-Eight 117 Classic Engine",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-classic-engine"
+        },
+        {
+          "model": "Milwaukee-Eight 117 Custom Engine",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-custom-engine"
+        },
+        {
+          "model": "Milwaukee-Eight 117 H.O. Engine",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-ho-engine"
+        },
+        {
+          "model": "Milwaukee-Eight 121 H.O. Engine",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-121-ho-engine"
+        },
+        {
+          "model": "Sportster S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-sportster-s"
+        },
+        {
+          "model": "Nightster",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-nightster"
+        },
+        {
+          "model": "Nightster Special",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-nightster-special"
+        },
+        {
+          "model": "Breakout",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-breakout"
+        },
+        {
+          "model": "Fat Boy",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-fat-boy"
+        },
+        {
+          "model": "Fat Boy Grey Ghost",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-fat-boy-grey-ghost"
+        },
+        {
+          "model": "Street Bob",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-bob"
+        },
+        {
+          "model": "Heritage Classic",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-heritage-classic"
+        },
+        {
+          "model": "Low Rider S",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-low-rider-s"
+        },
+        {
+          "model": "Low Rider ST",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-low-rider-st"
+        },
+        {
+          "model": "Pan-America 1250 ST",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-pan-america-1250-st"
+        },
+        {
+          "model": "Pan-America 1250 Special",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-pan-america-1250-special"
+        },
+        {
+          "model": "Road Glide",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-glide"
+        },
+        {
+          "model": "Road King Special",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-king-speical"
+        },
+        {
+          "model": "Street Glide",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-glide"
+        },
+        {
+          "model": "Street Glide Ultra",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-glide-ultra"
+        },
+        {
+          "model": "Tri Glide Ultra",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-tri-glide-ultra"
+        },
+        {
+          "model": "Freewheeler",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-freewheeler"
+        },
+        {
+          "model": "Road Glide 3",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-glide-3"
+        },
+        {
+          "model": "X500",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x500"
+        },
+        {
+          "model": "X350",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x350"
+        },
+        {
+          "model": "X440",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x440"
+        },
+        {
+          "model": "CVO Road Glide RR",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide-rr"
+        },
+        {
+          "model": "CVO Road Glide ST",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide-st"
+        },
+        {
+          "model": "CVO Road Glide",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide"
+        },
+        {
+          "model": "CVO Pan America",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-pan-america"
+        },
+        {
+          "model": "CVO Street Glide",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-street-glide"
+        }
+      ],
+      "results": [
+        {
+          "status": "incomplete",
+          "slug": "harley-davidson-milwaukee-eight-117-classic-engine",
+          "model": "Milwaukee-Eight 117 Classic Engine",
+          "imageCount": 2,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-classic-engine"
+        },
+        {
+          "status": "incomplete",
+          "slug": "harley-davidson-milwaukee-eight-117-custom-engine",
+          "model": "Milwaukee-Eight 117 Custom Engine",
+          "imageCount": 2,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-custom-engine"
+        },
+        {
+          "status": "incomplete",
+          "slug": "harley-davidson-milwaukee-eight-117-h-o-engine",
+          "model": "Milwaukee-Eight 117 H.O. Engine",
+          "imageCount": 2,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-117-ho-engine"
+        },
+        {
+          "status": "created",
+          "slug": "harley-davidson-milwaukee-eight-121-h-o-engine",
+          "model": "Milwaukee-Eight 121 H.O. Engine",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-milwaukee-eight-121-ho-engine"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-sportster-s",
+          "model": "Sportster S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-sportster-s"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-nightster",
+          "model": "Nightster",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-nightster"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-nightster-special",
+          "model": "Nightster Special",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-nightster-special"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-breakout",
+          "model": "Breakout",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-breakout"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-fat-boy",
+          "model": "Fat Boy",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-fat-boy"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-fat-boy-grey-ghost",
+          "model": "Fat Boy Grey Ghost",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-fat-boy-grey-ghost"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-street-bob",
+          "model": "Street Bob",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-bob"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-heritage-classic",
+          "model": "Heritage Classic",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-heritage-classic"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-low-rider-s",
+          "model": "Low Rider S",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-low-rider-s"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-low-rider-st",
+          "model": "Low Rider ST",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-low-rider-st"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-pan-america-1250-st",
+          "model": "Pan-America 1250 ST",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-pan-america-1250-st"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-pan-america-1250-special",
+          "model": "Pan-America 1250 Special",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-pan-america-1250-special"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-road-glide",
+          "model": "Road Glide",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-glide"
+        },
+        {
+          "status": "created",
+          "slug": "harley-davidson-road-king-special",
+          "model": "Road King Special",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-king-speical"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-street-glide",
+          "model": "Street Glide",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-glide"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-street-glide-ultra",
+          "model": "Street Glide Ultra",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-street-glide-ultra"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-tri-glide-ultra",
+          "model": "Tri Glide Ultra",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-tri-glide-ultra"
+        },
+        {
+          "status": "created",
+          "slug": "harley-davidson-freewheeler",
+          "model": "Freewheeler",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-freewheeler"
+        },
+        {
+          "status": "created",
+          "slug": "harley-davidson-road-glide-3",
+          "model": "Road Glide 3",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-road-glide-3"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-x500",
+          "model": "X500",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x500"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-x350",
+          "model": "X350",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x350"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-x440",
+          "model": "X440",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-x440"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-cvo-road-glide-rr",
+          "model": "CVO Road Glide RR",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide-rr"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-cvo-road-glide-st",
+          "model": "CVO Road Glide ST",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide-st"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-cvo-road-glide",
+          "model": "CVO Road Glide",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-road-glide"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-cvo-pan-america",
+          "model": "CVO Pan America",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-pan-america"
+        },
+        {
+          "status": "skipped",
+          "slug": "harley-davidson-cvo-street-glide",
+          "model": "CVO Street Glide",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-harley-davidson-cvo-street-glide"
+        }
+      ]
+    },
+    "Aprilia": {
+      "guideUrl": "https://www.totalmotorcycle.com/motorcycles/2025/aprilia-models",
+      "modelCount": 16,
+      "models": [
+        {
+          "model": "RSV4 Factory",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rsv4-factory"
+        },
+        {
+          "model": "RSV4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rsv4"
+        },
+        {
+          "model": "Tuono V4 Factory",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-v4-factory"
+        },
+        {
+          "model": "Tuono V4",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-v4"
+        },
+        {
+          "model": "Tuareg 660",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-660"
+        },
+        {
+          "model": "Tuareg Rally 660",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-rally-660"
+        },
+        {
+          "model": "Tuono 660 Factory",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-660-factory"
+        },
+        {
+          "model": "Tuono 660",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-660"
+        },
+        {
+          "model": "Tuono 457",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-457"
+        },
+        {
+          "model": "Tuono 125",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-125"
+        },
+        {
+          "model": "RS660 Factory",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs660-factory"
+        },
+        {
+          "model": "RS660",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs660"
+        },
+        {
+          "model": "RS457",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs457"
+        },
+        {
+          "model": "RS125",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs125"
+        },
+        {
+          "model": "SX125",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-sx125"
+        },
+        {
+          "model": "RX125",
+          "url": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rx125"
+        }
+      ],
+      "results": [
+        {
+          "status": "skipped",
+          "slug": "aprilia-rsv4-factory",
+          "model": "RSV4 Factory",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rsv4-factory"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-rsv4",
+          "model": "RSV4",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rsv4"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-tuono-v4-factory",
+          "model": "Tuono V4 Factory",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-v4-factory"
+        },
+        {
+          "status": "created",
+          "slug": "aprilia-tuono-v4",
+          "model": "Tuono V4",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-v4"
+        },
+        {
+          "status": "created",
+          "slug": "aprilia-tuareg-660",
+          "model": "Tuareg 660",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-660"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-tuareg-rally-660",
+          "model": "Tuareg Rally 660",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-rally-660"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-tuono-660-factory",
+          "model": "Tuono 660 Factory",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-660-factory"
+        },
+        {
+          "status": "created",
+          "slug": "aprilia-tuono-660",
+          "model": "Tuono 660",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuareg-660"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-tuono-457",
+          "model": "Tuono 457",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-457"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-tuono-125",
+          "model": "Tuono 125",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-tuono-125"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-rs660-factory",
+          "model": "RS660 Factory",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs660-factory"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-rs660",
+          "model": "RS660",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs660"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-rs457",
+          "model": "RS457",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs457"
+        },
+        {
+          "status": "skipped",
+          "slug": "aprilia-rs125",
+          "model": "RS125",
+          "imageCount": 4,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rs125"
+        },
+        {
+          "status": "created",
+          "slug": "aprilia-sx125",
+          "model": "SX125",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-sx125"
+        },
+        {
+          "status": "created",
+          "slug": "aprilia-rx125",
+          "model": "RX125",
+          "imageCount": 3,
+          "sourceUrl": "https://www.totalmotorcycle.com/motorcycles/2025/2025-aprilia-rx125"
+        }
+      ]
+    }
+  }
+}

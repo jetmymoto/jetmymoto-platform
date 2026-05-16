@@ -1,0 +1,86 @@
+Create a cinematic geographic intelligence visualization for RiderAtlas / JetMyMoto A2A missions.
+
+Use the attached/reference image:
+gs://factory1/geographic-intelligence-v2/master_templates/a2a-ath-muc.png
+
+This image is the master visual reference.
+
+STYLE TARGET:
+Luxury operational expedition intelligence.
+Dark satellite terrain rendering.
+Electric gold route line.
+Premium cinematic map atmosphere.
+RiderAtlas / JetMyMoto tactical luxury identity.
+
+The output must feel like:
+Apple-level polish + aviation route intelligence + premium motorcycle expedition briefing.
+
+DO NOT make it look like:
+Google Maps, SaaS dashboard, gaming HUD, cyberpunk UI, military cosplay, or generic travel map.
+
+VISUAL LANGUAGE:
+- dark satellite-night map
+- deep black / graphite / alpine navy background
+- warm gold route glow
+- soft bloom around route nodes
+- subtle terrain illumination
+- cloud shadows and cinematic haze
+- high-end editorial typography
+- operational callouts integrated into geography
+- premium route intelligence feeling
+
+COMPOSITION:
+- 16:9 cinematic frame
+- map dominates the canvas
+- left-side information panel
+- origin and destination anchors
+- glowing route centerline
+- telemetry callouts placed along the corridor
+- bottom-left mission metrics panel
+- subtle RiderAtlas / JetMyMoto brand lockup
+
+TYPOGRAPHY:
+- headline: elegant luxury serif, warm ivory
+- labels: uppercase operational telemetry, muted gold
+- metrics: technical sans serif, faded ivory
+- callouts: small, precise, editorial, never cluttered
+
+DYNAMIC MISSION FIELDS TO REPLACE:
+- origin airport
+- origin city
+- origin country
+- destination airport
+- destination city
+- destination country
+- route geometry
+- distance
+- elevation gain
+- estimated riding time
+- terrain mix
+- season window
+- fuel range advice
+- terrain callouts
+
+DEFAULT EXAMPLE:
+Origin: ATH / Athens / Greece
+Destination: MUC / Munich / Germany
+Distance: 2,180 km
+Elevation gain: 18,750 m
+Estimated riding time: 26–30 hrs
+Terrain mix: 78% mountain / 22% valley
+Season window: May–Sep
+Fuel range advised: 250 km min
+
+EMOTIONAL GOAL:
+The rider should feel:
+“This is not a route screenshot. This is a proprietary expedition intelligence layer.”
+
+The map should communicate:
+- geography
+- difficulty
+- terrain evolution
+- operational confidence
+- premium one-way corridor planning
+
+FINAL OUTPUT:
+A cinematic, premium, dark geographic intelligence hero image suitable for the RiderAtlas A2A Mission Page.

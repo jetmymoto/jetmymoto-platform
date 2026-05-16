@@ -1,0 +1,55 @@
+{
+  "tour_id": "gt-alpine-apex-001",
+  "title": "THE ALPINE APEX",
+  "subtitle": "10 DAYS. 1450 KM.",
+  "route_label": "MUC -> MXP",
+  "origin": "MUC",
+  "destination": "MXP",
+  "duration_days": 10,
+  "distance_km": 1450,
+  "target_archetypes": {
+    "primary": "Apex Predator"
+  },
+  "campaign_phases": [
+    { "phase_id": 1, "title": "Bavarian Descent", "region": "bavarian-alps" },
+    { "phase_id": 2, "title": "Dolomites", "region": "dolomites" },
+    { "phase_id": 3, "title": "Italian Lakes", "region": "lombardy" }
+  ],
+  "daily_segments": [
+    {
+      "day": 1,
+      "title": "MUC TO INNSBRUCK",
+      "segment_index": 0,
+      "waypoints": [
+        {
+          "slug": "achen-pass",
+          "type": "technical_climb",
+          "title": "Achen Pass",
+          "sponsor_id": "pirelli"
+        }
+      ]
+    }
+  ],
+  "sales_triggers": {
+    "hook_type": "urgency",
+    "hook_text": "THE ALPINE APEX",
+    "urgency_text": "ONLY 2 JULY SLOTS LEFT",
+    "price_anchor_text": "FROM EUR 3500",
+    "cta_text": "ACTIVATE TOUR"
+  },
+  "sales_shark_triggers": {
+    "hook_type": "urgency",
+    "hook_text": "THE ALPINE APEX",
+    "urgency_text": "ONLY 2 JULY SLOTS LEFT",
+    "price_anchor_text": "FROM EUR 3500",
+    "cta_text": "ACTIVATE TOUR"
+  },
+  "monetization": [
+    {
+      "type": "hotel",
+      "displayText": "NIGHT STOP: HILTON INNSBRUCK",
+      "partnerId": "hilton_innsbruck",
+      "cpaValueEur": 45
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { Storage } from '@google-cloud/storage';
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'http://localhost:5173'; // Vite dev port
+const BASE_URL = 'http://localhost:5174'; // Vite dev port
 const OUTPUT_DIR = 'agentic_ui_exports';
 
 // Parse service account to get project_id dynamically
@@ -17,6 +17,7 @@ if (fs.existsSync(SERVICE_ACCOUNT_PATH)) {
 const STORAGE_PREFIX = `agentic-ui-docs-2026-04-01`;
 
 const ROUTES = [
+  { id: '00_jetmymoto_home', path: '/jetmymoto' },
   { id: '01_global_hub', path: '/' },
   { id: '02_airport_template', path: '/airport/paris-cdg' },
   { id: '03_route_template', path: '/route/paris-cdg-to-alps' },

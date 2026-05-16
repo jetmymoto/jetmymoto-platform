@@ -136,15 +136,7 @@ ${sitemapFiles.map(file => `  <sitemap>\n    <loc>${file}</loc>\n    <lastmod>${
 
   console.log(`Total unique URLs: ${urlsByLoc.size}`);
 
-  // TASK 8 — Google Ping (Post-build)
-  try {
-    const pingUrl = `https://www.google.com/ping?sitemap=${BASE_URL}/sitemap.xml`;
-    console.log(`📡 Triggering Google Ping: ${pingUrl}`);
-    const res = await fetch(pingUrl);
-    console.log(`📬 Google Ping Status: ${res.status} ${res.statusText}`);
-  } catch (err) {
-    console.log(`⚠️ Google Ping failed (expected in local environments): ${err.message}`);
-  }
+  console.log("ℹ️ Google sitemap ping deprecated — skipped");
 }
 
 main().catch(err => {
