@@ -1,0 +1,6 @@
+- Do not migrate legacy code without manifest entry.
+- Do not add airport-specific CSS.
+- Do not bypass Media Director guards.
+- Do not use airport_hero images in rental cards.
+- Do not mark task complete unless npm run build passes.
+- Update AGENT_TOUCHPOINT.md after every task.

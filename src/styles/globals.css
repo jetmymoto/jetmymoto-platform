@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --atlas-ink: #07090B;
+  --atlas-charcoal: #111418;
+  --atlas-gold: #CDA755;
+  --atlas-cream: #F4EFE6;
+  --atlas-paper: #FBF7EF;
+  --atlas-muted: #8C857A;
+}
+
+body {
+  background-color: var(--atlas-ink);
+  color: var(--atlas-cream);
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

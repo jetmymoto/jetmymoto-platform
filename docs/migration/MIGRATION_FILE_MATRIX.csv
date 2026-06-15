@@ -1,0 +1,13 @@
+source_path,target_path,category,reason,dependencies,risk_level,migration_phase,test_required
+src/core/network/networkGraph.js,src/core/graph/networkGraph.ts,COPY_AND_REFACTOR,Upgrade to TypeScript and harden lookup logic,graphShards,High,Phase 1,Unit
+src/core/network/graphShards.contract.js,src/core/graph/contract.ts,KEEP_EXACTLY,Stable contract for shard validation,None,Low,Phase 1,Unit
+src/services/mediaIntelligence.js,src/features/media/intelligence.ts,COPY_AND_REFACTOR,Decouple Firestore logic from scoring,firebase,Medium,Phase 3,Unit
+src/services/airportMediaResolver.js,src/features/media/resolvers/airport.ts,COPY_AND_REFACTOR,Split monolithic scoring/guards,mediaIntelligence,Medium,Phase 3,Logic
+src/features/airport/gateways/shared/AirportGatewayLayout.jsx,src/features/airport/shell/GatewayShell.tsx,COPY_AND_REFACTOR,Extract sections into atomic components,Hero;RouteCinema;Proof,High,Phase 2,E2E
+src/features/airport/gateways/shared/GatewayHero.jsx,src/features/airport/sections/Hero.tsx,KEEP_EXACTLY,Production ready conversion component,mediaDirector,Low,Phase 4,UI
+src/features/airport/gateways/shared/GatewayRouteCinemaRail.jsx,src/features/airport/sections/RouteCinema.tsx,KEEP_EXACTLY,High visual value stable implementation,GRAPH,Low,Phase 4,UI
+src/features/shared/cards/RiderBikeModelCard.jsx,src/shared/components/cards/BikeCard.tsx,KEEP_EXACTLY,Standardized fleet visualizer,None,Low,Phase 4,UI
+src/services/liveRentalService.js,src/features/rentals/services/liveFeed.ts,COPY_AND_REFACTOR,Improve error handling for ID mismatches,firebase,Medium,Phase 6,Integration
+src/pages/rentals/RentalCheckoutPage.jsx,src/features/rentals/pages/CheckoutPage.tsx,REBUILD_FROM_SCRATCH,Move to robust state machine,liveRentalService,High,Phase 7,E2E
+src/index.css,src/styles/globals.css,COPY_AND_REFACTOR,Cleanup Tailwind/Custom utility overlap,None,Low,Phase 0,Visual
+src/archive/,None,DELETE,Dead code cleanup,None,Low,Phase 8,None

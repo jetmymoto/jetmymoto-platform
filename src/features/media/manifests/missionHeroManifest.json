@@ -1,0 +1,93 @@
+[
+  {
+    "assetId": "mission-alps-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/alpine-core/alpine_road_dolomite_panorama_004.jpg",
+    "visual_role": "theater_hero",
+    "theater": "alps",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-alps-002",
+    "gcsPath": "gs://frontendassets1/shared/geography/dolomites/alpine_dolomites_switchback_valley_001.jpg",
+    "visual_role": "theater_hero",
+    "theater": "alps",
+    "priority": 9
+  },
+  {
+    "assetId": "mission-pyrenees-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/mediterranean/geo_mediterranean_beach-roads_1780953116851_4.jpg",
+    "visual_role": "theater_hero",
+    "theater": "pyrenees",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-scottish-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/british/geo_british_coastal-roads_1780952934279_727.jpg",
+    "visual_role": "theater_hero",
+    "theater": "scottish-highlands",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-norwegian-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/scandinavian/scandinavian-fjord-gateway/scandinavian-fjord-gateway.jpg",
+    "visual_role": "theater_hero",
+    "theater": "norwegian-fjords",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-dolomites-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/dolomites/alpine_dolomites_village_mountain_002.jpg",
+    "visual_role": "theater_hero",
+    "theater": "dolomites",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-balkan-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/adriatic/geo_adriatic_historic-towns_1780952856538_810.jpg",
+    "visual_role": "theater_hero",
+    "theater": "balkan-spine",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-balkan-002",
+    "gcsPath": "gs://frontendassets1/shared/geography/river-canyons/geo_river-canyons_bridge-overlooks_1780954363953_3.jpg",
+    "visual_role": "theater_hero",
+    "theater": "balkan-spine",
+    "priority": 9
+  },
+  {
+    "assetId": "mission-adriatic-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/adriatic/geo_adriatic_historic-towns_1780952856538_810.jpg",
+    "visual_role": "theater_hero",
+    "theater": "dalmatian-coast",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-hawaii-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/volcanic/geo_volcanic_lava-fields_1780954441584_1.jpg",
+    "visual_role": "theater_hero",
+    "theater": "hawaii-oahu",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-pacific-001",
+    "gcsPath": "gs://frontendassets1/shared/geography/mediterranean/geo_mediterranean_coastal-cliffs_1780953457531_2.jpg",
+    "visual_role": "theater_hero",
+    "theater": "socal-coast",
+    "priority": 10
+  },
+  {
+    "assetId": "mission-specific-cdg-bcn",
+    "gcsPath": "gs://frontendassets1/mission-packs/explorer-society-tenere-700-cdg-bcn/generated-stills/airportHero.png",
+    "visual_role": "mission_hero",
+    "missionSlug": "cdg-to-bcn-pyrenees-crossing",
+    "priority": 20
+  },
+  {
+    "assetId": "mission-specific-cdg-lys",
+    "gcsPath": "gs://frontendassets1/mission-packs/hyper-weekend-h2-sx-se-cdg-lys/generated-stills/airportHero.png",
+    "visual_role": "mission_hero",
+    "missionSlug": "cdg-to-lys-burgundy-run",
+    "priority": 20
+  }
+]
