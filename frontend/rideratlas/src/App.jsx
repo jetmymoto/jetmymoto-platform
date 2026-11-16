@@ -26,6 +26,7 @@ import RideDestinationPage from "@/pages/destination/RideDestinationPage";
 import RiderAtlasHomepage from "./pages/Rideratlashomepage";
 import JetMyMotoHomepage from "./pages/jetmymotohomepage";
 import NotFound from "./pages/NotFound";
+const ScoutPage = React.lazy(() => import("./pages/ScoutPage"));
 
 // LAZY LOADED PAGES
 const MissionDetailsPage = React.lazy(() => import("./pages/MissionDetailsPage"));
@@ -67,6 +68,8 @@ function AppRoutes({ site }) {
       <Route path="/" element={site?.id === "jmm" ? <JetMyMotoHomepage /> : <RiderAtlasHomepage />} />
       <Route path="/jetmymoto" element={<JetMyMotoHomepage />} />
 
+      <Route path="/scout" element={<ScoutPage />} />
+      <Route path="/rides/provence" element={<ScoutPage />} />
       <Route path="/airports" element={<GlobalTower />} />
       <Route path="/airports/:continent" element={<GlobalTower />} />
       <Route path="/airports/country/:country" element={<AirportsCountryPage />} />
