@@ -39,6 +39,20 @@ export default function ScoutPage(){
   const visible=(catalogueView?approved:regional).filter(v=>(filter==="all" || v.regions[region].editorial_status===filter) && (v.title+" "+(v.channel||"")).toLowerCase().includes(search.toLowerCase()));
   function save(next){try{localStorage.setItem(KEY,JSON.stringify(next));setData(next);setNotice("Saved in this browser. Export a backup before leaving.");}catch{setNotice("Browser storage is unavailable or full. Export your catalogue.");}}
   function update(id,fn){const next=structuredClone(data);fn(next.videos[id]);save(next);}
+  function mergeCatalogue(incoming){
+    const next=structuredClone(data);
+    for(const [id,v] of Object.entries(incoming.videos)){
+      const old=next.videos[id]; next.videos[id]={...v,regions:{...v.regions,...old?.regions}};
+    }
+    save(next);setDemo(false);
+  }
+  async function loadPilot(){
+    try{
+      const response=await fetch("/scout-pilot.json",{cache:"no-store"});
+      if(!response.ok)throw Error("No local Scout run found. Run the collector and copy its JSON into public/scout-pilot.json.");
+      const incoming=validateCatalogue(await response.json()); mergeCatalogue(incoming);
+    }catch(e){setNotice(e instanceof SyntaxError?"No local Scout JSON found. Run the collector first.":e.message);}
+  }
   async function upload(event){try{const file=event.target.files[0];if(!file)return;if(file.size>5000000)throw Error("Please use a JSON file smaller than 5 MB.");
     const incoming=validateCatalogue(JSON.parse(await file.text()));
     const next=structuredClone(data);
@@ -63,7 +77,7 @@ export default function ScoutPage(){
     <section className="scout-stats"><div><strong>{regional.length}</strong><span>Regional candidates</span></div><div><strong>{regional.filter(v=>v.regions[region].editorial_status==="pending_review").length}</strong><span>Awaiting review</span></div><div><strong>{approved.length}</strong><span>Curated selections</span></div></section>
     <div className="scout-tools"><label>Region<select value={region} onChange={e=>{setRegion(e.target.value);setFilter("all");}}>{Object.entries(regions).map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label>
       <label>Find a video<input placeholder="Search title or creator" value={search} onChange={e=>setSearch(e.target.value)}/></label>
-      {!catalogueView&&<><label>Status<select value={filter} onChange={e=>setFilter(e.target.value)}><option value="all">All candidates</option><option value="pending_review">Pending</option><option value="approved">Approved</option><option value="rejected">Rejected</option></select></label><label className="scout-button">Import Scout JSON<input className="scout-file" type="file" accept=".json,application/json" onChange={upload}/></label><button onClick={()=>download(data,"scout-catalogue.json")}>Export catalogue</button></>}
+      {!catalogueView&&<><label>Status<select value={filter} onChange={e=>setFilter(e.target.value)}><option value="all">All candidates</option><option value="pending_review">Pending</option><option value="approved">Approved</option><option value="rejected">Rejected</option></select></label><label className="scout-button">Import Scout JSON<input className="scout-file" type="file" accept=".json,application/json" onChange={upload}/></label><button onClick={loadPilot}>Load latest local run</button><button onClick={()=>download(data,"scout-catalogue.json")}>Export catalogue</button></>}
     </div>
     <p role="status" className="scout-notice">{notice}</p>
     <section className="scout-grid">{visible.map(v=><article className="scout-card" key={v.video_id}>
