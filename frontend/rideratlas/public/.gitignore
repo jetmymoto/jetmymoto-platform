@@ -1,0 +1,2 @@
+# Local discovery data must not enter source control or production builds.
+scout-pilot.json
