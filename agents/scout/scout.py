@@ -63,7 +63,11 @@ def classify(video, aliases):
         for field, value in fields.items() for alias in aliases if contains(value, alias)
     ]
     ride_terms = [word for word in RIDE_WORDS if contains(text, word)]
-    tags = [tag for tag, terms in INTENTS.items() if any(contains(text, term) for term in terms)]
+    # Remove explicit self-guided phrases only when detecting guided offers.
+    guided_text = re.sub(r"\\bself[ -]+guided\\b", "", text, flags=re.IGNORECASE)
+    tags = [tag for tag, terms in INTENTS.items()
+            if any(contains(guided_text if tag == "guided_candidate" else text, term)
+                   for term in terms)]
     if ride_terms:
         tags.append("ride_inspiration")
     return {
