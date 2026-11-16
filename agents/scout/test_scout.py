@@ -21,6 +21,12 @@ class ScoutTests(unittest.TestCase):
         result = classify({"snippet": {"title": "Sellaronda motorcycle"}}, ["Sella"])
         self.assertEqual(result["region_match"], "unresolved")
 
+    def test_self_guided_is_not_guided(self):
+        result = classify({"snippet": {"title": "Verdon self-guided tour",
+                                      "description": "Motorcycle GPX"}}, ["Verdon"])
+        self.assertIn("self_guided_candidate", result["catalogue_tags"])
+        self.assertNotIn("guided_candidate", result["catalogue_tags"])
+
     def test_duration(self):
         self.assertEqual(seconds("PT1H2M3S"), 3723)
         self.assertEqual(seconds("PT45S"), 45)
